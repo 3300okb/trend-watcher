@@ -38,8 +38,8 @@ function renderTopicList() {
     chip.dataset.topic = topic;
     const isActive = selectedTopic === topic;
     chip.className = isActive
-      ? 'rounded-full border border-brand bg-brand px-3 py-1 text-xs text-white'
-      : 'rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs text-brand';
+      ? 'rounded-full border border-brand bg-brand px-3 py-1 text-xs text-cyan-700'
+      : 'rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs text-cyan-700 text-brand';
     chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     chip.textContent = topic;
     topicList.appendChild(chip);
