@@ -94,5 +94,47 @@
     "url": "https://vercel.com/blog",
     "feedUrl": "https://vercel.com/blog/rss.xml",
     "weight": 1.0
+  },
+  {
+    "name": "ITmedia NEWS",
+    "url": "https://www.itmedia.co.jp/news/",
+    "feedUrl": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
+    "weight": 1.0
+  },
+  {
+    "name": "Mynavi News TECH+",
+    "url": "https://news.mynavi.jp/techplus/",
+    "feedUrl": "https://news.mynavi.jp/rss/techplus.xml",
+    "weight": 1.0
+  },
+  {
+    "name": "ASCII.jp",
+    "url": "https://ascii.jp/",
+    "feedUrl": "https://ascii.jp/rss.xml",
+    "weight": 1.0
+  },
+  {
+    "name": "gihyo.jp",
+    "url": "https://gihyo.jp/",
+    "feedUrl": "https://gihyo.jp/feed/atom",
+    "weight": 1.1
+  },
+  {
+    "name": "CodeZine",
+    "url": "https://codezine.jp/",
+    "feedUrl": "https://codezine.jp/rss/new/20/index.xml",
+    "weight": 1.1
+  },
+  {
+    "name": "Zenn Frontend Topic",
+    "url": "https://zenn.dev/topics/frontend",
+    "feedUrl": "https://zenn.dev/topics/frontend/feed",
+    "weight": 1.0
+  },
+  {
+    "name": "Qiita Frontend Tag",
+    "url": "https://qiita.com/tags/frontend",
+    "feedUrl": "https://qiita.com/tags/frontend/feed",
+    "weight": 1.0
   }
 ]
