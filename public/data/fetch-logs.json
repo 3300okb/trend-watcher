@@ -7,184 +7,8 @@
     "fetchedCount": 0,
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND openai.com",
-    "durationMs": 9,
-    "fetchedAt": "2026-02-21T12:33:27.709Z"
-  },
-  {
-    "sourceName": "Anthropic News",
-    "sourceFeedUrl": "https://www.anthropic.com/news/rss.xml",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND www.anthropic.com",
-    "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:33:27.710Z"
-  },
-  {
-    "sourceName": "Google DeepMind Blog",
-    "sourceFeedUrl": "https://deepmind.google/blog/rss.xml",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND deepmind.google",
-    "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:33:27.710Z"
-  },
-  {
-    "sourceName": "Google AI Blog",
-    "sourceFeedUrl": "https://blog.google/technology/ai/rss/",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND blog.google",
-    "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:33:27.711Z"
-  },
-  {
-    "sourceName": "Google Cloud AI Blog",
-    "sourceFeedUrl": "https://cloud.google.com/feeds/blog/products/ai-machine-learning",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND cloud.google.com",
-    "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:33:27.711Z"
-  },
-  {
-    "sourceName": "Google for Developers Blog",
-    "sourceFeedUrl": "https://developers.googleblog.com/feeds/posts/default?alt=rss",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND developers.googleblog.com",
-    "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:33:27.712Z"
-  },
-  {
-    "sourceName": "Google News Search (24h)",
-    "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND news.google.com",
-    "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:33:27.712Z"
-  },
-  {
-    "sourceName": "Chrome Developers Blog",
-    "sourceFeedUrl": "https://developer.chrome.com/blog/rss.xml",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND developer.chrome.com",
-    "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:33:27.713Z"
-  },
-  {
-    "sourceName": "web.dev",
-    "sourceFeedUrl": "https://web.dev/feed.xml",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND web.dev",
-    "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:33:27.713Z"
-  },
-  {
-    "sourceName": "TypeScript Blog",
-    "sourceFeedUrl": "https://devblogs.microsoft.com/typescript/feed/",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND devblogs.microsoft.com",
-    "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:33:27.714Z"
-  },
-  {
-    "sourceName": "Vue.js Blog",
-    "sourceFeedUrl": "https://blog.vuejs.org/feed.xml",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND blog.vuejs.org",
-    "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:33:27.714Z"
-  },
-  {
-    "sourceName": "MDN Blog",
-    "sourceFeedUrl": "https://developer.mozilla.org/en-US/blog/rss.xml",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND developer.mozilla.org",
-    "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:33:27.715Z"
-  },
-  {
-    "sourceName": "CSS-Tricks",
-    "sourceFeedUrl": "https://css-tricks.com/feed/",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND css-tricks.com",
-    "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:33:27.715Z"
-  },
-  {
-    "sourceName": "Smashing Magazine",
-    "sourceFeedUrl": "https://www.smashingmagazine.com/feed/",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND www.smashingmagazine.com",
-    "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:33:27.716Z"
-  },
-  {
-    "sourceName": "Frontend Focus",
-    "sourceFeedUrl": "https://frontendfoc.us/rss",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND frontendfoc.us",
-    "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:33:27.716Z"
-  },
-  {
-    "sourceName": "Vercel Blog",
-    "sourceFeedUrl": "https://vercel.com/blog/rss.xml",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND vercel.com",
-    "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:33:27.716Z"
-  },
-  {
-    "sourceName": "OpenAI News",
-    "sourceFeedUrl": "https://openai.com/news/rss.xml",
-    "status": "failed",
-    "httpStatus": null,
-    "fetchedCount": 0,
-    "insertedCount": 0,
-    "errorMessage": "getaddrinfo ENOTFOUND openai.com",
-    "durationMs": 11,
-    "fetchedAt": "2026-02-21T12:41:24.386Z"
+    "durationMs": 12,
+    "fetchedAt": "2026-02-21T12:47:41.326Z"
   },
   {
     "sourceName": "Anthropic News",
@@ -195,7 +19,7 @@
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND www.anthropic.com",
     "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:41:24.386Z"
+    "fetchedAt": "2026-02-21T12:47:41.326Z"
   },
   {
     "sourceName": "Google DeepMind Blog",
@@ -206,7 +30,7 @@
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND deepmind.google",
     "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:41:24.387Z"
+    "fetchedAt": "2026-02-21T12:47:41.327Z"
   },
   {
     "sourceName": "Google AI Blog",
@@ -216,8 +40,8 @@
     "fetchedCount": 0,
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND blog.google",
-    "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:41:24.388Z"
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T12:47:41.327Z"
   },
   {
     "sourceName": "Google Cloud AI Blog",
@@ -227,8 +51,8 @@
     "fetchedCount": 0,
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND cloud.google.com",
-    "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:41:24.388Z"
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T12:47:41.328Z"
   },
   {
     "sourceName": "Google for Developers Blog",
@@ -238,8 +62,8 @@
     "fetchedCount": 0,
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND developers.googleblog.com",
-    "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:41:24.389Z"
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T12:47:41.328Z"
   },
   {
     "sourceName": "Google News Search (24h)",
@@ -250,7 +74,7 @@
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND news.google.com",
     "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:41:24.389Z"
+    "fetchedAt": "2026-02-21T12:47:41.328Z"
   },
   {
     "sourceName": "Chrome Developers Blog",
@@ -261,7 +85,7 @@
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND developer.chrome.com",
     "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:41:24.389Z"
+    "fetchedAt": "2026-02-21T12:47:41.329Z"
   },
   {
     "sourceName": "web.dev",
@@ -271,8 +95,8 @@
     "fetchedCount": 0,
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND web.dev",
-    "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:41:24.390Z"
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T12:47:41.329Z"
   },
   {
     "sourceName": "TypeScript Blog",
@@ -283,7 +107,7 @@
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND devblogs.microsoft.com",
     "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:41:24.391Z"
+    "fetchedAt": "2026-02-21T12:47:41.330Z"
   },
   {
     "sourceName": "Vue.js Blog",
@@ -293,8 +117,8 @@
     "fetchedCount": 0,
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND blog.vuejs.org",
-    "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:41:24.391Z"
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T12:47:41.331Z"
   },
   {
     "sourceName": "MDN Blog",
@@ -304,8 +128,8 @@
     "fetchedCount": 0,
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND developer.mozilla.org",
-    "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:41:24.392Z"
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T12:47:41.331Z"
   },
   {
     "sourceName": "CSS-Tricks",
@@ -315,8 +139,8 @@
     "fetchedCount": 0,
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND css-tricks.com",
-    "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:41:24.392Z"
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T12:47:41.332Z"
   },
   {
     "sourceName": "Smashing Magazine",
@@ -327,7 +151,7 @@
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND www.smashingmagazine.com",
     "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:41:24.392Z"
+    "fetchedAt": "2026-02-21T12:47:41.332Z"
   },
   {
     "sourceName": "Frontend Focus",
@@ -337,8 +161,8 @@
     "fetchedCount": 0,
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND frontendfoc.us",
-    "durationMs": 1,
-    "fetchedAt": "2026-02-21T12:41:24.393Z"
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T12:47:41.332Z"
   },
   {
     "sourceName": "Vercel Blog",
@@ -348,7 +172,7 @@
     "fetchedCount": 0,
     "insertedCount": 0,
     "errorMessage": "getaddrinfo ENOTFOUND vercel.com",
-    "durationMs": 0,
-    "fetchedAt": "2026-02-21T12:41:24.393Z"
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T12:47:41.333Z"
   }
 ]
