@@ -5,7 +5,7 @@ GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages へ�
 
 ## キーワード管理（.env）
 - キーワードは `.env` の `TREND_TOPICS` で管理します（カンマ区切り）。
-- 例: `TREND_TOPICS=Anthropic,OpenAI,Google,claude,codex,gemini,frontend`
+- 例: `TREND_TOPICS=Anthropic,OpenAI,Google,Apple,claude,codex,gemini,frontend,html,css,typescript,vue`
 - サンプル: `.env.example`
 - GitHub Actions は `.env` を読み込んで実行します（workflow の `Load .env` ステップ）。
 
