@@ -493,5 +493,203 @@
     "errorMessage": null,
     "durationMs": 198,
     "fetchedAt": "2026-02-21T08:01:51.881Z"
+  },
+  {
+    "sourceName": "OpenAI News",
+    "sourceFeedUrl": "https://openai.com/news/rss.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND openai.com",
+    "durationMs": 12,
+    "fetchedAt": "2026-02-21T08:10:19.392Z"
+  },
+  {
+    "sourceName": "Google DeepMind Blog",
+    "sourceFeedUrl": "https://deepmind.google/blog/rss.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND deepmind.google",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T08:10:19.393Z"
+  },
+  {
+    "sourceName": "Hugging Face Blog",
+    "sourceFeedUrl": "https://huggingface.co/blog/feed.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND huggingface.co",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T08:10:19.394Z"
+  },
+  {
+    "sourceName": "Chrome Developers Blog",
+    "sourceFeedUrl": "https://developer.chrome.com/blog/rss.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND developer.chrome.com",
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T08:10:19.394Z"
+  },
+  {
+    "sourceName": "Mozilla Hacks",
+    "sourceFeedUrl": "https://hacks.mozilla.org/feed/",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND hacks.mozilla.org",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T08:10:19.395Z"
+  },
+  {
+    "sourceName": "Cloudflare Blog",
+    "sourceFeedUrl": "https://blog.cloudflare.com/rss/",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND blog.cloudflare.com",
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T08:10:19.395Z"
+  },
+  {
+    "sourceName": "TechCrunch",
+    "sourceFeedUrl": "https://techcrunch.com/feed/",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND techcrunch.com",
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T08:10:19.395Z"
+  },
+  {
+    "sourceName": "The Verge",
+    "sourceFeedUrl": "https://www.theverge.com/rss/index.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND www.theverge.com",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T08:10:19.396Z"
+  },
+  {
+    "sourceName": "IEEE Spectrum",
+    "sourceFeedUrl": "https://spectrum.ieee.org/rss/fulltext",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND spectrum.ieee.org",
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T08:10:19.396Z"
+  },
+  {
+    "sourceName": "OpenAI News",
+    "sourceFeedUrl": "https://openai.com/news/rss.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND openai.com",
+    "durationMs": 16,
+    "fetchedAt": "2026-02-21T08:10:28.293Z"
+  },
+  {
+    "sourceName": "Google DeepMind Blog",
+    "sourceFeedUrl": "https://deepmind.google/blog/rss.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND deepmind.google",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T08:10:28.294Z"
+  },
+  {
+    "sourceName": "Hugging Face Blog",
+    "sourceFeedUrl": "https://huggingface.co/blog/feed.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND huggingface.co",
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T08:10:28.294Z"
+  },
+  {
+    "sourceName": "Chrome Developers Blog",
+    "sourceFeedUrl": "https://developer.chrome.com/blog/rss.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND developer.chrome.com",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T08:10:28.295Z"
+  },
+  {
+    "sourceName": "Mozilla Hacks",
+    "sourceFeedUrl": "https://hacks.mozilla.org/feed/",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND hacks.mozilla.org",
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T08:10:28.295Z"
+  },
+  {
+    "sourceName": "Cloudflare Blog",
+    "sourceFeedUrl": "https://blog.cloudflare.com/rss/",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND blog.cloudflare.com",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T08:10:28.296Z"
+  },
+  {
+    "sourceName": "TechCrunch",
+    "sourceFeedUrl": "https://techcrunch.com/feed/",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND techcrunch.com",
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T08:10:28.296Z"
+  },
+  {
+    "sourceName": "The Verge",
+    "sourceFeedUrl": "https://www.theverge.com/rss/index.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND www.theverge.com",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T08:10:28.297Z"
+  },
+  {
+    "sourceName": "IEEE Spectrum",
+    "sourceFeedUrl": "https://spectrum.ieee.org/rss/fulltext",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND spectrum.ieee.org",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T08:10:28.298Z"
   }
 ]

@@ -10,8 +10,10 @@ const DATA_DIR = resolve(ROOT, 'public/data');
 const TRENDS_FILE = resolve(DATA_DIR, 'trends.json');
 const LATEST_FILE = resolve(DATA_DIR, 'latest.json');
 const LOG_FILE = resolve(DATA_DIR, 'fetch-logs.json');
+const TRANSLATION_CACHE_FILE = resolve(DATA_DIR, 'translation-cache.json');
 const REQUEST_TIMEOUT_MS = 20000;
 const MAX_ITEMS_PER_SOURCE = 30;
+const MAX_TRANSLATION_TEXT_LENGTH = 450;
 
 const now = new Date();
 
@@ -62,6 +64,14 @@ function normalizeUrl(raw) {
 
 function titleHash(title) {
   return createHash('sha1').update((title || '').toLowerCase().trim()).digest('hex');
+}
+
+function textHash(text) {
+  return createHash('sha1').update((text || '').trim()).digest('hex');
+}
+
+function isJapaneseText(text) {
+  return /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(text || '');
 }
 
 function parseDate(value) {
@@ -195,6 +205,15 @@ function fetchWithNodeHttp(url, timeoutMs) {
   });
 }
 
+async function fetchJsonWithTimeout(url) {
+  const response = await fetchWithTimeout(url);
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+  const text = await response.text();
+  return JSON.parse(text);
+}
+
 async function atomicWriteJson(file, data) {
   await mkdir(dirname(file), { recursive: true });
   const tmp = `${file}.tmp`;
@@ -211,10 +230,34 @@ async function readJsonSafe(file, fallback) {
   }
 }
 
+async function translateToJapanese(text, cache) {
+  const raw = (text || '').trim();
+  if (!raw) return '';
+  if (isJapaneseText(raw)) return raw;
+
+  const key = textHash(raw);
+  if (cache[key]) return cache[key];
+
+  const short = raw.length > MAX_TRANSLATION_TEXT_LENGTH ? `${raw.slice(0, MAX_TRANSLATION_TEXT_LENGTH)}...` : raw;
+  const endpoint = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ja&dt=t&q=${encodeURIComponent(short)}`;
+
+  try {
+    const payload = await fetchJsonWithTimeout(endpoint);
+    const translated = Array.isArray(payload?.[0]) ? payload[0].map((part) => part?.[0] || '').join('') : '';
+    const normalized = translated.trim() || short;
+    cache[key] = normalized;
+    return normalized;
+  } catch {
+    cache[key] = short;
+    return short;
+  }
+}
+
 async function main() {
   const sources = JSON.parse(await readFile(SOURCES_FILE, 'utf8'));
   const logs = [];
   const deduped = new Map();
+  const translationCache = await readJsonSafe(TRANSLATION_CACHE_FILE, {});
 
   for (const source of sources) {
     const startedAt = Date.now();
@@ -290,6 +333,11 @@ async function main() {
     return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
   });
 
+  for (const article of articles) {
+    article.titleJa = await translateToJapanese(article.title, translationCache);
+    article.summaryJa = await translateToJapanese(article.summary || '', translationCache);
+  }
+
   const latest = [...articles].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
   const previousLogs = await readJsonSafe(LOG_FILE, []);
@@ -308,6 +356,7 @@ async function main() {
   });
 
   await atomicWriteJson(LOG_FILE, mergedLogs);
+  await atomicWriteJson(TRANSLATION_CACHE_FILE, translationCache);
 
   console.log(`[trend-watcher] generated ${articles.length} articles at ${now.toISOString()}`);
 }

@@ -4,7 +4,7 @@
 GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages への自動デプロイでも運用できます。
 
 ## 主要コマンド
-- `npm run job:fetch`: RSS収集 + スコア計算 + `public/data/*.json` 更新
+- `npm run job:fetch`: RSS収集 + スコア計算 + タイトル/要約の日本語化 + `public/data/*.json` 更新
 - `npm run build`: `public/` を `out/` に出力（静的配信用）
 - `npm run dev`: `public/` をローカルで確認（http://localhost:8080）
 
@@ -12,7 +12,8 @@ GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages へ�
 - `config/sources.json`: 収集対象ソース
 - `scripts/fetch-trends.mjs`: cron から呼ぶバッチ
 - `public/index.html`: Tailwind（CDN）で構築した静的UI
-- `public/data/trends.json`: 表示用データ
+- `public/data/trends.json`: 表示用データ（titleJa/summaryJa を含む）
+- `public/data/translation-cache.json`: 翻訳キャッシュ
 
 ## cron 例（15分）
 ```cron

@@ -31,9 +31,9 @@ function render(items, generatedAt) {
     const published = node.querySelector('.published');
     const score = node.querySelector('.score');
 
-    title.textContent = item.title;
+    title.textContent = item.titleJa || item.title;
     title.href = item.canonicalUrl || item.url;
-    summary.textContent = item.summary || 'summary unavailable';
+    summary.textContent = item.summaryJa || item.summary || 'summary unavailable';
     category.textContent = item.category;
     source.textContent = item.sourceName;
     published.textContent = formatDate(item.publishedAt);
@@ -54,7 +54,9 @@ function applyFilters(generatedAt) {
   }
 
   if (keyword) {
-    items = items.filter((x) => `${x.title} ${x.summary || ''}`.toLowerCase().includes(keyword));
+    items = items.filter((x) =>
+      `${x.titleJa || ''} ${x.summaryJa || ''} ${x.title || ''} ${x.summary || ''}`.toLowerCase().includes(keyword)
+    );
   }
 
   if (sortFilter.value === 'latest') {
