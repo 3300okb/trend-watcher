@@ -5,7 +5,7 @@ const metaText = document.getElementById('metaText');
 const template = document.getElementById('trendItemTemplate');
 const topicList = document.getElementById('topicList');
 
-const CONFIGURED_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'claude', 'codex', 'gemini', 'frontend'];
+const CONFIGURED_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'Apple', 'claude', 'codex', 'gemini', 'frontend'];
 
 let allItems = [];
 let currentGeneratedAt = new Date().toISOString();
