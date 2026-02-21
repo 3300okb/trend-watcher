@@ -11,7 +11,7 @@ GitHub Actions を使う場合は、1時間ごとの自動収集 + GitHub Pages 
 
 ## 主要コマンド
 - `npm run sync:config`: `.env` から `public/data/runtime-config.json` を生成
-- `npm run job:fetch`: 設定同期 + RSS収集 + スコア計算 + タイトル/要約の日本語化 + `public/data/*.json` 更新
+- `npm run job:fetch`: 設定同期 + RSS収集（TREND_TOPICSヒットのみ） + タイトル/要約の日本語化 + `public/data/*.json` 更新
 - `npm run build`: 設定同期 + `public/` を `out/` に出力（静的配信用）
 - `npm run dev`: `public/` をローカルで確認（http://localhost:8080）
 

@@ -24,7 +24,8 @@ function detectTagsFromTopics(item, topics) {
 
 function applyTopicTags(items, topics) {
   return items.map((item) => {
-    const tags = detectTagsFromTopics(item, topics);
+    const existing = Array.isArray(item.tags) ? item.tags.filter(Boolean) : [];
+    const tags = existing.length > 0 ? [...new Set(existing)] : detectTagsFromTopics(item, topics);
     return { ...item, tags };
   });
 }
@@ -66,7 +67,7 @@ function render(items, generatedAt) {
     title.textContent = item.titleJa || item.title;
     title.href = item.canonicalUrl || item.url;
     summary.textContent = item.summaryJa || item.summary || 'summary unavailable';
-    category.textContent = (item.tags || []).join(', ') || item.category || '-';
+    category.textContent = (item.tags || []).join(', ') || '-';
     source.textContent = item.sourceName || '-';
     published.textContent = formatDate(item.publishedAt);
     trendList.appendChild(node);

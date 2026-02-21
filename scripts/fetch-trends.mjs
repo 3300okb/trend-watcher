@@ -19,12 +19,6 @@ const GOOGLE_NEWS_DYNAMIC_TOKEN = '__GOOGLE_NEWS_TOPICS__';
 
 const now = new Date();
 
-const CATEGORY_KEYWORDS = {
-  ai: ['ai', 'llm', 'gpt', 'model', 'inference', 'agent'],
-  web: ['browser', 'css', 'javascript', 'typescript', 'web', 'frontend', 'api'],
-  tech: ['cloud', 'chip', 'startup', 'security', 'infrastructure', 'data', 'device']
-};
-
 function decodeXml(input) {
   return (input || '')
     .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
@@ -132,24 +126,9 @@ function parseFeed(xml) {
   return parseAtomEntries(xml);
 }
 
-function scoreArticle(article, sourceWeight) {
-  const ageHours = Math.max(0, (now.getTime() - new Date(article.publishedAt).getTime()) / (1000 * 60 * 60));
-  const freshnessScore = Math.max(0, 60 - ageHours * 2);
-
-  const text = `${article.title} ${article.summary || ''}`.toLowerCase();
-  const keywords = CATEGORY_KEYWORDS[article.category] || [];
-  const keywordHits = keywords.reduce((acc, word) => acc + (text.includes(word) ? 1 : 0), 0);
-  const keywordBoost = Math.min(15, keywordHits * 3);
-
-  const sourceWeightScore = sourceWeight * 20;
-  const scoreTotal = freshnessScore + sourceWeightScore + keywordBoost;
-
-  return {
-    freshnessScore: Number(freshnessScore.toFixed(2)),
-    sourceWeightScore: Number(sourceWeightScore.toFixed(2)),
-    keywordBoostScore: Number(keywordBoost.toFixed(2)),
-    scoreTotal: Number(scoreTotal.toFixed(2))
-  };
+function matchTopics(article, configuredTopics) {
+  const text = `${article.title || ''} ${article.summary || ''}`.toLowerCase();
+  return configuredTopics.filter((topic) => text.includes(topic.toLowerCase()));
 }
 
 async function fetchWithTimeout(url) {
@@ -293,24 +272,29 @@ async function main() {
           sourceName: source.name,
           sourceUrl: source.url,
           sourceFeedUrl: feedUrl,
-          category: source.category,
           title: item.title,
           summary: item.summary,
           url: item.url,
           canonicalUrl,
           publishedAt: item.publishedAt.toISOString(),
-          hashTitle: titleHash(item.title)
+          hashTitle: titleHash(item.title),
+          tags: []
         };
+
+        const matchedTopics = matchTopics(article, configuredTopics);
+        if (matchedTopics.length === 0) continue;
+        article.tags = [...new Set(matchedTopics)];
 
         const key = article.canonicalUrl;
         if (deduped.has(key)) {
+          const prev = deduped.get(key);
+          const mergedTags = [...new Set([...(prev.tags || []), ...article.tags])];
+          deduped.set(key, { ...prev, tags: mergedTags });
           continue;
         }
 
-        const score = scoreArticle(article, source.weight ?? 1.0);
         deduped.set(key, {
           ...article,
-          score,
           scoredAt: now.toISOString()
         });
         insertedCount += 1;
@@ -334,10 +318,9 @@ async function main() {
     });
   }
 
-  const articles = [...deduped.values()].sort((a, b) => {
-    if (b.score.scoreTotal !== a.score.scoreTotal) return b.score.scoreTotal - a.score.scoreTotal;
-    return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
-  });
+  const articles = [...deduped.values()].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
 
   for (const article of articles) {
     article.titleJa = await translateToJapanese(article.title, translationCache);
