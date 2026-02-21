@@ -7,6 +7,7 @@ GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages へ�
 - キーワードは `.env` の `TREND_TOPICS` で管理します（カンマ区切り）。
 - 例: `TREND_TOPICS=Anthropic,OpenAI,Google,claude,codex,gemini,frontend`
 - サンプル: `.env.example`
+- GitHub Actions は `.env` を読み込んで実行します（workflow の `Load .env` ステップ）。
 
 ## 主要コマンド
 - `npm run sync:config`: `.env` から `public/data/runtime-config.json` を生成
