@@ -16,12 +16,32 @@
       @font-face {
         font-family: 'LINE Seed JP';
         src: url('./assets/LINESeedJP_OTF_Bd.woff2') format('woff2');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'LINE Seed JP';
+        src: url('./assets/LINESeedJP_OTF_Bd.woff2') format('woff2');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'LINE Seed JP';
+        src: url('./assets/LINESeedJP_OTF_Bd.woff2') format('woff2');
         font-weight: 700;
         font-style: normal;
         font-display: swap;
       }
+
+      .font-seed {
+        font-family: 'LINE Seed JP', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+      }
     </style>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <script>
       tailwind.config = {
         theme: {
@@ -35,58 +55,39 @@
               mist: '#e2e8f0',
               brand: '#0f766e',
               accent: '#1d4ed8'
-            },
-            boxShadow: {
-              card: '0 8px 26px rgba(15, 23, 42, 0.08)'
             }
           }
         }
       };
     </script>
   </head>
-  <body class="min-h-screen bg-gradient-to-br from-cyan-50 via-paper to-slate-100 text-ink antialiased">
-    <div class="mx-auto max-w-6xl px-4 pb-14 pt-8 sm:px-6 lg:px-8">
-      <header class="relative overflow-hidden rounded-3xl border border-mist bg-white/85 p-6 shadow-card backdrop-blur sm:p-8">
-        <div class="pointer-events-none absolute -right-16 -top-20 h-64 w-64 rounded-full bg-cyan-100/70 blur-2xl"></div>
-        <div class="pointer-events-none absolute -left-16 bottom-0 h-40 w-40 rounded-full bg-blue-100/70 blur-xl"></div>
-        <p class="relative text-xs font-semibold uppercase tracking-[0.24em] text-brand">Trend Intelligence</p>
-        <h1 class="relative mt-2 text-3xl font-bold leading-tight sm:text-4xl">Trend Watcher</h1>
-        <p class="relative mt-3 max-w-2xl text-sm text-slate-600 sm:text-base">
-          Anthropic・OpenAI・Google・Claude・Codex・Gemini・Frontend の最新トレンドを収集し、新着中心で確認できます。
-        </p>
+  <body class="min-h-screen font-seed text-ink antialiased">
+    <div class="mx-auto max-w-6xl">
+      <header class="relative py-6">
+        <h1 class="relative text-2xl font-bold leading-tight">Trend Watcher</h1>
       </header>
 
-      <main class="mt-6 grid gap-6">
-        <section class="rounded-2xl border border-mist bg-white/85 p-4 shadow-card backdrop-blur sm:p-5">
-          <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+      <main class="grid gap-6">
+        <section class="rounded-2xl border border-mist bg-white/85 p-4 backdrop-blur sm:p-5">
+          <div class="grid grid-cols-1 gap-3 sm:grid-cols-1">
             <label class="flex flex-col gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
-              表示順
-              <select
-                id="sortFilter"
-                class="rounded-xl border border-mist bg-white px-3 py-2 text-sm font-medium normal-case text-ink outline-none ring-brand/30 transition focus:ring"
-              >
-                <option value="latest" selected>新着順</option>
-                <option value="score">注目順</option>
-              </select>
-            </label>
-            <label class="flex flex-col gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
-              キーワード
+              Keyword
               <input
                 id="keywordFilter"
                 type="search"
-                placeholder="例: browser, model"
+                placeholder="e.g. browser, model"
                 class="rounded-xl border border-mist bg-white px-3 py-2 text-sm normal-case text-ink outline-none ring-brand/30 transition placeholder:text-slate-400 focus:ring"
               />
             </label>
           </div>
           <div class="mt-4 border-t border-slate-200 pt-4">
-            <p class="text-xs font-semibold uppercase tracking-wide text-slate-600">収集テーマ（キーワード）</p>
-            <p class="mt-1 text-xs text-slate-500">キーワードはコード内で管理されています（UIからの変更はできません）。</p>
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-600">Topics</p>
+            <p class="mt-1 text-xs text-slate-500">Topics are managed in code and are read-only on this page.</p>
             <div class="mt-3 flex flex-wrap gap-2" id="topicList"></div>
           </div>
         </section>
 
-        <section class="rounded-2xl border border-mist bg-white/90 p-4 shadow-card sm:p-6">
+        <section class="rounded-2xl border border-mist bg-white/90 p-4 sm:p-6">
           <div class="mb-4 flex items-end justify-between gap-4">
             <h2 class="text-xl font-semibold">Trends</h2>
             <p id="metaText" class="meta text-xs text-slate-500 sm:text-sm"></p>
@@ -107,10 +108,9 @@
         ></a>
         <p class="trend-summary mt-2 line-clamp-2 text-sm leading-6 text-slate-600"></p>
         <div class="trend-meta mt-3 flex flex-wrap items-center gap-2 text-xs text-slate-500">
-          <span class="badge category rounded-full border border-cyan-200 bg-cyan-50 px-2.5 py-1 font-semibold uppercase tracking-wide text-brand"></span>
+          <span class="badge category rounded-full border border-cyan-200 bg-cyan-50 px-2.5 py-1 font-semibold tracking-wide text-brand"></span>
           <span class="source rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1"></span>
           <span class="published"></span>
-          <span class="score font-semibold text-slate-700"></span>
         </div>
       </li>
     </template>

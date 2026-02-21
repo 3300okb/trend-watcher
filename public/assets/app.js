@@ -1,5 +1,4 @@
 const trendList = document.getElementById('trendList');
-const sortFilter = document.getElementById('sortFilter');
 const keywordFilter = document.getElementById('keywordFilter');
 const metaText = document.getElementById('metaText');
 const template = document.getElementById('trendItemTemplate');
@@ -13,7 +12,7 @@ let currentGeneratedAt = new Date().toISOString();
 
 function formatDate(iso) {
   const d = new Date(iso);
-  return Number.isNaN(d.getTime()) ? '-' : d.toLocaleString('ja-JP');
+  return Number.isNaN(d.getTime()) ? '-' : d.toLocaleString('en-US');
 }
 
 function detectTagsFromTopics(item, topics) {
@@ -45,8 +44,8 @@ function render(items, generatedAt) {
 
   if (items.length === 0) {
     trendList.innerHTML =
-      '<li class="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-sm text-slate-500">該当する記事がありません。条件を変更してください。</li>';
-    metaText.textContent = `件数: 0 / 更新: ${formatDate(generatedAt)}`;
+      '<li class="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-sm text-slate-500">No matching articles. Try different filters.</li>';
+    metaText.textContent = `Items: 0 / Updated: ${formatDate(generatedAt)}`;
     return;
   }
 
@@ -57,7 +56,6 @@ function render(items, generatedAt) {
     const category = node.querySelector('.category');
     const source = node.querySelector('.source');
     const published = node.querySelector('.published');
-    const score = node.querySelector('.score');
 
     title.textContent = item.titleJa || item.title;
     title.href = item.canonicalUrl || item.url;
@@ -65,11 +63,10 @@ function render(items, generatedAt) {
     category.textContent = (item.tags || []).join(', ') || item.category || '-';
     source.textContent = item.sourceName || '-';
     published.textContent = formatDate(item.publishedAt);
-    score.textContent = `score: ${item.score?.scoreTotal ?? '-'}`;
     trendList.appendChild(node);
   }
 
-  metaText.textContent = `件数: ${items.length} / 更新: ${formatDate(generatedAt)}`;
+  metaText.textContent = `Items: ${items.length} / Updated: ${formatDate(generatedAt)}`;
 }
 
 function applyFilters(generatedAt = currentGeneratedAt) {
@@ -84,11 +81,7 @@ function applyFilters(generatedAt = currentGeneratedAt) {
     );
   }
 
-  if (sortFilter.value === 'latest') {
-    items.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
-  } else {
-    items.sort((a, b) => (b.score?.scoreTotal ?? 0) - (a.score?.scoreTotal ?? 0));
-  }
+  items.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
   render(items.slice(0, 120), generatedAt);
 }
@@ -117,13 +110,12 @@ async function boot() {
     allItems = applyTopicTags(data.items || [], configuredTopics);
     currentGeneratedAt = data.generatedAt || new Date().toISOString();
 
-    sortFilter.addEventListener('change', () => applyFilters(currentGeneratedAt));
     keywordFilter.addEventListener('input', () => applyFilters(currentGeneratedAt));
 
     renderTopicList();
     applyFilters(currentGeneratedAt);
   } catch (error) {
-    metaText.textContent = `データ取得に失敗しました: ${error.message}`;
+    metaText.textContent = `Failed to load data: ${error.message}`;
   }
 }
 
