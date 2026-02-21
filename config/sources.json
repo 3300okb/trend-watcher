@@ -1,0 +1,65 @@
+[
+  {
+    "name": "OpenAI News",
+    "url": "https://openai.com/news",
+    "feedUrl": "https://openai.com/news/rss.xml",
+    "category": "ai",
+    "weight": 1.2
+  },
+  {
+    "name": "Google DeepMind Blog",
+    "url": "https://deepmind.google/blog",
+    "feedUrl": "https://deepmind.google/blog/rss.xml",
+    "category": "ai",
+    "weight": 1.1
+  },
+  {
+    "name": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog",
+    "feedUrl": "https://huggingface.co/blog/feed.xml",
+    "category": "ai",
+    "weight": 1.0
+  },
+  {
+    "name": "Chrome Developers Blog",
+    "url": "https://developer.chrome.com/blog",
+    "feedUrl": "https://developer.chrome.com/blog/rss.xml",
+    "category": "web",
+    "weight": 1.1
+  },
+  {
+    "name": "Mozilla Hacks",
+    "url": "https://hacks.mozilla.org",
+    "feedUrl": "https://hacks.mozilla.org/feed/",
+    "category": "web",
+    "weight": 1.0
+  },
+  {
+    "name": "Cloudflare Blog",
+    "url": "https://blog.cloudflare.com",
+    "feedUrl": "https://blog.cloudflare.com/rss/",
+    "category": "web",
+    "weight": 1.1
+  },
+  {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com",
+    "feedUrl": "https://techcrunch.com/feed/",
+    "category": "tech",
+    "weight": 1.0
+  },
+  {
+    "name": "The Verge",
+    "url": "https://www.theverge.com",
+    "feedUrl": "https://www.theverge.com/rss/index.xml",
+    "category": "tech",
+    "weight": 0.9
+  },
+  {
+    "name": "IEEE Spectrum",
+    "url": "https://spectrum.ieee.org",
+    "feedUrl": "https://spectrum.ieee.org/rss/fulltext",
+    "category": "tech",
+    "weight": 1.0
+  }
+]

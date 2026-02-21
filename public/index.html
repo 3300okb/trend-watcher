@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trend Watcher</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Trend Watcher</h1>
+      <p>web / AI / tech のトレンドを定期収集</p>
+    </header>
+
+    <main class="container">
+      <section class="controls">
+        <label>
+          カテゴリ
+          <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="web">Web</option>
+            <option value="ai">AI</option>
+            <option value="tech">Tech</option>
+          </select>
+        </label>
+        <label>
+          表示順
+          <select id="sortFilter">
+            <option value="score">注目順</option>
+            <option value="latest">新着順</option>
+          </select>
+        </label>
+        <label>
+          キーワード
+          <input id="keywordFilter" type="search" placeholder="例: browser, model" />
+        </label>
+      </section>
+
+      <section>
+        <h2>Trends</h2>
+        <p id="metaText" class="meta"></p>
+        <ul id="trendList" class="trend-list"></ul>
+      </section>
+    </main>
+
+    <template id="trendItemTemplate">
+      <li class="trend-item">
+        <a class="trend-title" target="_blank" rel="noopener noreferrer"></a>
+        <p class="trend-summary"></p>
+        <div class="trend-meta">
+          <span class="badge category"></span>
+          <span class="source"></span>
+          <span class="published"></span>
+          <span class="score"></span>
+        </div>
+      </li>
+    </template>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

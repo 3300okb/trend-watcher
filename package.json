@@ -1,0 +1,11 @@
+{
+  "name": "trend-watcher",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "job:fetch": "node scripts/fetch-trends.mjs",
+    "build": "node scripts/build-static.mjs",
+    "dev": "python3 -m http.server 8080 --directory public"
+  }
+}
