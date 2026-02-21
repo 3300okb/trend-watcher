@@ -9,6 +9,7 @@ const FALLBACK_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'claude', 'codex', 'ge
 let allItems = [];
 let configuredTopics = [...FALLBACK_TOPICS];
 let currentGeneratedAt = new Date().toISOString();
+let selectedTopic = null;
 
 function formatDate(iso) {
   const d = new Date(iso);
@@ -31,9 +32,14 @@ function applyTopicTags(items, topics) {
 function renderTopicList() {
   topicList.innerHTML = '';
   for (const topic of configuredTopics) {
-    const chip = document.createElement('span');
-    chip.className =
-      'rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs font-semibold text-brand';
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.dataset.topic = topic;
+    const isActive = selectedTopic === topic;
+    chip.className = isActive
+      ? 'rounded-full border border-brand bg-brand px-3 py-1 text-xs text-cyan-700'
+      : 'rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs text-brand text-cyan-700';
+    chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     chip.textContent = topic;
     topicList.appendChild(chip);
   }
@@ -81,6 +87,10 @@ function applyFilters(generatedAt = currentGeneratedAt) {
     );
   }
 
+  if (selectedTopic) {
+    items = items.filter((x) => (x.tags || []).includes(selectedTopic));
+  }
+
   items.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
   render(items.slice(0, 120), generatedAt);
@@ -111,6 +121,14 @@ async function boot() {
     currentGeneratedAt = data.generatedAt || new Date().toISOString();
 
     keywordFilter.addEventListener('input', () => applyFilters(currentGeneratedAt));
+    topicList.addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-topic]');
+      if (!button) return;
+      const topic = button.dataset.topic;
+      selectedTopic = selectedTopic === topic ? null : topic;
+      renderTopicList();
+      applyFilters(currentGeneratedAt);
+    });
 
     renderTopicList();
     applyFilters(currentGeneratedAt);
