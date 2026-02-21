@@ -3,6 +3,7 @@ import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import http from 'node:http';
 import https from 'node:https';
 import { dirname, resolve } from 'node:path';
+import { buildGoogleNewsSearchFeedUrl, getConfiguredTopics } from './lib/runtime-config.mjs';
 
 const ROOT = resolve(new URL('..', import.meta.url).pathname);
 const SOURCES_FILE = resolve(ROOT, 'config/sources.json');
@@ -14,6 +15,7 @@ const TRANSLATION_CACHE_FILE = resolve(DATA_DIR, 'translation-cache.json');
 const REQUEST_TIMEOUT_MS = 20000;
 const MAX_ITEMS_PER_SOURCE = 30;
 const MAX_TRANSLATION_TEXT_LENGTH = 450;
+const GOOGLE_NEWS_DYNAMIC_TOKEN = '__GOOGLE_NEWS_TOPICS__';
 
 const now = new Date();
 
@@ -255,6 +257,7 @@ async function translateToJapanese(text, cache) {
 
 async function main() {
   const sources = JSON.parse(await readFile(SOURCES_FILE, 'utf8'));
+  const configuredTopics = await getConfiguredTopics();
   const logs = [];
   const deduped = new Map();
   const translationCache = await readJsonSafe(TRANSLATION_CACHE_FILE, {});
@@ -268,7 +271,9 @@ async function main() {
     let errorMessage = null;
 
     try {
-      const response = await fetchWithTimeout(source.feedUrl);
+      const feedUrl =
+        source.feedUrl === GOOGLE_NEWS_DYNAMIC_TOKEN ? buildGoogleNewsSearchFeedUrl(configuredTopics) : source.feedUrl;
+      const response = await fetchWithTimeout(feedUrl);
       httpStatus = response.status;
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
@@ -317,7 +322,8 @@ async function main() {
 
     logs.push({
       sourceName: source.name,
-      sourceFeedUrl: source.feedUrl,
+      sourceFeedUrl:
+        source.feedUrl === GOOGLE_NEWS_DYNAMIC_TOKEN ? buildGoogleNewsSearchFeedUrl(configuredTopics) : source.feedUrl,
       status,
       httpStatus,
       fetchedCount,

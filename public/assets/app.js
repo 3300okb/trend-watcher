@@ -5,9 +5,10 @@ const metaText = document.getElementById('metaText');
 const template = document.getElementById('trendItemTemplate');
 const topicList = document.getElementById('topicList');
 
-const CONFIGURED_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'Apple', 'claude', 'codex', 'gemini', 'frontend'];
+const FALLBACK_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'claude', 'codex', 'gemini', 'frontend'];
 
 let allItems = [];
+let configuredTopics = [...FALLBACK_TOPICS];
 let currentGeneratedAt = new Date().toISOString();
 
 function formatDate(iso) {
@@ -30,7 +31,7 @@ function applyTopicTags(items, topics) {
 
 function renderTopicList() {
   topicList.innerHTML = '';
-  for (const topic of CONFIGURED_TOPICS) {
+  for (const topic of configuredTopics) {
     const chip = document.createElement('span');
     chip.className =
       'rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs font-semibold text-brand';
@@ -92,13 +93,28 @@ function applyFilters(generatedAt = currentGeneratedAt) {
   render(items.slice(0, 120), generatedAt);
 }
 
+async function loadRuntimeConfig() {
+  try {
+    const response = await fetch('./data/runtime-config.json', { cache: 'no-store' });
+    if (!response.ok) return;
+    const data = await response.json();
+    if (Array.isArray(data?.topics) && data.topics.length > 0) {
+      configuredTopics = data.topics.map((x) => String(x).trim()).filter(Boolean);
+    }
+  } catch {
+    // fallback topics are used
+  }
+}
+
 async function boot() {
   try {
+    await loadRuntimeConfig();
+
     const response = await fetch('./data/trends.json', { cache: 'no-store' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();
-    allItems = applyTopicTags(data.items || [], CONFIGURED_TOPICS);
+    allItems = applyTopicTags(data.items || [], configuredTopics);
     currentGeneratedAt = data.generatedAt || new Date().toISOString();
 
     sortFilter.addEventListener('change', () => applyFilters(currentGeneratedAt));

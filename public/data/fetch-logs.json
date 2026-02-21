@@ -724,5 +724,126 @@
     "errorMessage": "HTTP 404",
     "durationMs": 138,
     "fetchedAt": "2026-02-21T09:47:25.345Z"
+  },
+  {
+    "sourceName": "OpenAI News",
+    "sourceFeedUrl": "https://openai.com/news/rss.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND openai.com",
+    "durationMs": 9,
+    "fetchedAt": "2026-02-21T09:54:08.729Z"
+  },
+  {
+    "sourceName": "Anthropic News",
+    "sourceFeedUrl": "https://www.anthropic.com/news/rss.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND www.anthropic.com",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T09:54:08.730Z"
+  },
+  {
+    "sourceName": "Google DeepMind Blog",
+    "sourceFeedUrl": "https://deepmind.google/blog/rss.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND deepmind.google",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T09:54:08.731Z"
+  },
+  {
+    "sourceName": "Google AI Blog",
+    "sourceFeedUrl": "https://blog.google/technology/ai/rss/",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND blog.google",
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T09:54:08.731Z"
+  },
+  {
+    "sourceName": "Google Cloud AI Blog",
+    "sourceFeedUrl": "https://cloud.google.com/feeds/blog/products/ai-machine-learning",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND cloud.google.com",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T09:54:08.732Z"
+  },
+  {
+    "sourceName": "Google for Developers Blog",
+    "sourceFeedUrl": "https://developers.googleblog.com/feeds/posts/default?alt=rss",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND developers.googleblog.com",
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T09:54:08.732Z"
+  },
+  {
+    "sourceName": "Google News Search (24h)",
+    "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND news.google.com",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T09:54:08.733Z"
+  },
+  {
+    "sourceName": "Chrome Developers Blog",
+    "sourceFeedUrl": "https://developer.chrome.com/blog/rss.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND developer.chrome.com",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T09:54:08.734Z"
+  },
+  {
+    "sourceName": "web.dev",
+    "sourceFeedUrl": "https://web.dev/feed.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND web.dev",
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T09:54:08.734Z"
+  },
+  {
+    "sourceName": "Frontend Focus",
+    "sourceFeedUrl": "https://frontendfoc.us/rss",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND frontendfoc.us",
+    "durationMs": 1,
+    "fetchedAt": "2026-02-21T09:54:08.735Z"
+  },
+  {
+    "sourceName": "Vercel Blog",
+    "sourceFeedUrl": "https://vercel.com/blog/rss.xml",
+    "status": "failed",
+    "httpStatus": null,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "getaddrinfo ENOTFOUND vercel.com",
+    "durationMs": 0,
+    "fetchedAt": "2026-02-21T09:54:08.735Z"
   }
 ]

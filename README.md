@@ -3,22 +3,30 @@
 共有レンタルサーバの制約（Node常駐不可）を前提にした、静的配信 + cron バッチ更新のトレンド集約アプリです。
 GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages への自動デプロイでも運用できます。
 
+## キーワード管理（.env）
+- キーワードは `.env` の `TREND_TOPICS` で管理します（カンマ区切り）。
+- 例: `TREND_TOPICS=Anthropic,OpenAI,Google,claude,codex,gemini,frontend`
+- サンプル: `.env.example`
+
 ## 主要コマンド
-- `npm run job:fetch`: RSS収集 + スコア計算 + タイトル/要約の日本語化 + `public/data/*.json` 更新
-- `npm run build`: `public/` を `out/` に出力（静的配信用）
+- `npm run sync:config`: `.env` から `public/data/runtime-config.json` を生成
+- `npm run job:fetch`: 設定同期 + RSS収集 + スコア計算 + タイトル/要約の日本語化 + `public/data/*.json` 更新
+- `npm run build`: 設定同期 + `public/` を `out/` に出力（静的配信用）
 - `npm run dev`: `public/` をローカルで確認（http://localhost:8080）
 
 ## ディレクトリ
 - `config/sources.json`: 収集対象ソース
 - `scripts/fetch-trends.mjs`: cron から呼ぶバッチ
+- `scripts/lib/runtime-config.mjs`: `.env` からキーワードを読み込む共通処理
 - `public/index.html`: Tailwind（CDN）で構築した静的UI（固定キーワード表示）
+- `public/data/runtime-config.json`: 画面表示用のキーワード設定
 - `public/data/trends.json`: 表示用データ（titleJa/summaryJa を含む）
 - `public/data/translation-cache.json`: 翻訳キャッシュ
 - 収集ソースには `Google News Search (24h)`（`when:1d`）を含む
 
 ## cron 例（15分）
 ```cron
-*/15 * * * * cd /home/user/trend-watcher && /usr/bin/node scripts/fetch-trends.mjs >> /home/user/logs/trend-fetch.log 2>&1
+*/15 * * * * cd /home/user/trend-watcher && /usr/bin/node scripts/sync-runtime-config.mjs && /usr/bin/node scripts/fetch-trends.mjs >> /home/user/logs/trend-fetch.log 2>&1
 ```
 
 ## 運用のポイント
@@ -39,8 +47,3 @@ GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages へ�
 1. このリポジトリを GitHub に push
 2. GitHub の `Settings > Pages` で `Build and deployment` を `GitHub Actions` に設定
 3. `Actions` タブから `Research And Deploy` を手動実行して初回デプロイ確認
-
-## テーマキーワード
-- キーワードはコード内で固定管理します。
-- 現在の設定: `Anthropic`, `OpenAI`, `Google`, `claude`, `codex`, `gemini`, `frontend`
-- 画面上では表示のみを行い、UIからの追加・削除・再収集は行いません。
