@@ -7,6 +7,7 @@
     "sync:config": "node scripts/sync-runtime-config.mjs",
     "build:css": "tailwindcss -i ./src/styles/tailwind.css -o ./public/assets/tailwind.css --minify",
     "job:fetch": "npm run sync:config && node scripts/fetch-trends.mjs",
+    "dispatch:research": "node scripts/dispatch-workflow.mjs",
     "build": "npm run sync:config && npm run build:css && node scripts/build-static.mjs",
     "dev": "npm run build:css && python3 -m http.server 8080 --directory public"
   },
