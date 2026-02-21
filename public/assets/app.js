@@ -10,12 +10,15 @@ const recollectButton = document.getElementById('recollectButton');
 const collectStatus = document.getElementById('collectStatus');
 
 const TOPIC_STORAGE_KEY = 'trendWatcherTopics';
+const TRANSLATION_CACHE_KEY = 'trendWatcherTranslationCache';
 const DEFAULT_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'claude', 'codex', 'gemini', 'frontend'];
 const MAX_ITEMS_PER_TOPIC = 30;
+const MAX_SUMMARY_TRANSLATE_LENGTH = 220;
 
 let allItems = [];
 let topics = [];
 let currentGeneratedAt = new Date().toISOString();
+let translationCache = {};
 
 function normalizeTopic(value) {
   return (value || '').trim();
@@ -39,6 +42,21 @@ function saveTopics() {
   localStorage.setItem(TOPIC_STORAGE_KEY, JSON.stringify(topics));
 }
 
+function loadTranslationCache() {
+  try {
+    const raw = localStorage.getItem(TRANSLATION_CACHE_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === 'object' ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveTranslationCache() {
+  localStorage.setItem(TRANSLATION_CACHE_KEY, JSON.stringify(translationCache));
+}
+
 function formatDate(iso) {
   const d = new Date(iso);
   return Number.isNaN(d.getTime()) ? '-' : d.toLocaleString('ja-JP');
@@ -50,14 +68,13 @@ function decodeHtml(text) {
   return el.value;
 }
 
-function escapeXml(text) {
-  return (text || '').replace(/[<>&"']/g, (m) => {
-    if (m === '<') return '&lt;';
-    if (m === '>') return '&gt;';
-    if (m === '&') return '&amp;';
-    if (m === '"') return '&quot;';
-    return '&#39;';
-  });
+function stripHtml(text) {
+  const parsed = new DOMParser().parseFromString(`<div>${text || ''}</div>`, 'text/html');
+  return (parsed.body.textContent || '').replace(/\s+/g, ' ').trim();
+}
+
+function isJapaneseText(text) {
+  return /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(text || '');
 }
 
 function normalizeUrl(raw) {
@@ -205,6 +222,56 @@ function toGoogleNewsFeedUrl(topic) {
   return `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=en-US&gl=US&ceid=US:en`;
 }
 
+async function fetchJsonFromUrl(url) {
+  try {
+    const direct = await fetch(url, { cache: 'no-store' });
+    if (direct.ok) return await direct.json();
+  } catch {
+    // fallback below
+  }
+  const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+  const proxy = await fetch(proxyUrl, { cache: 'no-store' });
+  if (!proxy.ok) {
+    throw new Error(`translation fetch failed (HTTP ${proxy.status})`);
+  }
+  return await proxy.json();
+}
+
+async function translateToJapanese(text) {
+  const raw = (text || '').trim();
+  if (!raw) return '';
+  if (isJapaneseText(raw)) return raw;
+  if (translationCache[raw]) return translationCache[raw];
+
+  const endpoint = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ja&dt=t&q=${encodeURIComponent(raw)}`;
+  try {
+    const payload = await fetchJsonFromUrl(endpoint);
+    const translated = Array.isArray(payload?.[0]) ? payload[0].map((part) => part?.[0] || '').join('') : '';
+    const normalized = translated.trim() || raw;
+    translationCache[raw] = normalized;
+    return normalized;
+  } catch {
+    translationCache[raw] = raw;
+    return raw;
+  }
+}
+
+async function translateEntries(entries) {
+  const translated = [];
+  for (const entry of entries) {
+    const titleJa = await translateToJapanese(entry.title);
+    const shortSummary = (entry.summary || '').slice(0, MAX_SUMMARY_TRANSLATE_LENGTH);
+    const summaryJa = shortSummary ? await translateToJapanese(shortSummary) : '';
+    translated.push({
+      ...entry,
+      titleJa,
+      summaryJa
+    });
+  }
+  saveTranslationCache();
+  return translated;
+}
+
 async function fetchFeedXml(topic) {
   const feedUrl = toGoogleNewsFeedUrl(topic);
 
@@ -232,7 +299,8 @@ function parseFeedItems(xml, topic) {
     .map((item) => {
       const title = decodeHtml(item.querySelector('title')?.textContent || '');
       const url = decodeHtml(item.querySelector('link')?.textContent || '');
-      const summary = decodeHtml(item.querySelector('description')?.textContent || '');
+      const rawDescription = decodeHtml(item.querySelector('description')?.textContent || '');
+      const summary = stripHtml(rawDescription);
       const publishedRaw = item.querySelector('pubDate')?.textContent || '';
       const published = new Date(publishedRaw);
       if (!title || !url || Number.isNaN(published.getTime())) return null;
@@ -244,9 +312,9 @@ function parseFeedItems(xml, topic) {
         sourceUrl: 'https://news.google.com/',
         sourceFeedUrl: toGoogleNewsFeedUrl(topic),
         title,
-        titleJa: title,
+        titleJa: '',
         summary: summary ? summary.replace(/\s+/g, ' ').trim() : '',
-        summaryJa: summary ? summary.replace(/\s+/g, ' ').trim() : '',
+        summaryJa: '',
         url,
         canonicalUrl,
         publishedAt: published.toISOString(),
@@ -287,7 +355,7 @@ async function recollectByTopics() {
     }
   }
 
-  const recollected = [...deduped.values()]
+  let recollected = [...deduped.values()]
     .map((item) => ({
       ...item,
       score: {
@@ -295,6 +363,8 @@ async function recollectByTopics() {
       }
     }))
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+
+  recollected = await translateEntries(recollected);
 
   allItems = recollected;
   currentGeneratedAt = new Date().toISOString();
@@ -319,6 +389,7 @@ async function boot() {
     allItems = data.items || [];
     currentGeneratedAt = data.generatedAt || new Date().toISOString();
     topics = loadTopics();
+    translationCache = loadTranslationCache();
     allItems = applyTopicTags(allItems, topics);
 
     sortFilter.addEventListener('change', () => applyFilters(currentGeneratedAt));
