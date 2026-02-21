@@ -3,7 +3,11 @@ import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import http from 'node:http';
 import https from 'node:https';
 import { dirname, resolve } from 'node:path';
-import { buildGoogleNewsSearchFeedUrl, getConfiguredTopics } from './lib/runtime-config.mjs';
+import {
+  buildGoogleNewsSearchFeedUrlEn,
+  buildGoogleNewsSearchFeedUrlJa,
+  getConfiguredTopics
+} from './lib/runtime-config.mjs';
 
 const ROOT = resolve(new URL('..', import.meta.url).pathname);
 const SOURCES_FILE = resolve(ROOT, 'config/sources.json');
@@ -15,7 +19,18 @@ const TRANSLATION_CACHE_FILE = resolve(DATA_DIR, 'translation-cache.json');
 const REQUEST_TIMEOUT_MS = 20000;
 const MAX_ITEMS_PER_SOURCE = 30;
 const MAX_TRANSLATION_TEXT_LENGTH = 450;
-const GOOGLE_NEWS_DYNAMIC_TOKEN = '__GOOGLE_NEWS_TOPICS__';
+const GOOGLE_NEWS_DYNAMIC_TOKEN_EN = '__GOOGLE_NEWS_TOPICS_EN__';
+const GOOGLE_NEWS_DYNAMIC_TOKEN_JA = '__GOOGLE_NEWS_TOPICS_JA__';
+
+function resolveSourceFeedUrl(feedUrl, configuredTopics) {
+  if (feedUrl === GOOGLE_NEWS_DYNAMIC_TOKEN_EN) {
+    return buildGoogleNewsSearchFeedUrlEn(configuredTopics);
+  }
+  if (feedUrl === GOOGLE_NEWS_DYNAMIC_TOKEN_JA) {
+    return buildGoogleNewsSearchFeedUrlJa(configuredTopics);
+  }
+  return feedUrl;
+}
 
 const now = new Date();
 
@@ -250,8 +265,7 @@ async function main() {
     let errorMessage = null;
 
     try {
-      const feedUrl =
-        source.feedUrl === GOOGLE_NEWS_DYNAMIC_TOKEN ? buildGoogleNewsSearchFeedUrl(configuredTopics) : source.feedUrl;
+      const feedUrl = resolveSourceFeedUrl(source.feedUrl, configuredTopics);
       const response = await fetchWithTimeout(feedUrl);
       httpStatus = response.status;
       if (!response.ok) {
@@ -306,8 +320,7 @@ async function main() {
 
     logs.push({
       sourceName: source.name,
-      sourceFeedUrl:
-        source.feedUrl === GOOGLE_NEWS_DYNAMIC_TOKEN ? buildGoogleNewsSearchFeedUrl(configuredTopics) : source.feedUrl,
+      sourceFeedUrl: resolveSourceFeedUrl(source.feedUrl, configuredTopics),
       status,
       httpStatus,
       fetchedCount,

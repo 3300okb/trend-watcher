@@ -36,9 +36,15 @@
     "weight": 1.0
   },
   {
-    "name": "Google News Search (24h)",
+    "name": "Google News Search EN (24h)",
     "url": "https://news.google.com/",
-    "feedUrl": "__GOOGLE_NEWS_TOPICS__",
+    "feedUrl": "__GOOGLE_NEWS_TOPICS_EN__",
+    "weight": 1.1
+  },
+  {
+    "name": "Google News Search JA (24h)",
+    "url": "https://news.google.com/",
+    "feedUrl": "__GOOGLE_NEWS_TOPICS_JA__",
     "weight": 1.1
   },
   {

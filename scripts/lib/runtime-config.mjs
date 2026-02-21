@@ -52,7 +52,22 @@ export async function getConfiguredTopics() {
   return normalizeTopics(envMap.TREND_TOPICS || '');
 }
 
-export function buildGoogleNewsSearchFeedUrl(topics) {
+function buildGoogleNewsQuery(topics) {
   const query = `(${topics.join(' OR ')}) when:1d`;
-  return `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=en-US&gl=US&ceid=US:en`;
+  return encodeURIComponent(query);
+}
+
+export function buildGoogleNewsSearchFeedUrlEn(topics) {
+  const encoded = buildGoogleNewsQuery(topics);
+  return `https://news.google.com/rss/search?q=${encoded}&hl=en-US&gl=US&ceid=US:en`;
+}
+
+export function buildGoogleNewsSearchFeedUrlJa(topics) {
+  const encoded = buildGoogleNewsQuery(topics);
+  return `https://news.google.com/rss/search?q=${encoded}&hl=ja&gl=JP&ceid=JP:ja`;
+}
+
+export function buildGoogleNewsSearchFeedUrl(topics) {
+  // Backward compatibility for existing imports.
+  return buildGoogleNewsSearchFeedUrlEn(topics);
 }
