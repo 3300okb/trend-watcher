@@ -4,19 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trend Watcher</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @font-face {
+        font-family: 'LINE Seed JP';
+        src: url('./assets/LINESeedJP_OTF_Rg.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'LINE Seed JP';
+        src: url('./assets/LINESeedJP_OTF_Bd.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['IBM Plex Sans JP', 'sans-serif']
+              sans: ['LINE Seed JP', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'sans-serif']
             },
             colors: {
               ink: '#0f172a',
@@ -41,33 +52,21 @@
         <p class="relative text-xs font-semibold uppercase tracking-[0.24em] text-brand">Trend Intelligence</p>
         <h1 class="relative mt-2 text-3xl font-bold leading-tight sm:text-4xl">Trend Watcher</h1>
         <p class="relative mt-3 max-w-2xl text-sm text-slate-600 sm:text-base">
-          web / AI / tech の最新トレンドを収集し、注目度と新着の両方で確認できます。
+          Anthropic・OpenAI・Google・Claude・Codex・Gemini・Frontend の最新トレンドを収集し、新着中心で確認できます。
         </p>
       </header>
 
       <main class="mt-6 grid gap-6">
         <section class="rounded-2xl border border-mist bg-white/85 p-4 shadow-card backdrop-blur sm:p-5">
-          <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
-            <label class="flex flex-col gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
-              カテゴリ
-              <select
-                id="categoryFilter"
-                class="rounded-xl border border-mist bg-white px-3 py-2 text-sm font-medium normal-case text-ink outline-none ring-brand/30 transition focus:ring"
-              >
-                <option value="all">All</option>
-                <option value="web">Web</option>
-                <option value="ai">AI</option>
-                <option value="tech">Tech</option>
-              </select>
-            </label>
+          <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <label class="flex flex-col gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
               表示順
               <select
                 id="sortFilter"
                 class="rounded-xl border border-mist bg-white px-3 py-2 text-sm font-medium normal-case text-ink outline-none ring-brand/30 transition focus:ring"
               >
+                <option value="latest" selected>新着順</option>
                 <option value="score">注目順</option>
-                <option value="latest">新着順</option>
               </select>
             </label>
             <label class="flex flex-col gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">

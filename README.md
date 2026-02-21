@@ -14,6 +14,7 @@ GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages へ�
 - `public/index.html`: Tailwind（CDN）で構築した静的UI（テーマキーワードの追加/削除UIを含む）
 - `public/data/trends.json`: 表示用データ（titleJa/summaryJa を含む）
 - `public/data/translation-cache.json`: 翻訳キャッシュ
+- 収集ソースには `Google News Search (24h)`（`when:1d`）を含む
 
 ## cron 例（15分）
 ```cron
@@ -40,6 +41,6 @@ GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages へ�
 3. `Actions` タブから `Research And Deploy` を手動実行して初回デプロイ確認
 
 ## テーマキーワード管理
-- 初期値は `Tech`, `AI`, `Web`
+- 初期値は `Anthropic`, `OpenAI`, `Google`, `claude`, `codex`, `gemini`, `frontend`
 - 画面上で `Add` で追加、チップの `×` で削除
 - 状態は `localStorage`（キー: `trendWatcherTopics`）に保存

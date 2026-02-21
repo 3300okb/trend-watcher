@@ -1,5 +1,4 @@
 const trendList = document.getElementById('trendList');
-const categoryFilter = document.getElementById('categoryFilter');
 const sortFilter = document.getElementById('sortFilter');
 const keywordFilter = document.getElementById('keywordFilter');
 const metaText = document.getElementById('metaText');
@@ -9,7 +8,7 @@ const topicInput = document.getElementById('topicInput');
 const topicAddButton = document.getElementById('topicAddButton');
 
 const TOPIC_STORAGE_KEY = 'trendWatcherTopics';
-const DEFAULT_TOPICS = ['Tech', 'AI', 'Web'];
+const DEFAULT_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'claude', 'codex', 'gemini', 'frontend'];
 let allItems = [];
 let topics = [];
 
@@ -109,12 +108,7 @@ function render(items, generatedAt) {
 
 function applyFilters(generatedAt) {
   let items = [...allItems];
-  const category = categoryFilter.value;
   const keyword = keywordFilter.value.trim().toLowerCase();
-
-  if (category !== 'all') {
-    items = items.filter((x) => x.category === category);
-  }
 
   if (keyword) {
     items = items.filter((x) =>
@@ -147,7 +141,6 @@ async function boot() {
     allItems = data.items || [];
     topics = loadTopics();
 
-    categoryFilter.addEventListener('change', () => applyFilters(data.generatedAt));
     sortFilter.addEventListener('change', () => applyFilters(data.generatedAt));
     keywordFilter.addEventListener('input', () => applyFilters(data.generatedAt));
     topicAddButton.addEventListener('click', () => {
