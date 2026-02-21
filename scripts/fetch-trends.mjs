@@ -292,7 +292,7 @@ async function main() {
           id: createHash('sha1').update(canonicalUrl).digest('hex'),
           sourceName: source.name,
           sourceUrl: source.url,
-          sourceFeedUrl: source.feedUrl,
+          sourceFeedUrl: feedUrl,
           category: source.category,
           title: item.title,
           summary: item.summary,

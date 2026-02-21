@@ -4,7 +4,7 @@ const metaText = document.getElementById('metaText');
 const template = document.getElementById('trendItemTemplate');
 const topicList = document.getElementById('topicList');
 
-const FALLBACK_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'claude', 'codex', 'gemini', 'frontend'];
+const FALLBACK_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'Apple', 'claude', 'codex', 'gemini', 'frontend', 'html', 'css', 'typescript', 'vue'];
 
 let allItems = [];
 let configuredTopics = [...FALLBACK_TOPICS];
@@ -37,8 +37,8 @@ function renderTopicList() {
     chip.dataset.topic = topic;
     const isActive = selectedTopic === topic;
     chip.className = isActive
-      ? 'rounded-full border border-brand bg-brand px-3 py-1 text-xs text-cyan-700'
-      : 'rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs text-brand text-cyan-700';
+      ? 'rounded-full border border-brand bg-brand px-3 py-1 text-xs text-white'
+      : 'rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs text-brand';
     chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     chip.textContent = topic;
     topicList.appendChild(chip);

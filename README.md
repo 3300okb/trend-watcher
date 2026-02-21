@@ -1,7 +1,7 @@
 # Trend Watcher
 
-共有レンタルサーバの制約（Node常駐不可）を前提にした、静的配信 + cron バッチ更新のトレンド集約アプリです。
-GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages への自動デプロイでも運用できます。
+静的配信 + cron バッチ更新のトレンド集約アプリです。
+GitHub Actions を使う場合は、1時間ごとの自動収集 + GitHub Pages への自動デプロイで運用できます。
 
 ## キーワード管理（.env）
 - キーワードは `.env` の `TREND_TOPICS` で管理します（カンマ区切り）。
@@ -19,15 +19,14 @@ GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages へ�
 - `config/sources.json`: 収集対象ソース
 - `scripts/fetch-trends.mjs`: cron から呼ぶバッチ
 - `scripts/lib/runtime-config.mjs`: `.env` からキーワードを読み込む共通処理
-- `public/index.html`: Tailwind（CDN）で構築した静的UI（固定キーワード表示）
+- `public/index.html`: Tailwind（CDN）で構築した静的UI（固定キーワード表示、topicクリック絞り込み）
 - `public/data/runtime-config.json`: 画面表示用のキーワード設定
 - `public/data/trends.json`: 表示用データ（titleJa/summaryJa を含む）
 - `public/data/translation-cache.json`: 翻訳キャッシュ
-- 収集ソースには `Google News Search (24h)`（`when:1d`）を含む
 
-## cron 例（15分）
+## cron 例（1時間）
 ```cron
-*/15 * * * * cd /home/user/trend-watcher && /usr/bin/node scripts/sync-runtime-config.mjs && /usr/bin/node scripts/fetch-trends.mjs >> /home/user/logs/trend-fetch.log 2>&1
+0 * * * * cd /home/user/trend-watcher && /usr/bin/node scripts/sync-runtime-config.mjs && /usr/bin/node scripts/fetch-trends.mjs >> /home/user/logs/trend-fetch.log 2>&1
 ```
 
 ## 運用のポイント
@@ -37,7 +36,7 @@ GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages へ�
 
 ## GitHub Actions 運用
 - ワークフロー: `.github/workflows/research-and-deploy.yml`
-- 実行タイミング: 毎日 7 回（UTC 00:00 / 02:00 / 04:00 / 06:00 / 08:00 / 10:00 / 12:00 = JST 09:00 / 11:00 / 13:00 / 15:00 / 17:00 / 19:00 / 21:00）
+- 実行タイミング: 1時間ごと（`0 * * * *`）
 - 処理内容:
   1. `npm run job:fetch` で `public/data/*.json` 更新
   2. 変更があれば自動コミットして `main` へ push
