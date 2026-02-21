@@ -493,5 +493,104 @@
     "errorMessage": null,
     "durationMs": 198,
     "fetchedAt": "2026-02-21T08:01:51.881Z"
+  },
+  {
+    "sourceName": "OpenAI News",
+    "sourceFeedUrl": "https://openai.com/news/rss.xml",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 30,
+    "insertedCount": 30,
+    "errorMessage": null,
+    "durationMs": 185,
+    "fetchedAt": "2026-02-21T08:07:20.567Z"
+  },
+  {
+    "sourceName": "Google DeepMind Blog",
+    "sourceFeedUrl": "https://deepmind.google/blog/rss.xml",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 30,
+    "insertedCount": 30,
+    "errorMessage": null,
+    "durationMs": 501,
+    "fetchedAt": "2026-02-21T08:07:21.068Z"
+  },
+  {
+    "sourceName": "Hugging Face Blog",
+    "sourceFeedUrl": "https://huggingface.co/blog/feed.xml",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 30,
+    "insertedCount": 30,
+    "errorMessage": null,
+    "durationMs": 188,
+    "fetchedAt": "2026-02-21T08:07:21.256Z"
+  },
+  {
+    "sourceName": "Chrome Developers Blog",
+    "sourceFeedUrl": "https://developer.chrome.com/blog/rss.xml",
+    "status": "failed",
+    "httpStatus": 404,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "HTTP 404",
+    "durationMs": 357,
+    "fetchedAt": "2026-02-21T08:07:21.613Z"
+  },
+  {
+    "sourceName": "Mozilla Hacks",
+    "sourceFeedUrl": "https://hacks.mozilla.org/feed/",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 20,
+    "insertedCount": 20,
+    "errorMessage": null,
+    "durationMs": 309,
+    "fetchedAt": "2026-02-21T08:07:21.922Z"
+  },
+  {
+    "sourceName": "Cloudflare Blog",
+    "sourceFeedUrl": "https://blog.cloudflare.com/rss/",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 20,
+    "insertedCount": 20,
+    "errorMessage": null,
+    "durationMs": 279,
+    "fetchedAt": "2026-02-21T08:07:22.201Z"
+  },
+  {
+    "sourceName": "TechCrunch",
+    "sourceFeedUrl": "https://techcrunch.com/feed/",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 20,
+    "insertedCount": 20,
+    "errorMessage": null,
+    "durationMs": 54,
+    "fetchedAt": "2026-02-21T08:07:22.255Z"
+  },
+  {
+    "sourceName": "The Verge",
+    "sourceFeedUrl": "https://www.theverge.com/rss/index.xml",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 10,
+    "insertedCount": 10,
+    "errorMessage": null,
+    "durationMs": 101,
+    "fetchedAt": "2026-02-21T08:07:22.356Z"
+  },
+  {
+    "sourceName": "IEEE Spectrum",
+    "sourceFeedUrl": "https://spectrum.ieee.org/rss/fulltext",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 30,
+    "insertedCount": 30,
+    "errorMessage": null,
+    "durationMs": 348,
+    "fetchedAt": "2026-02-21T08:07:22.704Z"
   }
 ]
