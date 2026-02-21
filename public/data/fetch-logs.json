@@ -878,5 +878,181 @@
     "errorMessage": "HTTP 404",
     "durationMs": 76,
     "fetchedAt": "2026-02-21T13:42:41.728Z"
+  },
+  {
+    "sourceName": "OpenAI News",
+    "sourceFeedUrl": "https://openai.com/news/rss.xml",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 30,
+    "insertedCount": 23,
+    "errorMessage": null,
+    "durationMs": 305,
+    "fetchedAt": "2026-02-21T13:47:38.201Z"
+  },
+  {
+    "sourceName": "Anthropic News",
+    "sourceFeedUrl": "https://www.anthropic.com/news/rss.xml",
+    "status": "failed",
+    "httpStatus": 404,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "HTTP 404",
+    "durationMs": 1186,
+    "fetchedAt": "2026-02-21T13:47:39.387Z"
+  },
+  {
+    "sourceName": "Google DeepMind Blog",
+    "sourceFeedUrl": "https://deepmind.google/blog/rss.xml",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 30,
+    "insertedCount": 19,
+    "errorMessage": null,
+    "durationMs": 339,
+    "fetchedAt": "2026-02-21T13:47:39.726Z"
+  },
+  {
+    "sourceName": "Google AI Blog",
+    "sourceFeedUrl": "https://blog.google/technology/ai/rss/",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 20,
+    "insertedCount": 14,
+    "errorMessage": null,
+    "durationMs": 239,
+    "fetchedAt": "2026-02-21T13:47:39.965Z"
+  },
+  {
+    "sourceName": "Google Cloud AI Blog",
+    "sourceFeedUrl": "https://cloud.google.com/feeds/blog/products/ai-machine-learning",
+    "status": "failed",
+    "httpStatus": 404,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "HTTP 404",
+    "durationMs": 428,
+    "fetchedAt": "2026-02-21T13:47:40.393Z"
+  },
+  {
+    "sourceName": "Google for Developers Blog",
+    "sourceFeedUrl": "https://developers.googleblog.com/feeds/posts/default?alt=rss",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 20,
+    "insertedCount": 0,
+    "errorMessage": null,
+    "durationMs": 357,
+    "fetchedAt": "2026-02-21T13:47:40.750Z"
+  },
+  {
+    "sourceName": "Google News Search (24h)",
+    "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 30,
+    "insertedCount": 27,
+    "errorMessage": null,
+    "durationMs": 566,
+    "fetchedAt": "2026-02-21T13:47:41.316Z"
+  },
+  {
+    "sourceName": "Chrome Developers Blog",
+    "sourceFeedUrl": "https://developer.chrome.com/blog/rss.xml",
+    "status": "failed",
+    "httpStatus": 404,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "HTTP 404",
+    "durationMs": 240,
+    "fetchedAt": "2026-02-21T13:47:41.556Z"
+  },
+  {
+    "sourceName": "web.dev",
+    "sourceFeedUrl": "https://web.dev/feed.xml",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 10,
+    "insertedCount": 0,
+    "errorMessage": null,
+    "durationMs": 623,
+    "fetchedAt": "2026-02-21T13:47:42.179Z"
+  },
+  {
+    "sourceName": "TypeScript Blog",
+    "sourceFeedUrl": "https://devblogs.microsoft.com/typescript/feed/",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 10,
+    "insertedCount": 10,
+    "errorMessage": null,
+    "durationMs": 164,
+    "fetchedAt": "2026-02-21T13:47:42.343Z"
+  },
+  {
+    "sourceName": "Vue.js Blog",
+    "sourceFeedUrl": "https://blog.vuejs.org/feed.xml",
+    "status": "failed",
+    "httpStatus": 404,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "HTTP 404",
+    "durationMs": 87,
+    "fetchedAt": "2026-02-21T13:47:42.430Z"
+  },
+  {
+    "sourceName": "MDN Blog",
+    "sourceFeedUrl": "https://developer.mozilla.org/en-US/blog/rss.xml",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 30,
+    "insertedCount": 2,
+    "errorMessage": null,
+    "durationMs": 418,
+    "fetchedAt": "2026-02-21T13:47:42.848Z"
+  },
+  {
+    "sourceName": "CSS-Tricks",
+    "sourceFeedUrl": "https://css-tricks.com/feed/",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 15,
+    "insertedCount": 15,
+    "errorMessage": null,
+    "durationMs": 535,
+    "fetchedAt": "2026-02-21T13:47:43.383Z"
+  },
+  {
+    "sourceName": "Smashing Magazine",
+    "sourceFeedUrl": "https://www.smashingmagazine.com/feed/",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 30,
+    "insertedCount": 6,
+    "errorMessage": null,
+    "durationMs": 93,
+    "fetchedAt": "2026-02-21T13:47:43.476Z"
+  },
+  {
+    "sourceName": "Frontend Focus",
+    "sourceFeedUrl": "https://frontendfoc.us/rss",
+    "status": "success",
+    "httpStatus": 200,
+    "fetchedCount": 4,
+    "insertedCount": 4,
+    "errorMessage": null,
+    "durationMs": 1028,
+    "fetchedAt": "2026-02-21T13:47:44.504Z"
+  },
+  {
+    "sourceName": "Vercel Blog",
+    "sourceFeedUrl": "https://vercel.com/blog/rss.xml",
+    "status": "failed",
+    "httpStatus": 404,
+    "fetchedCount": 0,
+    "insertedCount": 0,
+    "errorMessage": "HTTP 404",
+    "durationMs": 64,
+    "fetchedAt": "2026-02-21T13:47:44.568Z"
   }
 ]
