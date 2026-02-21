@@ -44,3 +44,8 @@ GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages へ�
 - 初期値は `Anthropic`, `OpenAI`, `Google`, `claude`, `codex`, `gemini`, `frontend`
 - 画面上で `Add` で追加、チップの `×` で削除
 - 状態は `localStorage`（キー: `trendWatcherTopics`）に保存
+
+## キーワード連動の再収集
+- テーマキーワードは表示フィルタだけでなく、再収集時の収集クエリにも使われます。
+- `再収集` ボタンを押すと、現在のキーワードで Google News（24時間以内）を再取得し、表示を更新します。
+- 収集結果のタグは `tech/ai/web` 固定ではなく、現在のキーワード（複数可）になります。
