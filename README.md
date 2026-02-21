@@ -11,7 +11,7 @@ GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages へ�
 ## ディレクトリ
 - `config/sources.json`: 収集対象ソース
 - `scripts/fetch-trends.mjs`: cron から呼ぶバッチ
-- `public/index.html`: Tailwind（CDN）で構築した静的UI（テーマキーワードの追加/削除UIを含む）
+- `public/index.html`: Tailwind（CDN）で構築した静的UI（固定キーワード表示）
 - `public/data/trends.json`: 表示用データ（titleJa/summaryJa を含む）
 - `public/data/translation-cache.json`: 翻訳キャッシュ
 - 収集ソースには `Google News Search (24h)`（`when:1d`）を含む
@@ -40,12 +40,7 @@ GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages へ�
 2. GitHub の `Settings > Pages` で `Build and deployment` を `GitHub Actions` に設定
 3. `Actions` タブから `Research And Deploy` を手動実行して初回デプロイ確認
 
-## テーマキーワード管理
-- 初期値は `Anthropic`, `OpenAI`, `Google`, `claude`, `codex`, `gemini`, `frontend`
-- 画面上で `Add` で追加、チップの `×` で削除
-- 状態は `localStorage`（キー: `trendWatcherTopics`）に保存
-
-## キーワード連動の再収集
-- テーマキーワードは表示フィルタだけでなく、再収集時の収集クエリにも使われます。
-- `再収集` ボタンを押すと、現在のキーワードで Google News（24時間以内）を再取得し、表示を更新します。
-- 収集結果のタグは `tech/ai/web` 固定ではなく、現在のキーワード（複数可）になります。
+## テーマキーワード
+- キーワードはコード内で固定管理します。
+- 現在の設定: `Anthropic`, `OpenAI`, `Google`, `claude`, `codex`, `gemini`, `frontend`
+- 画面上では表示のみを行い、UIからの追加・削除・再収集は行いません。
