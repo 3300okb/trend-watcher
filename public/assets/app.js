@@ -14,6 +14,14 @@ function formatDate(iso) {
 
 function render(items, generatedAt) {
   trendList.innerHTML = '';
+
+  if (items.length === 0) {
+    trendList.innerHTML =
+      '<li class="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-sm text-slate-500">該当する記事がありません。条件を変更してください。</li>';
+    metaText.textContent = `件数: 0 / 更新: ${formatDate(generatedAt)}`;
+    return;
+  }
+
   for (const item of items) {
     const node = template.content.cloneNode(true);
     const title = node.querySelector('.trend-title');

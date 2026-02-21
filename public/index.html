@@ -4,54 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trend Watcher</title>
-    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['IBM Plex Sans JP', 'sans-serif']
+            },
+            colors: {
+              ink: '#0f172a',
+              paper: '#f8fafc',
+              mist: '#e2e8f0',
+              brand: '#0f766e',
+              accent: '#1d4ed8'
+            },
+            boxShadow: {
+              card: '0 8px 26px rgba(15, 23, 42, 0.08)'
+            }
+          }
+        }
+      };
+    </script>
   </head>
-  <body>
-    <header class="header">
-      <h1>Trend Watcher</h1>
-      <p>web / AI / tech のトレンドを定期収集</p>
-    </header>
+  <body class="min-h-screen bg-gradient-to-br from-cyan-50 via-paper to-slate-100 text-ink antialiased">
+    <div class="mx-auto max-w-6xl px-4 pb-14 pt-8 sm:px-6 lg:px-8">
+      <header class="relative overflow-hidden rounded-3xl border border-mist bg-white/85 p-6 shadow-card backdrop-blur sm:p-8">
+        <div class="pointer-events-none absolute -right-16 -top-20 h-64 w-64 rounded-full bg-cyan-100/70 blur-2xl"></div>
+        <div class="pointer-events-none absolute -left-16 bottom-0 h-40 w-40 rounded-full bg-blue-100/70 blur-xl"></div>
+        <p class="relative text-xs font-semibold uppercase tracking-[0.24em] text-brand">Trend Intelligence</p>
+        <h1 class="relative mt-2 text-3xl font-bold leading-tight sm:text-4xl">Trend Watcher</h1>
+        <p class="relative mt-3 max-w-2xl text-sm text-slate-600 sm:text-base">
+          web / AI / tech の最新トレンドを収集し、注目度と新着の両方で確認できます。
+        </p>
+      </header>
 
-    <main class="container">
-      <section class="controls">
-        <label>
-          カテゴリ
-          <select id="categoryFilter">
-            <option value="all">All</option>
-            <option value="web">Web</option>
-            <option value="ai">AI</option>
-            <option value="tech">Tech</option>
-          </select>
-        </label>
-        <label>
-          表示順
-          <select id="sortFilter">
-            <option value="score">注目順</option>
-            <option value="latest">新着順</option>
-          </select>
-        </label>
-        <label>
-          キーワード
-          <input id="keywordFilter" type="search" placeholder="例: browser, model" />
-        </label>
-      </section>
+      <main class="mt-6 grid gap-6">
+        <section class="rounded-2xl border border-mist bg-white/85 p-4 shadow-card backdrop-blur sm:p-5">
+          <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+            <label class="flex flex-col gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
+              カテゴリ
+              <select
+                id="categoryFilter"
+                class="rounded-xl border border-mist bg-white px-3 py-2 text-sm font-medium normal-case text-ink outline-none ring-brand/30 transition focus:ring"
+              >
+                <option value="all">All</option>
+                <option value="web">Web</option>
+                <option value="ai">AI</option>
+                <option value="tech">Tech</option>
+              </select>
+            </label>
+            <label class="flex flex-col gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
+              表示順
+              <select
+                id="sortFilter"
+                class="rounded-xl border border-mist bg-white px-3 py-2 text-sm font-medium normal-case text-ink outline-none ring-brand/30 transition focus:ring"
+              >
+                <option value="score">注目順</option>
+                <option value="latest">新着順</option>
+              </select>
+            </label>
+            <label class="flex flex-col gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
+              キーワード
+              <input
+                id="keywordFilter"
+                type="search"
+                placeholder="例: browser, model"
+                class="rounded-xl border border-mist bg-white px-3 py-2 text-sm normal-case text-ink outline-none ring-brand/30 transition placeholder:text-slate-400 focus:ring"
+              />
+            </label>
+          </div>
+        </section>
 
-      <section>
-        <h2>Trends</h2>
-        <p id="metaText" class="meta"></p>
-        <ul id="trendList" class="trend-list"></ul>
-      </section>
-    </main>
+        <section class="rounded-2xl border border-mist bg-white/90 p-4 shadow-card sm:p-6">
+          <div class="mb-4 flex items-end justify-between gap-4">
+            <h2 class="text-xl font-semibold">Trends</h2>
+            <p id="metaText" class="meta text-xs text-slate-500 sm:text-sm"></p>
+          </div>
+          <ul id="trendList" class="trend-list grid gap-3 sm:gap-4"></ul>
+        </section>
+      </main>
+    </div>
 
     <template id="trendItemTemplate">
-      <li class="trend-item">
-        <a class="trend-title" target="_blank" rel="noopener noreferrer"></a>
-        <p class="trend-summary"></p>
-        <div class="trend-meta">
-          <span class="badge category"></span>
-          <span class="source"></span>
+      <li
+        class="trend-item group rounded-2xl border border-slate-200 bg-white p-4 transition duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-card"
+      >
+        <a
+          class="trend-title text-base font-semibold leading-6 text-accent transition group-hover:text-blue-700 sm:text-lg"
+          target="_blank"
+          rel="noopener noreferrer"
+        ></a>
+        <p class="trend-summary mt-2 line-clamp-2 text-sm leading-6 text-slate-600"></p>
+        <div class="trend-meta mt-3 flex flex-wrap items-center gap-2 text-xs text-slate-500">
+          <span class="badge category rounded-full border border-cyan-200 bg-cyan-50 px-2.5 py-1 font-semibold uppercase tracking-wide text-brand"></span>
+          <span class="source rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1"></span>
           <span class="published"></span>
-          <span class="score"></span>
+          <span class="score font-semibold text-slate-700"></span>
         </div>
       </li>
     </template>

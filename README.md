@@ -11,7 +11,7 @@ GitHub Actions を使う場合は、1日2回の自動収集 + GitHub Pages へ�
 ## ディレクトリ
 - `config/sources.json`: 収集対象ソース
 - `scripts/fetch-trends.mjs`: cron から呼ぶバッチ
-- `public/index.html`: 静的UI
+- `public/index.html`: Tailwind（CDN）で構築した静的UI
 - `public/data/trends.json`: 表示用データ
 
 ## cron 例（15分）
