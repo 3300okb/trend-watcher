@@ -8,7 +8,7 @@ GitHub Actions で収集とデプロイを実行し、毎時05分に定期更新
 - 例: `TREND_TOPICS=Anthropic,OpenAI,Google,Apple,claude,codex,gemini,frontend,html,css,typescript,vue`
 - 除外語は `.env` の `TREND_EXCLUDE_PATTERNS` で管理します（カンマ区切り）。
 - 例: `TREND_EXCLUDE_PATTERNS=Mrs. GREEN APPLE`
-- サンプル: `.env.example`
+- 設定ファイルは `.env` のみを使用します。
 - GitHub Actions は `.env` を読み込んで実行します（workflow の `Load .env` ステップ）。
 
 ## 主要コマンド
