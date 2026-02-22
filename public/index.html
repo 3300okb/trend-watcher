@@ -50,6 +50,17 @@
       </header>
 
       <main class="grid gap-6">
+        <section id="savedSection" class="hidden rounded-2xl border border-cyan-200 bg-white/90 p-4 sm:p-6">
+          <div class="mb-3 flex items-center justify-between">
+            <h2 class="text-sm font-semibold text-slate-700">
+              Saved
+              <span id="savedCount" class="ml-1 inline-flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-cyan-100 px-1.5 text-xs text-cyan-700"></span>
+            </h2>
+            <button id="clearSavedBtn" class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs text-slate-400 hover:border-red-300 hover:bg-red-50 hover:text-red-600 transition font-seed" type="button">Clear all</button>
+          </div>
+          <ul id="savedList" class="grid gap-2 list-none"></ul>
+        </section>
+
         <section class="rounded-2xl border border-mist bg-white/85 p-4 backdrop-blur sm:p-5">
           <div class="grid grid-cols-1 gap-3 sm:grid-cols-1">
             <label class="flex flex-col gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
@@ -78,11 +89,18 @@
 
     <template id="trendItemTemplate">
       <li class="trend-item group rounded-2xl border border-slate-200 bg-white p-4 transition duration-200">
-        <a
-          class="trend-title text-base font-semibold leading-6 text-accent transition text-blue-700 sm:text-lg font-bold hover:underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
+        <div class="flex items-start justify-between gap-2">
+          <a
+            class="trend-title text-base font-semibold leading-6 text-accent transition text-blue-700 sm:text-lg font-bold hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+          <button
+            class="save-btn shrink-0 rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs text-slate-500 hover:border-cyan-300 hover:bg-cyan-50 hover:text-cyan-700 transition font-seed"
+            type="button"
+            aria-label="Save"
+          >Save</button>
+        </div>
         <p class="trend-summary mt-2 line-clamp-2 text-sm leading-6 text-slate-600"></p>
         <div class="trend-meta mt-3 flex flex-wrap items-center gap-2 text-xs text-slate-500">
           <span class="category rounded-full border border-cyan-200 bg-cyan-50 px-2.5 py-1 tracking-wide text-cyan-700"></span>

@@ -3,6 +3,12 @@ const keywordFilter = document.getElementById('keywordFilter');
 const metaText = document.getElementById('metaText');
 const template = document.getElementById('trendItemTemplate');
 const topicList = document.getElementById('topicList');
+const savedSection = document.getElementById('savedSection');
+const savedList = document.getElementById('savedList');
+const savedCount = document.getElementById('savedCount');
+const clearSavedBtn = document.getElementById('clearSavedBtn');
+
+const STORAGE_KEY = 'trend-watcher-saved';
 
 const FALLBACK_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'Apple', 'claude', 'codex', 'gemini', 'frontend', 'html', 'css', 'typescript', 'vue'];
 const FALLBACK_EXCLUDE_PATTERNS = ['Mrs. GREEN APPLE'];
@@ -17,6 +23,112 @@ function formatDate(iso) {
   const d = new Date(iso);
   return Number.isNaN(d.getTime()) ? '-' : d.toLocaleString('en-US');
 }
+
+// --- localStorage helpers ---
+
+function loadSaved() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+  } catch {
+    return [];
+  }
+}
+
+function persistSaved(items) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+}
+
+function saveItem(item) {
+  const saved = loadSaved();
+  if (!saved.some((s) => s.id === item.id)) {
+    saved.unshift({
+      id: item.id,
+      url: item.canonicalUrl || item.url,
+      title: item.titleJa || item.title,
+      sourceName: item.sourceName,
+      publishedAt: item.publishedAt,
+    });
+    persistSaved(saved);
+  }
+  renderSavedList();
+  updateSaveBtnStates();
+}
+
+function removeItem(id) {
+  persistSaved(loadSaved().filter((s) => s.id !== id));
+  renderSavedList();
+  updateSaveBtnStates();
+}
+
+function setSaveBtnState(btn, saved) {
+  if (saved) {
+    btn.textContent = 'Saved';
+    btn.classList.add('border-cyan-300', 'bg-cyan-50', 'text-cyan-700');
+    btn.classList.remove('border-slate-200', 'bg-slate-50', 'text-slate-500');
+  } else {
+    btn.textContent = 'Save';
+    btn.classList.remove('border-cyan-300', 'bg-cyan-50', 'text-cyan-700');
+    btn.classList.add('border-slate-200', 'bg-slate-50', 'text-slate-500');
+  }
+}
+
+function updateSaveBtnStates() {
+  const savedIds = new Set(loadSaved().map((s) => s.id));
+  document.querySelectorAll('.trend-item[data-item-id]').forEach((li) => {
+    const btn = li.querySelector('.save-btn');
+    if (!btn) return;
+    setSaveBtnState(btn, savedIds.has(li.dataset.itemId));
+  });
+}
+
+function renderSavedList() {
+  const saved = loadSaved();
+  savedList.innerHTML = '';
+
+  if (saved.length === 0) {
+    savedSection.classList.add('hidden');
+    return;
+  }
+
+  savedSection.classList.remove('hidden');
+  savedCount.textContent = saved.length;
+
+  for (const item of saved) {
+    const li = document.createElement('li');
+    li.className = 'flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3';
+    li.dataset.savedId = item.id;
+
+    const info = document.createElement('div');
+    info.className = 'flex-1 min-w-0';
+
+    const link = document.createElement('a');
+    link.className = 'text-sm font-semibold text-blue-700 hover:underline leading-5 font-seed';
+    link.href = item.url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = item.title;
+
+    const meta = document.createElement('p');
+    meta.className = 'mt-1 text-xs text-slate-500 font-seed';
+    meta.textContent = `${item.sourceName || '-'} · ${formatDate(item.publishedAt)}`;
+
+    info.appendChild(link);
+    info.appendChild(meta);
+
+    const removeBtn = document.createElement('button');
+    removeBtn.type = 'button';
+    removeBtn.className =
+      'shrink-0 self-center rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs text-slate-400 hover:border-red-300 hover:bg-red-50 hover:text-red-600 transition font-seed';
+    removeBtn.textContent = 'Remove';
+    removeBtn.addEventListener('click', () => removeItem(item.id));
+
+    li.appendChild(info);
+    li.appendChild(removeBtn);
+    savedList.appendChild(li);
+  }
+}
+
+// --- Existing functions ---
 
 function isTopicFalsePositive(topic, text) {
   if ((topic || '').toLowerCase() !== 'apple') return false;
@@ -72,6 +184,7 @@ function renderTopicList() {
 
 function render(items, generatedAt) {
   trendList.innerHTML = '';
+  const savedIds = new Set(loadSaved().map((s) => s.id));
 
   if (items.length === 0) {
     trendList.innerHTML =
@@ -82,11 +195,15 @@ function render(items, generatedAt) {
 
   for (const item of items) {
     const node = template.content.cloneNode(true);
+    const li = node.querySelector('.trend-item');
     const title = node.querySelector('.trend-title');
     const summary = node.querySelector('.trend-summary');
     const category = node.querySelector('.category');
     const source = node.querySelector('.source');
     const published = node.querySelector('.published');
+    const saveBtn = node.querySelector('.save-btn');
+
+    li.dataset.itemId = item.id;
 
     title.textContent = item.titleJa || item.title;
     title.href = item.canonicalUrl || item.url;
@@ -94,6 +211,17 @@ function render(items, generatedAt) {
     category.textContent = (item.tags || []).join(', ') || '-';
     source.textContent = item.sourceName || '-';
     published.textContent = formatDate(item.publishedAt);
+
+    setSaveBtnState(saveBtn, savedIds.has(item.id));
+    saveBtn.addEventListener('click', () => {
+      const isCurrentlySaved = loadSaved().some((s) => s.id === item.id);
+      if (isCurrentlySaved) {
+        removeItem(item.id);
+      } else {
+        saveItem(item);
+      }
+    });
+
     trendList.appendChild(node);
   }
 
@@ -158,7 +286,14 @@ async function boot() {
       applyFilters(currentGeneratedAt);
     });
 
+    clearSavedBtn.addEventListener('click', () => {
+      persistSaved([]);
+      renderSavedList();
+      updateSaveBtnStates();
+    });
+
     renderTopicList();
+    renderSavedList();
     applyFilters(currentGeneratedAt);
   } catch (error) {
     metaText.textContent = `Failed to load data: ${error.message}`;
