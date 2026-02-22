@@ -1,5 +1,4 @@
 const trendList = document.getElementById('trendList');
-const keywordFilter = document.getElementById('keywordFilter');
 const metaText = document.getElementById('metaText');
 const template = document.getElementById('trendItemTemplate');
 const topicList = document.getElementById('topicList');
@@ -230,15 +229,6 @@ function render(items, generatedAt) {
 
 function applyFilters(generatedAt = currentGeneratedAt) {
   let items = [...allItems];
-  const keyword = keywordFilter.value.trim().toLowerCase();
-
-  if (keyword) {
-    items = items.filter((x) =>
-      `${x.titleJa || ''} ${x.summaryJa || ''} ${x.title || ''} ${x.summary || ''} ${(x.tags || []).join(' ')}`
-        .toLowerCase()
-        .includes(keyword)
-    );
-  }
 
   if (selectedTopic) {
     items = items.filter((x) => (x.tags || []).includes(selectedTopic));
@@ -276,7 +266,6 @@ async function boot() {
     allItems = applyTopicTags(data.items || [], configuredTopics);
     currentGeneratedAt = data.generatedAt || new Date().toISOString();
 
-    keywordFilter.addEventListener('input', () => applyFilters(currentGeneratedAt));
     topicList.addEventListener('click', (event) => {
       const button = event.target.closest('button[data-topic]');
       if (!button) return;
