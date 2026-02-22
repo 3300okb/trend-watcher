@@ -2,6 +2,7 @@ import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
 export const DEFAULT_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'claude', 'codex', 'gemini', 'frontend'];
+export const DEFAULT_EXCLUDE_PATTERNS = ['Mrs. GREEN APPLE'];
 const ENV_FILE = resolve(new URL('../../.env', import.meta.url).pathname);
 
 function parseEnvText(text) {
@@ -43,6 +44,15 @@ function normalizeTopics(input) {
   return topics.length > 0 ? [...new Set(topics)] : [...DEFAULT_TOPICS];
 }
 
+function normalizeExcludePatterns(input) {
+  const patterns = (input || '')
+    .split(',')
+    .map((x) => x.trim())
+    .filter(Boolean);
+
+  return patterns.length > 0 ? [...new Set(patterns)] : [...DEFAULT_EXCLUDE_PATTERNS];
+}
+
 export async function getConfiguredTopics() {
   if (process.env.TREND_TOPICS && process.env.TREND_TOPICS.trim()) {
     return normalizeTopics(process.env.TREND_TOPICS);
@@ -50,6 +60,15 @@ export async function getConfiguredTopics() {
 
   const envMap = await loadEnvFile();
   return normalizeTopics(envMap.TREND_TOPICS || '');
+}
+
+export async function getConfiguredExcludePatterns() {
+  if (process.env.TREND_EXCLUDE_PATTERNS && process.env.TREND_EXCLUDE_PATTERNS.trim()) {
+    return normalizeExcludePatterns(process.env.TREND_EXCLUDE_PATTERNS);
+  }
+
+  const envMap = await loadEnvFile();
+  return normalizeExcludePatterns(envMap.TREND_EXCLUDE_PATTERNS || '');
 }
 
 function buildGoogleNewsQuery(topics) {

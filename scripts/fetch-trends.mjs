@@ -6,6 +6,7 @@ import { dirname, resolve } from 'node:path';
 import {
   buildGoogleNewsSearchFeedUrlEn,
   buildGoogleNewsSearchFeedUrlJa,
+  getConfiguredExcludePatterns,
   getConfiguredTopics
 } from './lib/runtime-config.mjs';
 
@@ -157,6 +158,15 @@ function matchTopics(article, configuredTopics) {
   });
 }
 
+function shouldExcludeArticle(article, excludePatterns) {
+  if (!Array.isArray(excludePatterns) || excludePatterns.length === 0) return false;
+  const text = `${article.title || ''} ${article.summary || ''}`.toLowerCase();
+  return excludePatterns.some((pattern) => {
+    const normalized = String(pattern || '').trim().toLowerCase();
+    return normalized ? text.includes(normalized) : false;
+  });
+}
+
 async function fetchWithTimeout(url) {
   if (typeof fetch !== 'function') {
     return fetchWithNodeHttp(url, REQUEST_TIMEOUT_MS);
@@ -263,6 +273,7 @@ async function translateToJapanese(text, cache) {
 async function main() {
   const sources = JSON.parse(await readFile(SOURCES_FILE, 'utf8'));
   const configuredTopics = await getConfiguredTopics();
+  const excludePatterns = await getConfiguredExcludePatterns();
   const logs = [];
   const deduped = new Map();
   const translationCache = await readJsonSafe(TRANSLATION_CACHE_FILE, {});
@@ -305,6 +316,8 @@ async function main() {
           hashTitle: titleHash(item.title),
           tags: []
         };
+
+        if (shouldExcludeArticle(article, excludePatterns)) continue;
 
         const matchedTopics = matchTopics(article, configuredTopics);
         if (matchedTopics.length === 0) continue;

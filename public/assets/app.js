@@ -5,9 +5,11 @@ const template = document.getElementById('trendItemTemplate');
 const topicList = document.getElementById('topicList');
 
 const FALLBACK_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'Apple', 'claude', 'codex', 'gemini', 'frontend', 'html', 'css', 'typescript', 'vue'];
+const FALLBACK_EXCLUDE_PATTERNS = ['Mrs. GREEN APPLE'];
 
 let allItems = [];
 let configuredTopics = [...FALLBACK_TOPICS];
+let configuredExcludePatterns = [...FALLBACK_EXCLUDE_PATTERNS];
 let currentGeneratedAt = new Date().toISOString();
 let selectedTopic = null;
 
@@ -33,8 +35,19 @@ function detectTagsFromTopics(item, topics) {
   return [...new Set(matched)];
 }
 
+function shouldExcludeItem(item, excludePatterns) {
+  if (!Array.isArray(excludePatterns) || excludePatterns.length === 0) return false;
+  const text = `${item.titleJa || ''} ${item.summaryJa || ''} ${item.title || ''} ${item.summary || ''}`.toLowerCase();
+  return excludePatterns.some((pattern) => {
+    const normalized = String(pattern || '').trim().toLowerCase();
+    return normalized ? text.includes(normalized) : false;
+  });
+}
+
 function applyTopicTags(items, topics) {
-  return items.map((item) => {
+  return items
+    .filter((item) => !shouldExcludeItem(item, configuredExcludePatterns))
+    .map((item) => {
     const existing = Array.isArray(item.tags) ? item.tags.filter(Boolean) : [];
     const tags = existing.length > 0 ? [...new Set(existing)] : detectTagsFromTopics(item, topics);
     return { ...item, tags };
@@ -115,6 +128,9 @@ async function loadRuntimeConfig() {
     const data = await response.json();
     if (Array.isArray(data?.topics) && data.topics.length > 0) {
       configuredTopics = data.topics.map((x) => String(x).trim()).filter(Boolean);
+    }
+    if (Array.isArray(data?.excludePatterns) && data.excludePatterns.length > 0) {
+      configuredExcludePatterns = data.excludePatterns.map((x) => String(x).trim()).filter(Boolean);
     }
   } catch {
     // fallback topics are used
