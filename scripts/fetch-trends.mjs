@@ -141,9 +141,20 @@ function parseFeed(xml) {
   return parseAtomEntries(xml);
 }
 
+function isTopicFalsePositive(topic, text) {
+  if (topic.toLowerCase() !== 'apple') return false;
+  return /mrs\.?\s*green\s*apple/i.test(text);
+}
+
 function matchTopics(article, configuredTopics) {
-  const text = `${article.title || ''} ${article.summary || ''}`.toLowerCase();
-  return configuredTopics.filter((topic) => text.includes(topic.toLowerCase()));
+  const rawText = `${article.title || ''} ${article.summary || ''}`;
+  const text = rawText.toLowerCase();
+  return configuredTopics.filter((topic) => {
+    const normalized = topic.toLowerCase();
+    if (!text.includes(normalized)) return false;
+    if (isTopicFalsePositive(topic, rawText)) return false;
+    return true;
+  });
 }
 
 async function fetchWithTimeout(url) {

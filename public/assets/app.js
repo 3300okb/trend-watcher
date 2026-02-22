@@ -16,9 +16,20 @@ function formatDate(iso) {
   return Number.isNaN(d.getTime()) ? '-' : d.toLocaleString('en-US');
 }
 
+function isTopicFalsePositive(topic, text) {
+  if ((topic || '').toLowerCase() !== 'apple') return false;
+  return /mrs\.?\s*green\s*apple/i.test(text);
+}
+
 function detectTagsFromTopics(item, topics) {
-  const text = `${item.titleJa || ''} ${item.summaryJa || ''} ${item.title || ''} ${item.summary || ''}`.toLowerCase();
-  const matched = topics.filter((topic) => text.includes(topic.toLowerCase()));
+  const rawText = `${item.titleJa || ''} ${item.summaryJa || ''} ${item.title || ''} ${item.summary || ''}`;
+  const text = rawText.toLowerCase();
+  const matched = topics.filter((topic) => {
+    const normalized = (topic || '').toLowerCase();
+    if (!text.includes(normalized)) return false;
+    if (isTopicFalsePositive(topic, rawText)) return false;
+    return true;
+  });
   return [...new Set(matched)];
 }
 
