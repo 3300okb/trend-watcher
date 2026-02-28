@@ -69,7 +69,7 @@ setTimeout(() => controller.abort(), 20000);
 
 ## 設定読み込み
 キーワード・除外パターンの読み込みは必ず `scripts/lib/runtime-config.mjs` の関数を使う。
-直接 `.env` を読み込む実装を各スクリプトに重複させない。
+直接 `config/keywords.json` を読み込む実装を各スクリプトに重複させない。
 
 ```javascript
 import { getConfiguredTopics, getConfiguredExcludePatterns } from './lib/runtime-config.mjs';
@@ -112,7 +112,7 @@ url.pathname = url.pathname.slice(0, -1);
 ## 禁止事項
 - `require()` の使用（ESM プロジェクト）
 - `console.log` / デバッグ出力をコミットに含める（バッチの通常ログは可）
-- `.env` ファイルをコミットする（機密情報を含む）
+- `.env` ファイルをコミットする（`.gitignore` 対象・シークレット管理用）
 - `public/data/` 以下への直接 `writeFile`（atomic rename パターンを使う）
 - `out/` ディレクトリをコミットする（.gitignore 対象）
 - 翻訳 API の URL やクライアント ID をハードコードしたまま変更しない（仕様変更に弱いため）

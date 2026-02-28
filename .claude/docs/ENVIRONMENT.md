@@ -1,25 +1,29 @@
 # 環境設定
 
-## 必須環境変数
+## キーワード設定
 
-`.env` ファイルに以下を定義する（GitHub Actions は `Load .env` ステップで読み込む）。
+キーワード・除外パターンは `config/keywords.json` で管理する（git 管理対象）。
 
-| 変数名 | 必須 | 説明 | 例 |
-|-------|------|------|---|
-| `TREND_TOPICS` | 推奨 | 収集・表示対象キーワード（カンマ区切り） | `Anthropic,OpenAI,Google,claude` |
-| `TREND_EXCLUDE_PATTERNS` | 任意 | 除外するキーワードパターン（カンマ区切り） | `Mrs. GREEN APPLE` |
+```json
+{
+  "topics": ["Anthropic", "OpenAI", ...],
+  "excludePatterns": ["Mrs. GREEN APPLE", ...]
+}
+```
 
-### デフォルト値（.env 未設定時）
+| フィールド | 説明 |
+|-----------|------|
+| `topics` | 収集・表示対象キーワード（JSON 配列） |
+| `excludePatterns` | 除外するキーワードパターン（JSON 配列） |
+
+### process.env による上書き
+`process.env.TREND_TOPICS` / `process.env.TREND_EXCLUDE_PATTERNS` が設定されている場合はそちらが優先される（カンマ区切り文字列）。
+
+### デフォルト値（keywords.json 読み込み失敗時）
 `scripts/lib/runtime-config.mjs` に定義されたデフォルト値が使われる：
 ```javascript
-DEFAULT_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'claude', 'codex', 'gemini', 'frontend']
+DEFAULT_TOPICS = ['Apple']
 DEFAULT_EXCLUDE_PATTERNS = ['Mrs. GREEN APPLE']
-```
-
-### 現在の設定（.env）
-```
-TREND_TOPICS=Anthropic,OpenAI,Google,Apple,claude,codex,gemini,frontend,html,css,typescript,vue
-TREND_EXCLUDE_PATTERNS=Mrs. GREEN APPLE
 ```
 
 ## ローカル開発環境のセットアップ
@@ -38,10 +42,8 @@ cd trend-watcher
 # 2. 依存パッケージのインストール
 npm ci
 
-# 3. .env を編集（必要に応じてキーワードをカスタマイズ）
-# .env はリポジトリ管理対象（GitHub Actions が直接読み込む）
-# TREND_TOPICS=Anthropic,OpenAI,claude
-# TREND_EXCLUDE_PATTERNS=Mrs. GREEN APPLE
+# 3. キーワードをカスタマイズする場合は config/keywords.json を編集
+# （git 管理対象のため、変更は push すれば GitHub Actions に反映される）
 
 # 4. 設定を同期（public/data/runtime-config.json を生成）
 npm run sync:config
@@ -61,7 +63,7 @@ Dockerfile / docker-compose.yml は存在しない。コンテナ化は未対応
 
 | | ローカル開発 | GitHub Actions (CI/CD) |
 |---|---|---|
-| `.env` 読み込み | `scripts/lib/runtime-config.mjs` が直接ファイルを読む | `Load .env` ステップで `GITHUB_ENV` に展開 |
+| キーワード読み込み | `config/keywords.json` を直接読む | checkout 後の `config/keywords.json` を読む |
 | Node.js バージョン | ローカルインストール版 | v20（`setup-node@v4` で指定） |
 | `runtime-config.json` | `npm run sync:config` で手動生成 | `npm run job:fetch` の冒頭で自動生成 |
 | データ更新後の git push | 手動（または不要） | 自動コミット + push |

@@ -7,16 +7,16 @@ GitHub Actions で RSS 収集・翻訳・デプロイを 1 時間ごとに自動
 ## ディレクトリ構成
 ```
 trend-watcher/
-├── .env                          # 環境変数（TREND_TOPICS, TREND_EXCLUDE_PATTERNS）
 ├── .github/
 │   └── workflows/
 │       └── research-and-deploy.yml  # CI/CD パイプライン（毎時05分 + push トリガー）
 ├── config/
+│   ├── keywords.json             # キーワード・除外パターン設定（TREND_TOPICS / TREND_EXCLUDE_PATTERNS）
 │   └── sources.json              # RSS フィードソース定義
 ├── scripts/                      # バッチスクリプト（ESM / .mjs）
 │   ├── fetch-trends.mjs          # メインバッチ: RSS取得 → フィルタ → 翻訳 → JSON出力
 │   ├── build-static.mjs          # public/ → out/ へのコピー（静的ビルド）
-│   ├── sync-runtime-config.mjs   # .env → public/data/runtime-config.json 生成
+│   ├── sync-runtime-config.mjs   # config/keywords.json → public/data/runtime-config.json 生成
 │   ├── dispatch-workflow.mjs     # GitHub Actions ワークフロー手動ディスパッチ
 │   └── lib/
 │       └── runtime-config.mjs   # 共通: キーワード・除外パターン読み込み・Google News URL生成
@@ -47,7 +47,7 @@ trend-watcher/
 | ファイル | 役割 |
 |---------|------|
 | `scripts/fetch-trends.mjs` | RSS フェッチ・パース・トピックマッチング・翻訳・JSON atomic 書き込み |
-| `scripts/sync-runtime-config.mjs` | `.env` → `runtime-config.json` 変換 |
+| `scripts/sync-runtime-config.mjs` | `config/keywords.json` → `runtime-config.json` 変換 |
 | `scripts/build-static.mjs` | `public/` → `out/` コピー + `.nojekyll` 配置 |
 | `scripts/lib/runtime-config.mjs` | キーワード/除外パターン管理の共通ロジック |
 
@@ -61,7 +61,7 @@ trend-watcher/
 ### 設定・データレイヤー
 | ファイル | 役割 |
 |---------|------|
-| `.env` | キーワード・除外パターンの唯一の設定源 |
+| `config/keywords.json` | キーワード・除外パターンの設定源 |
 | `config/sources.json` | RSS ソース URL・名前の定義 |
 | `public/data/trends.json` | バッチ生成のメインデータ |
 | `public/data/translation-cache.json` | 翻訳 API 呼び出しのキャッシュ |
@@ -70,7 +70,7 @@ trend-watcher/
 
 ### バッチ実行時（GitHub Actions / cron）
 ```
-.env
+config/keywords.json
   ↓ getConfiguredTopics() / getConfiguredExcludePatterns()
 config/sources.json
   ↓ feedUrl 解決（Google News 動的 URL 含む）
