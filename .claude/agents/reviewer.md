@@ -32,7 +32,7 @@ coder の実装を多角的な視点でレビューし、本番投入前の最�
 - [ ] `public/data/` 以下への書き込みは `atomicWriteJson` 経由か
 - [ ] 外部 API（翻訳など）呼び出し失敗時のフォールバックがあるか
 - [ ] `.env` や API キーなどの機密情報をコードやログに出力していないか
-- [ ] GitHub Actions の `.env` 読み込みステップとの整合性があるか
+- [ ] `config/keywords.json` を直接読み込む実装が重複していないか（`runtime-config.mjs` 経由で使うこと）
 
 ## 出力フォーマット
 ```

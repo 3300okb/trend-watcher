@@ -53,7 +53,7 @@ ci(workflow): スケジュール実行を毎時05分に変更
 **実行ステップ:**
 ```
 1. Checkout
-2. Load .env（GITHUB_ENV に変数を展開）
+2. Load .env（.env が存在する場合のみ GITHUB_ENV に展開）
 3. Setup Node.js v20（npm キャッシュ有効）
 4. npm ci
 5. npm run job:fetch（RSS 取得・翻訳・JSON 更新）
@@ -76,10 +76,11 @@ ci(workflow): スケジュール実行を毎時05分に変更
 node_modules/    # npm パッケージ
 out/             # 静的ビルド出力（CI が生成）
 .DS_Store        # macOS メタデータ
-public/data/runtime-config.json  # .env から生成されるため
+public/data/runtime-config.json  # config/keywords.json から生成されるため（毎回再生成）
+.env                              # シークレット管理用（将来用途）
 ```
 
 ## 注意事項
-- `.env` は**リポジトリにコミットする**。GitHub Actions の `Load .env` ステップがリポジトリ内の `.env` を直接読み込むため、push が必要
-- `.env` には API キー等の機密情報は含まれない（キーワードリストのみ）。機密情報を追加する場合は GitHub Secrets を使うこと
+- キーワード設定（`TREND_TOPICS` / `TREND_EXCLUDE_PATTERNS`）は `config/keywords.json` で管理する。git 管理対象のため push すれば GitHub Actions に反映される
+- `.env` は**リポジトリにコミットしない**（`.gitignore` 対象）。将来シークレットが必要になった場合は GitHub Secrets を使うこと
 - `public/data/` 以下のデータファイル（trends.json 等）は GitHub Actions が管理するため、手動で編集・コミットしない

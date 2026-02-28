@@ -27,7 +27,7 @@ tools: read_file, list_directory, search_files, run_command, web_search
 - `scripts/lib/runtime-config.mjs`: キーワード・除外パターン管理の共通ロジック
 - `scripts/fetch-trends.mjs`: RSS取得・翻訳・JSON出力のメインバッチ
 - `public/data/fetch-logs.json`: 最新のバッチ実行ログでエラーを確認する
-- `.env`: `TREND_TOPICS` / `TREND_EXCLUDE_PATTERNS` 設定値を確認する
+- `config/keywords.json`: `topics` / `excludePatterns` 設定値を確認する
 
 ## 出力フォーマット
 調査完了時は以下の形式で報告する：

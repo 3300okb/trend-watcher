@@ -62,7 +62,7 @@ npm run build
 # CSS のみビルド
 npm run build:css
 
-# .env → public/data/runtime-config.json 同期
+# config/keywords.json → public/data/runtime-config.json 同期
 npm run sync:config
 ```
 
@@ -75,7 +75,7 @@ npm run sync:config
 | `scripts/fetch-trends.mjs` | メインバッチ: RSS取得・翻訳・JSON 書き込み |
 | `scripts/lib/runtime-config.mjs` | キーワード・除外パターンの共通管理 |
 | `config/sources.json` | RSS フィードソース定義 |
-| `.env` | `TREND_TOPICS` / `TREND_EXCLUDE_PATTERNS` 設定 |
+| `config/keywords.json` | `TREND_TOPICS` / `TREND_EXCLUDE_PATTERNS` 設定 |
 | `public/index.html` | フロントエンド HTML |
 | `public/assets/app.js` | フロントエンド JS（フィルタリング・レンダリング） |
 | `public/data/trends.json` | バッチ生成のメインデータ（GitHub Actions が管理） |

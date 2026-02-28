@@ -3,16 +3,14 @@
 静的配信 + バッチ更新のトレンド集約アプリです。
 GitHub Actions で収集とデプロイを実行し、1hに1回定期更新します。
 
-## キーワード管理（.env）
-- キーワードは `.env` の `TREND_TOPICS` で管理します（カンマ区切り）。
-- 例: `TREND_TOPICS=Anthropic,OpenAI,Google,Apple,claude,codex,gemini,frontend,html,css,typescript,vue`
-- 除外語は `.env` の `TREND_EXCLUDE_PATTERNS` で管理します（カンマ区切り）。
-- 例: `TREND_EXCLUDE_PATTERNS=Mrs. GREEN APPLE`
-- 設定ファイルは `.env` のみを使用します。
-- GitHub Actions は `.env` を読み込んで実行します（workflow の `Load .env` ステップ）。
+## キーワード管理（config/keywords.json）
+- キーワードは `config/keywords.json` の `topics` で管理します（JSON 配列）。
+- 除外語は `config/keywords.json` の `excludePatterns` で管理します（JSON 配列）。
+- このファイルは git で管理され、GitHub Actions でそのまま使用されます。
+- `process.env.TREND_TOPICS` / `process.env.TREND_EXCLUDE_PATTERNS` による上書きも可能です。
 
 ## 主要コマンド
-- `npm run sync:config`: `.env` から `public/data/runtime-config.json` を生成
+- `npm run sync:config`: `config/keywords.json` から `public/data/runtime-config.json` を生成
 - `npm run job:fetch`: 設定同期 + RSS収集（TREND_TOPICSヒットのみ） + タイトル/要約の日本語化 + `public/data/*.json` 更新
 - `npm run build`: 設定同期 + `public/` を `out/` に出力（静的配信用）
 - `npm run dev`: `public/` をローカルで確認（http://localhost:8080）
@@ -20,7 +18,7 @@ GitHub Actions で収集とデプロイを実行し、1hに1回定期更新し�
 ## ディレクトリ
 - `config/sources.json`: 収集対象ソース
 - `scripts/fetch-trends.mjs`: cron から呼ぶバッチ
-- `scripts/lib/runtime-config.mjs`: `.env` からキーワードを読み込む共通処理
+- `scripts/lib/runtime-config.mjs`: `config/keywords.json` からキーワードを読み込む共通処理
 - `public/index.html`: Tailwind（CLIビルド）で構築した静的UI（固定キーワード表示、topicクリック絞り込み）
 - `public/data/runtime-config.json`: 画面表示用のキーワード設定
 - `public/data/trends.json`: 表示用データ（titleJa/summaryJa を含む）

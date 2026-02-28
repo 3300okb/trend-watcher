@@ -19,7 +19,7 @@ npm run build:css
 ```bash
 npm run sync:config
 ```
-- `.env` の `TREND_TOPICS` / `TREND_EXCLUDE_PATTERNS` を読み取り、`public/data/runtime-config.json` を生成
+- `config/keywords.json` の `topics` / `excludePatterns` を読み取り、`public/data/runtime-config.json` を生成
 - フロントエンドが表示するキーワードリストの更新に使う
 
 ## トレンドデータ収集

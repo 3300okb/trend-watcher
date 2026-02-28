@@ -30,10 +30,7 @@ jobs:
       - name: Load .env
         run: |
           if [ -f .env ]; then
-            grep -v '^[[:space:]]*#' .env | grep -E '.+=' >> "$GITHUB_ENV"
-          else
-            echo ".env is missing" >&2
-            exit 1
+            grep -v '^[[:space:]]*#' .env | grep -E '.+=' >> "$GITHUB_ENV" || true
           fi
 
       - name: Setup Node.js
