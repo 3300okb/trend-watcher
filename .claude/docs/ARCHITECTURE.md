@@ -27,7 +27,8 @@ trend-watcher/
 │   ├── index.html                # SPA 相当の静的 HTML（Tailwind + バニラ JS）
 │   ├── assets/
 │   │   ├── tailwind.css          # CSS ビルド出力（minified）
-│   │   ├── app.js                # フロントエンド JS（フィルタリング・レンダリング）
+│   │   ├── app.js                # フロントエンド JS（フィルタリング・レンダリング・Supabase 同期）
+│   │   ├── supabase-config.js    # Supabase URL / anon key（window.SUPABASE_CONFIG で公開）
 │   │   ├── LINESeedJP_OTF_Bd.woff2  # フォント
 │   │   └── LINESeedJP_OTF_Rg.woff2  # フォント
 │   └── data/                     # バッチが更新するデータ（GitHub Actions が自動コミット）
@@ -54,8 +55,9 @@ trend-watcher/
 ### フロントエンドレイヤー（バニラ JS + Tailwind）
 | ファイル | 役割 |
 |---------|------|
-| `public/index.html` | HTML 構造・フォントロード |
-| `public/assets/app.js` | `/data/latest.json` を fetch してレンダリング・トピック絞り込み |
+| `public/index.html` | HTML 構造・フォントロード・Supabase CDN 読み込み |
+| `public/assets/app.js` | `trends.json` を fetch してレンダリング・トピック絞り込み・Supabase 認証同期（ES module） |
+| `public/assets/supabase-config.js` | Supabase 接続設定を `window.SUPABASE_CONFIG` に公開（通常スクリプト） |
 | `public/assets/tailwind.css` | スタイル（minify 済み） |
 
 ### 設定・データレイヤー
@@ -91,10 +93,36 @@ public/data/translation-cache.json（atomic rename）
 ### フロントエンド表示時
 ```
 ブラウザ
-  → GET /data/latest.json
+  → GET /data/trends.json
   → GET /data/runtime-config.json
   → app.js でレンダリング・トピック絞り込み
+  → Supabase: onAuthStateChange で既存セッション検出
+      → ログイン済みなら saved_articles をフェッチしてローカルとマージ
 ```
+
+### Saved 記事の同期フロー
+```
+Save ボタン押下
+  → localStorage に追記
+  → Supabase: saved_articles へ upsert（ログイン済みの場合）
+      → 成功後、localStorage の該当アイテムに _synced: true をセット
+
+Remove / Clear all 押下
+  → localStorage から削除
+  → Supabase: saved_articles から DELETE（ログイン済みの場合）
+
+ログイン時（INITIAL_SESSION / SIGNED_IN）
+  → Supabase から saved_articles を全件取得
+  → _synced: true でないローカルアイテムのみ Supabase へアップロード
+      （_synced: true = 過去に同期済み = 他デバイスで削除された可能性があるため再アップロードしない）
+  → Supabase の内容で localStorage を上書き（union ではなく置換）
+      → 他デバイスで削除されたアイテムがローカルからも除去される
+```
+
+**同期戦略: Supabase を Source of Truth とする**
+- ログイン中に保存した記事は upsert 成功後に `_synced: true` でマーク
+- 次回ログイン時の同期では `_synced: true` の記事はアップロードをスキップ
+- ログアウト中（オフライン）に保存した記事は `_synced` なし → ログイン時にアップロード対象
 
 ## 外部依存サービス
 | サービス | 用途 | 備考 |
@@ -103,3 +131,4 @@ public/data/translation-cache.json（atomic rename）
 | Google 翻訳 API（非公式） | タイトル・要約の日本語化 | `translate.googleapis.com/translate_a/single` |
 | GitHub Pages | 静的サイト配信 | `out/` をデプロイ |
 | GitHub Actions | バッチ実行・自動デプロイ | 毎時05分 + push トリガー |
+| Supabase | 認証（Google OAuth）・saved 記事の永続化 | プロジェクト ID: `kiaqxehlkhrdcwfxradi`、リージョン: `ap-northeast-1` |

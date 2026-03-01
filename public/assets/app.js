@@ -9,6 +9,125 @@ const clearSavedBtn = document.getElementById('clearSavedBtn');
 
 const STORAGE_KEY = 'trend-watcher-saved';
 
+// ============================================================
+// Supabase 認証 & 同期
+// ============================================================
+let sbClient = null;
+let currentUser = null;
+
+function initSupabase() {
+  const cfg = window.SUPABASE_CONFIG;
+  if (!cfg?.url || !cfg?.anonKey || typeof window.supabase === 'undefined') return;
+  sbClient = window.supabase.createClient(cfg.url, cfg.anonKey);
+
+  // INITIAL_SESSION（ページ読み込み時の既存セッション）と
+  // SIGNED_IN（OAuth リダイレクト後）の両方を !prevUser で一元管理し、
+  // 重複同期を防ぐ
+  sbClient.auth.onAuthStateChange(async (event, session) => {
+    const prevUser = currentUser;
+    currentUser = session?.user ?? null;
+    updateAuthUI();
+    if (currentUser && !prevUser) {
+      await syncWithSupabase();
+    }
+  });
+}
+
+async function signInWithGoogle() {
+  if (!sbClient) return;
+  const redirectTo = window.location.origin + window.location.pathname;
+  await sbClient.auth.signInWithOAuth({ provider: 'google', options: { redirectTo } });
+}
+
+function signOut() {
+  // Clear all Supabase session keys from localStorage directly (signOut API may hang)
+  Object.keys(localStorage)
+    .filter((k) => k.startsWith('sb-'))
+    .forEach((k) => localStorage.removeItem(k));
+  // Fire signOut in background without awaiting
+  if (sbClient) {
+    sbClient.auth.signOut({ scope: 'local' }).catch(() => {});
+  }
+  currentUser = null;
+  updateAuthUI();
+}
+
+function updateAuthUI() {
+  const authBtn = document.getElementById('auth-btn');
+  const authUser = document.getElementById('auth-user');
+  const authEmail = document.getElementById('auth-email');
+  if (currentUser) {
+    if (authBtn) authBtn.style.display = 'none';
+    if (authUser) {
+      authUser.style.display = 'flex';
+      if (authEmail) authEmail.textContent = currentUser.email ?? '';
+    }
+  } else {
+    if (authBtn) authBtn.style.display = '';
+    if (authUser) authUser.style.display = 'none';
+  }
+}
+
+async function syncWithSupabase() {
+  if (!sbClient || !currentUser) return;
+
+  try {
+    const { data, error } = await sbClient
+      .from('saved_articles')
+      .select('url, item_data')
+      .eq('user_id', currentUser.id);
+    if (error) throw error;
+
+    const remoteByUrl = new Map(data.map((r) => [r.url, r.item_data]));
+    const localItems = loadSaved();
+
+    // 未同期アイテムのみアップロード（_synced: true は他デバイスで削除された可能性があるためスキップ）
+    const toUpload = localItems.filter((i) => i.url && !remoteByUrl.has(i.url) && !i._synced);
+    if (toUpload.length > 0) {
+      await sbClient.from('saved_articles').upsert(
+        toUpload.map((item) => ({ user_id: currentUser.id, url: item.url, item_data: item })),
+        { onConflict: 'user_id,url' },
+      );
+    }
+
+    // SupabaseをSOTとしてlocalStorageを上書き（他デバイスで削除されたアイテムをローカルから除去）
+    const remoteItems = data.map((r) => r.item_data);
+    persistSaved([...remoteItems, ...toUpload]);
+
+    renderSavedList();
+    updateSaveBtnStates();
+  } catch (_) {
+    // 失敗時は localStorage のデータをそのまま使い続ける
+  }
+}
+
+async function addToSupabase(item) {
+  if (!sbClient || !currentUser || !item?.url) return;
+  try {
+    await sbClient.from('saved_articles').upsert(
+      { user_id: currentUser.id, url: item.url, item_data: item },
+      { onConflict: 'user_id,url' },
+    );
+    // 同期済みとしてマーク（他デバイスで削除された場合に再アップロードしないため）
+    const saved = loadSaved();
+    persistSaved(saved.map((s) => (s.url === item.url ? { ...s, _synced: true } : s)));
+  } catch (_) {}
+}
+
+async function removeFromSupabase(url) {
+  if (!sbClient || !currentUser || !url) return;
+  try {
+    await sbClient.from('saved_articles').delete().eq('user_id', currentUser.id).eq('url', url);
+  } catch (_) {}
+}
+
+async function clearAllFromSupabase() {
+  if (!sbClient || !currentUser) return;
+  try {
+    await sbClient.from('saved_articles').delete().eq('user_id', currentUser.id);
+  } catch (_) {}
+}
+
 const FALLBACK_TOPICS = ['Anthropic', 'OpenAI', 'Google', 'Apple', 'claude', 'codex', 'gemini', 'frontend', 'html', 'css', 'typescript', 'vue'];
 const FALLBACK_EXCLUDE_PATTERNS = ['Mrs. GREEN APPLE'];
 
@@ -39,22 +158,28 @@ function persistSaved(items) {
 
 function saveItem(item) {
   const saved = loadSaved();
-  if (!saved.some((s) => s.id === item.id)) {
-    saved.unshift({
+  const url = item.canonicalUrl || item.url;
+  if (!saved.some((s) => s.url === url)) {
+    const entry = {
       id: item.id,
-      url: item.canonicalUrl || item.url,
+      url,
       title: item.titleJa || item.title,
       sourceName: item.sourceName,
       publishedAt: item.publishedAt,
-    });
+    };
+    saved.unshift(entry);
     persistSaved(saved);
+    addToSupabase(entry);
   }
   renderSavedList();
   updateSaveBtnStates();
 }
 
 function removeItem(id) {
-  persistSaved(loadSaved().filter((s) => s.id !== id));
+  const saved = loadSaved();
+  const target = saved.find((s) => s.id === id);
+  persistSaved(saved.filter((s) => s.id !== id));
+  if (target?.url) removeFromSupabase(target.url);
   renderSavedList();
   updateSaveBtnStates();
 }
@@ -277,13 +402,18 @@ async function boot() {
 
     clearSavedBtn.addEventListener('click', () => {
       persistSaved([]);
+      clearAllFromSupabase();
       renderSavedList();
       updateSaveBtnStates();
     });
 
+    document.getElementById('auth-btn')?.addEventListener('click', signInWithGoogle);
+    document.getElementById('auth-logout-btn')?.addEventListener('click', signOut);
+
     renderTopicList();
     renderSavedList();
     applyFilters(currentGeneratedAt);
+    initSupabase();
   } catch (error) {
     metaText.textContent = `Failed to load data: ${error.message}`;
   }
