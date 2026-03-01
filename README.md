@@ -22,8 +22,7 @@ GitHub Actions で収集とデプロイを実行し、1hに1回定期更新し�
 - **認証**: Google OAuth（Supabase Auth 経由）
 - **ストレージ**: Supabase `saved_articles` テーブル（RLS でユーザーごとに分離）
 - **同期タイミング**:
-  - ログイン時: Supabase の内容で `localStorage` を上書き（他デバイスで削除された記事はローカルからも除去）
-  - ログアウト中に保存した記事はログイン時に Supabase へアップロード
+  - ページロード時・ログイン時: Supabase の内容で `localStorage` を上書き（他デバイスで削除された記事はローカルからも除去）
   - 保存・削除時: Supabase へ自動エクスポート
 - **Supabase を Source of Truth とする**: 複数デバイス間で削除が正しく伝播される
 - 未ログイン時は `localStorage` のみに保存されます
