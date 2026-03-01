@@ -112,19 +112,17 @@ Remove / Clear all 押下
   → Supabase: saved_articles から DELETE（ログイン済みの場合）
 
 ページロード時（boot() 内 getSession() による明示的チェック）または SIGNED_IN（OAuth リダイレクト後）
-  → Supabase から saved_articles を全件取得
-  → _synced: true でないローカルアイテムのみ Supabase へアップロード
-      （_synced: true = 過去に同期済み = 他デバイスで削除された可能性があるため再アップロードしない）
+  → Supabase から saved_articles を全件取得（ダウンロードのみ）
   → Supabase の内容で localStorage を上書き（union ではなく置換）
       → Supabase から取得したアイテムには _synced: true をセット
       → 他デバイスで削除されたアイテムがローカルからも除去される
+  ※ localStorageの内容はアップロードしない（削除済みアイテムの再アップロードを防ぐ）
 ```
 
 **同期戦略: Supabase を Source of Truth とする**
-- ログイン中に保存した記事は upsert 成功後に `_synced: true` でマーク
+- `syncWithSupabase()` はダウンロード専用（localStorage → Supabase への再アップロードは行わない）
+- ログイン中に保存した記事は `addToSupabase()` が即時 upsert → 成功後に `_synced: true` でマーク
 - ログイン時の同期で Supabase から取得した記事にも `_synced: true` をセット
-- 次回ログイン時の同期では `_synced: true` の記事はアップロードをスキップ
-- ログアウト中（オフライン）に保存した記事は `_synced` なし → ログイン時にアップロード対象
 
 ## 外部依存サービス
 | サービス | 用途 | 備考 |
