@@ -6,6 +6,7 @@ const savedSection = document.getElementById('savedSection');
 const savedList = document.getElementById('savedList');
 const savedCount = document.getElementById('savedCount');
 const clearSavedBtn = document.getElementById('clearSavedBtn');
+const syncSavedBtn = document.getElementById('syncSavedBtn');
 
 const STORAGE_KEY = 'trend-watcher-saved';
 
@@ -65,9 +66,11 @@ function updateAuthUI() {
       authUser.style.display = 'flex';
       if (authEmail) authEmail.textContent = currentUser.email ?? '';
     }
+    if (syncSavedBtn) syncSavedBtn.style.display = '';
   } else {
     if (authBtn) authBtn.style.display = '';
     if (authUser) authUser.style.display = 'none';
+    if (syncSavedBtn) syncSavedBtn.style.display = 'none';
   }
 }
 
@@ -390,6 +393,15 @@ async function boot() {
       selectedTopic = selectedTopic === topic ? null : topic;
       renderTopicList();
       applyFilters(currentGeneratedAt);
+    });
+
+    syncSavedBtn?.addEventListener('click', async () => {
+      if (!sbClient || !currentUser) return;
+      syncSavedBtn.disabled = true;
+      syncSavedBtn.textContent = 'Syncing…';
+      await syncWithSupabase();
+      syncSavedBtn.textContent = 'Refresh';
+      syncSavedBtn.disabled = false;
     });
 
     clearSavedBtn.addEventListener('click', () => {
