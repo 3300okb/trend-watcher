@@ -111,7 +111,7 @@ Remove / Clear all 押下
   → localStorage から削除
   → Supabase: saved_articles から DELETE（ログイン済みの場合）
 
-ログイン時（INITIAL_SESSION / SIGNED_IN）
+ページロード時（boot() 内 getSession() による明示的チェック）または SIGNED_IN（OAuth リダイレクト後）
   → Supabase から saved_articles を全件取得
   → _synced: true でないローカルアイテムのみ Supabase へアップロード
       （_synced: true = 過去に同期済み = 他デバイスで削除された可能性があるため再アップロードしない）

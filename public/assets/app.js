@@ -415,6 +415,17 @@ async function boot() {
     renderSavedList();
     applyFilters(currentGeneratedAt);
     initSupabase();
+    // ページロード時に既存セッションがあれば同期（INITIAL_SESSION イベントの発火に依存せず確実に実行）
+    if (sbClient) {
+      try {
+        const { data: { session } } = await sbClient.auth.getSession();
+        if (session?.user && !currentUser) {
+          currentUser = session.user;
+          updateAuthUI();
+          await syncWithSupabase();
+        }
+      } catch (_) {}
+    }
   } catch (error) {
     metaText.textContent = `Failed to load data: ${error.message}`;
   }
