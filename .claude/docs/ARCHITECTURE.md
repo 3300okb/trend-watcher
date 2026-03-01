@@ -117,6 +117,11 @@ Remove / Clear all 押下
       → Supabase から取得したアイテムには _synced: true をセット
       → 他デバイスで削除されたアイテムがローカルからも除去される
   ※ localStorageの内容はアップロードしない（削除済みアイテムの再アップロードを防ぐ）
+
+Refresh ボタン押下（ログイン中のみ表示）
+  → syncWithSupabase() を手動実行
+  → ページロード時と同じダウンロード処理を即時再実行
+  → 他デバイスでの変更（削除など）をリアルタイムに反映できる
 ```
 
 **同期戦略: Supabase を Source of Truth とする**

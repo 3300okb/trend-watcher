@@ -24,6 +24,7 @@ GitHub Actions で収集とデプロイを実行し、1hに1回定期更新し�
 - **同期タイミング**:
   - ページロード時・ログイン時: Supabase の内容で `localStorage` を上書き（他デバイスで削除された記事はローカルからも除去）
   - 保存・削除時: Supabase へ自動エクスポート
+  - **Refresh ボタン押下時**: ログイン中に Saved セクションへ表示される「Refresh」ボタンを押すと Supabase から最新データを手動取得して即反映
 - **Supabase を Source of Truth とする**: 複数デバイス間で削除が正しく伝播される
 - 未ログイン時は `localStorage` のみに保存されます
 
