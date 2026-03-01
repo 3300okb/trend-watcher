@@ -78,22 +78,10 @@ async function syncWithSupabase() {
       .eq('user_id', currentUser.id);
     if (error) throw error;
 
-    const remoteByUrl = new Map(data.map((r) => [r.url, r.item_data]));
-    const localItems = loadSaved();
-
-    // 未同期アイテムのみアップロード（_synced: true は他デバイスで削除された可能性があるためスキップ）
-    const toUpload = localItems.filter((i) => i.url && !remoteByUrl.has(i.url) && !i._synced);
-    if (toUpload.length > 0) {
-      await sbClient.from('saved_articles').upsert(
-        toUpload.map((item) => ({ user_id: currentUser.id, url: item.url, item_data: item })),
-        { onConflict: 'user_id,url' },
-      );
-    }
-
-    // SupabaseをSOTとしてlocalStorageを上書き（他デバイスで削除されたアイテムをローカルから除去）
-    // _synced: true を付けることで、別デバイスで削除済みのアイテムを次回ログイン同期で再アップロードしないようにする
+    // Supabase を SOT としてlocalStorageを上書き（ダウンロードのみ）
+    // localStorageの内容は再アップロードしない（削除済みアイテムの復活を防ぐため）
     const remoteItems = data.map((r) => ({ ...r.item_data, _synced: true }));
-    persistSaved([...remoteItems, ...toUpload]);
+    persistSaved(remoteItems);
 
     renderSavedList();
     updateSaveBtnStates();
