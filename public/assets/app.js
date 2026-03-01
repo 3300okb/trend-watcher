@@ -403,11 +403,13 @@ async function boot() {
     renderSavedList();
     applyFilters(currentGeneratedAt);
     initSupabase();
-    // ページロード時に既存セッションがあれば同期（INITIAL_SESSION イベントの発火に依存せず確実に実行）
+    // ページロード時に既存セッションがあれば必ず同期
+    // onAuthStateChange(INITIAL_SESSION) との競合で !currentUser ガードが機能しないケースがあるため、
+    // getSession() で明示的にセッションを確認し、常に syncWithSupabase() を実行する
     if (sbClient) {
       try {
         const { data: { session } } = await sbClient.auth.getSession();
-        if (session?.user && !currentUser) {
+        if (session?.user) {
           currentUser = session.user;
           updateAuthUI();
           await syncWithSupabase();
