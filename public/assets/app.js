@@ -18,7 +18,10 @@ let currentUser = null;
 function initSupabase() {
   const cfg = window.SUPABASE_CONFIG;
   if (!cfg?.url || !cfg?.anonKey || typeof window.supabase === 'undefined') return;
-  sbClient = window.supabase.createClient(cfg.url, cfg.anonKey);
+  // cache: 'no-store' でブラウザキャッシュを無効化（iOS Safari 等の積極的なキャッシュ対策）
+  sbClient = window.supabase.createClient(cfg.url, cfg.anonKey, {
+    global: { fetch: (url, init) => fetch(url, { ...init, cache: 'no-store' }) },
+  });
 
   // INITIAL_SESSION（ページ読み込み時の既存セッション）と
   // SIGNED_IN（OAuth リダイレクト後）の両方を !prevUser で一元管理し、
