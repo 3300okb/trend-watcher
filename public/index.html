@@ -45,8 +45,30 @@
   </head>
   <body class="min-h-screen font-seed text-ink antialiased px-4">
     <div class="mx-auto max-w-6xl">
-      <header class="relative py-6">
+      <header class="relative py-6 flex items-center justify-between gap-4">
         <h1 class="relative text-2xl font-bold leading-tight">Trend Watcher</h1>
+        <div class="flex items-center gap-2 shrink-0">
+          <!-- ログインボタン（未ログイン時） -->
+          <button
+            id="auth-btn"
+            class="flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs text-slate-500 hover:border-cyan-300 hover:bg-cyan-50 hover:text-cyan-700 transition font-seed"
+            type="button"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+            </svg>
+            ログイン
+          </button>
+          <!-- ユーザー情報（ログイン済み時） -->
+          <div id="auth-user" style="display:none" class="items-center gap-2">
+            <span id="auth-email" class="text-xs text-slate-500 max-w-[140px] truncate font-seed"></span>
+            <button
+              id="auth-logout-btn"
+              class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs text-slate-400 hover:border-red-300 hover:bg-red-50 hover:text-red-600 transition font-seed"
+              type="button"
+            >ログアウト</button>
+          </div>
+        </div>
       </header>
 
       <main class="grid gap-6">
@@ -100,6 +122,8 @@
       </li>
     </template>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./assets/supabase-config.js"></script>
     <script type="module" src="./assets/app.js"></script>
   </body>
 </html>

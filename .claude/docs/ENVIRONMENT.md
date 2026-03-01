@@ -26,6 +26,39 @@ DEFAULT_TOPICS = ['Apple']
 DEFAULT_EXCLUDE_PATTERNS = ['Mrs. GREEN APPLE']
 ```
 
+## Supabase 設定
+
+### プロジェクト情報
+| 項目 | 値 |
+|------|-----|
+| プロジェクト ID | `kiaqxehlkhrdcwfxradi` |
+| リージョン | `ap-northeast-1`（東京） |
+| URL | `https://kiaqxehlkhrdcwfxradi.supabase.co` |
+
+### データベース構造
+テーブル: `saved_articles`
+
+| カラム | 型 | 説明 |
+|--------|-----|------|
+| `id` | `uuid` | PK（自動生成） |
+| `user_id` | `uuid` | `auth.users.id` への外部キー |
+| `url` | `text` | 記事 URL（UNIQUE キーの一部） |
+| `item_data` | `jsonb` | 記事データ `{ id, url, title, sourceName, publishedAt }` |
+| `saved_at` | `timestamptz` | 保存日時（デフォルト: `now()`） |
+
+- UNIQUE 制約: `(user_id, url)`
+- RLS 有効: ユーザーは自分のレコードのみ操作可能
+
+### 認証
+- プロバイダー: Google OAuth（Supabase Auth 経由）
+- 設定ファイル: `public/assets/supabase-config.js`（`window.SUPABASE_CONFIG` に公開）
+- anon key はフロントエンド公開用。RLS により自分のデータのみアクセス可能
+
+### Google Cloud Console 設定（OAuth 同意画面）
+- アプリ名: `Trend Watcher`
+- 承認済み JavaScript 生成元: `https://kiaqxehlkhrdcwfxradi.supabase.co`、`https://3300okb.github.io`、`http://localhost:8080`
+- 承認済みリダイレクト URI: `https://kiaqxehlkhrdcwfxradi.supabase.co/auth/v1/callback`
+
 ## ローカル開発環境のセットアップ
 
 ### 前提条件
