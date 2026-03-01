@@ -91,7 +91,8 @@ async function syncWithSupabase() {
     }
 
     // SupabaseをSOTとしてlocalStorageを上書き（他デバイスで削除されたアイテムをローカルから除去）
-    const remoteItems = data.map((r) => r.item_data);
+    // _synced: true を付けることで、別デバイスで削除済みのアイテムを次回ログイン同期で再アップロードしないようにする
+    const remoteItems = data.map((r) => ({ ...r.item_data, _synced: true }));
     persistSaved([...remoteItems, ...toUpload]);
 
     renderSavedList();
