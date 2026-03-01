@@ -119,9 +119,11 @@ Remove / Clear all 押下
   ※ localStorageの内容はアップロードしない（削除済みアイテムの再アップロードを防ぐ）
 
 Refresh ボタン押下（ログイン中のみ表示）
-  → syncWithSupabase() を手動実行
+  → syncWithSupabase() を手動実行（戻り値: true=成功 / false=失敗）
   → ページロード時と同じダウンロード処理を即時再実行
   → 他デバイスでの変更（削除など）をリアルタイムに反映できる
+  → 成功時: ボタンに「Done」を1.5秒表示後「Refresh」に戻る
+  → 失敗時: ボタンに「Error」を1.5秒表示後「Refresh」に戻る
 ```
 
 **同期戦略: Supabase を Source of Truth とする**
