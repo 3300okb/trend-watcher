@@ -75,7 +75,7 @@ function updateAuthUI() {
 }
 
 async function syncWithSupabase() {
-  if (!sbClient || !currentUser) return;
+  if (!sbClient || !currentUser) return false;
 
   try {
     const { data, error } = await sbClient
@@ -91,8 +91,10 @@ async function syncWithSupabase() {
 
     renderSavedList();
     updateSaveBtnStates();
+    return true;
   } catch (_) {
     // 失敗時は localStorage のデータをそのまま使い続ける
+    return false;
   }
 }
 
@@ -399,9 +401,14 @@ async function boot() {
       if (!sbClient || !currentUser) return;
       syncSavedBtn.disabled = true;
       syncSavedBtn.textContent = 'Syncing…';
-      await syncWithSupabase();
-      syncSavedBtn.textContent = 'Refresh';
-      syncSavedBtn.disabled = false;
+      const ok = await syncWithSupabase();
+      syncSavedBtn.textContent = ok ? 'Done' : 'Error';
+      setTimeout(() => {
+        if (syncSavedBtn) {
+          syncSavedBtn.textContent = 'Refresh';
+          syncSavedBtn.disabled = false;
+        }
+      }, 1500);
     });
 
     clearSavedBtn.addEventListener('click', () => {
