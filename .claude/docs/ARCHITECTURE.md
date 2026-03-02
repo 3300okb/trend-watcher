@@ -128,8 +128,13 @@ Refresh ボタン押下（ログイン中のみ表示）
 
 **同期戦略: Supabase を Source of Truth とする**
 - `syncWithSupabase()` はダウンロード専用（localStorage → Supabase への再アップロードは行わない）
+- `syncWithSupabase()` は `Promise.race()` で10秒タイムアウト済み（ハング対策）
 - ログイン中に保存した記事は `addToSupabase()` が即時 upsert → 成功後に `_synced: true` でマーク
 - ログイン時の同期で Supabase から取得した記事にも `_synced: true` をセット
+
+**Supabase クライアントの fetch 設定**
+- データリクエスト（`/rest/v1/`）のみ `cache: 'no-store'` を適用（iOS Safari キャッシュ対策）
+- 認証リクエスト（`/auth/v1/`）は素通し（CORS プリフライト誤作動・トークンリフレッシュハング防止）
 
 ## 外部依存サービス
 | サービス | 用途 | 備考 |
