@@ -19,9 +19,15 @@ let currentUser = null;
 function initSupabase() {
   const cfg = window.SUPABASE_CONFIG;
   if (!cfg?.url || !cfg?.anonKey || typeof window.supabase === 'undefined') return;
-  // cache: 'no-store' でブラウザキャッシュを無効化（iOS Safari 等の積極的なキャッシュ対策）
+  // データリクエスト（/rest/v1/）のみ cache: 'no-store' を適用（iOS Safari キャッシュ対策）
+  // 認証リクエスト（/auth/v1/）は除外（CORS プリフライトの誤作動を防ぐため）
   sbClient = window.supabase.createClient(cfg.url, cfg.anonKey, {
-    global: { fetch: (url, init) => fetch(url, { ...init, cache: 'no-store' }) },
+    global: {
+      fetch: (url, init) =>
+        url.includes('/auth/v1/')
+          ? fetch(url, init)
+          : fetch(url, { ...init, cache: 'no-store' }),
+    },
   });
 
   // INITIAL_SESSION（ページ読み込み時の既存セッション）と
@@ -78,11 +84,19 @@ async function syncWithSupabase() {
   if (!sbClient || !currentUser) return false;
 
   try {
-    const { data, error } = await sbClient
+    // 10秒でタイムアウト（認証トークンリフレッシュ含むリクエストのハング対策）
+    const timeoutPromise = new Promise((_, reject) =>
+      setTimeout(() => reject(new Error('timeout')), 10000)
+    );
+    const fetchPromise = sbClient
       .from('saved_articles')
       .select('url, item_data')
-      .eq('user_id', currentUser.id);
-    if (error) throw error;
+      .eq('user_id', currentUser.id)
+      .then(({ data, error }) => {
+        if (error) throw error;
+        return data;
+      });
+    const data = await Promise.race([fetchPromise, timeoutPromise]);
 
     // Supabase を SOT としてlocalStorageを上書き（ダウンロードのみ）
     // localStorageの内容は再アップロードしない（削除済みアイテムの復活を防ぐため）
@@ -93,7 +107,7 @@ async function syncWithSupabase() {
     updateSaveBtnStates();
     return true;
   } catch (_) {
-    // 失敗時は localStorage のデータをそのまま使い続ける
+    // 失敗・タイムアウト時は localStorage のデータをそのまま使い続ける
     return false;
   }
 }
