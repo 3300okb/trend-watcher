@@ -218,10 +218,12 @@ function updateSaveBtnStates() {
 
 function renderSavedList() {
   const saved = loadSaved();
+  savedList.setAttribute('aria-busy', 'true');
   savedList.innerHTML = '';
 
   if (saved.length === 0) {
     savedSection.classList.add('hidden');
+    savedList.setAttribute('aria-busy', 'false');
     return;
   }
 
@@ -261,6 +263,8 @@ function renderSavedList() {
     li.appendChild(removeBtn);
     savedList.appendChild(li);
   }
+
+  savedList.setAttribute('aria-busy', 'false');
 }
 
 // --- Existing functions ---
@@ -318,6 +322,7 @@ function renderTopicList() {
 }
 
 function render(items, generatedAt) {
+  trendList.setAttribute('aria-busy', 'true');
   trendList.innerHTML = '';
   const savedIds = new Set(loadSaved().map((s) => s.id));
 
@@ -325,6 +330,7 @@ function render(items, generatedAt) {
     trendList.innerHTML =
       '<li class="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-sm text-slate-500">No matching articles. Try different filters.</li>';
     metaText.textContent = `Items: 0 / Updated: ${formatDate(generatedAt)}`;
+    trendList.setAttribute('aria-busy', 'false');
     return;
   }
 
@@ -342,6 +348,8 @@ function render(items, generatedAt) {
 
     title.textContent = item.titleJa || item.title;
     title.href = item.canonicalUrl || item.url;
+    title.target = '_blank';
+    title.rel = 'noopener noreferrer';
     summary.textContent = item.summaryJa || item.summary || 'summary unavailable';
     category.textContent = (item.tags || []).join(', ') || '-';
     source.textContent = item.sourceName || '-';
@@ -361,6 +369,7 @@ function render(items, generatedAt) {
   }
 
   metaText.textContent = `Items: ${items.length} / Updated: ${formatDate(generatedAt)}`;
+  trendList.setAttribute('aria-busy', 'false');
 }
 
 function applyFilters(generatedAt = currentGeneratedAt) {
