@@ -281,7 +281,10 @@ function renderSavedList() {
     removeBtn.className =
       'shrink-0 self-center rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs text-slate-400 hover:border-red-300 hover:bg-red-50 hover:text-red-600 transition font-seed';
     removeBtn.textContent = 'Remove';
-    removeBtn.addEventListener('click', () => removeItem(item.id));
+    removeBtn.addEventListener('click', () => {
+      removeBtn.blur();
+      removeItem(item.id);
+    });
 
     li.appendChild(info);
     li.appendChild(removeBtn);
