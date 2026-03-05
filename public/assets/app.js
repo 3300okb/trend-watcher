@@ -358,6 +358,7 @@ function render(items, generatedAt) {
     setSaveBtnState(saveBtn, savedIds.has(item.id));
     saveBtn.addEventListener('click', () => {
       const scrollY = window.scrollY;
+      const savedSectionHeight = savedSection.offsetHeight;
       const isCurrentlySaved = loadSaved().some((s) => s.id === item.id);
       if (isCurrentlySaved) {
         removeItem(item.id);
@@ -365,8 +366,12 @@ function render(items, generatedAt) {
         saveItem(item);
       }
       // iOS Safari がタップ後にスクロール位置を変更するのを防ぐ
+      // savedSection の高さ変化分を補正することで記事の画面上の位置を維持する
       requestAnimationFrame(() => {
-        requestAnimationFrame(() => window.scrollTo(0, scrollY));
+        requestAnimationFrame(() => {
+          const heightDelta = savedSection.offsetHeight - savedSectionHeight;
+          window.scrollTo(0, scrollY + heightDelta);
+        });
       });
     });
 
