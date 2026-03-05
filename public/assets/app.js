@@ -357,12 +357,17 @@ function render(items, generatedAt) {
 
     setSaveBtnState(saveBtn, savedIds.has(item.id));
     saveBtn.addEventListener('click', () => {
+      const scrollY = window.scrollY;
       const isCurrentlySaved = loadSaved().some((s) => s.id === item.id);
       if (isCurrentlySaved) {
         removeItem(item.id);
       } else {
         saveItem(item);
       }
+      // iOS Safari がタップ後にスクロール位置を変更するのを防ぐ
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => window.scrollTo(0, scrollY));
+      });
     });
 
     trendList.appendChild(node);
