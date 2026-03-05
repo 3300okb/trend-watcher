@@ -148,6 +148,30 @@ let configuredExcludePatterns = [...FALLBACK_EXCLUDE_PATTERNS];
 let currentGeneratedAt = new Date().toISOString();
 let selectedTopic = null;
 
+function renderSkeleton() {
+  const chipWidths = [64, 80, 56, 96, 72, 68];
+  topicList.innerHTML = chipWidths
+    .map((w) => `<div class="skeleton rounded-full" style="width:${w}px;height:28px"></div>`)
+    .join('');
+
+  const card = `<li class="rounded-2xl border border-slate-200 bg-white p-4">
+    <div class="flex items-start justify-between gap-2">
+      <div class="skeleton rounded-full" style="width:70%;height:20px"></div>
+      <div class="skeleton rounded-full" style="width:52px;height:24px;flex-shrink:0"></div>
+    </div>
+    <div class="mt-2" style="display:flex;flex-direction:column;gap:8px">
+      <div class="skeleton rounded-full" style="width:100%;height:16px"></div>
+      <div class="skeleton rounded-full" style="width:80%;height:16px"></div>
+    </div>
+    <div class="mt-3 flex gap-2">
+      <div class="skeleton rounded-full" style="width:60px;height:24px"></div>
+      <div class="skeleton rounded-full" style="width:76px;height:24px"></div>
+      <div class="skeleton rounded-full" style="width:92px;height:24px"></div>
+    </div>
+  </li>`;
+  trendList.innerHTML = Array.from({ length: 8 }, () => card).join('');
+}
+
 function formatDate(iso) {
   const d = new Date(iso);
   return Number.isNaN(d.getTime()) ? '-' : d.toLocaleString('en-US');
@@ -412,6 +436,7 @@ async function loadRuntimeConfig() {
 }
 
 async function boot() {
+  renderSkeleton();
   try {
     await loadRuntimeConfig();
 
