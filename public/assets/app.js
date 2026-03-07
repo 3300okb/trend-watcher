@@ -46,7 +46,8 @@ function initSupabase() {
 async function signInWithGoogle() {
   if (!sbClient) return;
   const redirectTo = window.location.origin + window.location.pathname;
-  await sbClient.auth.signInWithOAuth({ provider: 'google', options: { redirectTo } });
+  const { error } = await sbClient.auth.signInWithOAuth({ provider: 'google', options: { redirectTo } });
+  if (error) alert(`Sign in failed: ${error.message}`);
 }
 
 function signOut() {
@@ -177,12 +178,22 @@ function formatDate(iso) {
   return Number.isNaN(d.getTime()) ? '-' : d.toLocaleString('en-US');
 }
 
+function sanitizeUrl(url) {
+  if (!url) return '#';
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol === 'http:' || parsed.protocol === 'https:') return url;
+  } catch {}
+  return '#';
+}
+
 // --- localStorage helpers ---
 
 function loadSaved() {
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
   } catch {
+    localStorage.removeItem(STORAGE_KEY);
     return [];
   }
 }
@@ -264,7 +275,7 @@ function renderSavedList() {
 
     const link = document.createElement('a');
     link.className = 'text-sm font-semibold text-blue-700 hover:underline leading-5 font-seed';
-    link.href = item.url;
+    link.href = sanitizeUrl(item.url);
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     link.textContent = item.title;
@@ -374,7 +385,7 @@ function render(items, generatedAt) {
     li.dataset.itemId = item.id;
 
     title.textContent = item.titleJa || item.title;
-    title.href = item.canonicalUrl || item.url;
+    title.href = sanitizeUrl(item.canonicalUrl || item.url);
     title.target = '_blank';
     title.rel = 'noopener noreferrer';
     summary.textContent = item.summaryJa || item.summary || 'summary unavailable';
@@ -501,6 +512,9 @@ async function boot() {
       } catch (_) {}
     }
   } catch (error) {
+    trendList.innerHTML =
+      '<li class="rounded-2xl border border-dashed border-red-200 bg-red-50 p-6 text-sm text-red-500">Failed to load articles. Please reload the page.</li>';
+    topicList.innerHTML = '';
     metaText.textContent = `Failed to load data: ${error.message}`;
   }
 }

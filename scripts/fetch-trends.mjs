@@ -369,6 +369,12 @@ async function main() {
   const previousLogs = await readJsonSafe(LOG_FILE, []);
   const mergedLogs = [...previousLogs, ...logs].slice(-500);
 
+  if (articles.length === 0) {
+    console.warn('[trend-watcher] no articles collected — skipping trends.json update to preserve existing data');
+    await atomicWriteJson(LOG_FILE, mergedLogs);
+    return;
+  }
+
   await atomicWriteJson(TRENDS_FILE, {
     generatedAt: now.toISOString(),
     total: articles.length,
