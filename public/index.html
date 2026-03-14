@@ -53,6 +53,12 @@
     </style>
     <link rel="stylesheet" href="./assets/tailwind.css" />
     <style>
+      /* iOS Safari: デフォルトのタップハイライトを無効化し、300ms タップ遅延を排除 */
+      button, a {
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+      }
+
       /* iOS Safari の sticky hover 対策:
          タップ後に要素がシフトすると、指の座標にある次の要素に :hover が貼り付く問題を防ぐ。
          hover: none = タッチデバイス（実ホバーなし）にのみ適用 */
