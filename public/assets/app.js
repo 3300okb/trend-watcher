@@ -202,32 +202,61 @@ function persistSaved(items) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
 }
 
-function saveItem(item) {
-  const saved = loadSaved();
-  const url = item.canonicalUrl || item.url;
-  if (!saved.some((s) => s.url === url)) {
-    const entry = {
-      id: item.id,
-      url,
-      title: item.titleJa || item.title,
-      sourceName: item.sourceName,
-      publishedAt: item.publishedAt,
-    };
-    saved.unshift(entry);
-    persistSaved(saved);
-    addToSupabase(entry);
-  }
-  renderSavedList();
-  updateSaveBtnStates();
+function createSavedItemElement(item) {
+  const li = document.createElement('li');
+  li.className = 'flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3';
+  li.dataset.savedId = item.id;
+
+  const info = document.createElement('div');
+  info.className = 'flex-1 min-w-0';
+
+  const link = document.createElement('a');
+  link.className = 'text-sm font-semibold text-blue-700 hover:underline leading-5 font-seed';
+  link.href = sanitizeUrl(item.url);
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.textContent = item.title;
+
+  const meta = document.createElement('p');
+  meta.className = 'mt-1 text-xs text-slate-500 font-seed';
+  meta.textContent = `${item.sourceName || '-'} · ${formatDate(item.publishedAt)}`;
+
+  info.appendChild(link);
+  info.appendChild(meta);
+
+  const removeBtn = document.createElement('button');
+  removeBtn.type = 'button';
+  removeBtn.className =
+    'shrink-0 self-center rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs text-slate-400 hover:border-red-300 hover:bg-red-50 hover:text-red-600 transition font-seed';
+  removeBtn.textContent = 'Remove';
+  removeBtn.addEventListener('click', () => {
+    removeBtn.blur();
+    const saved = loadSaved();
+    const target = saved.find((s) => s.id === item.id);
+    persistSaved(saved.filter((s) => s.id !== item.id));
+    if (target?.url) removeFromSupabase(target.url);
+    li.remove();
+    updateSavedSectionVisibility();
+    const trendItem = document.querySelector(`.trend-item[data-item-id="${item.id}"]`);
+    if (trendItem) {
+      const btn = trendItem.querySelector('.save-btn');
+      if (btn) setSaveBtnState(btn, false);
+    }
+  });
+
+  li.appendChild(info);
+  li.appendChild(removeBtn);
+  return li;
 }
 
-function removeItem(id) {
-  const saved = loadSaved();
-  const target = saved.find((s) => s.id === id);
-  persistSaved(saved.filter((s) => s.id !== id));
-  if (target?.url) removeFromSupabase(target.url);
-  renderSavedList();
-  updateSaveBtnStates();
+function updateSavedSectionVisibility() {
+  const count = loadSaved().length;
+  if (count === 0) {
+    savedSection.classList.add('hidden');
+  } else {
+    savedSection.classList.remove('hidden');
+  }
+  savedCount.textContent = count;
 }
 
 function setSaveBtnState(btn, saved) {
@@ -253,12 +282,10 @@ function updateSaveBtnStates() {
 
 function renderSavedList() {
   const saved = loadSaved();
-  savedList.setAttribute('aria-busy', 'true');
   savedList.innerHTML = '';
 
   if (saved.length === 0) {
     savedSection.classList.add('hidden');
-    savedList.setAttribute('aria-busy', 'false');
     return;
   }
 
@@ -266,43 +293,8 @@ function renderSavedList() {
   savedCount.textContent = saved.length;
 
   for (const item of saved) {
-    const li = document.createElement('li');
-    li.className = 'flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3';
-    li.dataset.savedId = item.id;
-
-    const info = document.createElement('div');
-    info.className = 'flex-1 min-w-0';
-
-    const link = document.createElement('a');
-    link.className = 'text-sm font-semibold text-blue-700 hover:underline leading-5 font-seed';
-    link.href = sanitizeUrl(item.url);
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.textContent = item.title;
-
-    const meta = document.createElement('p');
-    meta.className = 'mt-1 text-xs text-slate-500 font-seed';
-    meta.textContent = `${item.sourceName || '-'} · ${formatDate(item.publishedAt)}`;
-
-    info.appendChild(link);
-    info.appendChild(meta);
-
-    const removeBtn = document.createElement('button');
-    removeBtn.type = 'button';
-    removeBtn.className =
-      'shrink-0 self-center rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs text-slate-400 hover:border-red-300 hover:bg-red-50 hover:text-red-600 transition font-seed';
-    removeBtn.textContent = 'Remove';
-    removeBtn.addEventListener('click', () => {
-      removeBtn.blur();
-      removeItem(item.id);
-    });
-
-    li.appendChild(info);
-    li.appendChild(removeBtn);
-    savedList.appendChild(li);
+    savedList.appendChild(createSavedItemElement(item));
   }
-
-  savedList.setAttribute('aria-busy', 'false');
 }
 
 // --- Existing functions ---
@@ -395,23 +387,48 @@ function render(items, generatedAt) {
 
     setSaveBtnState(saveBtn, savedIds.has(item.id));
     saveBtn.addEventListener('click', () => {
-      const scrollY = window.scrollY;
-      const savedSectionHeight = savedSection.offsetHeight;
-      // DOM更新前にフォーカスを外すことで iOS Safari のフォーカス起因スクロールを防ぐ
       saveBtn.blur();
-      const isCurrentlySaved = loadSaved().some((s) => s.id === item.id);
+      const saved = loadSaved();
+      const isCurrentlySaved = saved.some((s) => s.id === item.id);
+
+      // Capture layout state before DOM changes
+      const scrollY = window.scrollY;
+      const savedHeight = savedSection.offsetHeight;
+
       if (isCurrentlySaved) {
-        removeItem(item.id);
+        // Data: remove from storage + Supabase
+        const target = saved.find((s) => s.id === item.id);
+        persistSaved(saved.filter((s) => s.id !== item.id));
+        if (target?.url) removeFromSupabase(target.url);
+        // DOM: targeted updates only
+        setSaveBtnState(saveBtn, false);
+        const savedLi = savedList.querySelector(`[data-saved-id="${item.id}"]`);
+        if (savedLi) savedLi.remove();
+        updateSavedSectionVisibility();
       } else {
-        saveItem(item);
+        // Data: add to storage + Supabase
+        const url = item.canonicalUrl || item.url;
+        const entry = {
+          id: item.id,
+          url,
+          title: item.titleJa || item.title,
+          sourceName: item.sourceName,
+          publishedAt: item.publishedAt,
+        };
+        saved.unshift(entry);
+        persistSaved(saved);
+        addToSupabase(entry);
+        // DOM: targeted updates only
+        setSaveBtnState(saveBtn, true);
+        savedList.prepend(createSavedItemElement(entry));
+        updateSavedSectionVisibility();
       }
-      // savedSection の高さ変化分を補正することで記事の画面上の位置を維持する
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          const heightDelta = savedSection.offsetHeight - savedSectionHeight;
-          window.scrollTo(0, scrollY + heightDelta);
-        });
-      });
+
+      // Synchronous scroll correction — no rAF delay, prevents visible layout shift
+      const heightDelta = savedSection.offsetHeight - savedHeight;
+      if (heightDelta !== 0) {
+        window.scrollTo(0, scrollY + heightDelta);
+      }
     });
 
     trendList.appendChild(node);
