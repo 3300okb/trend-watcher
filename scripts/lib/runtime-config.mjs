@@ -59,7 +59,7 @@ export async function getConfiguredExcludePatterns() {
 }
 
 function buildGoogleNewsQuery(topics) {
-  const query = `(${topics.join(' OR ')}) when:1d`;
+  const query = `(${topics.join(' OR ')})`;
   return encodeURIComponent(query);
 }
 

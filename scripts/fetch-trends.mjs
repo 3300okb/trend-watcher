@@ -20,6 +20,7 @@ const TRANSLATION_CACHE_FILE = resolve(DATA_DIR, 'translation-cache.json');
 const REQUEST_TIMEOUT_MS = 20000;
 const MAX_ITEMS_PER_SOURCE = 30;
 const MAX_TRANSLATION_TEXT_LENGTH = 450;
+const MAX_ARTICLE_AGE_DAYS = 10;
 const GOOGLE_NEWS_DYNAMIC_TOKEN_EN = '__GOOGLE_NEWS_TOPICS_EN__';
 const GOOGLE_NEWS_DYNAMIC_TOKEN_JA = '__GOOGLE_NEWS_TOPICS_JA__';
 
@@ -298,8 +299,11 @@ async function main() {
       const items = parseFeed(xml).slice(0, MAX_ITEMS_PER_SOURCE);
       fetchedCount = items.length;
 
+      const ageCutoff = new Date(now.getTime() - MAX_ARTICLE_AGE_DAYS * 24 * 60 * 60 * 1000);
+
       for (const item of items) {
         if (!item.publishedAt) continue;
+        if (item.publishedAt < ageCutoff) continue;
         const canonicalUrl = normalizeUrl(item.url);
         if (!canonicalUrl) continue;
 
