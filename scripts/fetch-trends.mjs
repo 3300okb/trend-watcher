@@ -3,6 +3,7 @@ import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import http from 'node:http';
 import https from 'node:https';
 import { dirname, resolve } from 'node:path';
+import GoogleNewsDecoder from 'google-news-decoder';
 import {
   buildGoogleNewsSearchFeedUrlEn,
   buildGoogleNewsSearchFeedUrlJa,
@@ -73,6 +74,64 @@ function normalizeUrl(raw) {
   } catch {
     return raw.trim();
   }
+}
+
+const GOOGLE_NEWS_URL_PREFIX = 'https://news.google.com/rss/articles/';
+const GNEWS_CONCURRENCY = 5;
+const GNEWS_DELAY_MS = 200;
+const GNEWS_TIMEOUT_MS = 10000;
+
+const gnewsDecoder = new GoogleNewsDecoder();
+
+function isGoogleNewsUrl(url) {
+  return typeof url === 'string' && url.startsWith(GOOGLE_NEWS_URL_PREFIX);
+}
+
+async function resolveGoogleNewsUrl(url) {
+  if (!isGoogleNewsUrl(url)) return url;
+  try {
+    const result = await Promise.race([
+      gnewsDecoder.decodeGoogleNewsUrl(url),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), GNEWS_TIMEOUT_MS))
+    ]);
+    if (result?.status && result.decodedUrl) {
+      return result.decodedUrl;
+    }
+    return url;
+  } catch {
+    return url;
+  }
+}
+
+async function resolveGoogleNewsUrls(items) {
+  const googleNewsItems = items.filter((item) => isGoogleNewsUrl(item.url));
+  if (googleNewsItems.length === 0) return { resolved: 0, failed: 0 };
+
+  let resolved = 0;
+  let failed = 0;
+
+  for (let i = 0; i < googleNewsItems.length; i += GNEWS_CONCURRENCY) {
+    const chunk = googleNewsItems.slice(i, i + GNEWS_CONCURRENCY);
+    const results = await Promise.allSettled(
+      chunk.map(async (item) => {
+        const decoded = await resolveGoogleNewsUrl(item.url);
+        if (decoded !== item.url) {
+          item.url = decoded;
+          resolved += 1;
+        } else {
+          failed += 1;
+        }
+      })
+    );
+    for (const r of results) {
+      if (r.status === 'rejected') failed += 1;
+    }
+    if (i + GNEWS_CONCURRENCY < googleNewsItems.length) {
+      await new Promise((r) => setTimeout(r, GNEWS_DELAY_MS));
+    }
+  }
+
+  return { resolved, failed };
 }
 
 function titleHash(title) {
@@ -298,6 +357,13 @@ async function main() {
       const xml = await response.text();
       const items = parseFeed(xml).slice(0, MAX_ITEMS_PER_SOURCE);
       fetchedCount = items.length;
+
+      const gnewsResult = await resolveGoogleNewsUrls(items);
+      if (gnewsResult.resolved > 0 || gnewsResult.failed > 0) {
+        console.log(
+          `[GoogleNews] ${source.name}: resolved ${gnewsResult.resolved}/${gnewsResult.resolved + gnewsResult.failed} URLs`
+        );
+      }
 
       const ageCutoff = new Date(now.getTime() - MAX_ARTICLE_AGE_DAYS * 24 * 60 * 60 * 1000);
 
