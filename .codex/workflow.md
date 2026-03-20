@@ -6,26 +6,36 @@
 
 1. **調査**: 対象ファイルをすべて読み、影響範囲を把握してから変更に入る
 2. **実装**: 既存コードのスタイル・命名規則・ファイル構成に合わせて実装する
-3. **検証**: 実装後はビルド・lint・テストを実行し、すべてパスすることを確認する
+3. **検証**: 実装後はビルドを実行し、すべてパスすることを確認する
 4. **報告**: 変更ファイルと実行結果を明示して報告する
 
-シンプルな1行修正などは調査フェーズを省略して直接実装してよい。
+シンプルな 1 行修正などは調査フェーズを省略して直接実装してよい。
 
 ## 開発サーバー
+
 ```bash
+# CSS ビルド + Python3 http.server で http://localhost:8080 を起動
 npm run dev
 ```
 
 ## ビルド
+
 ```bash
+# config 同期 + CSS ビルド + 静的サイト生成（out/ に出力）
 npm run build
+
+# CSS のみビルド
+npm run build:css
+
+# config/keywords.json → public/data/runtime-config.json の同期
+npm run sync:config
 ```
 
-## データ収集・運用コマンド
+## データ収集（バッチ）
+
 ```bash
-npm run sync:config
+# RSS フェッチ + 翻訳 + JSON 更新
 npm run job:fetch
-npm run dispatch:research
 ```
 
 ## 報告フォーマット
@@ -37,5 +47,5 @@ npm run dispatch:research
 
 ### 実行結果
 - ビルド: ✅ / ❌
-- テスト: ✅ X件通過 / ❌ X件失敗
-- lint: ✅ / ❌
+- テスト: （テストフレームワーク未導入）
+- lint: （lint 未導入）
