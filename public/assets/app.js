@@ -495,7 +495,7 @@ async function boot() {
       syncSavedBtn.textContent = ok ? 'Done' : 'Error';
       setTimeout(() => {
         if (syncSavedBtn) {
-          syncSavedBtn.textContent = 'Refresh';
+          syncSavedBtn.textContent = 'Sync';
           syncSavedBtn.disabled = false;
         }
       }, 1500);
