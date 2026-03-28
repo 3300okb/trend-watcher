@@ -264,10 +264,14 @@ function setSaveBtnState(btn, saved) {
     btn.textContent = 'Saved';
     btn.classList.add('border-cyan-300', 'bg-cyan-50', 'text-cyan-700');
     btn.classList.remove('border-slate-200', 'bg-slate-50', 'text-slate-500');
+    btn.classList.add('hover:border-cyan-400', 'hover:bg-cyan-100', 'hover:text-cyan-800');
+    btn.classList.remove('hover:border-slate-300', 'hover:bg-slate-100', 'hover:text-slate-600');
   } else {
     btn.textContent = 'Save';
     btn.classList.remove('border-cyan-300', 'bg-cyan-50', 'text-cyan-700');
     btn.classList.add('border-slate-200', 'bg-slate-50', 'text-slate-500');
+    btn.classList.remove('hover:border-cyan-400', 'hover:bg-cyan-100', 'hover:text-cyan-800');
+    btn.classList.add('hover:border-slate-300', 'hover:bg-slate-100', 'hover:text-slate-600');
   }
 }
 
