@@ -7,8 +7,9 @@ const ARTICLE_FETCH_USER_AGENT =
 const MAX_BODY_CHARS = 8000;
 const MIN_BODY_CHARS_FOR_FULL = 300;
 const OPENAI_ENDPOINT = 'https://api.openai.com/v1/chat/completions';
-const OPENAI_TIMEOUT_MS = 20000;
+const OPENAI_TIMEOUT_MS = 45000;
 const OPENAI_MODEL = process.env.OPENAI_SUMMARY_MODEL || 'gpt-5-nano';
+const OPENAI_REASONING_EFFORT = process.env.OPENAI_REASONING_EFFORT || 'minimal';
 
 const SYSTEM_PROMPT =
   '与えられた記事のタイトルと本文から、日本語で2〜3文・150〜200字程度の要約を作成してください。' +
@@ -97,6 +98,7 @@ async function callOpenAi({ apiKey, systemPrompt, userContent }) {
       },
       body: JSON.stringify({
         model: OPENAI_MODEL,
+        reasoning_effort: OPENAI_REASONING_EFFORT,
         messages: [
           { role: 'system', content: systemPrompt },
           { role: 'user', content: userContent }
