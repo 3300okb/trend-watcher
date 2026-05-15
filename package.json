@@ -18,6 +18,8 @@
     "tailwindcss": "^3.4.17"
   },
   "dependencies": {
-    "google-news-decoder": "^1.0.1"
+    "@mozilla/readability": "^0.6.0",
+    "google-news-decoder": "^1.0.1",
+    "jsdom": "^29.1.1"
   }
 }

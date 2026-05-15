@@ -10,6 +10,11 @@ import {
   getConfiguredExcludePatterns,
   getConfiguredTopics
 } from './lib/runtime-config.mjs';
+import {
+  extractArticleBody,
+  summarizeArticle,
+  summarizeFromTitleAndDescription
+} from './lib/article-summarizer.mjs';
 
 const ROOT = resolve(new URL('..', import.meta.url).pathname);
 const SOURCES_FILE = resolve(ROOT, 'config/sources.json');
@@ -18,10 +23,13 @@ const TRENDS_FILE = resolve(DATA_DIR, 'trends.json');
 const LATEST_FILE = resolve(DATA_DIR, 'latest.json');
 const LOG_FILE = resolve(DATA_DIR, 'fetch-logs.json');
 const TRANSLATION_CACHE_FILE = resolve(DATA_DIR, 'translation-cache.json');
+const SUMMARY_CACHE_FILE = resolve(DATA_DIR, 'summary-cache.json');
 const REQUEST_TIMEOUT_MS = 20000;
 const MAX_ITEMS_PER_SOURCE = 30;
 const MAX_TRANSLATION_TEXT_LENGTH = 450;
-const MAX_ARTICLE_AGE_DAYS = 10;
+const MAX_ARTICLE_AGE_DAYS = 5;
+const MAX_NEW_SUMMARIES_PER_RUN = Number(process.env.MAX_NEW_SUMMARIES_PER_RUN || 80);
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '';
 const GOOGLE_NEWS_DYNAMIC_TOKEN_EN = '__GOOGLE_NEWS_TOPICS_EN__';
 const GOOGLE_NEWS_DYNAMIC_TOKEN_JA = '__GOOGLE_NEWS_TOPICS_JA__';
 
@@ -337,6 +345,7 @@ async function main() {
   const logs = [];
   const deduped = new Map();
   const translationCache = await readJsonSafe(TRANSLATION_CACHE_FILE, {});
+  const summaryCache = await readJsonSafe(SUMMARY_CACHE_FILE, {});
 
   for (const source of sources) {
     const startedAt = Date.now();
@@ -429,9 +438,56 @@ async function main() {
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
 
+  let newSummariesThisRun = 0;
+  let aiSummaryHits = 0;
+  let aiSummaryFallbacks = 0;
+  let aiSummaryMisses = 0;
+
   for (const article of articles) {
     article.titleJa = await translateToJapanese(article.title, translationCache);
-    article.summaryJa = await translateToJapanese(article.summary || '', translationCache);
+
+    const cached = summaryCache[article.id];
+    let aiSummary = cached || null;
+
+    if (!cached && OPENAI_API_KEY && newSummariesThisRun < MAX_NEW_SUMMARIES_PER_RUN) {
+      const body = await extractArticleBody(article.url);
+      if (body) {
+        aiSummary = await summarizeArticle({
+          apiKey: OPENAI_API_KEY,
+          title: article.title,
+          body
+        });
+        if (aiSummary) aiSummaryHits += 1;
+      }
+      if (!aiSummary) {
+        aiSummary = await summarizeFromTitleAndDescription({
+          apiKey: OPENAI_API_KEY,
+          title: article.title,
+          description: article.summary || ''
+        });
+        if (aiSummary) aiSummaryFallbacks += 1;
+      }
+      if (aiSummary) {
+        summaryCache[article.id] = aiSummary;
+        newSummariesThisRun += 1;
+      } else {
+        aiSummaryMisses += 1;
+      }
+    }
+
+    if (aiSummary) {
+      article.summaryJa = aiSummary;
+    } else {
+      article.summaryJa = await translateToJapanese(article.summary || '', translationCache);
+    }
+  }
+
+  if (OPENAI_API_KEY) {
+    console.log(
+      `[summarize] new=${newSummariesThisRun} body-hits=${aiSummaryHits} fallbacks=${aiSummaryFallbacks} misses=${aiSummaryMisses}`
+    );
+  } else {
+    console.log('[summarize] OPENAI_API_KEY not set — skipping AI summaries');
   }
 
   const latest = [...articles].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
@@ -459,6 +515,7 @@ async function main() {
 
   await atomicWriteJson(LOG_FILE, mergedLogs);
   await atomicWriteJson(TRANSLATION_CACHE_FILE, translationCache);
+  await atomicWriteJson(SUMMARY_CACHE_FILE, summaryCache);
 
   console.log(`[trend-watcher] generated ${articles.length} articles at ${now.toISOString()}`);
 }
