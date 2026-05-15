@@ -2,7 +2,7 @@ name: Research And Deploy
 
 on:
   schedule:
-    - cron: "5 * * * *"
+    - cron: "5 */6 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -43,6 +43,10 @@ jobs:
         run: npm ci
 
       - name: Run trend research
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_SUMMARY_MODEL: ${{ vars.OPENAI_SUMMARY_MODEL }}
+          MAX_NEW_SUMMARIES_PER_RUN: ${{ vars.MAX_NEW_SUMMARIES_PER_RUN }}
         run: npm run job:fetch
 
       - name: Commit updated data
