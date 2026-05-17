@@ -1,7 +1,25 @@
 {
-  "generatedAt": "2026-05-17T17:06:21.741Z",
-  "total": 79,
+  "generatedAt": "2026-05-17T19:13:02.371Z",
+  "total": 80,
   "items": [
+    {
+      "id": "e8b83e4c838a257101fb8565d9bf47cc4022e4b9",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks. - blog.google",
+      "summary": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks. &nbsp;&nbsp; blog.google",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/accelerator-ai-for-the-planet/",
+      "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/accelerator-ai-for-the-planet",
+      "publishedAt": "2026-05-17T18:12:51.000Z",
+      "hashTitle": "47e9e015ca249c5d0a36d887cfebc6e2709122c8",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-05-17T19:13:02.371Z",
+      "titleJa": "私たちは環境リスクに取り組むために、アジア太平洋地域で Google DeepMind Accelerator プログラムを開始します。 - blog.google",
+      "summaryJa": "アジア太平洋地域は経済成長の源泉である一方、気候変動の影響を受けやすいと指摘されています。Google DeepMind Accelerator のAPAC版「AI for the Planet」は、自然・気候・農業・エネルギーなどの課題解決を狙うスタートアップ、研究チーム、NPOを対象に、前方AIと科学AIモデルの統合支援を提供する3カ月のプログラムです。シンガポールでの対面ブートキャンプから始まり、専門家の指導とプロジェクト支援を受けられます。"
+    },
     {
       "id": "aae2fb535c1a0e601a2935f7d14b17efd0408797",
       "sourceName": "Google News Search JA (24h)",
@@ -16,7 +34,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Epicが代替ストア開設、iOS版『フォトナ』復活もAppleへの批判やまず - 日経クロストレンド",
       "summaryJa": "Epic Gamesは2026年5月1日に日本向け「Epic Games Store」を開設し、代替ストアとしてiOS上で提供を開始した。これにより、長年停止していたiOS版フォートナイトが約5年8カ月ぶりに復活し、他タイトルも入手可能となっているが、日本のデベロッパーは現時点で参加していない。Appleはコアテクノロジー手数料を含む新たな手数料体系を導入し、外部決済や代替ストア利用時の追加手数料を設定しているため、Epicはこれを日本の新法と関連付けて問題視している。"
     },
@@ -34,7 +52,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Googlebook は Google ブックではありません - NBC ニュース",
       "summaryJa": "Google BooksとGoogle Booksの関係性には混同を招く点があるとして、NBC NewsはGoogle Booksの実態に関する報道を扱っている。"
     },
@@ -52,7 +70,7 @@
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Anthropic の影の IPO 市場はすでに数兆ドルの価格を高騰させている - Yahoo Finance",
       "summaryJa": "Anthropicの「シャドーIPO市場」がすでに兆ドル規模の評価額を示していると報じられている。Yahoo Financeによると、同市場の動向が巨額の価格を示唆しているとの内容である。"
     },
@@ -70,7 +88,7 @@
       "tags": [
         "frontend"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "国会図書館のOCRにWebUIを追加した - NDLOCR-Lite × Docker × React × FastAPI",
       "summaryJa": "国会図書館のOCR機能にWebUIを追加するプロジェクトで、フロントエンドとAPIを含むDocker環境を用意し、WebUIからREST APIを呼び出せるようにした。具体的には frontend と ndlocr のコンテナをビルド・デプロイし、http://localhost:5173 からWebUIでPDFをアップロードしてOCR結果を表示・コピー可能とした。API直接の呼び出しも curl で動作確認済みで、サーバー上のOCR処理が動作することを確認している。"
     },
@@ -88,7 +106,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "U-Mの2000万ドルのOpenAI賭けについて裁判所への提出が明らかにしたこと - Detroit Free Press",
       "summaryJa": "裁判所の提出文書には、ミシガン大学がOpenAIに対して約2000万ドルの投資を行っていたことが示されている。この記事はその投資に関する詳細を明らかにしていると伝えている。"
     },
@@ -107,7 +125,7 @@
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Anthropic、中小企業向けAIエージェント「Claude for Small Business」発表 - ビジネス+IT",
       "summaryJa": "Anthropicは中小企業向けの新パッケージ「Claude for Small Business」を発表し、会計・営業・マーケティングなど日常業務を自動化する15種のエージェント型ワークフローを提供する。主要SaaSツールとOAuth連携し、QuickBooks/PayPal/HubSpot/Canvaなどと統合して実務を代行するが、安全性確保のため人間の介在を前提とした設計（Human-in-the-Loop）を採用し、重要なアクションは事前確認・承認が必要。既存のClaude Pro/Team/Enterpriseプランの拡張機能として追加料金なしで利用でき、トグルで有効化する。"
     },
@@ -126,7 +144,7 @@
         "Anthropic",
         "OpenAI"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "米国防総省がOpenAIなどAI調達拡大、Anthropic排除もMythos利用へ調整 GenAI.milを通じて軍関係者や請負業者に提供 - ビジネス+IT",
       "summaryJa": "米国防総省は2026年5月、機密情報を扱える環境でのAI活用を拡大するため、NVIDIA、Amazon Web Services、Google、Microsoft、OpenAI、SpaceX、Reflection AI、Oracleなど計8社と調達契約を結んだと発表した。対象はIL6およびIL7環境で、GenAI.milを通じて軍関係者や請負業者へ提供され、生成AIやセキュアコンピューティング、データ分析の支援が進む。Anthropicは安全基準の対立により対象外となったが、Claude Mythosの利用を巡る調整が続いている。"
     },
@@ -144,7 +162,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Claude Code を社内導入する時の最低限ガードレール5項目 — 機密情報を漏らさない設定パターン",
       "summaryJa": "Claude Codeを社内で安全に使うための最低限のガードレールとして、機密ファイルを除外する .claudeignore、CLAUDE.md に禁止事項を明記すること、Hooks で危険な操作をブロックする設定、 本番環境変数を分離管理すること、承認フローを Skills に組み込むことの5点を実践するのが推奨されます。セットアップは合計15分程度で完了し、全体像は project/ 配下にテンプレートとしてまとめられています。これにより、機密情報の漏えいリスクを抑えつつ、適切な運用の意思決定を人間が介在させる設計が可能になります。"
     },
@@ -163,7 +181,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Google、AIノートPC「Googlebook」発表、2026年秋に発売予定 Gemini前提でマウスポインターやデスクトップを再設計 - Ledge.ai",
       "summaryJa": "GoogleはAIノートPC「Googlebook」を発表し、2026年秋に発売予定と伝えた。同機種はGeminiを前提としてマウスポインターやデスクトップの設計を再構築するとされる。本文には販売時期以外の具体的な仕様は記載がなく、関連情報は不明な点も多い。"
     },
@@ -182,7 +200,7 @@
         "html",
         "css"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "単一HTMLで作ったサイトを自己解凍形式にする試み",
       "summaryJa": "単一HTMLを自己解凍形式にすると、圧縮後のファイルサイズは大幅に小さくなる（214KB → 48KB程度）が、ブラウザで開く体感速度はほとんど変わらない。主にHTML・CSS・JavaScript中心のサイトで効果が大きく、テキストの繰り返しが多い箇所の圧縮率が高い一方、画像を多く含む場合は効果が小さい。開発時は圧縮前HTMLを編集・管理し、公開時だけ自己解凍形式にする運用が現実的である。"
     },
@@ -200,7 +218,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "AI検索でもSEOは変わらない Googleが解説する必要・不要な対策 - ツギノジダイ",
       "summaryJa": "AI検索時代でも基本のSEOと高品質なコンテンツが最も重要である。AIは要約を作る一方、信頼性の高い情報源として引用されるには、独自性のある視点・データ・事例を含むコンテンツ作りと、適切なサイト構造・UXが不可欠だ。AIエージェント対応としては、正しいタグの使用・安定したレイアウト・ラベルの紐付けなど、AIがサイトを正確に理解できる基盤作りが推奨される。"
     },
@@ -219,7 +237,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Google Chat、Geminiによるメッセージ編集機能で新たに8言語を追加",
       "summaryJa": "GoogleはGeminiのメッセージ編集機能に、新たに日本語を含む複数言語のサポートを追加したと発表した。対象言語は英語に加え、フランス語、ドイツ語、イタリア語、日本語、韓国語、ポルトガル語、スペイン語で、フォーマットツールバーの「Refine」アイコンで利用できる。管理者・エンドユーザーともにデフォルト有効で、各種エディションに順次展開されている。"
     },
@@ -237,27 +255,9 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Windows、LinuxでもCodexリモートアクセスしたいよ！",
       "summaryJa": "Codexはモバイルアプリでリモートアクセスに対応、現在はmacOSが接続先として想定。公式アナウンスはなく自己責任での使用推奨だが、WindowsとLinuxでも動作するとされ、Codex CLI（バージョン0.130.0以上）をインストールしてリモートアクセスを有効化すれば利用可能になる。スマホ側から設定を行い、Android画面を例としてRaspberry Piでの接続報告もある。最新0.131.0-alpha.22では起動方式が変更され、デーモン起動的なバックグラウンド運用となり、停止は「codex remote-control stop」で行う。"
-    },
-    {
-      "id": "939dfc12d8de78d5bd9d98bdd7ad46a600b22c5f",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Cerebras' blockbuster IPO boosts hype for SpaceX and OpenAI, but crowds out smaller players - CNBC",
-      "summary": "Cerebras' blockbuster IPO boosts hype for SpaceX and OpenAI, but crowds out smaller players &nbsp;&nbsp; CNBC",
-      "url": "https://www.cnbc.com/2026/05/16/cerebras-blockbuster-ipo-boosts-hype-for-spacex-openai-anthropic.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/05/16/cerebras-blockbuster-ipo-boosts-hype-for-spacex-openai-anthropic.html",
-      "publishedAt": "2026-05-16T12:00:01.000Z",
-      "hashTitle": "4792641187c58008bc48bb7616ca0c2eb42c92d1",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
-      "titleJa": "セレブラスの大ヒットIPOでスペースXとオープンAIへの期待が高まるも、小規模企業は締め出される - CNBC",
-      "summaryJa": "Cerebras Systems' IPO surged, with shares rising nearly 70% and a market cap around $95 billion, marking the largest U.S. tech offering this year and one of the biggest since Uber. The article notes that this hype underscores how hard it is for non-AI companies to capture investor attention amid looming multi-trillion-dollar IPOs from SpaceX and OpenAI, while many pre-IPO SaaS firms struggle to gain interest unless they have a strong AI narrative. It also highlights a broader market environment of cautious appetite for IPOs, with investors waiting for data points after a period of AI-driven excitement."
     },
     {
       "id": "e2321a4f3a9e91344df02689ffd494314ca078d0",
@@ -273,7 +273,7 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "NotebookLMの学習ノート作成をAIで自動化する",
       "summaryJa": "NotebookLMの学習ノート作成をAIで自動化する方法を紹介します。Codexを使い、学習テーマの入力から関連リソースの収集・NotebookLMへのノート作成・リソースの追加までを自動化し、学習開始までの準備時間を短縮できると説明されています。実際にはPlaywrightでブラウザを操作してNotebookLM上にノートを作成する手法で、初回はGoogle認証が必要になる点や画面仕様の変更で動作が変わる可能性に留意すべきとしています。"
     },
@@ -291,7 +291,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "「あ」→「雨」を自力で実装する｜IMEに頼らない日本語サジェストの作り方",
       "summaryJa": "日本語入力時にIMEの候補を直接取得せず、辞書データと前方一致検索でサジェストを実装する方法を解説している。IMEの合成状態を検知する composition イベントと、入力イベントを組み合わせて、確定時のみ検索を実行する設計を提案。辞書データを用意し、読みとテキストの両方で前方一致を行い、候補を最大10件に絞って表示する flow を具体的なコードとともに説明している。さらに debouce を用いて検索回数を抑え、HTMLエスケープを忘れずに実装する重要性にも触れている。"
     },
@@ -309,7 +309,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Claude Codeのskillsアイデア大全20選",
       "summaryJa": "Claude Codeのskills機能は、再利用可能な専門知識をSKILL.mdとして配置し、必要なときだけ読み込ませる仕組みで、CLAUDE.mdの肥大化を防ぎつつ作業品質を均一化します。記事は20個のアイデアをカテゴリ別に紹介し、実務で使えるコツとしてアウトプット例の同梱や小さく作る段階的な育て方、チーム共有の重要性を解説しています。まとめとして、skillsはチームの暗黙知を形式知に変えるツールであり、まず1つの自分の頻出作業をskill化することを勧めています。"
     },
@@ -327,7 +327,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "OpenAI、A.I.を提供する会社を買収音声を複製するためのツール - ニューヨーク・タイムズ",
       "summaryJa": "OpenAIが、声をクローンするAIツールを提供していた企業を買収した。本文はニューヨーク・タイムズの報道を伝える。"
     },
@@ -346,7 +346,7 @@
         "Google",
         "Apple"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "パスワードの時代が終わる理由 - パスキーの仕組みを図解でわかりやすく整理する",
       "summaryJa": "パスキーは、公開鍵暗号を使い秘密鍵を端末に留めたまま認証を行う新しいログイン方式で、指紋・顔・PINで本人確認を行います。サーバーには公開鍵だけ渡り、ログイン時は「署名」を返すだけなので、秘密鍵がネット上を送られず、フィッシング耐性が高いと説明されています。同期パスキーにより複数端末での利用が可能ですが、機種間の引き継ぎや完全なパスワード排除には課題も残ると指摘されています。"
     },
@@ -364,7 +364,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "OpenAI とマルタが提携して ChatGPT Plus を全国民に提供",
       "summaryJa": "OpenAIとマルタ政府は、マルタ市民全員にChatGPT Plusを提供する世界初のパートナーシップを発表した。AIリテラシー向上のコースを university of Malta が開発し、コース完了後1年間ChatGPT Plusを無料で利用できる。第一段階は5月に開始され、マルタデジタルイノベーション庁が参加者への配布を管理する。"
     },
@@ -382,7 +382,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "OpenAI、「ChatGPT」に個人向け資産管理機能 金融口座と連携 - ITmedia",
       "summaryJa": "OpenAIは「ChatGPT」の新機能として個人向け資産管理のプレビュー版を米国のProプランユーザー向けに公開した。Plaid経由で金融口座を連携し、ダッシュボードで口座残高・支出・投資などを一目で確認でき、推論モデルGPT-5.5を活用して個人のライフスタイルに合わせた回答を提供する予定だ。データは自動分類され、口座番号閲覧や口座内容の変更はできない設計で、シークレットモードでは財務データにアクセスしない。現在は米国のProプラン向けのプレビューで、将来的にPlusプランを含む全ユーザーへ拡大する予定。"
     },
@@ -400,7 +400,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "グレッグ・ブロックマン氏、最新の刷新で正式にOpenAI製品の管理を掌握 - WIRED",
       "summaryJa": "OpenAIは製品戦略を統合するための組織再編を行い、共同創業者で社長のグレッグ・ブロックマンが製品戦略を主導することになった。ChatGPTとCodexを一つの統一体験として統合し、Codexを含むコア製品チームを強化する方針で、他の幹部も新たな役割へ移行している。ブロックマンは「消費者と企業の両方でエージェント的な未来を実現するため、最大限の集中で製品を統合する」と説明した。"
     },
@@ -418,7 +418,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "重要な点 #11: 3D ボクセル シーン、フライング フォーカス、CSS 構文など",
       "summaryJa": "Erwin Heerichの彫刻に着想を得た Heerich.jsによる3Dボクセルシーンの紹介は、SVG描画とCSS変数でスタイル可能な点を説明します。ビュー遷移を用いたフォーカスのアニメーションやof <selector>構文、rangeシンタックス、コンテナクエリの新機能、scroll-driven animations、Chrome 148とSafari 26.5の更新も要点です。"
     },
@@ -436,7 +436,7 @@
       "tags": [
         "vue"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "番外編：開発技術のパラダイムシフト⑤",
       "summaryJa": "SPA時代へと移行する中で、jQueryの複雑なDOM操作が限界に達し、Reactが仮想DOMとコンポーネント指向を導入して画面更新を効率化しました。続くVue.jsは、学習のしやすさを取り入れつつ普及を拡大し、Reactと並ぶ覇者となりました。これによりフロントエンドはバックエンドと分離され、モダンなWebは滑らかな体験を実現する形へと完成しました。"
     },
@@ -454,7 +454,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "中小企業・起業家のためのAIが登場！「Claude for Small Business」とは何か - sogyotecho.jp",
       "summaryJa": "Anthropicが発表した「Claude for Small Business」は、中小企業・個人事業主が日常業務で使うツールと連携し、経理・請求管理・営業・マーケティングなど15種の業務ワークフローをAIが自動化するサービスです。Google WorkspaceやMicrosoft 365との連携を前提に、クラウド上のデータを活用して資金繰り predictsや請求催促、CRM分析、電子契約の管理などを支援します。料金はProプランで月額約3,000円程度を目安とし、日本での利用はツール連携の普及度や日本の会計基準への適用性に留意する必要があります。"
     },
@@ -473,7 +473,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Claude Code を社内で使うための「AIエージェントセキュリティ」実践編",
       "summaryJa": "Clause Code の業務利用を実現する実践編では、情シスが求める可視化・制御・監査・規制対応を1つの基盤で満たすことが重要と説明され、Aigis を導入して初期設定と運用を行う具体的な手順と、ブロック事例・ログ形式・コンプライアンスレポートの活用方法が紹介されています。導入後はガバナンス状態のスナップショットやアラート付きの操作ログ、30日間の規制レポートを提示することで、実際にブロック件数などの実測値を情シスへ示すことを推奨しています。さらに、プロンプトインジェクションなどAI特有の攻撃に対する追加防御として、MCP層や検出器の活用・CI/CDでの検証が解説されています。"
     },
@@ -491,7 +491,7 @@
       "tags": [
         "typescript"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "「さらばJavaScript」 橋渡し的リリース「TypeScript 6.0」で何が変わった？：6.0の「非推奨」は7.0では全く使えない - ITmedia",
       "summaryJa": "MicrosoftはTypeScript 6.0を公開し、JavaScriptコードベースによる最後のリリースと位置づけた。6.0は7.0移行の橋渡しとして、破壊的変更と非推奨化を多く含み、ジェネリック呼び出しの型チェック強化やimport()の非推奨対象拡張、Temporal APIの組み込み型追加などが挙げられる。"
     },
@@ -510,7 +510,7 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "ChatGPTモバイルアプリ内でCodexプレビュー版が利用可能に",
       "summaryJa": "ChatGPTモバイルアプリ内でCodexプレビュー版が利用可能になったことを伝える記事です。タイトルと説明文はいずれも同じ内容、つまりCodexプレビュー版の利用可能化を報じています。"
     },
@@ -528,7 +528,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "スマートディスプレイの新製品？ 「Google Home Display」なる新デバイスが近日発表か【やじうまWatch】 - INTERNET Watch",
       "summaryJa": "「Google Home Display」なる新デバイスが近日登場する見込みで、iOS版Google Homeアプリのコード内で名称が発見されたことが報じられている。Displayを含むリストから、Google Nest Hubの後継となるスマートディスプレイ製品と見られており、Nest Hubの最後のモデルが発売されたのが2021年である点と、Geminiベースのスマートホームアシスタントへ変更された点を踏まえると、新しいディスプレイがGeminiにネイティブ対応する可能性があると推測されている。すでに発表済みで近く発売が見込まれるスマートスピーカー新製品「Google Home Speaker」との名称の整合性も指摘されている。"
     },
@@ -546,7 +546,7 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "ChatGPTスマホアプリから「Codex」を操作可能に - Impress Watch",
       "summaryJa": "OpenAIはChatGPTのモバイルアプリに「Codex」対応を追加し、スマートフォンからCodexを操作できるようにした。CodexはノートPCやリモート環境と接続して作業を進める間、状況確認や方向性の変更、次の指示の承認を行えるようになる。iOS/Android向けのプレビュー版はすべてのプランで順次提供され、Windows版のモバイル接続機能は近日提供予定。"
     },
@@ -564,7 +564,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Spotify、Appleの「HLS」対応で動画ポッドキャストのクロスプラットフォーム配信を実現へ",
       "summaryJa": "SpotifyはMegaphoneと共に、AppleのHLS対応を実装し、SpotifyとApple Podcastsの両方で動画ポッドキャストを配信できるようにする計画を発表した。 HLS対応により、視聴環境の帯域幅に合わせて動画品質を自動調整し、オフラインダウンロードや動的広告挿入にも対応する一方、HLS非対応アプリ向けには従来のオーディオのみのRSSフィードも継続提供する。 またSpotify Distribution APIの適用拡大により、LibsynやPodigeeなど5つのホスティングプラットフォーム利用者は、ホスティングを変えることなく動画コンテンツを配信・収益化でき、今後追加の収益化オプションも予定されている。"
     },
@@ -582,7 +582,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "【テック関連情報をいち早く！】Google「優先ソース機能」でCodeZineの記事が読みやすくなります",
       "summaryJa": "Googleが提供する「優先ソース機能」が日本語にも対応し、検索結果のトップニュース欄でお気に入りメディアを優先表示できるようになりました。CodeZineを登録すると、旬のITニュースやインタビュー記事へアクセスしやすくなるとのことです。登録方法は、検索結果画面のトップニュース横のアイコンから「CodeZine」を選択して再読み込みする方法と、指定リンクから同様に登録する方法の2通りがあります。"
     },
@@ -600,7 +600,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "OpenAI、サプライチェーン攻撃で従業員2人の端末が侵害 macOSユーザーは6月12日までにアプリ更新を",
       "summaryJa": "OpenAIは、TanStackのサプライチェーン攻撃により従業員2人のデバイスが侵害され、170以上のnpmパッケージと2つのPyPIパッケージに影響が出たと発表した。macOS、Windows、iOS、Android向けのコード署名証明書が漏洩する可能性があるとして証明書のローテーションを実施しており、macOSユーザーは6月12日までにOpenAIデスクトップアプリを更新する必要がある。影響は顧客データや生産システム、知的財産、デプロイ済みソフトウェアには及んでいないとしている。"
     },
@@ -618,7 +618,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Google親会社が初の円債5765億円 バークシャー超え、過去最大 - 日本経済新聞",
       "summaryJa": "グーグルの親会社アルファベットは、初めて円建ての社債を発行し、総額は5765億円となった。発行期間は3年、5年、7年、10年、15年、30年、40年の7本で、5年債の表面利率は2.412%、発行額は2005億円と最も多い。これにより海外企業の円建て債として過去最大となった。"
     },
@@ -637,7 +637,7 @@
         "OpenAI",
         "Apple"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "OpenAI、Appleとの関係悪化で法的措置を検討 - The New York Times",
       "summaryJa": "OpenAIはAppleとの関係が緊迫する中、法的手段を検討している可能性があると報じられている。出所はThe New York Times。"
     },
@@ -655,7 +655,7 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "ビジネス運用チームが Codex を使用する方法",
       "summaryJa": "ビジネス運営チームが Codex を活用して、実務の入力を元にイニシアチブの概要、戦略更新、指導層向け意思決定資料、進捗報告などを作成する方法を紹介します。実務データを活用して多様な文書を自動生成できる点に焦点を当てています。"
     },
@@ -673,7 +673,7 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "データ サイエンス チームが Codex を使用する方法",
       "summaryJa": "データサイエンスチームが Codex を活用して、実務の入力から根本原因要約、影響の読み取り、KPIメモ、スコープを絞った分析、ダッシュボード仕様書を作成する方法を紹介します。"
     },
@@ -691,7 +691,7 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "営業チームが Codex を使用する方法",
       "summaryJa": "Codex はCRMの履歴や通話メモ、メール、Slack、資料などの文脈をまとめ、優先度の高いアカウント要約や会議準備、予測リスクの整理など“作業草案”を作成します。営業担当とマネジャーは関係戦略を決定する責任を持ちつつ、Codex はチームが早く作業案を共有できるよう支援します。具体的には、未活用アカウントの優先化、会議準備とフォローアップ、 forecast のリスク検討、戦略的アカウント計画の刷新、停滞取引の診断といったユースケースに適用され、アカウント履歴・会話・課題・リスク等を基に、最初のドラフト（要約、質問リスト、フォローアップ案、次のアクション案）を提供します。これを元にチームは戦略を精査し、根拠を検証して次の一手を決定します。"
     },
@@ -710,7 +710,7 @@
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Anthropicとゲイツ財団が提携 AIによる社会貢献に2億ドル拠出",
       "summaryJa": "AnthropicとGates Foundationは、今後4年間で2億ドルを拠出し、AI関連のインフラ・ヘルスケア・教育分野を支援する。低中所得国やサービスが不足している地域での助成金やAIモデル「Claude」の利用クレジット、技術サポートを提供し、AIをより公平に活用できるようにする。教育分野ではデータ共有インフラを共同開発し、AIを用いた個別指導や進路指導の効果を高めるほか、アフリカやインドで読み書き・計算のプログラムを支援するAIアプリ開発も進める。"
     },
@@ -729,7 +729,7 @@
         "OpenAI",
         "Apple"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "AppleとOpenAI 提携関係が暗礁に - Yahoo!ニュース",
       "summaryJa": "AppleとOpenAIの提携関係が暗礁に乗り上げていると報じられている。本文には「なぜAppleとOpenAI 提携関係が暗礁に」との見出しを含むだけで、具体的な原因や詳細は記されていない。その他のニュース項目も並列して掲載され、提携の理由や今後の展望は本文中の事実として示されていない。"
     },
@@ -748,7 +748,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "「Google I/O」20日午前2時開幕 注目ポイントまとめ Gemini 4は登場する？ - Yahoo!ニュース",
       "summaryJa": "Google I/O 2026では、Geminiの最新版をはじめAI関連の新機能や、Android XRグラスなどのハードウェア発表が見込まれる。発表会は日本時間の5月20日午前2時からYouTubeで生配信され、Android 17の新機能や「app bubbles」といった改良も紹介される可能性がある。さらに、AluminumOSを核とする新OS「Googlebook」や、NotebookLMとGeminiの連携機能、インタラクティブなシミュレーション機能も注目される。"
     },
@@ -767,7 +767,7 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "OpenAI、「Codex」をChatGPTモバイルアプリに統合──外出先からコーディング作業を管理 - ITmedia",
       "summaryJa": "OpenAIはCodexをChatGPTモバイルアプリに統合し、外出先からスマホでPCやリモート環境のエージェント作業の進捗確認や承認がリアルタイムで行えるようにした。モバイル版は現在macOS向けの接続に対応、Windows版は近日予定で、スマホからのスクリーンショットやターミナル出力の確認、次のコマンド承認、作業開始などが可能で、ローカルマシン上のファイルや認証情報は同期される。セキュリティとして安全なセッション同期を実現するセキュアリレーを採用、SSH接続の一般提供やHooksの提供も開始されている。"
     },
@@ -786,7 +786,7 @@
         "OpenAI",
         "Apple"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "OpenAI、Appleに対する法的選択肢を検討、関係者が語る - ロイター",
       "summaryJa": "OpenAIがAppleに対する法的手段を検討していると関係筋が伝え、 Reuters の報じるところによる。具体的な内容は明らかにされていないが、法的手段の検討が進行中であるとのこと。"
     },
@@ -804,7 +804,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "【最強入門】Claude Codeが強すぎる…非エンジニアこそ業務激変の「神設定」と活用5選 連載：きょうから使える生成AI仕事術 - ビジネス+IT",
       "summaryJa": "Claude Codeはエンジニア向けだけでなく、非エンジニアのファイル整理や資料修正、文字起こし、Excel加工などの日常業務を自動化できるAIアシスタントとして紹介されている。インストールは5分程度で、Mac/Windows/Linuxに対応し、ターミナルでの対話形式で指示を出す形式が特徴と説明されている。記事は非エンジニアにも Claude Code が力を発揮するとし、使い方や設定、料金プランの決め方などを解説する予定である。"
     },
@@ -823,7 +823,7 @@
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Anthropic、中小企業用AI業務支援「Claude for Small Business」発表 15種のAIエージェントが作業を肩代わり - ITmedia",
       "summaryJa": "Anthropicは中小企業向けのAI業務支援サービス「Claude for Small Business」を発表し、会計・営業・マーケティング・人事・顧客対応など日常業務へ生成AIを組み込み、既存ソフトと連携させて業務効率化を図る。Claudeは15種類のエージェント型ワークフローを提供し、QuickBooksやPayPal、HubSpotなどと連携、給与計画や資金予測、決算概要の作成、販促分析、契約書確認、請求管理などを肩代わりする。セキュリティ面では利用者承認を前提とし、既存システムの閲覧権限を維持した設計で、データ学習の標準設定はTeam/Enterpriseプランで行わない。"
     },
@@ -841,7 +841,7 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Codex を使用したエージェントティック ソフトウェア開発の将来に関する Sea の見解",
       "summaryJa": "Sea LimitedのCPOは、アジアのエンジニアリングチーム全体でCodexを展開してAIに適したソフトウェア開発を加速させる理由を説明している。 SeaはCodexを活用することで、エンジニアリングプロセスの迅速化とAIネイティブ開発の推進を目指している。"
     },
@@ -860,7 +860,7 @@
         "Anthropic",
         "OpenAI"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "AnthropicやOpenAIがFDE新会社、PEファンドと組む怖い理由 - 日経クロステック",
       "summaryJa": "米AnthropicとOpenAIは、それぞれForward Deployed Engineer（FDE）を派遣して企業のAI導入を支援する新会社を設立し、両社ともPEファンドと組んでいる。新会社は現場の課題を聴取しAIエージェントの開発を迅速化することを目指し、AnthropicはBlackstoneら、OpenAIはTPGなどのPEファンドが出資している。出資関係には複数のPEファンドや金融機関、VCが名を連ね、ソフトバンクやゴールドマン・サックスなども参画している。"
     },
@@ -878,7 +878,7 @@
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "2028: 世界的な AI リーダーシップのための 2 つのシナリオ - Anthropic",
       "summaryJa": "AIの普及を前に、民主主義国が先行するべきだと主張し、2028年時点での二つの展望を提示している。民主主義諸国は高度計算資源の規制を強化し、中国の蒸留攻撃を妨害することで frontier AI のリードを12〜24か月確保できる可能性がある一方、もし米政が適切な対策を取らなければ、中国は前線近くまで追いつき、規範やルールが独裁体制に影響される事態になり得る。AIは統制機構の強化と安全性の議論を促しつつ、医療や経済成長など広範な分野での革新をもたらす潜在性を持つが、権威主義体制がAIを用いて監視・抑圧を拡大する危険性が指摘されている。"
     },
@@ -896,7 +896,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "オンデバイス AI の高速化: Arm と Google AI Edge の最適化の概要 - blog.google",
       "summaryJa": "Armの SME2 をCPU内蔵の高性能AIアクセラレータとして活用することで、生成系AIの推論を最大5x高速化できるとされる。Google AI EdgeとLiteRTは、XNNPACKと KleidiAI の統合により、PyTorchからの変換から最適化・デプロイまでを一貫して支援し、INT8/FP16 の混合精度運用を実現。Stable Audio Open SmallモデルをCPU上で動作させ、3xのDiTサブモジュールの性能向上と4xのメモリ削減を達成する事例が紹介されている。"
     },
@@ -914,7 +914,7 @@
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Anthropic がゲイツ財団と 2 億ドルのパートナーシップを締結 - Anthropic",
       "summaryJa": "Anthropicは Gates Foundationと200百万ドルの助成・Claude利用クレジット・技術支援を4年間提供するパートナーシップを結び、グローバルヘルス、ライフサイエンス、教育、経済的移動性の分野での取り組みを強化します。主な活動は、低・中所得国の健康アウトカム改善、教育ツールの共同開発、農業生産性向上支援などを含み、Claudeを活用してデータ活用・意思決定支援・研究支援を行うことです。今後、パブリックグッズの提供や評価指標の整備、教育現場での活用拡大などを進める予定です。"
     },
@@ -932,7 +932,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "CSS での割引価格の計算と表示",
       "summaryJa": "CSSだけで基礎価格と割引率をデータ属性から読み取り、割引適用時には元の価格を取り消す取り組みを紹介。データ属性を number 型として解析する attr() の新機能や、calc/モジュ、カウンターを組み合わせて、割引後の価格表示を実現しているが、実用にはブラウザのサポート待ちの機能がある。まとめとして、デモはデータ価格と割引を使い、割引適用時に元価格を取り消し線で表示しつつ、割引後価格を表示する仕組みを示している。"
     },
@@ -950,9 +950,27 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "どこからでも Codex を使用して作業する",
       "summaryJa": "ChatGPTモバイルアプリを使い、 Codexをどこからでも利用可能。リアルタイムで複数デバイスや遠隔環境を跨いで、コーディング作業を監視・指示・承認できる。"
+    },
+    {
+      "id": "aee84da2f6ec3a010f6568ad5ee47dcd76bc4d3b",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "Google DeepMindが発表、AGIが人並みになるための「10の能力」 AGIが人間の知性に到達するために足りないものとは？ - ビジネス+IT",
+      "summary": "Google DeepMindが発表、AGIが人並みになるための「10の能力」 AGIが人間の知性に到達するために足りないものとは？ &nbsp;&nbsp; ビジネス+IT",
+      "url": "https://www.sbbit.jp/article/cont1/185372",
+      "canonicalUrl": "https://www.sbbit.jp/article/cont1/185372",
+      "publishedAt": "2026-05-14T12:43:26.000Z",
+      "hashTitle": "00027dfaaac30ee19820e76c8af4741ffbe27fb0",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-05-17T19:13:02.371Z",
+      "titleJa": "Google DeepMindが発表、AGIが人並みになるための「10の能力」 AGIが人間の知性に到達するために足りないものとは？ - ビジネス+IT",
+      "summaryJa": "Google DeepMindは、AGIの進捗を10の独立した認知能力に分解して評価する新しい認知フレームワークを発表した。これにより、知覚・生成・注意・学習・記憶・推論・メタ認知・実行機能・問題解決・社会的認知の各能力が個別に測定され、暗記ベンチマーク汚染を検出して真の実力を評価できるとしている。さらに「10の認知能力」を軸にした多軸的な評価で、現在のAIの能力プロファイルが凸凹であることや、ギザギザな能力の解消が人間レベルの知性達成に不可欠だと指摘している。"
     },
     {
       "id": "5c03865d93895a3d90b1bd2aaa403bb87dbee9f2",
@@ -968,7 +986,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "「無理ゲー」に感じたプログラミング、Claude Codeがハードルを取っ払ってくれた - ライフハッカー・ジャパン",
       "summaryJa": "AIコーディングツール Claude Code の活用により、従来の学習で難しく感じていた「フィードバックループの遅さ」が改善され、まずアイデアを形にしてから理解する「まずつくり、あとで学ぶ」学習法が可能になったと著者は述べている。著者は長年の学習経験を通じ、コードの理解を後回しにせず、生成されたコードを教材として逆算して学ぶことで、自己のアイデアを実際の成果物へと落とし込むプロセスが加速すると主張している。 Claude Codeを使って作ったコードを自分専用の学習教材に変換する「codebase-to-course」も紹介されている。"
     },
@@ -986,7 +1004,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Fiserv が OpenAI と戦略的提携を締結し、Fiserv の金融機関へのサービスに AI を導入 - Fiserv",
       "summaryJa": "FiservはOpenAIとの戦略的提携を発表し、金融機関向けのサービス提供方法にAIを活用することを目指します。提携により、Fiservの金融機関向けソリューションへAI技術を組み込み、サービスの強化を図る方針です。"
     },
@@ -1005,7 +1023,7 @@
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "日本政府とメガバンクがAnthropicの「Claude Mythos」導入へ、サイバー防御網構築 - ビジネス+IT",
       "summaryJa": "日本政府と国内メガバンク3社は、サイバー防御強化のため米新興企業アンソロピックの生成AI「Claude Mythos」へのアクセス権取得を進めている。銀行は5月中の利用開始を見込み、未知の欠陥を検知して未然防止につなげる構えだ。政府は官民タスクフォースを設置し、能動的サイバー防御の推進とAIの安全な活用ガイドライン策定を進める。"
     },
@@ -1023,7 +1041,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Androidスマホは「AIファースト」へ進化 Geminiがアプリを操作 iPhoneもSiriで追従なるか - Yahoo!ニュース",
       "summaryJa": "GoogleはAndroidに「Gemini Intelligence」を搭載し、日常のフォーム入力や予約、買い物リストの作成などのルーティン作業をアプリを跨いで自動化・前提理解で実行できるようにする。これにより、複数デバイス間で一貫したAI体験を提供し、GalaxyやPixelを皮切りに夏以降に順次提供予定だとされる。Geminiは音声・多言語対応の機能「Rambler」「自動入力の省略化」などを含み、ユーザーがスマホを通じてタスクを完結させる新しいAI中心の使い方を目指す。"
     },
@@ -1041,7 +1059,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Claude Mythosが示すサイバー攻撃の構造変化とラックの見解 | LAC WATCH - 株式会社ラック",
       "summaryJa": "Claude Mythosの登場でサイバー攻撃と防御のスピード・規模が一段と加速する構造的変化が指摘されており、ゼロデイやサプライチェーン起点の脅威のリードタイムが短縮される懸念が示されています。しかし、現行のAIモデルには侵入を抑止するガードレールがあり、過度な脅威の強調だけでなく多層防御・早期検知・脆弱性管理の徹底と、AIを防御側で活用する取り組みが重要だとラックは強調しています。さらに、経営層の関与や脅威インテリジェンスの高度化、設計・開発・運用全体でのセキュリティ組み込み（セキュリティ・バイ・デザイン）を求め、AIを用いた自律型防御と人間のガバナンスの新しい運用モデルの確立を提案しています。"
     },
@@ -1059,7 +1077,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "「Chromebookは継続」 Googleが10年間のアップデートを改めて約束 「Googlebook」発表を受け",
       "summaryJa": "GoogleはChromebookの今後10年間の自動アップデートを保証すると公式ブログで発表した。企業や学校などの組織にとって信頼できる長期的な投資対象であり続けるとしており、ChromeOS Flexの活用で古いハードの寿命を延ばす選択肢も示した。一方、新カテゴリーのAI特化ノートPC「Googlebook」についても触れ、Geminiを核にしたAI支援機能や複数の移行オプションを段階的に提供する方針を示した。"
     },
@@ -1077,7 +1095,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "スモールビジネス向けClaudeが登場 営業施策・請求対応など支援 - Impress Watch",
       "summaryJa": "Anthropicはスモールビジネス向けパッケージ「Claude for Small Business」を発表し、Google WorkspaceやMicrosoft 365、PayPal、QuickBooksなどのツールと連携して給与計画・月次締め・営業施策・請求対応などをClaudeが支援する。15種類のエージェントワークフローと15種類のスキルを備え、財務・業務・営業・人事・顧客対応などを補助するほか、各ツールでの権限管理と承認プロセスを維持する。PayPal連携では決済や請求書、異議申し立て、返金、QuickBooksでは税務準備や照合作業、HubSpotではリード選別・分析、Canva・DocuSignではコンテンツ生成や署名手続きなどを対応する。なお、Team/Enterpriseプランではデータをデフォルトで学習に使わない設定、PayPal連携の無料オンライン講座「AI Fluency for Small Business」も提供開始されている。"
     },
@@ -1096,7 +1114,7 @@
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Anthropic、Claude有料プランでプログラムによる利用専用の月間クレジットを導入へ - gihyo.jp",
       "summaryJa": "Anthropicは Claude の有料プランで、プログラムによる使用向けの専用月間クレジットを2026年6月15日から導入する。対象は Claude Agent SDK、claude -p、Claude Code GitHub Actions、Agent SDK経由のサードパーティアプリの利用で、対話的利用や一般アプリでの会話は対象外。月額クレジットはプランごとに設定され、未使用分は翌月へ繰り越されず、クレジットを使い切ると追加利用が可能になるが超過分はAPIレートで課金される。"
     },
@@ -1114,7 +1132,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Google Workspace StudioにNotebookLM統合、「NotebookLMに質問」ステップでノートブックをフローから参照可能に",
       "summaryJa": "Googleは2026年5月12日、Google Workspace Studioの自動化フローからNotebookLMを利用できる新ステップ「NotebookLMに質問」を提供開始した。ノートブックを情報源として参照させ、洞察や要約をフロー内で生成でき、受信メールの技術的質問に対するサポートメールの下書き作成などの使い方が想定されている。使用には管理者の「Gemini for Google Workspace」許可が必要で、許可されていれば対象エディションでデフォルト利用可能となる。"
     },
@@ -1133,7 +1151,7 @@
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "AnthropicがClaudeサブスク刷新 エージェント利用を別枠化、使い方で実質値上げも 6月15日から（テクノエッジ） - Yahoo!ニュース",
       "summaryJa": "Anthropicは Claude のサブスクを大幅に改定し、Agent SDKや claude -p コマンドなどの自動化利用を月額の別枠クレジットで管理するようにしました。クレジットは Proで$20、Max 5xで$100、Max 20xで$200となり、月初にリセットされますが、従来の使用枠より消費が早く、月内に使い切ると超過分の追加利用が必要になる面が出ます。パーソナル用途向けのクレジットは個人アカウントに紐づき、共有は不可で、企業向けには開発者プラットフォームのAPIキー使用が推奨されます。"
     },
@@ -1152,7 +1170,7 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "OpenAI、Codexへの“乗り換えキャンペーン”開始 新規企業ユーザーは2カ月間無料 - ITmedia",
       "summaryJa": "OpenAIはCodexのEnterpriseプランを新規契約企業向けに、2カ月間の無料利用権を提供するキャンペーンを開始した。発表はXの投稿で告知され、他社製品からの乗り換えも促す趣旨とみられ、キャンペーン期間は発表日から30日間となっている。申込は専用フォームから可能で、氏名・所属企業名に加えOpenAI製品の利用状況などの回答が必要とされている。"
     },
@@ -1170,7 +1188,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Claude Codeの週次利用制限が50%増加、7月14日まで（PC Watch） - Yahoo!ニュース",
       "summaryJa": "Claude Codeの週次利用制限が7月13日まで50%増加することが、Claudeの開発者向けX公式アカウントが明らかにした。対象はPro、Max、Teamおよびシートベースのエンタープライズユーザーで、CLI・IDE拡張機能・デスクトップ・Webで利用可能。新たな上限は過去の水準より上乗せされ、先週発表の5時間制限の2倍増加との併用も可能となる。"
     },
@@ -1188,7 +1206,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "22歳の天才エンジニア「Claude Mythos」を推測でほぼ完コピ、無料で公開する - ビジネス+IT",
       "summaryJa": "OpenMythosは、米Anthropicの非公開AIモデル「Claude Mythos」を理論的に推定・再構築したオープンソースプロジェクトで、7億7000万パラメータの小規模構成ながら13億パラメータ級の推論性能を示すとされる。22歳の開発者Kye Gomez氏が、公開済み研究論文を元にPyTorchで実装し、ループ型言語モデルや反復深度トランスフォーマーなどの技術を組み合わせて再現した。なお、この公開はOpenMythosの目的であり、Anthropicの内部モデルの外部公開は安全上の理由から見送られている。"
     },
@@ -1206,7 +1224,7 @@
       "tags": [
         "html"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "JSなしで実装できる！` `・`popover`・` ` 使い分けガイド【2025年版】",
       "summaryJa": "2025年時点で、モーダルやポップオーバーはブラウザのネイティブ機能だけで実装でき、<dialog>、popover、<details name>の3技術を使い分けることでJSを最小化できると解説しています。各技術は対応用途やJS不要度、対応ブラウザが異なり、適切な場面での使用が推奨されています。ライブラリと比較したメリットは、バンドルサイズやフレームワーク依存の低さ、アクセシビリティ対応の標準化ですが、アニメーションや細かなカスタマイズには別途CSSやJSが必要と指摘しています。"
     },
@@ -1224,7 +1242,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Google の新しい AI Educator シリーズで学習を始めましょう。 - blog.google",
       "summaryJa": "GoogleのAI Educator Seriesの第1弾として、20件以上のセッションが公開され、米国内のK-12・高等教育の教員約六百万人が無料で受講可能です。忙しい教員向けに、準備期間や昼休みに取れる短いマイクロトレーニング形式で提供され、複数を組み合わせて長時間のワークショップにも対応します。ISTE+ASCDの基準に沿い、毎月新しい内容が追加され、9月からはAI対応型の卒業生プロファイルに関連づけて内容が拡充されます。要旨は公式サイトで開始可能です。"
     },
@@ -1243,7 +1261,7 @@
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Anthropic は中小企業が Claude Code を使用することを望んでいます - Axios",
       "summaryJa": "Anthropicは、小規模事業向けにClaude Codeの利用を促進したい意向を示している。Axiosの報道を受け、Claude Codeの導入を検討する企業へアプローチを強化している。"
     },
@@ -1262,7 +1280,7 @@
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "中小企業向け Claude の紹介 - Anthropic",
       "summaryJa": "Anthropicは、中小企業向けの Claude for Small Business を発表し、QuickBooks・PayPal・HubSpot・Canvaなど日常的に使われるツール内で Claude を動かす接続機能と即利用可能なワークフローを提供します。財務・運営・営業・マーケ・HR・顧客サービスの15件の即時実行ワークフローと15のスキルを搭載し、給与計画や月次決算、請求書の追跡、マーケティングの準備などを支援します。データセキュリティと利用者の権限を重視し、導入前の承認プロセスを維持するほか、PayPal との AI 流暢性コースも提供します。"
     },
@@ -1280,7 +1298,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "回転X()",
       "summaryJa": "CSSの rotateX() は垂直軸を中心に3D空間で要素を回転させ、角度によっては上下へ傾斜して見える。3D効果を出すには親要素に perspective を設定し、子要素の 3D 表示を維持するために transform-style: preserve-3d を用いることが多い。よく使われる例として、表と裏を持つフリップカードや、3D ローディング-spinner、アコーディオンの展開時の回転演出が挙げられる。"
     },
@@ -1298,7 +1316,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "回転Y()",
       "summaryJa": "CSSの rotateY() は垂直軸を中心に要素を回転させ、左右へ横方向の反転を行う機能です。3D効果を出すには親要素に perspective を設定し、子要素では preserve-3d や backface-visibility などを使って前後面を隠します。よく使われる用途には、ホバやクリックで裏面を表示するフリップカードや、3D風のカルーセル・本のページめくり効果などが挙げられます。"
     },
@@ -1316,7 +1334,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "回転Z()",
       "summaryJa": "rotateZ() は要素を z 軸周りに回転させる CSS の関数で、3D 変形での使用に適しています。同じ視覚効果でも rotate() とは異なり、GPU コンポジットレイヤーを促進するため animation が滑らかになることがあり、3D 要素では rotateZ() の方が推奨される場面があります。例としては、stage に perspective を設定し、rotateX()、rotateY()、rotateZ() を組み合わせて 3D 回転を表現するデモが挙げられ、rotateZ() は deg/grad/rad/turn の4つの単位を受け取ります。"
     },
@@ -1334,7 +1352,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "回転()",
       "summaryJa": "CSS の rotate() は、要素を 2D 平面で時計回りまたは反時計回りに回転させる transform の基本機能です。<angle> の単位として deg、grad、rad、turn を使用でき、正の値は時計回り、負の値は反時計回りの回転を指示します。 また、回転の軸は transform-origin で指定した点を中心にします。"
     },
@@ -1353,7 +1371,7 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Windows で Codex を有効にするための安全で効果的なサンドボックスを構築する",
       "summaryJa": "OpenAIはWindows上で Codex を安全に動作させるサンドボックスを構築し、ファイルアクセスとネットワーク制限を管理することで、安全かつ効率的なコーディングエージェントを実現しました。"
     },
@@ -1371,7 +1389,7 @@
       "tags": [
         "frontend"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "[Frontend Rebirth] コンポーネント設計篇 - Server 層を足した話",
       "summaryJa": "前回の記事から、Container / Presentational にServer層を追加した3層構成へと再設計し、データ取得をServer層に任せることで初期描画を速くし、Suspense / ErrorBoundaryの境界を効果的に配置する方針を採用した。最終的には、server → container → presentational の責務分担を徹底し、データ取得はServer層、状態管理はContainer層、UIはPresentational層とした。運用では検索APIの呼び出し件数が大幅に減少し、同一リクエスト内のデータ統合やCache活用でパフォーマンス向上とコスト削減を実現した。"
     },
@@ -1389,7 +1407,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Google DeepMind、AI対応ポインター「AI-Pointer」の実験デモを公開",
       "summaryJa": "Google DeepMindは、AI対応ポインター「AI-Pointer」を実験公開し、マウスカーソルをAI時代のインターフェースとして再設計する試みを紹介した。ポインター下の対象を文脈としてAIに認識させ、「これを直して」「あれを動かして」といった短い指示で操作を実行できる点が特徴で、PDFの要約作成や表の円グラフ化など具体例を挙げている。デモはGoogle AI StudioとChrome、さらに今秋発売予定のGooglebookにも適用される計画で、画面上のピクセルを操作可能なエンティティとして扱う方針だ。"
     },
@@ -1407,7 +1425,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "border-shape で UI の輪郭を自由にデザインする",
       "summaryJa": "border-shape は要素の輪郭を CSS で自由に指定でき、border-shape による形に背景・ border・ box-shadow が沿う。<basic-shape> や <geometry-box> を組み合わせて、輪郭の座標系を content-box などのボックス参照に対応させられる。実際の例では六角形・星型・ネームド形状などさまざまな形を実装でき、影が形に追従する点が clip-path や corner-shape との差分として強調されている。さらに吹き出しやネオモーフィズム、アバターなど実用パターンで具体例が紹介されている。"
     },
@@ -1425,7 +1443,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "TanStack npm サプライ チェーン攻撃に対する当社の対応",
       "summaryJa": "OpenAIは、TanStack npm の脆弱性を悪用したサプライチェーン攻撃に関して調査を行い、影響は限定的で顧客データや知的財産への侵害は確認されていないとしています。2名の従業員端末が影響を受け、コード署名証明書を含む関連証明書のローテーションやノータライゼーションの停止など対策を実施中です。 macOS のアプリは新しい証明書で再署名され、2026年6月12日までに更新が必要です。"
     },
@@ -1449,7 +1467,7 @@
         "typescript",
         "vue"
       ],
-      "scoredAt": "2026-05-17T17:06:21.741Z",
+      "scoredAt": "2026-05-17T19:13:02.371Z",
       "titleJa": "Web アプリをインストールするための新しい HTML 要素",
       "summaryJa": "新しい HTML 要素 <install> が Edge や Chrome（旗付き）でテスト実装され、JS なしでウェブアプリの信頼できる「install」ボタンを表示できることが紹介されている。記事はこの動作の仕組みと Web Install API との比較について掘り下げている。その他、Safari の最新リリース情報や関連トピック、ツールや記事の紹介も列挙されている。"
     }
