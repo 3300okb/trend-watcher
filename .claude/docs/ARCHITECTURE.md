@@ -2,14 +2,14 @@
 
 ## プロジェクト概要
 静的配信 + バッチ更新のトレンド集約アプリ。
-GitHub Actions で RSS 収集・翻訳・デプロイを 1 時間ごとに自動実行し、GitHub Pages で静的配信する。
+GitHub Actions で RSS 収集・翻訳・デプロイを 3 時間ごとに自動実行し、GitHub Pages で静的配信する。
 
 ## ディレクトリ構成
 ```
 trend-watcher/
 ├── .github/
 │   └── workflows/
-│       └── research-and-deploy.yml  # CI/CD パイプライン（毎時05分 + push トリガー）
+│       └── research-and-deploy.yml  # CI/CD パイプライン（3時間ごと05分 + push トリガー）
 ├── config/
 │   ├── keywords.json             # キーワード・除外パターン設定（TREND_TOPICS / TREND_EXCLUDE_PATTERNS）
 │   └── sources.json              # RSS フィードソース定義
