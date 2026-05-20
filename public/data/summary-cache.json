@@ -504,5 +504,14 @@
   "465a55b9b0fdefd5247e003084dc246b01b1f774": "Google I/O 2026初日の Android関連情報を要約すると、AI Studioを利用したWebベースのAndroidアプリ開発や、Android CLI 1.0、Android XR関連の更新、Compose FirstのUI開発方針、Car/Wear OSの新機能、Play Billing 9.0など多数の新機能・更新が紹介されました。基調講演ではiOSプロジェクトのAndroid移行支援機能のデモもあり、JetpackやMaterial Designの最新更新、Android Studioの新リリース情報も取り上げられました。なお、セッション動画は事前録画分が後日公開予定とのことです。",
   "7f625f66633806e06a2fdd63667d912b6933e6a6": "OpenAIモデルが80年ぶりの単位距離問題を解き、離散幾何学の主要な推測を覆す成果を示した。AI主導の数学研究における重要な節目となる。",
   "cb920945cfca046c0cf2fbd77eba3ebc792dd5d8": "RampのエンジニアはCodexとGPT-5.5を活用し、コードのレビューと改善を迅速化。数時間かかることもあるフィードバックを数分で得られる体験を実現している。",
-  "95d0f01ff547c4b44621578843c6022a87a77ef1": "Vercel AI Gatewayプラグインは、1つのAPIキーで40以上の提供元の数百モデルにWordPressサイトからアクセスできるようにします。WordPress AI Clientと連携し、1つのゲートウェイキーを設定画面のSettings > Connectorsで管理するほか、テキスト・JSON・画像・動画など多モードの生成に対応します。新モデルの追加やプロバイダ障害時の自動フォールバック、統合課金・可観測性も提供され、コードから直接AI Gatewayを呼び出すことも可能です。"
+  "95d0f01ff547c4b44621578843c6022a87a77ef1": "Vercel AI Gatewayプラグインは、1つのAPIキーで40以上の提供元の数百モデルにWordPressサイトからアクセスできるようにします。WordPress AI Clientと連携し、1つのゲートウェイキーを設定画面のSettings > Connectorsで管理するほか、テキスト・JSON・画像・動画など多モードの生成に対応します。新モデルの追加やプロバイダ障害時の自動フォールバック、統合課金・可観測性も提供され、コードから直接AI Gatewayを呼び出すことも可能です。",
+  "b0c95fda7fe504872f0039e9d475e937234b43cb": "Claude CodeはCLIで動くAIコーディングツールであり、情報商材の宣伝に都合が良い商材として扱われているとの指摘がある。公式投稿のインプレッション増加や、専門性を強調するCLIの特性が、エンジニア以外の人にも「高度なことが行われている」という印象を与え、不安喚起と結びつくことで購買行動を促すと指摘されている。さらに、非エンジニア向けの機能をCLIに置き換え神秘性を演出する点や、「3日で教える側になる」などの題材が情報商材として流通する現状を問題視している。",
+  "e8b7513ac1f777899468a7a6745eea4476fac3db": "AI企業とサプライヤーの間で、出資を資本提供と引き替えに将来の計算リソース契約を確約する循環型の取引が広がっている。OpenAIは1,220億ドルの資金調達と同時にAWSの契約拡大やNVIDIAなどの追加出資を受け、アンソロピックやxAIも同様の構造を採用している。専門家はこの資金循環が巨額債務リスクを増大させ、市場が織り込んでいない構造的リスクを内包すると警告している。",
+  "0bdae698c49ce5691480d9e1c45c0e7503d40459": "OpenAIは数週間内にIPOを非公開申請する予定だと伝えられている。本文はその動向を中心に報じ、他のトピックスは並列的に列挙されているだけで、追加の事実関係は示されていない。したがって、OpenAIの非公開申請の時期に関する情報のみを要約として提示する。",
+  "2108c296bc3eeaa16bdf98c168419126c034d4c5": "Anthropicは、SpaceXに年間150億ドルを支払っているとAxiosが報じた。",
+  "c986b05671191aa4aa8d1aed14c008c80316c501": "OpenAIが迅速なIPOを目指していると関係者が語る一方で、市場はSpaceXの提出を待っている。",
+  "20962310c047bfd32f3ca5179c98c66eb6a2ec14": "Googleが消費者向けAI市場でOpenAIの王位を奪いつつあると指摘されている。The Economistは、Googleの優位性が高まっているとの見解を伝える。",
+  "75d43dac6526738ea2782399abe407e91a3d05be": "VueとSPAでAPI通信を行う例として、axiosを導入し、共通設定を持つapiClientを通じてJSONPlaceholderの /todos/1 を取得するボタンを作成しています。HomeView.vueでFetchButtonを押すと、useApiで定義した fetchData が実行され、取得データが data に格納されて表示されます。 handle実装は apiClient.get(path) を使用し、ベースURLは https://jsonplaceholder.typicode.com が自動補完されます。",
+  "330a878f9aa637a4a3ed2570d595f62896ab1cc0": "Vue.jsを用いてSPAを実装する手順を備忘録としてまとめ、Home画面とAbout画面の作成、ルーティングの設定、実行方法までを具体的に記載しています。HomeView.vueとAboutView.vueを用意し、 router/index.js で「/」と「/about」へのルートを設定、App.vue でナビゲーションリンクと表示エリアを定義しています。実行時は npm install vue-router を事前に行い、 npm install で依存関係を整えた後、 npm run dev で http://localhost:5173 にアクセスします。",
+  "7e711b79e01f5e4fbccefe3745e4f6e4f1f8692c": "GoogleはAIライバルに取って代わられる前に検索を再設計するとAxiosが伝えた。記事は、競争激化を前に検索機能の進化を図るGoogleの動きを描いている。"
 }
