@@ -3,7 +3,7 @@
 ## プロジェクト概要
 
 **Trend Watcher** — 静的配信 + バッチ更新のトレンド集約アプリ。
-GitHub Actions で RSS 収集・Google 翻訳・GitHub Pages デプロイを 6 時間ごとに実行する。
+GitHub Actions で RSS 収集・Google 翻訳・GitHub Pages デプロイを 3 時間ごとに実行する。
 
 **技術スタック:**
 - Node.js v20 (ESM / `.mjs`) — バッチスクリプト
