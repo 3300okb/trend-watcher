@@ -46,7 +46,7 @@ ci(workflow): スケジュール実行を毎時05分に変更
 ファイル: `.github/workflows/research-and-deploy.yml`
 
 **トリガー:**
-1. **schedule**: 3 時間ごと05分（UTC）= 日本時間 3 時間ごと14分
+1. **schedule**: 3 時間ごと（UTC 00:05, 03:05, 06:05, 09:05, 12:05, 15:05, 18:05, 21:05）= JST 09:05, 12:05, 15:05, 18:05, 21:05, 00:05, 03:05, 06:05
 2. **workflow_dispatch**: 手動実行
 3. **push to main**: `public/data/**` の変更を除く push
 

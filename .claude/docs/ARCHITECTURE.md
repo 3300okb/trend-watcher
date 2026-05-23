@@ -142,5 +142,5 @@ Refresh ボタン押下（ログイン中のみ表示）
 | Google News RSS | トレンドニュース収集 | `news.google.com/rss/search` |
 | Google 翻訳 API（非公式） | タイトル・要約の日本語化 | `translate.googleapis.com/translate_a/single` |
 | GitHub Pages | 静的サイト配信 | `out/` をデプロイ |
-| GitHub Actions | バッチ実行・自動デプロイ | 毎時05分 + push トリガー |
+| GitHub Actions | バッチ実行・自動デプロイ | 3 時間ごと（UTC HH:05） + push トリガー |
 | Supabase | 認証（Google OAuth）・saved 記事の永続化 | プロジェクト ID: `kiaqxehlkhrdcwfxradi`、リージョン: `ap-northeast-1` |

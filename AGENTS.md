@@ -6,7 +6,7 @@
 ## プロジェクト概要
 
 Trend Watcher は、RSS フィードから技術系トレンド記事を収集し、日本語翻訳・重複除去を行って `public/data/*.json` を更新する静的配信アプリです。
-収集とデプロイは GitHub Actions（毎時 05 分 UTC）で自動実行され、`out/` を GitHub Pages に配信します。
+収集とデプロイは GitHub Actions（3 時間ごと UTC HH:05）で自動実行され、`out/` を GitHub Pages に配信します。
 
 技術スタック: Node.js (ESM), JavaScript, Tailwind CSS (CLI), Vanilla JS, GitHub Actions, GitHub Pages, Supabase Auth/DB
 

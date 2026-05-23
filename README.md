@@ -52,7 +52,7 @@ GitHub Actions で収集とデプロイを実行し、1hに1回定期更新し�
 ## GitHub Actions 運用
 - ワークフロー: `.github/workflows/research-and-deploy.yml`
 - 実行トリガー:
-  1. `schedule`: 毎時05分（`5 * * * *` / UTC基準）
+  1. `schedule`: 3 時間ごと（`5 */3 * * *` / UTC 基準）
   2. `workflow_dispatch`: 手動実行
   3. `main` への push（`public/data/**` だけのpushは除外）
 - 処理内容:
