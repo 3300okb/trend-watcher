@@ -29,6 +29,7 @@ const MAX_ITEMS_PER_SOURCE = 30;
 const MAX_TRANSLATION_TEXT_LENGTH = 450;
 const MAX_ARTICLE_AGE_DAYS = 5;
 const MAX_NEW_SUMMARIES_PER_RUN = Number(process.env.MAX_NEW_SUMMARIES_PER_RUN || 80);
+const MAX_TRANSLATION_CACHE_ENTRIES = 1000;
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '';
 const GOOGLE_NEWS_DYNAMIC_TOKEN_EN = '__GOOGLE_NEWS_TOPICS_EN__';
 const GOOGLE_NEWS_DYNAMIC_TOKEN_JA = '__GOOGLE_NEWS_TOPICS_JA__';
@@ -315,12 +316,13 @@ async function readJsonSafe(file, fallback) {
   }
 }
 
-async function translateToJapanese(text, cache) {
+async function translateToJapanese(text, cache, usedKeys) {
   const raw = (text || '').trim();
   if (!raw) return '';
   if (isJapaneseText(raw)) return raw;
 
   const key = textHash(raw);
+  if (usedKeys) usedKeys.add(key);
   if (cache[key]) return cache[key];
 
   const short = raw.length > MAX_TRANSLATION_TEXT_LENGTH ? `${raw.slice(0, MAX_TRANSLATION_TEXT_LENGTH)}...` : raw;
@@ -338,6 +340,36 @@ async function translateToJapanese(text, cache) {
   }
 }
 
+// 翻訳キャッシュは無制限に増えると Disk IO を圧迫するため、上限を超えたら未使用エントリから捨てる。
+// 今回の実行で参照されたキーは優先的に残し、残り枠を挿入順で新しいものから埋める。
+function trimTranslationCache(cache, usedKeys, limit) {
+  const keys = Object.keys(cache);
+  if (keys.length <= limit) return cache;
+  const toKeep = new Set();
+  for (const key of keys) {
+    if (usedKeys.has(key)) toKeep.add(key);
+  }
+  if (toKeep.size < limit) {
+    const remaining = limit - toKeep.size;
+    const unused = keys.filter((k) => !toKeep.has(k));
+    for (const key of unused.slice(-remaining)) toKeep.add(key);
+  }
+  const trimmed = {};
+  for (const key of keys) {
+    if (toKeep.has(key)) trimmed[key] = cache[key];
+  }
+  return trimmed;
+}
+
+// 有効な記事に対応しない要約は孤立データになるため落とす。
+function pruneSummaryCache(cache, activeIds) {
+  const pruned = {};
+  for (const [id, summary] of Object.entries(cache)) {
+    if (activeIds.has(id)) pruned[id] = summary;
+  }
+  return pruned;
+}
+
 async function main() {
   const sources = JSON.parse(await readFile(SOURCES_FILE, 'utf8'));
   const configuredTopics = await getConfiguredTopics();
@@ -346,6 +378,7 @@ async function main() {
   const deduped = new Map();
   const translationCache = await readJsonSafe(TRANSLATION_CACHE_FILE, {});
   const summaryCache = await readJsonSafe(SUMMARY_CACHE_FILE, {});
+  const usedTranslationKeys = new Set();
 
   for (const source of sources) {
     const startedAt = Date.now();
@@ -444,7 +477,7 @@ async function main() {
   let aiSummaryMisses = 0;
 
   for (const article of articles) {
-    article.titleJa = await translateToJapanese(article.title, translationCache);
+    article.titleJa = await translateToJapanese(article.title, translationCache, usedTranslationKeys);
 
     const cached = summaryCache[article.id];
     let aiSummary = cached || null;
@@ -478,7 +511,7 @@ async function main() {
     if (aiSummary) {
       article.summaryJa = aiSummary;
     } else {
-      article.summaryJa = await translateToJapanese(article.summary || '', translationCache);
+      article.summaryJa = await translateToJapanese(article.summary || '', translationCache, usedTranslationKeys);
     }
   }
 
@@ -514,8 +547,15 @@ async function main() {
   });
 
   await atomicWriteJson(LOG_FILE, mergedLogs);
-  await atomicWriteJson(TRANSLATION_CACHE_FILE, translationCache);
-  await atomicWriteJson(SUMMARY_CACHE_FILE, summaryCache);
+  const trimmedTranslationCache = trimTranslationCache(
+    translationCache,
+    usedTranslationKeys,
+    MAX_TRANSLATION_CACHE_ENTRIES
+  );
+  const activeArticleIds = new Set(articles.map((a) => a.id));
+  const prunedSummaryCache = pruneSummaryCache(summaryCache, activeArticleIds);
+  await atomicWriteJson(TRANSLATION_CACHE_FILE, trimmedTranslationCache);
+  await atomicWriteJson(SUMMARY_CACHE_FILE, prunedSummaryCache);
 
   console.log(`[trend-watcher] generated ${articles.length} articles at ${now.toISOString()}`);
 }
