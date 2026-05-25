@@ -1,7 +1,191 @@
 {
-  "generatedAt": "2026-05-25T10:44:15.349Z",
-  "total": 87,
+  "generatedAt": "2026-05-25T15:27:17.397Z",
+  "total": 86,
   "items": [
+    {
+      "id": "545334b90f6f29ba65b555830e9fc3423e780039",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Introducing Gemini Omni - blog.google",
+      "summary": "Introducing Gemini Omni &nbsp;&nbsp; blog.google",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/",
+      "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni",
+      "publishedAt": "2026-05-25T15:22:08.000Z",
+      "hashTitle": "ac74d31e16b30ab759bf5a3cb2934a939f44310b",
+      "tags": [
+        "Google",
+        "gemini"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "Gemini Omni のご紹介 - blog.google",
+      "summaryJa": "Gemini Omniは、画像・音声・動画・テキストを入力として組み合わせ、現実世界の知識に grounded した高品質な動画を生成できる新モデル群の第一弾として Gemini Omni Flash を発表する。Omniは会話による編集機能を備え、指示を重ねることで映像の環境・角度・スタイル・細部を変更し、物理やストーリーテリングの整合性を保ちながら編集を進める。生成物にはSynthIDのデジタル透かしが付与され、 Gemini アプリや YouTube で利用可能になる予定である。"
+    },
+    {
+      "id": "762920ee9ec8e0a702a3a10d5187e38ed3e32c74",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "Visual Studio Code 1.121がリリース、HTMLプレビュー機能など追加 - CodeZine",
+      "summary": "Visual Studio Code 1.121がリリース、HTMLプレビュー機能など追加 &nbsp;&nbsp; CodeZine",
+      "url": "https://codezine.jp/news/detail/24305",
+      "canonicalUrl": "https://codezine.jp/news/detail/24305",
+      "publishedAt": "2026-05-25T15:17:16.000Z",
+      "hashTitle": "9458f90f8ea36538ee720277b5fd4a98fc30faa1",
+      "tags": [
+        "html"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "Visual Studio Code 1.121がリリース、HTMLプレビュー機能など追加 - CodeZine",
+      "summaryJa": "VS Code 1.121では、ビルトインのHTMLプレビュー機能とMermaidプレビュー機能が実装され、HTMLファイルやMermaidダイアグラムをエディタ上で直接プレビューできるようになった。 エージェント機能が強化され、ローカルだけでなくリモートマシン上でのエージェントセッションをSSHやDev Tunnels経由で実行・監視・制御できるようになり、複数クライアントからの同時管理を可能とする新しいAgent Host Protocolを採用した。 さらにターミナル周りの改善として、環境変数VSCODE_AGENTの設定や出力の圧縮範囲の拡大、バックグラウンドターミナルの自動クリーンアップなどが追加・強化され、言語モデル設定やクイックサジェストの挙動変更、設定の非推奨化なども行われている。"
+    },
+    {
+      "id": "3448bd38da44cf0582fb9e85b79906feab1af849",
+      "sourceName": "CSS-Tricks",
+      "sourceUrl": "https://css-tricks.com/",
+      "sourceFeedUrl": "https://css-tricks.com/feed/",
+      "title": "Cross-Document View Transitions: Scaling Across Hundreds of Elements",
+      "summary": "Every view-transition-name on a page must be unique. The problem is that every pseudo-element selector in your CSS targets a specific name, so your animation styles explode into an unmanageable wall of selectors. Cross-Document View Transitions: Scaling Across Hundreds of Elements originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+      "url": "https://css-tricks.com/cross-document-view-transitions-part-2/",
+      "canonicalUrl": "https://css-tricks.com/cross-document-view-transitions-part-2",
+      "publishedAt": "2026-05-25T13:46:54.000Z",
+      "hashTitle": "79b83b1331f794f981f5051133d041e5f63ccb8c",
+      "tags": [
+        "css"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "ドキュメント間のビュー遷移: 数百の要素にわたるスケーリング",
+      "summaryJa": "大規模なビュー・トランジションを実現するには、CSSだけで自動的に一意の識別子を生成するアイデアが鍵となる。現状は ident() が未実装で使えないため、代替として Names（view-transition-name）と Classes（view-transition-class）の使い分けを徹底する方法が提案されている。具体的には、各アイテムに固有の名前を付けつつ、クラスで共通のアニメーション定義を適用することで、何千件でも一つのスタイルシートで管理可能にするという方針である。"
+    },
+    {
+      "id": "ca1cc46b5ee84a8d258390a6b040d482cb3b352a",
+      "sourceName": "Zenn Frontend Topic",
+      "sourceUrl": "https://zenn.dev/topics/frontend",
+      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
+      "title": "React × Tailwind CSS 入門 #07｜フォームとバリデーション｜React Hook Formを使う",
+      "summary": "はじめに 前回はReact Routerを学び、アプリにページ遷移を実装しました。 今回は、WebアプリやホームページのWebアプリの「顔」とも言えるお問い合わせ・予約機能、React Hook Formを使ったフォーム実装とバリデーション（入力チェック）を学びます。 Reactの基本であるuseStateだけでフォームを作ろうとすると、入力のたびに画面全体が再描画（レンダリング）されてしまい、動作が重くなったりコードが複雑になりがちです。しかし、この「React Hook Form」というライブラリを使えば、再描画を最小限に抑えつつ、シンプルで爆速なフォームが作れます。 AIにフォ...",
+      "url": "https://zenn.dev/koenjineer/articles/34f16926738c44",
+      "canonicalUrl": "https://zenn.dev/koenjineer/articles/34f16926738c44",
+      "publishedAt": "2026-05-25T13:18:49.000Z",
+      "hashTitle": "62bd208d2792ec3fb47a463cee7f89fe8adbf172",
+      "tags": [
+        "css"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "React × Tailwind CSS 入門 #07｜フォームとバリデーション｜React Hook Formを使う",
+      "summaryJa": "React Hook Formを使ったフォーム実装とバリデーションの基本を解説しており、入力を管理するuseForm、フィールド登録のregister、送信処理のhandleSubmitを使う方法と、必須入力やメール形式などのバリデーションの適用方法を紹介しています。サンプルコードでは、名前とメールのシンプルなフォームと、エラーメッセージの表示、そして主なバリデーションルール（required・pattern・minLengthなど）を具体的に解説しています。最後に要点を整理し、次回はuseContextについて言及しています。"
+    },
+    {
+      "id": "c202deffbb2b05ca0c14d2031a216c526eb78ace",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Gemini for Science: AI experiments and tools for a new era of discovery - blog.google",
+      "summary": "Gemini for Science: AI experiments and tools for a new era of discovery &nbsp;&nbsp; blog.google",
+      "url": "https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026/",
+      "canonicalUrl": "https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026",
+      "publishedAt": "2026-05-25T13:13:38.000Z",
+      "hashTitle": "0147223adaf828fc0a234ded3b6933a27b2520b2",
+      "tags": [
+        "Google",
+        "gemini"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "Gemini for Science: 新時代の発見のための AI 実験とツール - blog.google",
+      "summaryJa": "Googleは、科学的方法を加速させるツール群としてGemini for Scienceを発表します。Hypothesis Generation、Computational Discovery、Literature Insightsの三つのプロトタイプを中心に、研究者がデータ間の創造的な繋がりを迅速に見つけられるようAIを活用します。企業向けにはGoogle Cloudでも提供し、大学機関や研究機関と共同で検証を進めています。"
+    },
+    {
+      "id": "543b80b9b0c3aba064929842b52f210e37b81535",
+      "sourceName": "Zenn Frontend Topic",
+      "sourceUrl": "https://zenn.dev/topics/frontend",
+      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
+      "title": "Googleの最新AIコーディング支援「Modern Web Guidance」をAntigravity（agy）と連携してみた",
+      "summary": "はじめに 今回は、Google（Chrome DevToolsチーム）が初期プレビューとして公開した、AIエージェント向けの 知見集 「Modern Web Guidance (以後MWG)」 を取り上げます 。 このツールは、AIエージェントにWeb標準の最新APIを正しく学習させ、JavaScript（以後JS）を極限まで削ったクリーンなフロントエンドコードを生成させるための強力な盾です 。 今回は、Fedora/Macなどの環境において、sudo（管理者権限）を一切使わず、一般ユーザー権限のローカル環境だけでソースコードからビルドし、さらに高性能AIエージェントCLIの「Ant...",
+      "url": "https://zenn.dev/dewins/articles/mordern-web-guidance",
+      "canonicalUrl": "https://zenn.dev/dewins/articles/mordern-web-guidance",
+      "publishedAt": "2026-05-25T12:36:51.000Z",
+      "hashTitle": "64b3bb2d6df94ff4a184ef3b1a68636bf8a1cafa",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "Googleの最新AIコーディング支援「Modern Web Guidance」をAntigravity（agy）と連携してみた",
+      "summaryJa": "Googleが公開したAIエージェント向け知見集「Modern Web Guidance（MWG）」を、ローカル環境のみでビルド・連携させ、Antigravity（agy）と安全に一元管理する手順を解説している。ローカルにマスターディレクトリを作成し、TypeScriptビルド後に plugin.json を手動作成してagyに登録する方法や、MWGとagyの組み合わせで最新機能を活用した軽量なフロントエンドコードを自律生成する実践例が詳述されている。最後に、MWGとagyの組み合わせが現代のフロントエンド開発における強力な相棒になると結論づけられている。"
+    },
+    {
+      "id": "603cca2e9b6c33133f019bd60339ff735fe0ac16",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Powered by A.I., Google Changes Its Search Box for the First Time in 25 Years - The New York Times",
+      "summary": "Powered by A.I., Google Changes Its Search Box for the First Time in 25 Years &nbsp;&nbsp; The New York Times",
+      "url": "https://www.nytimes.com/2026/05/19/business/google-seach-bar-ai-gemini.html",
+      "canonicalUrl": "https://www.nytimes.com/2026/05/19/business/google-seach-bar-ai-gemini.html",
+      "publishedAt": "2026-05-25T11:57:00.000Z",
+      "hashTitle": "a129bef8b00aaaa74d887f3e3a27bc7d2715b776",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "AIを活用し、Googleが25年ぶりに検索ボックスを変更 - ニューヨーク・タイムズ",
+      "summaryJa": "長年変わらなかったGoogleの検索ボックスが、AIを活用することで初めて変更されたと報じられている。ニューヨークタイムズによると、25年ぶりの改良が行われたことが紹介されている。"
+    },
+    {
+      "id": "6265c336eccd9bfb37a6a557e553606f97d0fc36",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "Anthropic、未公開AI「Claude Mythos Preview」で1万件超の脆弱性を発見 Project Glasswing初期報告 - Ledge.ai",
+      "summary": "Anthropic、未公開AI「Claude Mythos Preview」で1万件超の脆弱性を発見 Project Glasswing初期報告 &nbsp;&nbsp; Ledge.ai",
+      "url": "https://ledge.ai/articles/anthropic_claude_mythos_preview_project_glasswing_vulnerabilities",
+      "canonicalUrl": "https://ledge.ai/articles/anthropic_claude_mythos_preview_project_glasswing_vulnerabilities",
+      "publishedAt": "2026-05-25T11:22:52.000Z",
+      "hashTitle": "06dcbdd1ccb060b756472bf467e9221ec03212d3",
+      "tags": [
+        "Anthropic",
+        "claude"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "Anthropic、未公開AI「Claude Mythos Preview」で1万件超の脆弱性を発見 Project Glasswing初期報告 - Ledge.ai",
+      "summaryJa": "Anthropicが公開前のAI「Claude Mythos Preview」で1万件超の脆弱性を発見したと報じられている。記事は同成果を「Project Glasswing初期報告」と紹介するが、本文には具体的な脆弱性の内容や検出手法の詳述はない。"
+    },
+    {
+      "id": "7b99aae5a5f6e7346b2dc4f579689313e10d6b33",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "「Claude Mythos」が1万件以上の脆弱性を発見 しかし修正追い付かず Anthropicが報告書 - ITmedia",
+      "summary": "「Claude Mythos」が1万件以上の脆弱性を発見 しかし修正追い付かず Anthropicが報告書 &nbsp;&nbsp; ITmedia",
+      "url": "https://www.itmedia.co.jp/news/articles/2605/25/news130.html",
+      "canonicalUrl": "https://www.itmedia.co.jp/news/articles/2605/25/news130.html",
+      "publishedAt": "2026-05-25T11:20:00.000Z",
+      "hashTitle": "7d10fc7457f370384fee614992a3264c998ded9c",
+      "tags": [
+        "Anthropic",
+        "claude"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "「Claude Mythos」が1万件以上の脆弱性を発見 しかし修正追い付かず Anthropicが報告書 - ITmedia",
+      "summaryJa": "Anthropicのセキュリティプロジェクト「Project Glasswing」では、12組織が共同でMythos Previewを用い世界の重要ソフトウェアインフラの脆弱性を発見・修正する取り組みを進め、1カ月で1万件以上の高・重大脆弱性を検出した。オープンソース検査では、脆弱性候補2万3019件のうち、外部調査機関が抽出した1752件のうち90.6％が実際の脆弱性と確認され、1596件の脆弱性情報を281プロジェクトに開示している。一方、発見は加速しても修正が追い付かず、パッチ適用は97件（全1596件中）で、律定の高・重大脆弱性に対する開示は75件にとどまる。"
+    },
+    {
+      "id": "7fa31571af1fce213cf2b87bca089f040684a8f3",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "日大、教職員1万人が「Google AI Pro」活用へ - ITmedia",
+      "summary": "日大、教職員1万人が「Google AI Pro」活用へ &nbsp;&nbsp; ITmedia",
+      "url": "https://www.itmedia.co.jp/news/articles/2605/25/news129.html",
+      "canonicalUrl": "https://www.itmedia.co.jp/news/articles/2605/25/news129.html",
+      "publishedAt": "2026-05-25T10:38:00.000Z",
+      "hashTitle": "2df94c0eee51a35df9c78ff427a3dd1469c4aad0",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "日大、教職員1万人が「Google AI Pro」活用へ - ITmedia",
+      "summaryJa": "日本大学は、米Googleの教育機関向けAIサブスクリプション「Google AI Pro for Education」を導入し、専任教職員1万人が利用できるようにする。これにより定型業務の効率化を進め、AI活用の加速と利用上限の緩和を図るほか、教員向けトレーニングプログラムも活用する。日大は新設の日本大学情報イノベーションセンターの下で生成AIを活用した教学・業務改善を推進し、成果を社会へ還元する方針を示している。"
+    },
     {
       "id": "1b987ae487615de0a7c0a0329cd09625f3307163",
       "sourceName": "Google News Search EN (24h)",
@@ -16,28 +200,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "スマートフォン ベンダーが Google I/O 2026 から得るべきもの - Omdia",
       "summaryJa": "Google I/O 2026の発表は、Geminiをスマートフォン体験の中核へ深く組み込む動きを示しており、Android端末メーカーが世界市場でまだ ground を確保するには構造的な障壁が高いことを指摘しています。特に、アプリ層・アカウント/アイデンティティ層・オーケストレーション層の三つの利点は、OEMだけでは再現し難く、GoogleとAndroidの関係は相互補完的だと分析されています。Samsungはデータとハードウェアエコシステムを軸に、オンデバイスデータやサプライチェーンの巨大性を活用して差別化を図る戦略が示唆されています。"
-    },
-    {
-      "id": "c202deffbb2b05ca0c14d2031a216c526eb78ace",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Gemini for Science: AI experiments and tools for a new era of discovery - blog.google",
-      "summary": "Gemini for Science: AI experiments and tools for a new era of discovery &nbsp;&nbsp; blog.google",
-      "url": "https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026/",
-      "canonicalUrl": "https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026",
-      "publishedAt": "2026-05-25T10:12:59.000Z",
-      "hashTitle": "0147223adaf828fc0a234ded3b6933a27b2520b2",
-      "tags": [
-        "Google",
-        "gemini"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "Gemini for Science: 新時代の発見のための AI 実験とツール - blog.google",
-      "summaryJa": "Googleは、科学的方法を加速させるツール群としてGemini for Scienceを発表します。Hypothesis Generation、Computational Discovery、Literature Insightsの三つのプロトタイプを中心に、研究者がデータ間の創造的な繋がりを迅速に見つけられるようAIを活用します。企業向けにはGoogle Cloudでも提供し、大学機関や研究機関と共同で検証を進めています。"
     },
     {
       "id": "b0b5fec05f5b6bda37b7de1918a7c1cd605bfb20",
@@ -53,7 +218,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "「シンギュラリティの山麓」、グーグルの科学向けAIは変わったか",
       "summaryJa": "シンギュラリティの山麓、グーグルの科学向けAIの変化を問う内容は本文内に複数のIT・AI関連情報が並ぶが、特定の記事の結論や指示は明示されていない。本文はさまざまな製品やイベント、技術トピックスの広告的リストが中心で、統一的な主張や要約可能な一つの事実を抽出できない。したがって、本文の事実のみを用いた一貫した要約を作成することは困難である。"
     },
@@ -71,28 +236,63 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "クリストとジャンヌ・クロードの無駄な美しさ - ザ・ニューヨーカー",
       "summaryJa": "1964年、ChristoとJeanne-Claudeはチェルシーホテルを出てSoHoのロフトへ移り、後に建物を買収した。1968年に設計された「Air Package on a Ceiling」は、天井から垂らした巨大なビニールとロープで折り畳ませる作品で、I.C.A. Philadelphiaには未実現だったが、2021年にロンドンのギャラリーで初公開された。ChristoとJeanne-Claudeは多くの作品を死後にも計画・実現させ、Yavachevはボノの言葉を引用し「 cathedral thinking（大聖堂思考）」の精神で長期計画を進めている。"
     },
     {
-      "id": "545334b90f6f29ba65b555830e9fc3423e780039",
+      "id": "a7c38c445c7c51fea0a95322aeeb006958c01170",
       "sourceName": "Google News Search EN (24h)",
       "sourceUrl": "https://news.google.com/",
       "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Introducing Gemini Omni - blog.google",
-      "summary": "Introducing Gemini Omni &nbsp;&nbsp; blog.google",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/",
-      "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni",
-      "publishedAt": "2026-05-25T09:58:47.000Z",
-      "hashTitle": "ac74d31e16b30ab759bf5a3cb2934a939f44310b",
+      "title": "How to add the Cap Times as a preferred source for Google Search - The Cap Times",
+      "summary": "How to add the Cap Times as a preferred source for Google Search &nbsp;&nbsp; The Cap Times",
+      "url": "https://captimes.com/news/how-to-add-the-cap-times-as-a-preferred-source-for-google-search/article_911379a6-1650-4f62-8117-13ae0f162c6c.html",
+      "canonicalUrl": "https://captimes.com/news/how-to-add-the-cap-times-as-a-preferred-source-for-google-search/article_911379a6-1650-4f62-8117-13ae0f162c6c.html",
+      "publishedAt": "2026-05-25T10:00:00.000Z",
+      "hashTitle": "d11074ab0493e42ea72eb724cb45f4c0e7f4c858",
       "tags": [
-        "Google",
-        "gemini"
+        "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "Gemini Omni のご紹介 - blog.google",
-      "summaryJa": "Gemini Omniは、画像・音声・動画・テキストを入力として組み合わせ、現実世界の知識に grounded した高品質な動画を生成できる新モデル群の第一弾として Gemini Omni Flash を発表する。Omniは会話による編集機能を備え、指示を重ねることで映像の環境・角度・スタイル・細部を変更し、物理やストーリーテリングの整合性を保ちながら編集を進める。生成物にはSynthIDのデジタル透かしが付与され、 Gemini アプリや YouTube で利用可能になる予定である。"
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "Google 検索の優先ソースとして Cap Times を追加する方法 - The Cap Times",
+      "summaryJa": "Cap Timesはマディソンとウィスコンシン州へサービスを提供する independent newsroom で、毎朝ニュースを受け取れるMorning Updateの配信を案内している。Google検索の優先ソースとしてCap Timesを設定すると、関連する検索結果に当社の報道が表示されやすくなるほか、過去の記事はcaptimes.com/searchで探せる。読者のサポートとして会員やスポンサーになることも呼びかけられており、Apple NewsやNextdoorにも配信を開始したことが述べられている。"
+    },
+    {
+      "id": "41d29633a4266e596b2a21b6b9b40a092dea9111",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Apple’s MacBook Neo has entered the K-12 debate--are IT teams ready for it? - eSchool News",
+      "summary": "Apple’s MacBook Neo has entered the K-12 debate--are IT teams ready for it? &nbsp;&nbsp; eSchool News",
+      "url": "https://www.eschoolnews.com/it-leadership/2026/05/25/apples-macbook-neo-has-entered-the-k-12-debate-are-it-teams-ready-for-it/",
+      "canonicalUrl": "https://www.eschoolnews.com/it-leadership/2026/05/25/apples-macbook-neo-has-entered-the-k-12-debate-are-it-teams-ready-for-it",
+      "publishedAt": "2026-05-25T10:00:00.000Z",
+      "hashTitle": "80d41318bed30d0257248a3655b6e4d48212e368",
+      "tags": [
+        "Apple"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "Apple の MacBook Neo が幼稚園から高校までの議論に加わりました -- IT チームはその準備ができていますか? - eスクールニュース",
+      "summaryJa": "Appleの新MacBook Neoは価格を教育市場にも近づけたが、導入の成否は機器自体よりも管理モデルの適合性にかかると説明されている。Chromebookの運用を長く前提としてきた学校では、ゼロタッチ展開やMDM、アイデンティティ統合など現行の運用を再構築する必要があり、総合的な負荷が購買時のコスト差を上回る可能性がある。したがって、安価になったからといって直ちに大規模展開が容易になるわけではなく、既存のITモデルとの整合性と運用準備が決定的となる。"
+    },
+    {
+      "id": "a4d2cb1c2c57e2ec25dccb3bb976656462494e1d",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "新AIツール「Claude Design」と「Canva AI」の実力を比べてみた。私のあらゆる要望を先読みしてプレゼン資料を作ってくれたのは… - Business Insider Japan",
+      "summary": "新AIツール「Claude Design」と「Canva AI」の実力を比べてみた。私のあらゆる要望を先読みしてプレゼン資料を作ってくれたのは… &nbsp;&nbsp; Business Insider Japan",
+      "url": "https://www.businessinsider.jp/article/2605-claude-design-canva-ai-test-compare-create-presentation-saas/",
+      "canonicalUrl": "https://www.businessinsider.jp/article/2605-claude-design-canva-ai-test-compare-create-presentation-saas",
+      "publishedAt": "2026-05-25T10:00:00.000Z",
+      "hashTitle": "be6108837e0df90ee2da937e78c831550b3de184",
+      "tags": [
+        "claude"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "新AIツール「Claude Design」と「Canva AI」の実力を比べてみた。私のあらゆる要望を先読みしてプレゼン資料を作ってくれたのは… - Business Insider Japan",
+      "summaryJa": "Claude DesignとCanva AIを同じ資料で比較した結果、Canva AI 2.0は提示前の構成案共有や編集の柔軟性が高く、複数案から選択後に修正を重ねやすい点が印象的だった。一方、Claude Designは事前の補足質問を多く行い、目的に沿った具体的な要素の提案と高品質なグラフィック作成に優れていた。最終的には、両者とも同一スライド資料の作成で良い成果を出したが、それぞれ異なる強みがあると感じられた。"
     },
     {
       "id": "dee7eaa7e469792a459b2e1e19ff69e9218f80b9",
@@ -103,51 +303,33 @@
       "summary": "Google、動画生成AI「Gemini Omni」を発表。テキスト・画像・動画を組み合わせて映像を生成 &nbsp;&nbsp; AIsmiley",
       "url": "https://aismiley.co.jp/ai_news/gemini-omni-video-creation/",
       "canonicalUrl": "https://aismiley.co.jp/ai_news/gemini-omni-video-creation",
-      "publishedAt": "2026-05-25T09:45:00.000Z",
+      "publishedAt": "2026-05-25T09:54:10.000Z",
       "hashTitle": "63b1824097600041785982f3e813eb32cb84e43a",
       "tags": [
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Google、動画生成AI「Gemini Omni」を発表。テキスト・画像・動画を組み合わせて映像を生成 - AIsmiley",
       "summaryJa": "Googleは、画像・音声・動画・テキストを組み合わせて映像を生成・編集できる新モデル「Gemini Omni」を発表し、自然言語指示での編集にも対応すると伝えました。全生成動画にはSynthIDの電子透かしを埋め込み、安全性にも配慮しています。第一弾として軽量版の「Gemini Omni Flash」が提供開始され、今後はYouTube関連や開発者・企業向けAPIへ展開予定です。"
     },
     {
-      "id": "762920ee9ec8e0a702a3a10d5187e38ed3e32c74",
-      "sourceName": "Google News Search JA (24h)",
+      "id": "00612a2baadfc1600c7de45155be96d9ba3c5ffd",
+      "sourceName": "Google News Search EN (24h)",
       "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Visual Studio Code 1.121がリリース、HTMLプレビュー機能など追加 - CodeZine",
-      "summary": "Visual Studio Code 1.121がリリース、HTMLプレビュー機能など追加 &nbsp;&nbsp; CodeZine",
-      "url": "https://codezine.jp/news/detail/24305",
-      "canonicalUrl": "https://codezine.jp/news/detail/24305",
-      "publishedAt": "2026-05-25T09:07:53.000Z",
-      "hashTitle": "9458f90f8ea36538ee720277b5fd4a98fc30faa1",
-      "tags": [
-        "html"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "Visual Studio Code 1.121がリリース、HTMLプレビュー機能など追加 - CodeZine",
-      "summaryJa": "VS Code 1.121では、ビルトインのHTMLプレビュー機能とMermaidプレビュー機能が実装され、HTMLファイルやMermaidダイアグラムをエディタ上で直接プレビューできるようになった。 エージェント機能が強化され、ローカルだけでなくリモートマシン上でのエージェントセッションをSSHやDev Tunnels経由で実行・監視・制御できるようになり、複数クライアントからの同時管理を可能とする新しいAgent Host Protocolを採用した。 さらにターミナル周りの改善として、環境変数VSCODE_AGENTの設定や出力の圧縮範囲の拡大、バックグラウンドターミナルの自動クリーンアップなどが追加・強化され、言語モデル設定やクイックサジェストの挙動変更、設定の非推奨化なども行われている。"
-    },
-    {
-      "id": "053766f3764fb7285bbe432b4dd501965961a964",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "どれを選ぶ？ 「Google Pixel」シリーズのスマホラインアップまとめ【2026年5月版】（Fav-Log by ITmedia） - Yahoo!ニュース",
-      "summary": "どれを選ぶ？ 「Google Pixel」シリーズのスマホラインアップまとめ【2026年5月版】（Fav-Log by ITmedia） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/bb3dbc8d973cd4a481c0ee375cd156b226949fe0",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/bb3dbc8d973cd4a481c0ee375cd156b226949fe0",
-      "publishedAt": "2026-05-25T08:30:12.000Z",
-      "hashTitle": "88c581bbac7ff434ab7b47897266f9c217f1bc6d",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "AI guardrails stripped from Meta and Google models in minutes - Financial Times",
+      "summary": "AI guardrails stripped from Meta and Google models in minutes &nbsp;&nbsp; Financial Times",
+      "url": "https://www.ft.com/content/5630ed79-a263-41ed-9a1a-321617ae310e?syn-25a6b1a6=1",
+      "canonicalUrl": "https://www.ft.com/content/5630ed79-a263-41ed-9a1a-321617ae310e?syn-25a6b1a6=1",
+      "publishedAt": "2026-05-25T08:31:09.000Z",
+      "hashTitle": "1ba6508eaf41a56d1ce5917b95de6e8c24e9a960",
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "どれを選ぶ？ 「Google Pixel」シリーズのスマホラインアップまとめ【2026年5月版】（Fav-Log by ITmedia） - Yahoo!ニュース",
-      "summaryJa": "2026年春のGoogle Pixel 10シリーズは、廉価のPixel 10a、スタンダードのPixel 10、上位のPixel 10 Pro・10 Pro XL、フォルダブルのPixel 10 Pro Foldの計5機種で構成される。全機種がAndroid 16初期搭載で、OS・セキュリティ・Pixel Dropのアップデート保証は最長7年間、TensorはG4（10aのみ2025年世代、他は最新のG5）を搭載。最新世代のG5は3nmプロセス採用で性能と電力効率が向上している。"
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "AI ガードレールをメタモデルと Google モデルから数分で剥奪 - Financial Times",
+      "summaryJa": "メディア報道によると、メタとグーグルのモデルからAIガードレール（安全機能）がわずか数分で取り除かれたと伝えられている。具体的な手順や影響の詳細は説明文のみで、追加情報は提供されていない。"
     },
     {
       "id": "d1bc5c1d539f864281781902e5483b0e56806ede",
@@ -163,7 +345,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Google、日本の開発者の海外展開を支援する短期集中ワークショップ - ITmedia",
       "summaryJa": "日本のアプリ・ゲーム開発者を対象に、Google Play Accelerator Japanという10週間のワークショップの参加者募集が開始された。対象は日本本社の中小規模企業または個人開発者で、初期段階の海外展開やGoogle Play公開済みアプリが条件、CEOなどの意思決定者1～2名の全セッション参加が求められる。9月開始、11月にデモデイ・卒業式を予定し、応募は7月5日まで専用サイトから受け付けられている。"
     },
@@ -181,27 +363,9 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "パワポにChatGPTを召喚できるアドイン、OpenAIがβ版公開 スライド作成から編集まで指示するだけ - ITmedia",
       "summaryJa": "OpenAIはMicrosoft PowerPointと連携するアドイン「ChatGPT for PowerPoint」のβ版を公開し、PowerPoint上から自然言語でスライド作成・編集を指示できるようにした。メモや資料をもとに自動でスライドを生成・調整し、画像のスクリーンショットを編集可能なスライドへ変換する機能も搭載され、プレゼンの構成改善も可能とされる。利用にはアドイン追加とOpenAIアカウントのサインインが必要で、β版のため出力結果が不完全な場合があるとしている。"
-    },
-    {
-      "id": "bfe13a6c2963368b499cb081a487fb614a112b29",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "ソフトバンクG株最高値、出資先OpenAI上場期待－アーム株急伸も支え(Bloomberg) - Yahoo!ファイナンス",
-      "summary": "ソフトバンクG株最高値、出資先OpenAI上場期待－アーム株急伸も支え(Bloomberg) &nbsp;&nbsp; Yahoo!ファイナンス",
-      "url": "https://finance.yahoo.co.jp/news/detail/d54b6d2f02e5fee8c7e203138ea4b4fa054fd61f",
-      "canonicalUrl": "https://finance.yahoo.co.jp/news/detail/d54b6d2f02e5fee8c7e203138ea4b4fa054fd61f",
-      "publishedAt": "2026-05-25T06:38:00.000Z",
-      "hashTitle": "a82a3dc16ff7e72d1f45e2eb381f856aeaa77eb7",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "ソフトバンクG株最高値、出資先OpenAI上場期待－アーム株急伸も支え(Bloomberg) - Yahoo!ファイナンス",
-      "summaryJa": "ソフトバンクグループ株は出資先のOpenAIやデジタルインフラ企業SBエナジーのIPO準備が進むとの報道を好感し、分割後の上場来高値を更新して終値は7070円、前週末比4.6%高だった。出資先の上場により保有資産の評価がしやすくなるとの見方が広がり、NAVの拡大期待も株価を支えている。アーム・ホールディングス株の急伸やエヌビディア関連の動きも、ソフトバンクGの時価総額を押し上げ、日本企業での首位争いにも影響している。"
     },
     {
       "id": "ce8b7f721f6f5433fbdf5106754ea9f5aa105c11",
@@ -217,28 +381,27 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Appleが画像圧縮AIコーデック「PICO」を発表、同じ画質でデータ量を最大3分の1に削減 - GIGAZINE",
       "summaryJa": "Appleは機械学習を活用した画像圧縮コーデック「PICO」を発表しました。PICOは同品質でデータ量を最大1/3に削減可能で、既存の学習型コーデックと比べてもビットレートを20〜40％削減できると説明しています。実用性ではiPhone 17 Pro Max上でのエンコード230ms/デコード150msを報告し、比較表では知覚品質と処理時間のバランスを評価しています。"
     },
     {
-      "id": "a57d9cba85a04305527cbaf4f7166eddcb7e2466",
+      "id": "fba2437b02ce20e096bc211fa01e1ae0295cbe27",
       "sourceName": "Google News Search JA (24h)",
       "sourceUrl": "https://news.google.com/",
       "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Anthropic営業責任者、AIエージェント「Claude Cowork」を使った営業業務の進め方を公式ブログで紹介 4,000アカウントを一晩でスコアリング、商談準備や売上予測も - Ledge.ai",
-      "summary": "Anthropic営業責任者、AIエージェント「Claude Cowork」を使った営業業務の進め方を公式ブログで紹介 4,000アカウントを一晩でスコアリング、商談準備や売上予測も &nbsp;&nbsp; Ledge.ai",
-      "url": "https://ledge.ai/articles/anthropic_claude_cowork_sales_account_management",
-      "canonicalUrl": "https://ledge.ai/articles/anthropic_claude_cowork_sales_account_management",
-      "publishedAt": "2026-05-25T06:05:56.000Z",
-      "hashTitle": "cbe689dd69d714f1b823546b9b0da48f9fa5b7e8",
+      "title": "renue、ClaudeCodeの処理完了を通知する「コードだもん ビーコン」をリリース - PR TIMES",
+      "summary": "renue、ClaudeCodeの処理完了を通知する「コードだもん ビーコン」をリリース &nbsp;&nbsp; PR TIMES",
+      "url": "https://prtimes.jp/main/html/rd/p/000000042.000091210.html",
+      "canonicalUrl": "https://prtimes.jp/main/html/rd/p/000000042.000091210.html",
+      "publishedAt": "2026-05-25T06:00:02.000Z",
+      "hashTitle": "3ee958b31b062aeaa7938d560c6f150519d36ffd",
       "tags": [
-        "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "Anthropic営業責任者、AIエージェント「Claude Cowork」を使った営業業務の進め方を公式ブログで紹介 4,000アカウントを一晩でスコアリング、商談準備や売上予測も - Ledge.ai",
-      "summaryJa": "Anthropicの営業責任者が、公式ブログでAIエージェント「Claude Cowork」を用いた営業業務の進め方を紹介しました。記事では、4,000アカウントを一晩でスコアリングする事例や、商談準備・売上予測などの活用が挙げられています。本文にはクリップ機能や関連情報の案内も含まれていますが、要約には事実として挙げられている点のみを用いています。"
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "renue、ClaudeCodeの処理完了を通知する「コードだもん ビーコン」をリリース - PR TIMES",
+      "summaryJa": "「コードだもん ビーコン」は、Claude Code の処理完了を検知するとずんだもんの造形部分を上下させて通知するUSB Type-C接続のデスクトップガジェットです。無音設計で会議中や集中作業中の割り込みを避けつつ、Mac/Windowsに対応し全体高さ約132mmのコンパクト設計となっています。価格は5,000円（税込）で、送料は全国一律500円、配送は約1週間程度です。"
     },
     {
       "id": "130bfb16b084f60246ea2ba0f160789f5ede3b05",
@@ -254,7 +417,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "NvidiaやAppleとの競争が激化する中、ファーウェイは今秋に新しいスマートフォンチップを計画 - CNBC",
       "summaryJa": "Huaweiは米規制にもかかわらず、高性能半導体開発として新しい設計手法「LogicFolding」を発表。これにより秋にはKirinスマートフォン用チップの製造を進め、2031年には1.4nm相当の性能を実現する可能性を示唆したが、量産・熱管理・スケール拡張には依然課題があると指摘された。 Huaweiはτ scalingと呼ぶ新しい原理を提唱し、381個以上のチップを設計・量産したと主張する一方、欧州のEUVリソース制約下での実用化には慎重な評価が続いている。"
     },
@@ -272,7 +435,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "ロシア語話者アクター、脱獄済みGemini AIをハッキングに活用 MAGA支持者少なくとも1名の暗号資産ウォレットが空に - 株式会社マキナレコード",
       "summaryJa": "ロシア語話者の脅威アクター「bandcampro」は、脱獄済みのGoogle Gemini を活用してTelegramチャンネル「@americanpatriotus」を運営し、QAnon系やMAGA支持者を標的に暗号資産詐欺や認証情報窃取を行っていたとトレンドマイクロが報告した。Geminiの主な用途としてニュースの自動リライトやコンテンツ生成、偽暗号資産の配布、管理者認証情報の窃取などに利用され、少なくとも1名の暗号資産ウォレットが盗まれたとされる。 bandcamproはリモートアクセスツールとGeminiを組み合わせて被害端末へ侵入するほか、認証情報窃取の支援やブルートフォース用ツールの作成支援などを行っており、1人での自動化が可能になっている点を警鐘している。"
     },
@@ -290,27 +453,27 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "インスタベース、「Reserve with Google」への対応を開始 - PR TIMES",
       "summaryJa": "インスタベースは、Googleが提供する Reserve with Google へ対応を開始した。これにより、Google検索やGoogle Map上のスペース情報から直接予約ページへアクセスし、予約まで完了できるようになる。日常的な検索ツールを起点に予約体験をシームレス化し、掲載者には新しい顧客層への訴求拡大が期待されている。"
     },
     {
-      "id": "0035b57e1007d810939a0105d8ad025e9dc5e34d",
+      "id": "589099a4ba54c8a645b297e01a5ca0ccaf9a19e2",
       "sourceName": "Google News Search JA (24h)",
       "sourceUrl": "https://news.google.com/",
       "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "グーグル、Gmailの受信トレイを変える──AI「Gemini」が返信もファイル探しも肩代わり - Yahoo!ニュース",
-      "summary": "グーグル、Gmailの受信トレイを変える──AI「Gemini」が返信もファイル探しも肩代わり &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/7327c6eb2cb33a80a78e5728ddc2c54fda74089b",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/7327c6eb2cb33a80a78e5728ddc2c54fda74089b",
+      "title": "グーグル、Gmailの受信トレイを変える──AI「Gemini」が返信もファイル探しも肩代わり - Forbes JAPAN",
+      "summary": "グーグル、Gmailの受信トレイを変える──AI「Gemini」が返信もファイル探しも肩代わり &nbsp;&nbsp; Forbes JAPAN",
+      "url": "https://forbesjapan.com/articles/detail/98034",
+      "canonicalUrl": "https://forbesjapan.com/articles/detail/98034",
       "publishedAt": "2026-05-25T05:00:00.000Z",
-      "hashTitle": "a050f617edc217aa14d18cf11eeafa06aa107c82",
+      "hashTitle": "c030fd73beee17cde305a6c6dd3992d1197e018b",
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "グーグル、Gmailの受信トレイを変える──AI「Gemini」が返信もファイル探しも肩代わり - Yahoo!ニュース",
-      "summaryJa": "グーグルはGmailのAI Inbox機能を拡張し、Geminiが返信の下書きを作成したり、関連ファイルを参照してタスクリンクを表示するなど、受信トレイ管理を自動化する新機能を米国の一部加入者に展開している。これにより、メールの返信や必要な資料・リンクの検索が迅速化される一方、AIが先回りして作業を代行することで、プライバシーやセキュリティのリスクが高まる可能性が指摘されている。著者は、利便性と同時にデータ管理の範囲が広がる点を踏まえ、オプトアウトの有無に関わらずデータ開放の境界を改めて考えるべきだと述べている。"
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "グーグル、Gmailの受信トレイを変える──AI「Gemini」が返信もファイル探しも肩代わり - Forbes JAPAN",
+      "summaryJa": "グーグルはGmailの受信トレイをAI Inboxとして強化し、Geminiが返信の下書きを作成したり、関連するリンクをToDoの横に表示してファイル検索を代行する機能を米国のAI Plus/Pro加入者に提供開始した。これにより受信トレイが「仕事を進める」ための基盤になると説明されている一方、AIによる先回りとデータ処理にはプライバシーとセキュリティの懸念が残る。初期設定で有効になるケースが多く、オプトアウトは可能だが普及を見込む声があるため、データ開放の範囲やリスクについて自ら考えるべきだ。"
     },
     {
       "id": "1e8752a1be9da2b1719f2013a30591c042f43b77",
@@ -326,27 +489,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "「Web担当者Forumミーティング 2026 春」に合わせ『できるGoogle NotebookLM可能性は無限大！自分専用AIノート活用法』の全文を5月25日（月）から無料公開 - Yahoo!ニュース",
       "summaryJa": "インプレスは、Web担当者Forumミーティング2026春に合わせ、著者清水理史氏の著書「できるGoogle NotebookLM 可能性は無限大！自分専用AIノート活用法」を5月25日から27日まで3日間、全文無料公開するキャンペーンを実施します。無料公開はインプレスWebブックビューアーを使い、登録手続きなしで全ページを閲覧可能です。対象書籍の概要や著者プロフィール、発売日・定価・ISBNなどの書誌情報も併せて案内されています。"
-    },
-    {
-      "id": "e73cfe0ccde4a0a0edccba017836c9778b9ce3ab",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "「Web担当者Forumミーティング 2026 春」に合わせ『できるGoogle NotebookLM 可能性は無限大！自分専用AIノート活用法』の全文を5月25日（月）から無料公開 - 株式会社インプレス",
-      "summary": "「Web担当者Forumミーティング 2026 春」に合わせ『できるGoogle NotebookLM 可能性は無限大！自分専用AIノート活用法』の全文を5月25日（月）から無料公開 &nbsp;&nbsp; 株式会社インプレス",
-      "url": "https://www.impress.co.jp/newsrelease/2026/05/20260525-01.html",
-      "canonicalUrl": "https://www.impress.co.jp/newsrelease/2026/05/20260525-01.html",
-      "publishedAt": "2026-05-25T04:07:27.000Z",
-      "hashTitle": "09bc54428365b56f9d9903c753399c598afeac9e",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "「Web担当者Forumミーティング 2026 春」に合わせ『できるGoogle NotebookLM 可能性は無限大！自分専用AIノート活用法』の全文を5月25日（月）から無料公開 - 株式会社インプレス",
-      "summaryJa": "インプレスは、2026年5月25日から27日までの3日間、著書『できるGoogle NotebookLM 可能性は無限大！自分専用AIノート活用法』を全文無料公開するキャンペーンを実施する。公開はインプレスWebブックビューアーを通じて行われ、セミナー「Web担当者Forumミーティング 2026 春」のオープニング講演ではNotebookLMの活用デモやQ&Aが紹介される。書籍の内容は同キャンペーン期間中に閲覧可能で、デモ用データやプロンプトも公開される予定。"
     },
     {
       "id": "2bff91593f208e756dd2cd4f7ace5c3dfc9e5231",
@@ -362,7 +507,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Googleの最新コマース動向、代理店ショッピングを巡る争い激化 DIGIDAY［日本版］",
       "summaryJa": "GoogleはUniversal Cartを軸に、発見から購入までの購買体験を自社エコシステム内で完結させる“代理購買”機能を強化している。Universal Cartは検索、Gemini、YouTube、Gmailなどを跨いでカート追加が可能で、価格変動の検知や支払いはGoogle Payを通じて行われるほか、Universal Commerce Protocol（UCP）を通じて買い物支援機能の統合を進めている。競合他社のAI商取引強化に対し、信頼やデータ利用の透明性が課題として指摘され、消費者のAI購買データ利用への不安も併せて議論されている。"
     },
@@ -380,7 +525,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "金融庁・日銀、金融機関にAIサイバー攻撃の対策要請 対応の優先度決定など9項目",
       "summaryJa": "金融庁と日銀は、AIサイバー攻撃の脅威を踏まえ、金融機関に対して9項目の短期的対応を要請した。優先度は外部公開ITシステムを含む重要業務の保護や技術負債の解消、パッチ適用の人員増強、ベンダー契約の見直し、リスクに応じたパッチ優先順位付け、パッチ以外の防御強化、停止時の備え、外部機関との連携強化を中心とする。今後は自動化を含む中長期対策へ移行する方針で、金融分野のガイドラインに基づく迅速な実施が重視されている。"
     },
@@ -398,9 +543,45 @@
       "tags": [
         "vue"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "フロントエンドもアーキテクチャに向き合う！",
       "summaryJa": "社内システムのフロントエンドを、ドメインごとに責務を分けた段階的なアーキテクチャ移行を行った経緯をまとめた。フェーズ1で features/{domain} と repository を導入して、外部依存をドメイン層から切り離しテスト性を高め、フェーズ2で domains と models を分離してルールと UI 表現を分離。フェーズ3で infrastructure を導入しライブラリ依存を共通化、呼び出し側の実装を隠蔽。フェーズ4で core を導入し、複数文脈で共有される最内側の概念を src/core に集約して型変換を一本化した。結果、ビジネスロジックと UI 依存が分離され、テストしやすさと変更容易性が向上した。"
+    },
+    {
+      "id": "888d2459b139a0b91f5dba1b590f28ab6ef54e56",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "ついにマツダもGoogle搭載! 新型「CX-5」のナビ周りについて開発陣に聞く - Yahoo!ニュース",
+      "summary": "ついにマツダもGoogle搭載! 新型「CX-5」のナビ周りについて開発陣に聞く &nbsp;&nbsp; Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/b74f44ecb5b8d16a13ef6491b6b95022495394b2",
+      "canonicalUrl": "https://news.yahoo.co.jp/articles/b74f44ecb5b8d16a13ef6491b6b95022495394b2",
+      "publishedAt": "2026-05-25T03:11:11.000Z",
+      "hashTitle": "92062f8c3975c07b837cee8f91c38a69ced71bb9",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "ついにマツダもGoogle搭載! 新型「CX-5」のナビ周りについて開発陣に聞く - Yahoo!ニュース",
+      "summaryJa": "新型CX-5にはGoogle搭載のインフォテインメントを採用し、センターディスプレイはグレードにより最大15.6インチ、12.9インチと大画面化した。GoogleマップやGoogleアシスタントを活用することでナビ機能の利便性を高める一方、見た目の差別化は widgets や設定画面などで図る考えを示している。今後はGoogleアシスタントがジェミニへ切り替わる予定で、ジェミニを通じた車両とのやり取りを実現するなど、他社との差別化を目指すという。"
+    },
+    {
+      "id": "d2736c97df50c429222e6b6196f878e1230b5d34",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "Apple Watchに変革を、Whoopやオーラ台頭でヘルスケアアプリに課題－Power On - Bloomberg.com",
+      "summary": "Apple Watchに変革を、Whoopやオーラ台頭でヘルスケアアプリに課題－Power On &nbsp;&nbsp; Bloomberg.com",
+      "url": "https://www.bloomberg.com/jp/news/newsletters/2026-05-25/TFKOC1KGCTG700",
+      "canonicalUrl": "https://www.bloomberg.com/jp/news/newsletters/2026-05-25/TFKOC1KGCTG700",
+      "publishedAt": "2026-05-25T03:00:00.000Z",
+      "hashTitle": "bdd2eff8b298c4396ef064f9b3b2ee502b62e619",
+      "tags": [
+        "Apple"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "Apple Watchに変革を、Whoopやオーラ台頭でヘルスケアアプリに課題－Power On - Bloomberg.com",
+      "summaryJa": "Apple Watchの新たな変革を狙う一方で、Whoopやオーラの台頭によりヘルスケア分野のアプリは課題に直面している。BloombergのPower Onに焦点を当てた記事として伝えられている。"
     },
     {
       "id": "6c327e0ab65d2fd2f13747a282636415a40ea75d",
@@ -416,27 +597,27 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Google、Chrome拡張機能開発向けにAI活用・管理機能を強化",
       "summaryJa": "GoogleはChrome拡張機能の主なアップデートを発表し、AIを活用する拡張機能がウェブストアで17％を占めると報告した。新たなAIコーディングエージェント向けスキルや、開発・デバッグを支援する Chrome DevTools の機能追加により、インストールや再読み込み、各種アクションの自動実行が可能になった。さらに、複数メンバーでの管理を想定したダッシュボードの細分化されたロール設定や、限定公開による企業向け配信モデル、Chromeでの browser グローバル名前空間のサポートが案内された。"
     },
     {
-      "id": "782c78bf760683e1cb4818553599497ec35ae5b2",
+      "id": "7e060a45c0845dd19f404e1030cef3c719be1aef",
       "sourceName": "Google News Search JA (24h)",
       "sourceUrl": "https://news.google.com/",
       "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "グーグル、AIで「検索」が進化 Geminiが探すから購入までの体験をつなぐ - Yahoo!ニュース",
-      "summary": "グーグル、AIで「検索」が進化 Geminiが探すから購入までの体験をつなぐ &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/f6b983a9418df1d5cf9bb7abe68d0903dc82bde3",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/f6b983a9418df1d5cf9bb7abe68d0903dc82bde3",
+      "title": "グーグル、AIで「検索」が進化 Geminiが探すから購入までの体験をつなぐ - Forbes JAPAN",
+      "summary": "グーグル、AIで「検索」が進化 Geminiが探すから購入までの体験をつなぐ &nbsp;&nbsp; Forbes JAPAN",
+      "url": "https://forbesjapan.com/articles/detail/98003",
+      "canonicalUrl": "https://forbesjapan.com/articles/detail/98003",
       "publishedAt": "2026-05-25T01:30:00.000Z",
-      "hashTitle": "7e328c2b655549fe09fd89968b8a5f6de9fdd43a",
+      "hashTitle": "2fcbe3da1f341445a05a004bff72496e1ca32ac6",
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "グーグル、AIで「検索」が進化 Geminiが探すから購入までの体験をつなぐ - Yahoo!ニュース",
-      "summaryJa": "GoogleはI/O 2026で、AIモードを通じて検索を「情報を探す道具」から、意図理解・比較・予約・購買までを支援する体験へ進化させると示した。最新Gemini 3.5をエンジンに、単なるリンク列ではなく、AIが対話形式で条件を整理し、価格・雰囲気・空き状況などを提示、必要に応じて実際に業者へ電話するなど実行支援を行う。デモでは、カラオケの候補探しや引っ越し後の清掃業者の手配など、具体的な検索・予約の場面でAIモードが活用される様子が紹介された。"
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "グーグル、AIで「検索」が進化 Geminiが探すから購入までの体験をつなぐ - Forbes JAPAN",
+      "summaryJa": "Google I/O 2026で発表されたAIモードは、検索を情報収集・比較・予約・購買までの実行支援へと拡張し、単なる情報探しの道具からユーザーの意図理解を踏まえた「新しい体験」に変える可能性を示した。Gemini 3.5をエンジンとし、テキスト入力で条件を伝えると、候補を整理・提示し、必要に応じて業者へ電話するなど実行段階までサポートするデモが紹介された。日常の検索体験が対話型で具体的な行動へつながる方向性を示し、カラオケ予約や引っ越し業者の手配などの例が挙げられている。"
     },
     {
       "id": "e51286df252c4e6dad4262b87ff80a9c15f445c3",
@@ -452,27 +633,28 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Pixel 11は秋発売!? グーグルCEOのピチャイ氏が語った、Geminiの未来と次期Pixelの発売時期（アスキー） - Yahoo!ニュース",
       "summaryJa": "グーグルのI/Oで、Geminiが情報検索の枠を超え、ユーザーと対話し実際の行動を起こす「エージェント型AI」へと進化したことが強調され、Gemini 3.5 Flashがデフォルトモデルとして広く提供されることが発表された。新しいPixelデバイスは秋に登場予定で、ハードウェアとAIソフトウェアを統合してAndroid全体での体験を深化させる見込みだ。個人利用だけでなく科学・社会インフラ分野でもAIの活用が進むとされ、サムスンを含むパートナーとの協力を通じてデバイスとAIの連携が拡大していくと述べられた。"
     },
     {
-      "id": "d9ecfc56be9af0f823e2a3538abd83ebd5ed6ab0",
+      "id": "14c75d3cff8e34af96f552f48287dd795bbe0d06",
       "sourceName": "Google News Search JA (24h)",
       "sourceUrl": "https://news.google.com/",
       "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "ソフトバンクG、7カ月ぶり上場来高値 OpenAI上場観測で資金流入 - 日本経済新聞",
-      "summary": "ソフトバンクG、7カ月ぶり上場来高値 OpenAI上場観測で資金流入 &nbsp;&nbsp; 日本経済新聞",
-      "url": "https://www.nikkei.com/article/DGXZQOUB240MP0U6A520C2000000/",
-      "canonicalUrl": "https://www.nikkei.com/article/DGXZQOUB240MP0U6A520C2000000",
-      "publishedAt": "2026-05-25T00:24:11.000Z",
-      "hashTitle": "b5b606fe38c10bee31e203592c77f106311ab310",
+      "title": "OpenAIとAnthropicは、まったく異なる2つのAIビジネスモデルを試している - Forbes JAPAN",
+      "summary": "OpenAIとAnthropicは、まったく異なる2つのAIビジネスモデルを試している &nbsp;&nbsp; Forbes JAPAN",
+      "url": "https://forbesjapan.com/articles/detail/97920",
+      "canonicalUrl": "https://forbesjapan.com/articles/detail/97920",
+      "publishedAt": "2026-05-25T00:00:00.000Z",
+      "hashTitle": "c0d6252ec7b89b802768dbe91da9cb842958e644",
       "tags": [
+        "Anthropic",
         "OpenAI"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "ソフトバンクG、7カ月ぶり上場来高値 OpenAI上場観測で資金流入 - 日本経済新聞",
-      "summaryJa": "ソフトバンクグループ（SBG）は25日の東京市場で買われ、上場来高値を7カ月ぶりに更新した。時価総額は40兆円台に乗り、米OpenAIの新規株式公開（IPO）への期待から保有資産の価値が高まると判断した資金が流入した。午前の取引で株価は前週末比8%高の7276円まで上昇し、2025年10月の上場来高値を上回った。"
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "OpenAIとAnthropicは、まったく異なる2つのAIビジネスモデルを試している - Forbes JAPAN",
+      "summaryJa": "OpenAIとAnthropicは、今後の収益源として企業向け事業の重要性を強調する財務状況を示している。OpenAIはIPO準備を進めつつ1兆ドル超の企業価値を見込むが、長期的な赤字の持続可能性が課題とされる。一方、Anthropicは最新資金調達で2026年第2四半期の売上高を109億ドルと見込み、同四半期には営業利益も発生する見通しを示した。投資家は消費者向けの規模拡大より、企業向け売上の道筋を重視している。"
     },
     {
       "id": "df3c6bba3513d585eafb5b4dfd9db3406f123a9d",
@@ -488,7 +670,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "意見: 女性スポーツへの関心は、ちょっとした好奇心と Google 検索ですぐにわかる - Daily Bruin",
       "summaryJa": "女性スポーツの歴史は周知が不足しており、現代の UCLA 男子選手の名は広く知れ渡る一方で、デニース・カリーなど女子選手の業績は認識されていないと指摘されている。タイトルIX制定後も女性選手の予算や支援が男子と比べて十分でなかった事実を伝え、歴史を知ることと現在の女子スポーツ支援を続けることの重要性を訴える。読者には大学のアスリート史を学び、女性スポーツを前面に発信する声になろうと促している。"
     },
@@ -506,7 +688,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "「Gemini アプリ」の改良点まとめ、個人用AIエージェントの実装や「朝のニュースまとめ」、macOS版など／UI/UXも改良 - 窓の杜",
       "summaryJa": "Google I/O 2026で、Gemini アプリの新機能が一斉公開された。24時間稼働の個人エージェント「Gemini Spark」や、朝のニュース要約「Daily Brief」、動画生成機能の「Gemini Omni」、macOS版のリリースなどが発表され、Neural ExpressiveデザインでUI/UXも刷新された。SparkはGmailやDocsなどと深く連携し自動化ワークフローを作成可能で、オフライン時もバックグラウンド動作するクラウド型エージェントである。皆は5月19日週にテスト提供、夏以降順次展開予定。"
     },
@@ -524,7 +706,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Google Cloud、エージェント構築におけるデータアクセスをサポートする「Data Agent Kit」発表",
       "summaryJa": "Google Cloudは、エージェント構築のためのデータアクセスを容易にする「Data Agent Kit」を公開した。データエンジニアリングとデータサイエンスのスキル・ツール・プラグインを統合し、クエリ最適化やデータ検証のエージェントスキル、MCPツール、ネイティブIDE統合機能を備える。事前定義のエージェントスキルライブラリにより、企業レベルのデータインテリジェンスをIDEやCLIに組み込み、ワークスペース内で対話型分析を実現する。現時点はプレビュー版で、IDEまたはCLIへインストールして利用可能。"
     },
@@ -542,46 +724,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "「Google Tensor ML SDK」がベータ版に",
       "summaryJa": "Googleは5月19日、Google Tensor ML SDKが実験的アクセスからベータ版へ移行したと発表した。ベータ版ではLiteRTによる統一ワークフローと100以上のモデルを備えたモデルガーデンが提供され、TensorのTPUを介してPixel上でML/生成AIモデルを変換・展開・実行できるようになる。さらに、コンピュータビジョンや音声認識などのモデルをPixelデバイスへ直接デプロイ可能で、LiteRT経由のダウンロードライブラリも用意されている。"
-    },
-    {
-      "id": "cbc23d474f6e28901cbf5b685dc554eb240a7b3b",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "OpenAIが最大44万5000ドルで研究者を募集——求められる資質は「センスと戦略的思考」 - Business Insider Japan",
-      "summary": "OpenAIが最大44万5000ドルで研究者を募集——求められる資質は「センスと戦略的思考」 &nbsp;&nbsp; Business Insider Japan",
-      "url": "https://www.businessinsider.jp/article/2605-openai-safety-team-ai-self-improvement-challenge-job/",
-      "canonicalUrl": "https://www.businessinsider.jp/article/2605-openai-safety-team-ai-self-improvement-challenge-job",
-      "publishedAt": "2026-05-24T22:45:00.000Z",
-      "hashTitle": "ef2a8982c3a731041bb52619762e395c7b4839a1",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "OpenAIが最大44万5000ドルで研究者を募集——求められる資質は「センスと戦略的思考」 - Business Insider Japan",
-      "summaryJa": "OpenAIは、自己改善を可能にするAIツールの開発とそれに伴うリスク対策を進めており、安全研究者の求人を出している。求人は準備チームで、給与は29万5000ドル〜44万5000ドル（約4700万円〜7100万円）と高額で、将来起きうる問題を推論する能力と確かな見識・戦略的思考を強く求めている。OpenAIとアンソロピックは取材に応じなかった。"
-    },
-    {
-      "id": "e8ee053c1bb762400cc9cce7f1d91db100bf0b4d",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Google検索を「Gemini 3.5 Flash」へアップグレード。エージェント型予約機能を幅広い新しいタスクへ拡張などを実装 - Yahoo!ニュース",
-      "summary": "Google検索を「Gemini 3.5 Flash」へアップグレード。エージェント型予約機能を幅広い新しいタスクへ拡張などを実装 &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/62d8afd4ae3373157e93877cf1e1990e1d9261ff",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/62d8afd4ae3373157e93877cf1e1990e1d9261ff",
-      "publishedAt": "2026-05-24T22:31:20.000Z",
-      "hashTitle": "f94adfaeeededf6df60a4fbf37f56a1704ec5cdf",
-      "tags": [
-        "Google",
-        "gemini"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "Google検索を「Gemini 3.5 Flash」へアップグレード。エージェント型予約機能を幅広い新しいタスクへ拡張などを実装 - Yahoo!ニュース",
-      "summaryJa": "Googleは「Gemini 3.5 Flash」をAIモードのデフォルトモデルへ刷新し、検索ボックスの大規模なアップデートとAI概要からの追加質問機能を導入する。情報収集を自動化する「情報エージェント機能」を第一歩として提供し、24/365で情報を監視・要約する。エージェント型予約機能を地域サービスや体験予約へ拡張し、生成型UIやミニアプリ構築機能を検索内に追加する予定で、夏以降に順次提供を開始する。"
     },
     {
       "id": "00e801c3f2ef1031f06edfc8cfa425fbc576dc14",
@@ -598,7 +743,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Googleの「Gemini」、24時間体制でタスク遂行をサポートするエージェント「Gemini Spark」を備えたAIアシスタントへ進化 - Yahoo!ニュース",
       "summaryJa": "Googleは「Gemini」アプリの新機能として、日常作業を継続的に支援するエージェント型AIアシスタント「Gemini Spark」を追加するほか、新デザイン言語「Neural Expressive」を導入して体験を刷新すると発表した。Daily Briefによる朝の情報整理支援や、動画生成機能「Gemini Omni」などの新機能も順次提供され、Geminiは現在230以上の国・地域・70以上の言語に対応、月間9億人以上が利用しているという。新UIは音声会話とのシームレス切替や、回答形式の拡張、マイク機能の改良を含み、Gemini Sparkは24時間365日バックグラウンドでタスク遂行を支援する。"
     },
@@ -617,7 +762,7 @@
         "OpenAI",
         "claude"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Claude Codeを“追いかける立場”となったOpenAI、その内幕｜The Big Story - WIRED.jp",
       "summaryJa": "OpenAIはCodexでコーディングエージェント市場を先行して成功させることを狙ってきたが、競合のAnthropicがClaude Codeを中心に急速に台頭し、同分野で追いかける立場に転じている。AnthropicはClaude Codeを軸にCursorなどの製品で急成長し、2026年初にはCodexの売上を圧倒的に上回る規模になると見込まれている。一方、OpenAIはWindsurf買収交渉の破談などを経て、内部の統合とスプリント型開発で急速な出荷を進め、Codexのアップデートを続けている。"
     },
@@ -636,7 +781,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Googleの「Gemini」、24時間体制でタスク遂行をサポートするエージェント「Gemini Spark」を備えたAIアシスタントへ進化 - ネットショップ担当者フォーラム",
       "summaryJa": "Googleは「Gemini」アプリを刷新し、新UI「Neural Expressive」の導入や日常情報整理機能「Daily Brief」、24時間365日バックグラウンドで作業を行うパーソナルAIエージェント「Gemini Spark」を追加するなど段階的な機能強化を発表した。Gemini SparkはGmailやGoogleワークスペースと深く連携し、クラウド上でバックグラウンド作業を継続することが特徴で、将来的には外部アプリとの連携拡大やタスク実行の自動化も計画されている。macOSアプリの強化も併せて発表され、デスクトップ作業の自動化や音声理解機能の向上が提供される予定である。"
     },
@@ -654,7 +799,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "「Claudeに任せてしまおう」 たった1 年で激変したソフトウェア開発 - MITテクノロジーレビュー",
       "summaryJa": "アンソロピックのイベント「Code with Claude」で、Claude Codeがコードの多くを自動作成する時代が加速していることが示された。Claude Codeは4.6・4.7の更新で安定性が高まり、夢中の作業を自動で継続・修正できる dreaming機能も紹介されたが、現場ではハンズオンと実例の一方で、AI任せの開発が生産性を本当に向上させるかについて疑問の声もある。専門家は依然として監視とベストプラクティスの維持が重要だとし、最終的にはClaudeが自分自身をビルドできるレベルを目指すという目標が語られた。"
     },
@@ -672,7 +817,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "AWS MCP Server が GA になったのでGithub Copilot cloud agentから利用してみる",
       "summaryJa": "AWS MCP Serverが2026年5月にGAとなり、Github Copilot cloud agentからの利用方法を紹介しています。設定はcopilot-setup-steps.ymlを用い、AWS認証情報をOIDC経由で取得する方法が詳述され、mcp-proxy-for-awsを介した構成が示されています。これにより、ローカル設定に依存せず組織全体で同一基盤を利用でき、エンドポイント許可の管理負荷が軽減される点が強調されています。"
     },
@@ -682,7 +827,7 @@
       "sourceUrl": "https://zenn.dev/topics/frontend",
       "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
       "title": "Vueで環境変数使ったAPI呼び出しの実装",
-      "summary": "環境変数の作成 ※これらはgitに追加してはいけません。.gitignoreにファイル名を追加するなどしてください。 .env.production (本番用) .env.production VITE_API_BASE_URL=https:// .env.development (開発用) .env.development VITE_API_BASE_URL=http://localhost:5173/api コード まずはディレクトリ構成 src/ ├── api/ │ ├── apiClient.js # fet...",
+      "summary": "環境変数の作成 ※これらはgitに追加してはいけません。.gitignoreにファイル名を追加するなどしてください。 .env.production (本番用) .env.production VITE_API_BASE_URL=https:// .env.development (開発用) .env.development VITE_API_BASE_URL=http://localhost:5173/api コード まずはディレクトリ構成 src/ ├── api/ │ ├── apiClient.js # fetc...",
       "url": "https://zenn.dev/funa_yuy/articles/d1368d36e44982",
       "canonicalUrl": "https://zenn.dev/funa_yuy/articles/d1368d36e44982",
       "publishedAt": "2026-05-24T18:17:13.000Z",
@@ -690,27 +835,9 @@
       "tags": [
         "vue"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Vueで環境変数使ったAPI呼び出しの実装",
       "summaryJa": "環境変数を用いた API 呼び出しの実装手順が示されている。VITE_API_BASE_URL を本番と開発で切り替える設定ファイル(.env.production/.env.development)を用意し、apiClient.js がこの BASE_URL を使ってエンドポイントと通信する。ユーザー情報取得やヘルスチェックなどの API 定義は apiClient の基本関数を介して呼び出され、エラーハンドリングとして try/catch/finally を実装している。ビルド時には dev で開発用 env、build で本番用 env が読み込まれる。"
-    },
-    {
-      "id": "26b913735786aef59ae25f19869b9aa86f49b98a",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Apple’s Watch and Health Efforts Need Reboot to Rival New Wearables - Bloomberg.com",
-      "summary": "Apple’s Watch and Health Efforts Need Reboot to Rival New Wearables &nbsp;&nbsp; Bloomberg.com",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-05-24/apple-watch-needs-shake-up-amid-whoop-oura-google-fitbit-air-airpods-ios-27-mpjuh7ln",
-      "canonicalUrl": "https://www.bloomberg.com/news/newsletters/2026-05-24/apple-watch-needs-shake-up-amid-whoop-oura-google-fitbit-air-airpods-ios-27-mpjuh7ln",
-      "publishedAt": "2026-05-24T14:00:01.000Z",
-      "hashTitle": "c038a3a9acd2605b790e15a123ea2e9a52611f1b",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "Apple Watchと健康への取り組みは、新しいウェアラブルに対抗するために再起動が必要 - Bloomberg.com",
-      "summaryJa": "Appleの Watch とヘルス機能は、新しいウェアラブルと競うには再起動が必要だと指摘されている。記事は、競合の新機能に追随するための改善を求める内容を伝えている。"
     },
     {
       "id": "e0f8aaa80304a8bbfe7b01da02761401d8eb2721",
@@ -726,7 +853,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "React × Tailwind CSS 入門 #06｜React Routerでページ遷移を実装する",
       "summaryJa": "React Routerを使ってSPAとしてのページ遷移を実装する方法を解説しています。BrowserRouter／Routes／RouteでURLと表示コンポーネントを対応させ、リンクはリンク要素ではなく Link を用いること、コードからの遷移には useNavigate、URLパラメータには useParams の使い方も紹介しています。404ページの設定方法も触れており、実例コードも示しています。"
     },
@@ -744,7 +871,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Claude Managed AgentsでLチカ！（エージェント時代のIoTはこれか？！）",
       "summaryJa": "Claude Managed Agentsを用いて、オンプレのラズベリーパイでLチカを実演しています。Self-hosted sandboxesのサポートを受け、クラウド外部のサンドボックスを利用する手順を解説し、ラズパイ上でLEDをGPIO17に接続して3回点滅させる動作をエージェントに指示する形で実行しました。環境作成やワーカーの用意、セッション作成などの手順を具体的に示し、実行履歴も確認できる点を紹介しています。"
     },
@@ -762,9 +889,28 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Claude Codeのスキルが毎日勝手に改善されていく仕組みを作った",
       "summaryJa": "Claude CodeのRoutinesを活用して、開発後の振り返りを自動化する仕組みを作り、自己ふりかえりからIssue作成、triage、Routines実行までを3段階のループで回す方法を紹介しています。実際には人の承認を経てマージする運用ですが、ふり返りからPRまでが自動化の一部として進むことで、同じ修正の繰り返しを減らしたと述べています。導入効果として、約13日で40件以上の自動triageコミット、21件のIssue作成・クローズを報告しており、今後はチームにも展開予定とのことです。"
+    },
+    {
+      "id": "0484cafe36466cadc336ee1505a315a36bb84838",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "Googleが個人向け自律型AIエージェント「Gemini Spark」発表／LGが1000Hzのリフレッシュレートにネイティブ対応した「LG UltraGear（25G590B）」を発表（ITmedia PC USER） - Yahoo!ニュース",
+      "summary": "Googleが個人向け自律型AIエージェント「Gemini Spark」発表／LGが1000Hzのリフレッシュレートにネイティブ対応した「LG UltraGear（25G590B）」を発表（ITmedia PC USER） &nbsp;&nbsp; Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/e5922d0010f8d76b3690e03285cccb4822297727",
+      "canonicalUrl": "https://news.yahoo.co.jp/articles/e5922d0010f8d76b3690e03285cccb4822297727",
+      "publishedAt": "2026-05-23T21:05:08.000Z",
+      "hashTitle": "279eea40b0e57a75a0661e758fbfb39088d90509",
+      "tags": [
+        "Google",
+        "gemini"
+      ],
+      "scoredAt": "2026-05-25T15:27:17.397Z",
+      "titleJa": "Googleが個人向け自律型AIエージェント「Gemini Spark」発表／LGが1000Hzのリフレッシュレートにネイティブ対応した「LG UltraGear（25G590B）」を発表（ITmedia PC USER） - Yahoo!ニュース",
+      "summaryJa": "Googleは5月19日に個人向けAIエージェント「Gemini Spark」を発表し、来週からβ提供を米国のGoogle AI Ultra契約者向けに開始する。クラウドベースで24時間稼働し、メール整理や会議メモの統合、サブスクリプション検出などの自動化機能を備える。初期パートナーはCanva、OpenTable、Instacartで、MCPで外部サービスと接続でき、 macOS版統合は2026年夏を予定している。なお日本での提供時期は未定。"
     },
     {
       "id": "bbb42940b6b64a7421783b85161dbb8630b1b6d2",
@@ -780,7 +926,7 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "【2026年度版】WSL2 + UbuntuにNode.jsとnpmを安全に導入する手順",
       "summaryJa": "本記事では、WSL2上のUbuntu 24.04環境にNode.jsとnpmを導入する手順を、最新のLTS版を選択する方針で解説している。Ubuntu標準リポジトリとNode.js公式LTS版の比較を踏まえつつ、NodeSourceを用いたインストール手順を実際のコマンドとともに詳述する。導入後にはnodeとnpmのバージョン確認を行い、脆弱性の確認（npm audit）の前提条件についても言及している。記事内では、躓いた点と対応方法、実行コマンドの要点を初心者向けに整理している。"
     },
@@ -798,7 +944,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "React × Tailwind CSS 入門 #05｜カスタムHookを作る｜ロジックを再利用可能にする",
       "summaryJa": "カスタムHookを使うことで、共通のロジックを別ファイルに切り出し再利用可能にする方法と、その命名規則を解説している。実践として、useToggleでトグルの状態管理を分離し、UIコンポーネントは見た目の部分だけに集中することを示す。続いてuseFetchを作成し、APIデータ取得とエラー処理を一元化してUserListで再利用可能な形に適用している。これにより、エラー処理を含むデータ取得ロジックを複数箇所で簡潔に使えることが強調されている。"
     },
@@ -816,7 +962,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Google、「Antigravity 2.0」などAIエージェント関連の新機能を発表",
       "summaryJa": "GoogleはI/Oで、AIエージェント構築・運用用の「Gemini Enterprise Agent Platform」と周辺ツールの最新アップデートを発表した。Gemini Enterprise Agent Platformはセッションメモリとガバナンス機能を統合し、低コードのAgent StudioやManaged Agents API、Antigravity 2.0/CLIなど4段階の開発レイヤーを提供する。Antigravity 2.0はデスクトップ版で複雑なコーディングタスクと複数エージェントの並列実行を可能にし、ADK 2.0はPython・Kotlin・Go・Javaに対応してエージェント開発を柔軟化する。今後はセキュリティ・ガバナンス機能や評価ツールの拡充を予定している。"
     },
@@ -834,7 +980,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "AIにいくら払えるか。従量制Gemini開始で個人向けAIのコスト設計を考える - Business Insider Japan",
       "summaryJa": "Google I/O 2026 で「Gemini」のウェブアプリが更新され、新モデル「Gemini 3.5 Flash」や動画生成モデル「Gemini Omni」が利用可能になりました。併せて、利用量に応じた上限が導入され、5時間および1週間の間隔で使用制限が発生します。本文には、個人向けの具体的なコスト数字は示されておらず、モデルと実行内容によって使用量が変動する点のみ記されています。"
     },
@@ -852,7 +998,7 @@
       "tags": [
         "html"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Visual Studio Code 1.121がリリース、HTMLプレビュー機能など追加",
       "summaryJa": "VS Code 1.121では、ビルトインのHTMLプレビュー機能とMermaidプレビュー機能が実装され、HTMLファイルやMermaidダイアグラムをエディタ上で直接プレビューできるようになった。エージェント機能も強化され、ローカルだけでなくリモートマシンでもエージェントセッションをSSHやDev Tunnels経由で実行・監視・制御でき、複数クライアントの同時管理を可能とする新しいAgent Host Protocolを採用した。その他、ターミナルの動作改善やセキュリティ強化、言語モデル設定やエディタのクイックサジェスト挙動の変更、設定の非推奨化など、多岐にわたるアップデートが含まれる。"
     },
@@ -870,7 +1016,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Google.comで「ignore」を検索すると……",
       "summaryJa": "Google検索の大幅アップデート後、英語版Google.comで「ignore」や「disregard」を検索すると、「AI Overview」が上部に表示され、意味の説明よりも命令と誤解されて実際に無視しようとする挙動が見られるとSNSで話題になった。日本語では「無視」だと従来の意味がトップに表示される一方、「無視して」の検索でAIによる概要が表示され、対応文として「かしこまりました。この指示については無視いたしますね。」のような文言が出た例も報告された。さらに「disregard」については、話題化後数時間でTop storiesが表示され、直下にMerriam-Websterの意味リンクが現れたとの指摘がある。"
     },
@@ -888,7 +1034,7 @@
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "二人の人類の物語 - タイムマガジン",
       "summaryJa": "Anthropicはヨーロッパ初の開発者向けイベント「Code w/ Claude」で、彼らの主要な資源はコードを使いまくるデベロッパーであると位置づけ、参加者は Claude に多額を費やす「ライフサブスト」だと説明された。イベントでは主にClaude Codeの活用法や生産性向上の技術的詳細が共有され、リスクにはあまり触れられなかった。オックスフォード大学でのジャック・クラーク氏の講演は、AIの進展速度と危機の可能性を強調し、2028年頃の自己改善型AIの出現を予測しているが、企業としての警告と開発者向けのPRの二つの側面が近接して感じられた。"
     },
@@ -906,7 +1052,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Apple corecrypto の正式検証のための青写真 - Apple Security Research",
       "summaryJa": "Appleは、iMessageなどでの量子耐性暗号化を導入するにあたり、 corecrypto の新世代アルゴリズムとしてML-KEMとML-DSAを実装し、FIPS 203/204規格への適合性を保証する数学的証明を公開した。実装はポータブルCで記述し、Timing Leaks防止やPAC・DITなどのハードウェア機能を活用してセキュリティを強化、性能向上のための手作業による最適化も行っている。さらに、正式検証ライブラリとツールを公開し、アルゴリズムの正確性と実装の安全性を独立評価可能とした。"
     },
@@ -924,28 +1070,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Google I/O 2026 の Dialogues ステージをご覧ください。",
       "summaryJa": "今週のI/Oで、DialoguesステージはGoogleのリーダーや科学者、創造的な発想家が集まり、社会と未来を形づくる技術的ブレークスルーについて議論した。ハイライトとして、I/Oの最大発表の意図を解くためSundar PichaiとFuture Forward創設者マット・バーマンの対談、AIエージェントや量子コンピューティングとAIの交差、AIが科学的課題の解決に果たす役割、 embodied physical AI の進展、映画制作におけるAIの役割などが挙げられた。全編はYouTubeで視聴可能。"
-    },
-    {
-      "id": "d8199fc84711b78e34dd2d8f83353390622c929e",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "What Anthropic and OpenAI launched in 72 hours has Wall Street paying attention - The New Stack",
-      "summary": "What Anthropic and OpenAI launched in 72 hours has Wall Street paying attention &nbsp;&nbsp; The New Stack",
-      "url": "https://thenewstack.io/anthropic-openai-wall-street-ai-agents-developers/",
-      "canonicalUrl": "https://thenewstack.io/anthropic-openai-wall-street-ai-agents-developers",
-      "publishedAt": "2026-05-22T17:39:31.000Z",
-      "hashTitle": "d6911cb98435c64c5cdef65dfb73fcbdcb354496",
-      "tags": [
-        "Anthropic",
-        "OpenAI"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "Anthropic と OpenAI が 72 時間でローンチしたものにウォール街は注目 - The New Stack",
-      "summaryJa": "今月の72時間でAnthropicとOpenAIはともに企業向け展開部門を立ち上げ、金融サービス分野の大手と提携を公表、Wall Streetの業務に直結するエージェントツールの提供を開始した。両社は frontier AI の次の成長を「モデルより展開・実装」が鍵と位置づけ、Anthropicは中堅企業を対象とするサービス企業を立ち上げ、OpenAIはDeployCoを通じて大企業向けの前方展開型エンジニアリング体制を強化、初期投資額はともに400億円超規模とされる。財務・規制領域での実装事例やテンプレート、データ連携機能を拡充し、導入ギャップを埋めることを共通の戦略としている。"
     },
     {
       "id": "39893940c26fc8ec6c132e94622b34ffcd9a251b",
@@ -961,7 +1088,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "2026 年の CSS センタリングの現状",
       "summaryJa": "CSSのセンタリングは1つの方法に依存せず、レイアウトの種類や配置対象によって適切な方法を選ぶ必要があると述べられている。本文はFlexbox、Grid、text-boxなど複数の手法と、それぞれの挙動の違いを解説し、単純に「中央に置く」だけでなく、状況に応じた理解が重要だと強調している。さらに、複数要素時の挙動や、テキストの垂直中央揃えの難しさにも触れている。"
     },
@@ -979,7 +1106,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "React × Tailwind CSS 入門 #04｜useEffectを理解する｜データ取得と副作用の基礎",
       "summaryJa": "useEffectは副作用を扱うReactのHookであり、外部APIからのデータ取得やタイマー、ページタイトルの変更などを実行できる。依存配列の指定により、毎回・初回のみ・特定の状態変化時のみなど実行タイミングを制御できる。実践例として、タイトルを[count]に連動させる例と、JSONPlaceholderからユーザーを取得して表示する例が紹介されている。"
     },
@@ -998,7 +1125,7 @@
         "claude",
         "typescript"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Claude Code Review を GitHub Actions に5分で導入する",
       "summaryJa": "Claude Code Review を CI で回すための手順と注意点を紹介する記事。GitHub App の導入、OAuth トークンの取得と secrets への登録、 claude-review.yml の作成と設定、初回PR時のエラー対応、動作確認までの流れを具体的に解説している。発展として Skill のファイル追加方法や、実際のレビュー観点の例が示されており、PR に対して Claude が日本語で要点を絞ったコメントを1件投稿する運用が提案されている。"
     },
@@ -1016,7 +1143,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "「pring」終了へ Googleが巨額で買収した日本の送金アプリ、Google Payへの統合は実現せず",
       "summaryJa": "Google傘下の送金アプリ「pring」は、2026年12月1日に全サービスを終了する。買収総額は少なくとも100億円規模とみられ、Google Payへの送金機能統合は実現しなかった。新規登録の停止は2024年6月、資金移動業の廃止は2026年8月24日で、残高がある場合は登録銀行口座へ自動返金され、振込手数料はpringが負担する。"
     },
@@ -1034,7 +1161,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "全国のApple StoreがPayPay決済に対応 コード決済で初",
       "summaryJa": "PayPayは5月22日、全国のApple Store11店舗でコード決済「PayPay」が利用可能になったと発表した。Apple Storeの実店舗でのコード決済導入は今回が初めてで、商品代金は現金やクレジットカードなどと同様に支払える。Apple Storeは東京・大阪・名古屋・京都などを含む全国主要都市に展開している。"
     },
@@ -1053,7 +1180,7 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "OpenAI、Codexのgoalモードを一般提供開始",
       "summaryJa": "OpenAIはCodexのアップデートで、実験的機能だったgoalモードを一般提供開始と発表した。Codexアプリ、IDE拡張機能、CLIのいずれかで/goalコマンドを使い、達成すべき具体的な目標を設定すると、長時間にわたりその目標を達成するまで作業を継続する。途中停止・再開・編集などの制御が可能で、予算制限による自動停止機能も備える。"
     },
@@ -1071,46 +1198,9 @@
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Anthropicとマイクロソフトの契約は、AIインフラの大きな転換を映し出す - Forbes JAPAN",
       "summaryJa": "Anthropicは、マイクロソフトと大規模な計算資源の活用を前提とした提携を進めており、Azureインフラ投資は約300億ドルに達する見込みだ。加えてAnthropicはマイクロソフト設計のAIサーバーチップ搭載機の借用交渉も進めていると報じられている。背景には、コストと供給の安定性、調達先の分散化、クラウド統合による大規模AIサービス提供の強化などが挙げられている。"
-    },
-    {
-      "id": "9dd70a7ce97f52149b23523485404d5094977224",
-      "sourceName": "ITmedia NEWS",
-      "sourceUrl": "https://www.itmedia.co.jp/news/",
-      "sourceFeedUrl": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
-      "title": "CapCut、Google Geminiと連携 動画生成から編集までGeminiアプリ内で可能に",
-      "summary": "動画編集ツール「CapCut」を手掛ける中国ByteDanceは5月21日（現地時間）、米GoogleのAIアシスタント「Gemini」との提携を発表した。Geminiアプリ内でCapCutの動画・画像編集機能が利用可能になり、生成から編集までのワークフロー統合を実現する。",
-      "url": "https://www.itmedia.co.jp/news/articles/2605/22/news097.html",
-      "canonicalUrl": "https://www.itmedia.co.jp/news/articles/2605/22/news097.html",
-      "publishedAt": "2026-05-22T04:30:00.000Z",
-      "hashTitle": "e9570c64160d7308197c5f8f773069648ebd03b4",
-      "tags": [
-        "Google",
-        "gemini"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "CapCut、Google Geminiと連携 動画生成から編集までGeminiアプリ内で可能に",
-      "summaryJa": "CapCutはGoogleのAIアシスタントGeminiと提携し、Geminiアプリ内でCapCutの高度な編集機能を直接利用できる環境を整える。これにより、Gemini上で生成した画像や動画をシームレスにCapCutの編集機能で編集できるようになる。CapCutは今後の創作を「会話的で直感的、複数ツール間の知的統合」と説明している。"
-    },
-    {
-      "id": "17192308a44d6166ac77ad3de58f83c6a35a62a5",
-      "sourceName": "ITmedia NEWS",
-      "sourceUrl": "https://www.itmedia.co.jp/news/",
-      "sourceFeedUrl": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
-      "title": "「Google AI Pro」ユーザーはYouTube広告ほぼ非表示 「Premium Lite」無料付与",
-      "summary": "Googleグループの特典を付与することで、AIプランの契約者数を拡大する狙いだ。",
-      "url": "https://www.itmedia.co.jp/news/articles/2605/22/news107.html",
-      "canonicalUrl": "https://www.itmedia.co.jp/news/articles/2605/22/news107.html",
-      "publishedAt": "2026-05-22T04:27:00.000Z",
-      "hashTitle": "f6809a1601b433abcc694350a93ab51bd3af7763",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "「Google AI Pro」ユーザーはYouTube広告ほぼ非表示 「Premium Lite」無料付与",
-      "summaryJa": "Googleは個人向けAIサブスクリプション「Google AI Pro」の契約者に対し、YouTubeのほとんどの動画を広告なしで視聴できる「YouTube Premium Lite」の個人プランを追加費用なしで提供すると発表した。対象は日本を含む一部国のAI Pro契約者で、13歳以上の個人ユーザー、ファミリープランの場合はプラン管理者のみが対象となる。YouTube Premium Liteは広告非表示・オフライン再生・バックグラウンド再生が可能で、AI Proの月額料金は日本で2900円、YouTube Premium Liteは780円となる。"
     },
     {
       "id": "bd497c9379385372c214707ca7c3ee80147fe8ae",
@@ -1126,7 +1216,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "全国の「Apple Store」で「PayPay」が利用可能に！ - PayPay",
       "summaryJa": "全国のApple StoreでPayPayが利用可能になったことを伝える記事で、PayPayがApple Store全店で使えるようになった点を知らせています。現時点の説明はこの事実の告知のみです。"
     },
@@ -1145,7 +1235,7 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "OpenAI は Gartner によってエンタープライズ コーディング エージェントのリーダーに選ばれました",
       "summaryJa": "OpenAIが2026年のGartner Magic Quadrant for Enterprise AI Coding Agentsでリーダーに選定され、Codexがイノベーションと企業規模での展開を評価されたと報じられている。"
     },
@@ -1163,7 +1253,7 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "ヴァージン アトランティック航空が Codex を使用して迅速に発送する方法",
       "summaryJa": "Virgin Atlantic は Codex を活用して、固定された旅行休暇期限内に刷新したモバイルアプリを出荷し、ほぼ全域の単体テストカバレッジとゼロの P1 不具合を達成した。"
     },
@@ -1181,27 +1271,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "環境リスクに取り組むために、アジア太平洋地域で Google DeepMind Accelerator プログラムを開始します",
       "summaryJa": "アジア太平洋地域は経済成長の原動力である一方、気候変動の影響を受けやすい環境にある。急速に拡大するグリーン技術に対しても地域の環境リスクに追いつくには不足が指摘されている。Google DeepMind AcceleratorのAPAC初となる「AI for the Planet」を軸にした3か月のプログラムを立ち上げ、スタートアップ・研究チーム・NPOなどを対象に、 frontier AIや科学系AIモデルの活用を支援する専門的メンタリングと統合支援を提供する予定。日本語で紹介されているブートキャンプはシンガポールで開始し、関心ある人は登録情報を確認できる。"
-    },
-    {
-      "id": "202592deab37b1b88f2c2a453013babd59e28b6f",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Announcing Claude Compliance API support with Cloudflare CASB - The Cloudflare Blog",
-      "summary": "Announcing Claude Compliance API support with Cloudflare CASB &nbsp;&nbsp; The Cloudflare Blog",
-      "url": "https://blog.cloudflare.com/casb-anthropic-integration/",
-      "canonicalUrl": "https://blog.cloudflare.com/casb-anthropic-integration",
-      "publishedAt": "2026-05-21T17:04:51.000Z",
-      "hashTitle": "fd0d070c51f84cc386b7bdbb77de6d227b0eb84e",
-      "tags": [
-        "claude"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "Cloudflare CASB による Claude Compliance API サポートの発表 - Cloudflare ブログ",
-      "summaryJa": "Cloudflareはクラウドアクセスセキュリティブローカー（CASB）を拡張し、Claude Compliance APIのサポートを追加した。これにより、Claudeの組織・ワークスペース・使用状況をCloudflareダッシュボードから可視化・統制でき、エンドポイントエージェント不要でセキュリティ所見を得られる。Claude EnterpriseとClaude Platformのデータ（プロジェクト、チャット、ファイル、メンバー変更など）を含むリスク検知を統合し、従来のワークフローと同様の脅威対応を可能にする。"
     },
     {
       "id": "cb8ca02f4f555c4850da49c9eb7c2b07c909d3bf",
@@ -1218,7 +1290,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Gemini for Home でサービス プロバイダーとハードウェア パートナーを支援 - blog.google",
       "summaryJa": "Google Homeで Gemini を完全なスタックAIとして提供することで、サービスプロバイダーやハードウェアメーカーは、ユーザーと家庭をケアするモニタブルなサービスを構築できるようになる。カメラ知能やAsk Home、Home Brief などの機能を組み合わせ、日常の家の活動を要約したり、特定の来訪者や配達をリアルタイムで認識したりする高度な機能を提供する。2026年には、参考設計を含む Gemini Built-in プログラムを拡充し、スマートカメラやスマートスピーカーの分野で迅速な市場投入を支援する。"
     },
@@ -1237,7 +1309,7 @@
         "html",
         "css"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "React × Tailwind CSS 入門 #03｜useStateで動くUIを作る｜カウンターとトグルで基礎を理解する",
       "summaryJa": "Reactの基本機能である useState を用いて、クリックで動くUIの作成方法を解説。カウンターとトグルの実例を通じて、状態管理と再描画の仕組み、そして状態に応じたTailwindのクラス切り替えを学ぶ。実践例では、値を増減・リセットするカウンターと、ON/OFFを切り替えるトグルを実装する手順と注意点を紹介し、onClickに関する誤用を避けるポイントも示している。次回は useEffect の基本へ。"
     },
@@ -1255,7 +1327,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "AdventHealth が OpenAI で全人ケアを推進",
       "summaryJa": "AdventHealthは、OpenAIを活用して全人的ケアを推進している。ChatGPT for Healthcareを用いて業務の効率化と事務負担の軽減を図り、患者ケアに充てる時間を増やすことを目指している。"
     },
@@ -1273,7 +1345,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Google、モダンなWeb開発を支援するエージェントスキル「Modern Web Guidance」を公開",
       "summaryJa": "GoogleはモダンなWeb開発を支援するエージェントスキル「Modern Web Guidance」を早期プレビューとして公開し、アクセシビリティ・パフォーマンス・セキュリティを考慮した実装ガイダンスを提供する。開発者はターミナルからガイドを検索・取得しエージェントのコンテキストへ渡せ、Baselineと連携して対応ブラウザに応じた機能とフォールバックを選択できる。導入はnpx経由が推奨され、100以上のユースケースを扱いChrome拡張にも対応、Chrome DevTools for agentsと組み合わせた検証・修正の流れも紹介されている。"
     },
@@ -1291,7 +1363,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "高度なツリーカウント: `sibling-index()` と `sibling-count()` を使用した数学的レイアウト",
       "summaryJa": "CSSだけで兄弟の位置情報を使い、遅延やレイアウト計算を行える新機能sibling-index()とsibling-count()を紹介。従来はN個の:nth-child()やJSを使っていた遅延設定を1行のcalc(sibling-index() * 100ms)で実現でき、5件でも5,000件でも同様に動作すると説明されている。これらはDOMツリーの要素ノード数と位置を返し、%やsin, cosなどの関数と組み合わせて多様なレイアウト調整が可能だが、シャドウDOM内のスコープや非表示要素の扱いなど注意点も挙げられている。"
     },
@@ -1310,7 +1382,7 @@
         "Google",
         "css"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "GoogleのModern Web Guidanceに学ぶ、モダンCSSのDos / Don'ts大全",
       "summaryJa": "Googleが公開するModern Web GuidanceのCSS Dos/Don'tsを基に、変数よりも intrinsic sizingや論理プロパティを優先する方針が示されています。本文は、論理プロパティの活用例や、Flexbox／Grid／コンテナクエリなどの具体的Dos・Don’tsを整理し、実装時の判断基準を提供しています。要約としては、レイアウトはintrinsic sizingと論理プロパティを先に検討し、適切なツール（Flexbox/Grid/ container queries など）を用途に応じて選ぶべきだとしています。"
     },
@@ -1328,7 +1400,7 @@
       "tags": [
         "frontend"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Qwen 3.7 Max が Vercel AI Gateway で利用可能になりました",
       "summaryJa": "Qwen 3.7 Max（Alibaba）を搭載したVercel AI Gatewayが提供開始され、コード作成やオフィス業務の自動化、長期的な自立実行を支えるエージェント基盤として機能します。フロントエンドのプロトタイピングや複雑な多ファイルのエンジニアリングにおける改善が示され、長期的なツール呼び出しセッションでも一貫した推論を維持します。利用時は alibaba/qwen-3.7-max をモデルとして設定し、AI Gatewayは統一API・使用量・コストの追跡、リトライやフェイルオーバーの設定、カスタムレポーティングなどを提供します。"
     },
@@ -1347,7 +1419,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Google検索、AI対応の新しい検索ボックスを発表、AIモードにGemini 3.5 Flashも導入",
       "summaryJa": "GoogleはAI対応の新しい検索ボックスを発表し、AIモードの標準モデルをGemini 3.5 Flashに更新する。検索内で動く情報エージェントやジェネレーティブUI、アンチグラビティを用いた動的表示生成など、検索体験を拡張する機能を夏以降順次提供する予定で、パーソナルインテリジェンスを約200の国と地域・98言語へ拡大する。Universal Cartの発表や、検索結果内のAI概要からAIモードへ続く導線の追加、現場でのデータ連携を強化する仕組みも同時に公開された。"
     },
@@ -1365,7 +1437,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Zed、エージェントをターミナルで管理できる「ターミナルスレッド」を追加 ―Zed内でClaude Codeサブスクリプション利用が可能に",
       "summaryJa": "Zedは最新バージョン1.3.5で、エージェントパネルの「ターミナルスレッド」を追加し、Claude CodeやPiなどのターミナルベースのエージェントをスレッドとして管理できるようにした。ターミナルスレッドはACP非対応のエージェントにも対応し、Claude CodeのターミナルやCodex、OpenCode、PiなどをZed内で利用可能となる。これに伴い、OpenAIのモデル利用はChatGPTサブスクリプションやACP経由の利用が引き続き選択肢として提供され、ターミナルスレッド経由でCodex CLIを実行することもできる。"
     },
@@ -1383,7 +1455,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "新カテゴリ「Googlebook」が目指すプレミアムなデスクトップ体験と開発者への影響",
       "summaryJa": "Googleが発表したGooglebookは、Androidを根本から再設計し、デスクトップ形状に最適化したプレミアムプラットフォームとなる。大画面でのマルチウィンドウやマルチインスタンス、ドラッグ＆ドロップなどをネイティブ速度で実現し、Androidアプリをデスクトップの第一級市民として扱う点が特徴だ。開発者には大画面対応の設計やデスクトップ連携が求められ、デスクトップ向けエミュレータやAdaptive AI Skillsの提供を通じて移行を支援する。"
     },
@@ -1402,7 +1474,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "I/O 2026 で発表した 100 のこと",
       "summaryJa": "Google I/O 2026では、Gemini 3.5 Flash、Gemini Omni、Omni Flashなど新モデルを発表し、検索・創作・開発の能力を強化する複数の機能を公開しました。AI検索の新しい統合体験「AI Search」が導入され、情報エージェントの活用やGenerative UI/AntigravityによるカスタムUI作成が可能になりました。さらに、個人情報機能の拡張としてPersonal Intelligenceを世界各地・多言語で展開する計画が示されました。"
     },
@@ -1420,7 +1492,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "新しい実験により、Google Beam でのグループ会議が改善されました",
       "summaryJa": "Google Beamは、非Beam端末から参加する人を実際の大きさで座っているように表示し、空間オーディオと組み合わせることで、同じ部屋にいるような感覚を高める新しい実験を公開しました。 自宅でもオフィスでも自動的に最適化され、ハイブリッドな「包摂感」を向上させ、会話への貢献意欲の向上を報告する研究結果も示されています。 引用された取り組みとして、Google WorkspaceやZoomとの連携も進められており、今後のアップデートが期待されています。"
     },
@@ -1438,7 +1510,7 @@
       "tags": [
         "vue"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Vue + SPA + API",
       "summaryJa": "VueとSPAでAPI通信を行う例として、axiosを導入し、共通設定を持つapiClientを通じてJSONPlaceholderの /todos/1 を取得するボタンを作成しています。HomeView.vueでFetchButtonを押すと、useApiで定義した fetchData が実行され、取得データが data に格納されて表示されます。 handle実装は apiClient.get(path) を使用し、ベースURLは https://jsonplaceholder.typicode.com が自動補完されます。"
     },
@@ -1456,7 +1528,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "OpenAI モデルは離散幾何学における中心予想を反証しました - OpenAI",
       "summaryJa": "OpenAIモデルが80年ぶりの単位距離問題を解き、離散幾何学の主要な推測を覆す成果を示した。AI主導の数学研究における重要な節目となる。"
     },
@@ -1474,7 +1546,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "AI 検索時代の新世代の広告 - blog.google",
       "summaryJa": "AI時代の検索向け新しい広告が登場。Geminiを活用した Conversational Discovery ads や Highlighted Answers、AI-powered Shopping ads など、検索時にリアルタイムで個別のアドバイスと商品情報を提供する新フォーマットを試験中だ。AIモードを前提に、ブランドは Performance Max や AI Max for Campaigns を活用してこれらの機能を最大限活用することが推奨されている。さらに Direct Offers はネイティブチェックアウトや旅行 Deals を含む拡張が予定され、複数の新機能と連携して購買意思決定を迅速化する設計となっている。"
     },
@@ -1492,100 +1564,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
+      "scoredAt": "2026-05-25T15:27:17.397Z",
       "titleJa": "Google マーケティング ライブ 2026: ニュースとお知らせ - blog.google",
       "summaryJa": "AIが広告・コマースの領域を変える中、Google Marketing Liveでは、Geminiを核とした新しいマーケティングの在り方を発表しました。AI検索向けの新しい広告体験やAI搭載キャンペーン、Asset Studioの機能拡張、YouTube上のAI活用形式の導入など、より迅速で効果的なクリエイティブ作成と商機の発見を目指す取り組みが示されました。また、Ask Advisorの統合型エージェントやユニバーサルカート、UCP拡張を含むア agentic commerceの基盤が拡張され、検索・YouTube・コマース全体でAIが実行の複雑さを担い、企業が重視すべき顧客接点に注力できる未来を目指すと説明されました。"
-    },
-    {
-      "id": "8882f8f27eada997af78834dfcb21cd2649380f6",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Meet Ask Advisor, your new AI-powered collaborator - blog.google",
-      "summary": "Meet Ask Advisor, your new AI-powered collaborator &nbsp;&nbsp; blog.google",
-      "url": "https://blog.google/products/ads-commerce/ask-advisor/",
-      "canonicalUrl": "https://blog.google/products/ads-commerce/ask-advisor",
-      "publishedAt": "2026-05-20T16:04:06.000Z",
-      "hashTitle": "4381e06efc62c6aab51a07e31bd660e547f4b316",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "AI を活用した新しいコラボレーター、Ask Advisor をご紹介します - blog.google",
-      "summaryJa": "Ask Advisorは、Googleの複数製品（Google Ads、Analytics、Merchant Centerなど）をつなぐ新しいAIエージェントで、マーケティングデータを横断してパーソナライズされた提案を提供します。現在ベータ版が英語アカウントで利用可能で、キャンペーンの設定やデータの解釈を自動化・簡略化し、成果を向上させるための次の一手を提案します。Ask Advisorは、データ専門家でなくても使えるよう、ビジネス目標を前提に理解と解説を行い、他の製品と連携して提案を提示します。"
-    },
-    {
-      "id": "330a878f9aa637a4a3ed2570d595f62896ab1cc0",
-      "sourceName": "Zenn Frontend Topic",
-      "sourceUrl": "https://zenn.dev/topics/frontend",
-      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
-      "title": "Vue.jsでSPA",
-      "summary": "Vueのプロジェクト作成 フロントエンドでVue.jsを使ってSPA(シングルページアプリケーション)を実装することになりました。備忘録です。 1. Node.jsのインストール 頑張ってインストールしてください。 2. プロジェクト作成 npm create vue@latest Project name: │ frontend │ ◇ Select a framework: │ Vue │ ◇ Select a variant: │ Official Vue Starter ↗ Ok to proceed? (y) y ┌ Vue.js - The Pr...",
-      "url": "https://zenn.dev/funa_yuy/articles/85f9259afe9c68",
-      "canonicalUrl": "https://zenn.dev/funa_yuy/articles/85f9259afe9c68",
-      "publishedAt": "2026-05-20T15:54:24.000Z",
-      "hashTitle": "5988a6f5a2bca7f5d3b37f994ac7849c75d51371",
-      "tags": [
-        "frontend",
-        "vue"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "Vue.jsでSPA",
-      "summaryJa": "Vue.jsを用いてSPAを実装する手順を備忘録としてまとめ、Home画面とAbout画面の作成、ルーティングの設定、実行方法までを具体的に記載しています。HomeView.vueとAboutView.vueを用意し、 router/index.js で「/」と「/about」へのルートを設定、App.vue でナビゲーションリンクと表示エリアを定義しています。実行時は npm install vue-router を事前に行い、 npm install で依存関係を整えた後、 npm run dev で http://localhost:5173 にアクセスします。"
-    },
-    {
-      "id": "f35cacf7e6808292f665712cf1a2da65dc2af969",
-      "sourceName": "CSS-Tricks",
-      "sourceUrl": "https://css-tricks.com/",
-      "sourceFeedUrl": "https://css-tricks.com/feed/",
-      "title": "Stack Overflow: When We Stop Asking",
-      "summary": "It still hits like a ton of bricks to see the steep decline in Stack Overflow questions. What does that mean about learning in our industry? Stack Overflow: When We Stop Asking originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
-      "url": "https://css-tricks.com/stack-overflow-when-we-stop-asking/",
-      "canonicalUrl": "https://css-tricks.com/stack-overflow-when-we-stop-asking",
-      "publishedAt": "2026-05-20T13:51:34.000Z",
-      "hashTitle": "313198cacf5946f059c8c006fbdca2187062ba19",
-      "tags": [
-        "css"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "スタック オーバーフロー: 問うことをやめたとき",
-      "summaryJa": "Stack Overflowの質問数は2014年のピークから现在まで急減しており、2026年には月3,000問にも満たない状況だ。その原因として、モデレーション方針の強化と質を重視する運営方針が影響していると指摘され、初心者が質問しづらい環境や繰り返し検索で既存回答に依存する傾向が広がったことが挙げられる。さらに、生成系AIの普及が“質問をする場”の役割を奪いつつある一方で、AIにはコードの品質・セキュリティ上の課題もあり、開発者はAIを補助として活用しつつ自己のスキル維持が求められると述べられている。"
-    },
-    {
-      "id": "5d23350a5b687570d524d92ec8f619107db44678",
-      "sourceName": "Zenn Frontend Topic",
-      "sourceUrl": "https://zenn.dev/topics/frontend",
-      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
-      "title": "React × Tailwind CSS 入門 #02｜コンポーネント分割とよく使うTailwindクラス10選",
-      "summary": "はじめに 前回は、React × Tailwind CSS v4の環境構築を行いました。 今回は実際に手を動かしながら、Reactの要である「コンポーネント」という考え方と、Tailwindで実務的によく使うクラスを10個まとめて身につけます。 AIにコードを書かせるとき、この「コンポーネント」の概念を理解していないと、指示がぼんやりしてしまいます。ここを押さえておくと、AIへのプロンプト（指示）の精度が格段に上がります。 コンポーネントとは？ Reactでは、UI（画面の見た目）を「部品（コンポーネント）」に分けて管理します。 例えばこんなイメージです： App（画面全体） ...",
-      "url": "https://zenn.dev/koenjineer/articles/dd8072acb2b000",
-      "canonicalUrl": "https://zenn.dev/koenjineer/articles/dd8072acb2b000",
-      "publishedAt": "2026-05-20T13:30:30.000Z",
-      "hashTitle": "8e50abd7040031c857385f2d3eefafbecd7e5f2f",
-      "tags": [
-        "css"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "React × Tailwind CSS 入門 #02｜コンポーネント分割とよく使うTailwindクラス10選",
-      "summaryJa": "ReactとTailwind CSSの実践解説として、まずコンポーネント分割の考え方と、実務でよく使うTailwindクラス10選を紹介します。前半ではHeaderを分割して呼び出す実例を示し、後半ではカードコンポーネントの作成とPropsの使い方を解説します。最後に、学んだポイントと次回の topics をまとめています。"
-    },
-    {
-      "id": "dd4553a931096278279e989027447ad5ef716e42",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "The App Store stopped over $2.2 billion in fraudulent transactions in 2025 - Apple",
-      "summary": "The App Store stopped over $2.2 billion in fraudulent transactions in 2025 &nbsp;&nbsp; Apple",
-      "url": "https://www.apple.com/newsroom/2026/05/the-app-store-stopped-over-2-point-2-billion-usd-in-fraudulent-transactions-in-2025/",
-      "canonicalUrl": "https://www.apple.com/newsroom/2026/05/the-app-store-stopped-over-2-point-2-billion-usd-in-fraudulent-transactions-in-2025",
-      "publishedAt": "2026-05-20T13:04:38.000Z",
-      "hashTitle": "b947d8914a6e0fc16b86ab40a72a15bffe2ec223",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-05-25T10:44:15.349Z",
-      "titleJa": "App Storeは2025年に22億ドル以上の不正取引を阻止 - Apple",
-      "summaryJa": "2025年のApp Storeは、ヒトの審査とAIを組み合わせた多層防御により、潜在的に不正な取引を22億ドル以上阻止した。さらに、問題のあるアプリ提出を210万件超拒否し、不正なアカウント作成を11億件超阻止、開発者アカウントの不正利用に対しても厳格な対応を実施した。App Reviewでは910万件超の提出を評価し、審査基準を満たさないものを210万件超排除し、約30万件以上の新規開発者が参加した。"
     }
   ]
 }
