@@ -7,7 +7,7 @@ description: |
   - プルリクエストやパッチのレビューを求められたとき
   - セキュリティ・パフォーマンス・アクセシビリティの観点で確認が必要なとき
   - コードの品質・保守性に懸念があるとき
-tools: read_file, list_directory, search_files, run_command
+tools: Read, Grep, Glob, Bash
 ---
 # Reviewer Agent
 

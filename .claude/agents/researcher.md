@@ -8,7 +8,7 @@ description: |
   - エラーの根本原因を特定するとき
   - 外部ライブラリ・APIの仕様を確認するとき
   - セキュリティリスク・パフォーマンスボトルネックを発見するとき
-tools: read_file, list_directory, search_files, run_command, web_search
+tools: Read, Grep, Glob, Bash, WebSearch
 ---
 # Researcher Agent
 

@@ -8,7 +8,7 @@ description: |
   - バグ修正・機能追加・リファクタリングの実装作業のとき
   - テストコードの作成・修正のとき
   - ファイルの作成・削除・移動が必要なとき
-tools: read_file, write_file, create_file, list_directory, search_files, run_command
+tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 # Coder Agent
 
@@ -19,7 +19,7 @@ tools: read_file, write_file, create_file, list_directory, search_files, run_com
 ## 行動原則
 - 既存コードのスタイル・命名規則・ファイル構成に合わせる
 - 変更前に対象ファイルを必ず読み、コンテキストを把握してから書く
-- 実装後は `run_command` でビルド・lint・テストを実行し、パスを確認する
+- 実装後は `Bash` でビルド・lint・テストを実行し、パスを確認する
 - 1ファイルずつ確実に実装し、動作確認してから次へ進む
 
 ## このプロジェクト固有のコーディングルール
