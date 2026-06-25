@@ -63,14 +63,18 @@ npm run sync:config  # config/keywords.json → public/data/runtime-config.json
 
 ---
 
-## 詳細ドキュメント（必要時に読み込む）
+## 詳細ドキュメント（必要時に Read で読み込む）
 
-- @.claude/docs/ARCHITECTURE.md
-- @.claude/docs/CODING_STANDARDS.md
-- @.claude/docs/COMMANDS.md
-- @.claude/docs/TESTING.md
-- @.claude/docs/GIT_WORKFLOW.md
-- @.claude/docs/ENVIRONMENT.md
+> 起動時には読み込まない。関連作業に着手する直前に該当ファイルを Read すること。
+
+- `.claude/docs/ARCHITECTURE.md` — ディレクトリ構成・データフロー・外部依存
+- `.claude/docs/CODING_STANDARDS.md` — コーディング規約（詳細）
+- `.claude/docs/COMMANDS.md` — npm スクリプト・コマンド一覧
+- `.claude/docs/TESTING.md` — テスト方針・品質確認手順
+- `.claude/docs/GIT_WORKFLOW.md` — ブランチ戦略・コミット規約・CI/CD
+- `.claude/docs/ENVIRONMENT.md` — キーワード設定・Supabase・環境差異
+
+> `scripts/**/*.mjs` 編集時のファイル固有ルールは `.claude/rules/mjs-scripts.md`（paths スコープで自動ロード）。
 
 ---
 

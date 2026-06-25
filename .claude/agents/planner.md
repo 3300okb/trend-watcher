@@ -8,7 +8,7 @@ description: |
   - 大きなタスクをステップに分解する必要があるとき
   - 破壊的変更・リファクタリング・アーキテクチャ変更を行うとき
   - タスクの優先順位や依存関係を整理するとき
-tools: read_file, list_directory, search_files
+tools: Read, Grep, Glob
 ---
 # Planner Agent
 
