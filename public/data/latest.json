@@ -1,7 +1,299 @@
 {
-  "generatedAt": "2026-06-30T09:57:19.068Z",
-  "total": 85,
+  "generatedAt": "2026-06-30T14:39:16.728Z",
+  "total": 86,
   "items": [
+    {
+      "id": "7c16eaab06d86e3935d57b7e66ef4559d3333ae0",
+      "sourceName": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog",
+      "sourceFeedUrl": "https://vercel.com/blog/rss.xml",
+      "title": "Run any Dockerfile on Vercel",
+      "summary": "You have a server in a container. Maybe it's a Go service, a Rails app, a Spring Boot API, or a web server behind nginx. It speaks HTTP. It listens on a port. It just needs somewhere to run. Add a Dockerfile.vercel file to your project, and Vercel builds, stores, deploys, and autoscales the image on Fluid compute , so you pay only for the CPU your code uses. No daemon to run locally, registry to set up, or cluster to babysit. How it works Here is a small HTTP server in Go, listening on $PORT : Add a Dockerfile.vercel file that builds it into a small image and runs it: Then deploy: That is it. Two files, and you are live. Every git push rebuilds the image and hands you a fresh preview URL. Or run vercel to deploy without committing. We used Go in this example, but any stack works. Rails, Spring Boot, Express, Laravel, ASP.NET, FastAPI, and a web server behind nginx all deploy the same way. The only rule is that your server listens on $PORT , which defaults to 80 . If it speaks HTTP, it deploys. Yes, even Java. And yes, even PHP. What you get A container on Vercel is a first-class citizen. It runs on the same platform, and the same compute, as your frontend and the rest of your services on Vercel . A preview deployment for every push: Every commit gets its own immutable URL you can open, share, and roll back to. Autoscaling, in both directions: Traffic arrives and you scale out. Traffic stops and your instances wind down. You never size a fleet or guess a concurrency number. Active CPU pricing : Fluid compute bills for the time your code is actually running, so an idle server, parked on a slow query or an upstream API, isn't burning CPU while it waits. You pay for execution time, not wall time. Observability, included: Logs, traces, and metrics for your container live in the same dashboard as everything else you ship. One project, one domain: Your container sits beside your frontend and your other services and talks to them privately over the Vercel network. Your full stack ships as one deploy. Built to start fast A container is only as good as the time it takes to answer it's first request. When Vercel builds your image, it stores it as an optimized boot image , a compressed snapshot of the container's disk tuned for fast startup. When a container boots, we stream that snapshot and decompress it on demand, rather than downloading the whole image before anything runs. Your server can start handling requests before the full image is in place, so a larger image does not have to finish downloading first. Once an instance is running, Fluid compute keeps it warm and serves many requests from it, rather than starting a fresh copy for each one. You get the responsiveness of a warm server and the bill of one that sleeps when idle. Each container is a stateless process: it takes a request, returns a response, and keeps nothing in between. Persistent state lives in a backing service you attach, like a database or cache from the Vercel Marketplace . Because an instance holds nothing that has to survive, Vercel can add instances when traffic arrives and retire them when it stops. We're also working on shipping durable storage attached to containers soon. Why now? Our first platform let you deploy a Dockerfile with a single command. That was a decade ago, and the idea was right, but the infrastructure to make it great didn't exist yet. We've spent the years since building the primitives to handle it well. They power everything you run on Vercel: Builds, Functions, Sandboxes, and now containers. It all scales with traffic, and you only pay for the CPU you use. A container is now a first-class citizen, running on the same system as everything else. Framework detection is our front door. When we recognize your framework, we read your code and derive the infrastructure your app needs , because the code already describes what it should do. For most apps it's the fastest way to ship. A Dockerfile is for everything else: a service that needs a system library like FFmpeg or Chromium, a framework we do not auto-detect yet, or an app you want to bring exactly as it already runs. It is the universal way to say how a program should be built, so when there is no framework to read, we meet it directly. Everything around your Dockerfile is zero configuration. You point at the image, and the build, the registry, the rollout, the scaling, and the URL all just happen. Backends are back Your backend now ships the way your frontend does: one push, one preview, one platform. We can't wait to see what you build. Read the docs or deploy an example to get started. Read more",
+      "url": "https://vercel.com/blog/dockerfile-on-vercel",
+      "canonicalUrl": "https://vercel.com/blog/dockerfile-on-vercel",
+      "publishedAt": "2026-06-30T16:00:00.000Z",
+      "hashTitle": "c903db35438920bc56cf61f7786d2a62f1e64bd6",
+      "tags": [
+        "frontend"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "Vercel で任意の Dockerfile を実行する",
+      "summaryJa": "VercelはDockerfileを使って任意のコンテナをデプロイでき、Dockerfile.vercelを用意するとビルド・保存・展開・Fluid computeでの自動スケーリングが行われ、実行時間に対して課金されます。Goの例では、ポートPORTを読み取り80番で待ち受ける最小限のHTTPサーバをビルドする2段構成のDockerfileを用意すれば、画像を生成・ストア・デプロイされ、プレビューURLが自動的に割り当てられます。RailsやSpring Boot、Express、PHPなど、HTTPを提供する任意のスタックも同様にデプロイ可能で、コンテナは第一級市民として他のサービスと同じプラットフォーム上で動作します。"
+    },
+    {
+      "id": "3805b37c3aced84888f60fabd05d7ebecdacd7aa",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Ex-Google recruiter: The No. 1 resume 'red flag' that makes hiring managers stop reading—and how to fix it - CNBC",
+      "summary": "Ex-Google recruiter: The No. 1 resume 'red flag' that makes hiring managers stop reading—and how to fix it &nbsp;&nbsp; CNBC",
+      "url": "https://www.cnbc.com/2026/06/30/ex-google-recruiter-this-resume-red-flag-is-often-completely-invisible-to-most-candidates.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/06/30/ex-google-recruiter-this-resume-red-flag-is-often-completely-invisible-to-most-candidates.html",
+      "publishedAt": "2026-06-30T14:15:01.000Z",
+      "hashTitle": "bc52f150ab4e8506650e450f72c310b584b2564e",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "元Googleの採用担当者：採用担当者が読むのをやめてしまうNo.1の履歴書「危険信号」とその修正方法 - CNBC",
+      "summaryJa": "履歴書の最大の落とし穴は、自分のストーリーを自分だけが理解している状態で書くことだという。採用担当者は約6秒でスクリーニングするため、外部の人には伝わらない表現は避けるべきだと指摘している。具体例としては、“現場にいなければ意味が分からない言い回し”や、実績の数字が何を指すのか不明瞭な点、内部用語や略語、そして曖昧な形容詞的なスキル表現が挙げられる。改善策としては、組織の役割や自分の役割を前提に説明を加え、数値には文脈を添え、専門用語をわかりやすく解説し、実績を示す具体的な例とともに記載することが推奨されている。"
+    },
+    {
+      "id": "78c6e0d5a47599e7522f039a47f9ff2f72064359",
+      "sourceName": "CSS-Tricks",
+      "sourceUrl": "https://css-tricks.com/",
+      "sourceFeedUrl": "https://css-tricks.com/feed/",
+      "title": "What’s !important #14: Gap Decorations, random(), &#060;select> field sizing, and More",
+      "summary": "I know you’re busy, so for What’s !important #14, I’ll be sprinting through what’s been a stacked couple of weeks despite few browser updates. From CSS Quake to CSS Gap Decorations, this isn’t one to miss! What’s !important #14: Gap Decorations, random(), field sizing, and More originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+      "url": "https://css-tricks.com/whats-important-14/",
+      "canonicalUrl": "https://css-tricks.com/whats-important-14",
+      "publishedAt": "2026-06-30T13:54:14.000Z",
+      "hashTitle": "b05c7d9fb3971ac85ed57749a2e34d19a8443f8d",
+      "tags": [
+        "css"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "重要な点 #14: ギャップ装飾、random()、<select> フィールドのサイズ設定など",
+      "summaryJa": "今週の What’s !important #14では、CSS Gap Decorations や CSS random() の実例、<select>の幅を選択肢の幅に合わせる field-sizing など、最新のウェブ開発動向を紹介しています。CSS テーマの新標準や @property、light-dark()、@container などの機能の概要も解説され、ブラウザ側の動向として Firefox 152 で field-sizing が Baseline 化されたことにも触れています。なお、CSS の新機能は依然として一部未サポートの状況が続く点にも注意を促しています。"
+    },
+    {
+      "id": "d27f5be4550f5d549767640e1670032e3ada94f8",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Apple iPhone 18 Pro secrets leaked in Tata Electronics hack: What we know - Al Jazeera",
+      "summary": "Apple iPhone 18 Pro secrets leaked in Tata Electronics hack: What we know &nbsp;&nbsp; Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/6/30/apple-iphone-18-pro-secrets-leaked-in-tata-electronics-hack-what-we-know",
+      "canonicalUrl": "https://www.aljazeera.com/news/2026/6/30/apple-iphone-18-pro-secrets-leaked-in-tata-electronics-hack-what-we-know",
+      "publishedAt": "2026-06-30T13:00:31.000Z",
+      "hashTitle": "1747d45baa6bfbed474a3d11f68ba2ba32f4996a",
+      "tags": [
+        "Apple"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "タタ・エレクトロニクスのハッキングで流出したApple iPhone 18 Proの秘密：我々が知っていること - アルジャジーラ",
+      "summaryJa": "Tata Electronicsが Apple の主要サプライヤーのひとつとして保有する機密データ約630GBが流出し、iPhone 18 Proの部品やサプライヤー情報、カメラやバッテリーなどの写真が公開された。流出は World Leaks というランサムウェア集団が関与したとされ、 Apple や Tata Electronics のサプライチェーンの機密情報が広く露出したことで、競合や偽造業者への情報提供リスクが指摘されている。今回の事案はサプライチェーンの弱点が巧妙な侵入経路となり得ることを示しており、インドでの製造拡大戦略にも影響が懸念されている。"
+    },
+    {
+      "id": "b462edd235fee43ac1fe868122a8a6799b8a7ed1",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "'Not constructive': Tim Cook blames Micron for Apple's $300 price hike. Micron suggests Apple helped cause the shortage - Yahoo Finance",
+      "summary": "'Not constructive': Tim Cook blames Micron for Apple's $300 price hike. Micron suggests Apple helped cause the shortage &nbsp;&nbsp; Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/not-constructive-tim-cook-blames-121500109.html",
+      "canonicalUrl": "https://finance.yahoo.com/markets/stocks/articles/not-constructive-tim-cook-blames-121500109.html",
+      "publishedAt": "2026-06-30T12:15:00.000Z",
+      "hashTitle": "cb3a213ffb091a9aceafceb0d74dd6405169c142",
+      "tags": [
+        "Apple"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "「建設的ではない」：ティム・クック氏、アップルの300ドル値上げはマイクロンのせいだと非難。マイクロン、アップルが品不足の原因に関与したと示唆 - Yahoo Finance",
+      "summaryJa": "Tim CookはMicronを非難し、Appleの300ドル値上げの原因として同社を挙げた。一方でMicronは、Appleが供給不足を助長した可能性を示唆しているとYahoo Financeが伝えた。"
+    },
+    {
+      "id": "966c8537559efc518900fbfdd2495dd6fb5289c2",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "「Google Meet」の議事録を「Gemini」に作ってもらう機能、個人ユーザーにも開放、「Google AI Pro」などの加入者向け（窓の杜） - Yahoo!ニュース",
+      "summary": "「Google Meet」の議事録を「Gemini」に作ってもらう機能、個人ユーザーにも開放、「Google AI Pro」などの加入者向け（窓の杜） &nbsp;&nbsp; Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/b9d1b058d787214c9e0c34c7e01fd10e24b46a7c",
+      "canonicalUrl": "https://news.yahoo.co.jp/articles/b9d1b058d787214c9e0c34c7e01fd10e24b46a7c",
+      "publishedAt": "2026-06-30T11:40:00.000Z",
+      "hashTitle": "e411431232b94adad90ea97916b6ef4a997e433e",
+      "tags": [
+        "Google",
+        "gemini"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "「Google Meet」の議事録を「Gemini」に作ってもらう機能、個人ユーザーにも開放、「Google AI Pro」などの加入者向け（窓の杜） - Yahoo!ニュース",
+      "summaryJa": "Google Meetの議事録作成機能「Take notes for me」(Gemini搭載)が個人向け有料プランにも提供開始された。Web版とモバイル版で利用でき、日本語にも対応する。ホストが会議中に鉛筆アイコンをクリックして有効化し、バックグラウンドでリアルタイムの文字起こしと要点・アクション項目をまとめたサマリーを作成、作成ノートは自動的にGoogleドライブのGoogleドキュメントへ保存され、会議後にはサマリーとアクション項目を含むメールが届く。機能有効時は会議の参加者全員に通知される点に留意が必要。"
+    },
+    {
+      "id": "cc0c144a8d9b73769768485fb3f69f9224a5bc2c",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "UK watchdog plans to break Apple and Google’s ‘effective duopoly’ on mobile app stores - The Guardian",
+      "summary": "UK watchdog plans to break Apple and Google’s ‘effective duopoly’ on mobile app stores &nbsp;&nbsp; The Guardian",
+      "url": "https://www.theguardian.com/business/2026/jun/30/uk-apple-google-mobile-app-stores-developers-payment-cma",
+      "canonicalUrl": "https://www.theguardian.com/business/2026/jun/30/uk-apple-google-mobile-app-stores-developers-payment-cma",
+      "publishedAt": "2026-06-30T11:36:00.000Z",
+      "hashTitle": "4fd68e4a9ec4189de9e059a329d91da3cccc195a",
+      "tags": [
+        "Google",
+        "Apple"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "英国の監視機関、モバイルアプリストアにおけるアップルとグーグルの「事実上の複占」打破を計画 - ガーディアン紙",
+      "summaryJa": "英国の競争監督機関 CMA は、Apple と Google のモバイルプラットフォームにおける実質的な寡占を是正するため、アプリ内課金以外の決済ルートへ利用者を誘導できる “steering” を許容する案を検討している。これにより、アプリ開発者と消費者の選択肢が広がり、プラットフォームの競争が促進される可能性があると CMA は説明する。一方、Apple は誘導変更はユーザー保護を損ねるとして慎重な対応を求め、Google はすでに外部決済へ誘導するための変更を実施したと述べている。"
+    },
+    {
+      "id": "42cdf8e53c60cfd06db21fe1d133623f21e7812c",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "Claude（クロード）とは？料金や使い方、ChatGPTとの違いを徹底解説 - AIsmiley",
+      "summary": "Claude（クロード）とは？料金や使い方、ChatGPTとの違いを徹底解説 &nbsp;&nbsp; AIsmiley",
+      "url": "https://aismiley.co.jp/ai_news/what-is-claude/",
+      "canonicalUrl": "https://aismiley.co.jp/ai_news/what-is-claude",
+      "publishedAt": "2026-06-30T11:17:01.000Z",
+      "hashTitle": "e9f2f00fb58d86db910765c7758b8db159923a22",
+      "tags": [
+        "claude"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "Claude（クロード）とは？料金や使い方、ChatGPTとの違いを徹底解説 - AIsmiley",
+      "summaryJa": "ClaudeはAnthropicが開発した大規模言語モデルで、長文の処理能力と自然な表現力が特徴です。最新モデルは100万トークンのコンテキストウィンドウへ対応し、ArtifactsやComputer Useといった機能でデザイン・コードのプレビューやPC操作を支援します。料金はFree/Pro/Maxなどのプランがあり、ProではClaude Opus 4.8やClaude Code・Coworkの利用が可能です。"
+    },
+    {
+      "id": "6ec2c20ffe1832bd46f49f82018413e776b9fbd1",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "AnthropicやOpenAIに続け 有力AIスタートアップが各国で成長中 - projectdesign.jp",
+      "summary": "AnthropicやOpenAIに続け 有力AIスタートアップが各国で成長中 &nbsp;&nbsp; projectdesign.jp",
+      "url": "https://www.projectdesign.jp/articles/3bc33fb8-1c2e-4afd-8d88-432741e027da",
+      "canonicalUrl": "https://www.projectdesign.jp/articles/3bc33fb8-1c2e-4afd-8d88-432741e027da",
+      "publishedAt": "2026-06-30T11:02:28.000Z",
+      "hashTitle": "5395e9b82def15ae5faded14e3d4bf9d9e82a915",
+      "tags": [
+        "Anthropic",
+        "OpenAI"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "AnthropicやOpenAIに続け 有力AIスタートアップが各国で成長中 - projectdesign.jp",
+      "summaryJa": "各国で有力AIスタートアップが成長しており、紛争や不安定な国際情勢の中で自国内のデータを守り「地産地消」AIの推進や、AIの国防利用への動きが加速している。本文では、Scale AIがAIの検証・評価のベンチマーク提供やLLMの評価、軍事目的の試験・評価などを進め、2025年にはCAISと連携したHumanity's Last Examのベンチマークをリリースしたこと、2025年6月にMetaが同社へ大規模投資を行い、CEOがMetaへ移籍していることが紹介されている。"
+    },
+    {
+      "id": "a905c30f443dd0c8a972b78598f8bc18ed26377c",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "毎日を特別にする、青。Google初の日本限定モデルGoogle Pixel 10a「Isai Blue」と巡る、岩手・ヘラルボニーのアート旅 - Yahoo!ニュース",
+      "summary": "毎日を特別にする、青。Google初の日本限定モデルGoogle Pixel 10a「Isai Blue」と巡る、岩手・ヘラルボニーのアート旅 &nbsp;&nbsp; Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/7a5dc717c4952fabad0c8a855a1e8cf76f048c0f",
+      "canonicalUrl": "https://news.yahoo.co.jp/articles/7a5dc717c4952fabad0c8a855a1e8cf76f048c0f",
+      "publishedAt": "2026-06-30T11:00:12.000Z",
+      "hashTitle": "f9ecb663b9b0a59cfe50b82e6e517d3d3e4dd7ed",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "毎日を特別にする、青。Google初の日本限定モデルGoogle Pixel 10a「Isai Blue」と巡る、岩手・ヘラルボニーのアート旅 - Yahoo!ニュース",
+      "summaryJa": "Google Pixel 10aの日本限定カラー「Isai Blue」は、ヘラルボニーとの共創で生まれ、専用デザインや壁紙・アイコンにも作家のアートが息づく。“人がスマホに合わせるのではなく、スマホが人に合わせる”という思想のもと、岩手・花巻のるんびにい美術館を拠点に活動する作家たちの作品が紹介されている。これらは多様性を肯定するテーマカラーとともに、日本チームの熱意が特別に認められた異例のプロジェクトとして描かれている。"
+    },
+    {
+      "id": "25b74e34b46368327e3402ffcc42bf2d9b2972f2",
+      "sourceName": "ITmedia NEWS",
+      "sourceUrl": "https://www.itmedia.co.jp/news/",
+      "sourceFeedUrl": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
+      "title": "Apple価格改定で中古スマホ値上がり iPhoneは値上げ対象外なのに…… 伊藤忠系",
+      "summary": "Belongは6月30日、中古スマホ販売・買取サービス「にこスマ」で、6月25日のApple価格改定後3日間の販売台数が直前3日間比16％増えたと発表した。iPhone本体は据え置かれたが、平均単価も14％上昇しており、中古市場に先回り需要が出ているとみる。",
+      "url": "https://www.itmedia.co.jp/news/articles/2606/30/news165.html",
+      "canonicalUrl": "https://www.itmedia.co.jp/news/articles/2606/30/news165.html",
+      "publishedAt": "2026-06-30T10:56:00.000Z",
+      "hashTitle": "aad6aec46a6bc7be35c980e4491d6fa0f144743e",
+      "tags": [
+        "Apple"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "Apple価格改定で中古スマホ値上がり iPhoneは値上げ対象外なのに…… 伊藤忠系",
+      "summaryJa": "Appleの価格改定後、Belongが運営する「にこスマ」での中古スマホの販売は、改定前後でいずれも調査され、販売台数が16％増、平均購入単価が14％上昇した。iPhone本体は値上げ対象外だったが、消費者の先回り需要により中古市場全体が活発化しているとされる。近い将来にiPhoneも値上げされるとの見方から、長く使える比較的新しいモデルを改定前に購入する動きが起きている。"
+    },
+    {
+      "id": "76809246e5c0aac9473bc3113ab0a2202a768eb3",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "Apple製品の価格改定は中古iPhoneの売れ行きにも影響するのか？ 「にこスマ」が調査（ITmedia Mobile） - Yahoo!ニュース",
+      "summary": "Apple製品の価格改定は中古iPhoneの売れ行きにも影響するのか？ 「にこスマ」が調査（ITmedia Mobile） &nbsp;&nbsp; Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/071e8aeae97204e167ef67014ca238f571c8942c",
+      "canonicalUrl": "https://news.yahoo.co.jp/articles/071e8aeae97204e167ef67014ca238f571c8942c",
+      "publishedAt": "2026-06-30T10:55:09.000Z",
+      "hashTitle": "742cb571f46fb486c3fb43fb007c43baa9fc2c5a",
+      "tags": [
+        "Apple"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "Apple製品の価格改定は中古iPhoneの売れ行きにも影響するのか？ 「にこスマ」が調査（ITmedia Mobile） - Yahoo!ニュース",
+      "summaryJa": "Apple製品の価格改定が中古iPhoneの売れ行きに影響を及ぼすかどうかを、「にこスマ」が調査した。本文には調査結果の具体的な数値や結論は記載されておらず、話題として価格改定と中古市場の関係を取り上げている。詳細な事実関係は本文からは明示されていない。"
+    },
+    {
+      "id": "defb924df71b652123f4d77b731ed5d6cc7a935e",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "アンソロピックがClaude利用実態レポートを公開、曜日や時間帯による利用動向が判明 - ビジネス+IT",
+      "summary": "アンソロピックがClaude利用実態レポートを公開、曜日や時間帯による利用動向が判明 &nbsp;&nbsp; ビジネス+IT",
+      "url": "https://www.sbbit.jp/article/cont1/185956",
+      "canonicalUrl": "https://www.sbbit.jp/article/cont1/185956",
+      "publishedAt": "2026-06-30T10:15:00.000Z",
+      "hashTitle": "e9876a16ce174c384d3c9de0f71862cf4f424947",
+      "tags": [
+        "claude"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "アンソロピックがClaude利用実態レポートを公開、曜日や時間帯による利用動向が判明 - ビジネス+IT",
+      "summaryJa": "アンソロピックは、AIアシスタント「Claude」の利用実態レポートを公開し、曜日や時間帯、実行タスクの経済的価値などで利用傾向が異なることを明らかにした。平日の日中は仕事目的が中心で、週末は個人用途の割合が約35%から約50%へ増加し、朝7時にはニュース、夕方にはレシピ検索、深夜〜早朝には睡眠関連の相談が増えるとした。さらに、賃金換算額が高いタスクほど消費トークン量が多く、夜間・週末の高賃金職業に対応するタスクに偏る傾向があると報告している。"
+    },
+    {
+      "id": "8849c8481317a8851091664fce3486806e7b5383",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "UK regulator considers opening Apple, Google app stores to rival payments - Reuters",
+      "summary": "UK regulator considers opening Apple, Google app stores to rival payments &nbsp;&nbsp; Reuters",
+      "url": "https://www.reuters.com/world/uk-regulator-proposes-easing-apple-google-app-store-payment-rules-2026-06-30/",
+      "canonicalUrl": "https://www.reuters.com/world/uk-regulator-proposes-easing-apple-google-app-store-payment-rules-2026-06-30",
+      "publishedAt": "2026-06-30T09:46:26.000Z",
+      "hashTitle": "6cc61f9d7a1b7e446874661feeb24ae3b38b2f23",
+      "tags": [
+        "Google",
+        "Apple"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "英国規制当局、アップルとグーグルのアプリストアを競合決済に開放することを検討 - ロイター",
+      "summaryJa": "英国規制当局が、AppleとGoogleのアプリストアを競合決済へ開放する可能性を検討していると伝えられている。Reutersの報道に基づく内容で、現時点の検討事項を要約している。"
+    },
+    {
+      "id": "66c9a88adcf53f886629c989d791604cd5d01ba4",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "How Okta & Anthropic Are Partnering on XAA, MCP & Glasswing - Cyber Magazine",
+      "summary": "How Okta & Anthropic Are Partnering on XAA, MCP & Glasswing &nbsp;&nbsp; Cyber Magazine",
+      "url": "https://cybermagazine.com/news/how-okta-anthropic-are-partnering-on-xaa-mcp-glasswing",
+      "canonicalUrl": "https://cybermagazine.com/news/how-okta-anthropic-are-partnering-on-xaa-mcp-glasswing",
+      "publishedAt": "2026-06-30T09:44:44.000Z",
+      "hashTitle": "34dbc2e12d3e138c2069efe47218eef9d18f4603",
+      "tags": [
+        "Anthropic"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "Okta と Anthropic が XAA、MCP、Glasswing でどのように提携しているか - サイバーマガジン",
+      "summaryJa": "OktaとAnthropicはXAAとMCPを活用し、Claudeへのアクセスを企業内で中央管理できるようにして、セキュリティと運用の一元化を強化する取り組みを進めている。Oktaをガバナンス層として活用することで、RAMP、Webflow、HubSpotなどの共同顧客はClaude Enterpriseと複数のMCP提供者（Asana、Canva、Figmaなど）へ安全にアクセスでき、XAAは組織全体の接続認可を統一する。さらに、Claude Compliance APIやIdentity Security Posture Managementの統合、Glasswingへの参加により、アイデンティティリスクの可視化とAI基盤のセキュリティ強化を図っている。"
+    },
+    {
+      "id": "a5497ec3237264551395e40105c955556574c4e8",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "‘There’s this deep mystery of what, actually, is this thing?’: the philosopher inside Google DeepMind AI - The Guardian",
+      "summary": "‘There’s this deep mystery of what, actually, is this thing?’: the philosopher inside Google DeepMind AI &nbsp;&nbsp; The Guardian",
+      "url": "https://www.theguardian.com/news/ng-interactive/2026/jun/30/theres-this-deep-mystery-of-what-actually-is-this-thing-the-philosopher-inside-google-deepmind",
+      "canonicalUrl": "https://www.theguardian.com/news/ng-interactive/2026/jun/30/theres-this-deep-mystery-of-what-actually-is-this-thing-the-philosopher-inside-google-deepmind",
+      "publishedAt": "2026-06-30T09:03:00.000Z",
+      "hashTitle": "7e706a1eb1a6d69ca42cbb1c678f17106710b378",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "「これは一体何なのか、深い謎があります。」: Google DeepMind AI 内部の哲学者 - The Guardian",
+      "summaryJa": "デイープマインドの哲学者イアソン・ガブリエルは、人工知能の倫理と社会的影響を検討する生粋の学者として2017年に同社へ参加した。彼は、AGIを狙う創業者たちの長期的な視野と、AI安全・AI倫理の対立的議論の間で、技術と人間の関係性を問い直す役割を担ってきた。記事は、AIの倫理的課題を巡る議論が単なる技術問題以上の意味を持つとする彼の見解と、当時の研究現場で交錯する見解の対立を描いている。"
+    },
     {
       "id": "00a3b35c23b68b176797fe5ab2b135832c55ca43",
       "sourceName": "CodeZine",
@@ -16,7 +308,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Google Cloud、「Managed Python UDF」の一般提供開始",
       "summaryJa": "Google Cloudは6月23日、BigQuery Managed Python UDFの一般提供を開始した。これにより、BigQuery内でPythonコードを安全に実行でき、インフラ管理なしで数十億行まで自動スケールする。ベクトル化入力のPyArrow RecordBatches対応や、BigQueryコンソールからのCloud Monitoringリアルタイムメトリクスへのリンク追加など、パフォーマンス調整と監視機能も提供され、課金はBigQueryサービスSKUに基づく。利用は公開データセットの関数を試すことが推奨されている。"
     },
@@ -34,7 +326,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "【AI画像、消費者はどう見ている？】OpenAI・Perplexityの最新事例から学ぶ、安全な生成AI画像活用術を7月30日公開＜参加無料＞ - PR TIMES",
       "summaryJa": "生成AI画像の活用には著作権やブランドリスクの不安が伴うとして、企業が安心して活用するための判断基準の解説が行われます。講演ではOpenAIやPerplexityなどの最新事例を活用し、著作権・信頼性・ブランドリスクを整理した上で、安全なツール選択とビジュアル戦略の実践ポイントを紹介します。開催は2026年7月30日、場所は有明GYM-EX、事前登録無料のイベント「イプロスAI 2026 夏」内の講演です。"
     },
@@ -52,7 +344,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "インドネシア、Google Chromebook移植事件で元教育大臣に10年の懲役 - CNBC",
       "summaryJa": "元教育相でGojek共同創業者のナディーム・マカリム氏は、教育デジタル化プログラムを通じた学校向けGoogle Chromebookの調達をめぐる汚職事件で10年の実刑判決を受け、1,000億ルピアの罰金と約8,096億ルピアの賠償を命じられた。検察はChromebookの仕様をChromeOS系に合わせたとし、低スペック機で約300万ルピアのはずが約600万ルピアで調達されたと主張している。マカリム氏は2025年に検察官によって容疑者とされ、Google製品の採用を後押ししたとされるが、Googleは同社の投資の多くは教育相就任前で、提供した利益は否定している。"
     },
@@ -71,27 +363,27 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "OpenAI、Codexのベータ機能「Permission profiles」を案内 ――config.tomlでファイルアクセスと通信先を制御",
       "summaryJa": "Codex向けの「Permission profiles」は、config.tomlの [permissions.<name>] で権限セットを定義し、default_permissions に指定することで既定の権限プロファイルとして利用できる機能です。ファイルシステムとネットワークの権限を、個別の名前付きプロファイルとしてまとめ、ローカルコマンド実行の読み取り専用などの組み込みプロファイルを用意します。新規プロファイルは [permissions.<name>.filesystem] や [permissions.<name>.network] で細かく指定し、グロブやワークスペースルートごとの書き込み/拒否、ホストごとの許否を設定します。"
     },
     {
-      "id": "a5497ec3237264551395e40105c955556574c4e8",
-      "sourceName": "Google News Search EN (24h)",
+      "id": "22b498a6f82b4fb99fa7baa658482fa5b036ed23",
+      "sourceName": "Google News Search JA (24h)",
       "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "‘There’s this deep mystery of what, actually, is this thing?’: the philosopher inside Google DeepMind AI - The Guardian",
-      "summary": "‘There’s this deep mystery of what, actually, is this thing?’: the philosopher inside Google DeepMind AI &nbsp;&nbsp; The Guardian",
-      "url": "https://www.theguardian.com/news/ng-interactive/2026/jun/30/theres-this-deep-mystery-of-what-actually-is-this-thing-the-philosopher-inside-google-deepmind",
-      "canonicalUrl": "https://www.theguardian.com/news/ng-interactive/2026/jun/30/theres-this-deep-mystery-of-what-actually-is-this-thing-the-philosopher-inside-google-deepmind",
-      "publishedAt": "2026-06-30T08:25:00.000Z",
-      "hashTitle": "7e706a1eb1a6d69ca42cbb1c678f17106710b378",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "auオンラインショップ、「Apple Watch Series 9/Ultra 2」を3万円値下げ - ケータイ Watch",
+      "summary": "auオンラインショップ、「Apple Watch Series 9/Ultra 2」を3万円値下げ &nbsp;&nbsp; ケータイ Watch",
+      "url": "https://k-tai.watch.impress.co.jp/docs/news/2121245.html",
+      "canonicalUrl": "https://k-tai.watch.impress.co.jp/docs/news/2121245.html",
+      "publishedAt": "2026-06-30T08:21:37.000Z",
+      "hashTitle": "3f088d10ff4d5b8b6079396c592d7c3dde689021",
       "tags": [
-        "Google"
+        "Apple"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "「これは一体何なのか、深い謎があります。」: Google DeepMind AI 内部の哲学者 - The Guardian",
-      "summaryJa": "デイープマインドの哲学者イアソン・ガブリエルは、人工知能の倫理と社会的影響を検討する生粋の学者として2017年に同社へ参加した。彼は、AGIを狙う創業者たちの長期的な視野と、AI安全・AI倫理の対立的議論の間で、技術と人間の関係性を問い直す役割を担ってきた。記事は、AIの倫理的課題を巡る議論が単なる技術問題以上の意味を持つとする彼の見解と、当時の研究現場で交錯する見解の対立を描いている。"
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "auオンラインショップ、「Apple Watch Series 9/Ultra 2」を3万円値下げ - ケータイ Watch",
+      "summaryJa": "auオンラインショップは「Apple Watch Series 9」と「Apple Watch Ultra 2（2023年モデル）」を旧価格から3万円値下げした。値下げ後の価格はSeries 9が5万380円～、Ultra 2は10万4830円で、スマホトクするプログラム適用時の実質負担額もそれぞれ下げられている。具体的な実質負担額は、Series 9が8690円（アルミ 41mm、初回396円・2回目以降377円）、Ultra 2が3万8720円（49mmチタニウム、初回1694円・2回目以降1683円）。"
     },
     {
       "id": "3aa0ec8a6915c12870caf6592db0e1c36264467d",
@@ -107,65 +399,46 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "OpenAIが新AIモデル「GPT-5.6」の公開を、米政権の要請で延期した理由 - WIRED.jp",
       "summaryJa": "OpenAIは6月26日、トランプ政権の要請を受けて、次世代AIモデルGPT-5.6の一般公開を延期すると発表した。まず少数の政府承認を受けた顧客に提供し、その後は政権と協力して段階的に提供範囲を広げるとしている。今後数週間で誰もが利用できるようにしたいとしており、政府承認を前提とした公開手続きが一時的なものだとの認識を示している。"
     },
     {
-      "id": "c298d67ba6bccdf95bdeab09b4f648dd4e6f4af6",
+      "id": "cd69366a70b2e371e5e8b8deb5555f309ee1e079",
       "sourceName": "Google News Search JA (24h)",
       "sourceUrl": "https://news.google.com/",
       "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "ChatGPTやGeminiを搭載した新型「Sクラス」。1111万円から迎え撃つレクサス「LS」との知能化戦争 - carview!",
-      "summary": "ChatGPTやGeminiを搭載した新型「Sクラス」。1111万円から迎え撃つレクサス「LS」との知能化戦争 &nbsp;&nbsp; carview!",
-      "url": "https://carview.yahoo.co.jp/article/detail/4158701c77d81f15dbc81d830b9a143a344bfdef/",
-      "canonicalUrl": "https://carview.yahoo.co.jp/article/detail/4158701c77d81f15dbc81d830b9a143a344bfdef",
-      "publishedAt": "2026-06-30T08:00:00.000Z",
-      "hashTitle": "3d97603ed562c5bc03b6868313caa9e971e10bb0",
-      "tags": [
-        "gemini"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "ChatGPTやGeminiを搭載した新型「Sクラス」。1111万円から迎え撃つレクサス「LS」との知能化戦争 - carview!",
-      "summaryJa": "メルセデス・ベンツのSクラスが大規模改良を受け、日本で6月に予約開始、9月から納車開始予定となっています。最大の特徴はMB.OSの搭載によりChatGPTやGoogleジェミニなど複数の生成AIを利用できる点で、ナビはGoogleマップベースへ変更されました。価格はS450d 4マチックが1598万円ほか、マヌファクトゥーア・メイド・トゥ・メジャーの導入も発表され、日本国内9拠点でオーダー可能です。"
-    },
-    {
-      "id": "71a4fcd1acfa12d0387540ce4064df9b13b8231e",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "LINEカレンダー、Google/Appleのスマホ標準カレンダーと連携 予定も編集できる - Impress Watch",
-      "summary": "LINEカレンダー、Google/Appleのスマホ標準カレンダーと連携 予定も編集できる &nbsp;&nbsp; Impress Watch",
-      "url": "https://www.watch.impress.co.jp/docs/news/2121201.html",
-      "canonicalUrl": "https://www.watch.impress.co.jp/docs/news/2121201.html",
+      "title": "LINEカレンダー、Google/Appleのスマホ標準カレンダーと連携 予定も編集できる（Impress Watch） - Yahoo!ニュース",
+      "summary": "LINEカレンダー、Google/Appleのスマホ標準カレンダーと連携 予定も編集できる（Impress Watch） &nbsp;&nbsp; Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/415c1fcbcf4481916cde21e0a2c739c02e86648f",
+      "canonicalUrl": "https://news.yahoo.co.jp/articles/415c1fcbcf4481916cde21e0a2c739c02e86648f",
       "publishedAt": "2026-06-30T07:35:13.000Z",
-      "hashTitle": "c7a3cdd3e651edf21e2eb5cd0584453e8033d8f6",
+      "hashTitle": "40235623192103ba66a65791af8cf8da153ddbe4",
       "tags": [
         "Google",
         "Apple"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "LINEカレンダー、Google/Appleのスマホ標準カレンダーと連携 予定も編集できる - Impress Watch",
-      "summaryJa": "LINEカレンダーがスマートフォンの標準カレンダーと連携できるようになり、GoogleカレンダーやiOSカレンダーに登録した予定をLINEカレンダー上で閲覧・編集・削除できるようになった。複数のカレンダーを同時に表示・表示/非表示の切替が可能で、LINEカレンダー上で作成・編集した予定は連携先にも反映される。今後は9月にLINEカレンダー専用アプリの提供を予定しており、日程調整機能の準備も進む。"
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "LINEカレンダー、Google/Appleのスマホ標準カレンダーと連携 予定も編集できる（Impress Watch） - Yahoo!ニュース",
+      "summaryJa": "LINEカレンダーがスマホ標準のGoogleカレンダーやiOSカレンダーと連携できるようになり、スマホ側の予定をLINEカレンダー上で表示・編集・削除できるようになった。LINEカレンダーで作成・編集した予定はGoogleカレンダーにも反映され、逆も同様に表示される。今後9月にLINEカレンダー専用アプリの提供を予定し、AIを活用した日程調整機能の準備を進める。"
     },
     {
-      "id": "1caf1eb933e74c06802063a6dc4702f193b0fff4",
-      "sourceName": "Google News Search EN (24h)",
+      "id": "e2f2fd6bc2688b46609ba903cd96d416dd91a3fc",
+      "sourceName": "Google News Search JA (24h)",
       "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "UK regulator considers opening Apple, Google app stores to rival payments - Yahoo Finance",
-      "summary": "UK regulator considers opening Apple, Google app stores to rival payments &nbsp;&nbsp; Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/articles/uk-regulator-proposes-easing-apple-072337061.html",
-      "canonicalUrl": "https://finance.yahoo.com/technology/articles/uk-regulator-proposes-easing-apple-072337061.html",
-      "publishedAt": "2026-06-30T07:23:37.000Z",
-      "hashTitle": "f440d851243cfb42aaf8a56b5d0c99d2b2c131dd",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "Apple、「macOS Tahoe」「Safari」にもセキュリティアップデート - 窓の杜",
+      "summary": "Apple、「macOS Tahoe」「Safari」にもセキュリティアップデート &nbsp;&nbsp; 窓の杜",
+      "url": "https://forest.watch.impress.co.jp/docs/news/2121012.html",
+      "canonicalUrl": "https://forest.watch.impress.co.jp/docs/news/2121012.html",
+      "publishedAt": "2026-06-30T07:05:00.000Z",
+      "hashTitle": "625bb1bc5a5d200960ee0cfe886bded17844692f",
       "tags": [
-        "Google",
         "Apple"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "英国の規制当局、AppleとGoogleのアプリストアを競合決済に開放することを検討 - Yahoo Finance",
-      "summaryJa": "英国の規制当局が、アップルとグーグルのアプリストアを競合他社の決済に開放する可能性を検討している、という報道を伝える。具体的な検討の内容や結論は本文で示されていないため、追加情報の推測は避ける。"
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "Apple、「macOS Tahoe」「Safari」にもセキュリティアップデート - 窓の杜",
+      "summaryJa": "Appleは6月29日にセキュリティアップデートを実施し、iOS 26.5.2、iPadOS 26.5.2、macOS Tahoe 26.5.2、Safari 26.5.2を提供した。修正は主にWebKitに関する脆弱性で、悪意あるWebコンテンツの処理でプロセスの異常終了やメモリ破損、情報漏洩のおそれがあるとしているほか、カーネルやlibxslt、WebRTC、IOGPUFamilyなどの脆弱性も修正された。現時点で悪用報告はない。"
     },
     {
       "id": "bff81c2a806e61390d2d62153d10ce9ef1d29641",
@@ -181,27 +454,9 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "ClaudeがSlackメンバーの一員に コード生成やデータ調査などを自律処理（ITmedia エンタープライズ） - Yahoo!ニュース",
       "summaryJa": "AnthropicはSlack向け新機能「Claude Tag」を発表し、AIアシスタントのClaudeをチームメンバーとして参加させ、指定権限内で依頼内容を処理して成果をスレッドに投稿する仕組みを提供する。社内ではClaude Tagがコード生成の主要手段の一つとして活用され、製品部門の生成コードの多くを担当しているほか、データ調査やサポート案件の処理、原因特定などにも広がっている。初期はSlack対応でβ版提供、同一チャンネル内で複数人が Claude を共有し、チーム全体の状況を引き継いで指示を出せる点や、Ambient機能による自発的通知・フォローアップ機能が特徴となる。"
-    },
-    {
-      "id": "ccdd9ebe446676c81f9cb6b579f550685371bb22",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Apple Supplier Luxshare Set for Hong Kong’s Biggest Listing This Year - WSJ",
-      "summary": "Apple Supplier Luxshare Set for Hong Kong’s Biggest Listing This Year &nbsp;&nbsp; WSJ",
-      "url": "https://www.wsj.com/business/apple-supplier-luxshare-set-for-hong-kongs-biggest-listing-so-far-this-year-032391a8",
-      "canonicalUrl": "https://www.wsj.com/business/apple-supplier-luxshare-set-for-hong-kongs-biggest-listing-so-far-this-year-032391a8",
-      "publishedAt": "2026-06-30T06:30:00.000Z",
-      "hashTitle": "984431c2d689d241f4fd45e3689ab4d86bcda4ed",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "アップルサプライヤーのラックスシェア、香港最大の今年上場へ - WSJ",
-      "summaryJa": "AppleのサプライヤーLuxshareが、香港で今年最大の上場となる見込みと報じられている。WSJによると、Luxshareの上場が香港市場における大規模な資本市場動向の一環となる可能性がある。"
     },
     {
       "id": "ec481b6561b66634b47a7bcfcdb410197806ccd8",
@@ -218,7 +473,7 @@
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "ＴＯＫＡＩホールディングス[3167]：ＴＯＫＡＩコミュニケーションズ 米国 Anthropic 社との AI モデル「Claude」リセラー契約締結について ～ 社会価値創造企業への飛躍に向けた AI 活用推進 ～ 2026年6月30日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
       "summaryJa": "ＴＯＫＡＩホールディングスの子会社ＴＯＫＡＩコミュニケーションズは、米国Anthropic社と「Claude」AIモデルのリセラー契約を締結した。これは社会価値創造企業への飛躍を目指し、AI活用を推進する取り組みの一環として発表された。"
     },
@@ -236,7 +491,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "小型ローカルLLM(9B)のコーディング精度は「ハーネスとモデルの相性」で決まる ― Claude Code系とhermes-agentを比較",
       "summaryJa": "9Bクラスの小型モデルでは、ハーネスの設計が実際のコーディング精度を大きく左右する。 Claude Code系は大きなシステムプロンプトとツール定義を送る前提で、窓が広くキャッシュにも頼る設計だが、9Bでは窓の制約と長い規範の扱いで効果が低下する。一方の hermes-agent はローカルランタイムの窓確保やツールの遅延ロード、圧縮、出力回復を組み込み、9Bの弱点を前提に対策している。どちらもツール呼び出しの安定性が前提条件であり、モデル側の前提次第で結果は大きく変わる。要するに、9Bを選ぶ場合もハーネス選択を同等に重視すべきで、窓の大きさだけで解決する話ではない。"
     },
@@ -254,7 +509,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Geminiが「あなた好みの画像」を生成する機能、無料版にも開放 まず米国で - Yahoo!ニュース",
       "summaryJa": "Googleは米国のユーザーに対し、Geminiアプリのパーソナライズ画像生成機能を無料で提供開始した。Personal Intelligenceを活用し、GmailやGoogleフォト、YouTube、検索などのデータを連携して、個人の好みを反映した画像を生成できるようにする。新機能は画像生成モデル「Nano Banana」とGoogleフォトと連携し、簡単な指示だけでライフスタイルに合わせた画像を作成でき、Googleフォトの写真を読み取るため手動アップロードは不要になる。連携はオプトイン方式で、設定はいつでも変更可能。"
     },
@@ -272,7 +527,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Azure OpenAI を採用し、生成 AI 活用の全社展開を推進――内製化に舵を切り、業務部門とIT部門が一体となってミドルアップダウンで進める大塚製薬工場のデジタル戦略とは - Microsoft",
       "summaryJa": "大塚製薬工場は内製化を軸に、部門横断の体制で生成AI活用を推進している。Microsoft Teamsを業務フロントに位置づけ、全社へコンシェルジュチャットボットを公開し、OpenAIモデルをAzure OpenAIでセキュアに活用して現場課題に即した生成AIアプリを多数開発・検証している。現在内製・外注を合わせて30以上の生成AIアプリが展開・検討中で、事業部門とIT部門が連携してナレッジを蓄積・活用できる環境を整えつつ、AIエージェント活用も視野に入れている。"
     },
@@ -290,7 +545,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "英国の次の時代の生産性を解き放つ: AI の先駆者たちの国を築く",
       "summaryJa": "英国のAI普及は急速だが不均衡で、上位15%が昇進・給与増・キャリアの進展をより多く得ている一方、85%は導入が遅れている。AI活用は4段階に分かれ、最も高い「AIトレイルブレイザー」は週あたりの作業時間を約8時間短縮し、個人と職場双方の生産性向上に寄与する可能性がある。普及を進めるには、行動・認知・組織の障壁を解消し、AIを創造的パートナーとして扱う教育と指針が必要で、AIスキル診断ツールやAI Works for Britainの取り組みが進められている。"
     },
@@ -308,7 +563,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Google Workspace、管理者向けにデータバックアップ機能を拡充",
       "summaryJa": "Googleは6月に、Google Workspace管理者向けのデータバックアップ機能を拡充し、増分エクスポート機能を新たに提供すると発表した。これにより、Gmail・Drive・Chatのデータを組織単位やグループ・特定ユーザー単位で自動エクスポートのスケジューリングが可能となり、直近数日分の増分データを効率的にGoogle Cloud Storageへ保存できるようになる。増分エクスポートは処理時間短縮とコスト削減、バックアップ頻度の向上によるデータ損失リスク低減に寄与する。対象はEnterprise PlusのAssured ControlsおよびAssured Controls Plus契約者。"
     },
@@ -326,27 +581,64 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "BigQuery Agent Analytics Plugin を使って ADK エージェントの回答を分析してみた",
       "summaryJa": "BigQuery Agent Analytics Pluginを用いてADKエージェントのログをBigQueryに直接記録し、AI関数で評価する一連の検証を紹介している。まずエージェントを作成し、テスト質問を投げてイベントをログ化。次に生成されたログからビューを使って質問とエージェントの回答を結びつけ、LLM-as-a-Judge機能を用いて二値判定やスコア・理由の取得、さらにAI.SCOREなどでランキングを作成する方法を丁寧に解説している。最後に評価結果を集計してダッシュボード化する手順も示しており、カスタムタグを活用した絞り込みやエージェントバージョン別の比較も可能と説明している。"
     },
     {
-      "id": "ba775ecf3b6a73445175af7ace1c0baf5fe06bb3",
+      "id": "6f0298f9f57ed71fa8ec02c41e90933b6bedb4ef",
       "sourceName": "Google News Search JA (24h)",
       "sourceUrl": "https://news.google.com/",
       "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "OpenAI、Codex向けデバイスを予告 7月15日に発表か キーボードメーカーと協業（1/2 ページ） - ITmedia",
-      "summary": "OpenAI、Codex向けデバイスを予告 7月15日に発表か キーボードメーカーと協業（1/2 ページ） &nbsp;&nbsp; ITmedia",
+      "title": "「AIエージェントに認証情報を渡してはならない」 1PasswordがOpenAIと協業：シークレットを保護するためのMCPサーバを提供 - ITmedia",
+      "summary": "「AIエージェントに認証情報を渡してはならない」 1PasswordがOpenAIと協業：シークレットを保護するためのMCPサーバを提供 &nbsp;&nbsp; ITmedia",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2606/30/news074.html",
+      "canonicalUrl": "https://atmarkit.itmedia.co.jp/ait/articles/2606/30/news074.html",
+      "publishedAt": "2026-06-30T04:00:00.000Z",
+      "hashTitle": "970433b717eb06730faa8a5f4447dd9a7a1c052a",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "「AIエージェントに認証情報を渡してはならない」 1PasswordがOpenAIと協業：シークレットを保護するためのMCPサーバを提供 - ITmedia",
+      "summaryJa": "1PasswordはOpenAIのCodex向けに「1Password Environments MCP Server」を提供開始し、認証情報を環境ごとに“ジャストインタイム”で発行することで、シークレットをCodexのコンテキスト内に露出させずに利用できる仕組みを実現した。認証情報はCodexが直接見ることなく、実行時にのみプロセスへ注入され、.envファイルやコードにハードコーディングされることはなく、ユーザーの明示的な承認を都度必要とする。これにより、開発ワークフローのセキュリティを保ちつつ、Codexの環境構築と管理を1Password側で中央管理・監査可能とする。"
+    },
+    {
+      "id": "1ea78a65a27cc742fce86c68087ad0202cb16f77",
+      "sourceName": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog",
+      "sourceFeedUrl": "https://vercel.com/blog/rss.xml",
+      "title": "Vercel Services: Run full stack on Vercel",
+      "summary": "To a user, an app with a Next.js frontend and a FastAPI backend feels like one product, and the same should be true for the engineers who build it. Instead, the two pieces are often deployed across different clouds with different development and deployment workflows. Today we're introducing Vercel Services , which lets you run multiple frameworks in one Vercel Project. This unlocks: Atomic deployments: Your frontend, backend, and other services stay in sync and deploy or roll back together Shared preview deployments: See how any change affects all your services Internal service communication: Services can talk to each other without routing through the public Internet Vercel handles the rest: routing, builds, deployments, and auto-scaling in production. The developer experience you already know from Vercel now covers your entire application. Compose applications with Vercel Services Declare your services under the services key in vercel.json keeping the routing configuration explicit: Services can be mounted to a shared routing table without the need for a reverse proxy or CORS. The services configuration is recognized at multiple levels of the Vercel platform: The Deployments panel shows a visualization of services graph The Logs UI allows filtering by individual service The vercel dev CLI automatically runs all services giving you a production-like environment locally Service bindings Services can talk to other services internally, without routing through the public Internet. Here's an example how the new bindings configuration key enables that: Now the JavaScript frontend code can talk to the Python service internally via the URL stored in the BACKEND_INTERNAL_URL environment variable: Service-to-service traffic stays on the Vercel network rather than egressing to the public internet. Many independent services can become one application connected by the same wiring, rather than separate deployments that you stitch together across hosts. Framework-defined infrastructure Most frameworks run on Vercel with zero configuration. Framework-defined infrastructure means that each service's framework is auto-detected and auto-provisioned, from FastAPI and Flask for Python to Express and Hono for TypeScript, with first-class support for Go and Rust servers. Services run on Fluid compute, autoscaling with traffic, while you pay only for active CPU time. But framework-defined optimizations go even deeper. With Django, for example, we automatically detect where static assets live and serve them from the CDN. The full stack platform Vercel Services gives Vercel a structured way to build and run your application. Those services run on a platform that includes everything any backend could need, whether you're building APIs, agents, or background workers: compute, data, networking, background work, and secure connections to external services. Isolated compute for agent services Agents can read files, run commands, and write code. But that capability needs to be secure. Vercel Sandbox gives each agent its own Linux computer: a filesystem, a shell, Docker support , and its own kernel, completely isolated from your deployments. Agents can execute code, grep files, and spin up Redis or Postgres as dependencies. Nothing inside the sandbox can touch your production environment. With automatic persistence , state carries between sessions, and on Pro, sandboxes can run for up to 24 hours. Real-time backends with WebSocket support Vercel Functions handle persistent WebSocket connections in every Vercel runtime, whether your backend is written in Node.js, Python, or Go. They work with standard WebSocket libraries like Socket.IO , and because connections run on Fluid compute with Active CPU pricing, you only pay for the time spent processing messages, not the time a connection sits idle. Reach external services with Vercel Connect Agents and backends need to reach services outside your project (Slack, GitHub, managed databases), which usually means storing a long-lived secret in your environment. Vercel Connect replaces that with a short-lived credential your app requests at runtime, scoped to the task in front of it. There is no long-lived secret left to leak. Databases and storage for your services You can provision a database from the Vercel Marketplace in a few clicks, with credentials injected for you, from providers like Neon, Supabase, and from AWS with Aurora PostgreSQL, Aurora DSQL, and DynamoDB. Amazon OpenSearch Serverless adds full-text and vector search, and Vercel Blob handles object storage. You can query and manage any of it without leaving Vercel, and both Blob and the AWS integrations authenticate with short-lived OIDC tokens rather than stored secrets. Run durable workflows and background jobs Vercel Queues processes background jobs off the request path. Vercel Workflow handles durable multi-step processes that survive crashes and redeploys. And Vercel Cron runs work on a schedule. This is the part of a backend that outlives a request, and it runs on the same platform as everything else, so the long-running side of your backend needs no separate infrastructure. Connect privately and run on the right compute When a backend needs to reach a private database or an internal network instead of a public service, Secure Compute , static IPs , and VPC peering open that path. Functions run for up to 30 minutes on Pro and Enterprise, and Python backends deploy with up to 500mb of dependencies. Underneath all of it, Fluid compute is the default for new projects , and Active CPU pricing bills for the time your code is actually running rather than the time it waits, the right shape for idle-heavy backend and AI work. A single platform for everything you ship Vercel Services brings your frontend, backend, and supporting services into one project. They build together, preview together, deploy together, and communicate internally by default. Combined with Vercel's built-in primitives for compute, data, queues, workflows, cron, secure networking, and sandboxed agent environments, you can run the full stack without stitching together separate platforms. To start composing services, read the Vercel Services documentation and the routing and communication guide . If you are new to running a backend on Vercel, the zero-config backends post is the place to begin. Read more",
+      "url": "https://vercel.com/blog/vercel-services-run-full-stack-on-vercel",
+      "canonicalUrl": "https://vercel.com/blog/vercel-services-run-full-stack-on-vercel",
+      "publishedAt": "2026-06-30T04:00:00.000Z",
+      "hashTitle": "24930332bc3bcdebfb7baf99b315d772225f35e7",
+      "tags": [
+        "frontend",
+        "typescript"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "Vercel サービス: Vercel 上でフルスタックを実行",
+      "summaryJa": "Vercel Servicesは、Next.jsフロントエンドとFastAPIバックエンドを同一のVercelプロジェクト内で動作させ、デプロイを同期させる機能です。サービス間は内部ネットワークで通信でき、公開ネットワークを経由せずに互いに接続可能で、フロントエンドとバックエンドの内部結合や共有プレビュー、統合的なビルド・デプロイ・スケーリングを提供します。設定は vercel.json の services キーと bindings で行い、各サービスは自動検出とプロビジョニング、フレームワークdefined infrastructure の恩恵を受けます。"
+    },
+    {
+      "id": "ba775ecf3b6a73445175af7ace1c0baf5fe06bb3",
+      "sourceName": "ITmedia NEWS",
+      "sourceUrl": "https://www.itmedia.co.jp/news/",
+      "sourceFeedUrl": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
+      "title": "OpenAI、Codex向けデバイスを予告 7月15日に発表か キーボードメーカーと協業",
+      "summary": "米OpenAIは6月29日（現地時間）、同社の公式Xアカウントで、AIコーディング支援ツール「Codex」のショートカット操作に関するデバイスとみられる製品のティーザー動画を公開した。",
       "url": "https://www.itmedia.co.jp/news/articles/2606/30/news123.html",
       "canonicalUrl": "https://www.itmedia.co.jp/news/articles/2606/30/news123.html",
       "publishedAt": "2026-06-30T03:50:00.000Z",
-      "hashTitle": "c24160a4d0884311612d236bd3327c1c66017b97",
+      "hashTitle": "f1947964fee44c93bd236468aac5c77de204d6f6",
       "tags": [
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "OpenAI、Codex向けデバイスを予告 7月15日に発表か キーボードメーカーと協業（1/2 ページ） - ITmedia",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "OpenAI、Codex向けデバイスを予告 7月15日に発表か キーボードメーカーと協業",
       "summaryJa": "OpenAIはCodex向けの新製品ティーザーを公開し、7月15日に何らかの発表があると示唆しました。動画には半透明のキーが格子状に配置された正方形のデバイスが写り、色とりどりに発光します。外観からWork Louderと協業の専用入力デバイスと推測され、Creator Micro 2のCodex専用版の可能性が指摘されています。"
     },
     {
@@ -363,7 +655,7 @@
       "tags": [
         "html"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "\"Next.js公式チュートリアルを実際のNext.js環境へ移植しようとして大嵌まりした話と、Containerによる綺麗な解決策\"",
       "summaryJa": "Next.js環境では、公式チュートリアルのコードをそのままHTMLやスクリプトとして挿入しても動かない。原因として、サーバサイドでのレンダリングとクライアント側のマウントポイントはフレームワークが自動管理されるため、手動の DOM 操作や外部スクリプトの呼び出しは衝突することが挙げられる。最終的には、Headerを別ファイルとして分離し、Containerを導入した共通枠で複数の部品を統一感をもって配置する構成に落ち着いた。これにより、Reactの基礎を学ぶ学習スペースを Next.jsのApp Router内に安全に隔離して実装できた。"
     },
@@ -381,7 +673,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "米最高裁、Googleからの位置情報取得は「捜索」と判断──「ジオフェンス令状」めぐる歴史的判決",
       "summaryJa": "米最高裁は、ジオフェンス令状でGoogleの位置情報を取得する行為を「捜査の捜索」に当たると判断した。ロケーション履歴は第三者に預けた情報でも憲法上の保護対象となり、データの所有者が自分の情報だと考える限り、令状なしでは取得できないとした。ただし本件の令状自体の適法性については審理を差し戻しており、有罪の直ちの覆過には至らない。"
     },
@@ -399,7 +691,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "英語の技術ニュースを追いきれないので、Claude Code で収集を自動化した",
       "summaryJa": "英語の技術ニュースを追いきれないため、Claude Code で収集を自動化し、2026年1〜6月の記事を日本語訳してアーカイブ、出典リンク付きの月次まとめ6本を公開した。本文抽出・収集・アーカイブを1つのエンジンとして実行し、月次翻訳アーカイブは translations/ に保存、月次まとめ記事は public に公開している。検証は別エージェントで行い、収録基準に合致する記事のみ全文訳しているが、日付境界のズレや長時間実行時のエージェント落ちといった課題も記している。"
     },
@@ -417,27 +709,27 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "GoogleやNVIDIA、Scale AIと連携 トロンが示すヒューマノイド/フィジカルAI時代のデータ戦略 - ロボスタ",
       "summaryJa": "現場データを蓄積することこそが、将来のフィジカルAIやヒューマノイド活用の最重要課題であり、ユーザー企業が唯一コントロールできる資産はデータだと和嶋渓氏は指摘した。トロンはデータ収集を効率化する作業者マルチモーダルデータの活用やScale AIとの連携を通じ、デジタルツインを現在の生産性向上にも活用可能と説明する。データの質と活用を軸に、現場DXとAI学習資産の同時構築を推進することが、フィジカルAI時代の競争力になるとの考えを示した。"
     },
     {
-      "id": "6034cd227d7519a1b1421870c6f40f04ce5f20a9",
+      "id": "02a9702997d558085712ea1a0badc90c85091814",
       "sourceName": "Google News Search JA (24h)",
       "sourceUrl": "https://news.google.com/",
       "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "ClaudeがChatGPTを抜き利用率トップに バイブコーディングも約7割が実践経験あり - GMOインターネットグループ株式会社",
-      "summary": "ClaudeがChatGPTを抜き利用率トップに バイブコーディングも約7割が実践経験あり &nbsp;&nbsp; GMOインターネットグループ株式会社",
-      "url": "https://group.gmo/news/article/10079/",
-      "canonicalUrl": "https://group.gmo/news/article/10079",
-      "publishedAt": "2026-06-30T03:13:49.000Z",
-      "hashTitle": "2fa819e3ac32ceec05fcc5695856a2e090c31011",
+      "title": "ClaudeがChatGPTを抜き利用率トップに バイブコーディングも約7割が実践経験あり【GMOインターネットグループ】 - PR TIMES",
+      "summary": "ClaudeがChatGPTを抜き利用率トップに バイブコーディングも約7割が実践経験あり【GMOインターネットグループ】 &nbsp;&nbsp; PR TIMES",
+      "url": "https://prtimes.jp/main/html/rd/p/000005419.000000136.html",
+      "canonicalUrl": "https://prtimes.jp/main/html/rd/p/000005419.000000136.html",
+      "publishedAt": "2026-06-30T03:00:24.000Z",
+      "hashTitle": "47e9526eb43e515814587522cf57ed06343ff2cc",
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "ClaudeがChatGPTを抜き利用率トップに バイブコーディングも約7割が実践経験あり - GMOインターネットグループ株式会社",
-      "summaryJa": "GMOインターネットグループの2026年6月の調査結果によると、全体の生成AI業務活用率は98.7%、日常利用ではClaudeが73.4%、ChatGPTが72.3%でトップ争いとなりました。バイブコーディングは約7割が実践経験があり、業務で実践している人は約4割に上ります。グループ代表はClaude Codeで課題解決を進め、AIブースト支援金の効果も高まっているとコメントしています。"
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "ClaudeがChatGPTを抜き利用率トップに バイブコーディングも約7割が実践経験あり【GMOインターネットグループ】 - PR TIMES",
+      "summaryJa": "GMOインターネットグループの調査によると、グループ全体の生成AI業務活用率は98.7%に達し、日常利用する生成AIサービスではClaudeが73.4%でトップとなりました。バイブコーディングの実践は約7割が経験しており、業務で実践している人は40.8%に上ります。なお、有料サービス契約率は89.5%と大幅に増加し、AI活用の推進が続いています。"
     },
     {
       "id": "c6c77bb88222a41e0fa52102700302d11e8ec5df",
@@ -454,46 +746,9 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Codexで使用制限にすぐ到達する問題 OpenAIが緊急調査（アスキー） - Yahoo!ニュース",
       "summaryJa": "OpenAIのCodexチームは、ユーザーから相次ぐ使用量の急増報告を受けて緊急対応に乗り出し、warroomを設置してログを精査している。200ドルのProプラン利用者を中心に「通常より速く使用制限に達する」や「リセットを繰り返してもすぐに尽きる」といった声が上がっており、特定の時期にスパイクが見られるケースもある。モデルの切り替えやサブエージェントの挙動が関連している可能性が指摘されている。"
-    },
-    {
-      "id": "5452dc8b9ae21a43c9ba35fa9ef31c9e85096710",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Google Cloud Next Tokyo に ダイヤモンドスポンサーとして協賛 - クラウドエース株式会社",
-      "summary": "Google Cloud Next Tokyo に ダイヤモンドスポンサーとして協賛 &nbsp;&nbsp; クラウドエース株式会社",
-      "url": "https://cloud-ace.jp/news/2026/38313/",
-      "canonicalUrl": "https://cloud-ace.jp/news/2026/38313",
-      "publishedAt": "2026-06-30T02:29:52.000Z",
-      "hashTitle": "17aa5ee603b761ab14f92ceffe4626bc664bfc39",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "Google Cloud Next Tokyo に ダイヤモンドスポンサーとして協賛 - クラウドエース株式会社",
-      "summaryJa": "クラウドエース株式会社が、Google Cloud Next Tokyo のダイヤモンドスポンサーとして協賛した。"
-    },
-    {
-      "id": "6f9331fe6fe55b178329efa51d12d43669f0d6d9",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Codex向け左手デバイスが登場？OpenAIが予告動画公開（PC Watch） - Yahoo!ニュース",
-      "summary": "Codex向け左手デバイスが登場？OpenAIが予告動画公開（PC Watch） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/d44529f608258a324eb812c692f67b6833c74257",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/d44529f608258a324eb812c692f67b6833c74257",
-      "publishedAt": "2026-06-30T02:23:00.000Z",
-      "hashTitle": "062032dea81e4583e07502a85c55a1d8edd2d4df",
-      "tags": [
-        "OpenAI",
-        "codex"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "Codex向け左手デバイスが登場？OpenAIが予告動画公開（PC Watch） - Yahoo!ニュース",
-      "summaryJa": "OpenAIは6月30日、Codex向けショートカットデバイスの投入を示唆する予告動画を公式Xに公開した。動画には「Your favorite Codex shortcuts are getting an upgrade.」の文言と7月15日とみられる日付があり、協業先のWORK LOUDERのロゴと本体も映っている。外観はCreator Micro 2やFramer Creator Microに似た印象で、両社の協力で実現する可能性が示唆されている。"
     },
     {
       "id": "3660fcf57658440d4dfd5ebb1aab0540118da465",
@@ -510,7 +765,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Gemini APIのGoogleマップ・グラウンディングを検証！あり・なしで回答を比べてみた",
       "summaryJa": "Gemini APIのGoogleマップによるグラウンディングを用いた検証では、マップ参照ありとなしで、口コミ評価やレビュー件数の回答に明らかな差が見られました。なし（マップなし）は回答が実行ごとにブレるのに対し、あり（マップ連携）は同じ値を安定して返す一方、grounding_chunksで参照元を確認でき、実在しないスポットには回答を出さない傾向がありました。結論として、場所・評価・営業時間などマップ情報を扱う場合はグラウンディングを活用する価値があるが、返ってくる数字を鵜呑みにせず、参照元の出力を確認することが重要です。"
     },
@@ -529,63 +784,9 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "「Google Meet」の議事録を「Gemini」に作ってもらう機能、個人ユーザーにも開放、「Google AI Pro」などの加入者向け - 窓の杜",
       "summaryJa": "「Google Meet」の最新アップデートで、AIアシスタント「Gemini」が議事録を作成する「Take notes for me（メモを取る）」機能が、個人向け有料プランにも展開された。Web版・モバイル版で利用可能で、日本語にも対応しており、ホストが鉛筆アイコンをクリックするか自動有効化設定を選ぶと、リアルタイムの文字起こしと要点・アクション項目をまとめたサマリーを作成し、Googleドライブのドキュメントに自動保存され、会議終了後にはサマリーとアクション項目をまとめたメールが届く。機能有効時には会議の全参加者へ通知される点に注意が必要。"
-    },
-    {
-      "id": "ba0e636be72b53e745fe99d447b06e8ca69c2685",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Forty-ninth session of the FAO/WHO Codex Alimentarius Commission adopts new standards - World Health Organization (WHO)",
-      "summary": "Forty-ninth session of the FAO/WHO Codex Alimentarius Commission adopts new standards &nbsp;&nbsp; World Health Organization (WHO)",
-      "url": "https://www.who.int/news-room/events/detail/2026/07/06/default-calendar/forty-ninth-session-of-the-fao-who-codex-alimentarius-commission-adopts-new-standards",
-      "canonicalUrl": "https://www.who.int/news-room/events/detail/2026/07/06/default-calendar/forty-ninth-session-of-the-fao-who-codex-alimentarius-commission-adopts-new-standards",
-      "publishedAt": "2026-06-30T01:33:59.000Z",
-      "hashTitle": "d7351b1aa13dc00a065698154f332fca291c4d7c",
-      "tags": [
-        "codex"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "FAO/WHOコーデックス委員会の第49回会合が新たな基準を採用 - 世界保健機関(WHO)",
-      "summaryJa": "国連の食品規格機関であるCodex Alimentarius Commissionは、FAOとWHOの共同事業として、食品の安全性と品質基準を採択する会合を7月6–10日に開催する。第49回会議では採択された基準の一部について、承認され次第下に要約が随時公開される予定である。会議の情報はCAC49の情報ページで確認できる。"
-    },
-    {
-      "id": "e0617ba8716bdda563229456cd6b07c28b6c81d9",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Judge denies acquittal for ex-Google engineer convicted of stealing trade secrets - Courthouse News",
-      "summary": "Judge denies acquittal for ex-Google engineer convicted of stealing trade secrets &nbsp;&nbsp; Courthouse News",
-      "url": "https://www.courthousenews.com/judge-denies-acquittal-for-ex-google-engineer-convicted-of-stealing-trade-secrets/",
-      "canonicalUrl": "https://www.courthousenews.com/judge-denies-acquittal-for-ex-google-engineer-convicted-of-stealing-trade-secrets",
-      "publishedAt": "2026-06-30T01:09:44.000Z",
-      "hashTitle": "19f56242eff194f876f216e4bea70c9526af93c3",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "判事、企業秘密窃盗で有罪判決を受けた元Googleエンジニアの無罪判決を否定 - 法廷ニュース",
-      "summaryJa": "元Googleのソフトウェアエンジニア、林偉丁（リンウェイ・ディン）に対する、機密情報の窃盗と経済スパイ活動を有罪と認定した14件の有罪判決に対し、連邦裁判官が無罪判決または新審を求める請求を却下したと伝えられた。裁判長は、ディンが2012年春から2023年春にかけてGoogleの機密情報を自分の新会社のために利用する意図を持っていたという「合理的な陪審員」が超過なく認定できるとし、Googleが機密情報を合理的に守っていたことや提出された資料が公的領域にないことも認定した。ディンは2024年8月4日に有罪の量刑が言い渡され、機密情報の窃盗ごとに最大10年、経済スパイ活動ごとに最大15年の禁錮刑と罰金が科される可能性がある。"
-    },
-    {
-      "id": "470c50c2d8bd29a518652c26814d9f95860a37fa",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "“シャドー AI エージェント”を統制せよ！Google Cloudで作る「次世代エージェント基盤」 - EnterpriseZine",
-      "summary": "“シャドー AI エージェント”を統制せよ！Google Cloudで作る「次世代エージェント基盤」 &nbsp;&nbsp; EnterpriseZine",
-      "url": "https://enterprisezine.jp/article/detail/24514",
-      "canonicalUrl": "https://enterprisezine.jp/article/detail/24514",
-      "publishedAt": "2026-06-30T01:06:38.000Z",
-      "hashTitle": "bbc30d58229f2e36557a967382e917bbdabc0d50",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "“シャドー AI エージェント”を統制せよ！Google Cloudで作る「次世代エージェント基盤」 - EnterpriseZine",
-      "summaryJa": "AIエージェントはゴール達成のために環境認識、推論・意思決定、実行を自律的に行い、ツールやAPIを活用して実行するようになっている。一方で、個人アカウントで外部APIを使う等のシャドーAIエージェントが生まれ、管理外の動作リスクが高まるため、権限設計・監査設計・実行経路の説明可能性が重要になる。関本氏は、ガードレールと再現性の設計を整えることで、安全性と出力品質を両立する必要があると述べている。"
     },
     {
       "id": "2c5c30d5a2c88199dea0e41a0b2042bce466c155",
@@ -601,9 +802,27 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "AppleサプライヤーLuxshare、香港株式売却で最大31億ドルを目指す - CNBC",
       "summaryJa": "Luxshare Precision Industryは香港株式の新規公開を通じて最大约242.7亿港元（31亿美元）を調達する予定で、383.5百万株を1株63.28港元を上限として発行する。発行株は約90%を国際投資家に、残りを香港の個人投資家に割り当てる見込みで、取引開始は7月9日を予定している。売上の多様化を図る同社は、家電に依存していた収益構造を見直し、車載電子が成長分野として寄与を拡大しており、2025年には売上の11.8%を占める見込みだ。"
+    },
+    {
+      "id": "52c5fb327d7983326a09ec94e8f2d4a7e2b61dc5",
+      "sourceName": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog",
+      "sourceFeedUrl": "https://vercel.com/blog/rss.xml",
+      "title": "Run multiple frameworks in one project with Vercel Services",
+      "summary": "You can now deploy multiple frontends and backends together within a single Vercel project. Vercel Services is now available , allowing you to deploy full stack apps with multiple frameworks on a shared domain, where services talk to each other privately and deployments build, preview, and roll back together. Services are defined in vercel.json : From there, your services show up across the dashboard and CLI: The Deployments panel visualizes the services graph The Logs UI filters by individual service vercel dev runs every service locally for a production-like environment Service bindings Services talk to each other internally with the new bindings key, without routing through the public internet: The frontend reaches the backend privately through the URL in BACKEND_INTERNAL_URL : Framework-defined infrastructure Most frameworks run with zero configuration. Framework-defined infrastructure means each service's framework is auto-detected and auto-provisioned, from FastAPI and Flask to Express and Hono, with first-class support for Go and Rust. Services run on Fluid compute with Active CPU pricing, so you only pay for the time your code is actually running. Read the documentation to get started. Read more",
+      "url": "https://vercel.com/changelog/run-multiple-frameworks-in-one-project-with-vercel-services",
+      "canonicalUrl": "https://vercel.com/changelog/run-multiple-frameworks-in-one-project-with-vercel-services",
+      "publishedAt": "2026-06-30T00:00:00.000Z",
+      "hashTitle": "786ebd045b53bc0dd7d8851f618da2d883cedc62",
+      "tags": [
+        "frontend"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "Vercel Services を使用して 1 つのプロジェクトで複数のフレームワークを実行する",
+      "summaryJa": "Vercel Services を使うと、1つの Vercel プロジェクト内で複数のフロントエンドとバックエンドを同時にデプロイでき、サービス間はプライベートに通信し、ビルド・プレビュー・ロールバックを一括で行えます。サービスは vercel.json で定義し、フレームワークは自動検出・自動プロビジョニングされ、Go や Rust も含む複数の枠組みに対応します。サービス間は bindings を使って内部的に URL が渡され、フロントエンドは BACKEND_INTERNAL_URL を介してバックエンドとプライベートに連携します。"
     },
     {
       "id": "10972720dc8fa7c24efe83c4ac6b0ed7b850ef7c",
@@ -619,7 +838,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Google Workspace、7月21日週に発表した新機能をまとめて紹介",
       "summaryJa": "Googleは6月26日に、Google Apps Scriptを正式にGoogle Workspaceのコアサービス化し、エンタープライズ向けのデータ保護・管理機能・技術サポートを提供するようになったと発表した。SheetsにはGeminiによるエラー診断機能が追加され、数式エラーの内容説明と修正案が提示されるようになった。さらに管理者パスワードリセット時のアラートが全管理者権限へ拡大され、iOSのSafariからのMeet参加がアプリ不要で可能になり、Near-fieldで5文字のルームコード入力による接続の早期プレビューも開始された。なお、ClassroomのGeminiタブ更新やRead Alongの無償提供、データバックアップの増分エクスポート機能も導入された。"
     },
@@ -637,7 +856,7 @@
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "ブリーフィング: 科学のための AI - 人類学",
       "summaryJa": "The Briefing: AI for Scienceは、2026年6月30日にサンフランシスコで開催され、Anthropicのリーダーシップやライフサイエンス企業の幹部、研究機関が集まり、Claudeが科学分野でどのように活用されているかを紹介します。イベントでは Anthropicの製品・研究デモや顧客事例の紹介、技術チームによる1対1のサポートなどが提供され、AIを活用した研究環境の現状と今後の方向性が共有されます。参加対象は製薬・バイオ企業の幹部層や学術・非営利機関の研究指導者で、配信は同日ライブ配信が予定されています。"
     },
@@ -655,45 +874,9 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Apple、AIサイバーセキュリティの懸念に応えてアップデートを早期にリリースすると発表 - ロイター",
       "summaryJa": "AppleはAIのサイバーセキュリティ問題に対応するため、更新を早めてリリースすると発表した。 Reutersによると、AI関連のリスクを踏まえた対応を優先しているという。"
-    },
-    {
-      "id": "30af3b133f3f6d9d04b3195ab0fd3aba4c2d54a5",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "White House, EAB and Google Health leaders to speak at Alabama Higher Education AI Exchange - Auburn University",
-      "summary": "White House, EAB and Google Health leaders to speak at Alabama Higher Education AI Exchange &nbsp;&nbsp; Auburn University",
-      "url": "https://wire.auburn.edu/content/provost/2026/06/291540-ai-exchange.php?utm_source=auburn-today&utm_medium=web",
-      "canonicalUrl": "https://wire.auburn.edu/content/provost/2026/06/291540-ai-exchange.php",
-      "publishedAt": "2026-06-29T20:48:18.000Z",
-      "hashTitle": "c05f6a710e32999a0e19f2c87699c3e2724ef73c",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "ホワイトハウス、EAB、Google Healthのリーダーがアラバマ高等教育AIエクスチェンジで講演 - オーバーン大学",
-      "summaryJa": "アラバマ州の高等教育AIエクスチェンジで、アメリカ政府系や企業のトップが講演する。白宮のAmy Bontrager氏、EABのJon Barnhart氏、Google HealthのPeter Clardy氏が基調講演を務め、AIが高等教育と労働市場に与える影響や組織の変革について語る予定。イベントは7月21日、オーバン大学のBiggio Center主催で、教育者や専門職らがAIの教育・人材開発・倫理など多様な分野の課題を探る。"
-    },
-    {
-      "id": "4c76269552d928142c588f806b323ebf9c0388ff",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "GoogleのAIエージェントは「垂直統合」志向、機能拡張した統合基盤が中核 - 日経クロステック",
-      "summary": "GoogleのAIエージェントは「垂直統合」志向、機能拡張した統合基盤が中核 &nbsp;&nbsp; 日経クロステック",
-      "url": "https://xtech.nikkei.com/atcl/nxt/column/18/03655/062000002/",
-      "canonicalUrl": "https://xtech.nikkei.com/atcl/nxt/column/18/03655/062000002",
-      "publishedAt": "2026-06-29T20:00:00.000Z",
-      "hashTitle": "8d816bb299dd0efe08803ecbe8780f5ac56ce79d",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "GoogleのAIエージェントは「垂直統合」志向、機能拡張した統合基盤が中核 - 日経クロステック",
-      "summaryJa": "Googleは各レイヤーに強いサービスをそろえ、垂直統合を志向している。中核基盤は「Gemini Enterprise Agent Platform」となり、Vertex AIを機能拡張してAIエージェントの統合基盤を担う。さらに2026年3月に約5兆円で買収したWizとの連携も加速している。"
     },
     {
       "id": "1ca0f6cafe698dab74418891b8c3ef1db1f1340b",
@@ -709,7 +892,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Apple Prime Day セール後も買い物できる 51 以上の本当にお得なセール - NBC ニュース",
       "summaryJa": "Prime Day後も NBC Select のチームはApple製品の割引を紹介しており、AirPods 4やApple Pencil Proを含む多数が最大で20%以上値下げ、最低価格が3か月以上の水準とされている。AirPods 4は軽量で半密閉設計、AirTagはFind Myでの位置特定機能を強調、Apple Watchは健康・睡眠・フィットネス追跡機能が充実していると紹介している。MacBook・iPad関連やBeatsアクセサリなども「Prime Day中は割引継続中」として選定リストに載せられている。"
     },
@@ -727,7 +910,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Apple iPhone 18 Proのサプライヤーリスト、部品、写真がタタ情報流出で暴露 - ロイター",
       "summaryJa": "Appleの新型iPhoneである「iPhone 18 Pro」のサプライヤー一覧や部品、写真が、タタ社のデータ流出により露出したと報じられている。記事は、Reutersの情報を基に、流出したデータの内容と影響について伝えている。"
     },
@@ -745,7 +928,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Microsoft Foundry の Claude が一般提供になりました - Microsoft Azure",
       "summaryJa": "Claude in Microsoft FoundryがAzureで一般提供開始。統合環境内でClaudeを用いたエージェント設計・実行が可能となり、認証・課金・ガバナンス・データ管理を既存のAzureアカウントとポリシーで行える。Foundry Agent ServiceとAzureの管理体制により、エンタープライズ向けのセキュリティ・コンプライアンス・データ居住要件を満たしつつ、モデルの探索から本番運用までの導線を短縮する。"
     },
@@ -764,7 +947,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Gemini では、Google AI Pro および Ultra の登録者向けに Google Meet でメモを取れるようになりました。 - blog.google",
       "summaryJa": "Google AI ProとUltraの加入者は、Google Meetで「Take notes for me」機能をWeb・モバイルで選択言語で利用できるようになった。 Geminiが会議中の発言をリアルタイムで書き起こし、要約と重要アクション項目を作成、Google DriveのGoogle Docに自動保存され、会議後には要約とアクション項目を含むメールが届く。機能はホストとして会議を行う場合に現在利用可能で、ミーティング設定の「Meetings records」で有効化し、会議参加者全員に通知される。"
     },
@@ -782,7 +965,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "AI の専門家に聞く: フルスタックとは正確には何ですか?",
       "summaryJa": "Googleの全Stack型AIは、ハードウェアからモデル、オーケストレーション、ユーザーインターフェースまでを一つの統合システムとして提供する考え方です。GoogleはTPUやGeminiモデル群、Gemini Enterprise Platform、Antigravityなどを自社で完結させることで信頼性とコスト効果を高め、外部ベンダーを組み合わせる手間を削減します。始め方としては、プロトタイプ作成にGoogle AI Studio、低コードの自動化にGemini Enterprise Platform、複雑なエージェント構築にAntigravityを推しています。"
     },
@@ -800,7 +983,7 @@
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "ニューサム知事は、州政府機関に人里離れたツールを提供し、カリフォルニア州民へのサービスを向上させる、この種では初のパートナーシップを発表 - カリフォルニア州ポータル | CA.gov",
       "summaryJa": "カリフォルニア州はAnthropicと新たな協力関係を結び、州機関が Anthropic のAI生産性アシスタント Claude を50%引き価格と無償の研修・技術支援で利用できるようにし、自治体にも同様の割引を提供します。Claude は文書の作成・要約、情報分析、日常業務の補助、サービス向上など幅広い業務を支援する予定で、州のデジタル行政の効率化・透明性の向上を目指します。なお、ClaudeはSITeSポータルを通じて全州機関が利用可能となり、サイバー防御や顧客サービスの改善など、既存の取り組みと連携して運用されます。"
     },
@@ -818,7 +1001,7 @@
       "tags": [
         "typescript"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Zod入門 — TypeScriptで型とバリデーションを一致させるスキーマ検証",
       "summaryJa": "Zod は TypeScript 向けのスキーマ宣言・バリデーションライブラリで、1つのスキーマから型の導出と実行時検証を同時に得られる点が特徴です。型と検証をスキーマ1カ所で管理できるため、二重管理のズレや保守コストを減らせます。外から来るデータ（フォーム・API・環境変数など）を検証する場面で特に有効で、エラーは構造化された形で返されます。"
     },
@@ -836,7 +1019,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "CSS 状態と JavaScript イベントの間の変化する境界線",
       "summaryJa": "CSSは擬似クラスを通じてJavaScriptイベントに反応する仕組みを提供しつつ、状態を追跡する形でイベントリスナーのような感覚を生むと説明されている。本文では:hoverや:active、:focus、:focus-within、:has()、:valid/invalid、:autofill、メディア要素の新しい擬似クラス、そして:popover-openや:fullscreen、:targetなど、イベントに対応するCSSと、それに対応するJavaScriptのイベントの対応関係を具体例とともに整理している。さらに、将来の機能としてイベントトリガーの提案にも触れ、現状の限界と将来の可能性を概観している。"
     },
@@ -854,7 +1037,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "AIを選ぶなら「Gemini」一択！その理由をテクニカルライターに聞いてみた（＠ＤＩＭＥ） - Yahoo!ニュース",
       "summaryJa": "AIを選ぶならGeminiを推す理由として、Googleの生成AI機能だけでなく、GmailやカレンダーなどのGoogleサービスと連携して活用できる点が挙げられている。ゼロからのスタートでも実践的な解説と豊富な手順・事例があり、メール返信や資料作成、業務の自動化といった用途にすぐ役立つとの記述がある。 Googleアカウントがあれば無料で利用開始でき、他サービスと連携してアプリの延長として使える点が強みとされている。"
     },
@@ -867,12 +1050,12 @@
       "summary": "Exclusive: Newsom, Anthropic ink deal to expand government use &nbsp;&nbsp; Politico",
       "url": "https://www.politico.com/news/2026/06/29/exclusive-newsom-anthropic-ink-deal-to-expand-government-use-00979584",
       "canonicalUrl": "https://www.politico.com/news/2026/06/29/exclusive-newsom-anthropic-ink-deal-to-expand-government-use-00979584",
-      "publishedAt": "2026-06-29T12:00:00.000Z",
+      "publishedAt": "2026-06-29T12:03:40.000Z",
       "hashTitle": "b54c367991f4f9a3651c0f53ca22cb419c2a419a",
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "独占記事：ニューサム、政府利用を拡大する人類インク契約 - Politico",
       "summaryJa": "サンフランシスコ発の独占報道によると、ニュースム知事とAnthropicが政府利用拡大を目的とした契約を締結した。Politicoの独占情報として伝えられている。"
     },
@@ -890,7 +1073,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Claude Code で『遅いLP』を Astro で作り直して Lighthouse 44→99 にした実装記録",
       "summaryJa": "Astro によって「JSの量・画像・レンダリングブロック」を抑え、アイランドアーキテクチャや画像最適化を活用することで、重いLPを同じ見た目で再構築すると Lighthouse のパフォーマンススコアが 44 から 99 に大きく改善できるという実測を報告している。 実装は、画像を astro:assets の <Picture /> へ置換・フォントの自家ホスト化・装飾JSの撤去・CSSのスコープ化など、JS・画像・ブロックを減らす構造的な対応を中心に行い、Before/After を自作デモで検証している。 人間は方針と検証を担い、Claude Code に投げて非同期で実行させる運用を推奨し、実測値の確認は必須としている。"
     },
@@ -908,7 +1091,7 @@
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Agent Skillsの改善効果を評価するskill-creatorのブラインド比較",
       "summaryJa": "skill-creatorで前後の改善をブラインド比較する手順を詳述しており、評価プロンプトの作成やルーブリックの設定、実行結果の読み込み・評価・勝者判定までを手順化しています。実際には、評価プロンプトを用いて2つのスキルの出力を並列生成し、結果を保存後、ブラインド比較エージェントでルーブリックとアサーションを元に得点・勝者を決定し、JSON形式で保存します。今回の例では、web-research-reportスキルを対象にブラインド比較を実施する流れが説明されており、事前設定や評価観点、充足率の扱いなどの細部が記されています。"
     },
@@ -927,7 +1110,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Google、Geminiで学習用「study notebooks」を提供、学習テーマに沿ったレッスンと練習問題で学べる - gihyo.jp",
       "summaryJa": "GoogleはGeminiアプリで学習向け「study notebooks」を提供開始すると発表した。テーマ設定に応じて学習ノートブックを作成し、診断クイズと短いレッスン・練習問題で理解を深められる。個人向けアカウントのWeb版で順次提供され、対応地域・言語で無料利用可能、将来的に図表やVisual要素の追加、SATやJEE・NEET・ENEM・ACT・GREなどの対策にも対応予定で、NotebookLMとの連携も進む。"
     },
@@ -945,7 +1128,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Claude Code でセキュリティ点検を習慣化する：/security-review と差分の脆弱性レビュー実践",
       "summaryJa": "Claude Code には、PR前の差分のみを対象としたセキュリティ点検を組み込む機能があり、/security-review と security-guidance の二つのプラグインを組み合わせて多層防御として活用する方法が解説されています。差分ベースの点検は、インジェクションや認可・データ露出などのリスクを特定するのに適しており、重大度と修正案の出力形式を指定して自己点検を回す手順が示されています。機密情報の取り扱いには権限設定や deny ルールの活用など注意点があり、依存の脆弱性や環境設定の確認を併用することが推奨されています。"
     },
@@ -963,7 +1146,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "「ヤフコメまとめ」開始 ヤフコメの論点、AIがグラフで可視化",
       "summaryJa": "LINEヤフーは6月29日、「Yahoo!ニュース」のコメント欄をAIで整理し、論点を分類・グラフ化して可視化する「ヤフコメまとめ」を順次提供開始した。OpenAIのAPIを活用し、投稿コメントの論点を要約付きで表示し、詳細分析をAIエージェントに質問する機能もある。対象はスマホブラウザ版とYahoo! JAPANアプリで、今後PCブラウザ版への拡大も検討されている。"
     },
@@ -981,7 +1164,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "AI に「このボタン」を伝えるための Chrome 拡張を作った",
       "summaryJa": "AI に「このボタン」を伝えるための Chrome 拡張を作った。UI のどの要素か伝えるのが面倒だったため、ボタンを特定しやすくするための拡張「Prompt Picker」を開発し、Chrome Web Store に公開した。これにより、画面上の Button などを素早く AI に伝えられるようになる。"
     },
@@ -999,7 +1182,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "ヨーロッパの AI 労働力の機会をマッピングする",
       "summaryJa": "欧州全体でAIが雇用構造に及ぼす影響を新たなOpenAIレポートが地図化しており、どの職業が自動化の影響を受ける可能性が高いのか、成長が見込まれる分野、業務の変化が生じる分野を示している。"
     },
@@ -1017,7 +1200,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "AI ゲートウェイ上にリアルタイム音声エージェントを構築する",
       "summaryJa": "AI Gatewayが音声対応を開始し、リアルタイム音声、テキスト読み上げ、音声認識を既存のテキスト/画像/動画と同じ呼び出しで利用できるようになりました。OpenAIやxAIのモデルを用い、ブラウザではWebSocket経由でマイク入力を配信し、モデルの応答を音声として再生します。リアルタイムセッションでは発話の切替えや割込み、ツールコールの中継などが可能で、AI Gatewayの認証付きトークンを用いてセッションを安全に管理します。"
     },
@@ -1035,83 +1218,9 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "アップル、中国製メモリの調達を画策 米政権にロビー活動か──DRAM大手のCXMT FTなど報道",
       "summaryJa": "米Appleが中国のDRAM大手CXMTからの調達をめぐり、米政権へ働きかけているとFTが報じた。エンティティリストへの将来的追加を回避する保証を求め、規制不確実性を排して取引を進めたい意図とされる。背景には半導体不足と価格高騰、データセンター向け需要の拡大に伴う供給源の確保があるとされる。"
-    },
-    {
-      "id": "ecf1f686aa1f8cdf828dfd8d4045430d5090cee7",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "長寿命化するMacBook、Appleシリコン初期世代が店頭販売に突きつける課題 - Yahoo!ニュース",
-      "summary": "長寿命化するMacBook、Appleシリコン初期世代が店頭販売に突きつける課題 &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/dfc53bf4d33c26bec1d048a151482720ddb55de8/images/000",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/dfc53bf4d33c26bec1d048a151482720ddb55de8/images/000",
-      "publishedAt": "2026-06-29T05:22:38.000Z",
-      "hashTitle": "4ff7c67eae3a1ef2f0357a11deb68e465b4c4990",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "長寿命化するMacBook、Appleシリコン初期世代が店頭販売に突きつける課題 - Yahoo!ニュース",
-      "summaryJa": "Appleの初期世代のAppleシリコン搭載MacBookの長寿命化が進む中、店頭販売には依然として課題が残るとの指摘がある。本文は複数のスポーツ・経済ニュースのリストと、MacBookに関する論点を並べているが、具体的な事実の詳細や解説は引用されていない。要約としては、長寿命化の動向と店頭販売の課題が挙げられているだけで、本文に記載の個別事実の確認はできない。"
-    },
-    {
-      "id": "cc4e5a336f944407256c3f8c8305b20015d7c3f8",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "長寿命化するMacBook、Appleシリコン初期世代が店頭販売に突きつける課題 - Forbes JAPAN",
-      "summary": "長寿命化するMacBook、Appleシリコン初期世代が店頭販売に突きつける課題 &nbsp;&nbsp; Forbes JAPAN",
-      "url": "https://forbesjapan.com/articles/detail/99969",
-      "canonicalUrl": "https://forbesjapan.com/articles/detail/99969",
-      "publishedAt": "2026-06-29T05:00:00.000Z",
-      "hashTitle": "c7592b9cc34baf1ff43883997583218d1a8b8597",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "長寿命化するMacBook、Appleシリコン初期世代が店頭販売に突きつける課題 - Forbes JAPAN",
-      "summaryJa": "初代Appleシリコン搭載MacBookは発売から6年が経過しても多くの消費者のニーズを満たしており、ハードウェアの長寿命化と市場の飽和により買い替えサイクルが長くなっている。プロ用途と消費者用途では求められる性能が異なる一方、旧世代ノートの性能やリファービッシュ市場、ソフトウェア・サービスの利用可能性が選択肢として重要視されている。最新機種へのアップグレード需要が鈍化することで、Macプラットフォームの店頭販売の高利益率にも影響が出ている。"
-    },
-    {
-      "id": "e034a368e148ae659c74c8cc03b80021fd9fd50e",
-      "sourceName": "ITmedia NEWS",
-      "sourceUrl": "https://www.itmedia.co.jp/news/",
-      "sourceFeedUrl": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
-      "title": "AIの進化は、スマートスピーカーへの“失望感”を挽回できるか？ Gemini対応の新型を試す",
-      "summary": "過去のスマートスピーカーは受け答えがあまりスマートではなかったが、25日にGemini for Home対応の新型「Google Home Speaker」の出荷が開始された。使って見ると、洗練された受け答えに進化していたが、まだ完璧ではない。",
-      "url": "https://www.itmedia.co.jp/news/articles/2606/29/news077.html",
-      "canonicalUrl": "https://www.itmedia.co.jp/news/articles/2606/29/news077.html",
-      "publishedAt": "2026-06-29T02:32:00.000Z",
-      "hashTitle": "adffb67a2bc6ddb14a8c5a4461b6cf0c12fd8500",
-      "tags": [
-        "Google",
-        "gemini"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "AIの進化は、スマートスピーカーへの“失望感”を挽回できるか？ Gemini対応の新型を試す",
-      "summaryJa": "スマートスピーカーの歴史は、Siriの登場から始まり、AlexaやGoogle Assistantなどの普及を経て拡大してきた。日本では17年にEchoやGoogle Homeが導入され、画面付きのスマートディスプレイも現れたが、最終的には単品としての使い道が中心となった経緯が記されている。AppleのHomePodは高価格で日本での販売開始も遅れ、普及には一部の壁があったことが述べられている。"
-    },
-    {
-      "id": "91f03b0a3677bb0b1ffd21d8ea54e56a3b315ca3",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "「Google Home スピーカー」レビュー：1万円台で際立つ音質、Geminiは発展途上 - Yahoo!ニュース",
-      "summary": "「Google Home スピーカー」レビュー：1万円台で際立つ音質、Geminiは発展途上 &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/4af169c7210ef46346ae1d48b8a963ebd525f0ff",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/4af169c7210ef46346ae1d48b8a963ebd525f0ff",
-      "publishedAt": "2026-06-29T01:15:00.000Z",
-      "hashTitle": "0e51679d051c54ee16510e63a920b1a8423bd2d9",
-      "tags": [
-        "Google",
-        "gemini"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "「Google Home スピーカー」レビュー：1万円台で際立つ音質、Geminiは発展途上 - Yahoo!ニュース",
-      "summaryJa": "Google Home スピーカーはNest Mini/Audioの系譜を引き継ぎつつ、Gemini for Homeを前面に打ち出す100ドル級の新製品として音質は同等機種より優れており、小〜中規模の部屋で十分に音楽を楽しめると評価されている。一方でGemini for Homeは改善が見られるものの、応答の安定性に課題があり、特定の質問では現実の機器状態と異なる返答をすることもあると指摘されている。総じて、音質と使い勝手の面では競合と比較して優位性があるものの、AI機能の有料プランの価値には慎重な見方が示されている。"
     },
     {
       "id": "1ae317c00ced77b0a26456fe8c2f1072709cf678",
@@ -1127,7 +1236,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "HP Inc. が OpenAI と Frontier 戦略的パートナーシップを開始",
       "summaryJa": "HP Inc.はOpenAIとのFrontier戦略的提携を拡大し、顧客体験、ソフトウェア開発、企業運用の分野でAIを展開する。"
     },
@@ -1146,7 +1255,7 @@
         "html",
         "typescript"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "コーダーからフロントエンドエンジニアへ #0-4｜歴史②：Next.js・TypeScript・Astro",
       "summaryJa": "Reactの普及で現れた新たな課題は、コード規模の拡大に伴う型のゆるさによるバグと、UI部品だけでは完結しないサイト全体の運用性だった。これに対する答えとして、型を付けられる TypeScript (.ts/.tsx)と、ルーティングやSSRなどを組み込むメタフレームワークの Next.js、さらに静的HTML優先の Astro が紹介される。各拡張子は、それぞれ「実行前の型チェック」「全部入りの機能提供」「HTML中心の配信」という、異なる困ったを解決する役割を担っている。"
     },
@@ -1165,7 +1274,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Google、MetaによるGemini AIモデルの使用を制限、FT報道 - CNBC",
       "summaryJa": "Googleは、Metaが購入を希望したGemini AIモデルの使用容量について制限を課したとFinancial Timesが報じた。 full capacityの一部を提供できず、Metaの内部AIプロジェクトの遅延や混乱を招いたという。制限の影響は他のGoogleの顧客にも及ぶが、Metaは特に高い需要のため影響を受けたとしている。"
     },
@@ -1183,7 +1292,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "アンソロピック、アリババが「2万5000の偽アカウント」でClaudeを蒸留したと告発 - Forbes JAPAN",
       "summaryJa": "Anthropicは、アリババの研究所が約2万5000の不正アカウントを使い、4月22日から6月5日に Claude を通じて2880万件の対話を実行して、より強力なモデルを低コストで作成する蒸留を試みたと主張している。ただしこれは告発であり、第三者検証はなく、具体的な点は示されていない。 Anthropicはこの蒸留作戦を最大規模とし、フロンティア能力の獲得を狙う産業規模の試みだと説明している。"
     },
@@ -1201,7 +1310,7 @@
       "tags": [
         "typescript"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Web Worker の型安全は `as unknown as` を消すところから始める",
       "summaryJa": "Web Worker の型安全は、self を独自型に見せるのではなく、外部との契約を明確にすることから始まるとしている。具体的には、Worker の入出力は message contract（検査可能な discriminated union など）で定義し、payload は plain data へと限定し、structured clone や所有権の制約を前提に扱うべきだと説明する。これにより、境界を越えるデータと型のズレを避け、外部契約を保ちやすくなる。"
     },
@@ -1221,7 +1330,7 @@
         "claude",
         "frontend"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Anthropic公式 frontend-design Skill が「BOLD」を捨てた日",
       "summaryJa": "新版 frontend-design では、旧版の「全面的に攻める」思想から「ひとつだけ振り切れ、他を静かに保つ」方針へと反転した。具体的には、デザイン運用を「One real aesthetic risk を justified する」1点に絞ること、AI Slop の3クリシェを名指しして警告する点、プロセスを brainstorm–explore–plan–critique–build–critique again の実装型へ移す点が挙げられる。結果として、デザインの大胆さを特定箇所に集約し、全体のバランスを整える方向へシフトしたと述べられている。"
     },
@@ -1240,7 +1349,7 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "OpenAIの自律型AI「Codex」の利用急増、企業の非エンジニアの利用が189倍に チャットからエージェントへの移行が進む - ビジネス+IT",
       "summaryJa": "OpenAIが発表したレポートによると、社内のエージェント型AI「Codex」の利用率は97.9%、社内生成AIトークンの99.8%を占め、対話型から自律実行型へ移行が進んでいる。外部の非開発者ユーザーの利用は急増し、個人で137倍、組織で189倍に増加した一方、外部組織の利用率は17.3%、外部個人は0.7%にとどまっている。さらに、Codexへ委譲されたタスクは多くが人手で30分以上かかる作業であり、エージェントの同時稼働も進んでいるが、第三者による検証には留意が必要との指摘もある。"
     },
@@ -1259,7 +1368,7 @@
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "米政府、Anthropic「Claude Mythos 5」の限定提供再開を許可 - WIRED.jp",
       "summaryJa": "米政府はAnthropicの最先端AIモデル「Claude Mythos 5」への規制を一部緩和し、信頼できるパートナーを通じたアクセスを再開できるようにした。ただし提供範囲の拡大は認めず、Fable 5の一般公開再開にも言及していない。Mythos 5の再開は政府とAnthropic双方にとって前進だが、今後のAIモデル公開を巡る政府の方針には引き続き関与していくとされる。"
     },
@@ -1278,7 +1387,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Google、Gemini 3.5 Flashに画面操作機能「Computer Use」を統合 - ビジネス+IT",
       "summaryJa": "GoogleはGemini 3.5 Flashに画面を認識して自律操作を行う「Computer Use」を統合し、ブラウザやデスクトップ環境で自動化エージェントを構築できるようにした。これにより従来別個のプレビュー版だった機能を標準API内に組み込み、単一モデルでのマルチツール構成が可能になった。性能面ではOSWorldで78.4点を記録し、旧バージョンの65.1から向上したほか、企業向けにはプロンプトインジェクション対策や不可逆的操作時のユーザー確認などの保護機能を提供する。"
     },
@@ -1296,7 +1405,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "OpenAI GPT-5.6シリーズを発表 - Yahoo!ニュース",
       "summaryJa": "OpenAIは新モデル「GPT-5.6」を発表し、米政府の要請を受け限定提供を行う予定だと伝えられている。性能はMythos 5を上回るとの報道だが、一般公開は数週間先になる見込みとされている。"
     },
@@ -1315,7 +1424,7 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "OpenAI、GPT-5.6ファミリーを限定プレビュー、Sol/Terra/Lunaの3モデルをまずCodexとAPIで提供",
       "summaryJa": "OpenAIはGPT-5.6ファミリーの限定プレビューを開始し、Sol・Terra・Lunaの3モデルをCodexとAPIでまず提供する。Solは最高性能で、TerraはGPT-5.5相当を半額、Lunaは大量処理向けに低コストと説明され、価格はSol入力5ドル/出力30ドル、Terra入力2.50ドル/出力15ドル、Luna入力1ドル/出力6ドルとなる。安全対策として多層の対策と自動検証を実施し、性能評価ではTerminal-Bench 2.1で新記録を達成、サイバーセキュリティ分野でも高い能力を示している。"
     },
@@ -1333,9 +1442,28 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Apple、AIによってメモリチップ不足が加速したせいでMacとiPadの価格を値上げ - PBS",
       "summaryJa": "Appleは、AIブームで生じたメモリーチップ不足を理由に、MacとiPadの価格を引き上げたと発表した。新製品の価格は、MacBook Neoが699ドル、MacBook Airの512GBが1,299ドル、MacBook Proの1TBが1,999ドル、iPad Airの128GBが749ドル、iPad Pro Wifiの256GBが1,199ドルへと上昇した。分析ではiPhoneの価格も今後上昇する可能性が指摘され、株価は一時下落した。"
+    },
+    {
+      "id": "2df25c7e91d9527a9c2244c1d0ec21ba9d28743f",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction - Research at Google",
+      "summary": "Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction &nbsp;&nbsp; Research at Google",
+      "url": "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction/",
+      "canonicalUrl": "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction",
+      "publishedAt": "2026-06-26T18:40:24.000Z",
+      "hashTitle": "597b44a559acccbe7f75d595613cb16e043e56a7",
+      "tags": [
+        "Google",
+        "gemini"
+      ],
+      "scoredAt": "2026-06-30T14:39:16.728Z",
+      "titleJa": "凍結されたマルチトークン予測を使用して Pixel 上で Gemini Nano モデルを高速化 - Google の研究",
+      "summaryJa": "Pixel 9/10で動作する Gemini Nano v3 を凍結したまま、MTPヘッドを追加するアーキテクチャにより、ドラフターと検証の二段階を統合的に実装しました。凍結ボトバンクを活用し、MTPヘッドは主モデルの最終層の高次表現を用いて未来のトークンを自己回帰的に予測し、ダフタを回避するためにメモリを共有するゼロコピー設計を採用しています。その結果、リアルタスクでの推論速度が従来の独立ドラフターよりも向上し、エネルギー消費と待機時間の削減を実現しています。"
     },
     {
       "id": "5a940ef01c3f3f67702795e426f666b4d57fc2ae",
@@ -1343,7 +1471,7 @@
       "sourceUrl": "https://vercel.com/blog",
       "sourceFeedUrl": "https://vercel.com/blog/rss.xml",
       "title": "Vercel Ship 2026 recap",
-      "summary": "For a decade, Vercel has shaped how the web is built. Now, we’re doing the same for agents. The companies that win the next decade will build on infrastructure designed for agents from the start, and over 2,500 people gathered in London this week to do just that at Vercel Ship 2026. Agentic infrastructure Guillermo kicked off Ship by sharing his vision for Vercel: a true full-stack platform where you can deploy anything, including software that can think. Agentic infrastructure has three parts: Vercel is where coding agents deploy software . When you ask Claude Code or Codex where to deploy, you get Vercel, because Vercel is built for the way agents work. Vercel is where you build and deploy your own agents . We give you every tool you need to build and run apps and agents in production, securely, at scale. Vercel itself is automated by agents . Vercel runs your apps in production, handling traffic, traces, observability, and anomalies. That data gives our agents the context they need to investigate autonomously, and then surface pull requests, not just alerts. Vercel is for shipping agents In the next keynote, Tom walked through each primitive in the Agent Stack , an end-to-end set of building blocks for agents. Hedi introduced Vercel Connect , a secure way for agents to connect with external systems. And Shar gave a full demo of eve , Vercel's new agent framework that implements the Agent Stack in minutes, in a single directory. The Agent Stack No matter the workload, every agent needs to connect to models, run workflows across many steps, and connect to the systems and people that make it useful. Vercel gives you every primitive you need to build all three capabilities. AI SDK gives you one API to call any model, so streaming, tool calls, and structured output work the same across every provider AI Gateway routes your requests across hundreds of models from one endpoint, with automatic failover when a provider goes down Workflow SDK makes every run durable with automatic retries, state persistence, and observability built in Vercel Sandbox gives each agent an isolated microVM to run and test the code it writes before it ships to production Chat SDK lets you deploy your agent across Slack, Discord, GitHub, and more from a single codebase Vercel Connect Vercel Connect launched at Ship 2026 in London as the newest building block in the Agent Stack. Connect provides agents with secure access to the tools, data, and services they work with, without requiring a long-lived provider token stored in your environment variables. Your app or agent requests a temporary credential scoped to the one task in front of it, so there’s no standing secret left to leak. eve After building hundreds of agents at Vercel, we noticed that the architecture underneath had the same shape. eve is that shape as an open-source framework, and it's how we build, run, and scale production agents at Vercel. eve Agents live in a single directory, with instructions in markdown and tools in TypeScript. Durable execution, sandboxed compute, approvals, subagents, and evals are already wired in. Vercel is for shipping full-stack apps Guillermo also highlighted Vercel's ability to host full stack applications, with support for additional backend frameworks, databases, and now, microservices. Backends and databases Earlier this year, Vercel brought on some of the best Python developers in the world to extend support for backend workloads. You can now run FastAPI , Flask , Express , Hono , and other backend frameworks at scale on Vercel. Backend-only services are also supported, so you can host REST APIs, durable workflows, queues, cron, and MCP servers . The Vercel Marketplace added access to databases like Amazon Aurora , Aurora DSQL, DynamoDB , and OpenSearch directly from the Vercel dashboard. Vercel Services Guillermo announced the launch of Vercel Services, available July 1. With Vercel Services, microservices are now a first-class citizen on Vercel. You can develop and deploy your frontend and backend together, and backend-only changes still build the app in a full preview environment. And for the first time, those services can communicate with each other without touching the public internet. Vercel is for shipping in the enterprise For us, Next.js and eve made building agents the easy part. The hard part was everything around them: access, authentication, integrations, and proving all of it to the security team. Jeanne told the story of how we built an enterprise security platform for ourselves, then made it available to our customers. Vercel for Enterprise Apps and Agents Vercel for Enterprise Apps and Agents brings the Vercel developer experience to everyone at your company, with the identity, access, and governance needed to deploy safely. Enterprise Managed Users (in Private Beta) centrally manages who can use Vercel and v0, with a full audit trail. Vercel Passport keeps internal apps internal, private by default behind your IdP Bring your own cloud (BYOC) on AWS (in Private Beta) gives you the ability to run Vercel in your own AWS tenant, including your Vercel functions. Vercel Agent Malte announced Vercel Agent (in Private Beta), the intelligence layer for shipping on Vercel. Built on eve and the Agent Stack, it monitors your production deployments, autonomously investigates alerts and anomalies, and opens fixes in PRs for you to review and approve. Vercel Agent's first-of-its-kind permissions model combines plan mode with granting permissions, making it safe to use for both developers and the enterprise. Rather than asking you to approve actions one-at-a-time, Vercel Agent plans what permissions it will require to complete a task and then asks you to approve them in a single, coherent step. It runs as its own identity, is read-only by default, and asks for narrow, temporary permission before it touches production. Ship 2026 in London Ship week London Our first Ship outside the U.S. ran five days of events leading into the keynote, and an ice cream truck spent the week working its way across the city. Built in London hackathon Two hundred builders shipped agents on Codex and Vercel in a hackathon with OpenAI. Three projects stood out. Stella hunts down unclaimed grants for London SMBs, Oscar is a co-pilot that sharpens your prompts before you send them to a model, and Phone Jail blocks distractions and roasts you when you reach for your phone anyway. Media, Founder, VC, and CTO dinners Reporters traded story ideas over a media dinner. Twelve founders talked through the future of AI in EMEA at a VC dinner. And a dozen CTOs from teams including Marks & Spencer and Currys went off the record on what it takes to build and scale agents in the enterprise. Day Zero builder night Day Zero, the day before the keynote, turned into a 400-person builder night. Enterprise teams Mentimeter, Okta, and MongoDB joined Vercel in a packed room alongside partners DeepMind, ElevenLabs, and Cursor. AI Social Club A 160-deep waitlist formed for Malte's talk A New Stack for a New Era of Software , followed by Guillermo and Deliveroo's Will Shu's chat on building the agentic enterprise. Ship day sessions André Balleyguier from Anthropic showed Claude Managed Agents on Vercel, where Anthropic hosts the agent loop while every command the agent runs executes inside a Vercel Sandbox you own, keeping its filesystem, processes, and network egress in your environment. Tomas Jansson from Currys/Elkjøp showed how his team evolved a Nordic retailer's ecommerce stack from storefronts toward shopping agents in three phases, anchored by a Next.js migration that cut time to first byte by 40%. The end state is one where customer intent replaces navigation. Matan Kushner from Vercel broke down how Vertex, Vercel's support agent, now automates 91% of support tickets and saves 5,000 engineer-hours a month without degrading as its context grows. Jas Sagoo and Sam Bellen from Auth0 made the case that getting an agent into production depends more on identity than on model quality. They demoed four standards-based identity patterns on the Vercel AI SDK, Token Vault, CIBA approvals, agents as first-class principals, and on-behalf-of delegation, so every action is scoped and traces back to a human decision instead of a shared API key. Abhi Sivasailam from Vercel went deep into d0, Vercel's internal data agent built on eve, which runs analyses in a sandbox and now gets 45% of its questions from other agents, rather than people. Romain Huet from OpenAI showed developers how to ship faster by delegating whole tasks to Codex Cloud Agents on Vercel, and made the case that as agents become users of your product, you design for agent experience with scoped API keys, markdown docs, and plugins. Michał Pierzchała from Callstack demoed a QA agent that runs mobile apps on real devices, explores user flows on its own, and posts screenshots, recordings, and logs to pull requests on every PR. Alex Holt from ElevenLabs paired the ElevenLabs Speech Engine with the AI SDK to build a voice agent that can reply in under a second, take interruptions mid-sentence, and switch language mid-conversation. Malavika Balachandran Tadeusz from Vercel showed the mechanics of how software can ship itself, extending the agent loop past development into testing, observability, and experimentation with primitives like Vercel Flags and Skills. Panel: Agents in production Jeanne Grosser, COO of Vercel, moderated a panel on taking agentic workloads from prototype to production with some of the EU's top CTOs and AI leaders from frontier labs. A few highlights: Arthur Viegers (Cursor): Autonomy should track risk, and the better an agent can assess the risk of a change, the more you can let it run on its own. Shopify and Amplitude already auto-review and merge 60-70% of low-risk PRs with no developer time, while a two-line change to authentication still goes to a human. André Balleyguier (Anthropic) : To decide what an agent can do on its own, judge each action by how reversible it is and how large its blast radius is, then contain it accordingly, for example inside a self-hosted sandbox. As you grant more autonomy, observability and evals become the things that keep it safe. Ryan den Rooijen (Currys): The predicted death of stores never arrived, and Currys leads its markets by betting on humans. The open question for agentic commerce is which shopping journeys customers want an agent to handle and which they still want a person for. Nicolas Le Pallec (AKQA): AI-native customer experience replaces navigation with intent. Reaching it takes three layers: a way to capture true customer intent, a brand brain that stores brand and product data for AI systems to retrieve, and generative UI that composes pages on the fly instead of serving static ones. Fireside chat with Harry Stebbings The day ended with a fireside chat between Guillermo and Harry Stebbings from 20VC. Below are excerpts from the lightening round at the end of the discussion. Guillermo Rauch: What are the attributes of a founder you want to back? Harry Stebbings: The profile has changed completely. It used to be a sales-led CEO who could fundraise and grow customers, where personality and sales carried the company. Now I want an engineering- and product-led founder. Guillermo Rauch: Can you teach someone to become a voice for their industry? Harry Stebbings: You can, but it's hard. You have to do it for six months straight. It's a muscle you build, and you have to commit to it every day and every hour. Guillermo Rauch: When anyone can produce content and software, how do you stand out? Harry Stebbings: You come up with a new format, a new intro, a new way to tell the story and shape the work. The content itself has shifted too. We used to do shows about leadership and hiring, and nobody cares about that anymore. What lands now is a founder and AI. Those are the two things. Ship 2026 in Berlin The Berlin event opened at the Old Mint, “Alte Münze”, where coins were once hammered by hand, before machine automation took over. It is also where the JavaScript logo was born, and where Guillermo Rauch (CEO) met Malte Ubl (CTO) for the first time at JSConf EU. Software is moving the same way, from hand to machine, and Vercel is paving the way for building in the agentic era. Over 500 people gathered from across Germany to do just that at Ship 2026 in Berlin. Ship day sessions Suyog Rao announced AI SDK 7 . The AI SDK is now downloaded over 16 million times a week. Version 7 turns it into a toolkit for building and running agents that reason, call tools, run across many turns, and work across files and sandboxes, all behind one provider-agnostic interface with no lock-in. Philip Miseldine from SAP showed how the company rebuilt its design system to be composable, so people and agents assemble interfaces from the same parts, with v0 running across its build, deliver, and decide stages. Building with AI SDK 7 brought three speakers on stage. Lars Grammel , the primary engineer behind the update, went deep on the release, with the new harness layer and generation beyond text as the headline additions. Carsten Høyer (AKQA) demoed the Starbucks ChatGPT app as a \"generative store\" that composes branded results from Starbucks' own products and visual identity, flipping the funnel so customers pull the brand into their conversation instead of visiting its site. Stephen Batifol (Black Forest Labs) showed where the Flux image models fit in an agentic stack: sub-second generation and editing today, heading toward real-time generation and world models. Arthur Viegers from Cursor showed how coding agents move from autocomplete to working across an entire codebase on their own. Panel: CTOs on AI and growth Chris Williams (Head of Forward Deployed Engineering @ Vercel) moderated a CTO panel on building and scaling as the cost of creation trends toward zero. A few highlights: Sven Rosemann (Flaconi): AI won't fix a broken business model, so the work is still operational excellence. He compares ecommerce to a decathlon, you win by being top-tier across every discipline at once. What's changing is discovery, which is moving into chat, so Flaconi is investing in the data foundation that makes its catalog retrievable by agents, betting that buying and checkout eventually happen there too. Tjaž Silovsek (Astra AI): venture funding is no longer a prerequisite. For many ideas you ship, find distribution, and iterate instead. Astra reached 10 million users and $25M ARR fully bootstrapped, with a small team kept fast by a stable foundation and agents given a lot of autonomy while kept as safe as possible. DACH Partner Award Vercel presented its first-ever DACH Partner Award to Valtech, for the exceptional impact and delivery, strategic thinking and team enablement it brought to clients. The presentation also thanked the event's sponsors: OffZero, Storyblok, Cursor, SAP, Accenture Song, Blazity, and JVM. Ship what's next Thanks for joining us for Ship 2026 in London. We will see you in Berlin, New York City, Sydney, and San Francisco. If you haven't signed up yet, there's still time to get a ticket . Read more",
+      "summary": "For a decade, Vercel has shaped how the web is built. Now, we’re doing the same for agents. The companies that win the next decade will build on infrastructure designed for agents from the start, and over 2,500 people gathered in London this week to do just that at Vercel Ship 2026. Agentic infrastructure Guillermo kicked off Ship by sharing his vision for Vercel: a true full-stack platform where you can deploy anything, including software that can think. Agentic infrastructure has three parts: Vercel is where coding agents deploy software . When you ask Claude Code or Codex where to deploy, you get Vercel, because Vercel is built for the way agents work. Vercel is where you build and deploy your own agents . We give you every tool you need to build and run apps and agents in production, securely, at scale. Vercel itself is automated by agents . Vercel runs your apps in production, handling traffic, traces, observability, and anomalies. That data gives our agents the context they need to investigate autonomously, and then surface pull requests, not just alerts. Vercel is for shipping agents In the next keynote, Tom walked through each primitive in the Agent Stack , an end-to-end set of building blocks for agents. Hedi introduced Vercel Connect , a secure way for agents to connect with external systems. And Shar gave a full demo of eve , Vercel's new agent framework that implements the Agent Stack in minutes, in a single directory. The Agent Stack No matter the workload, every agent needs to connect to models, run workflows across many steps, and connect to the systems and people that make it useful. Vercel gives you every primitive you need to build all three capabilities. AI SDK gives you one API to call any model, so streaming, tool calls, and structured output work the same across every provider AI Gateway routes your requests across hundreds of models from one endpoint, with automatic failover when a provider goes down Workflow SDK makes every run durable with automatic retries, state persistence, and observability built in Vercel Sandbox gives each agent an isolated microVM to run and test the code it writes before it ships to production Chat SDK lets you deploy your agent across Slack, Discord, GitHub, and more from a single codebase Vercel Connect Vercel Connect launched at Ship 2026 in London as the newest building block in the Agent Stack. Connect provides agents with secure access to the tools, data, and services they work with, without requiring a long-lived provider token stored in your environment variables. Your app or agent requests a temporary credential scoped to the one task in front of it, so there’s no standing secret left to leak. eve After building hundreds of agents at Vercel, we noticed that the architecture underneath had the same shape. eve is that shape as an open-source framework, and it's how we build, run, and scale production agents at Vercel. eve Agents live in a single directory, with instructions in markdown and tools in TypeScript. Durable execution, sandboxed compute, approvals, subagents, and evals are already wired in. Vercel is for shipping full-stack apps Guillermo also highlighted Vercel's ability to host full stack applications, with support for additional backend frameworks, databases, and now, microservices. Backends and databases Earlier this year, Vercel brought on some of the best Python developers in the world to extend support for backend workloads. You can now run FastAPI , Flask , Express , Hono , and other backend frameworks at scale on Vercel. Backend-only services are also supported, so you can host REST APIs, durable workflows, queues, cron, and MCP servers . The Vercel Marketplace added access to databases like Amazon Aurora , Aurora DSQL, DynamoDB , and OpenSearch directly from the Vercel dashboard. Vercel Services Guillermo announced the launch of Vercel Services, available July 1. With Vercel Services, microservices are now a first-class citizen on Vercel. You can develop and deploy your frontend and backend together, and backend-only changes still build the app in a full preview environment. And for the first time, those services can communicate with each other without touching the public internet. Vercel is for shipping in the enterprise For us, Next.js and eve made building agents the easy part. The hard part was everything around them: access, authentication, integrations, and proving all of it to the security team. Jeanne told the story of how we built an enterprise security platform for ourselves, then made it available to our customers. Vercel for Enterprise Apps and Agents Vercel for Enterprise Apps and Agents brings the Vercel developer experience to everyone at your company, with the identity, access, and governance needed to deploy safely. Enterprise Managed Users (in Private Beta) centrally manages who can use Vercel and v0, with a full audit trail. Vercel Passport keeps internal apps internal, private by default behind your IdP Bring your own cloud (BYOC) on AWS (in Private Beta) gives you the ability to run Vercel in your own AWS tenant, including your Vercel functions. Vercel Agent Malte announced Vercel Agent (in Private Beta), the intelligence layer for shipping on Vercel. Built on eve and the Agent Stack, it monitors your production deployments, autonomously investigates alerts and anomalies, and opens fixes in PRs for you to review and approve. Vercel Agent's first-of-its-kind permissions model combines plan mode with granting permissions, making it safe to use for both developers and the enterprise. Rather than asking you to approve actions one-at-a-time, Vercel Agent plans what permissions it will require to complete a task and then asks you to approve them in a single, coherent step. It runs as its own identity, is read-only by default, and asks for narrow, temporary permission before it touches production. Ship 2026 in London Ship week London Our first Ship outside the U.S. ran five days of events leading into the keynote, and an ice cream truck spent the week working its way across the city. Built in London hackathon Two hundred builders shipped agents on Codex and Vercel in a hackathon with OpenAI. Three projects stood out. Stella hunts down unclaimed grants for London SMBs, Oscar is a co-pilot that sharpens your prompts before you send them to a model, and Phone Jail blocks distractions and roasts you when you reach for your phone anyway. Media, Founder, VC, and CTO dinners Reporters traded story ideas over a media dinner. Twelve founders talked through the future of AI in EMEA at a VC dinner. And a dozen CTOs from teams including Marks & Spencer and Currys went off the record on what it takes to build and scale agents in the enterprise. Day Zero builder night Day Zero, the day before the keynote, turned into a 400-person builder night. Enterprise teams Mentimeter, Okta, and MongoDB joined Vercel in a packed room alongside partners DeepMind, ElevenLabs, and Cursor. AI Social Club A 160-deep waitlist formed for Malte's talk A New Stack for a New Era of Software , followed by Guillermo and Deliveroo's Will Shu's chat on building the agentic enterprise. Ship day sessions André Balleyguier from Anthropic showed Claude Managed Agents on Vercel, where Anthropic hosts the agent loop while every command the agent runs executes inside a Vercel Sandbox you own, keeping its filesystem, processes, and network egress in your environment. Tomas Jansson from Currys/Elkjøp showed how his team evolved a Nordic retailer's ecommerce stack from storefronts toward shopping agents in three phases, anchored by a Next.js migration that cut time to first byte by 40%. The end state is one where customer intent replaces navigation. Matan Kushner from Vercel broke down how Vertex, Vercel's support agent, now automates 91% of support tickets and saves 5,000 engineer-hours a month without degrading as its context grows. Jas Sagoo and Sam Bellen from Auth0 made the case that getting an agent into production depends more on identity than on model quality. They demoed four standards-based identity patterns on the Vercel AI SDK, Token Vault, CIBA approvals, agents as first-class principals, and on-behalf-of delegation, so every action is scoped and traces back to a human decision instead of a shared API key. Abhi Sivasailam from Vercel went deep into d0, Vercel's internal data agent built on eve, which runs analyses in a sandbox and now gets 45% of its questions from other agents, rather than people. Romain Huet from OpenAI showed developers how to ship faster by delegating whole tasks to Codex Cloud Agents on Vercel, and made the case that as agents become users of your product, you design for agent experience with scoped API keys, markdown docs, and plugins. Michał Pierzchała from Callstack demoed a QA agent that runs mobile apps on real devices, explores user flows on its own, and posts screenshots, recordings, and logs to pull requests on every PR. Alex Holt from ElevenLabs paired the ElevenLabs Speech Engine with the AI SDK to build a voice agent that can reply in under a second, take interruptions mid-sentence, and switch language mid-conversation. Malavika Balachandran Tadeusz from Vercel showed the mechanics of how software can ship itself, extending the agent loop past development into testing, observability, and experimentation with primitives like Vercel Flags and Skills. Panel: Agents in production Jeanne Grosser, COO of Vercel, moderated a panel on taking agentic workloads from prototype to production with some of the EU's top CTOs and AI leaders from frontier labs. A few highlights: Arthur Viegers (Cursor): Autonomy should track risk, and the better an agent can assess the risk of a change, the more you can let it run on its own. Shopify and Amplitude already auto-review and merge 60-70% of low-risk PRs with no developer time, while a two-line change to authentication still goes to a human. André Balleyguier (Anthropic) : To decide what an agent can do on its own, judge each action by how reversible it is and how large its blast radius is, then contain it accordingly, for example inside a self-hosted sandbox. As you grant more autonomy, observability and evals become the things that keep it safe. Ryan den Rooijen (Currys): The predicted death of stores never arrived, and Currys leads its markets by betting on humans. The open question for agentic commerce is which shopping journeys customers want an agent to handle and which they still want a person for. Nicolas Le Pallec (AKQA): AI-native customer experience replaces navigation with intent. Reaching it takes three layers: a way to capture true customer intent, a brand brain that stores brand and product data for AI systems to retrieve, and generative UI that composes pages on the fly instead of serving static ones. Fireside chat with Harry Stebbings The day ended with a fireside chat between Guillermo and Harry Stebbings from 20VC. Below are excerpts from the lightening round at the end of the discussion. Guillermo Rauch: What are the attributes of a founder you want to back? Harry Stebbings: The profile has changed completely. It used to be a sales-led CEO who could fundraise and grow customers, where personality and sales carried the company. Now I want an engineering- and product-led founder. Guillermo Rauch: Can you teach someone to become a voice for their industry? Harry Stebbings: You can, but it's hard. You have to do it for six months straight. It's a muscle you build, and you have to commit to it every day and every hour. Guillermo Rauch: When anyone can produce content and software, how do you stand out? Harry Stebbings: You come up with a new format, a new intro, a new way to tell the story and shape the work. The content itself has shifted too. We used to do shows about leadership and hiring, and nobody cares about that anymore. What lands now is a founder and AI. Those are the two things. Ship 2026 in Berlin The Berlin event opened at the Old Mint, “Alte Münze”, where coins were once hammered by hand, before machine automation took over. It is also where the JavaScript logo was born, and where Guillermo Rauch (CEO) met Malte Ubl (CTO) for the first time at JSConf EU. Software is moving the same way, from hand to machine, and Vercel is paving the way for building in the agentic era. Over 500 people gathered from across Germany to do just that at Ship 2026 in Berlin. Ship day sessions Suyog Rao announced AI SDK 7 . The AI SDK is now downloaded over 16 million times a week. Version 7 turns it into a toolkit for building and running agents that reason, call tools, run across many turns, and work across files and sandboxes, all behind one provider-agnostic interface with no lock-in. Philip Miseldine from SAP showed how the company rebuilt its design system to be composable, so people and agents assemble interfaces from the same parts, with v0 running across its build, deliver, and decide stages. Building with AI SDK 7 brought three speakers on stage. Lars Grammel , the primary engineer behind the update, went deep on the release, with the new harness layer and generation beyond text as the headline additions. Carsten Høyer (AKQA) demoed the Starbucks ChatGPT app as a \"generative store\" that composes branded results from Starbucks' own products and visual identity, flipping the funnel so customers pull the brand into their conversation instead of visiting its site. Stephen Batifol (Black Forest Labs) showed where the Flux image models fit in an agentic stack: sub-second generation and editing today, heading toward real-time generation and world models. Arthur Viegers from Cursor showed how coding agents move from autocomplete to working across an entire codebase on their own. Panel: CTOs on AI and growth Chris Williams (Head of Forward Deployed Engineering @ Vercel) moderated a CTO panel on building and scaling as the cost of creation trends toward zero. A few highlights: Sven Rosemann (Flaconi): AI won't fix a broken business model, so the work is still operational excellence. He compares ecommerce to a decathlon, you win by being top-tier across every discipline at once. What's changing is discovery, which is moving into chat, so Flaconi is investing in the data foundation that makes its catalog retrievable by agents, betting that buying and checkout eventually happen there too. Tjaž Silovsek (Astra AI): venture funding is no longer a prerequisite. For many ideas you ship, find distribution, and iterate instead. Astra reached 10 million users and $25M ARR fully bootstrapped, with a small team kept fast by a stable foundation and agents given a lot of autonomy while kept as safe as possible. DACH Partner Award Vercel presented its first-ever DACH Partner Award to Valtech, for the exceptional impact and delivery, strategic thinking and team enablement it brought to clients. The presentation also thanked the event's sponsors: Auth0, Storyblok, Cursor, SAP, Accenture Song, Blazity, and JVM. Ship what's next Thanks for joining us for Ship 2026 in London. We will see you in Berlin, New York City, Sydney, and San Francisco. If you haven't signed up yet, there's still time to get a ticket . Read more",
       "url": "https://vercel.com/blog/vercel-ship-2026-recap",
       "canonicalUrl": "https://vercel.com/blog/vercel-ship-2026-recap",
       "publishedAt": "2026-06-26T16:00:00.000Z",
@@ -1356,7 +1484,7 @@
         "frontend",
         "typescript"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "Vercel Ship 2026 の総括",
       "summaryJa": "Vercel Ship 2026では、エージェント用のインフラを前提とした「エージェント搭載のフルスタックプラットフォーム」を提示し、世界各地でのイベントを通じてエージェントの開発・運用を加速する方針を示した。Agent Stackの各部品（AI SDK・AI Gateway・Workflow SDK・Sandbox・Chat SDK）を始め、Vercel Connect や eve などの新機能・ Framework が紹介され、エージェントの設計・実装・運用を包括的に支える仕組みが提示された。エンタープライズ向けにはセキュリティ・アイデンティティ・ガバナンスを強化した Vercel for Enterprise Apps and Agents や Vercel Services の発表もあり、企業環境での導入を見据えた拡張性が強調された。"
     },
@@ -1374,7 +1502,7 @@
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "人間経済指数レポート: ケイデンス - 人間",
       "summaryJa": "Claudeの利用は、対話中心から長期的なエージェント型タスクへと移行しており、データパイプラインの強化により時刻単位の利用パターンや出力種別をより細かく把握できるようになった。新設のプライバシー保護付きテレメトリと月次集計により、業務関連の利用が週末に増える傾向が見られ、税務時期には税関連の会話が急増する等の日次・時刻別パターンが明らかになった。出力物は出力種別（説明、文書、指針など）ごとに分類され、会話の93%で何らかのアーティファクトが生成されると分類されている。"
     },
@@ -1393,7 +1521,7 @@
         "html",
         "css"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "コーダーからフロントエンドエンジニアへ #0-2｜この365記事の歩き方｜全体マップと毎日続けるコツ",
       "summaryJa": "この回では、365記事を7つのStepに分けた全体マップと、長い学習を無理なく続けるための心構えを紹介します。特に土台となるJavaScriptに最大100記事を割く理由や、完璧主義を捨てて1日1記事を小さく積み重ねること、エラーを成長の機会と捉えること、AIを活用する際の注意点を詳述しています。次回は歴史①としてJavaScriptの誕生からReactの登場までをたどると案内しています。"
     },
@@ -1411,7 +1539,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "次世代モデル GPT-5.6 Sol をプレビュー",
       "summaryJa": "OpenAIが次世代モデルGPT-5.6 Solを初公開し、コーディング・科学・サイバーセキュリティ分野での能力強化と、最も高度な安全性スタックを組み合わせて提供する見込みである。"
     },
@@ -1429,7 +1557,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "エージェントが仕事をどのように変革しているか - OpenAI",
       "summaryJa": "新しいOpenAIの研究論文は、AIエージェントが仕事を変革し、より長く複雑なタスクを可能にするとともに、役割を横断した生産性を拡大していると示している。"
     },
@@ -1447,122 +1575,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
+      "scoredAt": "2026-06-30T14:39:16.728Z",
       "titleJa": "新しいアプリを含む最新の Google Finance アップグレード",
       "summaryJa": "新しいGoogle Financeでは、ポートフォリオを一元管理できるダッシュボードや資産配分の洞察など、投資情報をより分かりやすく提供する機能が追加され、既存のポートフォリオは自動で利用可能です。さらに、銘柄や市場の動向を把握するための研究ツールや、個別の指示に基づく市場速報を設定できる新しいインテリジェンス機能が開始されました。加えてAndroid向けの新アプリもリリースされ、ウォッチリストの確認やリアルタイムデータ、ニュース配信、AIによる研究機能、株価変動の理由を解説する「キーモーメント」などが利用できます。"
-    },
-    {
-      "id": "e829c189774c50c4f42ef5ca1e75c04887662105",
-      "sourceName": "CSS-Tricks",
-      "sourceUrl": "https://css-tricks.com/",
-      "sourceFeedUrl": "https://css-tricks.com/feed/",
-      "title": "translateZ()",
-      "summary": "The translateZ() function moves an element closer to or farther from the user. translateZ() originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
-      "url": "https://css-tricks.com/almanac/functions/t/translatez/",
-      "canonicalUrl": "https://css-tricks.com/almanac/functions/t/translatez",
-      "publishedAt": "2026-06-25T13:18:56.000Z",
-      "hashTitle": "151a39b4a4cc07d0dc44ab65acee21ba12d65a3d",
-      "tags": [
-        "css"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "翻訳Z()",
-      "summaryJa": "CSSの translateZ() は要素をZ軸方向に動かし、前方へ移動すると見かけ上大きく見えるが、実際には距離が変わるだけでサイズは変化しない。これを機能させるには perspective または perspective() を適用する必要があり、3Dの親要素には transform-style: preserve-3d を設定する。 perspective と perspective() はどちらも投影を定義するが、perspective は親要素に、perspective() は個別の要素に適用でき、前者は全体に、後者は単一要素に対して宣言順序の点で注意が必要である。"
-    },
-    {
-      "id": "a414e121aaaeed7ca2a296ebc88e0369df3f3125",
-      "sourceName": "CSS-Tricks",
-      "sourceUrl": "https://css-tricks.com/",
-      "sourceFeedUrl": "https://css-tricks.com/feed/",
-      "title": "translateY()",
-      "summary": "The translateY() function shifts an element vertically by the specified amount. translateY() originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
-      "url": "https://css-tricks.com/almanac/functions/t/translatey/",
-      "canonicalUrl": "https://css-tricks.com/almanac/functions/t/translatey",
-      "publishedAt": "2026-06-25T13:17:56.000Z",
-      "hashTitle": "8b0722cf33401d1165ae73ab979de43d05aa918f",
-      "tags": [
-        "css"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "翻訳Y()",
-      "summaryJa": "translateY() は要素を縦方向に指定分だけ移動させる CSS の関数で、正の値で下に、負の値で上にずらす。 transform プロパティの一部として使用され、文書のレイアウトには影響せず、視覚的な移動のみを行う。 例として、初期状態で下に50pxずらして不透明度を0にし、アクティブになると元の位置へ移動させるなどの使い方が挙げられ、ホバー時の小さな上げ動作にも利用される。"
-    },
-    {
-      "id": "614a1fcba9ab28c78bac312cb6637a53657b8dcc",
-      "sourceName": "CSS-Tricks",
-      "sourceUrl": "https://css-tricks.com/",
-      "sourceFeedUrl": "https://css-tricks.com/feed/",
-      "title": "translateX()",
-      "summary": "The translateX() function shifts an element horizontally by the specified amount. translateX() originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
-      "url": "https://css-tricks.com/almanac/functions/t/translatex/",
-      "canonicalUrl": "https://css-tricks.com/almanac/functions/t/translatex",
-      "publishedAt": "2026-06-25T13:16:01.000Z",
-      "hashTitle": "837ba673e305d15d7e30ca8c6b345eb8b0c8d4ee",
-      "tags": [
-        "css"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "翻訳X()",
-      "summaryJa": "translateX() は指定した量だけ要素を水平方向に移動する CSS の関数で、正の値は右へ、負の値は左へ動かす。<length> または <percentage> を引数に取り、要素自体のレイアウトには影響を与えず、視覚的に移動させるのみで周囲の要素の配置を変えない。 hover などの疑似クラスと組み合わせる際は、親要素に hover を適用し、子要素の変形を別々に分離すると安定する。"
-    },
-    {
-      "id": "e2b4914f6ee94b5dd59d69544ce97f500a28d00a",
-      "sourceName": "CSS-Tricks",
-      "sourceUrl": "https://css-tricks.com/",
-      "sourceFeedUrl": "https://css-tricks.com/feed/",
-      "title": "translate()",
-      "summary": "The CSS translate() function shifts an element from its default position on a 2-dimensional plane translate() originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
-      "url": "https://css-tricks.com/almanac/functions/t/translate/",
-      "canonicalUrl": "https://css-tricks.com/almanac/functions/t/translate",
-      "publishedAt": "2026-06-25T13:15:05.000Z",
-      "hashTitle": "ef35f2fa750aebb1309d55e3dc4ca82837694bb7",
-      "tags": [
-        "css"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "翻訳する（）",
-      "summaryJa": "CSSの translate() は、要素を水平方向・垂直方向、またはその両方に移動させる関数で、length か percentage の値を2つまで取ります。単独の場合は tx、二つの場合は tx と ty が指定され、要素は視覚的に移動しますが文書のレイアウトには影響を与えません。ホバーなどの状態には注意が必要で、親要素に: hover を適用して翻訳させると安定します。"
-    },
-    {
-      "id": "2bfee0a12eb4d526c3008236e024184b1335a659",
-      "sourceName": "Vercel Blog",
-      "sourceUrl": "https://vercel.com/blog",
-      "sourceFeedUrl": "https://vercel.com/blog/rss.xml",
-      "title": "AI SDK 7",
-      "summary": "AI SDK, with over 16 million weekly downloads, is the TypeScript SDK for building AI applications, features, frameworks, and agents across any model provider. It's the same layer eve , Vercel's open-source agent framework, is built on. AI SDK 7 adds production depth for agent work across five areas: Develop agents with reasoning control, tool and runtime context, provider files and skills support, MCP Apps, and a terminal UI. Run agents with tool approvals, durability ( WorkflowAgent ), timeouts, and sandbox support. Integrate any agent harness, such as Codex, Claude Code, Deep Agents, OpenCode, or Pi. Observe agents with telemetry, Node.js tracing channel, lifecycle events, and performance statistics. Go beyond text agents with provider-agnostic real-time voice support and video generation. Develop agents Building well-behaved agents requires fine-grained control over model reasoning, tool context, and file handling. Reasoning control Most frontier models support configurable reasoning, but every provider API exposes it differently. AI SDK 7 standardizes this with a reasoning option for generateText and streamText . It maps to provider-native reasoning settings, letting you control reasoning effort in a single line. You can also still fall back to provider options when you need more detailed provider-specific reasoning configuration. Learn more in the reasoning documentation . Tool context Tools are increasingly developed independently of specific agents or applications. For example, third-party companies offer tools that enable agents to use their APIs. Therefore, tools require additional inputs that are not generated by LLMs, such as API keys or configuration settings. AI SDK 7 adds a fully typed tool context that can be specified for each tool via a schema. The context is limited to the tool to prevent 3rd-party tools from accessing context they do not need. Learn more about Tool Context Runtime context For more complex agentic loops, you often need variables that you can access and modify in prepareStep to adjust prompts, model selection, and more. AI SDK 7 introduces a typed runtime context available during step preparation and tool approval functions, with optional telemetry support. This enables you to encapsulate more logic in ToolLoopAgent and share those agents with that internal logic. Learn more about Runtime Context . Provider file uploads Many agent workflows require handling large inputs, such as PDFs, images, datasets, or other artifacts. Sending those files inline is slow and wasteful, especially for stateless inference, where they get sent over and over again. AI SDK 7 adds a top-level uploadFile API that lets you upload a file once and then pass a lightweight reference into subsequent model calls. This avoids re-uploading the same bytes repeatedly, making inference faster and saving bandwidth during repeated or multi-step runs. uploadFile can be used with any providers that offer a file uploading endpoint. The function returns a provider reference object that is portable across providers. Learn more about Provider File Uploads Provider skill uploads Sending skills inline on every request to provider-managed container environments has the same overhead problem as sending files inline. AI SDK 7 adds a top-level uploadSkill API that lets you upload a skill once and then use a reference to it in subsequent inference calls. Similar to uploadFile , the function returns a provider reference object. Learn more about Provider Skill Uploads . MCP Apps MCP has become a common way to connect agents to tools and resources. But not every tool should be model-visible, and some MCP servers need to expose specialized UI alongside their tools. AI SDK 7 adds support for MCP Apps. MCP servers can now separate model-visible tools from app-only tools, preserve app metadata, and render app UIs inside sandboxed iframes. A JSON-RPC bridge connects tools, resources, and display interactions. This lets you build richer agent experiences where the model can use the tools it needs, while the user sees an app-specific interface for review, configuration, or interaction. Start building your first MCP App with AI SDK today. TUI When developing agents, you need to be able to quickly test them without writing a full app. AI SDK 7 adds a terminal UI (TUI) package that lets you run agents with just a few lines of code: The TUI is interactive, supports reasoning and tools, and renders markdown as formatted text. Learn more about creating your own terminal agent . Run agents As agents become more autonomous and longer running, the need for approvals, durability, sandboxing, and robustness increases. Tool approvals AI SDK 7 supports agent-level tool approvals that can be automatic or involve a human in the loop, with these approval types: Simple user-approval for particular tools. Tool approval function for a particular tool that can auto-approve, auto-deny, or forward to user approval. Generic catch-all tool approval functions. Tool approvals are defined on ToolLoopAgent , generateText , and streamText , because the usage scenario of a particular tool drives the need for approvals. For higher-risk workflows, AI SDK 7 introduces opt-in HMAC-signed tool approvals to prevent forged approvals. The SDK also hardens replay behavior by revalidating tool inputs and policies before continuing execution. See how tool approvals work . WorkflowAgent (Durability) When an agent run spans multiple steps or waits for a human approval, a process restart or deployment in the middle of that run means starting over. AI SDK 7 introduces @ai-sdk/workflow and WorkflowAgent for durable, resumable agent execution that survives process restarts, deploys, interruptions, and delayed approvals. WorkflowAgent supports workflow-based streaming, tools, approvals, callbacks, prepareCall , and provider model serialization across workflow step boundaries. It also supports typed runtime context for shared agent state and stable telemetry. Callbacks now include richer execution data such as step numbers, previous results, duration, and success or failure information. Invalid tool calls are preserved without executing invalid tools, and tool toModelOutput conversion can preserve raw outputs for UI and callbacks. Learn how to build an agent with WorkflowAgent . Timeouts Agents can stall in more ways than a simple request can: a provider can open a stream and stop sending chunks, a tool can hang, or a multi-step run can exceed its total budget. AI SDK 7 adds first-class timeout configuration across text generation and agent APIs, including total, per-step, per-chunk, and per-tool limits. Timeout aborts use TimeoutError , and abort reasons propagate through stream and UI protocols. Learn more about timeouts . Sandbox support Agents that run shell commands, read and write files, or execute generated code need a consistent execution environment, but the underlying sandbox often changes across local dev, CI, and production. AI SDK 7 adds a first-class SandboxSession abstraction for portable command execution in tools and agents. Tools can be developed independently of any particular sandbox, and you can use any sandbox-aware tool with any sandbox provider. Sandboxed environments, such as Vercel Sandbox , are ideal for this purpose. Integrate any agent harness Agent runtimes are moving beyond a single application server. Teams want to run the same agent logic inside coding environments, hosted sandboxes, local sessions, and third-party harnesses. HarnessAgent AI SDK 7 introduces experimental harness abstractions and HarnessAgent : one API to run fully configured, established agent harnesses such as Claude Code, Codex, and Pi. Harnesses are configurable with a sandbox to operate in, custom instructions, skills, and tools. Run established harnesses through a consistent interface, configure each one independently, and swap one out without changing your integration layer. Under the hood, the abstraction consists of a v1 adapter spec, bridge support, and expanded sandbox session primitives for creating and resuming sessions. Harness sessions can be parked and resumed, and even individual turns can be interrupted and resumed mid-flight. HarnessAgent implements AI SDK's Agent interface, so its generate and stream return values are fully compatible with existing AI SDK integrations, and useChat() and the new TUI work without any additional wiring. Learn more about AI SDK Harnesses . Observe agents Understanding how your agents behave in production is challenging. AI SDK 7 makes observability a first-class part of building agents. Telemetry AI SDK 7 revamps telemetry around a single, extensible integration system. Instead of wiring lifecycle callbacks into every generateText or streamText call, register telemetry once at application startup: The redesign includes: Dedicated telemetry interfaces for 3rd-party provider integration Global coverage of all AI SDK functions with a single registration Optional OpenTelemetry integration using the latest GenAI semantic conventions Node.js tracing channel support Observability integrations: Datadog, Langfuse, Braintrust, Raindrop, Sentry, Laminar, Langsmith. Traces now capture the full shape of an AI operation, including the root generation, each model call, individual steps, tool executions, embeddings, reranking, usage, errors, and selected runtime or tool context. You can find more details in the AI SDK Telemetry documentation . Node.js tracing channel AI SDK 7 adds support for Node.js tracing channels via node:diagnostics_channel . The SDK emits structured telemetry events on the ai:telemetry channel for generateText , streamText , model calls, tool executions, embeddings, and reranking. An observability provider can subscribe once via its instrumentation package and automatically convert AI SDK activity into traces, preserving async context across streaming responses and tool calls. You can learn more in the tracing channel documentation . Performance statistics AI SDK 7 adds per-step performance statistics for model output, streaming behavior, and tool execution. You can answer questions like: How long did it take the model to start responding? How fast did tokens arrive? Which tool took the most time? Learn more about performance statistics . Lifecycle events Production agents need lifecycle hooks because recording state, billing, and debugging all depend on knowing exactly when runs, steps, and tools start and finish. AI SDK 7 makes callbacks fire consistently across model calls, agents, tools, and other functions, so you can observe when each started, which model ran, how many tokens it used, and how it finished. You can find more details in the Lifecycle Callbacks documentation . Provider-agnostic realtime support Realtime model APIs are powerful, but each provider exposes sessions, audio, tools, and browser authentication differently. AI SDK 7 adds experimental provider-agnostic realtime support for direct browser WebSocket sessions. The SDK supports server-created ephemeral tokens, provider implementations for OpenAI, Google, and xAI, and a React realtime hook that returns UIMessage[] . Realtime sessions support audio transcription and client-driven tool calling, so you can build voice agents, collaborative copilots, and low-latency interactive interfaces without binding your UI to one provider's event format. AI Gateway also supports normalized realtime sessions through gateway.experimental_realtime() , including WebSocket subprotocol auth, model query selection, and validated provider options. Learn more about realtime . Video generation AI applications are expanding beyond text and images. AI SDK 7 introduces experimental generateVideo support with provider implementations for fal, Google AI Studio, Google Vertex, and Replicate. Video generation in AI SDK 7 uses video-specific model resolution, supports string-based model lookup through the default provider, and includes safer bounded download handling with configurable size limits and abort support. Learn more about generating video . Getting started Install AI SDK 7 with one command. Get started with AI SDK 7 Check out the full changelog Migrate to v7 Join the community Contributors AI SDK 7 is the result of the combined work of our core team at Vercel (Gregor, Lars, Felix, Aayush, Josh, Nico) and our amazing community of contributors: 0xr3ngar , 31Carlton7 , A-Vamshi , Abdulwadood-zawity , abhicris , adithya-tako , AhmadYasser1 , ahmedrowaihi , allenzhou101 , anaclumos , arnaugomez , auscaster , AVtheking , B-Step62 , bb220 , ben-vargas , benyebai , bittere , blurrah , bolaabanjo , boylec , BrianHung , BrianP8701 , chenxin-yan , christian-bromann , Christian-Sidak , cipher416 , CloudFaye , codewarnab , codicecustode , codylittle , cristiandrei1234 , csidak , ctate , cyphercodes , defrex , dflynn15 , dinmukhamedm , dnukumamras , DongSeonYoo , dukex , edawerd , EdwardIrby , edwardwc , ellis-driscoll , embedder-dev , etairl , EurFelux , eyueldk , fahe1em1 , Falven , fran3cc , gdborton , genmin , geraint0923 , Ghitahouir , GidianB , grant0417 , gsdv , guillemwilly , hank9999 , harpreetarora , haydenbleasel , he-yufeng , heiwen , hkd987 , hntrl , http-samc , i5d6 , ismaelrumzan , Jaaneek , jaderiverstokes , jakobhoeg , Jaksenc , jarod , jaydeep-pipaliya , jeremyphilemon , jerilynzheng , jerome-benoit , jferrettiboke , jlsandri , JoanLaRosa , joaopedroassad , JohnnyHBon , josh-williams , jovanwongzixi , JulesGuesnon , Kage18 , kagura-agent , kairosci , kaizen403 , karthik-idikuda , kimchnn , kkawamu1 , kkdawkins , leog25 , leothorp , liaoliaojun , lihuimingxs , Mahendradeokar , MarcACard , marcusschiesser , markmcd , max-programming , MaxwellCalkin , mclenhard , MehediH , Melkeydev , michael-han-dev , michaelcummings12 , Mmartinrusso , monadoid , montyanderson , more-by-more , mrpaaradox , msullivan , muniter , muraliavarma , murataslan1 , mvanhorn , myprototypewhat , Nezz , nicoloboschi , nielskaspers , Nutlope , nwalters512 , ohansFavour , ousugo , pablof7z , Pash10g , patrikdevlin , paulelliotco , pavel-y-ivanov , PierreLeGuen , posva , Pranav-Wadhwa , privatenumber , quuu , R-Taneja , raphaeleidus , reynkonig , Ricardo-M-L , richardsolomou , robechun , rubdos , samjbobb , SamyPesse , seojcarlos , shaper , shrey150 , shubham-021 , shujanislam , ShyamSathish005 , sleitor , Subr1ata , syeddhasnainn , sylviezhang37 , szymonrybczak , t-mdo , techwraith , theQuert , thestonechat , timvucina-soniox , tomdale , tresorama , tsuzaki430 , turisanapo , Und3rf10w , undo76 , ushiromiya-lion , visyat , wong2 , Xiang-CH , xlianghang , zapagenrevdale , Zawwarsami16 , zirkelc , zxuhan . Your feedback, bug reports, and pull requests on GitHub have been instrumental in shaping this release. We're excited to see what you'll build with these new capabilities! Read more",
-      "url": "https://vercel.com/blog/ai-sdk-7",
-      "canonicalUrl": "https://vercel.com/blog/ai-sdk-7",
-      "publishedAt": "2026-06-25T13:00:00.000Z",
-      "hashTitle": "dc6272e7924c2a62783bdacdc8c196216c0deb9f",
-      "tags": [
-        "OpenAI",
-        "Google",
-        "claude",
-        "codex",
-        "typescript"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "AI SDK 7",
-      "summaryJa": "AI SDK 7は、推論制御・ツール文脈・ファイル・スキル・MCPアプリ、TUIなど五つの領域でエージェント作業の生産性と耐久性を強化する。推論の設定を一行で標準化し、ツールごとの文脈を型付きで指定、ファイルやスキルのアップロード、MCPアプリのUI統合、TUI実行を追加したほか、ツール承認や堅牢性の向上も図っている。既存のAI SDK 6からの移行は自動変換やスキル移行機能で容易になっている。"
-    },
-    {
-      "id": "7db71a2561c755aed9e181f11b19eff394bb7c53",
-      "sourceName": "Zenn Frontend Topic",
-      "sourceUrl": "https://zenn.dev/topics/frontend",
-      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
-      "title": "コーダーからフロントエンドエンジニアへ #0-1｜序章：これは「アプリ開発者になるまでのストーリー」",
-      "summary": "はじめに 今日から、新しい連載を始めます。 テーマは、「HTML/CSS は書けるけれど、その先に進めない」 という方が、React / Next.js で動くUIやアプリを作れるフロントエンドエンジニアになるまでの道のりです。 この連載が想定している「あなた」は、こんな人です。 HTML と CSS を使って、Webページの見た目はひととおり作れる でも、「ボタンを押したら表示が変わる」ような 動き のあるものになると、急に手が止まる React や Next.js という言葉は聞くけれど、どこから手をつければいいか分からない もしひとつでも当てはまったら、この連載はまさにあな...",
-      "url": "https://zenn.dev/koenjineer/articles/b30101f1a8d690",
-      "canonicalUrl": "https://zenn.dev/koenjineer/articles/b30101f1a8d690",
-      "publishedAt": "2026-06-25T12:58:14.000Z",
-      "hashTitle": "24fdd260fbb6c84ad5ed17746f6aa80e6d0e4b01",
-      "tags": [
-        "html",
-        "css"
-      ],
-      "scoredAt": "2026-06-30T09:57:19.068Z",
-      "titleJa": "コーダーからフロントエンドエンジニアへ #0-1｜序章：これは「アプリ開発者になるまでのストーリー」",
-      "summaryJa": "HTMLとCSSでWebページの見た目を作れる現状を出発点とし、次のステップとして動きを持つ UI を作るためにJavaScriptを基礎から固め、最終的に React / Next.js で動くフロントエンドエンジニアを目指す道のりを解説します。本文は、JSを用いた動作の例と、JSがReactの土台になること、AI時代でもコードを読めて直せる力の重要性を説いています。連載はJS基礎から段階的に進め、Reactへと橋渡しする形で進行します。"
     }
   ]
 }
