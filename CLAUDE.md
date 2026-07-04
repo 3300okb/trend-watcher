@@ -41,10 +41,13 @@ npm run sync:config  # config/keywords.json → public/data/runtime-config.json
 
 ---
 
-## スラッシュコマンド
+## スキル（手続き型ワークフロー）
 
-- `/fetch` — トレンドデータ収集の動作確認（ローカル実行）
-- `/build` — sync:config → build:css → build を順に実行
+呼び出し時のみ本体がロードされる。`/名前` で明示実行も可。
+
+- `/build` — sync:config → build:css → build を順に実行し `out/` を検証（`.claude/skills/build/`）
+- `/fetch` — トレンドデータ収集をローカル実行して動作確認（外部 API を叩くため手動実行のみ・`.claude/skills/fetch/`）
+- `/code-review` の repo 固有チェックリスト（`.claude/skills/code-review/`）
 
 ---
 
@@ -78,6 +81,15 @@ npm run sync:config  # config/keywords.json → public/data/runtime-config.json
 
 ---
 
+## 制御手段の所在
+
+- 手続き（ビルド・収集・レビュー）: `.claude/skills/`
+- パス限定の規約（`scripts/**/*.mjs`）: `.claude/rules/`
+- 機械的な強制（機密読み取り拒否・危険コマンドのブロック）: `.claude/settings.json`（permissions / PreToolUse hook）+ `.claude/hooks/guard.sh`
+- 詳細ドキュメント（事実）: `.claude/docs/`
+
+---
+
 ## 作業前チェックリスト
 
 - [ ] 影響範囲を確認したか（researcher）
@@ -96,4 +108,5 @@ npm run sync:config  # config/keywords.json → public/data/runtime-config.json
 - `require()` を使わない（ESM プロジェクト）
 - レビューなしで `main` に直接プッシュしない
 
-> 機械的な強制は `.claude/hooks/guard.sh` で実施。
+> 散文の禁止は確率的にしか守られない。機械的な強制は `.claude/settings.json`（permissions の `.env` 読み取り deny）と
+> `.claude/hooks/guard.sh`（`public/data/*.json` 直書き・`out/` の add・`.env` の stage をブロック）で決定論的に行う。
