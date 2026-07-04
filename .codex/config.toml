@@ -1,0 +1,14 @@
+# trend-watcher プロジェクト設定
+# 注意: この設定・hooks・rules は、ユーザーがこのプロジェクトを trust したときのみロードされる。
+# （未 trust の間は無視される。trust 手順はセットアップ完了報告および README を参照）
+#
+# フォーマッタ / lint / test は未導入のため、PostToolUse の自動整形 hook は置いていない。
+# 決定論的なガードは PreToolUse の guard.sh と .codex/rules/project.rules が担う。
+
+[[hooks.PreToolUse]]
+matcher = "Bash"
+
+[[hooks.PreToolUse.hooks]]
+type = "command"
+command = 'bash "$(git rev-parse --show-toplevel)/.codex/hooks/guard.sh"'
+statusMessage = "コマンドを検査中"

@@ -1,0 +1,37 @@
+# trend-watcher execpolicy rules
+# 安全な検証・読み取りコマンドを承認なしで許可し、生成物の破壊的削除を禁止する。
+# 表記ゆれ（rm -fr / rm -r -f）や redirect による直書きは .codex/hooks/guard.sh が補完する。
+
+# --- 安全な検証コマンド（承認なしで許可） ---
+prefix_rule(
+    pattern = ["npm", "run", ["build", "build:css", "sync:config"]],
+    decision = "allow",
+    match = ["npm run build", "npm run build:css", "npm run sync:config"],
+    not_match = ["npm run job:fetch"],
+)
+
+# --- 安全な読み取り系 git（承認なしで許可） ---
+prefix_rule(
+    pattern = ["git", ["status", "diff", "log", "show"]],
+    decision = "allow",
+    match = ["git status", "git diff --stat", "git log --oneline"],
+    not_match = ["git push", "git add out/"],
+)
+
+# --- 生成物ディレクトリの破壊的削除を禁止 ---
+prefix_rule(
+    pattern = ["rm", "-rf", "out"],
+    decision = "forbidden",
+    justification = "out/ はビルドスクリプト（npm run build）が管理する生成物。手で消さない。",
+    match = ["rm -rf out"],
+    not_match = ["rm -rf /tmp/scratch"],
+)
+
+# --- バッチ管理データの破壊的削除を禁止 ---
+prefix_rule(
+    pattern = ["rm", "-rf", "public/data"],
+    decision = "forbidden",
+    justification = "public/data/ は GitHub Actions バッチが管理する。手で消さない。",
+    match = ["rm -rf public/data"],
+    not_match = ["rm -rf /tmp/scratch"],
+)
