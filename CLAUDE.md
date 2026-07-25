@@ -5,39 +5,12 @@
 **Trend Watcher** — 静的配信 + バッチ更新のトレンド集約アプリ。
 GitHub Actions で RSS 収集・Google 翻訳・GitHub Pages デプロイを 3 時間ごとに実行する。
 
-**技術スタック:**
-- Node.js v20 (ESM / `.mjs`) — バッチスクリプト
-- TailwindCSS v3 (CLI ビルド) — フロントエンドスタイル
-- バニラ JavaScript — フロントエンドロジック
-- GitHub Actions — CI/CD・定期バッチ
-- GitHub Pages — 静的サイト配信
-- Python3 — ローカル開発サーバー（`http.server`）
-
 ---
 
 ## エージェント構成
 
-| エージェント   | 役割       | 主な起動条件                       |
-| -------------- | ---------- | ---------------------------------- |
-| **researcher** | 調査・解析 | 情報不足・原因不明・影響範囲の把握 |
-| **planner**    | 設計・計画 | 実装方針の決定・ステップ分解       |
-| **coder**      | 実装       | コードの作成・修正                 |
-| **reviewer**   | レビュー   | 実装完了後の品質確認               |
-
 標準フロー: researcher → planner → coder → reviewer
 単純な 1 行修正は researcher/planner を省略可。
-
----
-
-## クイックリファレンス
-
-```bash
-npm run dev          # ローカルサーバー http://localhost:8080
-npm run job:fetch    # RSS 取得 + 翻訳 + JSON 更新
-npm run build        # 静的サイトビルド（out/）
-npm run build:css    # CSS のみビルド
-npm run sync:config  # config/keywords.json → public/data/runtime-config.json
-```
 
 ---
 
@@ -48,21 +21,6 @@ npm run sync:config  # config/keywords.json → public/data/runtime-config.json
 - `/build` — sync:config → build:css → build を順に実行し `out/` を検証（`.claude/skills/build/`）
 - `/fetch` — トレンドデータ収集をローカル実行して動作確認（外部 API を叩くため手動実行のみ・`.claude/skills/fetch/`）
 - `/code-review` の repo 固有チェックリスト（`.claude/skills/code-review/`）
-
----
-
-## 重要ファイル
-
-| ファイル | 役割 |
-|---------|------|
-| `scripts/fetch-trends.mjs` | メインバッチ: RSS取得・翻訳・JSON 書き込み |
-| `scripts/lib/runtime-config.mjs` | キーワード・除外パターンの共通管理 |
-| `config/sources.json` | RSS フィードソース定義 |
-| `config/keywords.json` | `TREND_TOPICS` / `TREND_EXCLUDE_PATTERNS` 設定 |
-| `public/index.html` | フロントエンド HTML |
-| `public/assets/app.js` | フロントエンド JS |
-| `public/data/trends.json` | バッチ生成データ（GitHub Actions 管理） |
-| `.github/workflows/research-and-deploy.yml` | CI/CD パイプライン |
 
 ---
 
