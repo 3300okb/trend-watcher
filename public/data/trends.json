@@ -1,7 +1,25 @@
 {
-  "generatedAt": "2026-08-23T06:56:27.516Z",
-  "total": 91,
+  "generatedAt": "2026-08-23T09:37:38.992Z",
+  "total": 39,
   "items": [
+    {
+      "id": "e3abcf753170d03930d3c2599a8f23ad7cf29aeb",
+      "sourceName": "CodeZine",
+      "sourceUrl": "https://codezine.jp/",
+      "sourceFeedUrl": "https://codezine.jp/rss/new/20/index.xml",
+      "title": "Amazon BedrockがOpenAIモデル向けクロスリージョン推論を拡張",
+      "summary": "",
+      "url": "https://codezine.jp/article/detail/29400",
+      "canonicalUrl": "https://codezine.jp/article/detail/29400",
+      "publishedAt": "2026-08-23T08:00:00.000Z",
+      "hashTitle": "76b697f29dfac7b6ce928fd4e5ab378097678c3f",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-08-23T09:37:38.992Z",
+      "titleJa": "Amazon BedrockがOpenAIモデル向けクロスリージョン推論を拡張",
+      "summaryJa": "Amazon BedrockがOpenAIモデル向けクロスリージョン推論を拡張した。具体的な説明はないが、クロスリージョン推論の機能拡張を示唆している。"
+    },
     {
       "id": "5528b4db95bf3ee7df8208195e0bd71b9618e9c3",
       "sourceName": "ITmedia NEWS",
@@ -16,7 +34,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "中国の動画サイト「bilibili」にグローバル版アプリ 日本でも配信開始 まずはAndroidから",
       "summaryJa": "中国の動画共有サービス「bilibili」は8月19日、グローバル版アプリの提供を開始したと正式発表した。現時点ではAndroid版のみが日本のGoogle Playからダウンロード可能で、iOS版は近日提供予定という。グローバル版の特徴として、世界中の動画視聴や各国向けの最適化、本人確認書類の提出が不要な簡易サインアップを挙げ、今後もローカライズや機能追加を続けるとしている。新アイコンは地球儀マーク付きで、フィードバックは公式Discordサーバで受け付ける方針。対応国は順次拡大の予定。"
     },
@@ -35,45 +53,9 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Google ChatのGemini利用状況を管理者ダッシュボードで提供開始",
       "summaryJa": "Google Chatの利用状況を、管理者ダッシュボードで提供開始した。具体的な詳細は説明文に記載されていない。"
-    },
-    {
-      "id": "09c1db6ea377bd0168875a75f1f0e3911194f630",
-      "sourceName": "Zenn Frontend Topic",
-      "sourceUrl": "https://zenn.dev/topics/frontend",
-      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
-      "title": "Tailwind v4 で leading-* が勝つようになった — v3 では lg:text-6xl が行間を上書きしていた",
-      "summary": "Tailwind CSS を v3 から v4 へ移行したとき、マークアップを一行も変えていないのに、トップページの総高が 35px 伸びました。 原因は leading-* とレスポンシブな text-* を併記していた箇所です。この 2 つを併記したときの勝ち負けが v4 で逆になっていました。 症状 該当のマークアップはこれです。h1 に leading-tight と lg:text-6xl が同居しています。 …</h1...",
-      "url": "https://zenn.dev/ukintech/articles/tailwind-v4-leading-vs-responsive-text",
-      "canonicalUrl": "https://zenn.dev/ukintech/articles/tailwind-v4-leading-vs-responsive-text",
-      "publishedAt": "2026-08-23T01:48:22.000Z",
-      "hashTitle": "debda7b85a97b40f7326eb213d52b3f61942e58d",
-      "tags": [
-        "css"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Tailwind v4 で leading-* が勝つようになった — v3 では lg:text-6xl が行間を上書きしていた",
-      "summaryJa": "Tailwind v4 へ移行すると、leading-* とレスポンシブな text-* を同じ要素に併記している箇所で、leading-* が勝つ挙動になりました。実際には v4 で font-size ユーティリティが var(--tw-leading, …) を参照する設計に変わり、leading-* が優先されます。移行時は、leading-* と md/lg などの text-* が同居している箇所を洗い出し、意図を決めることが重要です。判定はクラス名ではなく実ブラウザの computed style で行い、必要に応じて leading-* をそのまま、または外す、あるいは明示的な値で書くなどの対応をします。"
-    },
-    {
-      "id": "89d04930caecadc90084157f5b53495e9a0d8614",
-      "sourceName": "Zenn Frontend Topic",
-      "sourceUrl": "https://zenn.dev/topics/frontend",
-      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
-      "title": "Excelとコピペで相互運用するために、TSVで踏んだ罠を全部書く",
-      "summary": "はじめに 業務系のWebアプリで一覧編集画面を作ると、ほぼ確実に「Excelからコピペしたい」という要望が出ます。 実装前は「クリップボードのテキストをタブと改行で split すればよい」と考えていましたが、実際に試すとセルの中身が単純な文字列のときしか動かないことがわかりました。 この記事では、React用スプレッドシートコンポーネント MasumeGrid の開発中に遭遇した問題と、その実装コードをまとめます。フレームワークに依存しない、クリップボードとテキスト処理の話です。 前提: Excelがクリップボードに載せているもの ExcelやGoogleスプレッドシートで範囲...",
-      "url": "https://zenn.dev/teraaa12/articles/5818424f15b8c1",
-      "canonicalUrl": "https://zenn.dev/teraaa12/articles/5818424f15b8c1",
-      "publishedAt": "2026-08-23T01:42:16.000Z",
-      "hashTitle": "d19e90c8288ab0830765ea39d7cd0d98235b6bdf",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Excelとコピペで相互運用するために、TSVで踏んだ罠を全部書く",
-      "summaryJa": "Excelからのコピペを想定し、TSVの貼り付けを正しく解析するための罠と対策を、5点の実装要件として整理している。セル内改行・タブ・引用符の扱い、セル先頭のみの引用開始ルール、末尾改行の除去、全角・和式表記の正規化と単一セルエラー時の挙動、そして複数セルへの貼り付けパターンの再現を順に解説しており、MasumeGridの実装例とコード場所も案内している。実装はReactのMasumeGridで、パース処理は状態管理しつつ1文字ずつ行う方法を採用している。"
     },
     {
       "id": "20f9586055832ff5eb642befb7b4e9c8efd7c789",
@@ -89,135 +71,9 @@
       "tags": [
         "vue"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "わかったようでわからない非同期処理の完全理解①",
       "summaryJa": "非同期処理は、データを取りに行く前と後で動作が変わる点を整理し、fetch() が返す Promise を await で待つ方法を解説しています。具体的には、 sword.json を読み込む流れを例に、待つ前はエラーになること、await を使って response.json() を安全に取得すること、そして取得後に画面表示を更新する流れを示しています。最後に、Vue 3 で ref にデータを格納し onMounted で読み込みを開始し、読み込み中と取得後の表示を分ける実装方法を紹介しています。"
-    },
-    {
-      "id": "3fb4ae1d14e3aad7a39a266d1ace5831816f9259",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Jim Cramer Wants You To Look At The Bigger Picture For Apple Inc. (NASDAQ:AAPL) - Yahoo Finance",
-      "summary": "Jim Cramer Wants You To Look At The Bigger Picture For Apple Inc. (NASDAQ:AAPL) &nbsp;&nbsp; Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-wants-look-bigger-002325692.html",
-      "canonicalUrl": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-wants-look-bigger-002325692.html",
-      "publishedAt": "2026-08-23T00:23:00.000Z",
-      "hashTitle": "8b174ac20631f7a2bf615f51a988f7ab45559e17",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Jim Cramer Wants You To Look At The Bigger Picture For Apple Inc. (NASDAQ:AAPL) - Yahoo Finance",
-      "summaryJa": "ジム・クレイマーは、Apple Inc.（NASDAQ:AAPL）について、株価の一時的な動向にとらわれず「より大きな視野」で見るべきだと示唆している。Yahoo Financeの情報を踏まえ、長期的なトレンドや全体像を考慮することを促している。"
-    },
-    {
-      "id": "d4637fa715690c193239cd426489bef8a07f2198",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Googleと英政府、AIで温暖化につながる飛行機雲を避けるプロジェクト「Operation Blue Skies」始動 北大西洋の空域全体で実証へ - Ledge.ai",
-      "summary": "Googleと英政府、AIで温暖化につながる飛行機雲を避けるプロジェクト「Operation Blue Skies」始動 北大西洋の空域全体で実証へ &nbsp;&nbsp; Ledge.ai",
-      "url": "https://ledge.ai/articles/google_operation_blue_skies_contrail_avoidance",
-      "canonicalUrl": "https://ledge.ai/articles/google_operation_blue_skies_contrail_avoidance",
-      "publishedAt": "2026-08-23T00:08:50.000Z",
-      "hashTitle": "9e230918815df35d4cd4ef4874d49988bd27527d",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Googleと英政府、AIで温暖化につながる飛行機雲を避けるプロジェクト「Operation Blue Skies」始動 北大西洋の空域全体で実証へ - Ledge.ai",
-      "summaryJa": "Googleと英政府が、AIを活用して温暖化に影響を与える飛行機雲を避けるプロジェクト「Operation Blue Skies」を始動し、北大西洋の空域全体での実証を目指すことを発表した。本文には実証の対象地域や具体的な成果は記されておらず、関連情報としてLedge.aiの紹介が含まれているのみで、その他の詳細は記載されていない。"
-    },
-    {
-      "id": "64abfd04fa9c402e83d8a530e0dd5fdf88fc7dd6",
-      "sourceName": "Zenn Frontend Topic",
-      "sourceUrl": "https://zenn.dev/topics/frontend",
-      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
-      "title": "ページ内アンカーの着地を整える — sticky ヘッダに隠れない・着いたことが分かる",
-      "summary": "こんにちは。小学生向けのニュースサイト、こどもニュースをつくっています。 このサイトには、日付ごとに複数の記事が並ぶページがあります。目次から記事へ飛べるようになっていて、そこで 2 つ困りました。 飛んだ先が、上部に固定したヘッダの下に隠れる どこに着いたのか分かりにくい どちらも CSS で解決できます。 ヘッダに隠れる問題 ページ内リンクで移動すると、対象の要素がビューポートの最上部に来ます。上部にヘッダを固定していると、その下に潜り込みます。 以前はスクロールの位置を JavaScript で補正していましたが、いまは CSS の指定があります。 export const...",
-      "url": "https://zenn.dev/kodomo_news/articles/11-anchor-landing",
-      "canonicalUrl": "https://zenn.dev/kodomo_news/articles/11-anchor-landing",
-      "publishedAt": "2026-08-22T23:08:00.000Z",
-      "hashTitle": "6266fd33d299b5c877677c5dc531aedd5891ccd7",
-      "tags": [
-        "css"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "ページ内アンカーの着地を整える — sticky ヘッダに隠れない・着いたことが分かる",
-      "summaryJa": "固定ヘッダ下にアンカーが隠れないように scroll-margin-top を使い、着地位置をヘッダの高さに連動させる。着地の判定は :target 疑似クラスで緑のリングを表示して示す。着地先は複数あるため共通の sx にまとめて各コンポーネントへ spread する。ページ内移動にはフラグメントを、記事へのリンクには別ページを使い分け、スムーススクロールは全体に掛けず、必要箇所にのみ適用する。"
-    },
-    {
-      "id": "c0eed9cff387af111ca67b64d2717e226635c3b1",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "OpenAI、「GPT-5.6 Sol」のAPI料金を値下げ 入力20％出力33％安く、11月21日まで（ITmedia NEWS） - Yahoo!ニュース",
-      "summary": "OpenAI、「GPT-5.6 Sol」のAPI料金を値下げ 入力20％出力33％安く、11月21日まで（ITmedia NEWS） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/31dc7ae009fc66b1a54a0fa31a24fe1d81c991bd",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/31dc7ae009fc66b1a54a0fa31a24fe1d81c991bd",
-      "publishedAt": "2026-08-22T22:38:30.000Z",
-      "hashTitle": "0225ebe1012e9acb9f15bdf724bb0ac97c1ab6b0",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "OpenAI、「GPT-5.6 Sol」のAPI料金を値下げ 入力20％出力33％安く、11月21日まで（ITmedia NEWS） - Yahoo!ニュース",
-      "summaryJa": "OpenAIはGPT-5.6 SolのAPI料金を期間限定で引き下げ、入力は20%低下の4ドル、出力は約33%低下の20ドルとした。適用は少なくとも11月21日までで、長短コンテキストや処理モードで料金が異なる。クレジット消費量の引き下げも順次適用予定で、ダッシュボードやUsage/Costs APIを通じた利用状況の確認機能も告知している。"
-    },
-    {
-      "id": "5661f2a1774fb50317fd769beced275730a8351c",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "OpenAIが最新モデルに対する強化学習を2週間中断／LLMCが約332億パラメーターの「LLM-jp-4 33B」を公開 - Yahoo!ニュース",
-      "summary": "OpenAIが最新モデルに対する強化学習を2週間中断／LLMCが約332億パラメーターの「LLM-jp-4 33B」を公開 &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/4b26037487ed5d90a6fd00722a873d389b12b665",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/4b26037487ed5d90a6fd00722a873d389b12b665",
-      "publishedAt": "2026-08-22T21:05:13.000Z",
-      "hashTitle": "b6e480505bbcde609ac9d7758d9017592745bf87",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "OpenAIが最新モデルに対する強化学習を2週間中断／LLMCが約332億パラメーターの「LLM-jp-4 33B」を公開 - Yahoo!ニュース",
-      "summaryJa": "OpenAIは最新モデルの強化学習を2週間停止し、安全対策を強化すると発表した。理由は、Hugging FaceのセキュリティインシデントとAstraのサイバー能力が「Critical」水準に達する可能性があるとの判断で、RLの実行を保留し、研究用クラスタでのワークロードを制限している。監視体制として、多段階の思考検証と活性化分類器を用いた内部検査を導入し、推論の約20%がオーバーヘッドとして加算される予定である。"
-    },
-    {
-      "id": "31084caa386675d20c2445e3f1c3a011bc7ef48b",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "AI検索時代のSEO、カギは第三者評価 Google公式ガイドでは触れず - 日本経済新聞",
-      "summary": "AI検索時代のSEO、カギは第三者評価 Google公式ガイドでは触れず &nbsp;&nbsp; 日本経済新聞",
-      "url": "https://www.nikkei.com/article/DGXZQOUC030HP0T00C26A8000000/",
-      "canonicalUrl": "https://www.nikkei.com/article/DGXZQOUC030HP0T00C26A8000000",
-      "publishedAt": "2026-08-22T17:00:00.000Z",
-      "hashTitle": "d9b48fb8e85301227aa184ce6c138e6fc165be70",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "AI検索時代のSEO、カギは第三者評価 Google公式ガイドでは触れず - 日本経済新聞",
-      "summaryJa": "Googleの公式ガイド（AIOガイド）は、AI検索機能向けにも従来のSEOのベストプラクティスが有効であり、価値ある独自コンテンツの作成を推奨していると説明している。一方、AI機能向けの特別な対策は不要とする見解を示している。本文は会員限定記事であり、詳しい内容は閲覧に制限がある。"
-    },
-    {
-      "id": "5bd91f1dac00456c9674b8d3106e24bdf9cce728",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Anthropicが8月末にもIPO申請書類公開へ、SpaceX越え過去最大規模の調達を計画（ビジネス＋IT） - Yahoo!ニュース",
-      "summary": "Anthropicが8月末にもIPO申請書類公開へ、SpaceX越え過去最大規模の調達を計画（ビジネス＋IT） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/e47f1ae660288f7e846e9d35a74d003255e40663",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/e47f1ae660288f7e846e9d35a74d003255e40663",
-      "publishedAt": "2026-08-22T08:40:06.000Z",
-      "hashTitle": "2733e47d12fa53cd59dd47484ae35bcfb2d9c549",
-      "tags": [
-        "Anthropic"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Anthropicが8月末にもIPO申請書類公開へ、SpaceX越え過去最大規模の調達を計画（ビジネス＋IT） - Yahoo!ニュース",
-      "summaryJa": "米国のAnthropicは2026年6月1日に新規株式公開に向けた上場申請書類の草案を非公開で提出し、早ければ8月末に一般公開される見込み。資金調達額はSpaceXの過去最大規模と同等かそれを上回る水準を想定しており、主幹事にはモルガンスタンレー、ゴールドマンサックス、JPモルガンチェースが指名されている。2026年第2四半期の売上は115億ドル超、年換算売上高は650億ドルに達している一方、AIモデルの訓練・実行費用の増加で2025年の純損失は約420億ドルとなり、上場後も経営権の維持を図るため複数議決権株式の導入を進めている。"
     },
     {
       "id": "722d52f661dbc885ded4698e03d5ef967d0795a0",
@@ -233,45 +89,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Google Workspace、Allowlisted Domains APIを一般公開",
       "summaryJa": "Google WorkspaceがAllowlisted Domains APIを一般公開し、ドメイン許可リストの活用が可能になった。具体的な仕様は説明文に記載されていないため、公開情報のみを基に要約する。"
-    },
-    {
-      "id": "5f2053898907bbb1598092cd3fff23c6340fcbbc",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Anthropic Could Aim to Raise $100 Billion in Blockbuster I.P.O. - The New York Times",
-      "summary": "Anthropic Could Aim to Raise $100 Billion in Blockbuster I.P.O. &nbsp;&nbsp; The New York Times",
-      "url": "https://www.nytimes.com/2026/08/21/technology/anthropic-ipo-100-billion.html",
-      "canonicalUrl": "https://www.nytimes.com/2026/08/21/technology/anthropic-ipo-100-billion.html",
-      "publishedAt": "2026-08-22T00:24:21.000Z",
-      "hashTitle": "e438ef26c007257b054c9335ddf15fe5068f1229",
-      "tags": [
-        "Anthropic"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Anthropic Could Aim to Raise $100 Billion in Blockbuster I.P.O. - The New York Times",
-      "summaryJa": "Anthropicは、ニューヨーク・タイムズの報道によれば、ブロックバスター級の上場で1000億ドル規模の資金調達を目指す可能性がある。現時点の情報は説明文のみで、追加の詳細は提供されていない。"
-    },
-    {
-      "id": "45f68b1865d16093e76f55182f79ab8450acb349",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Anthropic IPO filing will show AI backlash as a risk factor, sources say - CNBC",
-      "summary": "Anthropic IPO filing will show AI backlash as a risk factor, sources say &nbsp;&nbsp; CNBC",
-      "url": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html",
-      "publishedAt": "2026-08-21T21:44:30.000Z",
-      "hashTitle": "5bae22d2a34aa9f01c7f5ad780cb0b6dfb744b4e",
-      "tags": [
-        "Anthropic"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "人間のIPO申請はAIの反発をリスク要因として示すだろうと関係者が語る - CNBC",
-      "summaryJa": "Anthropicは上場準備を進める中で、人工知能に対する世論の反発がデータセンター建設への反対意見としてIPOのリスク要因になると指摘されている。資本調達や競合対策、データセンター建設の遅延リスクについての質問が会見で CFOに投げられ、今後の評価額は約2兆ドルと見込まれるとの情報もある。データセンター建設への反対意見は世論調査でも高く、政治家や有権者の反発が企業戦略に影響を及ぼす可能性が伝えられている。"
     },
     {
       "id": "31820cf2de04eccb32dfaf21755baa92c2b8a51a",
@@ -288,27 +108,9 @@
         "claude",
         "gemini"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Ora が Vercel 上のすべての主要 AI エージェントをベンチマークする方法",
       "summaryJa": "Oraは主要なAIエージェントをVercel上で横断比較し、実際のサイト上での課題を特定するプラットフォームを提供している。16人の開発チームが前後端とエージェント実行環境を一元化し、クラウド上で複数のハーネスを独立したランタイムで走らせ、各ステップとコスト・待機時間を追跡する。現時点では、エージェントがサインアップや統合、支払いまで実行するウェブはまだ少なく、全ウェブの99%はエージェント対応が不十分とされる。"
-    },
-    {
-      "id": "78efa238477d93fd313a05445bf7e66a79ff0c51",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Walmart adding Apple Pay, other tap-to-pay options - Axios",
-      "summary": "Walmart adding Apple Pay, other tap-to-pay options &nbsp;&nbsp; Axios",
-      "url": "https://www.axios.com/2026/08/21/walmart-tap-apple-pay-options",
-      "canonicalUrl": "https://www.axios.com/2026/08/21/walmart-tap-apple-pay-options",
-      "publishedAt": "2026-08-21T19:24:42.000Z",
-      "hashTitle": "b41a9ab85d39cb00d9661b7c301b47087e908931",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "ウォルマート、Apple Pay、その他のタップツーペイオプションを追加 - Axios",
-      "summaryJa": "WalmartがApple Payをはじめとするタップ決済オプションを追加する予定であることを報じる。Axiosの説明によれば、同社はついにこれらの決済手段を導入する段階にある。"
     },
     {
       "id": "d399d3bc5641c1692c90ef5b7e0569135d4abdc9",
@@ -324,45 +126,9 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "解決済み: CSS クラス プレフィックス セレクター",
       "summaryJa": "新しいCSSセレクタ「.btn-*」が提案され、既存の部分文字列セレクタに比べて読みやすく、操作性が向上する可能性があると説明されている。提案はSelectors Level 5のドラフトに正式に取り入れられた可能性があり、実装は早まるかもしれない一方で、現時点では既存のセレクタと互換性や待機期間の有無、ブラインドスポット（他の条件に対するマッチや非ハイフンケースなど）の懸念も指摘されている。著者は利便性を評価しつつも、正式採用までの不確実さに留意している。"
-    },
-    {
-      "id": "2ac62d9807a2e18b7f751e25f4e6e204d7c8d96d",
-      "sourceName": "Qiita Popular Items",
-      "sourceUrl": "https://qiita.com/popular-items",
-      "sourceFeedUrl": "https://qiita.com/popular-items/feed",
-      "title": "耳で聞く！Python で学ぶ マクロ経済学 入門 2",
-      "summary": "user: ソース動画のタイトル、そしてこの動画の内容について教えてください。 Gemini: ソース動画のタイトルは、『データで丸裸にする国家の生存戦略 : Pythonで学ぶマクロ経済学入門Podcast (2)』 です。 この動画の内容は、政治的なスピーチや歴史...",
-      "url": "https://qiita.com/maskot1977/items/3363012f9778952a7240?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "canonicalUrl": "https://qiita.com/maskot1977/items/3363012f9778952a7240",
-      "publishedAt": "2026-08-21T15:02:16.000Z",
-      "hashTitle": "61c2c184a8f575e2422502be3fce97d421e2170e",
-      "tags": [
-        "gemini"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "耳で聞く！Python で学ぶ マクロ経済学 入門 2",
-      "summaryJa": "この動画は、世界銀行データを用いて1976年〜2024年の約30カ国のGDPデータを分析し、C・I・G・NXの4要素で各国の「生存戦略」をデータサイエンスの視点から解説する。フェーズ1（1976年〜2000年）とフェーズ2（2001年〜2024年）の2部構成で、アメリカの内需主導、ドイツ・韓国の輸出依存、中国の投資・輸出偏重、日本の需要不足と政府支出の拡大、世界的な需要不足の矛盾といった国別の見取り図と傾向を示している。さらにこの動画は、Qiitaの全100回シリーズのイントロ的役割を果たし、後続回の理論・手法と結びつく形で、財源幻想の解体と投資の重要性というテーマを提示している。"
-    },
-    {
-      "id": "72567b6fe1a08f02ec63280230cea38ba1ee1d3a",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Apple paid 40% of its global taxes to Ireland in last fiscal year - Reuters",
-      "summary": "Apple paid 40% of its global taxes to Ireland in last fiscal year &nbsp;&nbsp; Reuters",
-      "url": "https://www.reuters.com/legal/transactional/apple-paid-40-its-global-taxes-ireland-last-fiscal-year-2026-08-21/",
-      "canonicalUrl": "https://www.reuters.com/legal/transactional/apple-paid-40-its-global-taxes-ireland-last-fiscal-year-2026-08-21",
-      "publishedAt": "2026-08-21T15:00:18.000Z",
-      "hashTitle": "7312110104e12d5eed8ca2b31193c6bfa0d0d716",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "アップル、昨年会計年度に世界の税金の40％をアイルランドに支払った - ロイター",
-      "summaryJa": "アップルは前年度に世界税額の40%をアイルランドに支払ったと、ロイターが報じた。"
     },
     {
       "id": "217dda2a2acfa0dbb44dfceaf07df5e3d4609794",
@@ -379,27 +145,9 @@
         "html",
         "typescript"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "自作の交差型を書く前に型定義ファイルを見る",
       "summaryJa": "ライブラリが要素にぶら下げるプロパティには公開型が用意されていることが多い。自作の交差型を使う前に、型定義ファイルを確認する価値がある。tippy.js の場合、対象要素の型として ReferenceElement が公開されており、._tippy?: Instance が含まれる。キャストは最小限にとどめ、必要な性質だけを名乗るのが有利で、as any は型チェックを全部捨てるため避け、as SomeType は局所的な上書きとして機能する。壊してエラーを読むなど、実際に型を壊して確認するのが早い。"
-    },
-    {
-      "id": "a07df69add9267330cee0b8486944ecd4aae70f4",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Tap to pay with Google Pay is coming to Walmart. - blog.google",
-      "summary": "Tap to pay with Google Pay is coming to Walmart. &nbsp;&nbsp; blog.google",
-      "url": "https://blog.google/products-and-platforms/platforms/google-pay/tap-to-pay-google-pay-walmart/",
-      "canonicalUrl": "https://blog.google/products-and-platforms/platforms/google-pay/tap-to-pay-google-pay-walmart",
-      "publishedAt": "2026-08-21T14:07:28.000Z",
-      "hashTitle": "0fc86566d42ac877a4bc894c5b81f133e1bafb71",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Google Pay による Tap to Pay が Walmart に登場します。 - blog.google",
-      "summaryJa": "Google Payを使ったタップ決済が、Walmartの店舗およびSam’s Clubの一部店舗で開始される。2026年内に全米の店舗・クラブへ展開を予定し、ガソリンスタンドは2027年 midまでに対応予定。Google Walletにカードを追加しておけば、レジでGoogle Payが決済を代行し、会計を迅速に完了させる。"
     },
     {
       "id": "e42b7af4138c252fa082a7edb74440c920506e92",
@@ -415,28 +163,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Atari から EVE Online へ: 15 年にわたるゲームにおける AI 研究の構築",
       "summaryJa": "AI研究とゲーム開発の深い連携を通じ、DeepMindは Atari から StarCraft などの実例を通じてAIの進化を推進してきた。現在はFenris CreationsのEVE Universeと提携し、SIMAという汎用エージェントを用いて、プレイヤー視点の理解・自然言語指示・キーボード・マウス操作で動作する実装を追求する。EVE Onlineを核とする広大で進化する世界を活用し、継続学習・長期記憶・長期計画・複数エージェントのダイナミクスといった前提能力の開発を進めることで、ゲーム体験の新しい可能性と、現実世界の問題解決に資するAI研究の加速を目指している。"
-    },
-    {
-      "id": "c7555684aaed6fb8eded9c24366ed55c5bea3dd9",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Geminiまみれ？のノートPC「GoogleBook」、いよいよ姿を現す（ギズモード・ジャパン） - Yahoo!ニュース",
-      "summary": "Geminiまみれ？のノートPC「GoogleBook」、いよいよ姿を現す（ギズモード・ジャパン） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/3a75fb3195437e9e58215f14886a2c895dd2aede",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/3a75fb3195437e9e58215f14886a2c895dd2aede",
-      "publishedAt": "2026-08-21T10:00:02.000Z",
-      "hashTitle": "386d7f84460f50e6e3ccb8841217606b379915b3",
-      "tags": [
-        "Google",
-        "gemini"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Geminiまみれ？のノートPC「GoogleBook」、いよいよ姿を現す（ギズモード・ジャパン） - Yahoo!ニュース",
-      "summaryJa": "今秋発表が見込まれるGoogleの新ノートPC「GoogleBook」は、Geminiを核として設計され、Geminiファーストのデザインになると見られている。イベントはメディア向けプレビュー中心で、基調講演やハンズオン、OEM展示が予定され、デザイン面では天板にマルカラーLED「Glowbar」が搭載されるとされる。なお、天板入りのGemini状態やClippy的役割など、噂は多いが正式な仕様はまだ不明で、Chromebookの後継機種かどうかは不確定である。"
     },
     {
       "id": "0d042b36db9bebafa6bf028fbdc0b42e0d1bdecd",
@@ -452,7 +181,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "QAエンジニアの仕事が変わった——Claude CodeとPlaywrightで、テストからチケット管理まで全部AIに任せてみた話",
       "summaryJa": "QAエンジニアのSAは、以前は手動でテストを作成・実行し、GitHubのチケット更新まで人手で行っていたが、Claude CodeとGitHubの連携でPlaywrightのテスト実行と結果の報告・ステータス更新をAIに任せられるようになり、作業の自動化が進んだと述べる。AIは万能ではないが、単純作業を任せることで本質的な「何をテストすべきか」「リスクはどこにあるか」という判断に人間が集中できるようになり、QAの現場はAI時代へ移行していると強調する。最後に、記事自体もAIと共作であることを告白し、AIを使いこなすことを今後の必須スキルとして促している。"
     },
@@ -470,7 +199,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "スプレッドシートからアプリを構築できるGemini新機能「Sheets canvas」がリリース",
       "summaryJa": "Geminiの新機能「Sheets canvas」がリリースされ、スプレッドシートを用いてアプリを構築できるようになった。説明は提供されていないため、機能の詳細は記事本文に依存する。"
     },
@@ -488,27 +217,27 @@
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Anthropic、8月末にもIPO申請書類を公開か 調達額はSpaceXの過去最大に匹敵と米報道",
       "summaryJa": "Anthropicは、AIサービス「Claude」を手掛ける米企業で、8月末にも新規株式公開（IPO）申請書類を公開する準備を進めていると報じられた。調達規模はSpaceXの過去最大記録に匹敵するか上回る見込みで、Morgan Stanley・Goldman Sachs・JPMorganが主幹事として挙げられ、創業者支配を維持する議決権強化株式の導入も検討されているという。なお、同社は今年第2四半期の売上を115億ドル超と発表し、2025年の純損失は約420億ドルに拡大したとされる。"
     },
     {
       "id": "a627857d9e86b99ee3b3e2e40d368276813413b5",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Anthropic、AIの活用方法を学べる「Claude Academy」を公開 - gihyo.jp",
-      "summary": "Anthropic、AIの活用方法を学べる「Claude Academy」を公開 &nbsp;&nbsp; gihyo.jp",
-      "url": "https://gihyo.jp/article/2026/08/claude-academy",
+      "sourceName": "gihyo.jp",
+      "sourceUrl": "https://gihyo.jp/",
+      "sourceFeedUrl": "https://gihyo.jp/feed/atom",
+      "title": "Anthropic、AIの活用方法を学べる「Claude Academy」を公開",
+      "summary": "Anthropicは2026年8月20日、AIを安全かつ効果的に活用するための学習サイト「Claude Academy」を公開したと発表した。",
+      "url": "https://gihyo.jp/article/2026/08/claude-academy?utm_source=feed",
       "canonicalUrl": "https://gihyo.jp/article/2026/08/claude-academy",
       "publishedAt": "2026-08-21T05:19:00.000Z",
-      "hashTitle": "e0d45b80516691e9e4c1cb3192b84c227a76cb3b",
+      "hashTitle": "96fb91de25da1c343245ac066935c8ea832af813",
       "tags": [
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Anthropic、AIの活用方法を学べる「Claude Academy」を公開 - gihyo.jp",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
+      "titleJa": "Anthropic、AIの活用方法を学べる「Claude Academy」を公開",
       "summaryJa": "Anthropicが2026年8月20日に公開した学習サイト「Claude Academy」は、 Claudeの活用法やAIの基礎を学べるコースやチュートリアルを22件掲載しており、教育者・学生・非営利団体向けの内容も含む。アカウント不要で閲覧可能だが、Claudeアカウントでサインインすると進捗保存や修了バッジ取得、分野に応じたコース提案も受けられる。 Claude Academyは、製品依存にとらわれない学習内容と、作業のAI任せ・人間の介在を判断するポイントなどを重視している。"
     },
     {
@@ -525,28 +254,9 @@
       "tags": [
         "typescript"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Bun、バージョン1.4をリリース ——初のRust実装版",
       "summaryJa": "Bunのチームは2026年8月20日に、Rust実装へ切り替えた初のバージョン1.4をリリースし、Node.js互換性の拡張やCPU・メモリ使用量の削減、起動の高速化を実現したと発表した。公式測定ではアイドル時のCPUが従来の5分の1、HTTPサーバーのメモリはワークロードにより13～48％削減され、1.5千件超のテスト追加や1,517件のテスト通過増加も報告されている。さらにパッケージ管理・ビルド・テスト関連の新機能や、内蔵のReact Compiler、HTTP/3対応の実験機能、OS別のネイティブビルド拡大など、広範な機能追加と互換性の変更点がまとめられている。"
-    },
-    {
-      "id": "3cec2d8c54799af6a60833b48ee4535ce2060c8f",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Anthropic、「Claude」の学習サイト「Claude Academy」を無償開設（窓の杜） - Yahoo!ニュース",
-      "summary": "Anthropic、「Claude」の学習サイト「Claude Academy」を無償開設（窓の杜） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/d09bda1559f6a0191b56d470ae21e8dcb7a3ee34",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/d09bda1559f6a0191b56d470ae21e8dcb7a3ee34",
-      "publishedAt": "2026-08-21T04:25:00.000Z",
-      "hashTitle": "1300d0733a9ce0da3e06f8254bf9634c57d67fa2",
-      "tags": [
-        "Anthropic",
-        "claude"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Anthropic、「Claude」の学習サイト「Claude Academy」を無償開設（窓の杜） - Yahoo!ニュース",
-      "summaryJa": "米Anthropicは「Claude Academy」を公開し、コースやチュートリアルを無償で提供している。学習は人間の主体性やマインドセット、周辺行動を重視し、振り返りと実験を促す設計で、ゲーミフィケーション要素や進捗管理機能も備える。さらに Claude Academy Skill では、Claude が学習パスを提案する機能がある。"
     },
     {
       "id": "e4ffbef5b8e518b3b5bee806a9599a62670fe69b",
@@ -562,7 +272,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "コードが書けない筆者が愛車用にアプリを2本自作 「AI製アプリで起業」の夢膨らむも、見えた有料化の壁",
       "summaryJa": "筆者は自分用のTesla専用アプリを2本、AIを用いて数日で開発したと報告する。開発にはAnthropicのClaude Codeを活用し、プログラミングは自分には難しいとしつつも、自然言語での指示で機能を実現可能だった点を強調している。2本のアプリは「高速料金チェッカー」と「電費ログ」で、前者は高速道路の退出時の料金差を、後者は電費データの記録をそれぞれ算出・管理する内容となる。"
     },
@@ -581,81 +291,9 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Google、最新モデル「Gemini 3.7 Flash」を公開",
       "summaryJa": "Googleが最新モデル「Gemini 3.7 Flash」を公開したことを伝える記事で、現時点の説明はなし。要約としては、Googleが新しいGemini 3.7 Flashを公開したという情報のみが含まれる。"
-    },
-    {
-      "id": "815e12b3a6eb063e51cd423075b62e0e8cd45ecb",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "イチオシは？ 発売したばかりのGoogle Pixel 11シリーズをまとめてレビュー！（GetNavi web） - Yahoo!ニュース",
-      "summary": "イチオシは？ 発売したばかりのGoogle Pixel 11シリーズをまとめてレビュー！（GetNavi web） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/e606d99a8f1e9fd3d748d94fb25f96642a6e8497",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/e606d99a8f1e9fd3d748d94fb25f96642a6e8497",
-      "publishedAt": "2026-08-21T02:40:02.000Z",
-      "hashTitle": "71913998df9b14c7532040ae0edf3c5ebff9007f",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "イチオシは？ 発売したばかりのGoogle Pixel 11シリーズをまとめてレビュー！（GetNavi web） - Yahoo!ニュース",
-      "summaryJa": "Google Pixel 11は、スタンダードのPixel 11、Pro/Pro XL、Foldの4機種構成で、従来機の実績を活かしつつハードウェアとAIの使い勝手を磨く点が特徴です。6.3インチのActuaディスプレイ、12GB RAM、256GB・512GBのストレージ、48MP/13MP/10.8MPのトリプルカメラと最大30倍の超解像ズームを搭載し、Tensor G6とAI処理の高速化・高効率化を進めています。実機は6.3インチの握りやすさと背面のカメラバーの高さが手に馴染み、ケースなしでも安定して持てるデザインが印象的でした。"
-    },
-    {
-      "id": "80d693a6d484b5056199cf68395657853cd63743",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Google、大学生に「Google AI Plus」を無料で提供、400GBのストレージや動画生成機能付き（窓の杜） - Yahoo!ニュース",
-      "summary": "Google、大学生に「Google AI Plus」を無料で提供、400GBのストレージや動画生成機能付き（窓の杜） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/5a896790a481c88f4d842a6539627df2d5d693ef",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/5a896790a481c88f4d842a6539627df2d5d693ef",
-      "publishedAt": "2026-08-21T02:39:00.000Z",
-      "hashTitle": "627c2e4e8ac5e5689c8fbbc9490965a1f99e7872",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Google、大学生に「Google AI Plus」を無料で提供、400GBのストレージや動画生成機能付き（窓の杜） - Yahoo!ニュース",
-      "summaryJa": "米Googleは18～24歳の米国在住学生には「Google AI Pro」、日本を含む140カ国在住学生には「Google AI Plus」を無料提供を開始した。Google AI Plusには400GBのストレージ枠と「Gemini Omni」へのアクセス権、通常版よりGeminiの利用制限が2倍になるなどの特典がある。また、学習支援機能として学生ハブの学習ノートブック、Gemini Live、視覚化ツールが用意され、毎年資格確認と有効な支払い手段の登録が必要で、申込期限は2026年12月31日まで。"
-    },
-    {
-      "id": "ca7f7e22360267c06c142b783f56bc860376c646",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "「Claudeの使い方」を無料で学べる公式サイト登場 「Code」「Cowork」などサービスごとに解説（1/2 ページ） - ITmedia",
-      "summary": "「Claudeの使い方」を無料で学べる公式サイト登場 「Code」「Cowork」などサービスごとに解説（1/2 ページ） &nbsp;&nbsp; ITmedia",
-      "url": "https://www.itmedia.co.jp/aiplus/article/2608/21/2000000672/",
-      "canonicalUrl": "https://www.itmedia.co.jp/aiplus/article/2608/21/2000000672",
-      "publishedAt": "2026-08-21T02:26:13.000Z",
-      "hashTitle": "83b645d6096253792f3f80e3d98dd73cfc44fb47",
-      "tags": [
-        "claude"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "「Claudeの使い方」を無料で学べる公式サイト登場 「Code」「Cowork」などサービスごとに解説（1/2 ページ） - ITmedia",
-      "summaryJa": "米Anthropicは8月20日、無料の学習サイト「Claude Academy」を公開した。AI技術の基本や「Claude」関連製品の使い方を解説しており、日本語にも対応する翻訳機能（α版）を備えている。科目は「Claude Code」や「Claude Cowork」など製品ごとに分かれており、Claudeのアカウントでサインインすると学習の進捗管理ができる。"
-    },
-    {
-      "id": "0b857c9c95ed96c69b45b54ecbc9145c1192484f",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Claudeの「見えない透かし」、早くも回避策が登場 - WIRED.jp",
-      "summary": "Claudeの「見えない透かし」、早くも回避策が登場 &nbsp;&nbsp; WIRED.jp",
-      "url": "https://wired.jp/article/coders-say-they-already-found-workarounds-to-claudes-invisible-watermarks/",
-      "canonicalUrl": "https://wired.jp/article/coders-say-they-already-found-workarounds-to-claudes-invisible-watermarks",
-      "publishedAt": "2026-08-21T02:00:00.000Z",
-      "hashTitle": "e65ff73d0c93346290d8e567d648b1573ffc2056",
-      "tags": [
-        "claude"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Claudeの「見えない透かし」、早くも回避策が登場 - WIRED.jp",
-      "summaryJa": "AnthropicはClaudeの出力に機械判読可能なウォーターマークを埋め込むと発表したが、開発者のギヨーム・メイヤーらがすぐに除去ツールを公開。複数の回避手段が拡散し、ウォーターマークの検出や影響の有効性に対する議論が進む一方、EUの新透明性規則に対し検出ツールの公開や改良が進行中である。ウォーターマークは誤検出や、編集・翻訳など大幅な変更を経た場合には消える可能性があり、完全な回避耐性を保証するものではないと指摘されている。"
     },
     {
       "id": "0feac9b09d9418af8121f1ec29ef1d0412293b50",
@@ -671,27 +309,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Googleのオープンモデル「Gemma」、累計10億ダウンロード超 GitHubに公式ディレクトリ公開",
       "summaryJa": "Googleはオープンモデル「Gemma」ファミリーの累計ダウンロード数が10億回を超えたと発表し、GitHubに公式ディレクトリ「Awesome Gemma」を公開した。公式ブログは、エコシステムを「Gemmaverse」と呼び、過去2年間で開発者が10万種を超える派生モデルを公開したことを紹介している。Awesome Gemmaはコミュニティによる優れたプロジェクトやファインチューンモデル、チュートリアル、開発ツールを掲載するディレクトリとして機能し、NASAやMedGemmaなどの活用事例も紹介されている。"
-    },
-    {
-      "id": "baaa4c057ae507ea2be9387014efbc06c4edfab0",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "「Apple Watch」セラミックモデル復活か、7年ぶり登場の可能性 - Yahoo!ニュース",
-      "summary": "「Apple Watch」セラミックモデル復活か、7年ぶり登場の可能性 &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/6cd8fdddf6647d351b01c20ba2c1dfc6eac515f8",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/6cd8fdddf6647d351b01c20ba2c1dfc6eac515f8",
-      "publishedAt": "2026-08-21T01:14:00.000Z",
-      "hashTitle": "693dae35c0d6ea7c5b4637490fd6a6ef5861a213",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "「Apple Watch」セラミックモデル復活か、7年ぶり登場の可能性 - Yahoo!ニュース",
-      "summaryJa": "7年ぶりにセラミックケースのApple Watchが復活する可能性が取り上げられている。シリーズ12として9月の発表が予定され、セラミックモデルは以前のEditionと同様に“高価”、38/40/42/44mmの価格帯で展開される見込みだ。これまで2016年のSeries 2から2019年のSeries 5まで断続的に採用されており、今回の復活はBloombergの報道とも一致するとされている。"
     },
     {
       "id": "2511ab3a0e7181051d025925336e4b866d3c595a",
@@ -709,27 +329,9 @@
         "Apple",
         "codex"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "macOS版ChatGPT、Appleの「メッセージ」と連携 会話検索や下書き、送信に対応",
       "summaryJa": "macOS版ChatGPTのデスクトップアプリに、AppleのMessagesと連携するプラグインが公開された。これにより、MacのMessagesに保存された会話を検索・要約し、下書き作成や送信を代行できるが、現時点ではCodexまたはChatGPT Workのチャットのみ対象で、通常のChatGPTやWeb・モバイル版では利用できない。送信には承認フローが設けられ、常時送信を許可する設定にはリスクがあるとして都度承認を推奨している。"
-    },
-    {
-      "id": "ee80cb95322eeedf8cfbcb539262fd35d9a7a211",
-      "sourceName": "Qiita Popular Items",
-      "sourceUrl": "https://qiita.com/popular-items",
-      "sourceFeedUrl": "https://qiita.com/popular-items/feed",
-      "title": "【TypeScript超入門】TypeScriptって何？環境構築から実行までを解説 [VSCode拡張機能紹介]",
-      "summary": "はじめに JavaScriptを学んでいると、TypeScriptという名前を目にする機会が増えてきます。 この記事では、TypeScriptをこれから始める方に向けて、基礎知識から開発環境の構築、そして最初のプログラムを実行するまでの流れを、学習のアウトプットを兼ねて分...",
-      "url": "https://qiita.com/nt_y-maeda112/items/ea17f2c3a9129912d906?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "canonicalUrl": "https://qiita.com/nt_y-maeda112/items/ea17f2c3a9129912d906",
-      "publishedAt": "2026-08-21T00:02:32.000Z",
-      "hashTitle": "c14be2e5c558a6b5e2fc351f4a394d198671fbd8",
-      "tags": [
-        "typescript"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "【TypeScript超入門】TypeScriptって何？環境構築から実行までを解説 [VSCode拡張機能紹介]",
-      "summaryJa": "TypeScriptはJavaScriptに型の仕組みを追加した言語で、JavaScriptとの互換性を保ちながら静的型付けや型チェックを利用できます。環境構築ではNode.jsとnpmを用い、プロジェクトフォルダを作成後、TypeScriptコンパイラをインストールしてtsconfig.jsonを作成します。ファイル作成後は、npx tscでTypeScriptをJavaScriptへ変換し、nodeコマンドで実行して動作を確認します。"
     },
     {
       "id": "2fb9ce914e9fa12fe18aa684e5d53694c1a97cb5",
@@ -745,7 +347,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "GPT-5.6 Sol が 50% オフで低価格になりました",
       "summaryJa": "OpenAIはGPT-5.6 Sol の一覧価格を引き下げ、AI Gatewayの50%割引が新しい低価格にも適用される期間を9月18日まで延長しました。入力は20%、出力は三分の一の値下げとなり、全てのサービス階層で割引が適用されます。モデルIDは変更されず、すでに送信しているリクエストは新価格で請求され、ソルを用いたコーディングエージェントの設定手順やプレイグラウンドでの試用も案内されています。"
     },
@@ -764,7 +366,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "DeepSeek V4 Flash Vision Experimental が AI Gateway で利用可能になりました",
       "summaryJa": "DeepSeek V4 Flash Vision ExperimentalがAI Gatewayで利用可能になった。画像とテキストを同時に扱える実験版で、写真の説明やスクショの文字読取、チャートの解釈を同時に行える。モデルIDの“exp”表記は実験リリースを示し、今後の挙動変更やフォールバックモデルの設定を想定して使用するよう案内されている。"
     },
@@ -782,7 +384,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "v0 アプリを Slack、Google、その他 100 以上のサービスに接続",
       "summaryJa": "Vercel Connect v0 は、100以上の第三者サービス（SlackやGoogle、Notion、GitHub、Salesforceなど）と安全に接続できるようになりました。セットアップは「コネクター」を作成して再利用する形で、SlackやGitHubなど一部サービスはVercel側でアプリ登録が不要、他は資格情報を自分で用意します。接続ごとに短命トークンが発行されるため長期秘密情報の管理や回転が不要で、KERNELチームのDannyの例のように、Playwrightで生成されるコードを使ってブラウザ駆動のワークフローを構築できます。"
     },
@@ -800,7 +402,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Claude Code の出力を35%短くしたら、情報がむしろ増えた",
       "summaryJa": "Claude Code 2.1.237 に組み込みの出力スタイル「Concise」が追加され、結果を先に提示し前置きや説明を省く形で全体の文字数が平均35%減少しました。ただし削られたのは説明文のみで、コードやコマンドそのものの情報量は維持され、選択肢は増えています。設定は /config から出力スタイルを選ぶか outputStyle を直接書く方法が説明され、反映は /clear か新しいセッションから有効になります。"
     },
@@ -818,100 +420,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Google、読者がワンクリックで“推しメディア”登録できるボタン公開",
       "summaryJa": "Googleは8月20日、検索・Discover・ニュースで表示されるコンテンツを読者が調整できるパーソナライズ機能を拡充すると発表した。日本では「優先するニュース提供元」ボタンをサイトに埋め込み、読者がクリックするとそのサイトの記事を優先表示されるようになる。さらにディスカバリー機能の強化や、ニュースの音声ブリーフィング設定など、複数の新機能が追加される。"
-    },
-    {
-      "id": "bc5e7efcdf44fb9120b030f231fd4b94242b1b29",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Google launches a charm offensive in 2 Minnesota towns as data center opposition grows - MPR News",
-      "summary": "Google launches a charm offensive in 2 Minnesota towns as data center opposition grows &nbsp;&nbsp; MPR News",
-      "url": "https://www.mprnews.org/story/2026/08/20/google-launches-a-charm-offensive-in-2-minnesota-towns-as-data-center-opposition-grows",
-      "canonicalUrl": "https://www.mprnews.org/story/2026/08/20/google-launches-a-charm-offensive-in-2-minnesota-towns-as-data-center-opposition-grows",
-      "publishedAt": "2026-08-20T22:44:00.000Z",
-      "hashTitle": "ada2ed7e9b5fee17af16aa293e8292fe529dc248",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "データセンター反対が高まる中、Googleがミネソタ州の2つの町で魅力攻勢を開始 - MPRニュース",
-      "summaryJa": "ミネソタ州のハーマンタウンとパインアイランドで、グーグルが提案するデータセンターに対する反対運動が続いている。地元住民の一部は記念イベントに protested、反対の姿勢を示す人もいた。本文には具体的な反対理由や支持者の詳細は記されていない。"
-    },
-    {
-      "id": "39dfb7209a66975b3d7fd51deedcf01a1ab469f1",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "「孫さんはOpenAIだが、僕はAnthropic」 SBI北尾会長が語る「AI投資5億円→増収27億円」の勝算（1/2 ページ） - ITmedia",
-      "summary": "「孫さんはOpenAIだが、僕はAnthropic」 SBI北尾会長が語る「AI投資5億円→増収27億円」の勝算（1/2 ページ） &nbsp;&nbsp; ITmedia",
-      "url": "https://www.itmedia.co.jp/business/articles/2608/21/news038.html",
-      "canonicalUrl": "https://www.itmedia.co.jp/business/articles/2608/21/news038.html",
-      "publishedAt": "2026-08-20T22:00:00.000Z",
-      "hashTitle": "13636996c4d230a80c52fba3c40e9961dbf89e50",
-      "tags": [
-        "Anthropic",
-        "OpenAI"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "「孫さんはOpenAIだが、僕はAnthropic」 SBI北尾会長が語る「AI投資5億円→増収27億円」の勝算（1/2 ページ） - ITmedia",
-      "summaryJa": "SBIホールディングスは、米Anthropicと提携して全社的なAIトランスフォーメーションを推進し、AIを軸とする業務自動化を徹底する方針を示した。特にSBI証券の顧客対応を担うAIエージェントの開発に5億円を投じ、年間27億円の増収を見込むなど、外部エースを起用して体制を強化する。「動的防御」を重視したセキュリティ対策を併せて強化し、AIとブロックチェーンを組み合わせた自律経済圏の構築を目指す。北尾会長はAnthropicを選んだ理由や、人材の特性重視の起用方針も述べた。"
-    },
-    {
-      "id": "3cdb2cc69855bb2dd37051d775172c629c283f46",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "「Gemini Notebook」で利用者10倍 シニア社員をAIヘビーユーザーにした首都高の考え - キーマンズネット",
-      "summary": "「Gemini Notebook」で利用者10倍 シニア社員をAIヘビーユーザーにした首都高の考え &nbsp;&nbsp; キーマンズネット",
-      "url": "https://kn.itmedia.co.jp/kn/articles/2608/21/news044.html",
-      "canonicalUrl": "https://kn.itmedia.co.jp/kn/articles/2608/21/news044.html",
-      "publishedAt": "2026-08-20T22:00:00.000Z",
-      "hashTitle": "9b79e1b7f008225314b0c11c1d2b3d2beb551ae1",
-      "tags": [
-        "gemini"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "「Gemini Notebook」で利用者10倍 シニア社員をAIヘビーユーザーにした首都高の考え - キーマンズネット",
-      "summaryJa": "首都高速道路は、従業員の平均年齢が高く安全性を重視する風土の中、生成AIを全社へ浸透させる手法として「Gemini」と「Gemini Notebook」を導入。1年で月100回以上の利用者が224人へ10倍超、日次30分以上の業務効率化を実感する割合も高まった。3つの定着施策と対面ワークショップ、トップダウンの理解促進を組み合わせ、全社的なDXマインドの醸成を推進した。"
-    },
-    {
-      "id": "bf53464766cbc820be587201bb4a8c0e63907b32",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Introducing cross-Region inference for OpenAI GPT-5.6 models on Amazon Bedrock | Artificial Intelligence - Amazon Web Services (AWS)",
-      "summary": "Introducing cross-Region inference for OpenAI GPT-5.6 models on Amazon Bedrock | Artificial Intelligence &nbsp;&nbsp; Amazon Web Services (AWS)",
-      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock/",
-      "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock",
-      "publishedAt": "2026-08-20T21:46:03.000Z",
-      "hashTitle": "6e5dec526c07eb152f94aff5413d7962c90061c5",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Amazon Bedrock での OpenAI GPT-5.6 モデルのクロスリージョン推論の導入 |人工知能 - アマゾン ウェブ サービス (AWS)",
-      "summaryJa": "Amazon Bedrock で GPT-5.6（Sol/ Terra/ Luna）は、US地理的CRISとグローバルCRISを含む複数地域でクロスリージョン推論に対応した。 geographic profile は特定の地理内だけで推論を処理し、 global profile は実時間容量に基づき全サポートRegionsへルーティング可能で、データ処理はバックエンドで選ばれた地域に跨ることがある。 API は OpenAI Responses/Chat Completions/Converseを介して利用でき、コンソールの Playground から試用できる。"
-    },
-    {
-      "id": "7237d688744efa66351a0103806ce5e38ba4548d",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "「Claude Code×GPT」自律ループが凄すぎ、仕事が“3つ”に減る5ステップ - ビジネス+IT",
-      "summary": "「Claude Code×GPT」自律ループが凄すぎ、仕事が“3つ”に減る5ステップ &nbsp;&nbsp; ビジネス+IT",
-      "url": "https://www.sbbit.jp/article/cont1/186558",
-      "canonicalUrl": "https://www.sbbit.jp/article/cont1/186558",
-      "publishedAt": "2026-08-20T21:40:00.000Z",
-      "hashTitle": "81dcfc1f66ff472102a44d2e7b53bf0f10b23ca2",
-      "tags": [
-        "claude"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "「Claude Code×GPT」自律ループが凄すぎ、仕事が“3つ”に減る5ステップ - ビジネス+IT",
-      "summaryJa": "ループエンジニアリングは、従来のバイブコーディングで人間が回していた外側の作業輪をAIに任せ、AIが自ら作業を見つけて実行・検証・次の作業を回し、完了条件を満たすまで繰り返す設計技法として紹介されている。AIとの関わり方は、プロンプトエンジニアリングからコンテキストエンジニアリング、ハーネスエンジニアリングを経て「いつ動かし、どう検証し、いつ止めるか」というループエンジニアリングへ移行している。なお内部では依然としてプロンプトは働くが、エンジニアが最も時間をかける部分が変わる点が特徴として説明されている。"
     },
     {
       "id": "27cdcda69e71c0794f012545e76880306a4c562b",
@@ -927,45 +438,9 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Slack、AIとチームで協働する「Slack Code」を発表 ClaudeやDevinを専用チャネルで操作",
       "summaryJa": "SlackはAIコーディングエージェントとチームで協働する新機能「Slack Code」を発表し、8月20日から提供を開始した。コードチャネルと呼ばれる専用スペースでエージェントをメンションすると自動でチャネルが生成され、会話・計画・差分・HTMLプレビューをタブで確認しつつ、進捗管理やエージェントの停止・方向性修正が可能になる。エージェントとしてはClaude、Devin、GitHub Copilot、Vercel、今後ChatGPTの対応が予定されており、監査ログとしてチャネルの内容は検索可能のまま残る。"
-    },
-    {
-      "id": "bc57bcdf9f8ebe0133011ba1ecafac821bbee10b",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Inside the Gemmaverse: Celebrating one billion Gemma downloads - blog.google",
-      "summary": "Inside the Gemmaverse: Celebrating one billion Gemma downloads &nbsp;&nbsp; blog.google",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads/",
-      "canonicalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads",
-      "publishedAt": "2026-08-20T17:05:38.000Z",
-      "hashTitle": "53528b0aab6ad26284bf037fe89fe9793c75829a",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Gemmaverse の内部: Gemma ダウンロード数 10 億を祝う - blog.google",
-      "summaryJa": "Gemmaは普及を重ね、1億件を超えるダウンロードに到達しただけでなく、開発者コミュニティが100,000を超えるモデルバリアントを生み出すなど、Gemmaverseと呼ばれるエコシステムを形成している。NASAやSatlyt、StarcloudはGemmaを軌道上で実行し、厳しい環境下でも高度な推論を実現しているほか、インドのNHAはGemma 4を用いて医療データを標準化して共有を支援するアプリを展開している。さらにMedGemmaやDolphinGemma、C2S-Scaleなど、医療分野や海中・海洋生物研究、研究開発の最先端にも適用が広がっている。"
-    },
-    {
-      "id": "891b283b880f3c20fd277a21b1d2b9b0496822e8",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Make AI Max work for your business with new testing and planning tools. - blog.google",
-      "summary": "Make AI Max work for your business with new testing and planning tools. &nbsp;&nbsp; blog.google",
-      "url": "https://blog.google/products/ads-commerce/ai-max-testing-planning-tools/",
-      "canonicalUrl": "https://blog.google/products/ads-commerce/ai-max-testing-planning-tools",
-      "publishedAt": "2026-08-20T13:09:17.000Z",
-      "hashTitle": "9a10251b28640009f75bc0c680007a411649e596",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "新しいテストおよび計画ツールを使用して、AI Max をビジネスに活用しましょう。 - blog.google",
-      "summaryJa": "AI Maxのワンクリック実験を拡張し、複数の検索キャンペーンを対象に予算とROI目標を同時にA/Bテストできる機能を9月に提供開始します。これにより、キャンペーンの規模拡大が収益に与える影響を明確に把握でき、ブランドや地域のガードレールを設定したままテストすることも可能になります。Performance Plannerでは入札や予算目標の変更が既存のキャンペーン成果に与える影響を確認でき、ワンクリックで提案変更を適用できます。"
     },
     {
       "id": "6539171bdf21d317942810394439f6d5a03eb1d5",
@@ -981,27 +456,9 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Claude Code を使いこなすためのコツ 10選",
       "summaryJa": "Claude Code は自然言語指示でファイル操作やコード生成を任せられ、日々の作業を大幅に楽にします。本文の体験談では、コードレビューの自動化やエラー原因の即時特定、ドキュメント生成、テスト提案など10項目の活用事例が紹介され、いずれも手作業の削減と作業効率の向上が確認されています。まずはコードレビューの自動化から試すことを勧めるまとめとなっています。"
-    },
-    {
-      "id": "68f49a8c0a0fd42c12a5a1cc05da29a2287a9303",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "きょう発売の「Pixel 11」、結局は何が進化点？ Geminiの進化にも注目（ITmedia Mobile） - Yahoo!ニュース",
-      "summary": "きょう発売の「Pixel 11」、結局は何が進化点？ Geminiの進化にも注目（ITmedia Mobile） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/e52654e4a11de2819b2eeb66596379775fb0600b",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/e52654e4a11de2819b2eeb66596379775fb0600b",
-      "publishedAt": "2026-08-20T08:05:08.000Z",
-      "hashTitle": "f55e6697aa28cb1f4848dc9f0d79014e7a571d37",
-      "tags": [
-        "gemini"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "きょう発売の「Pixel 11」、結局は何が進化点？ Geminiの進化にも注目（ITmedia Mobile） - Yahoo!ニュース",
-      "summaryJa": "Google Pixel 11シリーズは、Gemini Intelligenceの進化によりAIモデルが賢化し、アプリ間を横断する複数タスク処理やProactiveサポート、位置情報ベースのインサイト機能などが強化された。新機能として「マジック キャプチャー」「カメラスタイル」「クリエイター スイート」が搭載され、上位機種には「インスタント夜景モード」やカメラと検索の連携強化も追加された。これらにより写真撮影体験と日常支援機能が一体化している。"
     },
     {
       "id": "ad7ad10691295234af51c45947bae6e724e2cbf8",
@@ -1017,7 +474,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "「OpenAI DevDay Exchange 2026」10月20日に東京で開催",
       "summaryJa": "OpenAIは世界各都市で開催する技術イベント「OpenAI DevDay Exchange 2026」を発表し、東京での開催は10月20日と告知した。イベントは現地時間14:00開始で、技術セッションやCodex活用事例の紹介、実際に手を動かすサポートなどが予定されている。参加申込みは登録ページから受付中で、締切は2026年9月4日、定員に達し次第締め切られる可能性がある。"
     },
@@ -1035,7 +492,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "AI フューチャーの紹介",
       "summaryJa": "Introducing AI Futuresは、AIが権力・統治・経済・個人の自由をどう再形成するかを探る、OpenAIの新しいブログである。"
     },
@@ -1053,63 +510,9 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Firefox 154がCSSのsibling-count()、sibling-index()、text-boxに対応、主要ブラウザーで利用可能に",
       "summaryJa": "Firefox 154のリリースで、CSSのsibling-count()とsibling-index()、text-box関連の新機能が追加された。sibling-count()は同じ親の直下要素数を整数で返し、sibling-index()は要素の順序を1-basedで返す。text-boxはフォントの高さ情報を基に余白を調整する機能で、text-box-trimとtext-box-edgeを組み合わせて指定できる。これらの機能はChrome/Edge/Safariとともに主要ブラウザーで利用可能になり、CJK向けのideographicとideographic-inkもFirefoxでサポートされている。"
-    },
-    {
-      "id": "e93bd19fb32a0b5c5a91b661e576aa31ded3c0fd",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "LLMは人間ほど創造的ではない Google DeepMind研究者が指摘するAIの限界 - Forbes JAPAN",
-      "summary": "LLMは人間ほど創造的ではない Google DeepMind研究者が指摘するAIの限界 &nbsp;&nbsp; Forbes JAPAN",
-      "url": "https://forbesjapan.com/articles/detail/103254",
-      "canonicalUrl": "https://forbesjapan.com/articles/detail/103254",
-      "publishedAt": "2026-08-20T04:28:00.000Z",
-      "hashTitle": "a43076fb631710262f1d55dc09feb6609d03f3f0",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "LLMは人間ほど創造的ではない Google DeepMind研究者が指摘するAIの限界 - Forbes JAPAN",
-      "summaryJa": "Google DeepMindのトム・ザハヴィは、新たな論文でAIは現実世界の促成下で独創的発見を自力で行えないと指摘している。AIは情報の収集と推論は得意だが、新規性や驚きを伴う仮説生成（アブダクション）がまだ欠如しており、発明には人間の直感的飛躍が必要だと説明する。アインシュタインの例を挙げ、物理世界を知覚できる世界モデルの出現が、真の発明につながる可能性があると主張している。"
-    },
-    {
-      "id": "2b0ba2e55ba56e35783d748841c6daead267d533",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "なぜAnthropicなどAI企業は、古書を買い集め裁断し処分しているのか - Forbes JAPAN",
-      "summary": "なぜAnthropicなどAI企業は、古書を買い集め裁断し処分しているのか &nbsp;&nbsp; Forbes JAPAN",
-      "url": "https://forbesjapan.com/articles/detail/103075",
-      "canonicalUrl": "https://forbesjapan.com/articles/detail/103075",
-      "publishedAt": "2026-08-20T03:30:00.000Z",
-      "hashTitle": "4682c64721f4ffe2c1f852808aa959933c7c4281",
-      "tags": [
-        "Anthropic"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "なぜAnthropicなどAI企業は、古書を買い集め裁断し処分しているのか - Forbes JAPAN",
-      "summaryJa": "大手AI企業が稀覯本や古書を大量に購入し、製本を裁ち落としてページを高速スキャナーで取り込み原本を処分している実態が浮かび上がっている。Anthropicは数百万冊を裁断し、Project Panamaとして原本をシュレッダーにかけたことが報道で明らかになったほか、他の大型書店や物流経由でもAI用データ収集のための大量の紙の本が取り扱われていた。AirTagを使った追跡調査の結果、紙のベストセラーだけでなく稀覯本・絶版本も含まれており、配送・保管はAmazonの倉庫を経由するケースが確認された。"
-    },
-    {
-      "id": "8ef8591ccb24f4d08e83a3c4120f5b5a25689d96",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "OpenAI、「2027年に上場」方針をCFOが示す 成長加速なら前倒しも - Yahoo!ニュース",
-      "summary": "OpenAI、「2027年に上場」方針をCFOが示す 成長加速なら前倒しも &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/985975346233e92d17f5faf1baac553c7cf97bbb",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/985975346233e92d17f5faf1baac553c7cf97bbb",
-      "publishedAt": "2026-08-20T03:20:00.000Z",
-      "hashTitle": "b4d6d1c62aecfe060204a002c1bce21d0fcd4a75",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "OpenAI、「2027年に上場」方針をCFOが示す 成長加速なら前倒しも - Yahoo!ニュース",
-      "summaryJa": "OpenAIのCFOサラ・フライアー氏は全社集会で、同社が「2027年に上場企業になる」と語り、事業成長が加速すれば上場時期を前倒しする可能性もあると説明した。IPOはゴールではなく資金調達の節目として捉えられ、直近で調達した1220億ドルの資金を踏まえ、時期を柔軟に判断できるという。現時点ではS-1の草案をSECに非公開で提出済みだが時期は公表されておらず、同社の評価額は8520億ドルとされている。"
     },
     {
       "id": "cb030de2dd9418a323244c2095c99bb8a7fc97ca",
@@ -1125,119 +528,28 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "Stampli、ChatGPT Work を使用して起動時間を 68% 削減",
       "summaryJa": "固定された締め切りと他のデザインリソースを抱える状況下で、StampliはCodexとChatGPT Workを活用し、ローンチ準備の期間を数週間分圧縮して数日で実行した。"
     },
     {
       "id": "e9a395f36ab1c87a2fb66edc24034252712ee317",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Google、大学生向けに「Google AI Plus」を1年間無料提供 「Gemini」アプリに学生向け新機能も - ITmedia",
-      "summary": "Google、大学生向けに「Google AI Plus」を1年間無料提供 「Gemini」アプリに学生向け新機能も &nbsp;&nbsp; ITmedia",
+      "sourceName": "ITmedia NEWS",
+      "sourceUrl": "https://www.itmedia.co.jp/news/",
+      "sourceFeedUrl": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
+      "title": "Google、大学生向けに「Google AI Plus」を1年間無料提供 「Gemini」アプリに学生向け新機能も",
+      "summary": "Googleは米国の新学期に合わせ、大学生向けに「Google AI Plus」などを12カ月無料で提供するキャンペーンを発表した。あわせてGeminiアプリに学生向けハブを新設し、授業資料から学習プランを生成する学習ノートブックや、3Dモデルの表示、Gemini LiveでのDeep Researchなどの新機能の提供を開始した。",
       "url": "https://www.itmedia.co.jp/news/article/2608/20/2000000634/",
       "canonicalUrl": "https://www.itmedia.co.jp/news/article/2608/20/2000000634",
       "publishedAt": "2026-08-19T22:58:36.000Z",
-      "hashTitle": "f009a55fec57d18fa6daa01b567c00ef539411e1",
+      "hashTitle": "40308e06d5ffbff86aae574559b848f1cf33fd91",
       "tags": [
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Google、大学生向けに「Google AI Plus」を1年間無料提供 「Gemini」アプリに学生向け新機能も - ITmedia",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
+      "titleJa": "Google、大学生向けに「Google AI Plus」を1年間無料提供 「Gemini」アプリに学生向け新機能も",
       "summaryJa": "Googleは大学生を対象に、米国は「Google AI Pro」、日本を含む米国外は「Google AI Plus」をそれぞれ12カ月間無料で提供する。申し込みは2026年12月31日までで、無料期間終了後は自動で有料へ移行するため、解約が必要。加えてGeminiアプリには学生向け機能として学習ノートブックやフラッシュカード、練習クイズを備えた学生向けハブが新設され、学習ノートブックを用いた学習プラン作成や診断クイズ結果に基づくレッスン生成、3Dモデルやインタラクティブビジュアル、Deep ResearchのLive版なども順次提供される。"
-    },
-    {
-      "id": "41d8f069724ce069db0eab1540a515236d1f0525",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Geminiが自律歩行ヒューマノイドになる日 - WIRED.jp",
-      "summary": "Geminiが自律歩行ヒューマノイドになる日 &nbsp;&nbsp; WIRED.jp",
-      "url": "https://wired.jp/article/sz-google-gemini-can-control-humanoid-robots/",
-      "canonicalUrl": "https://wired.jp/article/sz-google-gemini-can-control-humanoid-robots",
-      "publishedAt": "2026-08-19T22:00:00.000Z",
-      "hashTitle": "4a6a6dbe0738927a6fb1b2b42983f045c889e6e1",
-      "tags": [
-        "gemini"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Geminiが自律歩行ヒューマノイドになる日 - WIRED.jp",
-      "summaryJa": "Google DeepMindは、複数のAIモデルを統合した「Gemini Robotics 2」を発表し、視覚言語モデルと視覚言語行動モデルを組み合わせてロボットの全身動作やグリッパーの制御を可能にするデモを公開した。デモにはApptronikのApollo 2とSharpa製ハンドを用いた棚の整理などが含まれ、現時点では特定訓練なしに幅広いタスクをこなすことはできないとされる。一方で安全性の課題が指摘され、複数モデル連携時の有害・不確実な挙動検知を目的とするベンチマークASIMOV-Agenticも導入される予定である。"
-    },
-    {
-      "id": "a5fb5231cbcbc7377688fba0261b3f9d39b5ae08",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Google Pixel 11実機レビュー、AIが先回りして「操作を省く」新時代の体験 - Forbes JAPAN",
-      "summary": "Google Pixel 11実機レビュー、AIが先回りして「操作を省く」新時代の体験 &nbsp;&nbsp; Forbes JAPAN",
-      "url": "https://forbesjapan.com/articles/detail/103040",
-      "canonicalUrl": "https://forbesjapan.com/articles/detail/103040",
-      "publishedAt": "2026-08-19T22:00:00.000Z",
-      "hashTitle": "5f37852969922b0ee7cea6da02fbf1e18d1f0c89",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Google Pixel 11実機レビュー、AIが先回りして「操作を省く」新時代の体験 - Forbes JAPAN",
-      "summaryJa": "Pixel 11 ProとPixel Watch 5は、Geminiが日常の小さな手間を先回りして引き受ける機能を搭載しており、特にPixel 11の「先回りアシスト」は受信メッセージ内の情報を基にカレンダー登録や店舗情報のカードを自動提示する。実機では、メッセージから店名をコピー/ペーストしてGoogleマップやカレンダーなどのアプリ間を行き来する手間が省かれ、使うほど便利さを実感できる。AIによる複数ステップの1タップ化が、現時点でスマホの成熟度を左右する重要な要因と説明されている。"
-    },
-    {
-      "id": "7c21626e9d430aa93b01bda762b7b484a53b949e",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "OpenAI 'will be a public company in 2027' or sooner, CFO Friar tells employees - CNBC",
-      "summary": "OpenAI 'will be a public company in 2027' or sooner, CFO Friar tells employees &nbsp;&nbsp; CNBC",
-      "url": "https://www.cnbc.com/2026/08/19/open-ai-ipo-timing-2027-friar.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/08/19/open-ai-ipo-timing-2027-friar.html",
-      "publishedAt": "2026-08-19T19:23:36.000Z",
-      "hashTitle": "483e0292af337e880c3e2e4b4d1458d9a753ee84",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "OpenAIは「2027年かそれより早く上場する」とCFOフライアー氏が従業員に語る - CNBC",
-      "summaryJa": "OpenAIのCFOサラ・フライアーは、従業員向け全社ミーティングで「2027年に上場企業になる」と伝えつつ、事業の成長次第で早期上場もあり得ると述べた。IPOはゴールではなく資金調達のマイルストーンであり、3月の資金調達額120億ドルが上場の柔軟性を生むとも語った。OpenAIは2024年6月にIPO目論見書を confidentially 提出済みだが、具体的な上場日を公表していない。"
-    },
-    {
-      "id": "1bd0dbb9b09dac1bd4f2b7d47c97264d8cbe8e75",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Google AI tools for students and educators: Back to School 2026 - blog.google",
-      "summary": "Google AI tools for students and educators: Back to School 2026 &nbsp;&nbsp; blog.google",
-      "url": "https://blog.google/products-and-platforms/products/education/back-to-school-2026/",
-      "canonicalUrl": "https://blog.google/products-and-platforms/products/education/back-to-school-2026",
-      "publishedAt": "2026-08-19T19:07:53.000Z",
-      "hashTitle": "652f72152a80af7f3480e6171c4baca3d6fc1ff0",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "学生と教育者向けの Google AI ツール: Back to School 2026 - blog.google",
-      "summaryJa": "新学期に向け、Googleは生徒と教師が自信を持って学べるよう、学習科学に基づく新機能を提供します。内容は、SearchやGemini、YouTubeなどを活用した個別学習や組織機能、深層リサーチの活用、教員向けの授業計画作成と進捗管理など多岐にわたります。新規の生徒向けオファーや、Geminiを用いた学習支援ツール、教育者向けのクラスルーム連携機能など、学習効果を高める取り組みが紹介されています。"
-    },
-    {
-      "id": "2cd65b93e2a06a0cd6a830ca275b95632e4bc61f",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Start the semester with one year of Gemini, on us - blog.google",
-      "summary": "Start the semester with one year of Gemini, on us &nbsp;&nbsp; blog.google",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/",
-      "canonicalUrl": "https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai",
-      "publishedAt": "2026-08-19T19:07:21.000Z",
-      "hashTitle": "2969579ca896ba82d3597616885425c4a553c073",
-      "tags": [
-        "Google",
-        "gemini"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "ジェミニの 1 年間で学期を始めましょう - blog.google",
-      "summaryJa": "Googleは対象の大学生を対象に、1年間のGoogle AIプランを無料で提供し、学習ツールを強化すると発表した。米国外の学生にはGoogle AI Plus、米国居住者にはGoogle AI Proが一年間無償で利用可能となり、Geminiの学習ノートやダッシュボード、インタラクティブなビジュアライゼーション、Gemini LiveのDeep Research機能などが利用できる。新しい学生ハブやノート作成、試験日程の自動追加など、学習を組織化・深掘りする機能も追加されている。"
     },
     {
       "id": "ef913e9fdabc01a874a34c945cc71d8f36dedf16",
@@ -1253,7 +565,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "フロンティアモデル向けにゼロデータ保持を提供",
       "summaryJa": "OpenAIは対象のAPI顧客に対してデータ保持ゼロを再確認し、高度なAI安全性のためのPrivate Safety Processingをデータプライバシーを損なうことなく提供することを予告しました。"
     },
@@ -1271,28 +583,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "検索を使って学習をレベルアップする 5 つの新しい方法",
       "summaryJa": "新学期を迎えるにあたり、Search にAIを活用した新しい学習ツールが追加され、概念の理解を深める対話型ビジュアルや、科目を問わずのカスタマイズ可能な練習クイズ、Lensによる問題解決サポート、ノートブック機能を使った学習整理、 uploaded ファイルやAIモードのスレッドからの要約・一頁化などが提供される。これらは英語版で段階的に世界展開中で、英語・様々な言語に対応予定。ノートやファイル作成機能はAIモードでの利用が拡大し、学習の組織化と効率化を目指す。"
-    },
-    {
-      "id": "d0e481d572cb2e9312aacd142832b3d689d40ed6",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Waymo is bringing Gemini into its custom Ojai vehicles. - blog.google",
-      "summary": "Waymo is bringing Gemini into its custom Ojai vehicles. &nbsp;&nbsp; blog.google",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-waymo/",
-      "canonicalUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-waymo",
-      "publishedAt": "2026-08-19T17:47:50.000Z",
-      "hashTitle": "b7746eefc6768df6fbe7dcf0eb2c50c7cdfa7ce6",
-      "tags": [
-        "Google",
-        "gemini"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Waymo は、Ojai のカスタム車両に Gemini を導入しています。 - blog.google",
-      "summaryJa": "Waymoは、目的設計のOJAI車両にGeminiを搭載し、乗車体験をより役立つものにしました。Waymo Driverが安全運転を行う一方、車内の画面のGeminiアイコンを押して音声で空調調整や周辺情報の取得、近くのカフェ検索などを行えます。GeminiはWaymo Driverとは完全に独立して動作し、利用したいときにだけ起動します。"
     },
     {
       "id": "b4c605e3dfba27e9019260c87c968eadc4be4c27",
@@ -1308,45 +601,9 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "CSS ナビゲーション マッチング、初期の頃",
       "summaryJa": "新しい CSS の @location/@navigation によって、特定のページ間の遷移に基づいてスタイルを適用できる案が説明されている。URL 移動元と移動先を指定する @location、両地点の条件を組み合わせて遷移を検出する @navigation などの仕組みを使い、遷移開始時点での要素選択やビュー転送名の付与、リンク先のスタイル適用などの例が挙げられている。現時点の仕様草案はまだ不確定要素が多く、使いどころや適用範囲は議論が続いている。"
-    },
-    {
-      "id": "9ac0643f24279d0897e7405abdd55cab96f6b9c7",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Replit expands access to software creation with GPT-5.6 Luna - OpenAI",
-      "summary": "Replit expands access to software creation with GPT-5.6 Luna &nbsp;&nbsp; OpenAI",
-      "url": "https://openai.com/index/replit/",
-      "canonicalUrl": "https://openai.com/index/replit",
-      "publishedAt": "2026-08-19T14:30:04.000Z",
-      "hashTitle": "16653c6d3ea616b0660866b6851dffe32bcb5176",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Replit、GPT-5.6 Luna によるソフトウェア作成へのアクセスを拡大 - OpenAI",
-      "summaryJa": "ReplitがGPT-5.6 Lunaを活用して、ソフトウェア開発へのアクセスを拡大する。OpenAIと連携したこの取り組みにより、開発環境の利用が広がる可能性が示されている。"
-    },
-    {
-      "id": "c7852e443120975fd36801d0a714c9dc46176ab4",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "What 3 creatives built with unlimited access to Google Flow - blog.google",
-      "summary": "What 3 creatives built with unlimited access to Google Flow &nbsp;&nbsp; blog.google",
-      "url": "https://blog.google/products/ads-commerce/the-small-brief/",
-      "canonicalUrl": "https://blog.google/products/ads-commerce/the-small-brief",
-      "publishedAt": "2026-08-19T14:18:26.000Z",
-      "hashTitle": "92a3271241af31f35cf4bafc43d3d972058284e9",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Google Flow への無制限アクセスで構築された 3 つのクリエイティブ - blog.google",
-      "summaryJa": "3人のクリエイティブがGoogle Flowを活用して地元企業を支援するキャンペーンを制作しました。スモールビジネス週間に合わせ、サンプリングとしてSusan Credle、Tiffany Rolfe、Jayanta Jenkinsの3名に無制限アクセスを提供し、それぞれ Hudson River ValleyのStonewood Farm、South Ferry（長島・ニューヨーク）のフェリーサービス、ARCHANGELS を題材にAIと人の感性を組み合わせた映像作品を創作しました。Susanは「Just Farming」という言葉遊びを軸に、再生可能農業と地域社会の結びつきを表現しました。Tiffanyは200年の歴史を辿る映像で1833年の Clark家の約束と季節の移ろいを描き、Jayantaは介護者を支える公私の関係を鏡を用いた視覚比喩で描く感動的な物語を作りました。"
     },
     {
       "id": "ee348235949d88731e75a3815728030a1dd4ef64",
@@ -1362,139 +619,28 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "WordPress.com 学生プラン",
       "summaryJa": "WordPress.com が学生向けの料金プラン「Student」を提供し、1年間無料でホスティングを利用できる点が紹介されています。 著者は、初心者のWeb開発教育の現場で、授業の最終課題としてWordPressサイトを作ることが学習成果を示す良い方法だと述べ、長年のホスティングの壁を解消する最適解だと評価しています。 ただし、対象ドメインは .blog と .art に限られる点にも触れ、将来的には他のドメインへ切り替え可能であるとしています。"
     },
     {
-      "id": "7c77d8a56d3eb0c00f9181cf29ad89e52f17a1cc",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Duke partners with Anthropic, offering ‘pay-as-you-go’ Claude subscriptions - The Duke Chronicle",
-      "summary": "Duke partners with Anthropic, offering ‘pay-as-you-go’ Claude subscriptions &nbsp;&nbsp; The Duke Chronicle",
-      "url": "https://www.dukechronicle.com/article/duke-university-partners-with-anthropic-offers-pay-as-you-go-claude-subscriptions-artificial-intelligence-ai-chatgpt-copilot-20260818",
-      "canonicalUrl": "https://www.dukechronicle.com/article/duke-university-partners-with-anthropic-offers-pay-as-you-go-claude-subscriptions-artificial-intelligence-ai-chatgpt-copilot-20260818",
-      "publishedAt": "2026-08-19T03:23:49.000Z",
-      "hashTitle": "2923d23b864ad1676a9bb8f16a1b2141852a8d97",
+      "id": "8be0e1caecbae4ed165492c9a7c83b91147d28ed",
+      "sourceName": "Zenn Frontend Topic",
+      "sourceUrl": "https://zenn.dev/topics/frontend",
+      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
+      "title": "Web基礎 完全読本 — ビジネス職・Web初心者のためのHTML & CSS",
+      "summary": "エンジニアではないけれど Web に関わる人のための、HTML & CSS 入門書。ブラウザとサーバーの仕組みから、HTML/CSS の読み書き、レスポンシブ、実務での立ち回り、表示崩れの切り分けまでを全12章＋付録で体系的に解説します。各章末に確認問題つき。教材一式（スライド・チートシート・クイズ）は https://github.com/techub-organization/webasics で公開しています。",
+      "url": "https://zenn.dev/torifo/books/webasics-html-css",
+      "canonicalUrl": "https://zenn.dev/torifo/books/webasics-html-css",
+      "publishedAt": "2026-08-19T06:10:54.000Z",
+      "hashTitle": "2d8f6fb83560113f2c087f151fdbff3c646d8a06",
       "tags": [
-        "Anthropic",
-        "claude"
+        "html",
+        "css"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Duke が Anthropic と提携し、「従量課金制」クロードのサブスクリプションを提供 - The Duke Chronicle",
-      "summaryJa": "デューク大学がAnthropicと提携し、Claudeの「従量課金型」サブスクリプションを提供することになった。利用料金は利用量に応じて支払う形式として案内されている。"
-    },
-    {
-      "id": "5b56f23464de0f13b3744f59c5b0239338c1eb22",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "au PAY プリペイドカード、 Google Pay™ に対応 | auフィナンシャルサービス株式会社のプレスリリース - PR TIMES",
-      "summary": "au PAY プリペイドカード、 Google Pay™ に対応 | auフィナンシャルサービス株式会社のプレスリリース &nbsp;&nbsp; PR TIMES",
-      "url": "https://prtimes.jp/main/html/rd/p/000000159.000020989.html",
-      "canonicalUrl": "https://prtimes.jp/main/html/rd/p/000000159.000020989.html",
-      "publishedAt": "2026-08-19T03:00:02.000Z",
-      "hashTitle": "f4aaa08d6744649a81873d1dadb1f7b4f543882c",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "au PAY プリペイドカード、 Google Pay™ に対応 | auフィナンシャルサービス株式会社のプレスリリース - PR TIMES",
-      "summaryJa": "au PAY プリペイドカードが2026年8月19日よりGoogle Payに対応し、Android端末でのタッチ決済やGoogle Pay対応のアプリ・オンライン加盟店での支払いが可能になりました。これにより、iOSのApple Payに加え、より多くの端末で決済利用ができるようになります。詳しくは公式案内をご確認ください。"
-    },
-    {
-      "id": "1a2614d53e3adea64e3e96553fee209d3f28c7db",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Claude Codeの週次制限枠「50％増」、8月31日まで延長 「恒久化したいものの……」（ITmedia NEWS） - Yahoo!ニュース",
-      "summary": "Claude Codeの週次制限枠「50％増」、8月31日まで延長 「恒久化したいものの……」（ITmedia NEWS） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/6881f5fe30798b79b7f11b238bba00c6f1bde37e",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/6881f5fe30798b79b7f11b238bba00c6f1bde37e",
-      "publishedAt": "2026-08-19T02:05:37.000Z",
-      "hashTitle": "4d5606f4ab1e8b9d81dcc9cc8aaf92765a4f7c26",
-      "tags": [
-        "claude"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Claude Codeの週次制限枠「50％増」、8月31日まで延長 「恒久化したいものの……」（ITmedia NEWS） - Yahoo!ニュース",
-      "summaryJa": "Claude Codeの週次制限枠を50%増やす措置を8月31日まで延長する方針が示された。恒久化を目指す意向がある一方で、現在の延長には慎重な姿勢が伺える。"
-    },
-    {
-      "id": "fd1e08380b5d21c2765b7da147d7e5d8a2f768f8",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "「Claude Code」の週の制限、50％増プロモーションが8月31日まで延長（窓の杜） - Yahoo!ニュース",
-      "summary": "「Claude Code」の週の制限、50％増プロモーションが8月31日まで延長（窓の杜） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/5c5df4f340235698958f5614cecbbc95a8305416",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/5c5df4f340235698958f5614cecbbc95a8305416",
-      "publishedAt": "2026-08-19T00:40:00.000Z",
-      "hashTitle": "7bfb92b1173d3e8f8d3c739d408c98a40a46ed99",
-      "tags": [
-        "claude"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "「Claude Code」の週の制限、50％増プロモーションが8月31日まで延長（窓の杜） - Yahoo!ニュース",
-      "summaryJa": "Anthropicは「Claude Code」の週単位の利用上限を50％増やす期間限定プロモを8月31日まで延長すると発表した。対象はPro／Max／TeamおよびEnterpriseの座席ベースプランで、5時間制限は対象外、Freeや従量課金型Enterpriseは対象外。今後数週間は需要が高まりキャパシティが逼迫する可能性があるとしており、状況に応じて追加情報を伝えるとしている。"
-    },
-    {
-      "id": "cc2ba566f0d9db7f8f5ac6eb8c8e6ab99cd7ff4c",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Exclusive | OpenAI’s Second-Quarter Sales Show Tepid Growth Compared With Anthropic - WSJ",
-      "summary": "Exclusive | OpenAI’s Second-Quarter Sales Show Tepid Growth Compared With Anthropic &nbsp;&nbsp; WSJ",
-      "url": "https://www.wsj.com/tech/ai/openais-second-quarter-sales-show-tepid-growth-compared-with-anthropic-5cb42998",
-      "canonicalUrl": "https://www.wsj.com/tech/ai/openais-second-quarter-sales-show-tepid-growth-compared-with-anthropic-5cb42998",
-      "publishedAt": "2026-08-18T23:47:00.000Z",
-      "hashTitle": "31c40413ff531877dc251396540832ee6c13bfc4",
-      "tags": [
-        "Anthropic",
-        "OpenAI"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "独占 | OpenAIの第2四半期売上高、Anthropicと比べ鈍い伸び - WSJ",
-      "summaryJa": "OpenAIの第2四半期の売上は伸びが鈍化しており、Anthropicと比較して成長が控えめであることが明らかになった。WSJの独占報道に基づく記事。"
-    },
-    {
-      "id": "56d0c9a182689843954df1d9cbe95c575a51123c",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "How Claude is accelerating protein design and analytical chemistry - Anthropic",
-      "summary": "How Claude is accelerating protein design and analytical chemistry &nbsp;&nbsp; Anthropic",
-      "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
-      "canonicalUrl": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
-      "publishedAt": "2026-08-18T22:14:57.000Z",
-      "hashTitle": "9b5ea09e0eac87d11fe03e9b5c1224e7efe8f7cf",
-      "tags": [
-        "Anthropic",
-        "claude"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "クロードはどのようにしてタンパク質設計と分析化学を加速させているのか - Anthropic",
-      "summaryJa": "Claudeはタンパク質設計と分析化学の分野で、複数ターゲットに対する高効率な設計と迅速なデータ解釈を実証しました。15ターゲットに対して14件のバインダー設計を達成し、ヒット率は48時間実行で約26.7%、各ターゲットを個別設計化すると35.1%に達しました。また、一般公開モデルOpus 5はNMR・LC-MSデータを用いた分析で、元データからの総合結果を23分と19分で返し、純度評価などの一致度は96.4%と96.33%に達しました。これらは複雑な科学タスクの時間と計算専門知識を削減する可能性を示しています。"
-    },
-    {
-      "id": "8542a753e611a2cdb1fe29a500cf5c86549933f9",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Tap into the power of Gemini in Chrome on Android. - blog.google",
-      "summary": "Tap into the power of Gemini in Chrome on Android. &nbsp;&nbsp; blog.google",
-      "url": "https://blog.google/products-and-platforms/products/chrome/gemini-in-chrome-android-auto-browse/",
-      "canonicalUrl": "https://blog.google/products-and-platforms/products/chrome/gemini-in-chrome-android-auto-browse",
-      "publishedAt": "2026-08-18T19:08:41.000Z",
-      "hashTitle": "102df80ec62f9007ca1332db952d8f7bc7a999d4",
-      "tags": [
-        "Google",
-        "gemini"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Android 上の Chrome で Gemini のパワーを活用してください。 - blog.google",
-      "summaryJa": "Android版ChromeのGeminiが米国の全ユーザーで利用可能になり、長文記事の要約やウェブページへの質問応答、GoogleカレンダーやKeepとの連携などをタブを切り替えずに利用できます。Nano Banana.AI ProやAI Ultraの購読者は、Auto Browse機能を使ってイベントの駐車場予約や定期注文の更新、次回の旅行計画といった日常的な作業を自動で行えます。自動処理は重要な作業前に確認を求める設計で、安全性にも配慮されています。"
+      "scoredAt": "2026-08-23T09:37:38.992Z",
+      "titleJa": "Web基礎 完全読本 — ビジネス職・Web初心者のためのHTML & CSS",
+      "summaryJa": "Web基礎 完全読本は、エンジニア以外のWeb関係者を対象に、ブラウザとサーバーの仕組みからHTML/CSSの読み書き、レスポンシブ対応、実務での立ち回りや表示崩れの切り分けまでを全12章＋付録で体系的に解説する入門書です。各章末には確認問題があり、教材一式はGitHubで公開されています。"
     },
     {
       "id": "67f37d861d340b85b022037b65b3e9a60f1c90a5",
@@ -1510,81 +656,27 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "国家安全保障における民主的監視の強化",
       "summaryJa": "OpenAIは国家安全保障分野における民主的な監視を強化する取り組みを開始し、政府機関へのツール提供・訓練・専門知識の供給を通じてAIの監視強化を支援する。"
     },
     {
-      "id": "06530f3a46b43d24491d8f985cc9d4f5de11b2e5",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "「Claude」が生成するテキストに“透かし”が追加、目には見えないその仕組みとは？（窓の杜） - Yahoo!ニュース",
-      "summary": "「Claude」が生成するテキストに“透かし”が追加、目には見えないその仕組みとは？（窓の杜） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/ee714e3938b7cd59a376f4a473fc68c040d73281",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/ee714e3938b7cd59a376f4a473fc68c040d73281",
-      "publishedAt": "2026-08-18T18:24:00.000Z",
-      "hashTitle": "b8cd2705dd39ea33a43cfa29136fb783e863bb66",
+      "id": "f588ce082025a645a4d9b793fd424c9054c6e352",
+      "sourceName": "Zenn Frontend Topic",
+      "sourceUrl": "https://zenn.dev/topics/frontend",
+      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
+      "title": "ChatGPTの?q=は長文を無言で捨てる。「AIに聞く」ボタンで踏んだ5つの罠",
+      "summary": "動いたと思っていたら、入力欄が空でした 自分のサイトに「ChatGPTで開く」「Claudeで開く」というボタンを付けました。押すと、そのAIとの新しい会話が、こちらが用意したプロンプト入りで開く。読者が自分の課題に合う記事をAIに選んでもらうための導線です。 実物は kenimoto.dev の記事一覧 の下にあります。 きっかけは @marikkadayo さんのポスト でした。 普段使ってるAIに相談できる機能つけたらAI経由の流入増えていい感じ 仕組み自体は単純です。プロンプトをURLエンコードして ?q= に載せるだけ。ヘッドレスブラウザで叩いたら3社ともページに到達...",
+      "url": "https://zenn.dev/kenimo49/articles/ai-assist-button-5-traps",
+      "canonicalUrl": "https://zenn.dev/kenimo49/articles/ai-assist-button-5-traps",
+      "publishedAt": "2026-08-18T12:00:46.000Z",
+      "hashTitle": "d3ff78890159b40c8807d4bbe2eb7997a667e282",
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "「Claude」が生成するテキストに“透かし”が追加、目には見えないその仕組みとは？（窓の杜） - Yahoo!ニュース",
-      "summaryJa": "Anthropicは、今後の Claude 系モデルが生成する文章に“透かし”を埋め込む仕組みを導入する予定だと説明しています。これは隠し文字ではなく、直前の単語群と特定の鍵を用いて次の語を決定する方式で、読み手には区別がつかず、追加のトークンやコストも発生しません。なお、透かしは長所と限界があり、短文や事実の説明、コードなどでは効果が薄い場合があり、EUのAI法対応として欧州市場での表示義務が進む見通しです。"
-    },
-    {
-      "id": "a4d9537c24ca483d94da89621e9ea456cc78d8fe",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Apple announces changes for apps in the European Union - Apple",
-      "summary": "Apple announces changes for apps in the European Union &nbsp;&nbsp; Apple",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union/",
-      "canonicalUrl": "https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union",
-      "publishedAt": "2026-08-18T16:05:45.000Z",
-      "hashTitle": "f279deed07a64c74aa52fc77ba3420758953164d",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Apple、欧州連合におけるアプリの変更を発表 - Apple",
-      "summaryJa": "AppleはEUで配布されるアプリの開発者向け条項を更新し、App Store内のApple In-App Purchase使用時の手数料を26%、大多数の開発者には15%、代替決済使用時は20%とする。App Store Small Business ProgramやMini Apps Partner Program、Video Partner Programの参加者には10%、代替決済でリンクアウト購入の場合は10%を適用する一方、ウェブ経由や代替アプリ市場で配布される場合のコア技術手数料は5%となる。未成年者保護として、子カテゴリのアプリはウェブサイトへのリンクを控えることや、購入時に保護者の関与を求める親ガードを導入する規定が追加され、13歳未満にはウェブリンクでの取引自体が不可となる。"
-    },
-    {
-      "id": "3747545d70f1b696f5b5918aa8445cf089586bc0",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Apple changes fees for alternative app stores in EU - Reuters",
-      "summary": "Apple changes fees for alternative app stores in EU &nbsp;&nbsp; Reuters",
-      "url": "https://www.reuters.com/legal/litigation/apple-changes-fees-alternative-app-stores-eu-2026-08-18/",
-      "canonicalUrl": "https://www.reuters.com/legal/litigation/apple-changes-fees-alternative-app-stores-eu-2026-08-18",
-      "publishedAt": "2026-08-18T16:03:00.000Z",
-      "hashTitle": "5c00329ee4c686ee6ce313fb54653c753aa74e0e",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Apple、EU内の代替アプリストアの料金を変更 - ロイター",
-      "summaryJa": "欧州連合で代替アプリストアを利用する際の料金を、Appleが変更したと Reuters が報じた。新しい料金設定の詳細は説明文には記載されていないが、欧州での規制対応として料金体系が見直されたことが示唆される。"
-    },
-    {
-      "id": "01003c6680bc2ecc56a2f52dd87efa12aca00da7",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections - OpenAI",
-      "summary": "Introducing ChatGPT for Teens: Built for learning, backed by protections &nbsp;&nbsp; OpenAI",
-      "url": "https://openai.com/index/chatgpt-for-teens/",
-      "canonicalUrl": "https://openai.com/index/chatgpt-for-teens",
-      "publishedAt": "2026-08-18T11:08:32.000Z",
-      "hashTitle": "e185a971c35033e4e110588fc8b7eb60f0240e96",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "ChatGPT for Teens の紹介: 学習用に構築され、保護機能に支えられています - OpenAI",
-      "summaryJa": "ChatGPTをティーンエンジャー向けに提供開始し、学習を支える設計と保護機能を備えていることを伝える。OpenAIによる告知で、学習目的に適した用途と安全対策を強調している。"
+      "scoredAt": "2026-08-23T09:37:38.992Z",
+      "titleJa": "ChatGPTの?q=は長文を無言で捨てる。「AIに聞く」ボタンで踏んだ5つの罠",
+      "summaryJa": "ChatGPTの ?q= は長文をエラーなく捨てるうえ、 hints=search を付けると入力欄が消えるなど、導線設計の罠が5つ挙げられている。 実際にはURL長によるプロンプト喪失や、ロゴ規約の遵守、公式アセットの余白と色の差異といった問題点が検証され、測定方法にも注意が必要だとしている。"
     },
     {
       "id": "9765648ad527edb666ee1df6ba69a5bb92d8a9c9",
@@ -1600,7 +692,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "CodeAI と提携して第一世代の AI を準備",
       "summaryJa": "OpenAIとCodeAIが協力し、学生のAIリテラシーを高め、AIについて批判的に考える力を養い、責任を持ってAIを活用・形作るスキルを身につけることを目的とした取り組みを進める。"
     },
@@ -1618,46 +710,9 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
+      "scoredAt": "2026-08-23T09:37:38.992Z",
       "titleJa": "サイバー クリティカルな機能の時代におけるモデル開発のペース調整",
       "summaryJa": "OpenAI は frontier AI モデルに対する監視・整合性・セキュリティを強化しており、新しい安全策がモデル開発のペースを導く様子を示しています。これらの対策が、開発の速度と方向性に影響を与える方法が説明されています。"
-    },
-    {
-      "id": "7d7eacff40aa330cc400a4c439db24d8cf9fbfbf",
-      "sourceName": "OpenAI News",
-      "sourceUrl": "https://openai.com/news",
-      "sourceFeedUrl": "https://openai.com/news/rss.xml",
-      "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
-      "summary": "Asana used OpenAI Codex to replace an outdated testing system in two weeks, completing work expected to take five years for about $12K.",
-      "url": "https://openai.com/index/asana",
-      "canonicalUrl": "https://openai.com/index/asana",
-      "publishedAt": "2026-08-18T07:00:00.000Z",
-      "hashTitle": "f3d7af42c9bf19ea86d3e2ba5ae2f293125b89b8",
-      "tags": [
-        "OpenAI",
-        "codex"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "Asana は Codex を使用して 5 年間のエンジニアリング作業を 2 週間で完了しました",
-      "summaryJa": "OpenAI Codexを活用して、従来のテストシステムを2週間で置換し、5年分の工程に相当する作業を約12,000ドルで完了させた。"
-    },
-    {
-      "id": "c0c2eebbb83e5a9a5a2680484997d0b1c45021be",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "GPT-5.6 Sol プレビュー：次世代モデル - OpenAI",
-      "summary": "GPT-5.6 Sol プレビュー：次世代モデル &nbsp;&nbsp; OpenAI",
-      "url": "https://openai.com/ja-JP/index/previewing-gpt-5-6-sol/",
-      "canonicalUrl": "https://openai.com/ja-JP/index/previewing-gpt-5-6-sol",
-      "publishedAt": "2026-08-18T07:00:00.000Z",
-      "hashTitle": "9c9cee9d659923d5ba43272b9436a436705ea67f",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-08-23T06:56:27.516Z",
-      "titleJa": "GPT-5.6 Sol プレビュー：次世代モデル - OpenAI",
-      "summaryJa": "GPT-5.6 Sol プレビューは、OpenAIの次世代モデルとして紹介される新機能の teaser である。公開情報は、現段階で「次世代モデル」という説明のみを示しており、具体的な特徴や改良点の詳細は明らかにされていない。"
     }
   ]
 }
