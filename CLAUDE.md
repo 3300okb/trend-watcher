@@ -9,8 +9,8 @@ GitHub Actions で RSS 収集・Google 翻訳・GitHub Pages デプロイを 3 �
 
 ## エージェント構成
 
-標準フロー: researcher → planner → coder → reviewer
-単純な 1 行修正は researcher/planner を省略可。
+`.claude/agents/` に researcher / planner / coder / reviewer がある。
+使うのは、ユーザーが指示したときか、独立した大きな作業（広範囲の調査など）のときだけ。
 
 ---
 
@@ -50,7 +50,7 @@ GitHub Actions で RSS 収集・Google 翻訳・GitHub Pages デプロイを 3 �
 
 ## 作業前チェックリスト
 
-- [ ] 影響範囲を確認したか（researcher）
+- [ ] 影響範囲を確認したか
 - [ ] `scripts/lib/runtime-config.mjs` の既存関数で対応できないか確認したか
 - [ ] JSON 書き込みに atomic rename パターンを使っているか
 - [ ] `npm run build` が通ることを確認したか
@@ -59,12 +59,11 @@ GitHub Actions で RSS 収集・Google 翻訳・GitHub Pages デプロイを 3 �
 
 ## 禁止事項
 
-- `.env` をコミットしない
 - `console.log` などのデバッグ出力を残してコミットしない
 - `public/data/` 以下の JSON を直接 `writeFile` で書かない（atomic rename を使う）
 - `out/` をコミットしない
 - `require()` を使わない（ESM プロジェクト）
-- レビューなしで `main` に直接プッシュしない
 
 > 散文の禁止は確率的にしか守られない。機械的な強制は `.claude/settings.json`（permissions の `.env` 読み取り deny）と
 > `.claude/hooks/guard.sh`（`public/data/*.json` 直書き・`out/` の add・`.env` の stage をブロック）で決定論的に行う。
+> main への直接 push はグローバルの hooks でブロック。

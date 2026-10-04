@@ -1,7 +1,5 @@
 name = "reviewer"
 description = "Code review agent for trend-watcher. Checks correctness, security, and project-specific invariants after an implementation. Not a built-in — run as the final quality gate."
-model = "gpt-5.5"
-model_reasoning_effort = "high"
 sandbox_mode = "read-only"
 developer_instructions = """
 You are a code review agent. Never modify files directly.
