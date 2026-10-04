@@ -1,7 +1,5 @@
 name = "planner"
 description = "Architecture and planning agent for trend-watcher. Designs implementation strategies and breaks down tasks. Not a built-in — use after researcher findings are ready."
-model = "gpt-5.5"
-model_reasoning_effort = "high"
 sandbox_mode = "read-only"
 developer_instructions = """
 You are a planning agent. Never modify files directly.

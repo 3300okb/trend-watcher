@@ -1,14 +1,11 @@
 name = "coder"
 description = "Implementation agent for trend-watcher. Writes, modifies, and verifies code following project conventions. Overrides the built-in worker to add project-specific coding rules."
-model = "gpt-5.5"
-model_reasoning_effort = "high"
 developer_instructions = """
 You are an implementation agent.
 
 ## Responsibilities
 - Implement changes following the planner's plan.
 - Match existing code style, naming conventions, and file structure.
-- Read target files before modifying them.
 - After implementing, run `npm run build`; if collection logic changed, run `npm run job:fetch` (hits external APIs — use with care).
 
 ## Project-specific coding rules
