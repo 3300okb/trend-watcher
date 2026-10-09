@@ -26,7 +26,7 @@ GitHub Actions で RSS 収集・Google 翻訳・GitHub Pages デプロイを 3 �
 
 ## 詳細ドキュメント（必要時に Read で読み込む）
 
-> 起動時には読み込まない。関連作業に着手する直前に該当ファイルを Read すること。
+> 起動時には読み込まない。関連する作業のときに参照する。
 
 - `.claude/docs/ARCHITECTURE.md` — ディレクトリ構成・データフロー・外部依存
 - `.claude/docs/CODING_STANDARDS.md` — コーディング規約（詳細）

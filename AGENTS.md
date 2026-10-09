@@ -23,14 +23,14 @@ GitHub Actions で RSS 収集・Google 翻訳・GitHub Pages デプロイを 3 �
 
 タスクに応じて以下を参照する。**必要なときだけ読み込むこと**：
 
-| ファイル | 読むタイミング |
+| ファイル | 内容 |
 | --- | --- |
-| `.codex/project-baseline.md` | 共通品質・セキュリティ基準を確認するとき |
-| `.codex/workflow.md` | 作業開始時・タスクの進め方・報告フォーマットを確認するとき |
-| `.codex/coding-standards.md` | コードを書く・修正する前 |
-| `.codex/testing.md` | テスト・品質チェックを行うとき |
-| `.codex/git.md` | コミット・ブランチ操作を行う前 |
-| `.codex/environment.md` | 環境セットアップ・キーワード設定・Supabase を扱うとき |
+| `.codex/project-baseline.md` | 共通の品質・セキュリティ基準 |
+| `.codex/workflow.md` | 作業手順・検証・報告フォーマット |
+| `.codex/coding-standards.md` | ESM・atomic write・エラー処理などのコーディング規約 |
+| `.codex/testing.md` | 品質チェックの手順（lint・テストは未導入） |
+| `.codex/git.md` | ブランチ・コミット規約・CI/CD |
+| `.codex/environment.md` | 環境セットアップ・キーワード設定・Supabase |
 
 ディレクトリ固有の規約は各ディレクトリの `AGENTS.md`（`scripts/AGENTS.md` / `public/AGENTS.md`）に置いてある。
 Codex はルートから作業ディレクトリまでのパス上の AGENTS.md を自動で読み込む。
