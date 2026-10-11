@@ -7,13 +7,6 @@ GitHub Actions で RSS 収集・Google 翻訳・GitHub Pages デプロイを 3 �
 
 ---
 
-## エージェント構成
-
-`.claude/agents/` に researcher / planner / coder / reviewer がある。
-使うのは、ユーザーが指示したときか、独立した大きな作業（広範囲の調査など）のときだけ。
-
----
-
 ## スキル（手続き型ワークフロー）
 
 呼び出し時のみ本体がロードされる。`/名前` で明示実行も可。
