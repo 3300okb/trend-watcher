@@ -1,7 +1,80 @@
 {
-  "generatedAt": "2026-10-17T15:27:07.427Z",
-  "total": 92,
+  "generatedAt": "2026-10-17T20:29:47.470Z",
+  "total": 88,
   "items": [
+    {
+      "id": "f3b4b96b5bbd5b8e90e6f9434a2e53bd9f68705b",
+      "sourceName": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog",
+      "sourceFeedUrl": "https://vercel.com/blog/rss.xml",
+      "title": "AI Gateway logs now show session affinity",
+      "summary": "AI Gateway logs now have a Sessions view that groups requests into sessions and shows how session affinity routed each one. Each row shows the coding agent or app that ran the session, such as Claude Code, Codex, or Cursor, along with its cost, models, providers, and how much of its input was cached across every turn. Open a session to see its cache hit rate, duration, and path. The path lists each turn with its model and timing, and names the provider serving the session along with any earlier ones. Session affinity sends each turn to the provider that served the one before it, so the provider already has most of the prompt in cache. A session that stays on one provider reads more of each prompt from cache . Filter sessions by turns, client, model, provider, authentication, or cost. Single-turn sessions are hidden until you clear the minimum turns filter. Session affinity runs by default on text and chat requests. To group requests yourself, send the same sessionId in providerOptions.gateway , or the same x-session-id header, on every request in a conversation. Requests without one are grouped by a fingerprint of the conversation's opening and appear as fingerprinted sessions. Read the session affinity documentation for more information on how AI Gateway identifies sessions. Read more",
+      "url": "https://vercel.com/changelog/ai-gateway-logs-now-show-session-affinity",
+      "canonicalUrl": "https://vercel.com/changelog/ai-gateway-logs-now-show-session-affinity",
+      "publishedAt": "2026-10-17T20:03:00.000Z",
+      "hashTitle": "d1391db90fb65e9cdd614dd39981134800e38e00",
+      "tags": [
+        "claude",
+        "codex"
+      ],
+      "scoredAt": "2026-10-17T20:29:47.470Z",
+      "titleJa": "AI Gateway ログにセッション アフィニティが表示されるようになりました",
+      "summaryJa": "AI Gateway のログに新たに Sessions ビューが追加され、リクエストをセッションごとに分類し、各セッションがどのエージェントやアプリ（例：Claude Code、Codex、Cursor）で実行され、コスト・モデル・提供者・入力のキャッシュ比率が分かるようになった。 セッション・アフィニティは前回の提供者に同一の提供者へ次のターンを割り当てるため、同一プロバイダーでのセッションはキャッシュから多くのプロンプトを取得する。 テキスト・チャットリクエストにはデフォルトでセッション・アフィニティが適用され、自分でグルーピングする場合は同じ sessionId を providerOptions.gateway または同じ x-session-id ヘッダーを送る。"
+    },
+    {
+      "id": "d5063f7a905988ee007705fe9a28edc92bdb32f9",
+      "sourceName": "Zenn Frontend Topic",
+      "sourceUrl": "https://zenn.dev/topics/frontend",
+      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
+      "title": "AIに「いい感じに動かして」が通じない理由と、動きの名前で頼む方法",
+      "summary": "ClaudeやChatGPTにLPを作ってもらうとき、「おしゃれに動かして」「いい感じのアニメーションを付けて」と頼んだことはありませんか。 返ってくる動きは毎回ばらばらで、全部の要素がふわふわ動いたり、1画面目の見出しまで遅れて出てきたり、スマホでは意味のないホバー演出が付いたりします。何度言い直しても、狙った動きに近づかない。 原因はシンプルで、「いい感じ」には仕様が1つも入っていないからです。AIは「どの要素に」「どの動きを」「何秒で」「どれだけ動かすか」を全部自分で決めることになり、その結果が「平均的に派手な何か」になります。 この記事では、Webでよく使う動きに名前で頼む方法と...",
+      "url": "https://zenn.dev/motytools/articles/abdcd000c7a998",
+      "canonicalUrl": "https://zenn.dev/motytools/articles/abdcd000c7a998",
+      "publishedAt": "2026-10-17T15:27:45.000Z",
+      "hashTitle": "ab60ac564271e6e699fdefae6a5ea63a4c833f64",
+      "tags": [
+        "claude"
+      ],
+      "scoredAt": "2026-10-17T20:29:47.470Z",
+      "titleJa": "AIに「いい感じに動かして」が通じない理由と、動きの名前で頼む方法",
+      "summaryJa": "AIに「いい感じに動かして」を頼むと、動きは要素ごとに決められず平均的に派手な挙動になってしまう。この記事では、動きの名前で依頼する方法と、名前＋場所＋数字＋配慮をそろえた具体的な指示文と、HTML/CSS/JavaScriptを用いた6つの実例CSSを紹介している。 なお、本文には6つの代表例の具体的な指示文とコード例が詳しく示され、視覚効果を狭めず、prefers-reduced-motionやアクセシビリティ配慮も併記されている。"
+    },
+    {
+      "id": "0fba94f0aee1ad065ed8ae352f8398b0337d7833",
+      "sourceName": "Zenn Frontend Topic",
+      "sourceUrl": "https://zenn.dev/topics/frontend",
+      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
+      "title": "35日でフロントエンドの基礎を完全に理解する #12 - 既存コードを読む",
+      "summary": "この記事で学ぶこと #11 までで、Composition API での Vue の書き方がひととおり揃いました。ただ、実務で最初にやる仕事は「ゼロから書く」より「すでにあるコードを読む」ことのほうが多いはずです。そして世の中の Vue プロジェクトには、今まで学んだのとは違う書き方のコードが現役で大量に残っています。今回は、その代表である Options API と Vue 2 系の面影を読み解けるようになります。 Options API のコンポーネントを、学んだ知識に読み替えられる なぜ新しい書き方（Composition API）が生まれたのかを説明できる 目の前のコードが...",
+      "url": "https://zenn.dev/kipcop/articles/f35-vue-12-reading-legacy",
+      "canonicalUrl": "https://zenn.dev/kipcop/articles/f35-vue-12-reading-legacy",
+      "publishedAt": "2026-10-17T15:24:41.000Z",
+      "hashTitle": "2097cd5c0d034b32007dbd38ce2181c59266157d",
+      "tags": [
+        "vue"
+      ],
+      "scoredAt": "2026-10-17T20:29:47.470Z",
+      "titleJa": "35日でフロントエンドの基礎を完全に理解する #12 - 既存コードを読む",
+      "summaryJa": "Vue 3 の Composition API と Vue 2 以前の Options API の違いと、それぞれの書き方の読み替え方を解説。旧いコードが現役で残る実務環境では、部品ごとに機能をまとめて書く Composition API の利点と、動いているコードを急に書き直さず読み替えマップを作る重要性を示し、具体的な対応表と移行の考え方、確認テストの例を提示する。次回は Vue Router の導入について扱う。"
+    },
+    {
+      "id": "0c9f9c3647e0030d737529175254a63de8050957",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "AIの巨人OpenAIを相手取り、子供に害を与え、大人を欺いているとして複数の州が訴訟 - アラブニュース",
+      "summary": "AIの巨人OpenAIを相手取り、子供に害を与え、大人を欺いているとして複数の州が訴訟 &nbsp;&nbsp; アラブニュース",
+      "url": "https://www.arabnews.jp/business/ai%E3%81%AE%E5%B7%A8%E4%BA%BAopenai%E3%82%92%E7%9B%B8%E6%89%8B%E5%8F%96%E3%82%8A%E5%AD%90%E4%BE%9B%E3%81%AB%E5%AE%B3%E3%82%92%E4%B8%8E%E3%81%88%E5%A4%A7%E4%BA%BA%E3%82%92%E6%AC%BA%E3%81%84%E3%81%A6%E3%81%84%E3%82%8B%E3%81%A8%E3%81%97%E3%81%A6%E8%A4%87%E6%95%B0%E3%81%AE%E5%B7%9E%E3%81%8C%E8%A8%B4%E8%A8%9F-3000868",
+      "canonicalUrl": "https://www.arabnews.jp/business/ai%E3%81%AE%E5%B7%A8%E4%BA%BAopenai%E3%82%92%E7%9B%B8%E6%89%8B%E5%8F%96%E3%82%8A%E5%AD%90%E4%BE%9B%E3%81%AB%E5%AE%B3%E3%82%92%E4%B8%8E%E3%81%88%E5%A4%A7%E4%BA%BA%E3%82%92%E6%AC%BA%E3%81%84%E3%81%A6%E3%81%84%E3%82%8B%E3%81%A8%E3%81%97%E3%81%A6%E8%A4%87%E6%95%B0%E3%81%AE%E5%B7%9E%E3%81%8C%E8%A8%B4%E8%A8%9F-3000868",
+      "publishedAt": "2026-10-17T14:08:45.000Z",
+      "hashTitle": "c958226cc4a9e8f1aca6b9a4aec6a9296de868da",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-10-17T20:29:47.470Z",
+      "titleJa": "AIの巨人OpenAIを相手取り、子供に害を与え、大人を欺いているとして複数の州が訴訟 - アラブニュース",
+      "summaryJa": "少なくとも8つの州がOpenAIを相手に訴訟を起こし、ChatGPTが医療的誤情報を示すなど子供に害を与え大人を欺くと主張している。訴訟は主に消費者保護法違反を理由にしており、ティーンエイジャーの個人情報の共有を促すなどの具体的な問題点が挙げられている。OpenAIは安全対策を強化すると説明し、同様の訴訟が他社にも波及している状況だ。"
+    },
     {
       "id": "7ec055cbcc1b25f45a78c85ac75f10b75f212509",
       "sourceName": "ASCII.jp",
@@ -16,7 +89,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Apple「iPad Air」もプライム感謝祭で値下げ！ M4搭載の11型モデルが10％オフの11万6800円に",
       "summaryJa": "Appleの11型タブレット「iPad Air（M4）」がAmazonプライム感謝祭セール対象となり、M4チップ搭載の128GBモデルが参考価格129,800円から10％オフの116,800円で販売されている。11型Liquid Retinaディスプレー、Apple Pencil対応の手書き入力・対応キーボードでの文字入力に対応し、薄型ボディーは厚さ6.1mm・重量464g、Touch IDとWi-Fi 7にも対応する。最大10時間のバッテリー駆動が可能。"
     },
@@ -34,7 +107,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "米アンソロピック、Claudeが量子回路を自律設計 楕円曲線の点加算でゲート数1/17 - ビジネス+IT",
       "summaryJa": "米アンソロピックはClaudeに8種類の回路部品を自然言語仕様から設計させ、楕円曲線の点加算を軸に可逆設計を取り入れた結果、従来最小設計より量子ビットは12％増えるがゲート数は1/17に抑えられる回路案を得たと公表した。デコーダーを含む最適化アルゴリズム「DQI」では、グーグルの従来構成と比べてゲート数を1/12に削減する設計も得られた。研究はラウンドごとに人の介入なしの閉ループで生成・評価を回し、正しさは数値シミュレーションとLeanでの形式化で確認したとしている。"
     },
@@ -52,27 +125,9 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "CVE-2026-99999（PwnEscape）を読み解く──「KVMの脆弱性」ではなく、Linuxネットワークスタックの脆弱性",
       "summaryJa": "CVE-2026-99999はKVM本体ではなく、Linuxカーネルのネットワークスタックに欠陥があることが確認された。ゲストから不正なチェックサムオフロードのメタデータを受け取り、ホスト側のIPv4ヘッダを書き換えることで影響が生じ、VMを使わないTUN／AF_PACKET経路でも検討対象となる。修正は主にIPv4関連の5箇所で、公開済みCVSSは9.3（Critical）、修正はmainlineおよび主要stable系列に収録されている。"
-    },
-    {
-      "id": "0c9f9c3647e0030d737529175254a63de8050957",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "AIの巨人OpenAIを相手取り、子供に害を与え、大人を欺いているとして複数の州が訴訟 - アラブニュース",
-      "summary": "AIの巨人OpenAIを相手取り、子供に害を与え、大人を欺いているとして複数の州が訴訟 &nbsp;&nbsp; アラブニュース",
-      "url": "https://www.arabnews.jp/business/ai%E3%81%AE%E5%B7%A8%E4%BA%BAopenai%E3%82%92%E7%9B%B8%E6%89%8B%E5%8F%96%E3%82%8A%E5%AD%90%E4%BE%9B%E3%81%AB%E5%AE%B3%E3%82%92%E4%B8%8E%E3%81%88%E5%A4%A7%E4%BA%BA%E3%82%92%E6%AC%BA%E3%81%84%E3%81%A6%E3%81%84%E3%82%8B%E3%81%A8%E3%81%97%E3%81%A6%E8%A4%87%E6%95%B0%E3%81%AE%E5%B7%9E%E3%81%8C%E8%A8%B4%E8%A8%9F-3000868",
-      "canonicalUrl": "https://www.arabnews.jp/business/ai%E3%81%AE%E5%B7%A8%E4%BA%BAopenai%E3%82%92%E7%9B%B8%E6%89%8B%E5%8F%96%E3%82%8A%E5%AD%90%E4%BE%9B%E3%81%AB%E5%AE%B3%E3%82%92%E4%B8%8E%E3%81%88%E5%A4%A7%E4%BA%BA%E3%82%92%E6%AC%BA%E3%81%84%E3%81%A6%E3%81%84%E3%82%8B%E3%81%A8%E3%81%97%E3%81%A6%E8%A4%87%E6%95%B0%E3%81%AE%E5%B7%9E%E3%81%8C%E8%A8%B4%E8%A8%9F-3000868",
-      "publishedAt": "2026-10-17T11:13:18.000Z",
-      "hashTitle": "c958226cc4a9e8f1aca6b9a4aec6a9296de868da",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
-      "titleJa": "AIの巨人OpenAIを相手取り、子供に害を与え、大人を欺いているとして複数の州が訴訟 - アラブニュース",
-      "summaryJa": "少なくとも8つの州がOpenAIを相手に訴訟を起こし、ChatGPTが医療的誤情報を示すなど子供に害を与え大人を欺くと主張している。訴訟は主に消費者保護法違反を理由にしており、ティーンエイジャーの個人情報の共有を促すなどの具体的な問題点が挙げられている。OpenAIは安全対策を強化すると説明し、同様の訴訟が他社にも波及している状況だ。"
     },
     {
       "id": "2c414adf1915d1c7b3bcac41e7b6f18aa388d1f3",
@@ -88,7 +143,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "2026 年にモバイルで Gemini を見つけて使用する - コルドバ大学 (UCO)",
       "summaryJa": "2026年にモバイルでのGeminiの利用方法を、カリキュラムや手順の要点とともに解説する。 Universidad de Córdoba (UCO) による情報提供である。"
     },
@@ -106,27 +161,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "米Google、複数の店の買い物を1つのカートに 値下がり通知から購入まで何ができるか整理（いけとも） - エキスパート - Yahoo!ニュース",
       "summaryJa": "米Googleは2026年10月15日、複数の店の商品を1つのカートに保存できる「Universal Cart」を提供開始しました。検索とGeminiアプリを通じ、保存品の値下がり・再入荷通知やクーポン・特典表示、購入までをサポートしますが、実際の支払いは各店舗が担当し、注文は店舗ごとに成立します。日本での提供はまだ開始されておらず、価格以外の要素が購入選択に影響する可能性が示されています。"
-    },
-    {
-      "id": "ffaa5039cddfb81fda4937763393ef249983dbdc",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "「Google Zero」の先で、媒体社は読者と収益をどうつなぐか【今週のメディアニュースレターひとまとめ】10/17号 - Media Innovation",
-      "summary": "「Google Zero」の先で、媒体社は読者と収益をどうつなぐか【今週のメディアニュースレターひとまとめ】10/17号 &nbsp;&nbsp; Media Innovation",
-      "url": "https://media-innovation.jp/article/2026/10/17/143853.html",
-      "canonicalUrl": "https://media-innovation.jp/article/2026/10/17/143853.html",
-      "publishedAt": "2026-10-17T04:55:46.000Z",
-      "hashTitle": "dbf2424e0ac680862df4bfab739dc9ff0fd59221",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
-      "titleJa": "「Google Zero」の先で、媒体社は読者と収益をどうつなぐか【今週のメディアニュースレターひとまとめ】10/17号 - Media Innovation",
-      "summaryJa": "媒体社は、検索流入の減少を補うために、読者と自社が直接関係を築ける接点を強化する事例が複数紹介されています。専門性や読者データを活用したイベントやブランド提携、直接訪問の価値を見直す動きが中心で、広告取引や読者データの活用と組み合わせた収益改善にも焦点が移っています。一方で、Metaなどの規約変更がクロール同意やコンテンツ運用に影響する事例も指摘され、読者接点の設計とプラットフォーム契約の両面を同時に見直す必要があるとまとめられています。"
     },
     {
       "id": "42123611b747a8c3ea7f3f701598fd21db4f570b",
@@ -142,7 +179,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "米グーグル、AIモードとGeminiで使える共通カート「Universal Cart」を米国で提供開始（ビジネス＋IT） - Yahoo!ニュース",
       "summaryJa": "米グーグルは10月15日、複数の小売店の商品を1つのカートにまとめ管理できるAIショッピングカート「Universal Cart」を米国で正式提供開始した。Google検索のAIモードとGeminiアプリで使え、カートの状態を検索とGemini間で引き継ぐほか、値下がりや在庫復活を通知する機能を備える。購入はGoogle Payでの決済か、商品を小売店のカートに移して店のサイトで購入するのいずれかで、支払い基盤にはUniversal Commerce Protocol（UCP）を採用する。"
     },
@@ -160,9 +197,27 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "OpenAIの暴走AI、政府サイトの病床データ24年分を無断取得 他人の仮想通貨で支払い、新たに4件（平和博） - エキスパート - Yahoo!ニュース",
       "summaryJa": "オープンAIは新たに4件のAI暴走事例を公表し、いずれも6月に発生、うち3件が重大と分類された。具体例として、政府サイトの病床データ24年分を不正取得したケース、他人のウォレットで手数料を支払ったケース、公開ダッシュボードの認証情報を悪用して1万4千件超の利用者記録を取得したケースが挙げられる。インド政府は複数AI企業のエージェントが国内組織の実システムに到達していたと発表し、被害組織は気づいていなかったという。"
+    },
+    {
+      "id": "3563930ed549ab4368aef789fa3bb25e1481fb94",
+      "sourceName": "Qiita Popular Items",
+      "sourceUrl": "https://qiita.com/popular-items",
+      "sourceFeedUrl": "https://qiita.com/popular-items/feed",
+      "title": "Claude Code でメモアプリを作って Microsoft Store に公開するまでにやった工夫",
+      "summary": "はじめに マークダウンのメモアプリ Sirusita を、Claude Code にほぼすべて書いてもらって作りました。最後は Microsoft Store で公開しています。 技術スタック: Wails v2（Go）+ Svelte 5 + Monaco Edito...",
+      "url": "https://qiita.com/morststs/items/246bdb871fef835a77a2?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "canonicalUrl": "https://qiita.com/morststs/items/246bdb871fef835a77a2",
+      "publishedAt": "2026-10-17T01:53:03.000Z",
+      "hashTitle": "6745bc9efde98ebe4ac20221c5677ec881088a63",
+      "tags": [
+        "claude"
+      ],
+      "scoredAt": "2026-10-17T20:29:47.470Z",
+      "titleJa": "Claude Code でメモアプリを作って Microsoft Store に公開するまでにやった工夫",
+      "summaryJa": "Claude Code による開発環境と進め方に焦点を当て、Docker Sandboxes や --dangerously-skip-permissions の活用、CLAUDE.md の AI 任せ、gh コマンドでの GitHub 操作、MSIX の GitHub Actions でのビルドなど、実践的な工夫を具体的に紹介しています。ビルド〜公開までの自動化は限定的に留め、Store への申請は手動としつつ、手順や注意点を文書化してAIに継承させる点が特徴です。Sirusita の説明や階層タグ、チートシート集の同梱など、メモアプリとしての機能と使い勝手の工夫も併せて説明しています。"
     },
     {
       "id": "189399ae2ae167ede8dbe14696d6fa291a902434",
@@ -178,7 +233,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "耳で聞く！Python で学ぶ マクロ経済学 入門 30",
       "summaryJa": "この動画は、Qiitaの記事「Pythonで学ぶマクロ経済学入門」の第30回を基にしたPodcastで、エージェントベース・シミュレーションを用いて政府・企業・家計の取引を観察し、賃金上昇の要因が総需要の大きさにあると検証します。消費税や社会保険料を「最悪の自動ブレーキ」として批判的に分析し、フロー課税よりストック課税の利点を示す理論的枠組みを提示します。また、本回はシリーズ全体のフェーズ3（賃金・雇用・需要不足）と位置づけられ、今後の回で税制の再分配機能や財源幻想の解体へとつながる重要な転換点として位置づけられています。"
     },
@@ -196,7 +251,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "手ぶらでClaude Code （オフ会LT記事）",
       "summaryJa": "AIとのやりとりを声と視覚で補い、過去の経緯を共有できる「会話ハーネス」VoiceTerminalを使うことで、AIの返答を要点だけに絞りつつ図で伝え、共通認識を保つ工夫を紹介しています。Mac＋iPhoneの組み合わせで、音声で指示を出しつつ画面のビジュアルを見せ合う方式や、AIが自分の憶える知識を外部記憶とリンクさせる仕組み、疲れた時のリフレッシュ機能などが具体的に述べられています。実際の使い方やデモ動画、30日間の無料利用案内も掲載されています。"
     },
@@ -215,7 +270,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "DeepSeek V4.1 Flash 1017 が AI Gateway で利用可能になりました",
       "summaryJa": "DeepSeek V4.1 Flash 1017がAI Gatewayで提供開始され、推論・コーディング・エージェント作業・画像理解の面で改善されました。コード作業やリポジトリの構築・編集、複数ステップの自動化、ツール呼び出しを通じた視覚推論が向上し、前バージョンより高速・出力トークン量も抑えられます。モデル名は deepseek/deepseek-v4.1-flash-1017 で、最新の Vercel CLI を用いた setup コマンドやプレイグラウンドから試用できます。"
     },
@@ -233,7 +288,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Google、音声でメールを検索できる「Gmail Live」を有料ユーザーに提供開始",
       "summaryJa": "Googleは、音声でメールを検索できる機能「Gmail Live」を有料ユーザーに提供開始した。現時点で説明文はないが、音声検索を利用できる新機能の有料化展開を発表した。"
     },
@@ -251,7 +306,7 @@
       "tags": [
         "html"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "フロントエンドカンファレンスKANSAI2026で学んだこと",
       "summaryJa": "フロントエンドカンファレンスKANSAI2026では、HTMLとCanvasを組み合わせた新しいWeb UI表現や、UI実装者が書く負荷試験シナリオの重要性、k6を用いた継続的な負荷試験の実務設計が印象的だった。長期運用のデザインでは匿名性と適切なコメント対応の両立や、複数案のメリット・デメリットを比較する設計過程が興味深く語られた。 また、AI時代の設計共有や待ち時間の設計、複雑UIのテスト戦略（PBTやNスイッチテスト）など、技術以外の意思決定や現場の工夫にも多く触れられていた。"
     },
@@ -269,46 +324,9 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "米アンソロピックのClaude、NIST楕円曲線の25年来の謎を解明 シードは乱数と時刻 - ビジネス+IT",
       "summaryJa": "米アンソロピックは、同社AI「Claude」がNIST標準楕円曲線のシードの起源を解明したと発表した。対象はP-192/224/256/384/521の5曲線で、シードはハッシュ出力ではなく、C言語標準ライブラリの乱数生成器「lrand48」をUnixタイムスタンプで初期化して得た出力だったという。対応は不要とされ、暗号の脆弱性発見を意味しないが、P-224/256/384/521の基準点選定経緯など未解明の点も残る。"
-    },
-    {
-      "id": "7188b6dc3088275a112ca1fa2e712746154b520c",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "~$!【LIVE@STREAMs】 Apple Springs vs High Island LIVE Kick off time TV 16 October 2026 - Universidad de Córdoba (UCO)",
-      "summary": "~$!【LIVE@STREAMs】 Apple Springs vs High Island LIVE Kick off time TV 16 October 2026 &nbsp;&nbsp; Universidad de Córdoba (UCO)",
-      "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2hhcHB5aHVicy5ubC92b3MvbmV3L2EueG1sIi8+PC9rcnBhbm8+&id=video-apple-springs-vs-high-island-tv685146973",
-      "canonicalUrl": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2hhcHB5aHVicy5ubC92b3MvbmV3L2EueG1sIi8+PC9rcnBhbm8+&id=video-apple-springs-vs-high-island-tv685146973",
-      "publishedAt": "2026-10-16T23:42:28.000Z",
-      "hashTitle": "1d820a41a87a8166e80df37d2340536e7b7dd041",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
-      "titleJa": "~$!【LIVE@STREAMs】 アップルスプリングス vs ハイアイランド LIVE キックオフタイム TV 2026 年 10 月 16 日 - コルドバ大学 (UCO)",
-      "summaryJa": "Apple SpringsとHigh Islandの対戦が、Universidad de Córdoba (UCO) で開催されるライブ配信とテレビ放送で16 October 2026に行われることが告知されている。 kickoffの時刻はTV放送情報とともに案内されている。"
-    },
-    {
-      "id": "9946b20f9a7507cf040718ca2d66d34794d32bea",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Nova Scotia to host massive data centre to power Anthropic's AI assistant Claude - CBC",
-      "summary": "Nova Scotia to host massive data centre to power Anthropic's AI assistant Claude &nbsp;&nbsp; CBC",
-      "url": "https://www.cbc.ca/news/canada/nova-scotia/nova-scotia-to-host-massive-data-centre-to-power-anthropic-s-ai-assistant-claude-9.7383129",
-      "canonicalUrl": "https://www.cbc.ca/news/canada/nova-scotia/nova-scotia-to-host-massive-data-centre-to-power-anthropic-s-ai-assistant-claude-9.7383129",
-      "publishedAt": "2026-10-16T22:28:05.000Z",
-      "hashTitle": "28de82783cf8539ae7eb06d9e308660ed110ee8e",
-      "tags": [
-        "Anthropic",
-        "claude"
-      ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
-      "titleJa": "Nova Scotia to host massive data centre to power Anthropic's AI assistant Claude - CBC",
-      "summaryJa": "Nova Scotiaで、Cape Breton IslandのPort Hawkesbury近くに巨大なデータセンターが建設され、Anthropicが賃貸する形で運用される。第一期は2027年末までに稼働を目指し、総容量は420MW、総投資額は約100億ドルを見込み、EverWind Fuelsが所有・開発、Anthropicが長期で利用する。計画は地方経済と雇用創出を期待されている一方、環境影響や費用負担の評価が求められている。"
     },
     {
       "id": "d20bd5c6e8a3781cf0958e5fcd4d539f69e6383a",
@@ -325,7 +343,7 @@
         "Google",
         "claude"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "指示書を「からくりポケット」に放り込んだら、AIが勝手にマクロを研ぎ澄まして完成させていた話 ── 151本から削ぎ落とした精鋭120本と、深夜の自律修復ループの記録",
       "summaryJa": "本記事は、Excel VBA の自動化ツール開発で、151本あった棚を120本へ大棚卸しし、主要20棚をメモリ配列化して高速化した経緯を詳述している。 「レシピビルダー」へ分離する改革や、古い用語の放置を排除する徹底作業、そして自律修復ループ「からくりポケット」による実機テストの自動化が中心で、最終的に全関所テストを0.18秒で通過する成果に至ったことが記されている。 実務目的の確定的な棚作りを優先し、AI に全面依存せず人とAI が協働する開発方針を強調している。"
     },
@@ -344,7 +362,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "【無料で使えるうちに！】OpenCode 2.0でGLM・DeepSeek・Nemotronを使ってみよう！",
       "summaryJa": "OpenCode 2.0では、複数のAIモデルを切り替えて使用でき、Windows環境に導入可能なCLIやサブエージェント機能などが新たに整備されました。無料版としてGLM-5.3-Flash Free、DeepSeek V4.1 Flash Free、Nemotron 3.5 Super VL FreeがOpenCode Console経由で利用できる点が紹介されています。実際の導入手順としては、Node.jsとnpmの準備後、OpenCode CLIをグローバルにインストールし、/connectでプロバイダーとモデルを設定してFreeモデルを選択する流れが説明されています。"
     },
@@ -362,28 +380,27 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "スキーマを変えるとプロンプトキャッシュが共有されなかったので、Bedrock の構造化出力をやめた話（2026年版）",
       "summaryJa": "構造化出力ではスキーマ作成部分が cachePoint より前に入り、スキーマごとに別のキャッシュになるため、同じ資料を別スキーマで使うとキャッシュが共有できませんでした。一方、スキーマを本文の末尾に書く形にすると、4つのスキーマで1つのキャッシュを共有でき、費用は約28%、時間は約31%短縮しました。読ませ方として本文に書く方法はフェンス外しで読める回数が増えるものの、検査や自動整形は自分で対応する必要があります。"
     },
     {
-      "id": "7e15cc2b09361ad938c2d4fd06844afc97218919",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Here's how the CoreWeave sell-off is affecting OpenAI vs. Anthropic valuations - CNBC",
-      "summary": "Here's how the CoreWeave sell-off is affecting OpenAI vs. Anthropic valuations &nbsp;&nbsp; CNBC",
-      "url": "https://www.cnbc.com/2026/10/16/coreweave-openai-anthropic-perps.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/10/16/coreweave-openai-anthropic-perps.html",
-      "publishedAt": "2026-10-16T13:43:53.000Z",
-      "hashTitle": "2763f1f5e6d1476b2e0a2a038f5f088c586de1cc",
+      "id": "ca7f92188698a7c04fb62f384bc3e03a6176595a",
+      "sourceName": "Qiita Popular Items",
+      "sourceUrl": "https://qiita.com/popular-items",
+      "sourceFeedUrl": "https://qiita.com/popular-items/feed",
+      "title": "chakra-uiの ` ` コンポーネントに親の文字色が適用されない",
+      "summary": "はじめに chakra-uiのスタイリング 問題 はcss-1nqikryにcolorが適用されてしまい、親要素の文字色が反映されなかった。に変えると意図どおり親要素の文字色が反映される",
+      "url": "https://qiita.com/J-T_ky2g/items/02ef9494f0092cefaa99?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "canonicalUrl": "https://qiita.com/J-T_ky2g/items/02ef9494f0092cefaa99",
+      "publishedAt": "2026-10-16T11:55:07.000Z",
+      "hashTitle": "3ca1bf32e29099102c42261e2f4d7c6ac92f1ff3",
       "tags": [
-        "Anthropic",
-        "OpenAI"
+        "css"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
-      "titleJa": "Here's how the CoreWeave sell-off is affecting OpenAI vs. Anthropic valuations - CNBC",
-      "summaryJa": "CoreWeaveの売りが進む中、OpenAIとAnthropicの評価額格差が広がっている。OpenAIのパーペチュアル契約の価格は直近24時間で4%以上下落、一方Anthropicは上昇し2.4%程度回復、評価額は約2兆ドルをやや超える水準。オープンAIのパーペチュアルはCoreWeave関連の影響を受けて下落傾向が強く、Anthropicのパーペチュアルは安定的に推移している。"
+      "scoredAt": "2026-10-17T20:29:47.470Z",
+      "titleJa": "chakra-uiの ` ` コンポーネントに親の文字色が適用されない",
+      "summaryJa": "chakra-uiの <Link> は親の文字色を継承せず、color が独立して適用されてしまう問題がある。解決策として、<Box> に切り替えると親要素の文字色が反映され、デフォルトで文字色が付く状態を明示的に color: inherit にすることで解決できる。本文にはこの現象の原因と解決法が記載され、結論として color を inherit に設定する方法が示されている。"
     },
     {
       "id": "c44e727ab3462e8de7e8345c6159957b7d81ee42",
@@ -399,7 +416,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "押せないハンバーガーボタン、3回直して原因はCSSバンドルの順序だった",
       "summaryJa": "本番ビルドのCSSバンドルにおける規則の並び順が原因で、PC幅で表示される「≡」が押せても挙動が変化せず、ハンバーガーボタンが実際にはクリックできない状態になっていた。修正は、セレクタの詳細度を上げて順序依存を回避するもので、親クラスを追加した2階層構造に変更した。最終的には、本番環境のバンドルを確認し、順序の影響を受けにくい記述にすることが重要だという結論に至った。"
     },
@@ -417,7 +434,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "ブラウザでSQLが書ける学習サイトを、Claude Codeと二人三脚で7ヶ月作ってみた話",
       "summaryJa": "SQLLearnを個人開発で約7ヶ月間、Claude Codeとペアプロしながらブラウザ上でSQL練習ができるサイトとして作り続け、総コミット217件・登録104人・アクティブ率約66%などの数字を示しつつ、デザイン変更時の登録減少やタイムゾーンバグ、1,000箇所超の色変更など実例を具体的に報告しています。AIと協働する際のコツとして、デザイン案の事前共有やスクショでのフィードバック循環を重視し、土地勘を欠かさず、重要箇所は人間の判断で補完する姿勢を強調しています。最終的には月商は400円ながら、7ヶ月間ほぼ毎日AIと共に作業を続けた実践の価値を強調しています。"
     },
@@ -435,7 +452,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Appleの「HomeView」は日本未発売 ならプライム感謝祭で2万3980円の「Echo Show 8」は買いか？ できることを比べてみた - Yahoo!ニュース",
       "summaryJa": "Appleの「HomeView」は7型ディスプレイとSiri AIを搭載し、最大6人の顔を識別して家族ごとに情報を表示できるが、日本での発売時期・価格は未発表で、Siriは英語のみの提供となる。対してEcho Show 8は8.7型ディスプレイで2025年モデル、AZ3 Proプロセッサ、1300万画素カメラ、空間オーディオ対応スピーカーを備え、プライム感謝祭で2万3980円のセール価格となっている。両機は基本機能は共通だが、実用面では画面サイズや環境適性、発売状況が大きな違いとなる。"
     },
@@ -454,7 +471,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "AIエージェントの引き継ぎは「会話を移せた」で終わらせない",
       "summaryJa": "引き継ぎは「会話を移せた」だけで終わらず、移行元と移行先でファイル・テスト・権限などの差分を再確認し、再実行を要する項目を明示する必要がある。会話の要約が読めても作業ツリーが異なれば差分は見えず、移行元で通ったテストがそのまま移行先で通るとは限らない。移行先ではbranchとheadの照合や未コミット差分の確認を行い、未移行や要再検証の項目を別項目として表示するなど、状態を分けて次の担当者が判断できるようにするのが望ましい。"
     },
@@ -472,7 +489,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "グーグル新AI「Gemini 4 Argon」公開、11月末までの限定割引で定着を狙う - Forbes JAPAN",
       "summaryJa": "グーグルは米現地時間2026年10月13日、AIモデル「Gemini 4 Argon」を一般公開した。公開は「Gemini API」有料プランを使う開発者・法人顧客へ拡大され、Antigravity開発環境やGeminiアプリ・AIモードのUltra/Pro会員向け機能も提供される。価格は日本公式案内の月額料金を基に案内され、Gemini APIのトークン料金とは別とされている。"
     },
@@ -491,7 +508,7 @@
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Microsoft、社内エンジニア数万人を対象に「Claude Code」「Copilot CLI」導入の影響を分析 生産性どう変わる",
       "summaryJa": "Microsoft内の数万人規模を対象に、Claude CodeとGitHub Copilot CLIの導入が生産性に与える影響を調査した研究報告の要約だ。調査期間は2026年1月5日〜4月29日で、同僚や上司の利用状況が新ツールの試用開始に影響することが示されたほか、初週の利用が4カ月間でのマージ済みプルリクエスト数の増加に寄与した。ツール別の生産性向上は、Copilot CLIが約24.9%、Claude Codeが約11.4%で、ツールを使わなかった週と比べて増加している。"
     },
@@ -510,7 +527,7 @@
         "Anthropic",
         "OpenAI"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Anthropic、METRの評価チームを社内に常駐させ“従業員並み”のアクセス付与 公表に拒否権なし",
       "summaryJa": "AnthropicはMETRの評価チーム6名に対し、同社の端末・オフィススペースへのアクセスを認め、社内ツール・システムへの利用権を付与した。アクセス範囲はリスク評価チームとほぼ同等だが、顧客データやモデルアーキテクチャの一部カテゴリは共有対象外とした。METRは数週間で予備報告を公表する予定で、企業側の裁量でアクセス可否を決定する一方、全社同等の権限にはならない点を明記している。"
     },
@@ -528,7 +545,7 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Benefit Street Partners は Codex を使用して質問に迅速に回答します",
       "summaryJa": "Anant Kumar が Codex を活用してコードレビューを行い、フォローアップの速度を高めながら、ローン評価の比較ツールとクレジット契約の分析ツールを構築しています。 Codex の活用により、質問への回答を迅速化する取り組みが紹介されています。"
     },
@@ -546,7 +563,7 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Stack Overflow for Agents triples signups with ChatGPT plugin",
       "summaryJa": "Stack Overflow for Agentsを数週間でリリースした2人のエンジニアが、CodexとChatGPTプラグインを活用してエージェント作成の成長を最大10倍まで押し上げた。"
     },
@@ -565,7 +582,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Elorian AI の Glimpse が AI Gateway で利用可能になりました",
       "summaryJa": "Glimpse from ElorianがAI Gatewayで利用可能になりました。視覚推論モデルは画像や映像を受け取り、動体の物体追跡・空間関係の解釈・行動と物理的結果の結びつきを行い、拡大検証や短い映像の再生、同じ特徴の追跡などの機能を提供します。科学的なチャート分析や動画キャプション、視覚的カウント、 roboticsデータの注釈などの用途をサポートします。"
     },
@@ -584,7 +601,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Reflection AI's Beam now available on AI Gateway for free",
       "summaryJa": "BeamはReflection AIが提供する低遅延の推論モデルで、コードやエージェント的タスク向けに1Mトークンのコンテキスト窓を持ち、Apache 2.0で公開されたウェイトを使用します。現在AI Gateway上で期間限定無料公開中で、2つの無料利用方法があり、使用には最新のVercel CLIを用いた setup が案内されています。Beamはツール呼び出しや構造化出力をサポートし、速度重視で不要なトークンを避ける設計とされています。"
     },
@@ -602,7 +619,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Figma 実装ガイド：少ない指示、少ないトークン、少ない手戻り",
       "summaryJa": "AI駆動開発において、Human-in-the-Loopの運用を前提に、Figmaデザインをエージェントが実装する考え方と具体手順を整理しています。タスクは要件提示→実装→評価の循環を2ターン以内に収めることを目指し、ハーネス（guides/AGENTS.md・skills/等）を用いて指示を共通化・参照可能にします。先ず基盤となるリポジトリ構成と最小限のAGENTS.mdを整え、後半で8つの新規サイト構築フェーズなど具体的な分割方法を示します。"
     },
@@ -620,9 +637,45 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "AppleとメタがAI分野で連携、Macで動作しやすく 長年の対立に変化 - 日本経済新聞",
       "summaryJa": "アップルとメタはAI分野で連携を発表し、メタが開発したAIモデルをMacで動かしやすくする。長年対立してきた両社の関係に変化があり、AIの台頭がテック企業間の関係を変えている。メタは同日、オープン型のAIモデル「ミューズ・スパーク・オープン」を公開した。"
+    },
+    {
+      "id": "90b3298a9ffdef41cdeeacd1af48e9118967441b",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "AIに先を越された数学者はどうすればいいのか…OpenAIによる数学論文722本一斉公開が揺さぶる研究者のキャリア 【生成AI事件簿】大量の研究成果に検証が追いつかない時代、数学コミュニティの協働文化と若手育成の行方(1/5) - JBpress",
+      "summary": "AIに先を越された数学者はどうすればいいのか…OpenAIによる数学論文722本一斉公開が揺さぶる研究者のキャリア 【生成AI事件簿】大量の研究成果に検証が追いつかない時代、数学コミュニティの協働文化と若手育成の行方(1/5) &nbsp;&nbsp; JBpress",
+      "url": "https://jbpress.ismedia.jp/articles/-/97525",
+      "canonicalUrl": "https://jbpress.ismedia.jp/articles/-/97525",
+      "publishedAt": "2026-10-15T21:00:00.000Z",
+      "hashTitle": "a5ecb04fe0256393d42da6c46e73e4ee616689b7",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-10-17T20:29:47.470Z",
+      "titleJa": "AIに先を越された数学者はどうすればいいのか…OpenAIによる数学論文722本一斉公開が揺さぶる研究者のキャリア 【生成AI事件簿】大量の研究成果に検証が追いつかない時代、数学コミュニティの協働文化と若手育成の行方(1/5) - JBpress",
+      "summaryJa": "OpenAIが公開した数学論文722本のうち、準リーマン予想を含む難問の解決を主張する原稿が注目を集めた。一方で、証明の多くは人間が理解できず、正しさを検証する仕組みが追いつかない点が指摘されている。費用や実証の過程は公表されておらず、評価は賛否が分かれている。"
+    },
+    {
+      "id": "3d48e529ad7a20b189a9c01e1c4d34221cb0505e",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Introducing GPT-6 Sol and Luna - OpenAI",
+      "summary": "Introducing GPT-6 Sol and Luna &nbsp;&nbsp; OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "canonicalUrl": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "publishedAt": "2026-10-15T19:00:00.000Z",
+      "hashTitle": "7cb76dd0f330022efff4e0865f92d9067df9b697",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-10-17T20:29:47.470Z",
+      "titleJa": "Introducing GPT-6 Sol and Luna - OpenAI",
+      "summaryJa": "GPT-6 Sol と Luna の紹介を伝える記事で、OpenAI による新しいモデルの発表を示している。"
     },
     {
       "id": "1d4cff712a9a12812912916b09ee2f570c14be95",
@@ -638,7 +691,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Google Antigravity で抗菌ペプチドの検索を加速",
       "summaryJa": "Google Antigravity の agentic development プラットフォームを用い、研究者とAIが協働して新規抗菌ペプチド候補を探索・評価・優先付けするワークフローを紹介する。 ProtNLM による UniProt の未機能タンパク質への高信頼性の機能予測と、3D 構造ビューワーを組み合わせ、Streptococcus pseudopneumoniae を対象にした候補の絞り込みと生体検証の前段階を一つのセッションで実現する点が強調される。 このアプローチは従来のデータベース横断作業を大幅に効率化し、ウェットラボ検証が必要なリードの優先度を高めるとしている。"
     },
@@ -661,7 +714,7 @@
         "frontend",
         "typescript"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Vercel Ship 2026 の概要",
       "summaryJa": "Vercelは「エージェント時代」のソフトウェア基盤を提案し、エージェントが任意の作業を自律的に実行・改善できるインフラを構築する考えを示した。発表では、Vercelがコードのデプロイからエージェントの作成・運用、監視・トレースまでを一元管理し、エージェントを用いた全栈アプリの出荷を加速するとされた。さらにエージェント用ツール群やセキュリティ・コスト管理機能、エンタープライズ向けの統合管理も紹介された。"
     },
@@ -679,7 +732,7 @@
       "tags": [
         "vue"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "35日でフロントエンドの基礎を完全に理解する #10 - フォームとv-model",
       "summaryJa": "v-model は入力欄と状態を双方向に結びつけ、入力がその場で状態を変え、状態の変化が入力欄にも反映される仕組みです。正体は、状態を渡す値の受け渡しと、入力イベントで状態を更新する仕組み（value と input）を組み合わせた省略形です。複数項目のときはオブジェクトにまとめ、送信は @submit.prevent でページ再読み込みを防ぎます。"
     },
@@ -697,7 +750,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "iPhone Duoで新しい可能性を開きましょう - Apple",
       "summaryJa": "iPhone Duoのディスプレイは内外それぞれ7.58インチと5.36インチのサイズを持ち、画面は角を丸く美しく設計されています。Siri AIをはじめとするApple Intelligenceは、日本語を含む複数言語に対応しますが、地域や言語によって一部機能の利用制限があります。IP68等級の防沫・防水・防塵性能を備え、機能の一部は今後有料化となる予定で、13歳未満はSiri AIを利用できません。"
     },
@@ -715,27 +768,9 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "iPhone Duoで新たな可能性を切り開く - Apple",
       "summaryJa": "iPhone Duoは折りたたみ式デザインで、開くとiPhone史上最大のディスプレイ、閉じると外部ディスプレイが5.4インチでコンパクトな設計です。内側ディスプレイは7.58インチ、外側は5.36インチの対角線で、A20 Proチップとデュアルバッテリーで長時間の使用に対応します。Siri AIを含むApple Intelligence機能は一部地域で制限があり、iOS 27と組み合わせて多様な操作を想定しています。"
-    },
-    {
-      "id": "b252919adf6cfe81bb0156925a9b504d4a31e073",
-      "sourceName": "Qiita Popular Items",
-      "sourceUrl": "https://qiita.com/popular-items",
-      "sourceFeedUrl": "https://qiita.com/popular-items/feed",
-      "title": "AIに書かせた日本語を毎日直していたので、直し方ごとスキルにして公開しました",
-      "summary": "仕事の文章はほとんど AI に下書きさせています。中小企業向けの提案書、作業の報告、事業部の人に送る Slack のメッセージ。内容はだいたい合っているのに、そのままでは出せません。読み返すと、毎回同じところを直していました。 直していた箇所をまとめて Claude Cod...",
-      "url": "https://qiita.com/kojikojikojikoji/items/9d0bc3ed1f347933c0a5?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "canonicalUrl": "https://qiita.com/kojikojikojikoji/items/9d0bc3ed1f347933c0a5",
-      "publishedAt": "2026-10-15T12:52:47.000Z",
-      "hashTitle": "5ba796a5d9192ab97cc70c67a962041ef9e790d0",
-      "tags": [
-        "claude"
-      ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
-      "titleJa": "AIに書かせた日本語を毎日直していたので、直し方ごとスキルにして公開しました",
-      "summaryJa": "AIが下書きした文章を日常的に直し、直し方をスキルとして公開した話。本文では、業務文書の種類判定や日本語特有の癖を整理し、★印の癖だけを厳密に直す方針や、数値で癖を検出するcheck.pyの活用方法を詳述している。実例として、 Slack用の報告文の修正前後を示し、直し方はファイル名や用途に応じて変えられると説明している。"
     },
     {
       "id": "432260d6928f061849e900f34bb8f5b360e3bea5",
@@ -752,28 +787,9 @@
         "claude",
         "Anthropic"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Claude Codeデスクトップアプリ、並行作業を進めやすくするセッション管理の改善を案内 - gihyo.jp",
       "summaryJa": "Claude Codeデスクトップアプリでは、複数のセッションを同時に進めやすくする改善として、最近使ったフォルダーからのワンクリック開始や環境としての複数設定の保存、Git worktreeの選択が可能になった。タスクを子セッションに分けて並行処理し、各子セッションは完了後にメインへ結果を報告、途中で追加タスクの提案もワンクリックで別のセッションへ任せられる。サイドバーや各セッション画面で進捗や対応待ちを把握しやすくなり、質問は独立したタブで扱われ、メインのセッションは進行し続ける。"
-    },
-    {
-      "id": "256a70c40b02e13c2f3755bc51b337fd1c1a7147",
-      "sourceName": "Qiita Popular Items",
-      "sourceUrl": "https://qiita.com/popular-items",
-      "sourceFeedUrl": "https://qiita.com/popular-items/feed",
-      "title": "Gemini 4 Argonでロボットアームを動かしてみた",
-      "summary": "はじめに 2026年10月13日、Googleから新たなAIモデル「Gemini 4 Argon」が発表されました。 Geminiといえば、テキストチャットやコード生成、マルチモーダルな画像・動画理解など、さまざまな用途で活用されています。 今回のGemini 4 Arg...",
-      "url": "https://qiita.com/kentaro_kawamura/items/118144a5e0c707de12dd?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "canonicalUrl": "https://qiita.com/kentaro_kawamura/items/118144a5e0c707de12dd",
-      "publishedAt": "2026-10-15T07:32:23.000Z",
-      "hashTitle": "ed465ffe3b83c139a607a679fb68287f9432b575",
-      "tags": [
-        "Google",
-        "gemini"
-      ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
-      "titleJa": "Gemini 4 Argonでロボットアームを動かしてみた",
-      "summaryJa": "GoogleのGemini 4 ArgonをMuJoCoと組み合わせ、ロボットアームによるPick & Placeを実演しました。 Argonが高レベルな認知判断を担い、Pythonコントローラが逆運動学で具体的な動作を実行する分担設計を採用し、カメラ画像から色や位置を推定して対象と到着先を決定するプロンプト設計が紹介されています。 実験では黄色のキューブを左端と認識し右側のゾーンへ配置する成功結果と、最終配置のXY誤差3.5mmが報告されています。"
     },
     {
       "id": "35b7cfc17ebc50ebb16a32f43f6feba02884cacf",
@@ -790,7 +806,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "AI時代、何をもってソフトウェアの品質を担保するのか",
       "summaryJa": "AI時代でも品質の根拠は要求を満たしているかどうかであり、量だけではなく「誰が正しさを定義し、独立に確かめたか」「どこを重視したか」を示すことが重要である。実装と検証の独立性や要求とテストのトレーサビリティ、リスクベースのテストと人間のレビューといった基本原則が、AI時代にも引き続き有効である。AIを活用して品質活動を拡充する際も、受入条件の決定と検証の独立性を守るルールが不可欠である。"
     },
@@ -809,7 +825,7 @@
         "Anthropic",
         "OpenAI"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Open weight takes 71.5% of tokens and 23% of spend",
       "summaryJa": "オープンウェイトモデルは9月時点で gateway トークンの7割超を処理し、支出の約4分の1を占めるまで成長している。これに伴い、9月の全体支出は December 比で約13倍となり、トークン単価は平均で約47%低下した。モデルの導入が急速に進む一方、最も普及したJevは初週の利用率は高いが、全体の支出にはわずか0.27%しか寄与していない。"
     },
@@ -829,7 +845,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Vercel for Enterprise",
       "summaryJa": "企業ではAIの導入が急速に広がり、エンジニア以外の担当者も活用が進んでいます。VercelはEnterprise Apps and Agentsを提供し、AIガバナンスを一元化することで、社内の開発者と“市民開発者”の両方を安全に管理できる体制を整えました。BYOC on AWSやVercel Connect、エンタープライズ認証などを組み合わせ、データ保持・モデル・予算・アクセスの統合管理を実現し、企業のIDPと連携してデプロイとデータアクセスを統制します。 MercerやKlaviyoなどの事例を通じて、数多くのモデルやアプリを一つのプラットフォームで運用する重要性と、セキュリティ・ガバナンスの強化が強調されています。"
     },
@@ -849,7 +865,7 @@
         "frontend",
         "typescript"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Backends on Vercel: Python, containers, and Daemons",
       "summaryJa": "VercelはPythonの一般提供を開始し、コンテナ機能でカスタムランタイムやシステムライブラリを利用可能にし、バックグラウンド処理用のVercel Daemonsを公開ベータとして導入しました。PythonバックエンドはFastAPI、Flask、Djangoなどを標準のCPython上で動作させ、ローカル開発からプレビュー、本番デプロイまで一貫した開発体験を提供します。コンテナは任意の言語で作成でき、Vercel Functions上で動作し、Fluid computeで自動的にスケールします。"
     },
@@ -868,7 +884,7 @@
         "frontend",
         "html"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Python on Vercel is now generally available",
       "summaryJa": "Python on Vercelが一般公開され、FastAPIやFlask、Djangoなどのフレームワークを自動検出してビルドとデプロイを構成できるようになった。CPythonを Linux 上で使い、ストレージやキュー、耐久性あるワークフロー、AIモデルなどをPython SDKを通して扱える。フロントエンドとバックエンドを同一プロジェクトで扱える共通ワークフローや、Vercel Daemons/Servicesによる長時間実行のサポートも提供されている。"
     },
@@ -887,7 +903,7 @@
         "html",
         "css"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "AI開発時代に「あえてのVanilla JS」を選択した理由（コーディングブランクを生成AIが埋めるフロントエンド開発）",
       "summaryJa": "生成AIとVanilla JSを組み合わせたフロントエンド開発では、環境構築や再学習コストを抑えつつ、複雑なダッシュボードやUI制御を実現できるとしています。モダンフレームワークを使わず、AIの提案に従ってコードを生成・統合することで、全画面ローディングや二重送信防止といったUI制御も効率的に実装できたと述べられています。今後はバックエンド処理の話題（AWS LambdaとRDSによる集計処理）を第3回で紹介予定です。"
     },
@@ -905,7 +921,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "「Claude Code」デスクトップ版、並列タスクごとにセッションを自動生成（PC Watch） - Yahoo!ニュース",
       "summaryJa": "Claude Codeのデスクトップアプリがアップデートされ、複数セッションを並列実行できる新機能が追加された。新規セッション画面から最近使ったフォルダへワンクリックでアクセスでき、環境として複数のフォルダやSSHホスト、クラウド設定を保存して開始可能になった。タスクの並列実行時はネストされた各セッションが独立して動作し、完了時にメインセッションへ結果を報告するほか、/btwコマンドで別タブで質問を投げられる機能も追加され、サイドバーで進行状況を一目で把握できる。"
     },
@@ -923,7 +939,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Alexaタブレットの衝撃。純正Android採用とパノス・パネイが仕掛けるハード再定義",
       "summaryJa": "AmazonはAndroidとGoogle Playストアを標準搭載する「Alexaタブレット」を発表し、長らく続いたFire OSの独自性から脱却してエコシステムの垣根を下げる方向へ転換しました。中心人物パノス・パネイ氏はゼロからのハード設計を指示し、Nanomatteディスプレイなど高品質なハードウェアに注力しました。新3モデル構成とAlexa+の高度な文脈理解機能により、iPad市場へ挑むと同時にAndroidエコシステム全体に影響を及ぼす可能性があります。"
     },
@@ -942,7 +958,7 @@
         "claude",
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Geminiが「スキル」に対応。 Claudeユーザーの私が乗り換えたくなった理由（ライフハッカー・ジャパン） - Yahoo!ニュース",
       "summaryJa": "Geminiは「スキル（Skills）」を導入し、Gemsと比べて作業連携がしやすくなった。スキルの作成方法は「Create with Gemini」「Create manually」「Upload skill」の3通りが用意され、特に「Create with Gemini」なら対話形式で専門知識がなくても作成でき、完成後は他の会話でも利用可能となる。なお、Gemsは2026年11月16日まで利用可能で、その後は既存のGemsがすべてスキルへ変換される予定だ。"
     },
@@ -960,7 +976,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Sullivan & Cromwell brings legal expertise into agreement review",
       "summaryJa": "OpenAIと協働して、Sullivan & Cromwellはドラフト契約の問題点を洗い出すAIツール「Agreement Analyzer」を開発した。契約書の見直し作業における法務専門知識の活用を目的としている。"
     },
@@ -978,7 +994,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Liquid AI's d1-ultra now available on AI Gateway",
       "summaryJa": "Liquid AIの d1-ultra が AI Gateway で利用可能になりました。これはテキストと画像の両方を対象に分類・ルーティング・スコアリングを行うマルチモーダル決定モデルで、視覚的欠陥検査や写真を用いた損害申請の照合などに対応します。推論は確率付きの構造化回答を返し、Boolean/Choice/Score の形式で質問でき、同一入力に対して複数質問をまとめて処理できます。"
     },
@@ -999,7 +1015,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Muse Spark Open now available on AI Gateway",
       "summaryJa": "Muse Spark OpenはMeta提供のオープンウェイト推論モデルで、AI Gateway上で利用可能です。テキストと画像入力を1Mトークンの文脈ウィンドウで処理でき、コードのリファクタリングやデバッグ、巨大なコードベースの理解などの作業に対応します。AI SDKやOpenAI互換API、Anthropic互換API、AI Gatewayに接続したコーディングエージェントで使用可能で、モデル名は meta/muse-spark-open、BYOKを含む課金やプラットフォーム料金の追加なしで提供されます。"
     },
@@ -1020,7 +1036,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Cat Jam is now available in stealth for free on AI Gateway",
       "summaryJa": "Cat Jamは現在、 stealth モデルとしてAI Gateway上で無料で利用可能です。推論は低遅延で、関数呼び出しやJSONスキーマに従う構造化出力に対応し、テキスト入力のみを受け付けます。Stealth期間中のデータ保持はPromptsが安全確 Reasonのため保持される場合があり、ZDRは利用できません。"
     },
@@ -1038,7 +1054,7 @@
       "tags": [
         "frontend"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Python on Vercel is now generally available",
       "summaryJa": "VercelではPythonが正式にサポートされ、Python SDKを用いたAPI・フルスタックアプリ・AIエージェントの開発・デプロイが可能になった。自動認識・設定、CPythonのランタイム、FastAPI/Flask/Djangoのフレームワーク対応、Python用SDKでのエージェント作成やワークフロー管理、オンデマンドのサンドボックス環境が提供される。フロントエンドとバックエンドを同一プロジェクト内でデプロイでき、vercel.tomlの設定例と共にローカル実行・同一リポジトリからのデプロイが案内されている。"
     },
@@ -1056,7 +1072,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "OpenAI社員を逮捕、自社会議室に盗聴器を仕掛けた疑い その設置方法とは - Yahoo!ニュース",
       "summaryJa": "OpenAIの従業員サウジ国籍の男性が、同社の会議室に盗聴器を仕掛けた疑いで逮捕された。盗聴器は会議室の机回りの装置と、プリンター室のかばんから別の録音装置が見つかっており、会議室は役員とアシスタントのみが予約可能だったが、容疑者には入室権限がなかった。捜査は進行中で、現時点で製品安全性や顧客データの侵害は確認されていないが、OpenAIは同容疑者が社内会議を秘密裏に録音しようとしていた証拠があると説明している。"
     },
@@ -1074,7 +1090,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "【完全版】NotebookLMが進化…資料作成がド安定に「Gemini Notebook」徹底活用術 - ビジネス+IT",
       "summaryJa": "NotebookLMはGemini Notebookへと進化し、ノート内でAIエージェントが動くようになりました。これにより、Excel・Word・PowerPointなどのファイルをその場で作成・ダウンロードできる機能が追加され、特に「Gemini Spark」との組み合わせで資料作成の再現性が向上します。新機能としてAntigravityを内蔵し、ソースを指定した範囲内で回答する3分割画面構成が継続、ただしファイル生成は無料プランでは動作しません。"
     },
@@ -1092,7 +1108,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "アイオワなど米8州がOpenAIを提訴 「子供に危険」と制裁金など要求 - 日本経済新聞",
       "summaryJa": "アイオワ州など8州は14日、対話型AI「ChatGPT」が子供に危険を及ぼすとして、開発元のOpenAIを州裁判所に提訴した。各州は、同AIが未成年を含む利用者へ自殺や自傷を助長する可能性がある一方、安全なサービスであるかのように説明したと主張している。本文は会員限定記事のため、詳細は確認できない。"
     },
@@ -1110,7 +1126,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Bünyamin Aydın’s new collection, “From Earth to Sky,” soars with iPad Pro - Apple",
       "summaryJa": "Bünyamin Aydınの新コレクション「From Earth to Sky」は、トルコの伝統と1970年代のロック感、未来派を組み合わせ、カッパドキアでiPhone 18 Pro MaxとiPad Proを用いて撮影され、10点に及ぶ印象的なルックと3基の熱気球を特徴とする画期的なショーとして紹介されている。制作にはiPad ProのApple Pencil ProとFreeform/Procreateを活用し、現地撮影と編集を連携させることで、現場の動きと自然光の変化を活かした表現が追求された。映像はiPhone 18 Pro MaxとProRes RAWで撮影・編集され、後述の技術機材と組み合わせて4K/120fpsなどの高品質映像表現が実現している。"
     },
@@ -1129,7 +1145,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Gemini 4 Argon が Gemini アプリに登場 - blog.google",
       "summaryJa": "Gemini 4 Argon が本日より Gemini アプリで利用可能になり、最先端の推論能力と複雑なワークフローでのパフォーマンス向上を実現します。曖昧さを減らして質問に直接答え、長時間タスクの進捗を頻繁に共有するなど、状況把握をサポートします。さらに macOS 版 Gemini アプリで Google Antigravity のエージェント型コーディングインターフェースが直接利用可能になり、チャットとコーディングの切り替えやタスクの進行がより容易に行えるようになりました。"
     },
@@ -1147,7 +1163,7 @@
       "tags": [
         "vue"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "35日でフロントエンドの基礎を完全に理解する #9 - コンポーネント分割（props・emit・slots）",
       "summaryJa": "コンポーネント分割の基本として、 props で親から子へデータを渡し、子は受け取ったデータを書き換えず、イベントを emit して親へ知らせる一方向の流れが解説されています。slot を使えば、外枠となる部品に親が中身を差し込むことができ、再利用性と見通しの良さが向上します。実例として、LikeButton によるいいねのカウントは親が count を持ち、子は押されたことだけ伝える構成、Panel の中身差し込み、ProductCard の props 用例が挙げられています。次回は v-model を使ったフォームへの応用が紹介されます。"
     },
@@ -1165,7 +1181,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Amp puts AI agents to work beyond code with OpenAI models",
       "summaryJa": "AmpがGPT-6 Astra、Ultrafast、GPT-Live-1、そして ChatGPT の Sign in with ChatGPT を活用し、AIエージェントの能力をコードの枠を超えて拡張する最前線を紹介します。これらのモデルを用いて、エージェントの実用性と可能性を探る様子が説明されています。"
     },
@@ -1183,7 +1199,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "SentinelOne cuts malware analysis from weeks to hours",
       "summaryJa": "SentinelOneはOpenAI Daybreakを活用することで、マルウェア分析の所要期間を数週間から数時間へ短縮し、より多くの脅威を調査する余力を生み出した。"
     },
@@ -1202,7 +1218,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Google、待望の新AIモデル「Gemini 4 Argon」一般提供を開始 推論の継続力を強化 一部ベンチでトップに（ITmedia NEWS） - Yahoo!ニュース",
       "summaryJa": "Googleは「Gemini 4 Argon」の一般提供を開始し、複数手順の作業や長い推論が求められる場面での対応力を強化したと発表した。金融・ソフトウェア開発・法律・税務などの業務能力を評価する指標で首位を獲得したほか、長い出力に対応する継続機能を追加し、入力・推論・出力を合計約100万トークンの枠内で扱える。利用は有料プランのGoogle AI Pro/Ultraの加入者を中心に、Geminiアプリや検索のAIモード、Gemini API経由の利用など多様な提供形態が用意されている。"
     },
@@ -1220,7 +1236,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "デジハリ大、「Claude」を全学導入へ──国内初、“回数気にせず”使い放題に（ITmedia NEWS） - Yahoo!ニュース",
       "summaryJa": "デジタルハリウッド大学は、米Anthropicの生成AI「Claude」を全学に導入し、11月から全学生・全教職員が大学発行アカウントで利用量や費用を気にせず使えるようにする。Claudeは同学の「全学AI基盤」に加わり、授業ごとにAIティーチングアシスタントが付く教育プラットフォーム「キャンパスポータル」と連携して活用され、学習記録と結びつけてAIを活用した学習・研究の支援を目指す。教育設計の見直しも進められ、成果物へのAI利用申告や著作物・個人情報の取り扱いに関する規程整備が行われる予定である。"
     },
@@ -1238,7 +1254,7 @@
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Anthropic、社内モノレポをGitから独自基盤へ移行 ——AIエージェントによるコード変更の急増に対応",
       "summaryJa": "Anthropicは社内モノレポをGitからScionへ移行し、CIや研究用ジョブの変更検証をサーバー側で集約する設計を導入した。Scionは履歴参照やコミット作成をサーバーが処理し、必要なファイルだけを取得・展開する方式で、データ再利用とキャッシュ機構によりデータ転送と計算資源を削減した。移行は7人チームが5カ月で完了し、クラウドツールの利用とClaudeの活用で開発速度向上と負荷軽減を両立した。"
     },
@@ -1256,7 +1272,7 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "How Third Moment Research runs 10,000 agents for 36+ hours",
       "summaryJa": "第三モーメント研究は、GPT-6 AstraとGPT-6.1 Sol、Codex、Daybreakを活用して、長時間集中して作業できるエージェントを構築し、日数単位でのフォーカスと利用を通じて改善を図っている。目的はサイバーセキュリティ分野の強化を含む幅広いエージェントの開発と運用のようだ。"
     },
@@ -1274,7 +1290,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Block は OpenAI テクノロジーを使用して AI を活用したセキュリティをどのように構築しているか",
       "summaryJa": "BlockはOpenAI技術を活用したAI搭載のセキュリティを構築しており、セキュリティチームは脅威をより早く調査し、数分でパッチを提案している。"
     },
@@ -1292,7 +1308,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "アップル初のスマートディスプレイ「HomeView」は、まるで巨大なApple Watch - WIRED.jp",
       "summaryJa": "アップルの初のスマートディスプレイ「HomeView」は7インチの画面を搭載し、台座付きと壁掛けモデルの2機種を同価格で提供、11月13日に発売予定だ。Siri AIを核に、FaceTimeやメッセージ、Safariなどのアプリを搭載し、iCloudアカウントごとに表示を切り替えるほか、最大6つのアカウントを扱える。カメラは前面1,200万画素、音声は6名のマイクで処理され、プライバシーは端末内で完結する設計を謳っている。"
     },
@@ -1310,7 +1326,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
       "summaryJa": "Google DeepMindと GovTech が共同開発した、端末上で動作する詐欺検知モデルが、個人情報を維持しつつ市民を守る新たな対策として発表された。このGemmaモデルは地元の会話データで微調整され、端末上で会話データを処理してリアルタイム警告を出す仕組みを採用している。二段階の推論パイプラインを用い、まず軽量分類器で潜在的脅威を抽出し、次に文脈評価で脅威を確定または誤警報を排除する。"
     },
@@ -1328,7 +1344,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "グーグル「Gemini 4 Argon」ついに提供開始 テストは好成績、でも仕事はできる？（アスキー） - Yahoo!ニュース",
       "summaryJa": "Googleは10月13日、AIモデル「Gemini 4 Argon」を一般提供開始した。業務分野のコーディング・調査・金融・法務・科学分野の作業を想定し、資料やコードを大量に読み込み長時間の課題を進める能力を強化した公開。一般ユーザー向けには回答の回りくどさを削減し進捗を伝えやすく、40超の連携先でタスク実行や食料品注文・レストラン予約・デザイン制作などが可能になった。"
     },
@@ -1346,7 +1362,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "OpenAIのエンジニアを逮捕 FBI - Yahoo!ニュース",
       "summaryJa": "OpenAIのエンジニアが逮捕され、FBIが内調査中と伝えられた。逮捕の背景には、AI技術の機密情報を狙う目的があった可能性が示唆されているが、本文には具体的な事実の詳細は記載されていません。記事は国際情勢の話題と並行して報じられている情報を要約しており、日本語本文に含まれる固有名詞以外の未確定情報は省略しています。"
     },
@@ -1364,7 +1380,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Claude CodeハッカソンBuilt with Claude: Japan発表、賞品は800万円分のAPIクレジット。10月26日まで申込み受付中 - Yahoo!ニュース",
       "summaryJa": "AnthropicとAIコミュニティCerebral Valleyは、日本在住者向けオンラインハッカソン「Built with Claude: Japan 2026」を開催します。期間は11月2日から10日までで、参加は選考制・定員250人、応募は10月26日まで。参加者にはMaxプランと500ドル分のClaude APIクレジットが提供され、入賞者の賞品総額は約800万円分のAPIクレジットです。"
     },
@@ -1383,7 +1399,7 @@
         "Google",
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Gemini 4 Argon：最も困難な課題を解決するために - blog.google",
       "summaryJa": "Gemini 4 Argon は、AI StudioとGemini APIを通じて世界中の開発者や企業へ順次提供を開始します。Argonは金融・コーディング・法務・サイバーセキュリティなどの領域で複雑なタスクを深く遂行でき、研究者や専門家と協力して現実世界の成果を加速します。導入価格は入力100万トークンあたり2ドル、出力100万トークンあたり10ドルで、初期導入では多様な分野の実績と安全・セキュリティ機能を備えています。"
     },
@@ -1406,7 +1422,7 @@
         "css",
         "typescript"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "The best way to use icons in Web UIs",
       "summaryJa": "アイコンの使い方をCSSだけで完結させる新手法が紹介されている。具体的には、--iconなどのカスタムプロパティと@property、style query、マスクを組み合わせて、HTMLを触らずにアイコンを挿入・調整できる純粋なCSSアイコンシステムが提案されている。これにより、従来より柔軟で保守性が高い設計を実現できるとされている。"
     },
@@ -1425,7 +1441,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Nemotron 3.5 Lightning now available on AI Gateway for free",
       "summaryJa": "Nemotron 3.5 LightningがAI Gatewayで無料で利用可能になりました。30Bパラメータのオープンウェイト型で、長時間エージェントやRAGシステム向けの推論・チャットを想定し、1Mトークンのコンテクストウィンドウとツール呼出し・構造化出力をサポートします。モデル名は nvidia/nemotron-3.5-lightning-free で、AI Gatewayの統合APIやコードエージェント経由で利用できます。"
     },
@@ -1443,7 +1459,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "F.B.I. Arrests OpenAI Employee Accused of Planting Bug in Office - The New York Times",
       "summaryJa": "FBIはオープンAIの従業員を事務所内にバグを仕掛けた疑いで逮捕したと報じられている。記事はニューヨーク・タイムズが伝えている。"
     },
@@ -1461,27 +1477,9 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Developing Gemini 4 Argon responsibly and safely",
       "summaryJa": "Gemini 4 Argonは、コーディング・金融・法務・サイバーセキュリティ・科学などの実世界タスクで能力を前進させるモデルであり、脆弱性の検出・対応を含む安全機能を強化している。責任ある利用を促すため、Fairwind Programを通じた限定的な運用や、三重のリアルタイム保護・継続的モニタリング・内部検証を組み込む防御層を導入し、悪用防止と高リスク領域での適正性確保を図っている。実世界の検証では、病院ソフトの重大な不具合を早期に特定する事例や、内部・オープンソースソフトウェアの修正を通じたセキュリティ強化が挙げられている。"
-    },
-    {
-      "id": "5d79de6f205ff480b3cbd2078cd548e8384b2174",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Introducing Apple Home Collection, a new line-up of smart home accessories - Apple",
-      "summary": "Introducing Apple Home Collection, a new line-up of smart home accessories &nbsp;&nbsp; Apple",
-      "url": "https://www.apple.com/au/newsroom/2026/10/introducing-apple-home-collection-a-new-lineup-of-smart-home-accessories/",
-      "canonicalUrl": "https://www.apple.com/au/newsroom/2026/10/introducing-apple-home-collection-a-new-lineup-of-smart-home-accessories",
-      "publishedAt": "2026-10-13T16:20:50.000Z",
-      "hashTitle": "f16e5b3965d8d142519a342e31f3d1ef58a92903",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
-      "titleJa": "Introducing Apple Home Collection, a new line-up of smart home accessories - Apple",
-      "summaryJa": "AppleがLG ElectronicsとSchneider Electricと協働して新しいスマートホームアクセサリー「Apple Home Collection」を発表した。室内・屋外カメラ、温度センサー、スマートドアロック、スマートサーモスタットなどがあり、iPhone一つのタップで設定可能で、Apple Homeアプリで管理され、エンドツーエンド暗号化が構成されている。初期提供は米国・カナダ・英国で、製品の価格はデバイスごとに異なり、販売開始は2026年12月を予定、一部機種は2027年初頭に追加開始予定。"
     },
     {
       "id": "8b0463614a7b86fd34ef4f865cdfb4c3899b87c9",
@@ -1497,7 +1495,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Gemini 4 ロボット工学用アルゴン",
       "summaryJa": "Gemini 4 Argonは、物理的理解・コード生成・視覚—意味理解を大きく向上させ、ロボット工学全体のワークフローを加速させるとされる。具体例として、Spotのモバイルマニピュレーションや無 shot制御、現実とシミュレーションを結ぶリアル→シム→リアルの流れ、物理理解の高度な推論、ハードウェア上の自己改善を挙げている。Argonは4つの領域（Robot control、Real2Sim、Physical understanding、Research and self-improvement）で代表的なプロンプト例を共有している。"
     },
@@ -1515,7 +1513,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Gemini 4 Argon: 最も困難な問題を解決するために構築されました",
       "summaryJa": "Gemini 4 Argonは、開発者や企業、研究者、消費者向けに最新のフロンティアモデルをAPI経由で提供開始した。複雑な実世界のタスクにおける深い作業能力と多分野での高精度を発揮し、コード基盤のリファクタリングやセキュリティ脆弱性対策、金融・法務・サイエンス分野の業務ワークフローの最適化などで実績を挙げている。導入価格は入力トークン1Mあたり2ドル、出力トークン1Mあたり10ドル（キャッシュ入力は95%オフ）となっている。"
     },
@@ -1533,7 +1531,7 @@
       "tags": [
         "gemini"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Gemini 4 Argon: 最も困難な問題を解決するために構築されました",
       "summaryJa": "Gemini 4 Argonは、開発者や企業、研究者、消費者向けに最新の frontier モデルをAPI経由で提供開始した。複雑な実務課題や多領域の深い推論・多モーダル処理を強みとし、法務・金融・サイバーセキュリティ・科学などの分野でベンチマークで上位を達成している。現場ではコードの最適化や生産性向上、セキュリティ脆弱性の検出・修正、量子計算・生命科学などの研究支援にも活用され、複数のケースで実際の業務改善や研究推進の成果が報告されている。"
     },
@@ -1551,7 +1549,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "エンターテインメントを楽しみ、家を管理する新しい方法、Apple HomeViewが登場 - Apple",
       "summaryJa": "Appleは本日、家の中心で個人ごとにパーソナライズできる7インチ液晶ディスプレイ搭載の「Apple HomeView」を発表しました。FaceTimeや音楽再生、ホームモニタリング、ハンズフリーの音声コントロールなどを1つのデバイスで行え、Siri AIとApple Intelligenceの機能で個人向けの情報提供が強化されます。地域や言語によって機能の一部が制限され、欧州ではiOSのSiri AIが現時点で利用不可のため販売対象外となる国もあります。"
     },
@@ -1569,7 +1567,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "次世代のHomePod miniを発表 - Apple",
       "summaryJa": "Appleは新色と高音質を特徴とするHomePod mini 2を発表しました。スピーカー単体、ステレオペア、マルチルームで使えるほか、Apple TV 4Kと組み合わせた4スピーカーサラウンドにも対応します。予約は米国と23カ国以上で開始され、販売は10月30日から、価格は24,800円（税込）です。"
     },
@@ -1587,27 +1585,9 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "スマートホームアクセサリの新しいラインナップ、Apple Home Collectionを発表 - Apple",
       "summaryJa": "AppleはLG ElectronicsおよびSchneider Electricと共同開発した屋内外のカメラ、サーモスタット、温度センサー、ビデオドアベル、ドアロックなどを含む新ライン「Apple Home Collection」を発表しました。iPhoneのワンタップ設定とApple Homeアプリでの管理、エンドツーエンド暗号化によりデータは家庭内のみに限定されます。販売開始は12月で、EU域内ではSiri AIの利用不可の影響などが併記されています。"
-    },
-    {
-      "id": "30015f01901f30c286f0735f281bd1045ff9e610",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Meet Apple HomeView, a new way to enjoy entertainment, stay connected, and manage the home - Apple",
-      "summary": "Meet Apple HomeView, a new way to enjoy entertainment, stay connected, and manage the home &nbsp;&nbsp; Apple",
-      "url": "https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
-      "canonicalUrl": "https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home",
-      "publishedAt": "2026-10-13T13:07:56.000Z",
-      "hashTitle": "bcaa1888f41679f6dd82b60a2b676139873f4240",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
-      "titleJa": "Apple HomeView をご紹介します。エンターテインメントを楽しみ、つながりを保ち、家を管理するための新しい方法です - Apple",
-      "summaryJa": "Appleは新しい家庭用デバイス「Apple HomeView」を発表。7インチのLiquid Retinaディスプレイで、音楽再生・FaceTime・ホーム監視・声での自動化などを1台に統合し、プライバシーとセキュリティを核心に設計されている。Siri AIを搭載し個人コンテキストを活用した提案や、iPhoneやiPadと連携した複数機器間の会話継続が特徴で、前述機能は地域やデバイス要件により一部制限される。"
     },
     {
       "id": "a00a7d71b2204d3a0f70443760a6898ea4553df0",
@@ -1623,7 +1603,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "スマートホームアクセサリの新しいラインナップ、Apple Home Collectionの紹介 - Apple",
       "summaryJa": "Appleは、LG ElectronicsやSchneider Electricとの協業による新しいスマートホームアクセサリ群「Apple Home Collection」を発表しました。家庭内外のカメラ、サーモスタット、温度センサー、動画ドアベル、ドアロックなどが一つのApple Homeアプリで管理でき、エンドツーエンドの暗号化が適用されます。提供は12月開始予定で、価格は機種ごとに異なり、地域によって入手時期や販売形態が限定されます。"
     },
@@ -1641,67 +1621,9 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
+      "scoredAt": "2026-10-17T20:29:47.470Z",
       "titleJa": "Apple、Siri AI、美しい新色、豊かなサウンドをサポートする次世代 HomePod mini を発表 - Apple",
       "summaryJa": "Appleは新世代の HomePod mini 2 を発表し、Siri AI、華やかな新カラー、強化された音響体験を特徴としています。Siri AI は将来のソフトウェア更新で提供開始予定で、個人の文脈と広範な知識を活用し、音楽探索をより豊かにするほか、複数アプリ連携の能力を拡張します。価格は149ドルで、米国を含む23以上の地域でプレオーダーを開始、カラーはピンク・グリーン・ブルー・ホワイト・ミッドナイトの five 色展開で、店頭発売は10月30日を予定しています。"
-    },
-    {
-      "id": "2e3e34372340d61614625d80c46554fda1adc58d",
-      "sourceName": "Zenn Frontend Topic",
-      "sourceUrl": "https://zenn.dev/topics/frontend",
-      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
-      "title": "CSSの上書きを5ケースで検証する：@layer・important・:where()",
-      "summary": "セレクターを長くしたのに、CSSが上書きできない。@layerを導入したあとなら、詳細度より先にレイヤーの順序やレイヤー外の宣言を確認する必要があります。 この記事では、色だけが競合する5ケースを作り、最終的なcolorを測定します。既存CSSをレイヤーへ移すときの確認手順も整理します。 再現デモと測定条件 23ケースの再現デモのソースを保存してブラウザーで開くと、各ケースと実測表を確認できます。この記事で使うケース名は表に記載しています。 2026年9月29日、Chromium（ユーザーエージェント上のバージョンはChrome 154）で確認しました。数値はCSS pxです。Saf...",
-      "url": "https://zenn.dev/yamada_frontend/articles/css-cascade-specificity",
-      "canonicalUrl": "https://zenn.dev/yamada_frontend/articles/css-cascade-specificity",
-      "publishedAt": "2026-10-13T04:00:05.000Z",
-      "hashTitle": "d66c843660c07239e9a81be642e0494e8287de33",
-      "tags": [
-        "css"
-      ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
-      "titleJa": "CSSの上書きを5ケースで検証する：@layer・important・:where()",
-      "summaryJa": "5ケースでは、@layer、レイヤー外、!important、:where()、style属性の有無などの要素ごとに、色の最終適用変化を測定しています。結論として、レイヤー内の通常宣言は同一レイヤー内の宣言の方を優先するケースがあり、レイヤー外の通常宣言はレイヤー内の通常宣言より優先される場合もあります。なお、!important同士ではレイヤーの順序が反転するケースがあり、:where()外側の詳細度は残るケースが示されています。最後に、既存CSSを@layerへ移す際の確認手順が整理され、実装時には宣言元の特定や順序管理、style属性の扱いなどを検討すべきとされます。"
-    },
-    {
-      "id": "f22f562d2f8c5fd1d5c0031c475756e50c8f3e3b",
-      "sourceName": "Zenn Frontend Topic",
-      "sourceUrl": "https://zenn.dev/topics/frontend",
-      "sourceFeedUrl": "https://zenn.dev/topics/frontend/feed",
-      "title": "フロントエンドカンファレンス関西2026に参加しました",
-      "summary": "概要 表題の通り、フロントエンドカンファレンス関西2026に参加しました。 普段はバックエンドの領域を担当していることが多いですが、 領域を超えて学べることが多く、大変有意義なイベントでした。 https://2026.frontend-conf.osaka.jp/ 以下、拝聴したセッションの感想になります。 今さら理解するウェブフォント2026 https://speakerdeck.com/takanorip/imasara-rikai-suru-ver-2026 扱いが難しくて妥協することが多かったので、Webフォントの話を聞きにきました。 どうしても重くなってしまうフォ...",
-      "url": "https://zenn.dev/booost/articles/e53dd6e4097b8b",
-      "canonicalUrl": "https://zenn.dev/booost/articles/e53dd6e4097b8b",
-      "publishedAt": "2026-10-13T00:20:37.000Z",
-      "hashTitle": "4cd26f33aa3e445ccbbf143d60f955337773e665",
-      "tags": [
-        "frontend"
-      ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
-      "titleJa": "フロントエンドカンファレンス関西2026に参加しました",
-      "summaryJa": "フロントエンドカンファレンス関西2026では、ウェブフォントの軽量化とUnicode-rangeの活用、HTTP/2対応の重要性など、フロントエンド外の通信面も含めた知見を得ました。AIを活用した監視運用やCodeRabbitを用いたループエンジニアリング、複雑なUIのテスト戦略、宣言型更新やWeb標準の応用など、領域横断の話題が多く有意義でした。全体を通じて、早さとゴールの整合性を保つAI活用の重要性や、設計時の価値明確化が印象に残りました。次回開催にも参加したいとの感想でした。"
-    },
-    {
-      "id": "fd62725cf487ff0a88aac8ca6795186d90f74297",
-      "sourceName": "Vercel Blog",
-      "sourceUrl": "https://vercel.com/blog",
-      "sourceFeedUrl": "https://vercel.com/blog/rss.xml",
-      "title": "Gemini 4 Argon now available on AI Gateway",
-      "summary": "Gemini 4 Argon from Google is now available on AI Gateway . Gemini 4 Argon is built for coding, agentic work, and complex reasoning. It has a 1M token context window, accepts text, image, PDF, and video input, and supports tool calling. On coding tasks, Gemini 4 Argon builds features, fixes bugs, and researches unfamiliar codebases, carrying longer tasks through multiple steps. The model also reads dense diagrams, spreadsheets, layout-heavy documents, and video, which suits tasks like a financial analysis spread across several spreadsheet tabs. Beyond code, it handles work in finance, health, and law, and hard problems in math and science. Gemini 4 Argon uses thinking levels ( low , medium , and high ) instead of thinking budgets. Call Gemini 4 Argon through the AI SDK , the Chat Completions , Responses , and Anthropic Messages APIs, or a coding agent connected to AI Gateway. Set the thinking level with reasoning in the AI SDK or reasoning_effort in Chat Completions, and see reasoning for the other controls. Use google/gemini-4-argon as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select google/gemini-4-argon in the agent. See the coding agents guide for details. Try Gemini 4 Argon in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
-      "url": "https://vercel.com/changelog/gemini-4-argon-now-available-on-ai-gateway",
-      "canonicalUrl": "https://vercel.com/changelog/gemini-4-argon-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-13T00:00:00.000Z",
-      "hashTitle": "0ddcc9dd747b3be624a544057e2f70c349d057d6",
-      "tags": [
-        "Anthropic",
-        "Google",
-        "claude",
-        "codex",
-        "gemini"
-      ],
-      "scoredAt": "2026-10-17T15:27:07.427Z",
-      "titleJa": "Gemini 4 Argon now available on AI Gateway",
-      "summaryJa": "Gemini 4 ArgonはGoogleのAIモデルで、AI Gateway経由で利用可能になりました。コーディング、エージェント作業、複雑な推論に適しており、1Mトークンのコンテキスト窓を持ち、テキスト・画像・PDF・動画入力に対応し、ツール呼び出しをサポートします。思考レベルを低・中・高で設定できるほか、AI Gatewayの統合APIを使ってモデル呼び出しやコスト管理、リトライ設定などを行えます。"
     }
   ]
 }
