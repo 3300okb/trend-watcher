@@ -1,7 +1,423 @@
 {
-  "generatedAt": "2026-11-05T06:32:54.943Z",
-  "total": 102,
+  "generatedAt": "2026-11-05T17:19:06.210Z",
+  "total": 97,
   "items": [
+    {
+      "id": "bd5d29a32a5f70b7bc10277458ad812518df0919",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Gemini Omni 1.2 Flash now GA: cost-effective video - Google Cloud",
+      "summary": "Gemini Omni 1.2 Flash now GA: cost-effective video &nbsp;&nbsp; Google Cloud",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available",
+      "canonicalUrl": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available",
+      "publishedAt": "2026-11-05T17:12:17.000Z",
+      "hashTitle": "63db4bd38ab82ed59929d7554c5274dc4df04b80",
+      "tags": [
+        "Google",
+        "gemini"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Gemini Omni 1.2 Flash now GA: cost-effective video - Google Cloud",
+      "summaryJa": "Gemini Omni 1.2 FlashはGoogle Cloudで一般提供を開始し、720p動画を0.07ドル/秒と前バージョンより30%安く提供するほか、最大15秒の長尺生成・編集、画像・映像参照への適合性の向上、複数話者の自然な対話表現や高解像度ドラフト作成を実現します。ビジネス用途としてGoogle VidsやGemini for business、API経由での開発者利用が可能で、動画作成は従来のツール上での作業にも組み込める設計です。なお、音声参照は許可リスト制、出力には微小なSynthIDウォーターマークが付与されます。"
+    },
+    {
+      "id": "61c61eaa1aee67186ca24db0432c9458332bef1c",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "OpenAI、データセンター事業の推進方法見直し－世論の反発受け - Bloomberg.com",
+      "summary": "OpenAI、データセンター事業の推進方法見直し－世論の反発受け &nbsp;&nbsp; Bloomberg.com",
+      "url": "https://www.bloomberg.com/jp/news/articles/2026-11-05/TO16YJT9NJM900?srnd=jp-homepage",
+      "canonicalUrl": "https://www.bloomberg.com/jp/news/articles/2026-11-05/TO16YJT9NJM900?srnd=jp-homepage",
+      "publishedAt": "2026-11-05T17:08:33.000Z",
+      "hashTitle": "111c9e208830334045555a60700008050a5fd14f",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "OpenAI、データセンター事業の推進方法見直し－世論の反発受け - Bloomberg.com",
+      "summaryJa": "OpenAIは世論の反発を受けて、データセンター事業の推進方法を見直す方針を示した。具体的な方針変更の内容は説明文だけでは明記されておらず、今後の対応が注目される。"
+    },
+    {
+      "id": "e1f27b753b88d171827c1f822cf5473e1a36fdf1",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "OpenAI launches GPT-6 Cyber with 'Critical' cybersecurity rating - Reuters",
+      "summary": "OpenAI launches GPT-6 Cyber with 'Critical' cybersecurity rating &nbsp;&nbsp; Reuters",
+      "url": "https://www.reuters.com/technology/openai-launches-gpt-6-cyber-with-critical-cybersecurity-rating-2026-11-05/",
+      "canonicalUrl": "https://www.reuters.com/technology/openai-launches-gpt-6-cyber-with-critical-cybersecurity-rating-2026-11-05",
+      "publishedAt": "2026-11-05T17:05:41.000Z",
+      "hashTitle": "ed0418d6fcd49faa61a90417ad52ab5581dcb6e7",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "OpenAI launches GPT-6 Cyber with 'Critical' cybersecurity rating - Reuters",
+      "summaryJa": "OpenAIは「GPT-6 Cyber」を発表し、サイバーセキュリティ評価を「Critical（重大）」と付けたと報じられている。記事はこの新モデルのリリースとそのセキュリティ評価に焦点を当てている。"
+    },
+    {
+      "id": "003a6dd08e360129080d93f3bca690e956b6cbdf",
+      "sourceName": "Google DeepMind Blog",
+      "sourceUrl": "https://deepmind.google/blog",
+      "sourceFeedUrl": "https://deepmind.google/blog/rss.xml",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "summary": "",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "canonicalUrl": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips",
+      "publishedAt": "2026-11-05T17:05:16.000Z",
+      "hashTitle": "4a7e7c63a419c8793b6fc1cc1879198f264cb64f",
+      "tags": [
+        "gemini"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "summaryJa": "Gemini Omni 1.2 Flashは、最大15秒の動画生成と編集に対応し、1秒単位で3〜15秒までの長さ指定が可能になりました。コストは Omni 1.1より30%削減され、720pで0.07ドル/秒、360p〜720pのドラフト作成とフォローアップ編集で全体の再生成を減らせます。しかも、複数の参照要素や音声指示を組み合わせた、長尺クリップでの一貫性維持と、会話形式の編集を通じた連続的なカメラや演出の調整が容易になっています。"
+    },
+    {
+      "id": "59104010c4bcef355a3a2759506e38327959e55f",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "OpenAI debuts new cybersecurity-focused AI model amid growing alarm about AI-driven cyber attacks - Fortune",
+      "summary": "OpenAI debuts new cybersecurity-focused AI model amid growing alarm about AI-driven cyber attacks &nbsp;&nbsp; Fortune",
+      "url": "http://fortune.com/2026/11/05/openai-debuts-new-cybersecurity-focused-ai-model-amid-growing-alarm-about-ai-driven-cyber-attacks/",
+      "canonicalUrl": "http://fortune.com/2026/11/05/openai-debuts-new-cybersecurity-focused-ai-model-amid-growing-alarm-about-ai-driven-cyber-attacks",
+      "publishedAt": "2026-11-05T17:01:00.000Z",
+      "hashTitle": "29bb9f8ef46bcf0c2248203b7f8838ebe0e8fce4",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "OpenAI debuts new cybersecurity-focused AI model amid growing alarm about AI-driven cyber attacks - Fortune",
+      "summaryJa": "OpenAIはサイバーセキュリティ専門家を支援する新しいAIモデル「GPT-6 Cyber」を発表した。GPT-6 Cyberは一般向けのGPT-6 Astraより多くのサイバー分野の課題で高性能とされ、初期は承認済みのDaybreak Red顧客に限定提供される予定だ。OpenAIはFirefoxやLinuxカーネルを対象に81件の未知の高重大度脆弱性を発見し、948件の脆弱性に対する実働エクスプロイトを開発したとし、サイバー防御とリスクの両面での利用を想定している。"
+    },
+    {
+      "id": "b48ffd832e2f1d6ab77ffd4a2e636927e45c3b37",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Parents Sue Google Over A.I. Safety Risks on School Chromebooks - The New York Times",
+      "summary": "Parents Sue Google Over A.I. Safety Risks on School Chromebooks &nbsp;&nbsp; The New York Times",
+      "url": "https://www.nytimes.com/2026/11/05/technology/ai-safety-school-chromebooks-google-lawsuit.html",
+      "canonicalUrl": "https://www.nytimes.com/2026/11/05/technology/ai-safety-school-chromebooks-google-lawsuit.html",
+      "publishedAt": "2026-11-05T17:00:11.000Z",
+      "hashTitle": "8de1fa51bc3ce732a88684087c0c8e2bf09ed436",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Parents Sue Google Over A.I. Safety Risks on School Chromebooks - The New York Times",
+      "summaryJa": "保護者が、学校のChromebookに搭載されたAIの安全性リスクをめぐりGoogleを提訴したと報じられている。ニューヨーク・タイムズの情報を元に伝えられている。"
+    },
+    {
+      "id": "d7e9e3e89ee778d6f0e0cdfdb8adebe3fbc25559",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/technology/ai/",
+      "sourceFeedUrl": "https://blog.google/technology/ai/rss/",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "canonicalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "publishedAt": "2026-11-05T17:00:00.000Z",
+      "hashTitle": "4a7e7c63a419c8793b6fc1cc1879198f264cb64f",
+      "tags": [
+        "gemini"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "summaryJa": "Gemini Omni 1.2 Flashは、 native 15秒の動画生成と編集を可能にし、360p/720pでの下位レイヤーの編集後再生成不要でコストを抑えつつ、最大15秒までの長尺クリップをサポートします。参照画像・音声 cue を組み合わせた一貫性の高い表現と、会話形式の複数ターン編集機能により、キャラクターやブランド要素の整合性を保ちながら長尺動画の作成・修正が容易になります。さらに、価格を Omni 1.1から30%引き下げ、Google Cloudのインフラとセキュリティのもと、ビジネス・開発者・クリエイター向けに一般提供が開始されています。"
+    },
+    {
+      "id": "055979b329bb1e57916c385f272f353fe4af1301",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Google, Meta, TikTok sue to block California youth social media law - Reuters",
+      "summary": "Google, Meta, TikTok sue to block California youth social media law &nbsp;&nbsp; Reuters",
+      "url": "https://www.reuters.com/world/us/google-meta-tiktok-sue-block-california-youth-social-media-law-2026-11-05/",
+      "canonicalUrl": "https://www.reuters.com/world/us/google-meta-tiktok-sue-block-california-youth-social-media-law-2026-11-05",
+      "publishedAt": "2026-11-05T16:08:29.000Z",
+      "hashTitle": "dc6a22ca7a100b472fba01ea3ead9f77e5282e07",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Google, Meta, TikTok sue to block California youth social media law - Reuters",
+      "summaryJa": "Google、Meta、TikTokはカリフォルニア州の未成年向けソーシャルメディア法の発行停止を求めて訴訟を起こした。関係者は本法の実施を阻止することを狙い、連邦裁判所で法的措置を進めていると Reuters が伝えた。"
+    },
+    {
+      "id": "b46cb19b2f3cbdebacd02dc8af8792751742a15f",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Apple seeks about $7 billion from bond sale, Bloomberg News reports - Reuters",
+      "summary": "Apple seeks about $7 billion from bond sale, Bloomberg News reports &nbsp;&nbsp; Reuters",
+      "url": "https://www.reuters.com/business/finance/apple-seeks-about-7-billion-bond-sale-bloomberg-news-reports-2026-11-05/",
+      "canonicalUrl": "https://www.reuters.com/business/finance/apple-seeks-about-7-billion-bond-sale-bloomberg-news-reports-2026-11-05",
+      "publishedAt": "2026-11-05T16:05:56.000Z",
+      "hashTitle": "013b46831cbd6013b31af39407cd8cb51a7ae212",
+      "tags": [
+        "Apple"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Apple seeks about $7 billion from bond sale, Bloomberg News reports - Reuters",
+      "summaryJa": "AppleはBloomberg Newsの報道によれば、債券発行で約70億ドルを調達することを目指している。 Reutersの報道とあわせ、資金調達の意図を伝える内容となっている。"
+    },
+    {
+      "id": "bbf9751fd85b1fadaa3a2fff32a075449a08b138",
+      "sourceName": "CSS-Tricks",
+      "sourceUrl": "https://css-tricks.com/",
+      "sourceFeedUrl": "https://css-tricks.com/feed/",
+      "title": "Taming Typography: Building a Modern CSS Reset",
+      "summary": "Stu created tidy-typography.css: a style reset for taming typography with modern CSS features for everything from fluid typography and vertical rhythm, to hyphens and variable fonts. Taming Typography: Building a Modern CSS Reset originally handwritten and published with love on CSS-Tricks . You should really get the newsletter as well.",
+      "url": "https://css-tricks.com/taming-typography-modern-css-reset/",
+      "canonicalUrl": "https://css-tricks.com/taming-typography-modern-css-reset",
+      "publishedAt": "2026-11-05T14:55:31.000Z",
+      "hashTitle": "96a5b74a84f1dc6b3128ed0e971f9ff3f71c8d2b",
+      "tags": [
+        "css"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Taming Typography: Building a Modern CSS Reset",
+      "summaryJa": "本文では、現代的なCSSリセットを作ることで、タイポグラフィの微調整をリセット範囲内に取り込み、可変フォントやコンテナクエリ、ハイフネーション、行間調整などを組み合わせて安定した文字組みを実現する方法が紹介されています。具体例として、フォントのレンダリングやフォントサイズ調整、 fluid typography、テキストの縦揺れ防止、行頭末の均衡、hyphenationの細かな設定、ダークモード時の視認性補正、モノスペースとサイズ調整の併用などが挙げられ、段落や見出し、引用などの要素ごとに適用する設定が説明されています。最後に、これらの機能は実験的な点やブラウザ差があるため、 guardrails を設けて全体をまとめた tidy-typography.css の提案と、個別の解決策としてのコード解説が位置づけられています。"
+    },
+    {
+      "id": "f4fc57aa4a87096664c4ac86d3e4b0fc32679398",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "OpenAI kicks off charm offensive to change voters' view of data centers - Reuters",
+      "summary": "OpenAI kicks off charm offensive to change voters' view of data centers &nbsp;&nbsp; Reuters",
+      "url": "https://www.reuters.com/business/openai-kicks-off-charm-offensive-change-voters-view-data-centers-2026-11-05/",
+      "canonicalUrl": "https://www.reuters.com/business/openai-kicks-off-charm-offensive-change-voters-view-data-centers-2026-11-05",
+      "publishedAt": "2026-11-05T13:03:14.000Z",
+      "hashTitle": "f594857bb3ad12235c81b8ea4d2aea920f0b7dde",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "OpenAI kicks off charm offensive to change voters' view of data centers - Reuters",
+      "summaryJa": "OpenAIがデータセンターに対する有権者の見方を変えるための「おとなしめの働きかけ」を開始したと Reuters が報じている。記事は、OpenAIの取り組みがデータセンターに対する世論を変える目的で行われていることを伝えている。"
+    },
+    {
+      "id": "cad929f3e1d611df32c2e8a957ccccb855d4f1af",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "「節約」から「自分への投資」へ――マネーツリーとGoogle Healthが連携してお金と健康を可視化する狙い（ケータイ Watch） - Yahoo!ニュース",
+      "summary": "「節約」から「自分への投資」へ――マネーツリーとGoogle Healthが連携してお金と健康を可視化する狙い（ケータイ Watch） &nbsp;&nbsp; Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/135d69a4e9b3061ddde7107b319415b3462e9b24",
+      "canonicalUrl": "https://news.yahoo.co.jp/articles/135d69a4e9b3061ddde7107b319415b3462e9b24",
+      "publishedAt": "2026-11-05T12:56:00.000Z",
+      "hashTitle": "d82d8c83cf0764d1bff7fcac380cd6f8de3a640c",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "「節約」から「自分への投資」へ――マネーツリーとGoogle Healthが連携してお金と健康を可視化する狙い（ケータイ Watch） - Yahoo!ニュース",
+      "summaryJa": "マネーツリーは、資産管理アプリと健康データを連携する新機能を11月中旬から順次提供する。MUFGとGoogleの連携により、日常の支出と健康データを同一画面で可視化し、セルフケアを促す体験を実現する予定で、将来的にはAI助言やエージェンティック・コマースを目指すという。第一弾はGoogle Health API経由で歩数や消費カロリー、運動、睡眠の4指標を取り込み、支出を「こころ」と「からだ」に自動分類して表示する。"
+    },
+    {
+      "id": "955fea895f6d525f1f0ddc857e2715f969a14e63",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "AIでGIFが作れる！OpenAIがImages 2.6を発表 最先端モデルに匹敵する中国AI“無料公開”も【AIニュース3選】（リアルサウンド） - Yahoo!ニュース",
+      "summary": "AIでGIFが作れる！OpenAIがImages 2.6を発表 最先端モデルに匹敵する中国AI“無料公開”も【AIニュース3選】（リアルサウンド） &nbsp;&nbsp; Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/cbc53f42bc12542b01a97e31d754dd85d8181d47",
+      "canonicalUrl": "https://news.yahoo.co.jp/articles/cbc53f42bc12542b01a97e31d754dd85d8181d47",
+      "publishedAt": "2026-11-05T12:02:05.000Z",
+      "hashTitle": "0b4fcc6ae160d8c5cc401371756ea521756fafbc",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "AIでGIFが作れる！OpenAIがImages 2.6を発表 最先端モデルに匹敵する中国AI“無料公開”も【AIニュース3選】（リアルサウンド） - Yahoo!ニュース",
+      "summaryJa": "OpenAIは画像生成モデル「Images 2.6」を発表し、従来比で生成速度が50%向上。新機能としてGIFアニメーションの生成に対応し、簡単なスケッチから表情豊かなキャラクターを動かせるほか、画像に名前を付けて保存・再利用できるようになった。APIは用途別に「GPT-Image-2.6 Flare」と「GPT-Image-2.6 Sunburst」を提供し、SVG書き出しや画像マークアップ機能にも対応している。"
+    },
+    {
+      "id": "76ff5f5102415942d8ac4373217f5a8b27cf79b9",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "データセンターに41件中40件がNO OpenAI、電力費全額負担と公務員NDA不使用を約束 - ビジネス+IT",
+      "summary": "データセンターに41件中40件がNO OpenAI、電力費全額負担と公務員NDA不使用を約束 &nbsp;&nbsp; ビジネス+IT",
+      "url": "https://www.sbbit.jp/article/cont1/188123",
+      "canonicalUrl": "https://www.sbbit.jp/article/cont1/188123",
+      "publishedAt": "2026-11-05T11:45:00.000Z",
+      "hashTitle": "15eda21ca324794aa709833d7b5d2a920d9c17b7",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "データセンターに41件中40件がNO OpenAI、電力費全額負担と公務員NDA不使用を約束 - ビジネス+IT",
+      "summaryJa": "データセンター41件のうち40件がOpenAIの利用を拒否し、電力費用を全額負担することと公務員のNDA不使用を約束していることが報じられている。"
+    },
+    {
+      "id": "36d657f4be1fcf21af648754a0f6e7baa5d25496",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "OpenAI lays out new policy framework for data centers - Politico",
+      "summary": "OpenAI lays out new policy framework for data centers &nbsp;&nbsp; Politico",
+      "url": "https://www.politico.com/news/2026/11/05/openai-new-policy-framework-data-centers-01150714",
+      "canonicalUrl": "https://www.politico.com/news/2026/11/05/openai-new-policy-framework-data-centers-01150714",
+      "publishedAt": "2026-11-05T11:30:00.000Z",
+      "hashTitle": "71e75eee27fb216956e77c3fddc51285dce57c36",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "OpenAI lays out new policy framework for data centers - Politico",
+      "summaryJa": "OpenAIはデータセンターに関する新しい方針枠組みを提示したと伝えられており、Politicoの記事を通じてその内容が報じられている。具体的な方針の詳細は本文を参照する必要がある。"
+    },
+    {
+      "id": "aad71b78f1937fe8afd8d97b4398b306cadba7f9",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "OpenAI pledges to halt NDAs in new data center policy proposal after election rebuke - CNBC",
+      "summary": "OpenAI pledges to halt NDAs in new data center policy proposal after election rebuke &nbsp;&nbsp; CNBC",
+      "url": "https://www.cnbc.com/2026/11/05/openai-to-pay-for-data-center-power-after-election-shows-ai-concern.html",
+      "canonicalUrl": "https://www.cnbc.com/2026/11/05/openai-to-pay-for-data-center-power-after-election-shows-ai-concern.html",
+      "publishedAt": "2026-11-05T10:00:01.000Z",
+      "hashTitle": "f75656b3f1ba4307f4217eb5a278812fdd8a65de",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "OpenAI pledges to halt NDAs in new data center policy proposal after election rebuke - CNBC",
+      "summaryJa": "OpenAIはデータセンターの運用費用を全額負担する方針を改めて示し、データセンターの建設計画の公表や自治体関係者への非開示契約の不使用を含む約束を公表した。さらに、同社は政策提案の blueprint を通じて、他の自治体・国レベルの法制化を促す方針を示し、同様の取り組みを広げることを呼びかけた。 voters の選挙結果を受け、AIデータセンターに対する環境・料金・雇用影響への懸念が強まる中、データセンターの拡大計画は規制や世論の動向に左右されている。"
+    },
+    {
+      "id": "82940f901a7f05ccb2e8a9261f7821f421c0b8d8",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "Claude Codeのサブエージェントが進化。一部のコストを99%カット（ギズモード・ジャパン） - Yahoo!ニュース",
+      "summary": "Claude Codeのサブエージェントが進化。一部のコストを99%カット（ギズモード・ジャパン） &nbsp;&nbsp; Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/8e150373f3c4a32496727e952cd6d0e7d0146f4e",
+      "canonicalUrl": "https://news.yahoo.co.jp/articles/8e150373f3c4a32496727e952cd6d0e7d0146f4e",
+      "publishedAt": "2026-11-05T10:00:01.000Z",
+      "hashTitle": "8e9e9b4fece10bfc8566a71ede2b92c676c86232",
+      "tags": [
+        "claude"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Claude Codeのサブエージェントが進化。一部のコストを99%カット（ギズモード・ジャパン） - Yahoo!ニュース",
+      "summaryJa": "Claude Codeのサブエージェントが進化し、バックグラウンドのサブエージェントのステータス更新が短いメモを読むようになったことで、1回当たりの処理コストを約99%削減したと報告されています。全体では利用量が約5%削減され、プロンプトを約6%多く入力できる見込みです。対象はフォアグラウンドではなくバックグラウンドのサブエージェントで、親エージェントが別作業を進める間に独立して調査やコードレビューを行います。"
+    },
+    {
+      "id": "07d7bdfa6be9692bc4ae11868051e5053ebb698b",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "三菱UFJ、Googleと家計簿アプリ「マネーツリー」で連携 AIで健康管理・ポイント還元も - 日本経済新聞",
+      "summary": "三菱UFJ、Googleと家計簿アプリ「マネーツリー」で連携 AIで健康管理・ポイント還元も &nbsp;&nbsp; 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOUB056SP0V01C26A1000000/",
+      "canonicalUrl": "https://www.nikkei.com/article/DGXZQOUB056SP0V01C26A1000000",
+      "publishedAt": "2026-11-05T09:31:19.000Z",
+      "hashTitle": "2ef1e055a121731030845a615ab90cc6a9e198c4",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "三菱UFJ、Googleと家計簿アプリ「マネーツリー」で連携 AIで健康管理・ポイント還元も - 日本経済新聞",
+      "summaryJa": "三菱UFJフィナンシャル・グループは、家計簿アプリ「マネーツリー」と米グーグルの健康管理サービスを連携させ、11月中旬から消費カロリーや運動量をアプリ上で確認できるようにする。グーグルのAI「Gemini」を活用して、個人ごとに健康管理の気づきを提供する。2027年度に向けて、日常の健康情報を金融サービスと結びつけ、顧客接点の拡大を目指す。"
+    },
+    {
+      "id": "5964dd49916bad9b7f04f32a24db6bb4d28b98dd",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "マネーツリーとGoogle Healthが連携、資産と健康データを一元管理 MUFG「エムット」で新展開 - ケータイ Watch",
+      "summary": "マネーツリーとGoogle Healthが連携、資産と健康データを一元管理 MUFG「エムット」で新展開 &nbsp;&nbsp; ケータイ Watch",
+      "url": "https://k-tai.watch.impress.co.jp/docs/news/2153997.html",
+      "canonicalUrl": "https://k-tai.watch.impress.co.jp/docs/news/2153997.html",
+      "publishedAt": "2026-11-05T09:30:00.000Z",
+      "hashTitle": "55efe6db339e53b805ad13dbb678161638bcd7a6",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "マネーツリーとGoogle Healthが連携、資産と健康データを一元管理 MUFG「エムット」で新展開 - ケータイ Watch",
+      "summaryJa": "マネーツリーとGoogle Healthが連携し、Moneytreeアプリ内でウェルネスデータと資産情報を同時に表示できる機能を11月中旬から提供開始する。MUFGのエムットの新機能として、Google Health APIを用い、同意を前提に歩数や睡眠などのデータを金融情報と一元管理でき、今後はAIによる分析やインサイトの提供、インセンティブ機能の導入、最終的な自律型コマース構想を目指す。記念キャンペーンとして11月6日開始の抽選で1万人にGoogle Fitbit AirとMoneytree Grow1年分が贈られる。"
+    },
+    {
+      "id": "120b1873724b21c060120c42d47d3cfecd16a6a6",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "OpenAI、Pandoに続きPierre買収 Gitの保管とコードレビューの要をCodexへ取り込む - ビジネス+IT",
+      "summary": "OpenAI、Pandoに続きPierre買収 Gitの保管とコードレビューの要をCodexへ取り込む &nbsp;&nbsp; ビジネス+IT",
+      "url": "https://www.sbbit.jp/article/cont1/188115",
+      "canonicalUrl": "https://www.sbbit.jp/article/cont1/188115",
+      "publishedAt": "2026-11-05T08:15:00.000Z",
+      "hashTitle": "0e7d97734ec8d9808ccab5143ae244059380c5aa",
+      "tags": [
+        "OpenAI",
+        "codex"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "OpenAI、Pandoに続きPierre買収 Gitの保管とコードレビューの要をCodexへ取り込む - ビジネス+IT",
+      "summaryJa": "OpenAIはPandoに続きPierreを買収し、Gitの保管とコードレビューの要点をCodexへ取り込むことを進める。今回の動きは、Codexの機能強化とコード作業の一体化を狙うものと説明されている。"
+    },
+    {
+      "id": "8688f6b7a307a05259fdf41ab9bd582da24a2bef",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "CrowdStrike Secures AI Agents Inside Claude Cowork - CrowdStrike",
+      "summary": "CrowdStrike Secures AI Agents Inside Claude Cowork &nbsp;&nbsp; CrowdStrike",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-secures-ai-agents-inside-claude-cowork/",
+      "canonicalUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-secures-ai-agents-inside-claude-cowork",
+      "publishedAt": "2026-11-05T07:51:53.000Z",
+      "hashTitle": "6abad462b10c4fa0acb9cc8f868ab9437d28c139",
+      "tags": [
+        "claude"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "CrowdStrike Secures AI Agents Inside Claude Cowork - CrowdStrike",
+      "summaryJa": "CrowdStrikeはAnthropicのClaude Cowork内にFalcon Guardian保護をネイティブ統合し、Cowork VM内での実行環境の可視化と検知を提供する。これにより、仮想マシン内で実行されるプロセス、インストール済みパッケージ、ネットワーク活動を同社のFalconセンサーが検知・可視化でき、データ流出リスクを低減する。現在macOS版はβ版で提供、Windows版は11月頃の提供を予定している。"
+    },
+    {
+      "id": "2e7be4a9666ee25a45b2b3bbd1afebc16e70be0c",
+      "sourceName": "gihyo.jp",
+      "sourceUrl": "https://gihyo.jp/",
+      "sourceFeedUrl": "https://gihyo.jp/feed/atom",
+      "title": "OpenAI、Linuxカーネルを最新セキュリティAIモデルで調査、ローカル権限昇格の脆弱性948件を実証 ―エクスプロイト、パッチまで生成",
+      "summary": "OpenAIは2026年11月4日、開発中のサイバーセキュリティ向けAIモデルを活用し、Linuxカーネルの脆弱性をエージェントが自律的に発見し検証した結果を発表した。",
+      "url": "https://gihyo.jp/article/2026/11/openai-linux-vulnerabilitiy-investigation?utm_source=feed",
+      "canonicalUrl": "https://gihyo.jp/article/2026/11/openai-linux-vulnerabilitiy-investigation",
+      "publishedAt": "2026-11-05T06:53:00.000Z",
+      "hashTitle": "0eeb0b8e21a607bedc192bbc2c72cc7ac2f375d6",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "OpenAI、Linuxカーネルを最新セキュリティAIモデルで調査、ローカル権限昇格の脆弱性948件を実証 ―エクスプロイト、パッチまで生成",
+      "summaryJa": "OpenAIは、開発中のサイバーセキュリティ向けAIモデルを用いてLinuxカーネルの脆弱性を検証し、1,724件を動的再現、948件のLPEエクスプロイトと291件の情報漏洩を再現するコードを生成した。エージェントは約4,000万行のコードから約5,034個のターゲット領域を特定し、約12時間の静的解析を経て脆弱性候補2,308件を検出した上で検証を実施した。今回の試験にかかったAPIクレジットの総コストは約121万3,430ドルで、過去のセキュリティコンテストの報奨金と比較すると大きく低い額になる一方、最新モデルでは新しい脆弱性発見や報告・修正のサイクルが迅速化しているとしている。"
+    },
+    {
+      "id": "1b74a7965928f679c3ace20a07df4afae4ad6c08",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "古いAndroidスマホを音楽専用機にする「reTONE」、Google Playストアで公開 - AV Watch",
+      "summary": "古いAndroidスマホを音楽専用機にする「reTONE」、Google Playストアで公開 &nbsp;&nbsp; AV Watch",
+      "url": "https://av.watch.impress.co.jp/docs/news/2153957.html",
+      "canonicalUrl": "https://av.watch.impress.co.jp/docs/news/2153957.html",
+      "publishedAt": "2026-11-05T06:25:34.000Z",
+      "hashTitle": "ecb05bde1021f5faea432152744cced70dbb48b7",
+      "tags": [
+        "Google"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "古いAndroidスマホを音楽専用機にする「reTONE」、Google Playストアで公開 - AV Watch",
+      "summaryJa": "使わなくなったAndroidスマホを音楽専用機にする無料アプリ「reTONE」がGoogle Playストアで公開された。これにより、これまで特設サイトのAPKから入手していたのが、インストールとアップデートを Playストア経由で行えるようになった。なお、APKから既にインストール済みの場合も、設定やプレイリストを維持したままストア上書き更新が可能で、Playストアが使えない端末には引き続き特設サイトからAPKを入手してインストールできる。"
+    },
     {
       "id": "5c46a8814a17872edeb89a7f053000802c982335",
       "sourceName": "Zenn Frontend Topic",
@@ -16,46 +432,9 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "白背景の画像と透過 PNG を CSS で切り分ける",
       "summaryJa": "ダークテーマのカードに画像を置く際、白背景が表示される原因をCSSと画像データに分けて確認する診断手順が説明されています。再現条件を固定して白と濃いグレーの二つのコンテナで表示し、背景除去は実現できず、画像のアルファ情報やファイル形式・透明度の設定を別条件として検証すること、配信後の挙動や配布時のファイル処理、そして受け入れ条件を画像単位で明確化することが推奨されています。背景透過を前提にする場合でも、透明領域と表示サイズを切り分け、素材ごとに「背景込み」「被写体の外側は透明」等の方針を明記して管理することが重要です。"
-    },
-    {
-      "id": "efd5a4fa858ee3e31342bb2015620df91bc37444",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "エージェントの時代に向けたコンピュート基盤 Agent Compute Engine 開発の裏側 - Google Cloud",
-      "summary": "エージェントの時代に向けたコンピュート基盤 Agent Compute Engine 開発の裏側 &nbsp;&nbsp; Google Cloud",
-      "url": "https://cloud.google.com/blog/ja/topics/ai-infrastructure/agent-compute-engine-deep-dive",
-      "canonicalUrl": "https://cloud.google.com/blog/ja/topics/ai-infrastructure/agent-compute-engine-deep-dive",
-      "publishedAt": "2026-11-05T05:15:16.000Z",
-      "hashTitle": "a6282feb79105f9ccc0c39f355f256f90b0f0fe7",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "エージェントの時代に向けたコンピュート基盤 Agent Compute Engine 開発の裏側 - Google Cloud",
-      "summaryJa": "エージェント Compute Engine は、AI エージェントを世界規模で安全かつ高密度に実行するため、ハードウェア分離された専用の microVM を提供する新しい Google Cloud サービスです。サンドボックス内には認証情報を保持せず、ハーネスとサンドボックスを分離した設計により、出力の監査証跡を確保しつつ、起動・停止を迅速に行える点が特徴です。セキュリリティの多層防御とガバナンス機能を組み合わせ、エージェントのID 管理や認証、ネットワークの厳密な制御を実装しています。"
-    },
-    {
-      "id": "b6e457b92217bf0378c0a14c614f9ddc1fd53e67",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Hajimari、Anthropic社の「Claude Partner Network」に参画。『TUKURUS』でAIを活かした開発・内製化を支援 - 福島民報デジタル",
-      "summary": "Hajimari、Anthropic社の「Claude Partner Network」に参画。『TUKURUS』でAIを活かした開発・内製化を支援 &nbsp;&nbsp; 福島民報デジタル",
-      "url": "https://www.minpo.jp/ud/prtimes/6aec03497079c86b07000002",
-      "canonicalUrl": "https://www.minpo.jp/ud/prtimes/6aec03497079c86b07000002",
-      "publishedAt": "2026-11-05T05:10:49.000Z",
-      "hashTitle": "56d8aa52eab0d2ee2a1ff5c608c3f0adb8eed3e0",
-      "tags": [
-        "Anthropic",
-        "claude"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Hajimari、Anthropic社の「Claude Partner Network」に参画。『TUKURUS』でAIを活かした開発・内製化を支援 - 福島民報デジタル",
-      "summaryJa": "HajimariはAnthropicの「Claude Partner Network」に参画したと発表した。開発本部が提供するTUKURUSをはじめ複数の案件でClaude Codeを用いたAI駆動開発を進めており、AIエージェント開発やセキュリティレビューの相談にも対応している。Claude Partner Networkは2026年3月に発表され、認定資格の優先アクセスや研修コンテンツへの利用などを提供する予定だ。"
     },
     {
       "id": "f2b074d6a554c017412f2cb67eea5a22d29e8777",
@@ -71,45 +450,9 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "ChatGPTでGIFアニメが作れるように OpenAI、画像生成AI「Images 2.6」発表（アスキー） - Yahoo!ニュース",
       "summaryJa": "OpenAIが画像生成AI「Images 2.6」を発表し、ChatGPTでGIFアニメを作れる機能を提供する計画を示した。記事は、IT情報の速報枠内の列挙記事で、複数のニュース見出しが並ぶ構成である。本文には本文の要点以外の推測はなく、固有名詞の不明瞭な部分は省略されている。"
-    },
-    {
-      "id": "f2b39ceec317654e3f9165b05c508264f056c3fc",
-      "sourceName": "ASCII.jp",
-      "sourceUrl": "https://ascii.jp/",
-      "sourceFeedUrl": "https://ascii.jp/rss.xml",
-      "title": "ChatGPTでGIFアニメが作れるように OpenAI、画像生成AI「Images 2.6」発表",
-      "summary": "OpenAIは11月4日、新しい画像生成機能「Images 2.6」を発表した。新たにGIFアニメーションの生成に対応する。",
-      "url": "https://ascii.jp/elem/000/004/448/4448867/?rss",
-      "canonicalUrl": "https://ascii.jp/elem/000/004/448/4448867?rss",
-      "publishedAt": "2026-11-05T05:10:00.000Z",
-      "hashTitle": "574d6b011d69215ef3f0bbcf864388901ce1396d",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "ChatGPTでGIFアニメが作れるように OpenAI、画像生成AI「Images 2.6」発表",
-      "summaryJa": "映像生成AI「Images 2.6」の発表を伝える記事の見出し群の中で、ChatGPTを使ってGIFアニメを作れる機能の導入を紹介している。本文は多岐にわたる技術製品・イベントの話題を列挙しており、ChatGPTのGIF作成機能に関する具体的な説明や実例は本文中に見当たらない。したがって、本文の事実だけを用いて要約を作成すると、ChatGPTのGIF作成機能に関する情報は含まれず、記事全体の他の製品・イベント情報が中心となる。従って、本文の要点は「さまざまなガジェット・ソリューションの紹介やレビュー、イベントレポートが並ぶ総合技術メディアの投稿である」という趣旨になる。"
-    },
-    {
-      "id": "5d5b1a298658a8df9260a5443163d69924de1423",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "エンタープライズ コンテキストとセマンティクスを統合: Knowledge Catalog における LookML の一般提供を開始 - Google Cloud",
-      "summary": "エンタープライズ コンテキストとセマンティクスを統合: Knowledge Catalog における LookML の一般提供を開始 &nbsp;&nbsp; Google Cloud",
-      "url": "https://cloud.google.com/blog/ja/products/business-intelligence/lookml-metadata-indexing-in-knowledge-catalog-is-now-ga",
-      "canonicalUrl": "https://cloud.google.com/blog/ja/products/business-intelligence/lookml-metadata-indexing-in-knowledge-catalog-is-now-ga",
-      "publishedAt": "2026-11-05T04:48:06.000Z",
-      "hashTitle": "c222e27e0161108a184b9602b5c9486ac94d7ff2",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "エンタープライズ コンテキストとセマンティクスを統合: Knowledge Catalog における LookML の一般提供を開始 - Google Cloud",
-      "summaryJa": "Google Cloudの Knowledge Catalogと Looker Coreの統合により、LookMLの決定論的セマンティクスをKnowledge Catalogのエンタープライズコンテキストと結びつけ、エージェントが全社的な資産検出と正確な指標計算を同時に行えるようになりました。LookMLのモデル、結合パス、フィールド式などの計算ロジックが自動的にインデックス登録され、エージェントはグラウンディングされたSQLを生成してガバナンスを適用します。これにより、Knowledge Catalogと Looker を通じたエージェントの動作が最新のビジネスロジックに基づき、Looker のダッシュボードへ直接誘導する等、信頼性の高い分析体験が提供されます。"
     },
     {
       "id": "3710a3f4e6663d206ea4caf68a46627e9ba9f032",
@@ -125,7 +468,7 @@
       "tags": [
         "vue"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "35日でフロントエンドの基礎を完全に理解する #30 - フロントエンドのセキュリティ（XSS・CSP・サニタイズ・依存の脆弱性）",
       "summaryJa": "XSSは、利用者が入力した文字列をそのまま画面に出すと、文字として表示すべきなのにブラウザへ命令として解釈させてしまう攻撃です。信頼できない入力をHTMLとして出力する瞬間が最も警戒すべき境界となります。Vueの {{ }} は自動でエスケープされ、<img…> のような文字列はそのまま表示され、動作は起きませんが、v-html は生のHTMLをそのまま解釈させるため、攻撃コードが動く可能性があります。どうしても表示したい場合は DOMPurify などでサニタイズした上で渡すべきです。なお、CSP や npm audit による依存関係の点検を重ねることで、複数枚の防御壁を積み上げる多層防御が実現します。"
     },
@@ -143,27 +486,9 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "OpenAI、「Images 2.6」を発表 ～GIFアニメーションに対応、生成速度は50％向上 - 窓の杜",
       "summaryJa": "OpenAIは「Images 2.6」を発表し、9月発表の「Images 2.5」をアップデートした。新機能としてGIFアニメーションの生成に対応し、スケッチから表情豊かなアニメーションを作成できるほか、パフォーマンスが従来比50%高速化された。API版では「GPT-Image-2.6 Sunburst」「GPT-Image-2.6 Flare」の2モデルが提供され、SVG出力や複数の品質設定、複雑度パラメータなどが追加された。"
-    },
-    {
-      "id": "07d58c9552f2d7c7fb7407d4d5658a455d2658d4",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "OpenAIに依存しないAI主権の正体 欧州が巨大モデル構築を捨てる理由 - Forbes JAPAN",
-      "summary": "OpenAIに依存しないAI主権の正体 欧州が巨大モデル構築を捨てる理由 &nbsp;&nbsp; Forbes JAPAN",
-      "url": "https://forbesjapan.com/articles/detail/107598",
-      "canonicalUrl": "https://forbesjapan.com/articles/detail/107598",
-      "publishedAt": "2026-11-05T04:00:00.000Z",
-      "hashTitle": "0647eb0f69b8832e9654e35979087ecd16bf57ca",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "OpenAIに依存しないAI主権の正体 欧州が巨大モデル構築を捨てる理由 - Forbes JAPAN",
-      "summaryJa": "欧州のAI業界は最先端の巨大モデルだけでなく、オープンウェイトモデルや主権型モデルの活用を拡大し、投資を呼び込んで基盤モデルの提供範囲を広げている。欧州企業はモデルの稼働場所やデータ管理、推論費用、プロバイダー間の切替性を自らコントロールできることを重視し、インフラとアプリケーションの提供を強化している。EcosiaはMistralを主要AIプロバイダーとして使うのをやめ、欧州域内のMelious AI経由でオープンウェイトモデルへアクセスする体制に切り替え、柔軟性とコスト管理を高めた。"
     },
     {
       "id": "7a2b4f4ffbd10be41636f79c75e2d65d8c0e6a3e",
@@ -179,7 +504,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Google、警察庁と協力してAndroid TVに仕込まれていたバックドアを無効化 - Impress Watch",
       "summaryJa": "Googleは日本の警察庁らと協力して、XCPEバックドアを仕込んだ130万台以上のセットトップボックスを無効化したと発表した。XCPEバックドアはAndroid端末のOEM/ODM企業Videostrong製のデバイスに組み込まれ、遠隔操作や広告不正、ユーザー回線の踏み台化などを可能にしていた。Googleはバックドア事業者との提携を解消し、関連企業の認定Androidデバイス製造販売を永久に禁止、ファームウェア検証プロセスの強化も進めるとしている。"
     },
@@ -197,7 +522,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "ChatGPT Images 2.6がアニメーションGIFの作成に対応、APIではFlareとSunburstの新バージョンを提供",
       "summaryJa": "OpenAIは2026年11月4日、ChatGPT Images 2.6の提供を開始し、文章や静止画からアニメーションGIFを作成できる機能を順次拡張している。参照画像を保存して別の作品で再利用でき、GIFのコマ単位編集や再生速度変更、特定コマの変更が可能になるほか、APIではFlareとSunburstの新バージョンを提供し、GIFとSVGの出力にも対応した。出力品質や速度の向上、複数のパラメータで生成を細かく調整できる点が強調されている。"
     },
@@ -215,45 +540,9 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "週40億枚の画像生成 OpenAIが「Images 2.6」でGIF作成と「崩れない編集」を投入 - ビジネス+IT",
       "summaryJa": "OpenAIは Images 2.6 で、週40億枚の画像生成能力を活用し、GIF作成機能と「崩れない編集」を導入した。これにより、生成画像の連携や編集作業がより滑らかに行えるようになると伝えられている。"
-    },
-    {
-      "id": "57cd143c6435abf5a536592456bf40951e7aec5b",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "“タッチパネル”MacBook Proは、近年のAppleで最も攻めたプロダクト。その真価は「タッチ抜き」でもディスプレイ - Yahoo!ニュース",
-      "summary": "“タッチパネル”MacBook Proは、近年のAppleで最も攻めたプロダクト。その真価は「タッチ抜き」でもディスプレイ &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/1ae30690fabcc264fd55149d87cbb80bd703e98d",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/1ae30690fabcc264fd55149d87cbb80bd703e98d",
-      "publishedAt": "2026-11-05T02:30:01.000Z",
-      "hashTitle": "db8f84d5dfc804c630208a22d7a5026a6522d276",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "“タッチパネル”MacBook Proは、近年のAppleで最も攻めたプロダクト。その真価は「タッチ抜き」でもディスプレイ - Yahoo!ニュース",
-      "summaryJa": "本稿は、OLED搭載MacBook Proのディスプレイ性能と設計意図を詳述している。14/16インチとも最大輝度1000/2000nit、P3/Adobe RGBに対応し、反射防止コーティングや高機能バックプレーン（HMO）により黒の深さと色の豊かさを強調する一方、タッチ入力は前提ではなく、Proレベルの新たなスタンダードを打ち出す点を強調している。 OLED搭載が新基準になる可能性を示唆するが、実際の価格対価や日常利用での違いは今後のフルレビューで判断される、と結んでいる。"
-    },
-    {
-      "id": "93203ac06e7cf8ad4344d364ff9d4b4db3681b60",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "OpenAI、アニメーションGIFを作れる「Images 2.6」 - Impress Watch",
-      "summary": "OpenAI、アニメーションGIFを作れる「Images 2.6」 &nbsp;&nbsp; Impress Watch",
-      "url": "https://www.watch.impress.co.jp/docs/news/2153811.html",
-      "canonicalUrl": "https://www.watch.impress.co.jp/docs/news/2153811.html",
-      "publishedAt": "2026-11-05T02:06:18.000Z",
-      "hashTitle": "019ac1025e9ce94b4fe5d5f8c46ed87e9adfb2af",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "OpenAI、アニメーションGIFを作れる「Images 2.6」 - Impress Watch",
-      "summaryJa": "OpenAIは Images 2.6 を導入し、ChatGPT・Codex・API経由でアニメーションGIFを作成できるようにした。これにより、テキストプロンプトから動画風のループGIFを生成したり、既存画像の編集やSVGエクスポート、Figma Weave などへの連携が可能になる。なお、Images 2.6 は従来比で生成速度が約50%向上し、APIではモデル選択として GPT-Image-2.6 Flare と Sunburst を提供する。"
     },
     {
       "id": "4f23804f52789284fc1673f836fd98772d6f8067",
@@ -269,27 +558,47 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "OpenAI, ready to IPO in 2027, now counts majority of sales from enterprises, Brockman says - Reuters",
       "summaryJa": "OpenAIは2027年のIPOを見込む中、売上の過半を企業向けが占めているとブロックマン氏が述べたと Reuters が伝えている。企業向けの売上拡大が同社の収益構造の中心になりつつあることが示唆されている。"
     },
     {
-      "id": "0315275744a95f90672afa7a97a1ade71e9793e6",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "OpenAI、「Images 2.6」発表 生成速度50％向上、GIFアニメの生成も可能に（ITmedia NEWS） - Yahoo!ニュース",
-      "summary": "OpenAI、「Images 2.6」発表 生成速度50％向上、GIFアニメの生成も可能に（ITmedia NEWS） &nbsp;&nbsp; Yahoo!ニュース",
-      "url": "https://news.yahoo.co.jp/articles/5dee04fb0c338c743084523ec12ac9fa479339b2",
-      "canonicalUrl": "https://news.yahoo.co.jp/articles/5dee04fb0c338c743084523ec12ac9fa479339b2",
-      "publishedAt": "2026-11-05T02:01:12.000Z",
-      "hashTitle": "d39828dc84e562d24c24b1ea423a78b5f5123a02",
+      "id": "b2d59e1e141b44cf015252c7b8c32f9aeb1f662e",
+      "sourceName": "Qiita Popular Items",
+      "sourceUrl": "https://qiita.com/popular-items",
+      "sourceFeedUrl": "https://qiita.com/popular-items/feed",
+      "title": "「人が打ったときだけ動く」はずのスキルを、AI が自分で読んだ。31万スターのスキル集を Claude Code・Codex・Gemini CLI で3回ずつ試した",
+      "summary": "GitHub で31万スターを集めているスキル集があります。Matt Pocock さんの mattpocock/skills です（313,237スター、2026年11月5日に API で取得）。README には Claude Code・Codex・GitHub Cop...",
+      "url": "https://qiita.com/suwa_nobu/items/f09fceeb70b7a68aa4f7?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "canonicalUrl": "https://qiita.com/suwa_nobu/items/f09fceeb70b7a68aa4f7",
+      "publishedAt": "2026-11-05T02:00:44.000Z",
+      "hashTitle": "56d46c6962f0603edbaedb5dd610747416bc4d98",
+      "tags": [
+        "claude",
+        "codex",
+        "gemini"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "「人が打ったときだけ動く」はずのスキルを、AI が自分で読んだ。31万スターのスキル集を Claude Code・Codex・Gemini CLI で3回ずつ試した",
+      "summaryJa": "人が呼ぶ用スキルをAIが自動で読んだ事例が、Claude Code・Codex・Gemini CLIの計3ツールで3回ずつ確認された。印の有無や読み取りの有無はツールごとに異なり、Gemini CLIは印を読まず、スキル一覧の読み込みに制限があった。結果として、3回中2回でAIが「人が呼ぶ用のスキル」をAIに読ませる動作を確認できた一方、Gemini CLIは印を読まず読み込みが限定的だった。"
+    },
+    {
+      "id": "f93567576105c7139347931d4fd5aa66d92f2c44",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/news",
+      "sourceFeedUrl": "https://openai.com/news/rss.xml",
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "canonicalUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "publishedAt": "2026-11-05T02:00:00.000Z",
+      "hashTitle": "ca8d3dc803eb7678b4d52694d215365d31602c65",
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "OpenAI、「Images 2.6」発表 生成速度50％向上、GIFアニメの生成も可能に（ITmedia NEWS） - Yahoo!ニュース",
-      "summaryJa": "OpenAIは11月4日に画像生成AIの新版「Images 2.6」を公開し、Images 2.5比で生成速度を50％向上させた。新機能としてGIFアニメ生成と、保存した写真を別チャットで再利用できる「保存した参考画像」が追加され、編集精度も向上した。APIではFlareとSunburstの2モデルを提供し、SVG出力やcomplexityパラメータの追加、出所確認のためのSynthID導入など安全対策も強化した。"
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Setting a new standard for responsible AI infrastructure",
+      "summaryJa": "OpenAIはNational Community CompactとCompute Campus Policy Blueprintを発表し、地域資源の保護・雇用創出・責任あるAIインフラ整備の指針づくりを目指す。これらの取り組みは、地域社会とAI開発の持続可能性を両立させることを目的としている。"
     },
     {
       "id": "3ff83e6acd8dcb502859c3ad4f32b76ac2c418ca",
@@ -305,45 +614,9 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "OpenAI、「Images 2.6」発表 生成速度50％向上、GIFアニメの生成も可能に",
       "summaryJa": "OpenAIは新バージョン「Images 2.6」を発表し、Images 2.5と比較して画像生成速度を50％向上させたほか、編集精度を改善した。新機能としてGIFアニメーションの作成と保存した写真を別チャットで再利用する機能を追加し、企業向けには速度重視のGPT-Image-2.6 Flareと高品質志向のGPT-Image-2.6 Sunburstを提供する。APIは従来料金を継承し、SVG書き出しや複数の新機能を追加、C2PAとSynthIDで出所検証を強化する。"
-    },
-    {
-      "id": "84509dd1c7a9ec240edcda2285ab80b22e1b5c6d",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Google、データセンターの賃料3兆円保証 新興テラウルフの調達支援 - 日本経済新聞",
-      "summary": "Google、データセンターの賃料3兆円保証 新興テラウルフの調達支援 &nbsp;&nbsp; 日本経済新聞",
-      "url": "https://www.nikkei.com/article/DGXZQOGN050KA0V01C26A1000000/",
-      "canonicalUrl": "https://www.nikkei.com/article/DGXZQOGN050KA0V01C26A1000000",
-      "publishedAt": "2026-11-05T01:46:16.000Z",
-      "hashTitle": "29d15bb3c567c8965e4f008b1d206296e14fa824",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Google、データセンターの賃料3兆円保証 新興テラウルフの調達支援 - 日本経済新聞",
-      "summaryJa": "データセンター開発の新興企業テラウルフは、南部ケンタッキー州の施設について、グーグルがAI半導体を納めることを前提に計190億ドル（約3兆円）の賃料を保証すると発表した。これは2025年に続く賃料保証の契約で、資金調達を容易にする狙いがある。現地のデータセンターは電力容量401メガワットを想定し、アンソロピックが長期契約で20年間の賃借を結んでいる。"
-    },
-    {
-      "id": "e040a9a6d8ad5e215b7e1bc9ef829b6e09d3bfdc",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "共同執筆した『Gemini踏み込み活用術（できるビジネス）』がインプレスより発売 | クラウドエース株式会社 - クラウドエース株式会社",
-      "summary": "共同執筆した『Gemini踏み込み活用術（できるビジネス）』がインプレスより発売 | クラウドエース株式会社 &nbsp;&nbsp; クラウドエース株式会社",
-      "url": "https://cloud-ace.jp/news/2026/39380/",
-      "canonicalUrl": "https://cloud-ace.jp/news/2026/39380",
-      "publishedAt": "2026-11-05T01:43:18.000Z",
-      "hashTitle": "c698090a49e50b64b6a383ead80ad4fa335290fd",
-      "tags": [
-        "gemini"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "共同執筆した『Gemini踏み込み活用術（できるビジネス）』がインプレスより発売 | クラウドエース株式会社 - クラウドエース株式会社",
-      "summaryJa": "共同執筆した『Gemini踏み込み活用術（できるビジネス）』がインプレスから発売されたことが伝えられている。クラウドエース株式会社が関与している点を示し、同書の発売を知らせる情報となっている。"
     },
     {
       "id": "f1e8430f623dbe457f1e4a3d69a988f0a67d13b1",
@@ -359,45 +632,9 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "OpenAIがマツダと車両設計でAI共同研究 1週間で端末を設計したAIは車の開発を変えるか ｜Seizo Trend - ビジネス+IT",
       "summaryJa": "OpenAIとマツダが車両設計を共同研究する取り組みを進めており、AIが端末の設計を1週間で行った事例が紹介されている。この記事は、このAI活用が車の開発にどのような影響を与えるかを検討している。"
-    },
-    {
-      "id": "483d531cb03d9b4b4d4140b30aa7e148cd353e0c",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "Apple、Siri AIとのアプリ連携をすべての開発者に開放、27.3ベータでDeveloper Preview - BRIDGE（ブリッジ）",
-      "summary": "Apple、Siri AIとのアプリ連携をすべての開発者に開放、27.3ベータでDeveloper Preview &nbsp;&nbsp; BRIDGE（ブリッジ）",
-      "url": "https://thebridge.jp/2026/11/apple-siri-ai-developer-preview-app-intents",
-      "canonicalUrl": "https://thebridge.jp/2026/11/apple-siri-ai-developer-preview-app-intents",
-      "publishedAt": "2026-11-05T00:20:23.000Z",
-      "hashTitle": "9089fc4f15f4eee024b4cb3b977c705206b8a2e8",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Apple、Siri AIとのアプリ連携をすべての開発者に開放、27.3ベータでDeveloper Preview - BRIDGE（ブリッジ）",
-      "summaryJa": "AppleがSiri AIとのアプリ連携を全ての開発者に開放することを発表し、27.3ベータのDeveloper Previewで提供を開始した。この記事は、その動向を伝える内容である。"
-    },
-    {
-      "id": "d1a221010b15758099a8acb12ce340b9f3fb485a",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "生成AIのOpenAI、Cathedralと防御検証で協業し脆弱性報奨金を拡充 - AT PARTNERS",
-      "summary": "生成AIのOpenAI、Cathedralと防御検証で協業し脆弱性報奨金を拡充 &nbsp;&nbsp; AT PARTNERS",
-      "url": "https://www.atpartners.co.jp/news/2026-11-04-article-5e032e4432",
-      "canonicalUrl": "https://www.atpartners.co.jp/news/2026-11-04-article-5e032e4432",
-      "publishedAt": "2026-11-04T23:24:59.000Z",
-      "hashTitle": "ab5aa35662470239c9677a1ca599c259bcdadf0c",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "生成AIのOpenAI、Cathedralと防御検証で協業し脆弱性報奨金を拡充 - AT PARTNERS",
-      "summaryJa": "OpenAIは外部セキュリティ企業Cathedralと協業し、OpenAIのモデルを用いた防御検証を進めるとともに、脆弱性報奨金制度を改定しました。重大な脆弱性には最大3万ドル、特に例外的な発見には最大10万ドルを支払い、追加報酬を含め最大172,000ドルとします。狙いは社内検証と外部研究者による責任ある報告を組み合わせて防御を継続的に改善することです。"
     },
     {
       "id": "5910a91d435610c42326565888f2bf6adfea9a39",
@@ -413,63 +650,9 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "もう迷わない！CSSのカタカナ読みまとめ",
       "summaryJa": "CSSのプロパティ名・値名やHTML属性とその読み方を一覧にまとめ、読み方がわからない英単語を日本語読みで示している。表には property/値、表示、読み方が整理され、例として etc. まで含む。最後に読み方の論争性や、日本語表現に置き換える実践例も挙げられている。"
-    },
-    {
-      "id": "008696f4150a78abe997a3cedd4643f2a33e2233",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Music publishers suffer setback in copyright case against Anthropic - Courthouse News",
-      "summary": "Music publishers suffer setback in copyright case against Anthropic &nbsp;&nbsp; Courthouse News",
-      "url": "https://www.courthousenews.com/music-publishers-suffer-setback-in-copyright-case-against-anthropic",
-      "canonicalUrl": "https://www.courthousenews.com/music-publishers-suffer-setback-in-copyright-case-against-anthropic",
-      "publishedAt": "2026-11-04T22:56:45.000Z",
-      "hashTitle": "0cafec1bdf29c2ea91e898f748ea5e34ae1c98fd",
-      "tags": [
-        "Anthropic"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Music publishers suffer setback in copyright case against Anthropic - Courthouse News",
-      "summaryJa": "Anthropicに対する音楽出版社の著作権侵害訴訟で、連邦判事は20,517曲が torrentでコピーされたとする主張の具体的な詳細が不足しているとして、訴えの不十分さを懸念した。 著作権保護対象の楽曲の一部がClaudeの出力に影響を与える可能性や、保護対象資料の使用を巡る guardrails の役割が争点となっており、訴状の十分性をめぐる追加の briefing が求められた。 また、共同被告のDario Amodeiについて部分的却下の決定が認められ、直接侵害の立証のあり方が問われている。"
-    },
-    {
-      "id": "49da693b54142561f1011386995aef5c67c73546",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "マツダ、クルマの「顔」をAIで設計 OpenAIと共同研究、空気抵抗とデザインの両立探る - CNET Japan",
-      "summary": "マツダ、クルマの「顔」をAIで設計 OpenAIと共同研究、空気抵抗とデザインの両立探る &nbsp;&nbsp; CNET Japan",
-      "url": "https://japan.cnet.com/article/35254397/",
-      "canonicalUrl": "https://japan.cnet.com/article/35254397",
-      "publishedAt": "2026-11-04T22:20:00.000Z",
-      "hashTitle": "41e4a4de24ac753b3a651c960cbd936c8b268d06",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "マツダ、クルマの「顔」をAIで設計 OpenAIと共同研究、空気抵抗とデザインの両立探る - CNET Japan",
-      "summaryJa": "マツダとOpenAIが自動車設計へのAI活用を共同研究中で、AIを用いて車両前部の形状を検討し空気の流れをシミュレーションする。空気抵抗の低減だけでなく、デザインやコストも考慮し、デザインと空力性能を両立させることを目指している。AI設計案の作成・評価を通じて開発工程の効率化と性能向上の可能性を探るが、量産車への採用時期や具体的な性能改善率は未公表で、技術者が出力を検証する研究段階である。"
-    },
-    {
-      "id": "2630a530f4ca27f7ed88255f981bc6d8aaa09dbd",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "GPT-6と性能差があったのはここ！Claude Opus 5.5のほうが凄い「3つのタスク」 - ビジネス+IT",
-      "summary": "GPT-6と性能差があったのはここ！Claude Opus 5.5のほうが凄い「3つのタスク」 &nbsp;&nbsp; ビジネス+IT",
-      "url": "https://www.sbbit.jp/article/cont1/187887",
-      "canonicalUrl": "https://www.sbbit.jp/article/cont1/187887",
-      "publishedAt": "2026-11-04T22:10:00.000Z",
-      "hashTitle": "e15550273bbfa35da11bf6153d8b3f9b57bd6d3c",
-      "tags": [
-        "claude"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "GPT-6と性能差があったのはここ！Claude Opus 5.5のほうが凄い「3つのタスク」 - ビジネス+IT",
-      "summaryJa": "Claude Opus 5.5がGPT-6と比較して優れている点として、3つのタスクで性能差が生じたと報じられている。記事は、 Claude Opus 5.5の優位性を具体的に3つのタスクに絞って解説している。"
     },
     {
       "id": "ee1c0b4ca1dff1de3e9c6bc28aae9ff99a758353",
@@ -486,28 +669,9 @@
         "html",
         "css"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "AIエージェントの試行錯誤に「見た目が崩れていないか」の検査を組み込む 判定をLLMに任せない理由",
       "summaryJa": "AIエージェントの試行錯誤に見た目の検査を組み込み、検査は機械的な比較に任せる設計を解説している。改変前後のページをキャプチャして比較し、LLMには判定を任せず、動きを抑えたキャプチャとSSIMを用いた比較で副作用の有無を検出する2つの工夫を紹介している。素朴なピクセル比較だけでは誤検知が起こるため、動きを止める工夫とSSIMで遊びを持たせる工夫を採用している。"
-    },
-    {
-      "id": "33301dbe7d2b7d7bb7d949ecd63ee36d964e9846",
-      "sourceName": "Google News Search JA (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
-      "title": "GPT-6モデルはAstra、Sol、それともLuna？ OpenAIが教える、Codex爆速開発の鉄則 - キーマンズネット",
-      "summary": "GPT-6モデルはAstra、Sol、それともLuna？ OpenAIが教える、Codex爆速開発の鉄則 &nbsp;&nbsp; キーマンズネット",
-      "url": "https://kn.itmedia.co.jp/kn/article/2611/05/2000002770/",
-      "canonicalUrl": "https://kn.itmedia.co.jp/kn/article/2611/05/2000002770",
-      "publishedAt": "2026-11-04T22:00:00.000Z",
-      "hashTitle": "801229a2edae2bcd89150007ad6b755bb689f04d",
-      "tags": [
-        "OpenAI",
-        "codex"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "GPT-6モデルはAstra、Sol、それともLuna？ OpenAIが教える、Codex爆速開発の鉄則 - キーマンズネット",
-      "summaryJa": "Codexを活用することで、設計から実装・テスト・レビュー・修正まで開発工程を自動化・加速でき、人間はより高度な意思決定に集中できると説明されている。実際、楽天のWebサービスのモバイルアプリ化は従来の約3カ月を数週間に短縮し、OpenAI社内プロジェクトでは約5カ月で約1500件のプルリクエストが作成・マージされた事例が挙げられる。モデルは用途に応じてGPT-6 Astra、GPT-6.1 Sol、GPT-6 Lunaの3つを使い分け、全工程で高性能を使う必要はなく、タスクに応じたモデル選択がコスト抑制と生産性向上の鍵になる。"
     },
     {
       "id": "54c5f6bc088e3d92ae0927ee3ad173e705388ea5",
@@ -523,7 +687,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Google、130万台以上のセットトップボックスの悪用に使われていた「XCPE」バックドアをテイクダウン - INTERNET Watch",
       "summaryJa": "Googleは11月4日、XCPEバックドアを組み込んだ1,300,000台超のセットトップボックスを無力化し、関連C2ドメインを停止させ1000万台以上の感染デバイスへのアクセスを遮断したと発表した。バックドアの開発・運用はVideostrong Technology社が意図的に行っているとの高い確信を示し、認定Androidデバイスの製造・販売やソフト提供を永久禁止、ファームウェア検証の強化を実施するという。今回のテイクダウンは日本の警察庁と連携した複数組織の協力により進み、レジデンシャルプロキシ対策の重要性が改めて指摘された。"
     },
@@ -541,7 +705,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "OpenAI による Pierre Computer Company, Inc. の買収 - OpenAI",
       "summaryJa": "OpenAI が Pierre Computer Company, Inc. を買収したことを伝える記事である。内容は買収の事実を示すだけで、追加情報は提供されていない。"
     },
@@ -559,27 +723,9 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Apple cuts employee AI budgets in cost-control push, Bloomberg News reports - Reuters",
       "summaryJa": "Appleが人員のAI予算を削減し、コスト管理の強化を進めていると、Bloomberg Newsの報道とReutersの伝えられている。"
-    },
-    {
-      "id": "7d4d98602fef87101e7f1cd8c52dc1a2bb1aadef",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Google Summaries Aren't About AI, They're About Lock-In - Electronic Frontier Foundation",
-      "summary": "Google Summaries Aren't About AI, They're About Lock-In &nbsp;&nbsp; Electronic Frontier Foundation",
-      "url": "https://www.eff.org/deeplinks/2026/11/google-summaries-arent-about-ai-theyre-about-lock",
-      "canonicalUrl": "https://www.eff.org/deeplinks/2026/11/google-summaries-arent-about-ai-theyre-about-lock",
-      "publishedAt": "2026-11-04T20:05:03.000Z",
-      "hashTitle": "759ddb643c583d685e6c770caf76494d03329041",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Google Summaries Aren't About AI, They're About Lock-In - Electronic Frontier Foundation",
-      "summaryJa": "Googleは検索機能を拡張する際、機能性よりも自社エコシステムへのロックインを促す動作をとっていると指摘されている。知識パネルやAIサマリーといった機能は、リンクをクリックして他サイトへ行く必要性を減らし、長時間自社ページに留まらせることで広告収入を増やすことを狙っているとの見解だ。結果として、検索の最適解を提供するよりも収益化を優先する流れが強まり、利用者は他サービスを選択する自由を持ちながらも、Googleの monetization に影響を受け続けるとされている。"
     },
     {
       "id": "7c0df6339b82c690ecda0a09dea82d5936134f64",
@@ -595,7 +741,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Claude Codeを相棒に記者が月2kg減量、個人向けエージェントの可能性 - 日経クロステック",
       "summaryJa": "AIエージェントを個人向けに提供する動きが相次ぐ中、筆者はMuseやClaude Duetなどに先駆けて「Claude Code」をダイエットのアシスタントとして活用しており、目標の月2kg減量には現時点で到達したと述べている。本文では、AIエージェントが日常生活でどのように役立つかを筆者自身の体験をもとに整理する意図が示されている。今後は提供情報と権限を増やして活用を拡大したいと記されている。"
     },
@@ -613,27 +759,27 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Hyperscalers and Apple surge after election results remove investor uncertainty - CNBC",
       "summaryJa": "民主党が中間選挙で過半数を獲得し議会の分裂が解消される見通しとなったことで、主要なテック株が大幅に上昇した。アップル、アマゾン、グーグル、マイクロソフト、メタは成長見通しの安定化と投資家の不確実性解消を背景に上昇した一方、AIデータセンター関連の新規計画に対する規制懸念を受け、ネオクラウド銘柄は下落した。特にAIデータセンターは州レベルの規制動向次第で建設遅延のリスクが高まり、ハイパースケーラーと呼ばれる大手クラウド企業が恩恵を受けるとの見方がある。"
     },
     {
-      "id": "c049e50dba2845709313f284602ea66131170113",
+      "id": "6696a1a715592288caa7582fcca8e9636fa72f2b",
       "sourceName": "Google News Search EN (24h)",
       "sourceUrl": "https://news.google.com/",
       "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "OpenAI’s approach to mathematics does not add up - The Economist",
-      "summary": "OpenAI’s approach to mathematics does not add up &nbsp;&nbsp; The Economist",
-      "url": "https://www.economist.com/science-and-technology/2026/11/04/openais-approach-to-mathematics-does-not-add-up",
-      "canonicalUrl": "https://www.economist.com/science-and-technology/2026/11/04/openais-approach-to-mathematics-does-not-add-up",
-      "publishedAt": "2026-11-04T18:11:10.000Z",
-      "hashTitle": "d6b4ea0a4c56726daf92ca3fc047dc4de609c73d",
+      "title": "Should You Buy Anthropic's IPO on Day 1? - Yahoo Finance",
+      "summary": "Should You Buy Anthropic's IPO on Day 1? &nbsp;&nbsp; Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/buy-anthropics-ipo-day-1-192900111.html",
+      "canonicalUrl": "https://finance.yahoo.com/markets/stocks/articles/buy-anthropics-ipo-day-1-192900111.html",
+      "publishedAt": "2026-11-04T19:29:00.000Z",
+      "hashTitle": "f741a067c7b81712740b20326177ddd4a5698ccc",
       "tags": [
-        "OpenAI"
+        "Anthropic"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "OpenAI’s approach to mathematics does not add up - The Economist",
-      "summaryJa": "OpenAIの数学への取り組みは整合していないと指摘されており、同社のアプローチに疑問を呈している。記事はエコノミストの見解を紹介する。"
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Should You Buy Anthropic's IPO on Day 1? - Yahoo Finance",
+      "summaryJa": "Anthropicの初公開株式（IPO）を初日に購入すべきかについての検討を扱う記事で、投資判断の是非や初日投資のポイントを問う内容となっています。具体的な推奨や結論は示されず、読者に議論を促す形で構成されています。"
     },
     {
       "id": "16f9590165b2db3321136d4aea6f576b6169b7cc",
@@ -651,100 +797,27 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway",
       "summaryJa": "Kimi K3.1 Proとその高速版Kimi K3.1 Pro Highspeedが、AI GatewayでZDR（Zero Data Retention）提供者の数を増やして利用可能になりました。これまでK3.1 ProはMoonshot AIが唯一の提供者でしたが、新たに複数のZDR提供者が利用可能となり、AI Gateway経由でモデルを呼び出せます。両モデルは1Mトークンのコンテキストウィンドウを持ち、画像入力にも対応しています。"
     },
     {
-      "id": "0ecd1977bd7ed68b741055bbf029a53de0fa10de",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Exclusive: OpenAI targets Microsoft's GitHub with deal for startup - Axios",
-      "summary": "Exclusive: OpenAI targets Microsoft's GitHub with deal for startup &nbsp;&nbsp; Axios",
-      "url": "https://www.axios.com/2026/11/04/openai-pierre-computer-github",
-      "canonicalUrl": "https://www.axios.com/2026/11/04/openai-pierre-computer-github",
-      "publishedAt": "2026-11-04T16:59:53.000Z",
-      "hashTitle": "8856d9216212621f8d11e5e09c316051d321fa38",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Exclusive: OpenAI targets Microsoft's GitHub with deal for startup - Axios",
-      "summaryJa": "OpenAIがMicrosoftのGitHubを狙うスタートアップ向けの取引を進めていると Axios が報じている。具体的な契約内容の詳細は示されていないが、関係強化を図る動きが伝えられている。"
-    },
-    {
-      "id": "22b4a1989e12f60f1cf30f1df1dbad884199085c",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Apple, Microsoft hit all-time highs as Nasdaq surges 2% in post-election rally: AlphaCheck - Yahoo Finance",
-      "summary": "Apple, Microsoft hit all-time highs as Nasdaq surges 2% in post-election rally: AlphaCheck &nbsp;&nbsp; Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/article/apple-microsoft-hit-all-time-highs-as-nasdaq-surges-2-in-post-election-rally-alphacheck-152548814.html",
-      "canonicalUrl": "https://finance.yahoo.com/markets/article/apple-microsoft-hit-all-time-highs-as-nasdaq-surges-2-in-post-election-rally-alphacheck-152548814.html",
-      "publishedAt": "2026-11-04T16:07:17.000Z",
-      "hashTitle": "4c7667c1707716374b49d86558cfdb9bcbb52c42",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Apple, Microsoft hit all-time highs as Nasdaq surges 2% in post-election rally: AlphaCheck - Yahoo Finance",
-      "summaryJa": "選挙後のラリーでナスダックが2%上昇する中、アップルとマイクロソフトが史上最高値を更新した。Yahoo FinanceのAlphaCheckが伝える。"
-    },
-    {
-      "id": "d6c18500e212f4ea953ecd8143e050a87adf12b0",
+      "id": "6cbf1b864e148ba48e27d117b991f592765e0e3e",
       "sourceName": "Qiita Popular Items",
       "sourceUrl": "https://qiita.com/popular-items",
       "sourceFeedUrl": "https://qiita.com/popular-items/feed",
-      "title": "【心理的安全性】ギスギスした職場はなぜ危険か。AI企業で働く人の82%が会議で懸念を黙った経験があるらしい",
-      "summary": "はじめに 時間がない人向け：10秒で読む超概要 何の話か：Googleが調査した効果的なチームに共通する要素のひとつとして、「ミスをしても、それを責められることはない」という要素があげられる 何を言いたいのか：ギスギスした職場が危険なのは、雰囲気が悪いからという...",
-      "url": "https://qiita.com/shinkai_/items/009e6bfbc5e44e2e535a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "canonicalUrl": "https://qiita.com/shinkai_/items/009e6bfbc5e44e2e535a",
-      "publishedAt": "2026-11-04T16:06:25.000Z",
-      "hashTitle": "e9f6ebf53f75e90cc9c4d8cd07c5669b56cc7df4",
+      "title": "Googleが分析した「成果を出すチームの5つの特徴」が納得しかない。AIで個人の生産性が上がる時代だからこそ約10年前の分析を読み直す",
+      "summary": "はじめに 時間がない人向け：10秒で読む超概要 AIで個人の出力は増えたが、レビューなど「次の人の作業」が詰まりやすい、という分析がある Googleの「効果的なチーム」の分析では、メンバーの顔ぶれより「チームの協力の仕方」のほうが成果を左右した 重要なのは、心理的...",
+      "url": "https://qiita.com/shinkai_/items/003029234e387db00e45?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
+      "canonicalUrl": "https://qiita.com/shinkai_/items/003029234e387db00e45",
+      "publishedAt": "2026-11-04T16:03:40.000Z",
+      "hashTitle": "f01567775563987997ba6fe0bd6eab9baa0dfd82",
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "【心理的安全性】ギスギスした職場はなぜ危険か。AI企業で働く人の82%が会議で懸念を黙った経験があるらしい",
-      "summaryJa": "心理的安全性とは、チーム内でミスを認めたり意見を述べたりしても、対人関係のリスクを恐れずに行動できる共有された信念のことだと整理される。雰囲気の良さだけではなく、上司の反応や評価・昇進の影響を懸念して黙ってしまうことが、問題の早期発見や学習を妨げると指摘されている。AI企業の調査では、懸念を公表しない理由として干される恐れや報酬の損失が上位に挙がり、沈黙が組織全体のリスク報告の遅れにつながる可能性がある。"
-    },
-    {
-      "id": "6709cf4147724517706c05c3e275fd75777c2bc9",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "EXCLUSIVE: Google extends voluntary buyout offers to employees in several countries - Reuters",
-      "summary": "EXCLUSIVE: Google extends voluntary buyout offers to employees in several countries &nbsp;&nbsp; Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/google-extends-voluntary-buyout-offers-employees-several-countries-2026-11-04/",
-      "canonicalUrl": "https://www.reuters.com/business/media-telecom/google-extends-voluntary-buyout-offers-employees-several-countries-2026-11-04",
-      "publishedAt": "2026-11-04T15:48:10.000Z",
-      "hashTitle": "99df2b8790c8da2510e1b34a09b8cef5ed93ce1b",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "EXCLUSIVE: Google extends voluntary buyout offers to employees in several countries - Reuters",
-      "summaryJa": "グーグルは、複数の国の従業員に対して任意の退職勧奨制度を拡大して提供している。リサーチはロイター通信の独占情報として伝えられている。"
-    },
-    {
-      "id": "b24c73364b8a77c00f7277e1ba695a6b65b47328",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "One Wall Street Analyst Says This Stock Is the Best Way to Invest in Anthropic and OpenAI. He's Right. - Yahoo Finance",
-      "summary": "One Wall Street Analyst Says This Stock Is the Best Way to Invest in Anthropic and OpenAI. He's Right. &nbsp;&nbsp; Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/ai/articles/one-wall-street-analyst-says-153000811.html",
-      "canonicalUrl": "https://finance.yahoo.com/technology/ai/articles/one-wall-street-analyst-says-153000811.html",
-      "publishedAt": "2026-11-04T15:30:00.000Z",
-      "hashTitle": "5088c188afc88f9f2b65dce52a54cd052807f588",
-      "tags": [
-        "Anthropic",
-        "OpenAI"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "One Wall Street Analyst Says This Stock Is the Best Way to Invest in Anthropic and OpenAI. He's Right. - Yahoo Finance",
-      "summaryJa": "あるウォール街のアナリストが、AnthropicとOpenAIへの投資で最も良い方法としてこの株を挙げていると述べている。この記事はその見解を支持していると伝えている。"
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Googleが分析した「成果を出すチームの5つの特徴」が納得しかない。AIで個人の生産性が上がる時代だからこそ約10年前の分析を読み直す",
+      "summaryJa": "GoogleのProject Aristotleに基づく「効果的なチーム」の要点は、個人の能力よりもチームの協力の仕方が成果を左右し、心理的安全性・相互信頼・構造と明確さ・意味・インパクトの5要素が重要だということです。AI時代には個人の生産性が向上しても、次の人の作業が詰まりやすく、チーム全体の受け取り力が成果に直結するとの指摘があります。導入の際は、まず自分のチームで最も弱い要素を特定し、具体的な改善を進めることが推奨されています。"
     },
     {
       "id": "75679f5aa60bfcf88cfee2650e1fad6a696bd2d7",
@@ -760,27 +833,9 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Daybreak Red is now available in AWS GovCloud (US-East) - OpenAI",
       "summaryJa": "Daybreak RedがAWS GovCloud（US-East）で利用可能になったことを伝える発表で、OpenAIが同時に案内しています。"
-    },
-    {
-      "id": "2a62ccace127ee2fe17e6d52be755c2f4fcceb1a",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Why the Democrat blue wave could be a good thing for Apple stock - Yahoo Finance",
-      "summary": "Why the Democrat blue wave could be a good thing for Apple stock &nbsp;&nbsp; Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/article/why-the-democrat-blue-wave-could-be-a-good-thing-for-apple-stock-100051134.html",
-      "canonicalUrl": "https://finance.yahoo.com/markets/stocks/article/why-the-democrat-blue-wave-could-be-a-good-thing-for-apple-stock-100051134.html",
-      "publishedAt": "2026-11-04T15:06:48.000Z",
-      "hashTitle": "84cfbf21fdb9c7bc59db5ccb15e52a69db85d9f2",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Why the Democrat blue wave could be a good thing for Apple stock - Yahoo Finance",
-      "summaryJa": "民主党の「ブルーウェーブ」がアップル株にとって好要因になり得る可能性があると、Yahoo Financeが伝えている。"
     },
     {
       "id": "84ecd190588d2ef16a189b8d1b133a87a12ece0c",
@@ -796,7 +851,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Smashing AI Conference",
       "summaryJa": "Smashing AI Conferenceは、デザインシステムにおけるAIの実務的な活用やワークフローへの適用を、慎重かつ実践的に解説するオンラインイベントです。Brad FrostやChristine Vallaure、Vitaly Friedman、TJ Pitreなどの専門家が登壇し、デザイナーやフロントエンド開発者、関係者に向けて具体的な事例と知見を共有します。参加費は€50で、CSS-Tricks特別割引コードを利用可能、先着2名には無料チケット提供の案内もあります。"
     },
@@ -814,7 +869,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "AIを入れてもプロジェクトが進まないのは「完遂力」の問題",
       "summaryJa": "AIを導入してもプロジェクトが進まないのは、目的の曖昧さや意思決定者の不在、外部委託の丸投げ、リスク管理の弱さといった従来の「実行の壁」が残っているためだと整理される。白書は、AIは候補を出す・整理する役割にとどまり、人は決定・引き受けを担う「完遂力」が不足している点を指摘する。教室ではAIの出力に対して決定と責任を積極的に経験させ、決定事項を増やすプロセスを設計する訓練が有効と提言されている。"
     },
@@ -833,46 +888,9 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "OpenAI to acquire Pierre Computer Company, Inc.",
       "summaryJa": "OpenAIがPierre Computer Company, Inc.を買収することにより、Codexのコード作成・理解・レビューツールを拡充する。"
-    },
-    {
-      "id": "4c0c0e0ee190bdace875b83e075ec7a0c3c0d5e5",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "TeraWulf gets credit backstop from Google for Anthropic data-center project - Reuters",
-      "summary": "TeraWulf gets credit backstop from Google for Anthropic data-center project &nbsp;&nbsp; Reuters",
-      "url": "https://www.reuters.com/technology/terawulf-gets-credit-backstop-google-anthropic-data-center-project-2026-11-04/",
-      "canonicalUrl": "https://www.reuters.com/technology/terawulf-gets-credit-backstop-google-anthropic-data-center-project-2026-11-04",
-      "publishedAt": "2026-11-04T14:11:15.000Z",
-      "hashTitle": "918f1bf0a518a627f8fe1a870f71e0ee8eb25c48",
-      "tags": [
-        "Anthropic",
-        "Google"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "TeraWulf gets credit backstop from Google for Anthropic data-center project - Reuters",
-      "summaryJa": "TeraWulfは、Anthropicのデータセンター計画に対するグーグルの信用バックストップを受けたと報じられている。 Reutersの説明によれば、Googleの支援を受けて資金面の保証を得たことが示唆されている。"
-    },
-    {
-      "id": "01a825db2479ed637f138e998d8c60e29c4093be",
-      "sourceName": "Qiita Popular Items",
-      "sourceUrl": "https://qiita.com/popular-items",
-      "sourceFeedUrl": "https://qiita.com/popular-items/feed",
-      "title": "【Android】MapConductor で地図 SDK を 1 つの Compose コードで扱ってみた",
-      "summary": "はじめに Android で地図を扱うとき、Google Maps、MapLibre、Mapbox などの SDK はそれぞれ API が違います。あとからプロバイダを替えたくなると、地図まわりのコードをほぼ書き直すことになります。 MapConductor はこうした地...",
-      "url": "https://qiita.com/saitojo1106/items/f2fae92841948418e15e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "canonicalUrl": "https://qiita.com/saitojo1106/items/f2fae92841948418e15e",
-      "publishedAt": "2026-11-04T13:04:34.000Z",
-      "hashTitle": "c80d8f55fec8b282f2a82b5466a7cf72a544db83",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "【Android】MapConductor で地図 SDK を 1 つの Compose コードで扱ってみた",
-      "summaryJa": "MapConductor は Google Maps や Mapbox など複数の地図 SDK を、同じ Jetpack Compose で扱える共通 API にまとめたライブラリです。この記事では MapLibre を例に、地図表示からマーカーと吹き出し、円・線・多角形の描画、プロバイダの切り替え（MapLibre から Open Mobile Maps へ）をステップごとに解説します。地図上のデータは共通のコンポーネントで記述し、プロバイダごとの違いは MapView の状態と内部 SDK の差分だけに留まるため、コードの大半はそのまま再利用可能です。なお、Step1 では MapLibre、Step4 で Open Mobile Maps へ切替える手順を示し、各ステップごとにリポジトリのコミットで途中経過を確認できるとしています。"
     },
     {
       "id": "81a14e552c90c270deb21486815ee88b308ebf17",
@@ -888,9 +906,27 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "AI駆動開発の次の段階: ソフトウェアファクトリー",
       "summaryJa": "ソフトウェアファクトリーは、チケット・PR・スケジュールを入力として、マージ済みコードを自動で生産するエージェントの仕組みで、タスクと実行・サービスの組み合わせにより構成される。著者は実際の運用例としてGitHubを中心にすべてを統合した構成を紹介し、サービスは買い、タスクは作るという方針を採用している。重要なブレーキとして自動チェックと人のレビューを設け、品質を担保する運用を提案している。現在の工場は徐々に拡張可能で、困りごとに応じてタスクを追加するなど、段階的な成長を推奨している。"
+    },
+    {
+      "id": "0ecd1977bd7ed68b741055bbf029a53de0fa10de",
+      "sourceName": "Google News Search EN (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
+      "title": "Exclusive: OpenAI targets Microsoft's GitHub with deal for startup - Axios",
+      "summary": "Exclusive: OpenAI targets Microsoft's GitHub with deal for startup &nbsp;&nbsp; Axios",
+      "url": "https://www.axios.com/2026/11/04/openai-pierre-computer-github",
+      "canonicalUrl": "https://www.axios.com/2026/11/04/openai-pierre-computer-github",
+      "publishedAt": "2026-11-04T11:33:27.000Z",
+      "hashTitle": "8856d9216212621f8d11e5e09c316051d321fa38",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Exclusive: OpenAI targets Microsoft's GitHub with deal for startup - Axios",
+      "summaryJa": "OpenAIがMicrosoftのGitHubを狙うスタートアップ向けの取引を進めていると Axios が報じている。具体的な契約内容の詳細は示されていないが、関係強化を図る動きが伝えられている。"
     },
     {
       "id": "83cf579e1a927ae2fbd000a55931f3f5f1d7f538",
@@ -906,27 +942,9 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Claude Codeの/model opusplan＋/advisor fableでOpus・Fable・Sonnetを自動で使い分けたら、めちゃめちゃ良かった",
       "summaryJa": "Opusplanと/advisor fableを組み合わせて、Opus・Fable・Sonnetの3モデルを自動で使い分ける運用を実務で試したところ、計画・助言・実装を切り替えずに進められ、作業に集中できる点と成果物の確認が増える点が特に良かった。計画はOpus、難易度の高い判断はFable、実装はSonnetへと順次切り替わる仕組みで、3モデルの役割分担を自動化することで手動切替の煩雑さを解消した。実際の案件では議事録作成や不具合修正などで効果を検証しており、次回以降の自動処理にも反映する形で品質向上と作業効率の向上を促している。"
-    },
-    {
-      "id": "76363d5b8646dab571f91e7eb1e3ce828fa8cd3c",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Dario Amodei wants 'a country of geniuses in a data center.' Realizing that vision requires risky financial mechanics, Anthropic's IPO filing shows - Fortune",
-      "summary": "Dario Amodei wants 'a country of geniuses in a data center.' Realizing that vision requires risky financial mechanics, Anthropic's IPO filing shows &nbsp;&nbsp; Fortune",
-      "url": "https://fortune.com/2026/11/04/dario-amodei-wants-a-country-of-geniuses-in-a-data-center-realizing-that-vision-requires-tricky-financial-mechanics-anthropics-ipo-filing-shows/",
-      "canonicalUrl": "https://fortune.com/2026/11/04/dario-amodei-wants-a-country-of-geniuses-in-a-data-center-realizing-that-vision-requires-tricky-financial-mechanics-anthropics-ipo-filing-shows",
-      "publishedAt": "2026-11-04T11:22:00.000Z",
-      "hashTitle": "f5a3c68bed025b75833c5e6677c34991167bbc2e",
-      "tags": [
-        "Anthropic"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Dario Amodei wants 'a country of geniuses in a data center.' Realizing that vision requires risky financial mechanics, Anthropic's IPO filing shows - Fortune",
-      "summaryJa": "AnthropicのCEOダリオ・アモデイはデータセンターに「天才の国」を作ると語るが、IPO申請書はその実現には大規模な資金調達とリスクが伴うことを示す。最近の決算とデータセンター投資の拡大により、同社は2045年までに約8951億ドルの支出を計画しており、チップ供給企業やクラウド事業者が資金調達を支える形でリース契約を組んでいる。 Broadcom、Google、AMD などの保証により、 Anthropicは必要な計算容量を確保する一方、万一のデフォルト時には提供元が損失を一部負担する仕組みになっている。"
     },
     {
       "id": "ede96986652c168fbb0887f41ef3307401cfa2d8",
@@ -942,27 +960,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "中国メーカー、出荷前のAndroid端末に犯罪用のバックドアを設置か Googleが取引停止",
       "summaryJa": "中国の端末メーカー Videostrong Technology が出荷前の Android STB に遠隔操作可能な不正ソフト「x.cpe」を組み込み、同社が犯罪事業者へバックドアのアクセス権を販売していたとされる。 Google は同社の取引を停止し、認証済み端末の製造・供給を禁じたほか、ボットネット「XCPE」の運用を妨害し関連サーバーやドメインを停止した。今回の措置で感染端末のうち他経路で感染した少なくとも10,000,000台への影響を軽減する見込みで、再発防止策として認証済み端末のファームウェア検証を強化する。"
-    },
-    {
-      "id": "9b4a4a0df8def053a4ea751c0abcd9a8bdf9b5a5",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Google to invest $15 billion in Malaysia in 2027 and 2028 - Reuters",
-      "summary": "Google to invest $15 billion in Malaysia in 2027 and 2028 &nbsp;&nbsp; Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/google-invest-15-billion-malaysia-2027-2028-2026-11-04/",
-      "canonicalUrl": "https://www.reuters.com/world/asia-pacific/google-invest-15-billion-malaysia-2027-2028-2026-11-04",
-      "publishedAt": "2026-11-04T09:14:09.000Z",
-      "hashTitle": "991620a577f7610ee91cff9a9f619f7334ade7dc",
-      "tags": [
-        "Google"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Google to invest $15 billion in Malaysia in 2027 and 2028 - Reuters",
-      "summaryJa": "グーグルが2027年と2028年にマレーシアへ合計150億ドルを投資すると Reuters が報じた。具体的な投資額や期間の詳細は本文に記載されている。"
     },
     {
       "id": "8b6d1bd10a4393de6b0f591c7e2b906f813e7b3f",
@@ -978,7 +978,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "AIのUI崩壊対策に最新のCSS記法を使わせよう",
       "summaryJa": "AIがUIを作ると崩れやすい問題に対して、最新のCSS記法を用いることで安定性を高められると述べている。具体例として、従来の padding-top などの古い書き方やハックから、aspect-ratio や position-anchor など新しい手法へ移行するメリットを挙げ、@layer や @scope、clamp、min/max、dvh/dvh、scrollbar-gutter、overscroll-behavior、@starting-style、@property、color-mix、oklch、light-dark などの機能を紹介している。最新CSSは宣言的で堅牢になり、スポットで徐々に実践することで崩れを一発で改善できる可能性があると語る。著者のスキルや実務方針は例として示され、OSSやブログ運用の文脈とともに、最新CSSを導入する動機づけを説明している。"
     },
@@ -996,7 +996,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "A thousand fewer paths to root",
       "summaryJa": "OpenAIは、Linuxカーネルのローカル権限昇格の脆弱性を948件特定・検証・修正パッチを自動的に生成するパイプラインを構築した。"
     },
@@ -1014,27 +1014,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "XCPE ボットネットを完全封鎖：Google による脅威への対抗と詳細解析 - Google Cloud",
       "summaryJa": "Googleは XCPE バックドアを無効化し、 Videostrong Technology 社による長期にわたるマルウェア配布とボットネット運用を把握、 テイクダウンと製造販売禁止などの措置を実施しました。バックドアはファームウェア領域に組み込まれ、起動時の再インストールや多段階のローダー/実行エンジンを経て、MQTT を介したC2と収益化モジュールを統括します。さらに検知回避のための解析妨害や永続化手法を用い、システム権限での任意コマンド実行や画面キャプチャ、広告不正・レジデンシャルプロキシ機能を展開していました。"
-    },
-    {
-      "id": "b4ac2d70db39450732c8d1f79696ead5d8b66df9",
-      "sourceName": "Qiita Popular Items",
-      "sourceUrl": "https://qiita.com/popular-items",
-      "sourceFeedUrl": "https://qiita.com/popular-items/feed",
-      "title": "耳で聞く！Python で学ぶ マクロ経済学 入門 40",
-      "summary": "user: ソース動画のタイトル、そしてこの動画の内容について教えてください。 Gemini: 動画のタイトルは 「財源幻想が日本を観光立国に変えた : Pythonで学ぶマクロ経済学入門 Podcast 40」 です。 この動画は、YouTubeチャンネル「Py...",
-      "url": "https://qiita.com/maskot1977/items/f7fdf091630675893b62?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "canonicalUrl": "https://qiita.com/maskot1977/items/f7fdf091630675893b62",
-      "publishedAt": "2026-11-04T04:52:01.000Z",
-      "hashTitle": "37204ef200c8d931f7f8ad98344a7d38cdccc4bb",
-      "tags": [
-        "gemini"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "耳で聞く！Python で学ぶ マクロ経済学 入門 40",
-      "summaryJa": "財源幻想を軸に、日本が科学技術立国から観光立国へ転換した背景と、その背後にある政策上のバグを解説しています。シリーズ第40回は、財政乗数の誤解や有効需要・実物資源の重要性などの概念を整理し、以降の教育・研究投資の重要性へと橋渡しをする節目の回です。全体の文脈では、第40回がシリーズ全体のターニングポイントとして位置づけられています。"
     },
     {
       "id": "7f739e8138cb938bda9587c1f817b187f9564747",
@@ -1050,7 +1032,7 @@
       "tags": [
         "html"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "35日でフロントエンドの基礎を完全に理解する #29 - フロントエンドの認証（トークンの置き場・Cookie属性・OIDC）",
       "summaryJa": "本記事は、トークンの置き場・Cookie属性・Oidcなどを実測を交えて解説します。ローカルストレージはJSから誰でも読めるため悪意あるコードに印が盗まれる危険があり、HttpOnly属性付きのクッキーを使うとJSから閲覧できず印の盗難を防げます。クッキーはブラウザが自動送信する性質がありCSRFのリスクにつながるため、SameSiteを適切に設定し、必要に応じて追加のサーバー側対策と組み合わせて用いるのが推奨です。実験としてHttpOnly付きクッキーを使いログイン状態を/meで確認する流れや、curlでの検証例が示されています。最終的には、アプリ構成に応じて HttpOnly Cookie、Memery/LocalStorage、BFF形などの置き場所を選び分ける判断表が提示されています。"
     },
@@ -1069,7 +1051,7 @@
         "Anthropic",
         "claude"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Anthropic 、「Claude Code」によるゲームの複製を制限 - Yahoo!ニュース",
       "summaryJa": "AnthropicはClaude Codeで作成できるゲームの範囲を制限し、他者の既存ゲームを再現するようなリクエストには拒否を示すように変更した。オリジナルのゲームや特定ジャンル・ユーザーの設計・素材に基づく作品は引き続き作成可能だが、著作権侵害の可能性を懸念し、コピーの生成を抑える方針としている。専門家は、著作権で保護されるのはゲームの表現であり、アイデアやルール自体は保護対象になりにくいと指摘する一方、AIが模倣を容易にする現状には法的リスクが高まる可能性があると述べた。"
     },
@@ -1087,7 +1069,7 @@
       "tags": [
         "Apple"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Apple、刷新版「Siri AI」を全開発者に開放 アプリ連携で予約や注文などの操作が可能に",
       "summaryJa": "Appleは、AIを活用した新しい音声アシスタント「Siri AI」を全開発者に開放し、サードパーティアプリと連携できる機能をβ版で提供開始した。 Siri AIは「App Intents」を使い、配送状況の確認や予約・注文などを音声操作で実行可能で、複数の操作を組み合わせる「skills」も導入している。 日本語を含む6言語に対応し、一般提供は数カ月後を予定、App Store対応は2027年春に開始する見込みで、利用にはApple Intelligence対応デバイスが必要。"
     },
@@ -1105,7 +1087,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Google responds to political backlash over removing search from schools that ban AI - CNBC",
       "summaryJa": "グーグルは、学校でのAI利用に関する新しい方針への政治的反発を受け、教育現場でのAI活用を進める方針を示した。クラウド型学習支援の「Guided Learning」を含む「Designing responsible AI for learning」というブログ投稿と、School向け検索機能をAIと切り離して提供する方針を発表した。検索機能はデフォルトでAI無しとなり、学校が必要に応じて有効化できると説明され、AIモードやAI概要は段階的な指導を提供することになる as 学習に役立つとした。"
     },
@@ -1123,7 +1105,7 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Introducing Images 2.6",
       "summaryJa": "Images 2.6は、ChatGPT・Codex・API全体で高速な画像生成・GIF作成・より正確な編集を実現し、新たなAPI制御機能を提供します。これにより、画像関連の作業がより効率的で柔軟に行えるようになります。"
     },
@@ -1144,7 +1126,7 @@
         "css",
         "vue"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Safari will 'dark mode' your site for you",
       "summaryJa": "Safari 27.3のベータ版で、LightモードとDarkモードを自動で適応する「Adaptive Dark Mode」が追加された。利用は任意で、約40%のページがダークモード利用者により読み込まれる一方、ダークモードを直接サポートするページは約10%にとどまっている。本文はこの機能導入の背景と関連する技術話題を紹介しているが、具体的な実装細部の記述は含まれていない。"
     },
@@ -1162,7 +1144,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "UI のスキルを 5 つ同じ条件で比べたら、案外スキルなしが良かった",
       "summaryJa": "UI スキル5つとスキルなしを同条件で比較した結果、3回の実験では UI UX Pro Max が常に1位となり、2位・3位にはスキルなしが入る回が多かった。スキルなしは、他の4つのスキルより優れて見える場面があり、特に「導線の解釈」と全体のブリーフ適用が影響したと筆者は推測している。全体として、ブリーフの表現や見た目の構成が差を生み、機能性よりもデザインの大胆さと導線の解釈が結果を左右したとの結論が述べられている。"
     },
@@ -1180,28 +1162,9 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "「⚪︎⚪︎はしないで」は効かない？AI Agent の危険行動を制限する 5 つの方法と守られる強さで比べた",
       "summaryJa": "AIエージェントの行動を「しないで」と禁止するだけでは、必ずしも守られない場合があるとされ、実験では強度2の指示ファイルに書いた場合の挙動を中心に、5つの制限方法の効果を比較しています。強度は1〜5に分けられ、強度が高いほどAIが守る確実性が高いとされ、特に強度5の要件は環境変数の絞り込みなどを通じて鍵情報の流出を防ぐ狙いがあります。実験結果として、禁止のみの版では鍵が出力されるケースがあり、代わりのコマンドを書いた版の方が安全性が高いと説明されています。"
-    },
-    {
-      "id": "4ddabe90aabb4082855ee1e8b460b8696e0f6ee0",
-      "sourceName": "ITmedia NEWS",
-      "sourceUrl": "https://www.itmedia.co.jp/news/",
-      "sourceFeedUrl": "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml",
-      "title": "Google、学校の生徒向けAI機能を原則オフへ 「AIなしのGoogle検索」は選べず批判も",
-      "summary": "Googleは、K-12（幼稚園から高校まで）の生徒向けアカウントで生成AI「Gemini」や「Google検索」などを原則オフにすると発表した。管理者が有効化できるが、検索のAI機能のみを無効にはできず、AIを禁じる学校では検索自体が利用不可となる点が批判を集めている。",
-      "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002849/",
-      "canonicalUrl": "https://www.itmedia.co.jp/news/article/2611/04/2000002849",
-      "publishedAt": "2026-11-03T22:31:04.000Z",
-      "hashTitle": "4cb35e2f8a90e5351354e2ea36d3fc36231ef3e2",
-      "tags": [
-        "Google",
-        "gemini"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Google、学校の生徒向けAI機能を原則オフへ 「AIなしのGoogle検索」は選べず批判も",
-      "summaryJa": "米Googleは、K-12生徒向けアカウントで生成AI「Gemini」や「Google検索」などを学校管理者が明示的に有効化するまで原則オフにすると発表した。AI機能を無効化しても検索機能自体を使えなくなる場合があり、学校側の方針次第で生徒の利用可否が左右される点に批判が出ている。なお、Googleは「Guided Learning」機能をGoogle検索とGoogle Classroomに導入し、段階的な支援を行うと説明している。"
     },
     {
       "id": "8d9f2458c8bb1ce315fa7ccf6f96eed13c07febc",
@@ -1217,27 +1180,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Google、学校でAIと検索機能を禁止可能に 提供拡大から一転 - 日本経済新聞",
       "summaryJa": "Googleは3日、小中高校向けの教育サービスで学校が児童・生徒の対話型AIと検索機能の利用を制限できるようにすると発表した。これは、すぐ答えを示すAIに頼りすぎると自ら考えて学ぶ機会が減るとの指摘を受けたためで、クラスルームの教員側がジェミニやジェミニノートブックなどのAIサービスの利用を管理できる機能を提供する。"
-    },
-    {
-      "id": "ea0326c500c005e572cec111034118ff59c202d5",
-      "sourceName": "Google News Search EN (24h)",
-      "sourceUrl": "https://news.google.com/",
-      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=en-US&gl=US&ceid=US:en",
-      "title": "Apple warns of risks related to AI agents behaving in 'unintended or unpredictable' ways - CNBC",
-      "summary": "Apple warns of risks related to AI agents behaving in 'unintended or unpredictable' ways &nbsp;&nbsp; CNBC",
-      "url": "https://www.cnbc.com/2026/11/03/apple-warns-of-ai-agents-behave-in-unintended-or-unpredictable-ways.html",
-      "canonicalUrl": "https://www.cnbc.com/2026/11/03/apple-warns-of-ai-agents-behave-in-unintended-or-unpredictable-ways.html",
-      "publishedAt": "2026-11-03T20:10:41.000Z",
-      "hashTitle": "242815509bc6b89b67aa23a6313b0be8d0cf553d",
-      "tags": [
-        "Apple"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Apple warns of risks related to AI agents behaving in 'unintended or unpredictable' ways - CNBC",
-      "summaryJa": "Appleは annually filing において、AIエージェントが「意図しないまたは予測不能な方法」で行動する可能性が同社ビジネスに対する脅威となり得ると指摘した。これには内部外部システムへの自動アクセスやコードの実行・変更、通信送信、取引完了などが含まれ、指示されていない行動を取る場合もあると説明されている。現時点で同社はエージェント型AIを自社で保有していないが、Siriの機能拡張の余地は「現実にある」としつつ、セキュリティとプライバシーを守るための適切な開示と規制対応の重要性を強調している。"
     },
     {
       "id": "e8173831a34e607ca5d9092e58c39e48b6e78c6c",
@@ -1253,7 +1198,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "OpenAI employees warned about operational security lapses for years, sources say - Reuters",
       "summaryJa": "OpenAIの従業員は長年にわたり、運用上のセキュリティの不備を指摘していたと、関係者が述べている。 Reutersの報道によると、同社内での情報保護体制に関する警告が繰り返し上がっていたという。"
     },
@@ -1271,7 +1216,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Agentic cheminformatics with Google Antigravity",
       "summaryJa": "Google Antigravityに新設したCheminformatics Skillsを使い、数千件の化合物の抽出・フィルタリング・データ文献への紐付けを数分で実行。MMPAやポテンシーモデル構築、ラブチェーンを用いたマクロ環化体の設計・合成ルート提案までを統合し、創薬ワークフローを大幅に加速するデモを紹介している。ロラシダイック化などの古典的手法を活用し、結合の剛性化がポテンシー向上に寄与する事例を通じて、エージェントが文献データから化合物を抽出・可視化・評価・設計まで一連の作業を自動化できる点を示す。"
     },
@@ -1289,7 +1234,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Re-Implementing :nth-child() With Modern CSS",
       "summaryJa": "本記事では、現代CSSの機能を用いて、:nth-child() の挙動を動的に再実装する方法を紹介している。変数(--A, --B)を使い、条件式(style())とif()を組み合わせて、特定の要素だけを背景色 red にする実装や、nの範囲・偶奇・約数など、さまざまなパターンをCSSだけで再現する考え方を示している。さらに、AやBを用いた一般形 An + B の実装まで段階的に解説し、Aが0の場合の対処法の議論も行っている。実装例には、サンプルHTML構造とコンテナ内のdiv要素群を前提にしたコードが複数掲載されている。"
     },
@@ -1307,7 +1252,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Google Will Turn Off Search for Schools That Reject A.I. - The New York Times",
       "summaryJa": "Googleは、AIを拒否する学校の検索機能を停止すると発表した。この記事はニューヨーク・タイムズの報道を基にしている。"
     },
@@ -1326,7 +1271,7 @@
         "codex",
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Accelerating engineering for the physical world",
       "summaryJa": "ChatGPTとCodexが、CAD・PCB設計・シミュレーションなど、物理世界の設計ワークフローを加速させる方法を紹介します。エンジニアリング作業の効率化を通じ、設計プロセスの各段階での支援が説明されています。"
     },
@@ -1344,7 +1289,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Modern CSS Might Make Your Front-End More Complex",
       "summaryJa": "CSSの新機能を導入すると、コードは短縮できても全体の挙動理解が難しくなる場合があると著者は指摘します。具体例として、ResizeObserverをContainer Queriesに置き換える移行で局所的には簡潔になる一方、他の部分との関係性が崩れ、理由の説明が難しくなるケースを挙げています。結局、CSSは「サイズやDOM構造に基づくプレゼンテーション」と「アプリケーション状態や非同期処理」を分担して管理することが重要だと説いています。"
     },
@@ -1362,7 +1307,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "How Cisco defends at machine speed with OpenAI",
       "summaryJa": "シスコはネットワーク知能とOpenAIのモデルを組み合わせ、エンタープライズのセキュリティを機械的スピードで強化している。適応力の高い防御を構築する方法を紹介する。"
     },
@@ -1381,9 +1326,27 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "ハイムシュタデンが AI で住宅不動産管理を変える",
       "summaryJa": "ヘイムストアデンは、OpenAIのChatGPT EnterpriseとCodexを活用して住宅用不動産の管理を革新し、コスト削減と社員の活性化を実現している。欧州各地での導入が進んでいる。"
+    },
+    {
+      "id": "3d48bd70e637439d1057dc5b6a32ac102c2b1052",
+      "sourceName": "Google News Search JA (24h)",
+      "sourceUrl": "https://news.google.com/",
+      "sourceFeedUrl": "https://news.google.com/rss/search?q=(Anthropic%20OR%20OpenAI%20OR%20Google%20OR%20Apple%20OR%20claude%20OR%20codex%20OR%20gemini%20OR%20frontend%20OR%20html%20OR%20css%20OR%20typescript%20OR%20vue)&hl=ja&gl=JP&ceid=JP:ja",
+      "title": "ものづくりのエンジニアリングを加速 - OpenAI",
+      "summary": "ものづくりのエンジニアリングを加速 &nbsp;&nbsp; OpenAI",
+      "url": "https://openai.com/ja-JP/index/accelerating-engineering-for-the-physical-world/",
+      "canonicalUrl": "https://openai.com/ja-JP/index/accelerating-engineering-for-the-physical-world",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "hashTitle": "dec003c7f367f99c16981e02c7602a306d5e9e32",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "ものづくりのエンジニアリングを加速 - OpenAI",
+      "summaryJa": "企業のものづくりのエンジニアリングを加速することを示唆する内容で、OpenAIが関連していることを示す説明文です。"
     },
     {
       "id": "d94c9f77ddafc83a4b47ea337b95eddf94c7dda0",
@@ -1399,7 +1362,7 @@
       "tags": [
         "Anthropic"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Progress on provable inference for large language models - Anthropic",
       "summaryJa": "AIモデルの応答が特定のモデルから出たことを検証できるようにする「推論の証明（provable inference）」の進展を紹介する。zkSNARKを活用したシステムFlashProveの概要と、4000億パラメータ級の混成モデル(Maverick)での実測として、1回のリクエストで約102–110トークン/秒の検証速度と、1,024トークンあたり約19MBの証明サイズを達成したこと、従来のオープンソース系より大幅に高速であることが示されている。これにより、提供者はモデルを秘密に保ちながら応答の正当性を証明でき、監査や規制対応、AIの健全な普及と安全性向上に資する可能性があるとしている。なお、証明はモデルの重みを隠蔽するが、アーキテクチャの隠蔽は目的ではないとしている。公開物には技術報告、プロトコル説明、コード、一部Lean証明、実行可能な検証器などが含まれ、Apache 2.0ライセンスで提供される。"
     },
@@ -1417,7 +1380,7 @@
       "tags": [
         "frontend"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "How Zapier turns ideas into working software in hours with Vercel",
       "summaryJa": "ZapierはVercelを活用して、従来 weeksかかっていたプロトタイプ作成やデモを、2時間未満で完全に相互作用可能な状態に短縮した。マーケティングやパートナー向けの内部アプリは、SSO保護下で安全に共有・展開でき、マーケティングOSなどの内部ツールは60人以上のマーケターへ日次ブリーフを提供して情報を統合している。今後もVercelの活用範囲を広げ、顧客向けツールと社内ツールの両方で“速さと安全性”を軸に展開を続ける予定である。"
     },
@@ -1435,7 +1398,7 @@
       "tags": [
         "html"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "35日でフロントエンドの基礎を完全に理解する #28 - レンダリング戦略（CSR/SSR/SSG・ハイドレーション）",
       "summaryJa": "3つのレンダリング戦略を「HTMLをいつ・どこで作るか」という観点で比較し、それぞれの弱点と適切な用途を説明します。CSRはブラウザ内で初回読み込み後にHTMLを組み立て、SSRはリクエストごとにサーバーがHTMLを作成、SSGは빌ド時に全ページを静的に作成して配布します。実測の例では、CSRは初期HTMLが空になるため初見や検索エンジンには不向き、SSRは毎回新しいHTMLを生成するためコストがかかり、SSGは更新頻度が低い場合に最も速く安価です。これらを、ログイン不要で見せるページにはCSRが適さず、検索エンジンに中身を見せたい商品詳細はSSR、公開情報が少なく更新も稀な固定ページはSSGが適切と判断できます。"
     },
@@ -1453,7 +1416,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
       "summaryJa": "OpenAIはJill Hazelbakerを最高企業広報責任者として迎え、グローバルな広報活動と企業のポジショニングを主導させる。"
     },
@@ -1471,7 +1434,7 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Claude Codeを使ったバイブコーディングで30分で業務アプリを作ってみよう - gihyo.jp",
       "summaryJa": "Claude Codeを使って業務アプリを30分で作る手順を詳述した本文では、デスクトップ版Claude Codeを用いてCLAUDE.mdに要件を記述し、承認を得つつツールを自動生成・試験データで動作させる流れが解説されています。具体的には、未提出資料の洗い出しと催促メール下書き作成を目的とする催促ツールの開発、承認モードの設定、計画の提示・書き出し、試験データによる動作確認、定期実行の設定、将来的な連携案としてMCPやAPIでの接続案が紹介されています。全体像として「作るときの流れ」と「動かすときの流れ」を図解つきで順を追って説明し、実務での適用時の注意点や5つの業務型の共通点も示しています。"
     },
@@ -1489,7 +1452,7 @@
       "tags": [
         "frontend"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "How OpenEvidence scales medical search for 650K doctors",
       "summaryJa": "OpenEvidenceは、医師が治療中に信頼できる医療文献を検索できるWebアプリを提供し、2026年1月には2000万件以上の臨床相談、2025年には100百万以上の米国民が同サービスを利用したとされる。Next.jsとVercelを活用する小規模チームは、開発から本番デプロイまでのワークフローを迅速化し、公開後約5分で650,000人の医師に反映される環境を維持している。トラフィック急増にも耐性があり、サーバーレス費用を90%削減するなど、インフラの効率化と安定性を両立している。"
     },
@@ -1508,7 +1471,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Tencent Hy4 now available on AI Gateway",
       "summaryJa": "Tencentの Hy4 が AI Gateway で利用可能になり、2026年12月31日まで50%オフで提供されます。Hy4 は推論・ツール呼び出し・構造化出力・画像入力をサポートし、1Mトークンの文脈ウィンドウを持ち、視覚機能を備えた初の Hy モデルです。AI Gateway はモデル呼び出しを統合的に管理し、使用量・コストの追跡、リトライやフェイルオーバー、パフォーマンス最適化を提供します。"
     },
@@ -1526,27 +1489,9 @@
       "tags": [
         "claude"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Vercel MCP now supports Client ID Metadata Documents",
       "summaryJa": "Vercel MCPは、MCPクライアントが自分のドメインに公開したクライアントIDメタデータ文書(CIMD)を使って接続申請できるようになった。従来はVercel側で手動で審査・許可リスト作成が必要だったが、今後は各クライアントがCIMDを公開し、HTTPSURLをOAuthのclient_idとして使用する。承認画面にはクライアント名・ロゴ・メタデータ文書を提供するホスト名が表示され、Vercelの検証バッジは付かず、信頼はホスト名で判断される。既存のVercel登録アプリは引き続き利用可能。"
-    },
-    {
-      "id": "262cfa35f4308cc0bcff01a56dd97410d48892c0",
-      "sourceName": "OpenAI News",
-      "sourceUrl": "https://openai.com/news",
-      "sourceFeedUrl": "https://openai.com/news/rss.xml",
-      "title": "Preparing our next security sprint to harden OpenAI",
-      "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
-      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "canonicalUrl": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "publishedAt": "2026-11-02T18:00:00.000Z",
-      "hashTitle": "697e01cc2b73f23efc0b85436d17327bcd1df93c",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Preparing our next security sprint to harden OpenAI",
-      "summaryJa": "OpenAIは、Cathedral Systemsと協力して次の内部セキュリティスプリントを準備し、AIを活用して防御をテスト・強化する予定です。"
     },
     {
       "id": "6fd6ad7938fa5bc51515bf98620be76b0b0d7f03",
@@ -1562,9 +1507,27 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Rewarding defenders with bigger bug bounties",
       "summaryJa": "OpenAIはセキュリティバグ報奨金を引き上げ、独立したセキュリティ研究者向けにレポート品質・忠誠度・優先度キャンペーン報酬を導入する。これにより、防御側の報酬が拡充される方針を示している。"
+    },
+    {
+      "id": "262cfa35f4308cc0bcff01a56dd97410d48892c0",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/news",
+      "sourceFeedUrl": "https://openai.com/news/rss.xml",
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "canonicalUrl": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "hashTitle": "697e01cc2b73f23efc0b85436d17327bcd1df93c",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "Preparing our next security sprint to harden OpenAI",
+      "summaryJa": "OpenAIは、Cathedral Systemsと協力して次の内部セキュリティスプリントを準備し、AIを活用して防御をテスト・強化する予定です。"
     },
     {
       "id": "1802721ebc5f02c3e30f19004480f784ebfb5201",
@@ -1580,7 +1543,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "The latest AI news we announced in October 2026",
       "summaryJa": "10月のAI最新情報として、Gemini 4 ArgonとGemini 4 Carbonの公開・展開、Genie 4のリアルタイム世界シミュレーションの導入、AI検証ツールの強化（SynthIDの全球展開）などが挙げられています。Argonは複雑なコーディングや財務分析、法務ワークフローなどに広く展開され、Carbonは長期的な設計やサイバー防御能力を強化するモデルとして事前リリースが進められています。さらにGenie 4のリアルタイム映像・音声機能、Google FitのEdgeなどの新製品・新機能の発表や、教育・医療分野への適用検証も報告されています。"
     },
@@ -1598,7 +1561,7 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources - Google Cloud",
       "summaryJa": "LLMJackingは、企業のクラウドとLLMリソースを不正に利用して短時間で大規模な請求を発生させる手法として、2026年に複数の incidentで確認された。初期アクセスには露出・盗用されたクラウドIDトークンやAPIキーのほか、公開APIエンドポイントの悪用も使われ、組織内の権限昇格や、機密情報の探索・秘匿鍵の窃取、SSHキーの挿入などで長期的な不正アクセスを維持しつつ、LLMのルーティングソフトウェアの脆弱性を突く事例も報告された。被害は地域を跨ぎ金融・小売・技術・交通などの分野に及び、被害額は日次で10万USD超、組織全体では100万USD規模に達するケースもあった。"
     },
@@ -1617,7 +1580,7 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Scaling Git at OpenAI",
       "summaryJa": "OpenAI が Codex の開発規模に合わせて構築した Git 互換のバックエンド Pando の設計とスケーリングの取り組みについて紹介します。"
     },
@@ -1635,7 +1598,7 @@
       "tags": [
         "css"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "What’s !important #20: GTA 6 Scroll Effects, Scrollspies, random()",
       "summaryJa": "今後はCSS-Tricksニュースレターとして再始動することになり、2024年11月10日に公式開始予定である。本文は、GTA 6のスクロールエフェクト紹介やscrollspyの作例、random()のデモ、アイコン実装の未来像など、現代のウェブデザインやCSSの新機能に関する複数の話題を取り上げている。最後に、次回の“What’s !important #21”はニュースレター購読が必須であることが案内されている。"
     },
@@ -1653,7 +1616,7 @@
       "tags": [
         "OpenAI"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Introducing the Grid Protectors Program",
       "summaryJa": "OpenAIのGrid Protectors Programは、将来の計算拠点が電力網の安定性を支え、消費者の電力コストを保護するため、電力事業者と協力して機能する。gridの信頼性確保と料金抑制を目的としている。"
     },
@@ -1672,7 +1635,7 @@
         "html",
         "typescript"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "AIコーディングエージェント向け検出器「impeccable」で自分のHTMLを検査したら94件の指摘が出た",
       "summaryJa": "海外AIネタ100日チャレンジのDay034で、pbakaus/impeccableを使い、自分が作成したX投稿用シェアカードHTML31枚とテンプレートを対象に検査を実施した。その結果、94件のprimary findingsと46件のadvisory（合計140件）と表示されたが、実体はテンプレート共通の1つのCSS変数による低コントラストの警告が大半で、1箇所の修正でfindingsが0件になることを検証した。検出はCLIのdetectコマンド（ネットワーク不要、ローカル判定）で実行でき、修正前後の検証も再現ファイルで確認されている。"
     },
@@ -1690,45 +1653,9 @@
       "tags": [
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Shutting the Door on the XCPE Botnet - Google Cloud",
       "summaryJa": "Googleと関係機関は、1.3百万台以上のセットトップボックスをボットネット化していたXCPEのバックドアを特定・停止し、 Videostrong Technologyが財務目的で意図的に開発・展開・運用していたと高い信頼度で評価しています。Videostrongはバックドアを介して犯罪同盟者にアクセスを販売し、感染機器にモジュールをロードして広告詐欺や住宅型プロキシ網の構築、追加マルウェアのロードを行っていました。Googleは同社を排除し、今後の同様の活動を防ぐための審査プロセス改善を実施するとともに、複数の法的手段とC2ドメインの無効化を行い、関連する他のデバイスやモジュールを含む影響を抑える努力を続けると述べています。"
-    },
-    {
-      "id": "95fd2d5693e53a0eef3ffbc665b0c407624273b7",
-      "sourceName": "Qiita Popular Items",
-      "sourceUrl": "https://qiita.com/popular-items",
-      "sourceFeedUrl": "https://qiita.com/popular-items/feed",
-      "title": "【Vue.js_1時間入門⏰】1時間でローカル環境の構築からシンプルなカウンターアプリを作るまで🔢【初心者向け】",
-      "summary": "この記事で作るもの このようなものを作ります。ブラウザで動くカウンターアプリです。 「ボタンを押してね」を押すたびに画面の数字がカウントされていく仕組みです。 はじめに JavaScript、そしてそのフレームワークであるVue.jsの操作感を学習するために、簡易的な...",
-      "url": "https://qiita.com/saito_next/items/5c9c643228e33b3d6e3e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "canonicalUrl": "https://qiita.com/saito_next/items/5c9c643228e33b3d6e3e",
-      "publishedAt": "2026-11-02T08:58:48.000Z",
-      "hashTitle": "815d6af6c5f77d066a61d8262413882ddec69bfd",
-      "tags": [
-        "vue"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "【Vue.js_1時間入門⏰】1時間でローカル環境の構築からシンプルなカウンターアプリを作るまで🔢【初心者向け】",
-      "summaryJa": "この記事は、Vue.jsの導入からローカル環境の構築、簡易なカウンターアプリの作成までを、初心者向けに1時間程度で完結させる手順を紹介しています。具体的には、Vueの3ブロック構成（template, script setup, style）を理解しつつ、App.vue内でカウンターを作成し、デザインを追加する流れを順を追って解説しています。最後に拡張機能の導入や実装のポイントも補足されています。"
-    },
-    {
-      "id": "3b9bc155054e771092a42b75b976a9800e3ad75b",
-      "sourceName": "Qiita Popular Items",
-      "sourceUrl": "https://qiita.com/popular-items",
-      "sourceFeedUrl": "https://qiita.com/popular-items/feed",
-      "title": "Figma Motionで作ったUIアニメーションをCSSで再現してみた",
-      "summary": "はじめに 2026年6月、Figmaにアニメーション機能「Figma Motion」が登場しました。 以前から気になっていたので、今回はFigma Motionで保存完了時のボタンアニメーションを作成し、CSSで再現してみました。 作成したアニメーション 「保存する」を...",
-      "url": "https://qiita.com/pengin_r/items/a13f3020137816bc532a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "canonicalUrl": "https://qiita.com/pengin_r/items/a13f3020137816bc532a",
-      "publishedAt": "2026-11-02T08:30:41.000Z",
-      "hashTitle": "0725e906635c8c9235811ece9b5053d95e613d6b",
-      "tags": [
-        "css"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Figma Motionで作ったUIアニメーションをCSSで再現してみた",
-      "summaryJa": "Figma Motionで作成した「保存する→保存中…→保存しました」のボタンアニメーションを、CSSで再現した。チェックマークの拡大縮小と不透明度、完了メッセージの表示・位置変化を、それぞれ別々のキーフレームと適切なEasingで再現している。開始タイミングはJavaScriptで制御し、出力されたCSSを参考に実装を行った。"
     },
     {
       "id": "4660d2e8a43a1818aab2225327588112934c5079",
@@ -1744,27 +1671,9 @@
       "tags": [
         "html"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "最近の HTML の新機能の紹介（2026 年版）",
       "summaryJa": "最近の HTML の新機能として、ポップオーバー表示を実現する Popover API や、要素へ独自コマンドを付ける Invoker Commands、ホバーやフォーカスで反応する Interest Invokers、ダイアログ閉じの挙動を制御する dialog closedby、要素ごとに操作不能を示す inert、位置情報取得を行う geolocation、読み込み優先度を指定する fetchpriority や blocking 属性などが紹介されています。 これらは現在 Chrome/Edge/Firebase などで段階的に普及しており、従来の JavaScript に頼らず HTML 属性や要素のみで実現できる例が増えています。 ただし、対応ブラウザや機能の実装状況はまだばらつきがあり、利用時には MDN／canIUse の最新情報を確認することが勧められています。"
-    },
-    {
-      "id": "dbea7d9e1c84487afc261d151b909c6db29d793b",
-      "sourceName": "Qiita Popular Items",
-      "sourceUrl": "https://qiita.com/popular-items",
-      "sourceFeedUrl": "https://qiita.com/popular-items/feed",
-      "title": "Claude Codeを導入して開発速度が5倍になったのに、なぜ私の疲労度は10倍になったのか",
-      "summary": "はじめに：爆速開発の果てに待っていた「前例のない脳疲労」 ここ数週間、日々の開発に Claude Code や Cursor を徹底的に組み込み、いわゆる「AIネイティブ開発」を本気で回してきました。 表面的な数字だけを見れば、大成功と言っていいはずでした。 これまで設計...",
-      "url": "https://qiita.com/xiaoy/items/c4340fda4f660e9c2e4b?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items",
-      "canonicalUrl": "https://qiita.com/xiaoy/items/c4340fda4f660e9c2e4b",
-      "publishedAt": "2026-11-02T07:24:46.000Z",
-      "hashTitle": "d440f7bd110a7e5052bb4e0a0dd793c71cae71e0",
-      "tags": [
-        "claude"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "Claude Codeを導入して開発速度が5倍になったのに、なぜ私の疲労度は10倍になったのか",
-      "summaryJa": "Claude Code や Cursor の導入で新機能の開発速度は上がったが、脳の疲労は逆に増大した。 設計段階から実装、テストまでの作業がAIにより“80%の山”を作り出し、最終的な20%を人間が泥臭く仕上げる構造が続くため、頭痛と全身の脱力感が生じている。 今後はAIの作業範囲を制限し、人間の思考リズムを取り戻す設計と運用の見直しが必要だ、という結論である。"
     },
     {
       "id": "2f74960e094475b818452a45f2cbaf85f55378fa",
@@ -1781,7 +1690,7 @@
         "OpenAI",
         "codex"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "OpenAI、ChatGPTとCodexの利用枠を共有へ ―2026年12月から、Instantモードは対象外",
       "summaryJa": "OpenAIは、2026年12月からChatGPTとCodexの利用枠を共有し、ChatGPT Plus、Pro、Businessの枠を両方で共用する方針を公式ヘルプで案内した。共有開始に先立ち、ProとBusinessのWorkとCodexの利用枠を倍増する変更が10月29日に発表され、日常のChatGPT Instantモードの利用はこの共有枠にはカウントされない。併せて、同一カードや端末に紐づく契約数の制限や、1台の端末で利用できる有料アカウント数の上限などの端末制限も案内されている。"
     },
@@ -1800,27 +1709,9 @@
         "OpenAI",
         "Google"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "OpenAI・Google・Microsoft、robots.txtでAI学習の許可・拒否を一括指定する新たな仕組みに対応へ",
       "summaryJa": "OpenAI・Google・Microsoftは、robots.txtでAI学習利用を指定する新仕組みに対応予定で、サイト運営者は__usage_ai-trainingを用いて学習許可・拒否を一括伝えられる。各社の対応時期は異なり、OpenAIは数か月内、Googleは2027年初頭、Microsoftは2027年2月1日から適用開始を予定している。学習とグラウンディングの設定は企業ごとに異なる扱いで、Microsoftはページごとのメタタグで優先指定、GoogleはGoogle-Extendedとの組み合わせ、OpenAIは既存設定を継続する。"
-    },
-    {
-      "id": "ff138f709a7e7c378423297e3b66be0ea8ce8c76",
-      "sourceName": "OpenAI News",
-      "sourceUrl": "https://openai.com/news",
-      "sourceFeedUrl": "https://openai.com/news/rss.xml",
-      "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-      "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
-      "url": "https://openai.com/index/dan-driscoll-joins-openai",
-      "canonicalUrl": "https://openai.com/index/dan-driscoll-joins-openai",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
-      "hashTitle": "fff35c525ac140f1fa9e89c478698565f356c00a",
-      "tags": [
-        "OpenAI"
-      ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
-      "titleJa": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-      "summaryJa": "OpenAIは、国 security の近代化に向けた責任あるAIについて助言するシニア・カウンセラーとしてダン・ドリスコルを任命した。彼は国家安保の現代化、サイバー resilience、米国の同盟国との連携を支援する予定である。"
     },
     {
       "id": "598c6194c0d34c2379ea364ec745e8134556f751",
@@ -1836,9 +1727,27 @@
       "tags": [
         "codex"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "Qodo は Codex を使用して AI コードレビューにコンテキストを構築します",
       "summaryJa": "Qodoは企業知識とコーディング標準をCodexに組み込み、リポジトリ横断でP0問題を開発者がプルリクエスト前に検出できるよう支援します。"
+    },
+    {
+      "id": "ff138f709a7e7c378423297e3b66be0ea8ce8c76",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/news",
+      "sourceFeedUrl": "https://openai.com/news/rss.xml",
+      "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+      "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
+      "url": "https://openai.com/index/dan-driscoll-joins-openai",
+      "canonicalUrl": "https://openai.com/index/dan-driscoll-joins-openai",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "hashTitle": "fff35c525ac140f1fa9e89c478698565f356c00a",
+      "tags": [
+        "OpenAI"
+      ],
+      "scoredAt": "2026-11-05T17:19:06.210Z",
+      "titleJa": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+      "summaryJa": "OpenAIは、国 security の近代化に向けた責任あるAIについて助言するシニア・カウンセラーとしてダン・ドリスコルを任命した。彼は国家安保の現代化、サイバー resilience、米国の同盟国との連携を支援する予定である。"
     },
     {
       "id": "1df2c9e92a95f846845d630f261fc98f977e305a",
@@ -1855,7 +1764,7 @@
         "claude",
         "codex"
       ],
-      "scoredAt": "2026-11-05T06:32:54.943Z",
+      "scoredAt": "2026-11-05T17:19:06.210Z",
       "titleJa": "LongCat 2.5 now available on AI Gateway",
       "summaryJa": "Meituan の LongCat 2.5 が AI Gateway で利用可能になりました。テキストと画像入力をサポートし、コード・文書・長いタスク履歴に対応する1Mトークンのコンテキスト窓と、設計から実行までを含む長いエージェント作業を可能にします。Claude Code などで利用するには最新の Vercel CLI をインストールして setup を実行し、モデル名として meituan/longcat-2.5 を選択します。"
     }
