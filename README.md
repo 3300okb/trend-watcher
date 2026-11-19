@@ -60,6 +60,7 @@ GitHub Actions で収集とデプロイを実行し、1hに1回定期更新し�
   2. 変更があれば自動コミットして `main` へ push
   3. `npm run build` で `out/` 生成
   4. GitHub Pages へデプロイ
+- Supabase の一時停止防止: `.github/workflows/supabase-keepalive.yml` が毎日 1 回 REST API にアクセスする（失敗したら Supabase ダッシュボードで一時停止を確認）
 
 ## GitHub での初期設定
 1. このリポジトリを GitHub に push

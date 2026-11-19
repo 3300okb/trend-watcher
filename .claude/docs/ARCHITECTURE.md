@@ -9,7 +9,8 @@ GitHub Actions で RSS 収集・翻訳・デプロイを 3 時間ごとに自動
 trend-watcher/
 ├── .github/
 │   └── workflows/
-│       └── research-and-deploy.yml  # CI/CD パイプライン（3時間ごと05分 + push トリガー）
+│       ├── research-and-deploy.yml  # CI/CD パイプライン（3時間ごと05分 + push トリガー）
+│       └── supabase-keepalive.yml   # Supabase 一時停止防止（毎日 1 回 REST API にアクセス）
 ├── config/
 │   ├── keywords.json             # キーワード・除外パターン設定（TREND_TOPICS / TREND_EXCLUDE_PATTERNS）
 │   └── sources.json              # RSS フィードソース定義

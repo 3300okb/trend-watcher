@@ -71,6 +71,16 @@ ci(workflow): スケジュール実行を毎時05分に変更
 - グループ: `pages`（同時実行防止）
 - `cancel-in-progress: false`（進行中のデプロイを中断しない）
 
+### ワークフロー: `supabase-keepalive`
+ファイル: `.github/workflows/supabase-keepalive.yml`
+
+無料プランの Supabase はアクセスがない状態が続くと一時停止するため、1 日 1 回 REST API（`saved_articles`）に問い合わせる。
+接続先と anon key は `public/assets/supabase-config.js` から読む。一時停止中はジョブが失敗し、GitHub の失敗通知で気づける。
+
+**トリガー:**
+1. **schedule**: 毎日 UTC 00:17（JST 09:17）
+2. **workflow_dispatch**: 手動実行
+
 ## .gitignore で除外されているもの
 ```
 node_modules/    # npm パッケージ

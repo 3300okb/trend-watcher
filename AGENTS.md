@@ -56,6 +56,7 @@ npm run job:fetch    # RSS 取得 + 翻訳 + JSON 更新（外部 API を叩く�
 ```
 trend-watcher/
 ├── .github/workflows/research-and-deploy.yml  # CI/CD（3時間ごと + push トリガー）
+├── .github/workflows/supabase-keepalive.yml   # Supabase 一時停止防止（毎日 1 回）
 ├── config/
 │   ├── keywords.json      # TREND_TOPICS / TREND_EXCLUDE_PATTERNS
 │   └── sources.json       # RSS フィードソース定義
