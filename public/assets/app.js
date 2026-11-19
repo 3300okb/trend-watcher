@@ -16,6 +16,17 @@ const STORAGE_KEY = 'trend-watcher-saved';
 let sbClient = null;
 let currentUser = null;
 
+// supabase-js は async で読み込むため、未完了なら load / error を待つ
+// （完了済みかどうかは index.html の onload / onerror が付ける data-settled で判定する）
+function waitForSupabaseLib() {
+  const script = document.getElementById('supabase-js');
+  if (!script || script.dataset.settled) return Promise.resolve();
+  return new Promise((resolve) => {
+    script.addEventListener('load', resolve, { once: true });
+    script.addEventListener('error', resolve, { once: true });
+  });
+}
+
 function initSupabase() {
   const cfg = window.SUPABASE_CONFIG;
   if (!cfg?.url || !cfg?.anonKey || typeof window.supabase === 'undefined') return;
@@ -456,7 +467,7 @@ function applyFilters(generatedAt = currentGeneratedAt) {
 
 async function loadRuntimeConfig() {
   try {
-    const response = await fetch('./data/runtime-config.json', { cache: 'no-store' });
+    const response = await fetch('./data/runtime-config.json', { cache: 'no-cache' });
     if (!response.ok) return;
     const data = await response.json();
     if (Array.isArray(data?.topics) && data.topics.length > 0) {
@@ -473,9 +484,11 @@ async function loadRuntimeConfig() {
 async function boot() {
   renderSkeleton();
   try {
-    await loadRuntimeConfig();
-
-    const response = await fetch('./data/trends.json', { cache: 'no-store' });
+    // no-cache: 毎回 ETag で再検証し、未更新なら 304 で本体のダウンロードを省く
+    const [response] = await Promise.all([
+      fetch('./data/trends.json', { cache: 'no-cache' }),
+      loadRuntimeConfig(),
+    ]);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();
@@ -515,9 +528,18 @@ async function boot() {
     document.getElementById('auth-btn')?.addEventListener('click', signInWithGoogle);
     document.getElementById('auth-logout-btn')?.addEventListener('click', signOut);
 
+    // 保存済みセッション（sb- キー）か OAuth 復帰直後（URL に認証情報）の場合は SDK を待ってから描画する。
+    // 先に描画すると、SDK 到着前の Save が Supabase に送られず、初回同期の上書きで消えるため
+    const mayHaveSession =
+      Object.keys(localStorage).some((k) => k.startsWith('sb-')) ||
+      /[#&?](access_token|code)=/.test(window.location.href);
+    if (mayHaveSession) {
+      await waitForSupabaseLib();
+    }
     renderTopicList();
     renderSavedList();
     applyFilters(currentGeneratedAt);
+    await waitForSupabaseLib();
     initSupabase();
     // ページロード時に既存セッションがあれば必ず同期
     // onAuthStateChange(INITIAL_SESSION) との競合で !currentUser ガードが機能しないケースがあるため、
