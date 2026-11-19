@@ -1,0 +1,36 @@
+name: Supabase Keepalive
+
+# 無料プランの Supabase はアクセスがない状態が続くと一時停止するため、1 日 1 回 REST API に問い合わせる。
+# 停止していればこのジョブが失敗し、GitHub から失敗通知が届く。
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ping Supabase
+        # 接続先と anon key はフロントエンドと同じ public/assets/supabase-config.js から読む
+        run: |
+          node --input-type=module -e '
+            import { readFile } from "node:fs/promises";
+            import vm from "node:vm";
+            const context = { window: {} };
+            vm.runInNewContext(await readFile("public/assets/supabase-config.js", "utf8"), context);
+            const { url, anonKey } = context.window.SUPABASE_CONFIG;
+            const res = await fetch(`${url}/rest/v1/saved_articles?select=url&limit=1`, {
+              headers: { apikey: anonKey, authorization: `Bearer ${anonKey}` }
+            });
+            console.log(`Supabase REST: HTTP ${res.status}`);
+            if (!res.ok) process.exit(1);
+          '
