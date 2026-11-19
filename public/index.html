@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@100;400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -133,7 +133,8 @@
       </li>
     </template>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- async: defer だと module の app.js が supabase-js のダウンロード完了まで実行されず、記事一覧の表示が遅れる -->
+    <script async id="supabase-js" src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onload="this.dataset.settled = 'true'" onerror="this.dataset.settled = 'true'"></script>
     <script defer src="./assets/supabase-config.js"></script>
     <script type="module" src="./assets/app.js"></script>
   </body>
