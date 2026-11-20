@@ -43,7 +43,6 @@ GitHub Actions で RSS 収集・Google 翻訳・GitHub Pages デプロイを 3 �
 
 ## 作業前チェックリスト
 
-- [ ] 影響範囲を確認したか
 - [ ] `scripts/lib/runtime-config.mjs` の既存関数で対応できないか確認したか
 - [ ] JSON 書き込みに atomic rename パターンを使っているか
 - [ ] `npm run build` が通ることを確認したか

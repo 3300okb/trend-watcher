@@ -26,8 +26,8 @@ if printf '%s' "$cmd" | grep -qE '(^|[;&|][[:space:]]*)git[[:space:]]+add[[:spac
   deny "out/ は gitignore 対象 — force-add しない（AGENTS.md）"
 fi
 
-# .env のステージング / コミットをブロック
-if printf '%s' "$cmd" | grep -qE '(^|[;&|][[:space:]]*)(git[[:space:]]+add|git[[:space:]]+commit)[^"'"'"']*[[:space:]](\./)?\.env([[:space:]]|$|\.)'; then
+# .env のステージング / コミットをブロック（.env.example などの雛形は対象外）
+if printf '%s' "$cmd" | sed -E 's/\.env\.(example|sample|template)//g' | grep -qE '(^|[;&|][[:space:]]*)(git[[:space:]]+add|git[[:space:]]+commit)[^"'"'"']*[[:space:]](\./)?\.env([[:space:]]|$|\.)'; then
   deny ".env をステージング / コミットしない"
 fi
 

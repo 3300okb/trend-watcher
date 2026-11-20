@@ -11,10 +11,10 @@
 
 シンプルな 1 行修正などは調査フェーズを省略して直接実装してよい。
 
-## 標準フロー（サブエージェント）
+## サブエージェント
 
-`researcher → planner → coder → reviewer`。単純な 1 行修正は researcher / planner を省略可。
-Codex の組み込み `explorer` / `worker` に加え、プロジェクト固有の観点を持つ `.codex/agents/` のカスタムエージェントを使う。
+必要なときだけ使う。広範囲の調査は `researcher`、まとまった変更後の確認は `reviewer` など、
+プロジェクト固有の観点を持つ `.codex/agents/` のカスタムエージェントを組み込みの `explorer` / `worker` と使い分ける。小さな修正では使わない。
 
 ## 開発サーバー
 
