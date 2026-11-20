@@ -27,8 +27,8 @@ if printf '%s' "$cmd" | grep -qE '(^|[;&|][[:space:]]*)git[[:space:]]+add[[:spac
   exit 2
 fi
 
-# Block staging / committing .env
-if printf '%s' "$cmd" | grep -qE '(^|[;&|][[:space:]]*)(git[[:space:]]+add|git[[:space:]]+commit)[^"'"'"']*[[:space:]](\./)?\.env([[:space:]]|$|\.)'; then
+# Block staging / committing .env (templates such as .env.example are allowed)
+if printf '%s' "$cmd" | sed -E 's/\.env\.(example|sample|template)//g' | grep -qE '(^|[;&|][[:space:]]*)(git[[:space:]]+add|git[[:space:]]+commit)[^"'"'"']*[[:space:]](\./)?\.env([[:space:]]|$|\.)'; then
   echo "BLOCKED: do not stage/commit .env" >&2
   exit 2
 fi
